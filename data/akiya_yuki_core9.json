@@ -1,0 +1,263 @@
+[
+  {
+    "city": "長岡市",
+    "cityId": "nagaoka",
+    "akiya_bank_url": "https://www.city.nagaoka.niigata.jp/akiya/",
+    "akiya_bank_operator": "長岡市（都市整備部 都市政策課 住宅政策担当）。at home版サイト https://nagaoka-c15202.akiya-athome.jp/ にも掲載",
+    "demolition_subsidy": {
+      "name": "空き家対策総合支援事業補助金（特定空家等の除却。町内会等の地域団体が対象・跡地を地域活性化に利用）",
+      "max_amount": "補助対象経費の4/5、上限160万円",
+      "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-jyokyo.html"
+    },
+    "snow_support": {
+      "name": "要援護世帯除雪費助成事業（ほか 屋根雪下ろし命綱固定アンカー設置補助金）",
+      "target": "高齢者・母子・障害者世帯などの要援護世帯で自力除雪が困難、市民税均等割のみ課税または非課税、親族の援助なし。事前登録が必要（民生委員経由・毎年12月中旬頃まで）",
+      "amount": "屋根除雪・避難路除雪は24,300円/回、落雪対応の敷地内除雪は30,000円/冬期（令和8年度・地域により3〜4回が目安）。アンカー補助は一般50%・上限5万円、要援護67%・上限8万円、非課税の要援護90%・上限10万円",
+      "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate04/y-jyosetu.html"
+    },
+    "akiya_consult": {
+      "section": "都市整備部 都市政策課 住宅政策担当（0258-39-2265）。各支所でも相談可",
+      "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html"
+    },
+    "source_urls": [
+      "https://www.city.nagaoka.niigata.jp/akiya/",
+      "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html",
+      "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-jyokyo.html",
+      "https://www.city.nagaoka.niigata.jp/fukushi/cate04/y-jyosetu.html",
+      "https://www.city.nagaoka.niigata.jp/kurashi/life03/anchor.html"
+    ],
+    "checked_date": "2026-10-01",
+    "notes": "個人所有者が直接申請できる老朽空き家の解体補助は公式ページ上では確認できず（補助対象は町内会等の団体のみ）。除雪費助成の担当は福祉保健部 福祉総務課（0258-39-2217）。"
+  },
+  {
+    "city": "見附市",
+    "cityId": "mitsuke",
+    "akiya_bank_url": "https://sumai-mitsuke.com/",
+    "akiya_bank_operator": "見附市（都市環境課 都市・住宅政策係）。旧空き家バンクを中古住宅サイト「豊かな住まい」へリニューアル。at home版 https://mitsuke-c15211.akiya-athome.jp/ もあり",
+    "demolition_subsidy": {
+      "name": "木造住宅除却工事費補助（耐震化目的・昭和56年5月以前着工で耐震評点1.0未満の木造住宅が対象。建て替えまたは住み替えが必須で、老朽空き家専用の解体補助ではない）",
+      "max_amount": "除却費の23%、上限30万円",
+      "url": "https://www.city.mitsuke.niigata.jp/soshiki/20/22540.html"
+    },
+    "snow_support": {
+      "name": "要援護世帯除雪費助成事業（見附市社会福祉協議会）",
+      "target": "70歳以上の一人暮らしや高齢者のみの要援護世帯（課税収入制限あり）。申込は地区民生委員経由",
+      "amount": "1回10,000円（年2回との記載を検索結果で確認、市ページ本文は「1回10,000円」）",
+      "url": "https://www.city.mitsuke.niigata.jp/soshiki/6/2992.html"
+    },
+    "akiya_consult": {
+      "section": "都市環境課 都市・住宅政策係（空き家バンク内線162／特定空家等内線163、代表0258-62-1700）",
+      "url": "https://www.city.mitsuke.niigata.jp/soshiki/20/1301.html"
+    },
+    "source_urls": [
+      "https://www.city.mitsuke.niigata.jp/soshiki/20/3080.html",
+      "https://www.city.mitsuke.niigata.jp/soshiki/20/1301.html",
+      "https://www.city.mitsuke.niigata.jp/soshiki/20/22540.html",
+      "https://www.city.mitsuke.niigata.jp/soshiki/6/2992.html"
+    ],
+    "checked_date": "2026-10-01",
+    "notes": "木造住宅除却補助は令和8年度の受付が2026-04-13〜11-20（予算到達で終了）。空き家向けの老朽危険空き家解体補助は市ページ上で確認できず。市の除雪ボランティア（有償・1人1時間2,000円）の案内を検索結果で確認したが、ページ本文は取得できず未検証（https://www.city.mitsuke.niigata.jp/soshiki/4/19259.html）。社協の問い合わせは0258-61-1353。"
+  },
+  {
+    "city": "小千谷市",
+    "cityId": "ojiya",
+    "akiya_bank_url": "https://www.city.ojiya.niigata.jp/site/iju/akiyabank.html",
+    "akiya_bank_operator": "小千谷市（商工振興課 U・Iターン支援室）。新潟県宅地建物取引業協会・全日本不動産協会新潟県本部と協定し、協定宅建事業者が仲介。at home版 https://ojiya-c15208.akiya-athome.jp/ もあり",
+    "demolition_subsidy": {
+      "name": "移住建替支援事業補助金（空き家の解体・建て替え。空き家所有者または転入者が対象）",
+      "max_amount": "空き家解体のみは工事費の1/5以内・上限50万円（市外事業者施工は25万円）。建て替えを伴う場合は1/2以内・基本上限200万円、加算要件で最大500万円",
+      "url": "https://www.city.ojiya.niigata.jp/site/iju/akiya-kaitai-tatekae.html"
+    },
+    "snow_support": {
+      "name": "SOS雪おろし（市が雪おろし作業会員を紹介。ほか福祉課・社協の除雪援助事業の対象世帯が利用可）",
+      "target": "自力で雪おろしが困難で経済的・労力的な援助が受けられない世帯。空き家・別荘のように使う家屋・法人所有の建物は対象外",
+      "amount": "補助ではなく紹介制度。作業代金は全額利用者負担で、上限は1人1日28,000円・1人1時間3,500円（検索結果上の記載）。福祉課・社協の除雪援助事業の助成額は未確認",
+      "url": "https://www.city.ojiya.niigata.jp/soshiki/kensetsu/sosyukioroshi-ojiya2025.html"
+    },
+    "akiya_consult": {
+      "section": "防災安全課（空家等総合相談窓口・管理不全空家、0258-83-3515）。空き家バンクは商工振興課 U・Iターン支援室（0258-83-3556）、住宅補助は建設課（0258-83-3514）",
+      "url": "https://www.city.ojiya.niigata.jp/soshiki/bousai/akiya-soudan.html"
+    },
+    "source_urls": [
+      "https://www.city.ojiya.niigata.jp/site/iju/akiyabank.html",
+      "https://www.city.ojiya.niigata.jp/site/iju/akiya-kaitai-tatekae.html",
+      "https://www.city.ojiya.niigata.jp/soshiki/bousai/akiya-soudan.html",
+      "https://www.city.ojiya.niigata.jp/soshiki/kensetsu/sosyukioroshi-ojiya2025.html",
+      "https://www.city.ojiya.niigata.jp/soshiki/kensetsu/main-jyutakuhojyo.html"
+    ],
+    "checked_date": "2026-10-01",
+    "notes": "移住建替支援事業補助金は令和8年10月5日受付開始・着工前申請必須。SOS雪おろしのページは取得時に404となり、内容は検索結果の要約によるため再確認が必要。空き家バンク登録物件向けに家財道具等処分支援補助金（https://www.city.ojiya.niigata.jp/site/iju/kazaisyobun.html）あり（上限額は未確認）。"
+  },
+  {
+    "city": "柏崎市",
+    "cityId": "kashiwazaki",
+    "akiya_bank_url": "https://npo-aisa.my.site.com/akiya/s/",
+    "akiya_bank_operator": "特定非営利活動法人aisa（市が指定した空家等管理活用支援法人が運営）。市の担当は都市整備部 建築住宅課 住宅対策係。at home版 https://kashiwazaki-c15205.akiya-athome.jp/ もあり",
+    "demolition_subsidy": {
+      "name": "柏崎市空家等除却支援事業補助金（1年以上使用されていない特定空家等または不良住宅が対象）",
+      "max_amount": "解体費の1/2、上限50万円（居住誘導区域内は上限65万円）",
+      "url": "https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/hojo/sumai_seikatsu/47390.html"
+    },
+    "snow_support": {
+      "name": "高齢者・障がい者・母子世帯の屋根の雪下ろし費用助成（事前登録が必要）",
+      "target": "65歳以上のみ・心身障がい者のみ・高齢者と障がい者のみ・母子の各世帯で、自力・家族の支援で雪下ろしできず、世帯員全員が市民税非課税または均等割課税の世帯",
+      "amount": "除雪に要した経費の8割、1回の作業あたり上限20,000円。第一次申請期限は2026-10-31",
+      "url": "https://www.city.kashiwazaki.lg.jp/soshikiichiran/fukushihokembu/kaigokoreika/3/4/3/3982.html"
+    },
+    "akiya_consult": {
+      "section": "都市整備部 建築住宅課 住宅対策係（0257-21-2291）。NPO aisaが相談窓口（0257-21-5910）",
+      "url": "https://www.city.kashiwazaki.lg.jp/soshikiichiran/toshiseibibu/kenchikujutakuka/3/3/1/6632.html"
+    },
+    "source_urls": [
+      "https://www.city.kashiwazaki.lg.jp/soshikiichiran/toshiseibibu/kenchikujutakuka/3/3/1/6632.html",
+      "https://www.city.kashiwazaki.lg.jp/soshikiichiran/toshiseibibu/kenchikujutakuka/3/3/1/44327.html",
+      "https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/hojo/sumai_seikatsu/47390.html",
+      "https://www.city.kashiwazaki.lg.jp/soshikiichiran/fukushihokembu/kaigokoreika/3/4/3/3982.html"
+    ],
+    "checked_date": "2026-10-01",
+    "notes": "除却補助は、検索結果上のページタイトルに「受け付けは終了しました」の表記あり（2026-07-01更新ページ。受付期間の記載は確認できず）。最新の受付状況は市に要確認。ほかに地域で支え合う除雪支援事業（1人1時間1,000円・団体上限10万円）は受付終了表記。"
+  },
+  {
+    "city": "三条市",
+    "cityId": "sanjo",
+    "akiya_bank_url": "https://sanjo-akiyabank.jp/",
+    "akiya_bank_operator": "三条市（市民部環境課の空き家相談窓口）。検索結果では一般社団法人燕三条空き家活用プロジェクトとの共同運営との記載あり。アットホーム空き家バンクとAPI連携",
+    "demolition_subsidy": {
+      "name": "三条市特定空家等及び管理不全空家等解体費補助金（市が特定空家等と判定したものが対象）",
+      "max_amount": "補助対象経費の4/5、上限50万円（3階以上の非木造建築物は上限400万円）。管理不全空家等は上限20万円との記載を検索結果で確認",
+      "url": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/akiyaakichi/15199.html"
+    },
+    "snow_support": {
+      "name": "除雪援助事業（屋根の雪下ろし費用の助成）／玄関先の除雪（三条市社会福祉協議会）",
+      "target": "世帯全員が市民税非課税で、75歳以上のみ世帯、高齢者と高校生等までの児童生徒のみ世帯、障害者手帳（身体1〜3級等）対象者のみの世帯、ひとり親世帯など。親族から援助を受けられる世帯は除く",
+      "amount": null,
+      "url": "https://sanjo-syakyo.jp/pages/42/"
+    },
+    "akiya_consult": {
+      "section": "市民部 環境課 生活安全・交通係（三条市空き家相談窓口、0256-68-9840）",
+      "url": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/akiyatoppage/index.html"
+    },
+    "source_urls": [
+      "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/akiyatoppage/index.html",
+      "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/akiyaakichi/15199.html",
+      "https://sanjo-syakyo.jp/pages/42/",
+      "https://sanjo-syakyo.jp/pages/113/"
+    ],
+    "checked_date": "2026-10-01",
+    "notes": "除雪援助の助成額は社協ページに記載がなく未確認（問い合わせ 三条市社協 0256-33-8511）。雪下ろし助成の申請は雪下ろし実施後、令和9年3月4日まで。解体補助は令和8年度募集中（予算到達で締切）。"
+  },
+  {
+    "city": "燕市",
+    "cityId": "tsubame",
+    "akiya_bank_url": "https://www.city.tsubame.niigata.jp/soshiki/toshi_seibi/3/1/53/index.html",
+    "akiya_bank_operator": "燕市（都市整備部 都市計画課 空き家等対策推進室）。at home版 https://tsubame-c15213.akiya-athome.jp/ にも掲載",
+    "demolition_subsidy": {
+      "name": "特定空き家等解体撤去費助成金（工事完了後に空き家・空き地活用バンクへの登録が必須）",
+      "max_amount": "対象工事費（税抜）の1/2以内、上限30万円（令和7年度のみ50万円）",
+      "url": "https://www.city.tsubame.niigata.jp/soshiki/toshi_seibi/3/1/172/19331.html"
+    },
+    "snow_support": {
+      "name": "雪下ろし相談窓口（補助制度ではなく事業者の紹介）",
+      "target": "家族や地域で雪下ろしの作業が困難な世帯",
+      "amount": null,
+      "url": "https://www.city.tsubame.niigata.jp/yuki/11113.html"
+    },
+    "akiya_consult": {
+      "section": "都市整備部 都市計画課 空き家等対策推進室（0256-77-8264、市庁舎2階18番窓口）",
+      "url": "https://www.city.tsubame.niigata.jp/soshiki/toshi_seibi/3/1/index.html"
+    },
+    "source_urls": [
+      "https://www.city.tsubame.niigata.jp/soshiki/toshi_seibi/3/1/53/index.html",
+      "https://www.city.tsubame.niigata.jp/soshiki/toshi_seibi/3/1/172/19331.html",
+      "https://www.city.tsubame.niigata.jp/yuki/11113.html"
+    ],
+    "checked_date": "2026-10-01",
+    "notes": "解体助成の受付は2026-04-01〜2026-12-28。雪下ろし相談窓口は総務部防災課（0256-77-8381）が建設業協同組合等の事業者を紹介する形で、費用は事業者に直接確認と記載、補助の記載なし。高齢者世帯向けの除雪費助成は市・社協の公式ページで確認できず（null）。"
+  },
+  {
+    "city": "新潟市",
+    "cityId": "niigata",
+    "akiya_bank_url": "https://www.city.niigata.lg.jp/nishikan/torikumi/seisaku/nishikanakiyabank.html",
+    "akiya_bank_operator": "新潟市（西蒲区のみ・令和7年4月1日開始）。西蒲区以外は市と連携協定を結ぶ新潟県宅地建物取引業協会（025-247-1177）・全日本不動産協会新潟県本部（025-385-7719）を案内",
+    "demolition_subsidy": {
+      "name": "空き家活用推進事業（跡地活用タイプ／地域活動活用タイプの跡地活用。空き家の解体費が対象）",
+      "max_amount": "解体費の1/3、上限50万円（法人は解体のみ）",
+      "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/jukankyo/yushi_josei/akiyakatsuyo.html"
+    },
+    "snow_support": {
+      "name": "除雪要援護世帯助成金交付モデル事業（西区のみ・地域コミュニティ協議会や自治会などの団体向け）",
+      "target": "高齢者や障がい者など自力除雪が困難な世帯の除雪を行った団体（事前登録が必要）",
+      "amount": null,
+      "url": "https://www.city.niigata.lg.jp/kurashi/ku_info/kurashi_nishi/seikatsu/nishikujosetuhijosei.html"
+    },
+    "akiya_consult": {
+      "section": "建築部 住環境政策課 空き家対策・活用推進室（025-226-2813）",
+      "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/madoguchi.html"
+    },
+    "source_urls": [
+      "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/katsuyo/akiya_sagasu.html",
+      "https://www.city.niigata.lg.jp/kurashi/jyutaku/jukankyo/yushi_josei/akiyakatsuyo.html",
+      "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/madoguchi.html",
+      "https://www.city.niigata.lg.jp/kurashi/ku_info/kurashi_nishi/seikatsu/nishikujosetuhijosei.html"
+    ],
+    "checked_date": "2026-10-01",
+    "notes": "老朽危険空き家の専用解体補助（外部記事に上限150万円との記載あり）は公式ページで確認できず、上記の空き家活用推進事業（令和8年度・2026-04-20受付開始、住環境政策課）のみ確認。市全域の高齢者世帯向け屋根雪下ろし助成は確認できず（雪は区ごとの対応。西区の団体向けモデル事業のみ確認、助成額は別紙PDFで未確認）。"
+  },
+  {
+    "city": "上越市",
+    "cityId": "joetsu",
+    "akiya_bank_url": "https://joetsu-akiyabank.jp/",
+    "akiya_bank_operator": "上越市（都市整備部 建築住宅課 住宅対策係）。at home版 https://joetsu-c15222.akiya-athome.jp/ もあり",
+    "demolition_subsidy": {
+      "name": "空き家等及び特定空き家等除却費補助金（特定空き家等除却費補助／空き家等除却費補助の2種）",
+      "max_amount": "除却費の1/2、上限50万円（いずれも）。特定空き家等は除却後に建築物を建てないこと、空き家等は跡地を10年以上地域活性化に供することが条件",
+      "url": "https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-jokyakuhojo.html"
+    },
+    "snow_support": {
+      "name": "除雪費助成制度（民生委員経由で申請）",
+      "target": "市民税所得割が非課税の高齢者世帯・ひとり暮らし高齢者世帯・障害者世帯・母子父子世帯など。生活保護世帯や自力除雪可能な世帯は除く",
+      "amount": "1世帯126,000円を限度（災害救助法適用時は1世帯148,600円。令和8年度）",
+      "url": "https://www.city.joetsu.niigata.jp/soshiki/engo/lifeguide-238.html"
+    },
+    "akiya_consult": {
+      "section": "都市整備部 建築住宅課 住宅対策係（025-520-5786）",
+      "url": "https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiyabank.html"
+    },
+    "source_urls": [
+      "https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiyabank.html",
+      "https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-jokyakuhojo.html",
+      "https://www.city.joetsu.niigata.jp/soshiki/engo/lifeguide-238.html"
+    ],
+    "checked_date": "2026-10-01",
+    "notes": "除却補助の受付期間は市ページに記載なし（年度予算額に達し次第終了）。除雪費助成の担当は生活援護課（025-520-5779）。"
+  },
+  {
+    "city": "十日町市",
+    "cityId": "tokamachi",
+    "akiya_bank_url": "https://www.city.tokamachi.lg.jp/soshiki/somubu/kikakuseisakuka/1/gyomu/ijyu_teijyu/1450420682985.html",
+    "akiya_bank_operator": "十日町市（総務部 企画政策課 移住定住推進係）。空き家の総合相談業務は空き家利活用ミッション型地域おこし協力隊へ委託。物件は移住ポータル「新潟県十日町市UIターン情報サイト」とat home版 https://tokamachi-c15210.akiya-athome.jp/ に掲載",
+    "demolition_subsidy": {
+      "name": "空き家等除却支援事業補助金（過去1年以上使用のない空き家等。建て替え目的は対象外）",
+      "max_amount": "補助率50%、上限は居住誘導区域内30万円・区域外20万円",
+      "url": "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/4/1/10912.html"
+    },
+    "snow_support": {
+      "name": "要援護世帯除排雪援助事業（ほか 雪おろし墜落防止器具購入費補助）",
+      "target": "70歳以上のみの高齢者世帯、身体障がい1〜4級世帯、母子世帯など。自力で雪処理できず親族の援助がなく、世帯全員が市民税非課税で生活保護適用外。民生委員が調査",
+      "amount": "雪下ろし屋根・避難路確保は多雪区域で年40,000円、その他区域で年35,000円。融雪屋根は積雪深により10,000〜20,000円の上限",
+      "url": "https://www.city.tokamachi.lg.jp/soshiki/shiminfukushibu/fukushika/1/gyomu/1567986077003.html"
+    },
+    "akiya_consult": {
+      "section": "建設部 都市計画課 特定空家対策係（025-755-5216）。空き家バンクは企画政策課 移住定住推進係（025-755-5137）",
+      "url": "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/4/1/8494.html"
+    },
+    "source_urls": [
+      "https://www.city.tokamachi.lg.jp/soshiki/somubu/kikakuseisakuka/1/gyomu/ijyu_teijyu/1450420682985.html",
+      "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/4/1/10912.html",
+      "https://www.city.tokamachi.lg.jp/soshiki/shiminfukushibu/fukushika/1/gyomu/1567986077003.html",
+      "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/4/1/8494.html"
+    ],
+    "checked_date": "2026-10-01",
+    "notes": "除却補助の令和8年度受付は2026-04-13〜05-13で終了済み（次年度要確認）。除排雪援助の担当は市民福祉部 福祉課 高齢者支援係（025-757-9758）。雪おろし墜落防止器具購入費補助（建設課）のページは検索結果で存在確認のみで金額は未確認。"
+  }
+]

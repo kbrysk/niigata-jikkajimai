@@ -1,0 +1,699 @@
+[
+  {
+    "city": "新発田市",
+    "cityId": "shibata",
+    "sodai_official_url": "https://www.city.shibata.lg.jp/kurashi/gomi/gomi/dashikata/1001156.html",
+    "apply_method": "粗大ごみ（150×100×100cm以内かつ60kg以下）はオンライン専用フォーム、または電話・窓口で事前申込。環境衛生課0254-28-9115（市役所6階）、豊浦支所0254-22-6776、紫雲寺支所0254-41-3112、加治川支所0254-33-3103。受付8:30-17:15（休祝日・年末年始除く）。収集業者が月1回、自宅へ戸別収集。",
+    "fee_system": "粗大ごみ1個につき指定収集券（青色・1枚500円）を貼付。中型ごみ（80×50×40cm以内・15kg以下）は黄色券1枚100円で家庭ごみステーションへ。",
+    "fee_examples": [
+      {
+        "item": "粗大ごみ（1個あたり・品目問わず）",
+        "fee": "500円（青色指定収集券1枚）"
+      },
+      {
+        "item": "中型ごみ（80×50×40cm以内・15kg以下）",
+        "fee": "100円（黄色指定収集券1枚）"
+      }
+    ],
+    "bring_in": "新発田広域クリーンセンター（新発田市藤掛625-1・新発田/豊浦地区）、中条地区塵芥焼却場（胎内市富岡7-123・紫雲寺/加治川地区）：月-金8:30-12:00,13:00-16:00／土8:30-12:00,13:00-15:00。燃えないごみは新発田広域不燃物処理場（胎内市中村浜864-27）：月-金8:30-11:30,13:00-16:30／土(第1・3週のみ)8:30-11:30。料金は燃える/燃えないとも10kgあたり100円（指定ごみ袋での持込は無料）。",
+    "akiya_bank_url": "https://www.city.shibata.lg.jp/kurashi/iju/akiya/",
+    "akiya_bank_notes": "市運営（建築課空家・住宅対策係 0254-26-3557）。公式ページに物件15件掲載（うち交渉中含む）。市サイト内にアットホーム版空き家バンクサイトもあり。家財処分費の一部補助あり。",
+    "source_urls": [
+      "https://www.city.shibata.lg.jp/kurashi/gomi/gomi/dashikata/1001150.html",
+      "https://www.city.shibata.lg.jp/kurashi/gomi/gomi/dashikata/1001156.html",
+      "https://www.city.shibata.lg.jp/kurashi/gomi/gomi/dashikata/1001160.html",
+      "https://www.city.shibata.lg.jp/kurashi/iju/akiya/",
+      "https://www.city.shibata.lg.jp/kurashi/iju/akiya/1001226.html"
+    ],
+    "notes": "粗大ごみは申込の翌月収集。品目別料金表は無く一律500円。家電4品目は対象外。空き家バンクの家財処分補助の金額は[要確認]。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "加茂市",
+    "cityId": "kamo",
+    "sodai_official_url": "https://www.city.kamo.niigata.jp/docs/30932.html",
+    "apply_method": "市は粗大ごみ（家具類・ふとん・マットレス等）を収集しない。自分で清掃センター（0256-57-2415）へ直接搬入。申込要否は公式ページに記載なし。",
+    "fee_system": "[要確認] 清掃センター持込みの手数料は公式ページで確認できず。",
+    "fee_examples": [],
+    "bring_in": "清掃センター（南蒲原郡田上町大字原ヶ崎新田2124）：9:00-16:30、休業日は日曜・8/15・12/31-1/3。透明または白色半透明の袋で持込み（黒袋・段ボール不可・令和5年4月から）。電話0256-57-2415。",
+    "akiya_bank_url": "https://www.city.kamo.niigata.jp/docs/30251.html",
+    "akiya_bank_notes": "令和2年10月から全国版空き家バンク（LIFULL HOME'S）を活用した加茂市版を運営。NPO法人空き家・空き地対策協議会と連携。物件は https://www.homes.co.jp/akiyabank/niigata/kamo/ に掲載。市公式ページに件数記載なし。",
+    "source_urls": [
+      "https://www.city.kamo.niigata.jp/docs/30932.html",
+      "https://www.city.kamo.niigata.jp/docs/49911.html",
+      "https://www.city.kamo.niigata.jp/docs/59608.html",
+      "https://www.city.kamo.niigata.jp/docs/30251.html"
+    ],
+    "notes": "[要確認] 清掃センター持込み手数料と事前申込の要否（公式ページに記載なし）。分別早見表PDFでタンス・ベッド・カーペット・ふとん等は「清掃センターに搬入」と指示。清掃センターは田上町所在で加茂市・田上町共同利用。ごみ収集ページに別電話0256-52-0080（環境課代表）の記載あり。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "村上市",
+    "cityId": "murakami",
+    "sodai_official_url": "https://www.city.murakami.lg.jp/site/gomi-bunbetsu/zikohannyu.html",
+    "apply_method": "市による粗大ごみの戸別収集は公式ページに記載なし。自分で運べない場合は市の収集運搬許可業者に依頼（業者は地区ごとに決まる・一覧は市サイト掲載）。自己搬入は予約不要の記載。問合せは環境課生活環境室0254-75-8932。",
+    "fee_system": "自己搬入は重量制：10kgまで60円、以降10kgごとに60円加算。ステーション出しは指定袋または中型ごみ処理券（1枚100円・80×50×40cm以内15kg以内）。",
+    "fee_examples": [
+      {
+        "item": "自己搬入（10kgまで）",
+        "fee": "60円"
+      },
+      {
+        "item": "自己搬入（10kg超・10kgごと加算）",
+        "fee": "60円"
+      },
+      {
+        "item": "中型ごみ処理券（1枚）",
+        "fee": "100円"
+      }
+    ],
+    "bring_in": "村上市ごみ処理場（Kanadeviaエコパークむらかみ）：月-土（祝日含む）8:30-16:00、日曜・12/31-1/3休み。受付で計量・搬入・再計量して支払い。タンス・家具類は木製/スチール問わず持込可。",
+    "akiya_bank_url": "https://www.city.murakami.lg.jp/site/akiya-bank/m-akiya-bank-bukken.html",
+    "akiya_bank_notes": "市運営（むらかみ暮らし推進課 移住定住推進室 0254-75-8926）。公式ページに約30件掲載（2026-09-24更新）。見学は利用希望者登録が必要。",
+    "source_urls": [
+      "https://www.city.murakami.lg.jp/site/gomi-bunbetsu/zikohannyu.html",
+      "https://www.city.murakami.lg.jp/site/gomi-recycle/gomi-tesuryo.html",
+      "https://www.city.murakami.lg.jp/site/gomi-recycle/kyokagyousha.html",
+      "https://www.city.murakami.lg.jp/site/akiya-bank/m-akiya-bank-bukken.html"
+    ],
+    "notes": "許可業者への依頼料金は業者ごとで公式に料金表なし[要確認]。粗大ごみの戸別収集制度が無い旨の明記は確認できていない。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "糸魚川市",
+    "cityId": "itoigawa",
+    "sodai_official_url": "https://www.city.itoigawa.lg.jp/page/1330.html",
+    "apply_method": "集積所に出せない大型・大量のごみ（長さ1m超など、ふとん・カーペット・畳・木製家具等）は自己搬入するか、市の許可業者へ有償依頼。市の戸別収集の記載は確認できず。問合せは市民生活課衛生施設係（清掃センター）025-552-1511。",
+    "fee_system": "清掃センター持込みは重量制：30kg以下は1日1回に限り無料（同日2回目以降1,000円/回）、30kg超〜500kgは1,000円、500kg超は1,000円に500kg超過分100kgごとに300円加算。",
+    "fee_examples": [
+      {
+        "item": "自己搬入 30kg以下",
+        "fee": "1日1回無料（同日2回目以降1,000円）"
+      },
+      {
+        "item": "自己搬入 30〜500kg",
+        "fee": "1,000円"
+      },
+      {
+        "item": "[許可業者・大月の参考価格/市サイト掲載PDF] タンス",
+        "fee": "1,000〜5,000円"
+      },
+      {
+        "item": "[同上] ソファー（二人掛け）",
+        "fee": "2,000〜3,000円"
+      },
+      {
+        "item": "[同上] ベッドマットレス（スプリング入り・シングル）",
+        "fee": "2,000円"
+      },
+      {
+        "item": "[同上] 畳",
+        "fee": "2,000円（★清掃センター持込みなら30kg以下無料）"
+      },
+      {
+        "item": "[同上] 布団",
+        "fee": "200円（★同上）"
+      }
+    ],
+    "bring_in": "糸魚川市清掃センター（糸魚川市大字須沢2051-2）：平日8:30-16:30（土日祝・12/31-1/3除く）。毎月第3日曜（7・8・1・2月除く）9:00-12:00,13:00-15:00も持込可。電話025-552-1511。",
+    "akiya_bank_url": "https://www.city.itoigawa.lg.jp/3385.htm",
+    "akiya_bank_notes": "平成29年8月から市の制度を一般社団法人空き家活用ネットワーク糸魚川（いえかつ糸魚川）の「空き家・空き店舗バンク」に移行。物件は https://iekatsu-itoigawa.com/ に掲載。問合せ0255-56-6411。",
+    "source_urls": [
+      "https://www.city.itoigawa.lg.jp/page/1329.html",
+      "https://www.city.itoigawa.lg.jp/page/1330.html",
+      "https://www.city.itoigawa.lg.jp/page/1332.html",
+      "https://www.city.itoigawa.lg.jp/uploaded/attachment/14552.pdf",
+      "https://www.city.itoigawa.lg.jp/3385.htm",
+      "https://www.city.itoigawa.lg.jp/page/1542.html"
+    ],
+    "notes": "品目別の市公式手数料表は無い。fee_examplesの[許可業者]分は市サイトに掲載された株式会社大月（025-552-8160）の参考価格で、市の手数料ではない。許可業者への依頼の申込方法の詳細は[要確認]。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "妙高市",
+    "cityId": "myoko",
+    "sodai_official_url": "https://www.city.myoko.niigata.jp/docs/1353.html",
+    "apply_method": "粗大ごみ戸別収集（有料）。①市役所・各支所・取扱店で品目別処理券を購入→②収集日の3日前までに市指定業者へ電話/FAX申込（(有)川村商店 0255-72-9422）→③収集日朝8時までに処理券を貼って玄関先（集合住宅は1階入口）に排出。収集は年2回（5月・10月）。集積所に出せず処理施設へ直接搬入できない世帯向けのサービス。",
+    "fee_system": "品目ごとに処理券（手数料）を貼付する品目別定額制。大人2人で車両に積み込める範囲に限る。",
+    "fee_examples": [
+      {
+        "item": "タンス（最長辺1m未満）",
+        "fee": "600円"
+      },
+      {
+        "item": "タンス（最長辺1m以上）",
+        "fee": "1,200円"
+      },
+      {
+        "item": "ソファー（1人用）",
+        "fee": "900円"
+      },
+      {
+        "item": "ソファー（2〜3人用）",
+        "fee": "1,200円"
+      },
+      {
+        "item": "ベッドマット（スプリングなし）",
+        "fee": "600円"
+      },
+      {
+        "item": "ベッドの枠（木製）",
+        "fee": "900円"
+      },
+      {
+        "item": "食器棚（最長辺1m以上）",
+        "fee": "1,200円"
+      },
+      {
+        "item": "ふとん",
+        "fee": "300円"
+      }
+    ],
+    "bring_in": "あらい再資源センター（埋立てごみ）：平日8:45-16:30（12-13時除く）、休日受付8:45-11:45、家庭系10kgあたり75円。妙高クリーンセンター（可燃）：平日8:45-16:30（12-13時除く）・土8:45-11:45、家庭系10kgあたり90円。",
+    "akiya_bank_url": "https://www.city.myoko.niigata.jp/myoko-life/house/",
+    "akiya_bank_notes": "市運営（地域共生課 移住支援グループ 0255-74-0064）。妙高市空き家情報登録制度。公式ページに売却・貸借物件を掲載（2026-10-01時点で売却物件複数あり）。",
+    "source_urls": [
+      "https://www.city.myoko.niigata.jp/docs/1353.html",
+      "https://www.city.myoko.niigata.jp/fs/3/4/3/8/0/_/_______________________.pdf",
+      "https://www.city.myoko.niigata.jp/docs/989.html",
+      "https://www.city.myoko.niigata.jp/myoko-life/house/"
+    ],
+    "notes": "料金表は公式PDF（処理手数料一覧）の画像を目視確認。一部地区は別の指定業者との検索結果要約があるが公式ページ本文では未確認[要確認]。持込料金はごみ処理手数料改定（docs/39711）で変更の可能性あり[要確認]。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "五泉市",
+    "cityId": "gosen",
+    "sodai_official_url": "https://www.city.gosen.lg.jp/organization/7/1/893.html",
+    "apply_method": "公式ページ上で市の粗大ごみ戸別収集・申込制度の記載は確認できず。家具類は分別表上、燃えるごみ（木製たんす・机・ベッドは40cm以内に解体）や燃えないごみ（金属ベッドは1.8m以内に解体）としてステーション出し、または自己搬入。スプリング入りソファーは処理困難物で解体か市許可業者へ相談。自己搬入の粗大ごみは事前予約制（クリーンセンターあがのがわ予約サイトまたは電話0250-47-5386・月-金8:30-16:30、搬入前日まで）。問合せは環境保全課0250-43-3911。",
+    "fee_system": "自己搬入は重量制の手数料（消費税込）。粗大ごみは0〜50kg 300円、51〜100kg 600円、101〜150kg 900円、151kg以上は50kgごとに300円加算。一般ごみ（燃やす/燃やさない）は0〜50kg 200円、51〜100kg 500円、101〜150kg 750円、以降50kgごとに250円。",
+    "fee_examples": [
+      {
+        "item": "自己搬入・粗大ごみ 0〜50kg",
+        "fee": "300円"
+      },
+      {
+        "item": "自己搬入・粗大ごみ 51〜100kg",
+        "fee": "600円"
+      },
+      {
+        "item": "自己搬入・粗大ごみ 101〜150kg",
+        "fee": "900円"
+      },
+      {
+        "item": "自己搬入・一般ごみ 0〜50kg",
+        "fee": "200円"
+      }
+    ],
+    "bring_in": "クリーンセンターあがのがわ（五泉市清瀬84-2、電話0250-43-3852、五泉地域衛生施設組合）：平日8:30-16:30、土曜は燃えるごみのみ8:30-16:30。粗大ごみは1週間に1台まで・事前予約必須。搬入可能サイズ：家具類 幅1.5m×奥行1m×高さ2m以内など。",
+    "akiya_bank_url": "https://gosen-c15218.akiya-athome.jp/",
+    "akiya_bank_notes": "運営は五泉市環境保全課（0250-43-3911）。『五泉市空き家バンクサイト』（アットホーム空き家バンク基盤）に売買物件が掲載。件数は公式サイトで明記なし。",
+    "source_urls": [
+      "https://www.city.gosen.lg.jp/organization/7/1/893.html",
+      "https://www.city.gosen.lg.jp/organization/7/1/895.html",
+      "https://www.city.gosen.lg.jp/organization/7/1/892.html",
+      "https://gosen-eisei.jp/garbage/garbage-kijun-1",
+      "https://gosen-eisei.jp/garbage/garbage-charge",
+      "https://gosen-c15218.akiya-athome.jp/"
+    ],
+    "notes": "[要確認] 市の粗大ごみ戸別収集（有料シール等）の有無は公式ページで確認できず（第三者サイトの『品目別100〜500円の有料シール』記述は採用せず）。クリーンセンターあがのがわは令和7年4月稼働、五泉市・阿賀野市・阿賀町の共同施設。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "阿賀野市",
+    "cityId": "agano",
+    "sodai_official_url": "https://www.city.agano.niigata.jp/soshiki/shiminseikatsuka/gomi_kankyo_pets/4/gominodasikata/14144.html",
+    "apply_method": "（京ヶ瀬・水原・笹神・安田地区・令和7年4月〜）粗大ごみ（焼却に適さない電気・家電製品、不燃性家具、40cm以上のプラスチック製品。目安30kg未満・長さ2m未満）はごみステーション付近にそのまま出す（ごみシール不要・事前申込記載なし）。可燃性の木製家具等はステーションの粗大ごみとして出せず、40cm四方以下に解体して燃えるごみ（ごみシール貼付）に出すか、クリーンセンターあがのがわへ予約制・有料で直接搬入。問合せ市民生活課0250-61-2473。",
+    "fee_system": "ステーション出しの粗大ごみは手数料なし（ごみシール不要）。燃えるごみはごみ処理券（シール）1枚50円（10枚1シート500円）で45L以内・10kg以内。クリーンセンター持込みは重量制。",
+    "fee_examples": [
+      {
+        "item": "ごみ処理券（燃えるごみ・45L/10kg以内）",
+        "fee": "1枚50円"
+      },
+      {
+        "item": "クリーンセンターあがのがわ持込み 0〜50kg",
+        "fee": "300円（税込）"
+      },
+      {
+        "item": "クリーンセンターあがのがわ持込み 51〜100kg",
+        "fee": "600円（税込）"
+      }
+    ],
+    "bring_in": "クリーンセンターあがのがわ（五泉市清瀬84-2）：粗大ごみは予約制（令和8年4月1日から搬入前日までに予約）。予約は専用サイトまたは電話0250-47-5386（月-金8:30-16:30）。搬入受付8:30-16:30。料金は粗大ごみ0〜50kg 300円、51〜100kg 600円（以降50kgごと300円）。",
+    "akiya_bank_url": "https://www.city.agano.niigata.jp/soshiki/kensetsuka/zumai/2395.html",
+    "akiya_bank_notes": "市運営（建設課都市計画建築係 0250-61-2480）。物件情報を市ホームページで案内する制度。登録件数は公式本文に記載なし。『阿賀野市空き家バンクサイト』（agano-c15223.akiya-athome.jp）も存在。",
+    "source_urls": [
+      "https://www.city.agano.niigata.jp/soshiki/shiminseikatsuka/gomi_kankyo_pets/4/gominodasikata/14144.html",
+      "https://www.city.agano.niigata.jp/soshiki/shiminseikatsuka/gomi_kankyo_pets/4/gominodasikata/14143.html",
+      "https://www.city.agano.niigata.jp/soshiki/shiminseikatsuka/gomi_kankyo_pets/4/gominodasikata/2584.html",
+      "https://www.city.agano.niigata.jp/soshiki/shiminseikatsuka/gomi_kankyo_pets/4/15629.html",
+      "https://gosen-eisei.jp/garbage/garbage-charge",
+      "https://www.city.agano.niigata.jp/soshiki/kensetsuka/zumai/2395.html"
+    ],
+    "notes": "令和7年4月に旧阿賀野市環境センターを廃止し新施設へ移行。以前の『可燃粗大ごみの戸別収集』は廃止（検索要約情報、旧ページ13731は現在404）。品目別の公式料金表は無い。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "佐渡市",
+    "cityId": "sado",
+    "sodai_official_url": "https://www.city.sado.niigata.jp/soshiki/2013/4071.html",
+    "apply_method": "粗大ごみ処理券を1個に1枚貼り、粗大ごみの収集日に集積所へ出す方式（公式ページに事前申込の記載なし）。サイズ上限：横1.2m×高さ2.0m×奥行0.6m。対象は家具、寝具、自転車、ストーブ等。問合せは生活環境課クリーン推進係0259-63-3113。",
+    "fee_system": "粗大ごみ処理券（1枚520円・税込）を1点につき1枚貼付する定額制。クリーンセンター持込みは30kgまで520円、超過10kgごとに100円加算。",
+    "fee_examples": [
+      {
+        "item": "粗大ごみ処理券（1点・1枚）",
+        "fee": "520円（税込）"
+      },
+      {
+        "item": "クリーンセンター持込み（30kgまで）",
+        "fee": "520円"
+      },
+      {
+        "item": "クリーンセンター持込み（30kg超・10kgごと）",
+        "fee": "100円加算"
+      }
+    ],
+    "bring_in": "佐渡クリーンセンター（佐渡市中原103・0259-52-3336）、両津クリーンセンター（吾潟1891・0259-24-1700）、南佐渡クリーンセンター（小木木野浦163-2・0259-86-2373）に直接搬入可。受付時間は公式ページで確認できず。",
+    "akiya_bank_url": "https://www.city.sado.niigata.jp/site/ijyu/5419.html",
+    "akiya_bank_notes": "市運営（移住交流推進課 移住交流推進係 0259-67-7153）。市HPとLIFULL HOMEの全国版空き家バンク・アットホーム版にも掲載。物件多数（売買・賃貸）。",
+    "source_urls": [
+      "https://www.city.sado.niigata.jp/soshiki/2013/4071.html",
+      "https://www.city.sado.niigata.jp/soshiki/2013/4072.html",
+      "https://www.city.sado.niigata.jp/soshiki/2013/2184.html",
+      "https://www.city.sado.niigata.jp/site/ijyu/5419.html",
+      "https://www.city.sado.niigata.jp/site/ijyu/4043.html"
+    ],
+    "notes": "[要確認] 粗大ごみ収集日・事前申込の要否・持込み受付時間は公式ページで確認できず（収集日は地区別ごみカレンダー参照）。品目別料金表は無く一律520円。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "魚沼市",
+    "cityId": "uonuma",
+    "sodai_official_url": "https://www.city.uonuma.lg.jp/page/2050.html",
+    "apply_method": "大型ごみは予約制の戸別収集（月2回・自宅玄関先）。予約：電話025-792-9900（収集日前日17時まで）／FAX 025-792-4220・メール haikibutsu@city.uonuma.lg.jp・電子申請（いずれも収集日の3日前まで）。世帯主氏名・住所・電話・区分ごとの品名と数量を伝える。",
+    "fee_system": "サイズ区分制の大型ごみ処理券：小物500円・中物1,000円・大物2,000円（6号袋350円）。自家搬入は重量制。",
+    "fee_examples": [
+      {
+        "item": "大型ごみ処理券 小物",
+        "fee": "500円"
+      },
+      {
+        "item": "大型ごみ処理券 中物",
+        "fee": "1,000円"
+      },
+      {
+        "item": "大型ごみ処理券 大物",
+        "fee": "2,000円"
+      },
+      {
+        "item": "6号袋（概ね45L）",
+        "fee": "350円"
+      },
+      {
+        "item": "自家搬入 大型ごみ（家庭）",
+        "fee": "250円/10kg"
+      }
+    ],
+    "bring_in": "エコプラント魚沼（魚沼市中島707-1・025-792-3055）：月-土（祝日も）8:00-17:00、日曜8:00-12:00。家庭の自家搬入料金：大型ごみ250円/10kg、燃やせる/燃やせないごみ35円/10kg（指定袋に入れれば無料）。",
+    "akiya_bank_url": "https://www.city.uonuma.lg.jp/page/1409.html",
+    "akiya_bank_notes": "市運営（地域創生課 025-792-9752）。売買物件を市HPに掲載（賃貸は現在なし）。契約・交渉は宅建業者が仲介。魚沼市空き家バンクサイト（アットホーム版）もあり。",
+    "source_urls": [
+      "https://www.city.uonuma.lg.jp/page/2050.html",
+      "https://www.city.uonuma.lg.jp/page/2032.html",
+      "https://www.city.uonuma.lg.jp/page/2033.html",
+      "https://www.city.uonuma.lg.jp/page/1409.html",
+      "https://www.city.uonuma.lg.jp/page/1427.html"
+    ],
+    "notes": "品目ごとのサイズ区分の対応表（どの品が小物/中物/大物か）は公式ページで未確認[要確認]。旧ドメイン(city.uonuma.niigata.jp)は現在到達不可のため新ドメインの内容を採用。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "南魚沼市",
+    "cityId": "minamiuonuma",
+    "sodai_official_url": "https://www.city.minamiuonuma.niigata.jp/docs/1458.html",
+    "apply_method": "【六日町・塩沢地域】資源循環推進課025-782-0339（月-金8:30-17:15）へ収集日の3日前までに予約→粗大ごみ処理券を購入し貼付→収集日朝8:30までに玄関前へ。委託業者が戸別回収。【大和地域】エコプラント魚沼025-792-9900へ収集日の5日前から前日17時まで予約。",
+    "fee_system": "サイズ区分制の粗大ごみ処理券：小物（縦横高の長辺1m未満）500円、中物（1m以上1.5m未満）1,000円、大物（1.5m以上）2,000円。カーペット・じゅうたんは6畳まで500円、7畳以上1,000円。",
+    "fee_examples": [
+      {
+        "item": "小物（長辺1m未満）",
+        "fee": "500円"
+      },
+      {
+        "item": "中物（1〜1.5m未満）",
+        "fee": "1,000円"
+      },
+      {
+        "item": "大物（1.5m以上）",
+        "fee": "2,000円"
+      },
+      {
+        "item": "カーペット・じゅうたん（6畳まで）",
+        "fee": "500円"
+      },
+      {
+        "item": "カーペット・じゅうたん（7畳以上）",
+        "fee": "1,000円"
+      },
+      {
+        "item": "6号袋（大和地域）",
+        "fee": "350円"
+      }
+    ],
+    "bring_in": "【六日町・塩沢】可燃ごみ処理施設/不燃ごみ処理施設へ直接搬入（60cm超または10kg超のもの対象）。月-土9:00-12:00,13:00-17:00、日・祝9:00-12:00、1/1-1/3休み。指定袋なしは10kgあたり50円（破砕なし）/100円（破砕あり）、指定袋使用は無料、粗大ごみは品物により異なる。問合せ025-782-0339。",
+    "akiya_bank_url": "https://www.city.minamiuonuma.niigata.jp/akiyabank/",
+    "akiya_bank_notes": "市運営（空き家バンクサイト・売り物件/賃貸ページあり）。問合せは市役所代表025-773-6660。物件件数は公式トップに記載なし[要確認]。アットホーム版サイトもあり。",
+    "source_urls": [
+      "https://www.city.minamiuonuma.niigata.jp/docs/1458.html",
+      "https://www.city.minamiuonuma.niigata.jp/docs/1446.html",
+      "https://www.city.minamiuonuma.niigata.jp/docs/1462.html",
+      "https://www.city.minamiuonuma.niigata.jp/akiyabank/"
+    ],
+    "notes": "大和地域の直接搬入は別ページ(docs/1459)で未確認[要確認]。大和地域の処理券は6号袋350円含む同額。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "胎内市",
+    "cityId": "tainai",
+    "sodai_official_url": "https://www.city.tainai.niigata.jp/kurashi/sekatsu/gomi/sodaigomi.html",
+    "apply_method": "粗大ごみ（不燃ごみ指定袋に入らない物・高さ1.5m/重さ50kg程度まで）は処理券（ステッカー）を貼って出す。事前申込・収集日の記載は公式ページで確認できず。大量の場合は処理券なしで不燃物処理場へ直接搬入可。問合せは市民生活課生活環境係0254-43-6111。",
+    "fee_system": "粗大ごみ処理券（ステッカー）1枚500円。持込みは重量制：10kgあたり100円。",
+    "fee_examples": [
+      {
+        "item": "粗大ごみ処理券（1枚）",
+        "fee": "500円"
+      },
+      {
+        "item": "持込み（可燃物・不燃物処理場）",
+        "fee": "10kgあたり100円（指定ごみ袋に入れれば無料）"
+      }
+    ],
+    "bring_in": "燃えるごみ：中条地区塵芥焼却場（胎内市富岡7-123・0254-46-3434）平日8:30-12:00,13:00-16:00／土8:30-11:30。燃えないごみ・粗大ごみ：新発田広域不燃物処理場（胎内市中村浜864-27・0254-45-2370）平日8:30-11:30,13:00-16:30／土(第1・3週のみ)8:30-11:30。日祝休場。料金は10kgあたり100円。木製家具は受入範囲内のみ可燃物処理場へ。",
+    "akiya_bank_url": "https://www.city.tainai.niigata.jp/kurashi/sekatsu/sumai/akiyabank.html",
+    "akiya_bank_notes": "市運営（問合せ0254-43-6111・akiyabank@city.tainai.lg.jp）。登録物件を市サイト内に個別ページで掲載（複数件）。利用者登録が必要。",
+    "source_urls": [
+      "https://www.city.tainai.niigata.jp/kurashi/sekatsu/gomi/sodaigomi.html",
+      "https://www.city.tainai.niigata.jp/kurashi/sekatsu/gomi/oogatagomi.html",
+      "https://www.city.tainai.niigata.jp/kurashi/sekatsu/gomi/chizu.html",
+      "https://www.city.tainai.niigata.jp/kurashi/sekatsu/sumai/akiyabank.html"
+    ],
+    "notes": "[要確認] 粗大ごみの収集日・事前申込の要否。搬入不可（ソファ・ベッド・モーター付き機器など）は販売店か許可業者へ依頼と案内あり。大型ごみページでは10kgあたり100円の持込みのみ記載。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "聖籠町",
+    "cityId": "seiro",
+    "sodai_official_url": "https://www.town.seiro.niigata.jp/1/5/2/1/123.html",
+    "apply_method": "町が収集する粗大ごみは指定の不燃物のみ（金属製家具・パイプベッド・自転車等で60×90×150cm以内を「燃えないごみ」ステーションへ。申込記載なし）。木製家具は分解して「燃やせるごみ」指定袋に入れるか、豊栄環境センターへ直接搬入（有料）、または収集運搬許可業者へ依頼（有料・東高建機作業(株)025-256-2560など）。問合せは生活環境課。",
+    "fee_system": "町収集分は指定袋制。直接搬入は重量制（受付で計量、現金払い）：令和8年6月1日から100円/10kg（改定前60円/10kg）。許可業者は業者ごとの有料。",
+    "fee_examples": [
+      {
+        "item": "豊栄環境センター直接搬入（令和8年6月〜）",
+        "fee": "100円/10kg"
+      },
+      {
+        "item": "同（令和8年5月31日まで）",
+        "fee": "60円/10kg"
+      }
+    ],
+    "bring_in": "豊栄環境センター（新潟市北区浦ノ入418・025-386-0909）：予約不要。平日8:30-12:00,13:00-16:00／土8:30-12:00,13:00-15:00。受付で廃棄物処理依頼書を記入し計量。燃やせるごみは3m×90cm×70cm、燃えないごみは180×90×70cmまで。",
+    "akiya_bank_url": "https://www.town.seiro.niigata.jp/1/3/1/10/1/420.html",
+    "akiya_bank_notes": "町は物件登録の受付・管理のみ（総合政策課0254-27-2111）。媒介は公益財団法人新潟県宅地建物取引業協会。公式ページに登録物件一覧は無し。",
+    "source_urls": [
+      "https://www.town.seiro.niigata.jp/1/5/2/1/123.html",
+      "https://www.town.seiro.niigata.jp/material/files/group/8/2026dictionary.pdf",
+      "https://www.town.seiro.niigata.jp/1/3/1/10/1/420.html"
+    ],
+    "notes": "料金は令和8年4月改訂版『ごみの出し方辞典』PDFの表から読取。表レイアウトが崩れているため区分（燃やすごみ/粗大ごみ別）は[要確認]。粗大ごみの品目別料金表は無い。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "弥彦村",
+    "cityId": "yahiko",
+    "sodai_official_url": "https://www.vill.yahiko.niigata.jp/life/?content=116",
+    "apply_method": "収集業者（株式会社小林建材 0256-94-4432）へ申込み、約束した日に自宅まで戸別収集。粗大ごみシールを購入して貼る。シール取扱所は弥彦村役場 産業部 防災むらづくり課（平日8:30-17:00・祝日と12/29-1/3除く）。問合せ0256-94-1022。",
+    "fee_system": "粗大ごみシール制。金額は品目により300円・500円・1,000円（燕・弥彦総合事務組合の案内。品目との対応は公式ページで確認できず）。",
+    "fee_examples": [
+      {
+        "item": "粗大ごみシール（種類により）",
+        "fee": "300円／500円／1,000円"
+      }
+    ],
+    "bring_in": "令和5年10月2日から燕・弥彦総合事務組合 環境センター（燕市吉田吉栄777・0256-93-4704）へ直接搬入可：平日13:00-17:00、土9:00-12:00（祝日・年末年始除く）。原則1回5点まで、事業所分は不可、料金はシール（現金のみ）。",
+    "akiya_bank_url": "https://akiya.vill.yahiko.niigata.jp/",
+    "akiya_bank_notes": "村運営の『弥彦村 空き家・空き地バンク』ポータル（令和6年7月開設）。売買14件・賃貸1件を掲載（確認時点）。現地相談窓口は弥彦の丘サテライトオフィス 0256-78-8877。",
+    "source_urls": [
+      "https://www.vill.yahiko.niigata.jp/life/?content=116",
+      "https://www.vill.yahiko.niigata.jp/life/?content=139",
+      "https://www.tysogo.jp/topics_system/public/detail/id/364",
+      "https://akiya.vill.yahiko.niigata.jp/"
+    ],
+    "notes": "[要確認] 粗大ごみシールの品目別金額（300/500/1,000円の対象品目）は公式ページで確認できず。村ページの受付時間表記『午後8時30分』は『午前8時30分』の誤記と解釈。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "田上町",
+    "cityId": "tagami",
+    "sodai_official_url": "https://www.town.tagami.niigata.jp/gomi/list/",
+    "apply_method": "町の粗大ごみ収集は公式ページで確認できず。分別表では50cm以内に壊せるものは燃えるごみ、ふとん・カーペット等は四つ折りにして紐で結び、加茂市・田上町消防衛生保育組合清掃センター（0256-57-2415）へ搬入。問合せは町民課住民係0256-57-6115。",
+    "fee_system": "[要確認] 清掃センター持込み手数料は公式ページで確認できず。",
+    "fee_examples": [],
+    "bring_in": "加茂市・田上町消防衛生保育組合清掃センター（田上町大字原ヶ崎新田2124・0256-57-2415）：9:00-16:30、休業日は日曜・8/15・12/31-1/3（加茂市公式ページ記載）。透明または白色半透明の袋で持込み。",
+    "akiya_bank_url": "https://www.town.tagami.niigata.jp/docs/12292.html",
+    "akiya_bank_notes": "町運営の空き家情報バンク（総務課政策推進室 0256-57-6222）。空き家5件（売却2・賃貸1・交渉中2）、空き地47件（確認時点）。アットホーム版サイトもあり。",
+    "source_urls": [
+      "https://www.town.tagami.niigata.jp/gomi/list/",
+      "https://www.town.tagami.niigata.jp/docs/8922.html",
+      "https://www.city.kamo.niigata.jp/docs/49911.html",
+      "https://www.town.tagami.niigata.jp/docs/12292.html"
+    ],
+    "notes": "[要確認] 町の粗大ごみ収集有無と清掃センター持込み手数料・申込要否。清掃センターは加茂市と共同利用（加茂市と同一施設）。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "阿賀町",
+    "cityId": "aga",
+    "sodai_official_url": "https://www.town.aga.niigata.jp/kurashi_tetsuzuki/gomi_seikatsukankyo/635.html",
+    "apply_method": "燃やす粗大ごみ（40cm四方以上の燃える物）はステーションに出せず、自己搬入（前日までの予約制）。搬入先はクリーンセンターあがのがわ（五泉市・有料・予約0250-47-5386）、または当面の間、粗大ごみ中継場（旧阿賀町クリーンセンター）に事前電話予約（92-2294）で搬入。自分で運べない場合は町の収集運搬許可業者（ごみ分別カレンダー記載）へ有償依頼。問合せは町民生活課廃棄物対策係0254-92-5761。",
+    "fee_system": "中継場は重量制の手数料：50kgまで700円、51〜100kgは1,000円、101kg以上は50kgごとに300円加算。",
+    "fee_examples": [
+      {
+        "item": "中継場 粗大ごみ（50kgまで）",
+        "fee": "700円"
+      },
+      {
+        "item": "中継場 粗大ごみ（51〜100kg）",
+        "fee": "1,000円"
+      },
+      {
+        "item": "中継場 粗大ごみ（101kg以上・50kgごと加算）",
+        "fee": "300円"
+      }
+    ],
+    "bring_in": "粗大ごみ中継場（旧阿賀町クリーンセンター・阿賀町払川1991・電話0254-92-2294）：月・木曜（祝日除く）10:00-15:00（12-13時除く）、要事前予約、町民・町内に住居管理者のみ、受入は家庭系燃やす粗大ごみのみ（家具類は幅1.5×奥行1×高さ2m以内、板類は長さ2m×幅1m×厚12cm以内、ふとん・カーペット等）。クリーンセンターあがのがわは有料・予約制（料金は阿賀町ページで確認できず）。",
+    "akiya_bank_url": "https://www.town.aga.niigata.jp/agamachi_soshiki/machizukuri_kanko/jutaku_tochijoho/210.html",
+    "akiya_bank_notes": "町運営の『空き家等情報登録制度』（まちづくり観光課 0254-92-4766）。物件一覧（空き家バンク）あり、売却希望の登録物件を掲載。町は斡旋・仲介を行わない（契約は当事者間）。",
+    "source_urls": [
+      "https://www.town.aga.niigata.jp/kurashi_tetsuzuki/gomi_seikatsukankyo/635.html",
+      "https://www.town.aga.niigata.jp/info/chomin_seikatsu_info/2795.html",
+      "https://www.town.aga.niigata.jp/material/files/group/4/sodai.pdf",
+      "https://www.town.aga.niigata.jp/agamachi_soshiki/machizukuri_kanko/jutaku_tochijoho/210.html"
+    ],
+    "notes": "中継場の電話番号はPDFで『92-2294』（市外局番0254補完）。クリーンセンターあがのがわの阿賀町民向け料金表は阿賀町公式で未確認[要確認]（五泉市・阿賀野市と共同施設で粗大ごみ0〜50kg300円等の可能性あり、未確認）。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "出雲崎町",
+    "cityId": "izumozaki",
+    "sodai_official_url": "https://www.town.izumozaki.niigata.jp/kurashi/seikatsu/gomi-dashikata.html",
+    "apply_method": "事前申込制・月1回の戸別収集。電話（収集日の4日前から前日まで9:00-16:30、前日は正午まで）／FAX／LINE（収集前日正午まで24時間受付）で申込。申込時に住所・氏名・電話またはFAX番号・品名・大きさ・数量を伝える（1回5点まで）。受付時に品目ごとの金額と収集日を案内。ごみ袋販売店で処理券シールを購入して貼り、収集日午前8時までに玄関先へ。町民課町民係0258-78-2294（町ページ記載。町ごみの出し方冊子の申込用番号は090-5778-2453／0258-77-3602、FAX0258-77-3602）。",
+    "fee_system": "品目ごとに200円・600円・1,000円の3段階の粗大ごみ処理券シール（品目別料金は『ごみ分別表』参照）。スプリング入りマットレス・ソファー・いすは収集不可（許可業者へ）。",
+    "fee_examples": [
+      {
+        "item": "カーペット（6畳以上は600円）",
+        "fee": "200円"
+      },
+      {
+        "item": "乳母車",
+        "fee": "200円"
+      },
+      {
+        "item": "羽毛布団（丸めて縛る）",
+        "fee": "200円"
+      },
+      {
+        "item": "一輪車（家庭荷物運搬用）",
+        "fee": "600円"
+      },
+      {
+        "item": "鏡台（ドレッサー）",
+        "fee": "600円"
+      },
+      {
+        "item": "学習机",
+        "fee": "600円"
+      },
+      {
+        "item": "オルガン",
+        "fee": "1,000円"
+      }
+    ],
+    "bring_in": "中之島信条クリーンセンター（長岡市中条新田1080-2・0256-97-7260）：やむを得ず多量に出た場合のみ、事前に電話して施設確認後に持込み。月-土8:30-16:30（祝日・振替休日・年末年始除く）。粗大ごみは処理券シール貼付（戸別収集と同額200/600/1,000円、持込み前に金額確認）。燃やす/燃やさないごみは指定袋なら無料、袋なしは100kgまで300円。",
+    "akiya_bank_url": "https://www.town.izumozaki.niigata.jp/takuchi/bank/",
+    "akiya_bank_notes": "町運営の『空き家・空き地情報バンク』（総務課地域政策室 0258-78-2290）。物件を町サイトに掲載（令和7年登録の物件あり）。件数は公式本文に記載なし。アットホーム版サイトもあり。",
+    "source_urls": [
+      "https://www.town.izumozaki.niigata.jp/kurashi/seikatsu/gomi-dashikata.html",
+      "https://www.town.izumozaki.niigata.jp/kurashi/seikatsu/sodaigomi_LINE",
+      "https://www.town.izumozaki.niigata.jp/_files/00080675/2025_gomidasikata_ALL.pdf",
+      "https://www.town.izumozaki.niigata.jp/_files/00071741/2024_motikomi.pdf",
+      "https://www.town.izumozaki.niigata.jp/takuchi/bank/"
+    ],
+    "notes": "品目別料金は令和6年4月改訂版『ごみと資源物の分け方と出し方』のごみ分別表（31頁〜）から目視確認。申込番号が町サイトと冊子で異なるため最新は町へ確認[要確認]。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "湯沢町",
+    "cityId": "yuzawa",
+    "sodai_official_url": "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kankyonorinka/1/1/1348.html",
+    "apply_method": "予約制の戸別収集。収集日の3日前まで（休日の場合はその前の平日）に環境農林課025-788-0291（月-金8:30-17:15）へ電話し、住所・氏名・電話・品目と数量を伝える→料金案内後に取扱店で処理券を購入→品物に貼付→収集当日朝8:30までに玄関前へ。収集日は毎月第2・第4木曜日（休日の場合は翌日）。",
+    "fee_system": "サイズ区分制の粗大ごみ処理券：小物500円（長辺1m未満）、中物1,000円（1m以上1.5m未満）、大物2,000円（1.5m以上）。",
+    "fee_examples": [
+      {
+        "item": "小物（長辺1m未満）",
+        "fee": "500円"
+      },
+      {
+        "item": "中物（1〜1.5m未満）",
+        "fee": "1,000円"
+      },
+      {
+        "item": "大物（1.5m以上）",
+        "fee": "2,000円"
+      }
+    ],
+    "bring_in": "自己搬入は従来どおり可。南魚沼市の処理施設へ搬入可（施設名・受付時間・料金は湯沢町ページ内に記載なし。『ごみの自己搬入のご案内』参照）。",
+    "akiya_bank_url": "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kikakukankouka/3/1/6834.html",
+    "akiya_bank_notes": "町運営（企画産業観光部 企画観光課 025-784-4850）。物件情報は『at home空き家バンク』と移住定住ポータルで公開。件数は公式ページに記載なし[要確認]。",
+    "source_urls": [
+      "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kankyonorinka/1/1/1348.html",
+      "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kankyonorinka/1/1/1341.html",
+      "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kikakukankouka/3/1/6834.html"
+    ],
+    "notes": "[要確認] 南魚沼市施設への搬入時間・料金（湯沢町公式ページ内に無し）。品目とサイズ区分の対応表は未確認。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "津南町",
+    "cityId": "tsunan",
+    "sodai_official_url": "https://www.town.tsunan.niigata.jp/soshiki/zeimuchomin/gomi-bumbetsu.html",
+    "apply_method": "燃える粗大ごみ（木製家具、カーペット、布団・毛布、たたみ、スプリングなしマットレス等）は紙片等に名前を付けてそのままごみ集積所へ。燃えない粗大ごみ（金属ごみ）も指定袋に入らない大型品は氏名を書いて出す。大量・二人で積めない重いものは収集不可で、処理場へ直接搬入か許可業者へ有償依頼。事前申込・処理券の記載なし。問合せは税務町民課025-765-3111。",
+    "fee_system": "集積所出しの粗大ごみの手数料は公式ページに記載なし。処理場持込みは重量制：家庭系の燃えるごみ・燃える粗大ごみ・埋立てごみは10kgあたり70円。",
+    "fee_examples": [],
+    "bring_in": "津南地域衛生施設組合（津南町大字下船渡戊2013・025-765-3495）：平日および日曜開業日8:45-12:00,13:00-16:45、第1・第3土曜8:45-11:45。家庭系の燃えるごみ・燃える粗大ごみ・埋立てごみは10kgあたり70円、プラ・金属ごみは無料。予約の要否は記載なし。",
+    "akiya_bank_url": "https://www.town.tsunan.niigata.jp/soshiki/kankou/akiya-bank.html",
+    "akiya_bank_notes": "町運営（観光地域づくり課 商工観光班 025-765-5454）。物件は町公式移住サイト（iju-tsunan.org）とアットホーム版空き家バンクサイトに掲載（売買・賃貸）。",
+    "source_urls": [
+      "https://www.town.tsunan.niigata.jp/soshiki/zeimuchomin/gomi-bumbetsu.html",
+      "https://www.town.tsunan.niigata.jp/soshiki/zeimuchomin/gomi-mochikomi.html",
+      "https://www.town.tsunan.niigata.jp/soshiki/kankou/akiya-bank.html"
+    ],
+    "notes": "[要確認] 粗大ごみ（集積所出し）の手数料・サイズ基準・事前申込の要否は公式ページに明記なし。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "刈羽村",
+    "cityId": "kariwa",
+    "sodai_official_url": "https://www.vill.kariwa.niigata.jp/www/info/detail.jsp?id=311",
+    "apply_method": "全村一斉の戸別収集（毎週金曜日）。粗大ごみ収集申込書を役場福祉保健課（電話0257-45-3916・FAX 0257-45-2818）に、収集日の前週の金曜日までに提出（窓口/FAX/マイナンバーカードによる電子申請）。粗大ごみ処理券は村内取扱所（セブンイレブン中越刈羽店等）で購入して貼付、収集日午前8時までに自宅前の道路から見える場所へ。目安は軽トラック1台分。家電リサイクル品・農機具・ピアノ・バイク・電動ベッド等は収集不可。",
+    "fee_system": "品目ごとの定額制の粗大ごみ処理券（主な品目一覧表あり）。",
+    "fee_examples": [
+      {
+        "item": "たんす",
+        "fee": "900円"
+      },
+      {
+        "item": "ベッド（電動を除く）",
+        "fee": "900円"
+      },
+      {
+        "item": "ベッドマット（スプリングあり）",
+        "fee": "900円"
+      },
+      {
+        "item": "ベッドマット（スプリングなし）",
+        "fee": "300円"
+      },
+      {
+        "item": "足踏みミシン",
+        "fee": "900円"
+      },
+      {
+        "item": "ちゃぶ台",
+        "fee": "600円"
+      },
+      {
+        "item": "こたつ",
+        "fee": "300円"
+      },
+      {
+        "item": "アコーディオンカーテン",
+        "fee": "300円"
+      }
+    ],
+    "bring_in": "村民はクリーンセンターかしわざき（柏崎市松波4-13-13）へ粗大ごみを直接搬入可（検索要約による。受付は月-金8:30-16:30、土・祝8:30-11:30は柏崎市ページ記載）。料金は刈羽村公式で未確認[要確認]。問合せ福祉保健課0257-45-3916。",
+    "akiya_bank_url": "https://kariwa-v15504.akiya-athome.jp/",
+    "akiya_bank_notes": "村運営（建設課 0257-45-3919）。村HPで制度案内、物件は『刈羽村空き家バンクサイト』（アットホーム基盤）に掲載。売戸建の例あり（寺尾）。",
+    "source_urls": [
+      "https://www.vill.kariwa.niigata.jp/www/info/detail.jsp?id=311",
+      "https://www.vill.kariwa.niigata.jp/open/info/000000001_0000029890.pdf",
+      "http://www.vill.kariwa.niigata.jp/www/info/detail.jsp?id=5991",
+      "https://kariwa-v15504.akiya-athome.jp/"
+    ],
+    "notes": "料金は2026.04版の申込書PDF裏面『粗大ごみ主な品目一覧表』から。クリーンセンターかしわざき搬入のお知らせページ(id=8760)はサーバーエラーで未取得[要確認]。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "関川村",
+    "cityId": "sekikawa",
+    "sodai_official_url": "http://www.vill.sekikawa.niigata.jp/life/12/679/588/index.html",
+    "apply_method": "村による粗大ごみ（タンス・ベッドなど80×50×40cm以上かつ15kg超）の収集は公式ページに記載なし。ステーションに出せない大きいごみは、許可業者へ収集運搬を依頼するか、村上市ごみ処理場へ直接搬入（事前申込不要・受付で手続）。問合せは住民税務課住民環境班0254-64-1471。",
+    "fee_system": "処理場持込みは重量制：1回10kgまで60円、10kg超は10kgごとに60円加算（村上市ごみ処理場の手数料）。許可業者依頼は業者ごとの有料。",
+    "fee_examples": [
+      {
+        "item": "村上市ごみ処理場 持込み（10kgまで）",
+        "fee": "60円"
+      },
+      {
+        "item": "同（10kg超・10kgごと）",
+        "fee": "60円加算"
+      }
+    ],
+    "bring_in": "村上市ごみ処理場（村上市桧原1147・0254-60-2430）：8:30-16:00（村公式ページ記載）。燃やす/燃やさないごみに分けて搬入、計量して支払い。",
+    "akiya_bank_url": "http://www.vill.sekikawa.niigata.jp/life/13/696/index.html",
+    "akiya_bank_notes": "村運営の『関川村空き家・空き地バンク』。物件は村サイトに掲載（売買・賃貸の登録物件あり。件数は未確認）。登録は無料、村は仲介・成約保証は行わない。",
+    "source_urls": [
+      "http://www.vill.sekikawa.niigata.jp/life/12/679/588/index.html",
+      "http://www.vill.sekikawa.niigata.jp/life/12/679/79/index.html",
+      "http://www.vill.sekikawa.niigata.jp/life/13/696/index.html"
+    ],
+    "notes": "[要確認] 村内の粗大ごみ収集の有無、許可業者名・料金（村ごみ冊子に掲載）。公衛社リサイクルセンター（関川村滝原 0254-64-2182）の記載が冊子にあるが受入内容は未確認。村の空き家ページは接続エラーで内容を本文確認できず、検索結果要約に基づく[要確認]。",
+    "checked_date": "2026-10-01"
+  },
+  {
+    "city": "粟島浦村",
+    "cityId": "awashimaura",
+    "sodai_official_url": "https://www.vill.awashimaura.lg.jp/news/5654/",
+    "apply_method": "ごみ分別表（2025年4月〜）上、粗大ごみ（リサイクル以外の家電・布団・ストーブ・家具・カーペット・畳・漁具・タイヤ等）は名前を書いて指定日に出す。大型の粗大ごみは直接焼却場に持ち込むか、連絡すれば取りに来る。やむを得ず捨てたい場合は事前連絡。ごみ処理場0254-55-2126。",
+    "fee_system": "粗大ごみ手数料を徴収（令和7年度予算に計上）しているが、料金表は公式ページ・分別表で確認できず。",
+    "fee_examples": [],
+    "bring_in": "焼却場（ごみ処理場 0254-55-2126）へ直接持込み可（有料。ただし少量・小さい不燃物・粗大ごみは持ち込まず指定日に出すよう案内）。受付時間・料金は[要確認]。",
+    "akiya_bank_url": null,
+    "akiya_bank_notes": "公式の空き家バンクは確認できず（移住ページには公営住宅整備・空き家整備に取り組むとのみ記載）。窓口は総務課住民税務係 0254-55-2111。",
+    "source_urls": [
+      "https://www.vill.awashimaura.lg.jp/news/5654/",
+      "https://www.vill.awashimaura.lg.jp/wp-content/uploads/2025/02/R7gomibunnbetuhyou.pdf",
+      "https://www.vill.awashimaura.lg.jp/emigration/guidance/"
+    ],
+    "notes": "[要確認] 粗大ごみの手数料額・収集日・持込み受付時間・申込方法の詳細（公式には分別表とカレンダーのみ）。空き家バンク[要確認]。",
+    "checked_date": "2026-10-01"
+  }
+]
