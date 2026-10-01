@@ -104,7 +104,7 @@ ${noindex ? '<meta name="robots" content="noindex,nofollow">' : ""}
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="${url("/assets/favicon.svg")}" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="${esc(SITE.name)}" href="${abs("/feed.xml")}">
 <style>${css}</style>
 ${ld}
@@ -208,8 +208,12 @@ ${s.not_accepted ? `<p><strong>市で収集できない物の例:</strong> ${esc
 
 <section id="akiya">
 <h2>空き家になる実家の補助金・空き家バンク・雪の支援</h2>
-<h3>老朽化した空き家の解体補助金</h3>
-${subsidy.has ? `<p><strong>${esc(subsidy.name)}</strong>${subsidy.maxAmount ? `（${esc(subsidy.maxAmount)}）` : ""}。${subsidy.conditions ? `対象: ${esc(Array.isArray(subsidy.conditions) ? subsidy.conditions.join("／") : subsidy.conditions)}` : ""} ${subsidy.officialUrl ? `<a href="${esc(subsidy.officialUrl)}" rel="noopener nofollow">公式ページ</a>` : ""}</p>` : `<p>${esc(c.city)}では、個人向けの空き家解体補助金を公式サイトで確認できませんでした${subsidy.window ? `（担当: ${esc(subsidy.window)}${subsidy.phone ? ` ${esc(subsidy.phone)}` : ""}）` : ""}。制度は年度で変わるため、市の窓口にご確認ください。</p>`}
+<h3>空き家の解体に使える補助金</h3>
+${a.demolition_subsidy?.name
+  ? `<p><strong>${esc(a.demolition_subsidy.name)}</strong>${a.demolition_subsidy.max_amount ? `：${esc(a.demolition_subsidy.max_amount)}` : ""}。${a.demolition_subsidy.url ? `<a href="${esc(a.demolition_subsidy.url)}" rel="noopener nofollow">公式ページ</a>` : ""}</p><p class="small">受付期間や対象は年度ごとに変わります。申請は着工前が原則です。確認日: ${esc(a.checked_date || TODAY)}</p>`
+  : subsidy.has
+    ? `<p><strong>${esc(subsidy.name)}</strong>${subsidy.maxAmount ? `（${esc(subsidy.maxAmount)}）` : ""}。${subsidy.conditions ? `対象: ${esc(Array.isArray(subsidy.conditions) ? subsidy.conditions.join("／") : subsidy.conditions)}` : ""} ${subsidy.officialUrl ? `<a href="${esc(subsidy.officialUrl)}" rel="noopener nofollow">公式ページ</a>` : ""}</p><p class="small">制度は年度で変わります。最新の受付状況は公式ページでご確認ください。</p>`
+    : `<p>${esc(c.city)}では、個人向けの空き家解体補助金を公式サイトで確認できませんでした${subsidy.window ? `（担当: ${esc(subsidy.window)}${subsidy.phone ? ` ${esc(subsidy.phone)}` : ""}）` : ""}。制度は年度で変わるため、市の窓口にご確認ください。</p>`}
 ${a.akiya_bank_url ? `<h3>空き家バンク</h3><p>${esc(c.city)}の空き家バンク: <a href="${esc(a.akiya_bank_url)}" rel="noopener nofollow">${esc(a.akiya_bank_url)}</a>${a.akiya_bank_operator ? `（運営: ${esc(a.akiya_bank_operator)}）` : ""}。売る・貸すを考えるなら、解体の前に登録できるか確認する価値があります。</p>` : ""}
 ${a.snow_support?.name ? `<h3>雪下ろし・除雪の支援</h3><p><strong>${esc(a.snow_support.name)}</strong>${a.snow_support.target ? `：対象は${esc(a.snow_support.target)}` : ""}${a.snow_support.amount ? `、${esc(a.snow_support.amount)}` : ""}。${a.snow_support.url ? `<a href="${esc(a.snow_support.url)}" rel="noopener nofollow">公式ページ</a>` : ""}</p>` : ""}
 ${a.akiya_consult?.section ? `<p>空き家の相談窓口: ${esc(a.akiya_consult.section)}${a.akiya_consult.url ? `（<a href="${esc(a.akiya_consult.url)}" rel="noopener nofollow">案内ページ</a>）` : ""}</p>` : ""}
@@ -284,8 +288,7 @@ function home() {
   const guideCards = guides.slice(0, 5).map((g) => `<li><a href="${url(`/guide/${g.slug}/`)}"><strong>${esc(g.meta.title)}</strong></a></li>`).join("");
   const body = `
 <section class="hero">
-  <p class="eyebrow">新潟県の実家じまい案内 ・ 長岡から運営</p>
-  <h1>新潟の実家を、遠くからでも、雪の季節でも、片付けられるように。</h1>
+    <h1>新潟の実家を、遠くからでも、雪の季節でも、片付けられるように。</h1>
   <p class="lead">粗大ごみの出し方と料金、ごみの持ち込み先、空き家の解体補助金、雪下ろしの支援。新潟県30市町村の公式情報を1か所にまとめ、まとめて頼みたいときは地元の許可業者につなぎます。</p>
   <form class="city-jump" action="${url("/city/")}" method="get" onsubmit="var v=this.c.value;if(v){location.href='${url("/city/")}'+v+'/';return false;}">
     <label for="c">市町村を選ぶ</label>
@@ -294,9 +297,9 @@ function home() {
   </form>
 </section>
 <ol class="steps">
-  <li><span class="num">其の一</span><h2>市のルールを知る</h2><p>粗大ごみは申し込み制で、品目ごとに料金が決まっています。持ち込めば早く安く済むこともあります。</p><a href="${url("/city/")}">市町村別ガイドへ</a></li>
-  <li><span class="num">其の二</span><h2>進め方と費用を把握する</h2><p>何から手を付けるか、帰省2回で終わらせる段取り、冬の雪対策、業者に頼む分かれ目。</p><a href="${url("/guide/")}">実家じまいの進め方へ</a></li>
-  <li><span class="num">其の三</span><h2>頼むなら許可のある業者に</h2><p>県内${(prices.companies || []).length}社の公開料金を集計。許可の確認方法と、見積もりで聞くべきこと。</p><a href="${url("/gyosha/")}">業者の料金と選び方へ</a></li>
+  <li><span class="num">01</span><h2>市のルールを知る</h2><p>粗大ごみは申し込み制で、品目ごとに料金が決まっています。持ち込めば早く安く済むこともあります。</p><a href="${url("/city/")}">市町村別ガイドへ</a></li>
+  <li><span class="num">02</span><h2>進め方と費用を把握する</h2><p>何から手を付けるか、帰省2回で終わらせる段取り、冬の雪対策、業者に頼む分かれ目。</p><a href="${url("/guide/")}">実家じまいの進め方へ</a></li>
+  <li><span class="num">03</span><h2>頼むなら許可のある業者に</h2><p>県内${(prices.companies || []).length}社の公開料金を集計。許可の確認方法と、見積もりで聞くべきこと。</p><a href="${url("/gyosha/")}">業者の料金と選び方へ</a></li>
 </ol>
 <section><h2>詳しいガイドのある市</h2><ul class="card-grid">${coreCards}</ul><p><a href="${url("/city/")}">30市町村すべてを見る →</a></p></section>
 <section><h2>実家じまいの進め方（新潟版）</h2><ul class="guide-list compact">${guideCards}</ul></section>
