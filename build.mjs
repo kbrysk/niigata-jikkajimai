@@ -65,6 +65,13 @@ const guides = fs.existsSync(path.join(ROOT, "content/guides"))
       return { slug, meta, body, html: marked.parse(body) };
     })
   : [];
+// 市ごとの「粗大ごみ」専用ガイド（slug: <cityId>-shi-sodaigomi / <cityA>-<cityB>-sodaigomi）がある市は、
+// 市町村ページと同じ検索語を取り合わないよう、市町村ページ側の名乗りを「実家じまいガイド」に寄せる（2026-10-02 カニバリ対策）
+const sodaiGuideFor = {};
+for (const g of guides) {
+  if (!/-sodaigomi$/.test(g.slug)) continue;
+  for (const part of g.slug.replace(/-sodaigomi$/, "").split("-")) if (part && part !== "shi") sodaiGuideFor[part] = g;
+}
 // 編集用マーカーを読者向け表記に変換し、先頭のH1（レイアウト側で出す）を除く
 function cleanBody(src) {
   return src
@@ -81,7 +88,7 @@ const pages = fs.existsSync(path.join(ROOT, "content/pages"))
 
 // ---------- レイアウト ----------
 const css = fs.readFileSync(path.join(ROOT, "public/assets/site.css"), "utf8");
-function layout({ title, description, pathname, body, breadcrumbs = [], jsonld = [], noindex = false, updated }) {
+function layout({ title, description, pathname, body, breadcrumbs = [], jsonld = [], noindex = false, updated, stickyCta = true }) {
   // <title> は検索結果で切れないよう「｜」より前の主題だけを使う（H1 は本文側で全文を出す）
   const shortTitle = String(title).split(/[｜|]/)[0].trim();
   const fullTitle = pathname === "/" ? `${SITE.name}｜${SITE.tagline}` : `${shortTitle}｜${SITE.name}`;
@@ -106,7 +113,7 @@ ${noindex ? '<meta name="robots" content="noindex,nofollow">' : ""}
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="${url("/assets/favicon.svg")}" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="${esc(SITE.name)}" href="${abs("/feed.xml")}">
 <style>${css}</style>
 ${ld}
@@ -115,25 +122,38 @@ ${ld}
 <a class="skip" href="#main">本文へ</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="${url("/")}"><span class="brand-mark" aria-hidden="true">帖</span><span class="brand-name">${esc(SITE.name)}</span></a>
+    <a class="brand" href="${url("/")}"><span class="brand-mark" aria-hidden="true">帖</span><span class="brand-name">${esc(SITE.name)}<span class="brand-sub">新潟県30市町村の粗大ごみ・実家の片付け・空き家</span></span></a>
     <nav class="nav" aria-label="主要メニュー">
       <a href="${url("/city/")}">市町村別ガイド</a>
-      <a href="${url("/guide/")}">実家じまいの進め方</a>
+      <a href="${url("/guide/")}">進め方と費用</a>
       <a href="${url("/gyosha/")}">業者の料金と選び方</a>
-      <a class="cta" href="${url("/mitsumori/")}">見積もり相談</a>
+      <a class="cta" href="${url("/mitsumori/")}">無料で見積もり相談</a>
     </nav>
   </div>
 </header>
-<nav class="crumbs wrap" aria-label="パンくず"><ol>${crumbs.map((c, i) => (i === crumbs.length - 1 ? `<li aria-current="page">${esc(c.name)}</li>` : `<li><a href="${url(c.path)}">${esc(c.name)}</a></li>`)).join("")}</ol></nav>
+${pathname === "/" ? "" : `<nav class="crumbs wrap" aria-label="パンくず"><ol>${crumbs.map((c, i) => (i === crumbs.length - 1 ? `<li aria-current="page">${esc(c.name)}</li>` : `<li><a href="${url(c.path)}">${esc(c.name)}</a></li>`)).join("")}</ol></nav>`}
 <main id="main" class="wrap">
 ${body}
 </main>
+${stickyCta && pathname !== "/mitsumori/" ? `<div class="sticky-cta" aria-label="相談"><a class="btn ghost" href="${url("/city/")}">市町村を選ぶ</a><a class="btn" href="${url("/mitsumori/")}">無料で見積もり相談</a></div>` : ""}
 <footer class="site-footer">
   <div class="wrap">
-    <p class="foot-lead">${esc(SITE.name)}は、長岡市在住の運営者が、新潟県の市町村の公式情報と地元の業者を確かめて載せる実家じまいの案内サイトです。掲載情報は各市町村の公式サイトを出典とし、確認日を記載しています。制度や料金は変わることがあるため、最新の情報は公式サイトでご確認ください。</p>
-    <p class="foot-links"><a href="${url("/about/")}">運営者情報</a> ・ <a href="${url("/keisai/")}">業者の掲載について</a> ・ <a href="${url("/privacy/")}">プライバシーポリシー</a> ・ <a href="${url("/tokusho/")}">特定商取引法に基づく表記</a> ・ <a href="${url("/ad-policy/")}">広告について</a></p>
-    <p class="foot-sister">姉妹サイト: <a href="https://www.fureaino-oka.com/" rel="noopener">生前整理支援センター ふれあいの丘</a>（実家じまい・空き家解体の補助金）／ <a href="https://hakarau.jp/" rel="noopener">ハカラウ</a>（墓じまい・改葬の手続き）</p>
-    <p class="copy">© ${new Date().getFullYear()} ${esc(SITE.operator)}${updated ? ` ・ このページの更新日: ${esc(updated)}` : ""}</p>
+    <div class="cols">
+      <div>
+        <h2>${esc(SITE.name)}</h2>
+        <p class="foot-lead">長岡市在住の運営者が、新潟県30市町村の公式情報と地元の許可業者を確かめて載せる、実家じまいの案内サイトです。掲載情報は各市町村の公式サイトを出典とし、ページごとに確認日を記載しています。制度や料金は変わることがあるため、申し込み前に公式サイトでご確認ください。</p>
+      </div>
+      <div>
+        <h2>読む</h2>
+        <ul><li><a href="${url("/city/")}">市町村別ガイド（30市町村）</a></li><li><a href="${url("/data/sodai-hikaku/")}">30市町村 粗大ごみ手数料・持ち込み比較</a></li><li><a href="${url("/guide/")}">実家じまいの進め方と費用</a></li><li><a href="${url("/gyosha/")}">業者の料金と選び方</a></li><li><a href="${url("/mitsumori/")}">無料で見積もり相談</a></li></ul>
+      </div>
+      <div>
+        <h2>運営</h2>
+        <ul><li><a href="${url("/about/")}">運営者情報・編集方針</a></li><li><a href="${url("/keisai/")}">業者の方へ（掲載について）</a></li><li><a href="${url("/ad-policy/")}">広告について</a></li><li><a href="${url("/privacy/")}">プライバシーポリシー</a></li><li><a href="${url("/tokusho/")}">特定商取引法に基づく表記</a></li></ul>
+        <p class="small" style="color:rgba(255,255,255,.6);margin-top:12px">姉妹サイト: <a href="https://www.fureaino-oka.com/" rel="noopener">ふれあいの丘</a>（空き家解体の補助金・全国）／ <a href="https://hakarau.jp/" rel="noopener">ハカラウ</a>（墓じまい・改葬）</p>
+      </div>
+    </div>
+    <p class="copy">© ${new Date().getFullYear()} ${esc(SITE.operator)}${updated ? ` ・ このページの情報の確認日: ${esc(updated)}` : ""}</p>
   </div>
 </footer>
 </body>
@@ -148,10 +168,11 @@ function write(pathname, html) {
 
 const ctaBox = (city) => `
 <aside class="cta-box">
-  <h2>${city ? `${esc(city)}の実家の片付けを、まとめて頼みたい方へ` : "自分で出すのが難しいときは"}</h2>
-  <p>量が多い、遠方で何度も帰れない、積雪期で搬出が難しい。そんなときは、新潟県内で一般廃棄物の収集運搬許可を持つ地元業者に見積もりを依頼できます。相談は無料で、依頼の内容は運営者が確認してから業者に取り次ぎます。</p>
-  <p class="cta-actions"><a class="btn" href="${url("/mitsumori/")}">見積もり相談フォームへ</a> <a class="btn ghost" href="${url("/gyosha/")}">料金の目安と選び方を見る</a></p>
-  <p class="cta-note">※ 業者からの紹介料・掲載料を受け取ることがあります（<a href="${url("/ad-policy/")}">広告について</a>）。</p>
+  <h2>${city ? `${esc(city)}の実家の片付けを、まとめて頼みたい方へ` : "自分で出すのが難しいときは、地元の許可業者に"}</h2>
+  <p>量が多い、遠方で何度も帰れない、積雪期で搬出が難しい。そんなときは、新潟県内で一般廃棄物の収集運搬許可を持つ地元業者に見積もりを依頼できます。</p>
+  <ul class="cta-points"><li>相談・訪問見積もりは無料</li><li>運営者（長岡市在住）が内容を見て1〜2社を選ぶ</li><li>原則2営業日以内に連絡</li><li>断っても費用はかからない</li></ul>
+  <p class="cta-actions"><a class="btn" href="${url("/mitsumori/")}">無料で見積もり相談する</a> <a class="btn ghost" href="${url("/gyosha/")}">料金の目安と選び方を見る</a></p>
+  <p class="cta-note">※ 依頼が成立した場合、業者から紹介料・掲載料を受け取ることがあります。利用者の料金に上乗せはありません（<a href="${url("/ad-policy/")}">広告について</a>）。</p>
 </aside>`;
 
 const sourceList = (urls, checked) => (urls && urls.length ? `<section class="sources"><h2>出典</h2><ul>${urls.map((u) => `<li><a href="${esc(u)}" rel="noopener nofollow">${esc(u)}</a></li>`).join("")}</ul><p class="small">確認日: ${esc(checked || TODAY)}。制度・料金は変更されることがあります。必ず公式サイトの最新情報をご確認ください。</p></section>` : "");
@@ -162,6 +183,16 @@ function cityPage(c) {
   const a = c.ay || {};
   const feeRows = (s.fee_examples || []).filter((f) => (f.fee ?? f.price ?? f[1])).map((f) => `<tr><td>${esc(f.item ?? f.name ?? f[0])}</td><td class="n">${esc(f.fee ?? f.price ?? f[1])}</td></tr>`).join("");
   const bring = s.bring_in;
+  const sodaiGuide = sodaiGuideFor[c.cityId] || null;
+  // 即答カード用の値。公式の記載から機械的に拾えるものだけを使い、無いものは「—」にする
+  const feeNums = (s.fee_examples || []).flatMap((f) => [...String(f.fee || "").matchAll(/([\d,]+)円/g)].map((m) => Number(m[1].replace(/,/g, "")))).filter((n) => n > 0);
+  const feeMin = feeNums.length ? Math.min(...feeNums) : null;
+  const feeMax = feeNums.length ? Math.max(...feeNums) : null;
+  const phone = (String(s.apply_method || "").match(/0\d{1,4}-\d{1,4}-\d{3,4}/) || [])[0] || c.garbage?.phone || null;
+  const applyKinds = ["インターネット", "LINE", "電話", "FAX", "窓口", "チャットボット", "アプリ"].filter((k) => String(s.apply_method || "").includes(k));
+  const cs = prices.companies || [];
+  const minOf = (k) => { const v = cs.map((x) => x[k]).filter(Boolean); return v.length ? Math.min(...v) : null; };
+  const proK1 = minOf("k1"), proLdk3 = minOf("ldk3");
   const bringHtml = bring
     ? typeof bring === "string"
       ? `<p>${esc(bring)}</p>`
@@ -177,18 +208,29 @@ function cityPage(c) {
   const faqLd = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
   const body = `
 <article class="city">
-<header class="page-head">
-  <p class="eyebrow">${esc(c.area)}エリア ${c.core ? "・詳しいガイド" : ""}</p>
-  <h1>${esc(c.city)}の粗大ごみ｜料金・申し込み方法・持ち込み先と、実家じまいに使える制度</h1>
+<header class="band"><div class="inner">
+  <p class="eyebrow">${esc(c.area)}エリア${c.core ? "・詳しいガイド" : ""}</p>
+  <h1>${sodaiGuide ? `${esc(c.city)}の実家じまいガイド｜粗大ごみ・解体補助金・空き家バンク` : `${esc(c.city)}の粗大ごみ｜料金・申し込み方法・持ち込み先と、実家じまいに使える制度`}</h1>
   <p class="lead">${esc(c.city)}の粗大ごみの出し方と料金、ごみを自分で持ち込む方法、家電リサイクル、空き家の解体補助金と空き家バンクを、${esc(c.city)}の公式サイトを出典にまとめました。実家の片付けで量が多いときの頼み先も案内します。</p>
-  <p class="small">確認日: ${esc(s.checked_date || TODAY)}（粗大ごみ）／ 補助金は<a href="https://www.fureaino-oka.com/" rel="noopener">ふれあいの丘</a>の自治体データを使用</p>
-</header>
+  <div class="meta-row">
+    <span class="chip ok">公式サイトで確認 ${esc(s.checked_date || TODAY)}</span>
+    ${s.sodai_official_url ? `<a class="chip" href="${esc(s.sodai_official_url)}" rel="noopener nofollow">出典: ${esc(c.city)}公式サイト ↗</a>` : ""}
+    <a class="chip" href="${url("/data/sodai-hikaku/")}">30市町村の比較表</a>
+  </div>
+  <div class="answer">
+    <div class="tile"><p class="k">粗大ごみの手数料</p><p class="v big">${feeMin != null ? `${feeMin.toLocaleString("ja-JP")}<small>円〜${feeMax && feeMax !== feeMin ? feeMax.toLocaleString("ja-JP") + "円／点" : ""}</small>` : "—"}</p><p class="small" style="margin:4px 0 0">${feeMin != null ? "公式料金表の品目例から" : "公式サイトで料金表を確認"}</p></div>
+    <div class="tile"><p class="k">申し込み</p><p class="v">${applyKinds.length ? esc(applyKinds.join("・")) : s.apply_method ? "事前申込制" : "公式サイトで確認"}</p>${phone ? `<p class="small" style="margin:4px 0 0">受付電話 ${esc(phone)}</p>` : ""}</div>
+    <div class="tile"><p class="k">自分で持ち込む</p><p class="v">${bring ? "できる（処理施設へ直接搬入）" : "公式に案内なし"}</p><p class="small" style="margin:4px 0 0"><a href="#bring">施設・受付時間を見る</a></p></div>
+    <div class="tile"><p class="k">空き家の解体補助金</p><p class="v">${a.demolition_subsidy?.name || subsidy.has ? "あり" : "個人向けは確認できず"}</p><p class="small" style="margin:4px 0 0"><a href="#akiya">制度の内容を見る</a></p></div>
+  </div>
+</div></header>
 
 <nav class="toc" aria-label="目次"><ol>
 <li><a href="#sodai">粗大ごみの出し方と料金</a></li><li><a href="#bring">ごみの持ち込み</a></li><li><a href="#appliance">家電リサイクル・市で出せない物</a></li><li><a href="#akiya">空き家・解体の補助金・雪の支援</a></li><li><a href="#gyosha">まとめて頼む場合</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
 
 <section id="sodai">
 <h2>${esc(c.city)}の粗大ごみの出し方と料金</h2>
+${sodaiGuide ? `<p class="note">詳しい出し方・品目別の料金一覧・持ち込み施設の手順は、専用ガイド「<a href="${url(`/guide/${sodaiGuide.slug}/`)}">${esc(sodaiGuide.meta.title.split(/[｜|]/)[0])}</a>」にまとめています。このページは要点と、解体補助金・空き家バンクまでの全体像です。</p>` : ""}
 ${s.apply_method ? `<h3>申し込み方法</h3><p>${esc(s.apply_method)}</p>` : `<p>申し込み方法は<a href="${esc(c.garbage?.officialUrl || "#")}" rel="noopener nofollow">${esc(c.city)}の公式サイト</a>でご確認ください。${c.garbage?.phone ? `問い合わせ先: ${esc(c.garbage.phone)}` : ""}</p>`}
 ${s.fee_system ? `<h3>料金の仕組み</h3><p>${esc(s.fee_system)}</p>` : ""}
 ${feeRows ? `<h3>主な品目の料金（公式料金表より）</h3><table class="fee"><thead><tr><th>品目</th><th class="n">料金</th></tr></thead><tbody>${feeRows}</tbody></table>` : ""}
@@ -223,6 +265,24 @@ ${a.akiya_consult?.section ? `<p>空き家の相談窓口: ${esc(a.akiya_consult
 <p class="small">空き家を売る・買い取ってもらう選択肢は<a href="${url("/guide/akiya-uru-kasu-kowasu/")}">売る・貸す・壊すの比べ方</a>で、墓じまいや仏壇の処分は姉妹サイト<a href="https://hakarau.jp/" rel="noopener">ハカラウ</a>で扱っています。</p>
 </section>
 
+<section class="decide" id="decide">
+<h2>自分で出す？ 業者に頼む？ 3つの質問で分かれ目を確認</h2>
+<p class="small">${esc(c.city)}の市の手数料で出すのが得か、まとめて頼む方が現実的かは、量・搬出条件・通える回数で決まります。当てはまる方を選んでください。</p>
+<div class="q"><p>1. 片付ける物の量は？</p><div class="opts"><label><input type="radio" name="q1" value="0"> 軽トラック1台分くらいまで。粗大ごみは数点</label><label><input type="radio" name="q1" value="1"> 部屋がいくつも家具・家電ごと残っている</label></div></div>
+<div class="q"><p>2. 搬出の条件は？</p><div class="opts"><label><input type="radio" name="q2" value="0"> 1階中心で、車を横付けでき、積雪期ではない</label><label><input type="radio" name="q2" value="1"> 2階以上・階段がある・12〜3月の積雪期に作業する</label></div></div>
+<div class="q"><p>3. 現地に通える回数は？</p><div class="opts"><label><input type="radio" name="q3" value="0"> 近くに住んでいて、何度も通える</label><label><input type="radio" name="q3" value="1"> 県外在住で、帰省は1〜2回しか取れない</label></div></div>
+<div class="result" id="decide-result" data-side="">
+  <p class="verdict">選ぶと、この場で目安が出ます</p>
+  <p class="hint">「自分で出す」寄りなら市のルール（上の表）と<a href="${url("/data/sodai-hikaku/")}">30市町村の比較表</a>へ。「頼む」寄りなら下の料金の目安と相談フォームへ進んでください。</p>
+</div>
+<div class="compare">
+  <div class="col"><h3>市の粗大ごみで出す</h3><p class="num">${feeMin != null ? `${feeMin.toLocaleString("ja-JP")}<small>円〜／点</small>` : "公式料金表"}</p><p>安いが、申し込み・搬出・立ち会いはすべて自分で行う。収集日は申し込みから数日〜2週間。</p></div>
+  <div class="col"><h3>許可業者にまとめて頼む</h3><p class="num">${proK1 ? `${(proK1 / 10000).toFixed(1).replace(/\.0$/, "")}<small>万円〜（1K）</small>` : "見積もり"}${proLdk3 ? `<small>／3LDK ${(proLdk3 / 10000).toFixed(1).replace(/\.0$/, "")}万円〜</small>` : ""}</p><p>県内${cs.length}社の公開料金の下限。搬出・分別・運搬まで任せられ、帰省1回で終えられることが多い。</p></div>
+</div>
+<p class="cta-actions"><a class="btn" href="${url("/mitsumori/")}">無料で見積もり相談する</a> <a class="btn ghost" href="${url("/guide/jibun-de-dasu-ka-gyousha-ka/")}">分かれ目の5つの基準を読む</a></p>
+<script>(function(){var r=document.getElementById('decide-result');if(!r)return;var box=r.parentNode;box.addEventListener('change',function(){var qs=['q1','q2','q3'],n=0,done=0;qs.forEach(function(q){var el=box.querySelector('input[name='+q+']:checked');if(el){done++;n+=Number(el.value);}});if(done<3)return;var v=r.querySelector('.verdict'),h=r.querySelector('.hint');if(n>=2){r.setAttribute('data-side','pro');v.textContent='業者にまとめて頼む方が現実的です（'+n+'/3項目が「頼む」側）';h.innerHTML='搬出条件か通える回数のどちらかで詰まりやすい状態です。相談は無料で、運営者が内容を見て地元の許可業者1〜2社を選びます。<a href="${url("/mitsumori/")}">無料で見積もり相談する</a>';}else{r.setAttribute('data-side','self');v.textContent='市の粗大ごみで自分で出せる範囲です（'+n+'/3項目が「頼む」側）';h.innerHTML='上の料金表と申し込み方法のとおり進めれば大丈夫です。持ち込みが使えるなら収集を待たずに片付きます。大型家電は<a href="#appliance">家電リサイクル</a>を確認してください。';}});})();</script>
+</section>
+
 <section id="gyosha">
 <h2>${esc(c.city)}の実家をまとめて片付けてもらうには</h2>
 <p>自分で出せる量を超えるとき、遠方で日程が取れないとき、積雪期で搬出が難しいときは、業者に頼む選択肢があります。家庭のごみを運ぶには市町村の「一般廃棄物収集運搬」の許可が必要です。許可のない業者が回収した物は不法投棄につながることがあるため、見積もりの際に許可の有無を確認してください。</p>
@@ -241,7 +301,7 @@ ${sourceList(srcs, s.checked_date)}
 ${(s.notes || "").toString().includes("要確認") ? `<p class="small">※ 一部に公式サイトで確認できなかった項目があります。該当箇所は記載を控えています。</p>` : ""}
 </article>`;
   const feeHint = (s.fee_examples || []).length ? `料金は${esc(((s.fee_examples || [])[0] || {}).fee || "").replace(/（.*$/, "")}から。` : "";
-  write(`/city/${c.cityId}/`, layout({ title: `${c.city}の粗大ごみ 料金・申込み・持ち込み先`, description: `${c.city}の粗大ごみの出し方・料金・申し込み方法・持ち込み先を公式サイトから整理。${feeHint}家電リサイクル、空き家の解体補助金、空き家バンクもまとめ、実家の片付けをまとめて頼める地元の許可業者につなぎます。`, pathname: `/city/${c.cityId}/`, body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }, { name: c.city, path: `/city/${c.cityId}/` }], jsonld: [faqLd], updated: s.checked_date || TODAY }));
+  write(`/city/${c.cityId}/`, layout({ title: sodaiGuide ? `${c.city}の実家じまいガイド｜粗大ごみ・解体補助金・空き家バンク` : `${c.city}の粗大ごみ 料金・申込み・持ち込み先`, description: `${c.city}の粗大ごみの出し方・料金・申し込み方法・持ち込み先を公式サイトから整理。${feeHint}家電リサイクル、空き家の解体補助金、空き家バンクもまとめ、実家の片付けをまとめて頼める地元の許可業者につなぎます。`, pathname: `/city/${c.cityId}/`, body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }, { name: c.city, path: `/city/${c.cityId}/` }], jsonld: [faqLd], updated: s.checked_date || TODAY }));
 }
 
 function cityIndex() {
@@ -274,7 +334,15 @@ function comparePage() {
   const feeHead = `<tr><th>市町村</th><th>手数料の仕組み（公式の記載）</th><th>主な品目の例</th><th>出典</th></tr>`;
   const bringHead = `<tr><th>市町村</th><th>自分で持ち込む場合（施設・受付・料金・事前連絡）</th></tr>`;
   const datasetLd = { "@context": "https://schema.org", "@type": "Dataset", name: "新潟県30市町村 粗大ごみ手数料・持ち込みルール比較", description: "新潟県内30市町村の粗大ごみ手数料の仕組み、主な品目の料金、処理施設への持ち込みルールを、各市町村の公式サイトから転記して比較した一覧。", url: abs("/data/sodai-hikaku/"), creator: { "@type": "Organization", name: SITE.operator }, dateModified: latest, license: "https://creativecommons.org/licenses/by/4.0/", spatialCoverage: "新潟県" };
-  const body = `<article class="data"><header class="page-head"><p class="eyebrow">調査レポート</p><h1>新潟県30市町村 粗大ごみ手数料・持ち込みルール比較（${latest.slice(0, 4)}年）</h1><p class="lead">新潟県の30市町村について、粗大ごみの手数料の決まり方と、処理施設へ自分で持ち込む場合のルールを、各市町村の公式サイトから転記して並べました。実家の片付けで「自分で出すか、業者に頼むか」を決めるときの材料にしてください。</p><p class="small">確認日: ${esc(checkedDates[0] || TODAY)}〜${esc(latest)}。手数料の仕組みを確認できた市町村 ${withFee.length}、持ち込みの案内を確認できた市町村 ${withBring.length}。公式サイトに記載が無い項目は「確認できず」と書き、推測で埋めていません。料金は改定されることがあるため、申し込み前に公式サイトでご確認ください。</p></header>
+  const allFees = cities.flatMap((c) => (c.sodai?.fee_examples || []).flatMap((f) => [...String(f.fee || "").matchAll(/([\d,]+)円/g)].map((m) => Number(m[1].replace(/,/g, ""))))).filter((n) => n > 0);
+  const body = `<article class="data"><header class="band"><div class="inner"><p class="eyebrow">調査レポート</p><h1>新潟県30市町村 粗大ごみ手数料・持ち込みルール比較（${latest.slice(0, 4)}年）</h1><p class="lead">新潟県の30市町村について、粗大ごみの手数料の決まり方と、処理施設へ自分で持ち込む場合のルールを、各市町村の公式サイトから転記して並べました。実家の片付けで「自分で出すか、業者に頼むか」を決めるときの材料にしてください。</p>
+<div class="meta-row"><span class="chip ok">公式サイトで確認 ${esc(checkedDates[0] || TODAY)}〜${esc(latest)}</span><span class="chip">出典は各市町村の公式ページ（表内にリンク）</span><span class="chip">CC BY 4.0 で引用可</span></div>
+<div class="report-stats">
+  <div class="stat"><p class="n">${withFee.length}<small>／30市町村</small></p><p class="l">手数料の仕組みを公式サイトで確認できた市町村</p></div>
+  <div class="stat"><p class="n">${withBring.length}<small>／30市町村</small></p><p class="l">処理施設への持ち込み（自己搬入）の案内がある市町村</p></div>
+  <div class="stat"><p class="n">${allFees.length ? `${Math.min(...allFees).toLocaleString("ja-JP")}<small>〜${Math.max(...allFees).toLocaleString("ja-JP")}円</small>` : "—"}</p><p class="l">公式サイトに載る手数料の数字の幅（品目ごとの券額・重量単価を含む）</p></div>
+</div>
+<p class="small" style="margin-top:14px">公式サイトに記載が無い項目は「確認できず」と書き、推測で埋めていません。料金は改定されることがあるため、申し込み前に公式サイトでご確認ください。</p></div></header>
 <section><h2>この表の読み方</h2><ul><li>手数料は「処理券（シール）を品目ごとに貼る」方式が多く、券の単位（200円券のみ、100〜500円の4種類など）と品目ごとの段階の数が市町村で異なります。</li><li>持ち込み（自己搬入）は、収集を待たずに片付けられる一方、受け入れ施設・曜日・事前連絡の要否・10kgあたりの料金が市町村ごとに違います。</li><li>市町村名のリンク先に、申し込み方法・料金表・家電リサイクル・空き家の補助金まで載せています。</li></ul></section>
 <section id="fee"><h2>粗大ごみ手数料の仕組み（30市町村）</h2>${areaSections(feeRow, feeHead)}</section>
 <section id="bring"><h2>ごみの持ち込み（自己搬入）のルール（30市町村）</h2>${areaSections(bringRow, bringHead)}</section>
@@ -318,8 +386,14 @@ ${ctaBox()}
 function staticPages() {
   for (const p of pages) {
     const m = p.meta;
-    const body = `<article class="page"><header class="page-head"><h1>${esc(m.title)}</h1>${m.description ? `<p class="lead">${esc(m.description)}</p>` : ""}</header><div class="prose">${p.html}</div>${m.cta === "true" ? ctaBox() : ""}</article>`;
-    write(`/${p.slug}/`, layout({ title: m.title, description: m.description || m.title, pathname: `/${p.slug}/`, body, breadcrumbs: [{ name: m.title, path: `/${p.slug}/` }], noindex: m.noindex === "true" }));
+    // 意図別の補助ブロック: 相談ページには「無料・2営業日・運営者が選別」を先に、業者向けページには読者と需要の根拠を先に出す
+    const trust = p.slug === "mitsumori"
+      ? `<div class="trust-strip"><div><strong>相談・訪問見積もりは無料</strong>断っても費用はかかりません</div><div><strong>原則2営業日以内に連絡</strong>運営者（長岡市在住）が内容を確認します</div><div><strong>許可業者だけを紹介</strong>一般廃棄物収集運搬の許可、または許可業者との提携を確認した先のみ</div></div>`
+      : p.slug === "keisai"
+        ? `<div class="b2b-panel"><h2>読者は「新潟の実家を片付けたい子世代」です</h2><p>県内の「粗大ごみ・ごみ持ち込み」の検索は月およそ8,200回（ラッコキーワード、2026年9月時点の直近3か月平均）。当サイトはこの入口で読者を集め、自分で出しきれない方だけを地元の許可業者に取り次ぎます。</p><div class="grid"><div><p class="n">30<small>市町村</small></p><p class="l">全市町村の粗大ごみ・補助金ページから相談導線</p></div><div><p class="n">${cities.filter((c) => c.core).length}<small>市</small></p><p class="l">料金表・持ち込み施設まで掲載する中核市（長岡・新潟・上越ほか）</p></div><div><p class="n">0<small>社</small></p><p class="l">みんなの遺品整理に載る長岡市の業者数（県内27社中）。中越の業者はまだネットに出ていません</p></div></div></div>`
+        : "";
+    const body = `<article class="page"><header class="page-head"><h1>${esc(m.title)}</h1>${m.description ? `<p class="lead">${esc(m.description)}</p>` : ""}</header>${trust}<div class="prose">${p.html}</div>${m.cta === "true" ? ctaBox() : ""}</article>`;
+    write(`/${p.slug}/`, layout({ title: m.title, description: m.description || m.title, pathname: `/${p.slug}/`, body, breadcrumbs: [{ name: m.title, path: `/${p.slug}/` }], noindex: m.noindex === "true", stickyCta: p.slug !== "mitsumori" && p.slug !== "keisai" }));
   }
 }
 
@@ -328,23 +402,32 @@ function home() {
   const coreCards = CORE.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}"><strong>${esc(c.city)}</strong><span>粗大ごみ・持ち込み・補助金</span></a></li>`).join("");
   const guideCards = guides.slice(0, 5).map((g) => `<li><a href="${url(`/guide/${g.slug}/`)}"><strong>${esc(g.meta.title)}</strong></a></li>`).join("");
   const body = `
-<section class="hero">
+<section class="hero"><div class="inner">
+  <div>
+    <p class="eyebrow">新潟県30市町村の公式情報と、長岡の運営者が会って確かめた業者</p>
     <h1>新潟の実家を、遠くからでも、雪の季節でも、片付けられるように。</h1>
-  <p class="lead">粗大ごみの出し方と料金、ごみの持ち込み先、空き家の解体補助金、雪下ろしの支援。新潟県30市町村の公式情報を1か所にまとめ、まとめて頼みたいときは地元の許可業者につなぎます。</p>
-  <form class="city-jump" action="${url("/city/")}" method="get" onsubmit="var v=this.c.value;if(v){location.href='${url("/city/")}'+v+'/';return false;}">
-    <label for="c">市町村を選ぶ</label>
-    <select id="c" name="c">${cities.map((c) => `<option value="${c.cityId}">${esc(c.city)}</option>`).join("")}</select>
-    <button class="btn" type="submit">ガイドを見る</button>
-  </form>
-</section>
+    <p class="lead">粗大ごみの料金と申し込み先、ごみの持ち込み施設、空き家の解体補助金、雪下ろしの支援。市町村ごとの公式情報を1ページにまとめ、自分では出しきれないときは地元の許可業者に無料でつなぎます。</p>
+    <form class="city-jump" action="${url("/city/")}" method="get" onsubmit="var v=this.c.value;if(v){location.href='${url("/city/")}'+v+'/';return false;}">
+      <label for="c">実家のある市町村を選ぶ</label>
+      <select id="c" name="c">${cities.map((c) => `<option value="${c.cityId}"${c.cityId === "nagaoka" ? " selected" : ""}>${esc(c.city)}</option>`).join("")}</select>
+      <button class="btn navy" type="submit">粗大ごみの料金と出し方を見る</button>
+    </form>
+    <p class="small">県外にお住まいで帰省の回数が限られる方は、<a href="${url("/guide/enpou-kara-jikkajimai/")}">帰省2回で終わらせる段取り</a>から。</p>
+  </div>
+  <aside class="hero-aside" aria-label="このサイトの数字">
+    <div class="stat"><p class="n">30<small>市町村</small></p><p class="l">新潟県の全市町村の粗大ごみ・持ち込み・補助金を、公式サイトを出典に掲載</p></div>
+    <div class="stat"><p class="n">${(prices.companies || []).length}<small>社</small></p><p class="l">県内業者の公開料金を間取り別に集計。1Kは${yen(Math.min(...(prices.companies || []).map((x) => x.k1).filter(Boolean)))}〜</p></div>
+    <div class="stat"><p class="n">0<small>円</small></p><p class="l">相談と訪問見積もりは無料。運営者が内容を見てから地元の許可業者に取り次ぎます</p></div>
+  </aside>
+</div></section>
 <ol class="steps">
   <li><span class="num">01</span><h2>市のルールを知る</h2><p>粗大ごみは申し込み制で、品目ごとに料金が決まっています。持ち込めば早く安く済むこともあります。</p><a href="${url("/city/")}">市町村別ガイドへ</a></li>
   <li><span class="num">02</span><h2>進め方と費用を把握する</h2><p>何から手を付けるか、帰省2回で終わらせる段取り、冬の雪対策、業者に頼む分かれ目。</p><a href="${url("/guide/")}">実家じまいの進め方へ</a></li>
   <li><span class="num">03</span><h2>頼むなら許可のある業者に</h2><p>県内${(prices.companies || []).length}社の公開料金を集計。許可の確認方法と、見積もりで聞くべきこと。</p><a href="${url("/gyosha/")}">業者の料金と選び方へ</a></li>
 </ol>
-<section><h2>詳しいガイドのある市</h2><ul class="card-grid">${coreCards}</ul><p><a href="${url("/city/")}">30市町村すべてを見る →</a> ／ <a href="${url("/data/sodai-hikaku/")}">30市町村の粗大ごみ手数料・持ち込み比較 →</a></p></section>
-<section><h2>実家じまいの進め方（新潟版）</h2><ul class="guide-list compact">${guideCards}</ul></section>
-<section class="why"><h2>このサイトについて</h2><p>運営者は長岡市に住んでいます。市町村の公式サイトを出典に、確認日を付けて掲載し、業者は直接会って確かめたところだけを載せます。墓じまいは姉妹サイトの<a href="https://hakarau.jp/" rel="noopener">ハカラウ</a>、空き家の解体補助金の全国版は<a href="https://www.fureaino-oka.com/" rel="noopener">ふれあいの丘</a>で扱っています。</p></section>
+<section class="home-section"><h2>料金表・持ち込み施設まで載せている市</h2><p class="sub">まず実家のある市を。品目別の手数料、申し込み先、持ち込み施設の受付時間、解体補助金まで1ページで確認できます。</p><ul class="card-grid">${coreCards}</ul><p><a href="${url("/city/")}">30市町村すべてを見る →</a> ／ <a href="${url("/data/sodai-hikaku/")}">30市町村の粗大ごみ手数料・持ち込み比較 →</a></p></section>
+<section class="home-section"><h2>実家じまいの進め方（新潟版）</h2><p class="sub">何から始めるか、いくらかかるか、県外からどう進めるか、冬はどうするか。</p><ul class="guide-list compact">${guideCards}</ul></section>
+<section class="why"><div><h2>長岡に住む運営者が、公式情報と地元の業者を確かめて載せています</h2><p>運営は株式会社Kogera（新潟県長岡市）。市町村の制度と料金は各自治体の公式サイトだけを出典にし、ページごとに確認日を記載します。業者は運営者が直接会い、一般廃棄物収集運搬の許可と見積もりの出し方を確かめたところだけを載せます。</p><p><a href="${url("/about/")}">運営者情報・編集方針 →</a></p></div><ul class="promise"><li>出典は公式サイト。電話での聞き取りはしない</li><li>業者は会って確かめた先だけ。掲載料・紹介料を受け取る先には「PR」を表示</li><li>体験談や口コミを作らない。分からないことは「要確認」と書く</li><li>墓じまいは姉妹サイト<a href="https://hakarau.jp/" rel="noopener">ハカラウ</a>、解体補助金の全国版は<a href="https://www.fureaino-oka.com/" rel="noopener">ふれあいの丘</a></li></ul></section>
 ${ctaBox()}`;
   const orgLd = { "@context": "https://schema.org", "@type": "WebSite", name: SITE.name, url: abs("/"), description: SITE.tagline, publisher: { "@type": "Organization", name: SITE.operator } };
   write("/", layout({ title: SITE.name, description: `新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、雪の支援を公式情報からまとめた実家じまいの案内。長岡から運営。まとめて頼むときは地元の許可業者へ。`, pathname: "/", body, jsonld: [orgLd] }));
