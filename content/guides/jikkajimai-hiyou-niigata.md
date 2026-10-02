@@ -210,6 +210,18 @@ updated: 2026-10-02
 - [新潟の実家じまい、何から始める？遠方からでも進められる7つの手順](../jikkajimai-tejun-niigata/)
 - [冬の実家じまいと雪対策｜空き家の雪下ろしは誰がやる？新潟の制度と費用](../fuyu-no-jikkajimai-yukioroshi/)
 
+
+## 市町村別の粗大ごみガイド
+
+- [新潟市の粗大ごみの出し方](../niigata-shi-sodaigomi/)
+- [長岡市の粗大ごみの出し方](../nagaoka-shi-sodaigomi/)
+- [上越市・三条市の粗大ごみの出し方](../joetsu-sanjo-sodaigomi/)
+- [燕市の粗大ごみの出し方](../tsubame-shi-sodaigomi/)
+- [柏崎市の粗大ごみの出し方](../kashiwazaki-shi-sodaigomi/)
+- [新発田市の粗大ごみの出し方](../shibata-shi-sodaigomi/)
+- [見附市・小千谷市の粗大ごみの出し方](../mitsuke-ojiya-sodaigomi/)
+- [新潟県30市町村の手数料・持ち込み比較](../../data/sodai-hikaku/)
+
 ## 出典
 
 確認日は2026-10-01です。上越市の補助金と、長岡市の改定案の再確認は2026-10-02です。

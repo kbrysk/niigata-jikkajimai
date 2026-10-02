@@ -176,6 +176,17 @@ updated: 2026-10-02
 
 次のようなときは、市の許可業者に見積りを取る方法があります。量が多い、市で扱わない物が多い、遠方で何度も通えない、冬で搬出が難しい。見積りの取り方は、[自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)を見てください。
 
+
+## 市町村別の粗大ごみガイド
+
+- [新潟市の粗大ごみの出し方](../niigata-shi-sodaigomi/)
+- [長岡市の粗大ごみの出し方](../nagaoka-shi-sodaigomi/)
+- [上越市・三条市の粗大ごみの出し方](../joetsu-sanjo-sodaigomi/)
+- [柏崎市の粗大ごみの出し方](../kashiwazaki-shi-sodaigomi/)
+- [新発田市の粗大ごみの出し方](../shibata-shi-sodaigomi/)
+- [見附市・小千谷市の粗大ごみの出し方](../mitsuke-ojiya-sodaigomi/)
+- [新潟県30市町村の手数料・持ち込み比較](../../data/sodai-hikaku/)
+
 ## 出典
 
 確認日はすべて2026年10月2日です。

@@ -297,6 +297,17 @@ updated: 2026-10-02
 **Q　長岡市のごみ分別で迷ったときは、どこで調べますか。**
 市の「ごみの分け方出し方検索システム」で調べられます。分別表もあります。
 
+
+## 市町村別の粗大ごみガイド
+
+- [新潟市の粗大ごみの出し方](../niigata-shi-sodaigomi/)
+- [上越市・三条市の粗大ごみの出し方](../joetsu-sanjo-sodaigomi/)
+- [燕市の粗大ごみの出し方](../tsubame-shi-sodaigomi/)
+- [柏崎市の粗大ごみの出し方](../kashiwazaki-shi-sodaigomi/)
+- [新発田市の粗大ごみの出し方](../shibata-shi-sodaigomi/)
+- [見附市・小千谷市の粗大ごみの出し方](../mitsuke-ojiya-sodaigomi/)
+- [新潟県30市町村の手数料・持ち込み比較](../../data/sodai-hikaku/)
+
 ## 出典
 
 確認日はすべて2026年10月2日です。

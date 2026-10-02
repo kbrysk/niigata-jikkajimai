@@ -238,6 +238,18 @@ updated: 2026-10-02
 - [空き家の雪下ろしは誰の責任？新潟の実家の冬対策｜支援制度と費用](../fuyu-no-jikkajimai-yukioroshi/)
 - [新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度](../akiya-uru-kasu-kowasu/)
 
+
+## 市町村別の粗大ごみガイド
+
+- [新潟市の粗大ごみの出し方](../niigata-shi-sodaigomi/)
+- [長岡市の粗大ごみの出し方](../nagaoka-shi-sodaigomi/)
+- [上越市・三条市の粗大ごみの出し方](../joetsu-sanjo-sodaigomi/)
+- [燕市の粗大ごみの出し方](../tsubame-shi-sodaigomi/)
+- [柏崎市の粗大ごみの出し方](../kashiwazaki-shi-sodaigomi/)
+- [新発田市の粗大ごみの出し方](../shibata-shi-sodaigomi/)
+- [見附市・小千谷市の粗大ごみの出し方](../mitsuke-ojiya-sodaigomi/)
+- [新潟県30市町村の手数料・持ち込み比較](../../data/sodai-hikaku/)
+
 ## 出典
 
 確認日は、2026-10-01と2026-10-02です。

@@ -239,6 +239,18 @@ updated: 2026-10-02
 - [新潟市の一般廃棄物 許可業者一覧](../niigata-shi-kyoka-gyosha/)
 - [長岡市の一般廃棄物収集運搬 許可業者一覧](../nagaoka-shi-kyoka-gyosha/)
 
+
+## 市町村別の粗大ごみガイド
+
+- [新潟市の粗大ごみの出し方](../niigata-shi-sodaigomi/)
+- [長岡市の粗大ごみの出し方](../nagaoka-shi-sodaigomi/)
+- [上越市・三条市の粗大ごみの出し方](../joetsu-sanjo-sodaigomi/)
+- [燕市の粗大ごみの出し方](../tsubame-shi-sodaigomi/)
+- [柏崎市の粗大ごみの出し方](../kashiwazaki-shi-sodaigomi/)
+- [新発田市の粗大ごみの出し方](../shibata-shi-sodaigomi/)
+- [見附市・小千谷市の粗大ごみの出し方](../mitsuke-ojiya-sodaigomi/)
+- [新潟県30市町村の手数料・持ち込み比較](../../data/sodai-hikaku/)
+
 ## 出典
 
 確認日は、2026-10-01と2026-10-02です。
