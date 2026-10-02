@@ -113,7 +113,7 @@ ${noindex ? '<meta name="robots" content="noindex,nofollow">' : ""}
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="${url("/assets/favicon.svg")}" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="${esc(SITE.name)}" href="${abs("/feed.xml")}">
 <style>${css}</style>
 ${ld}
@@ -400,6 +400,16 @@ function staticPages() {
 // ---------- トップ ----------
 function home() {
   const coreCards = CORE.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}"><strong>${esc(c.city)}</strong><span>粗大ごみ・持ち込み・補助金</span></a></li>`).join("");
+  // ヒーロー右の実データ抜粋。数値は fee_examples から算出し、手で書かない
+  const heroRows = CORE.map((id) => cityById[id]).filter(Boolean).map((c) => {
+    const s = c.sodai || {};
+    const nums = (s.fee_examples || []).flatMap((f) => [...String(f.fee || "").matchAll(/([\d,]+)円/g)].map((m) => Number(m[1].replace(/,/g, "")))).filter((n) => n > 0);
+    // 品目別の料金表（3品目以上）がある市だけ出す。重量単価しか無い市を「〜円」の幅として見せない
+    if (nums.length < 3) return null;
+    const kinds = ["ネット", "LINE", "電話", "FAX", "窓口"].filter((k) => String(s.apply_method || "").includes(k === "ネット" ? "インターネット" : k));
+    const lo = Math.min(...nums), hi = Math.max(...nums);
+    return `<tr><td><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a></td><td class="n">${lo === hi ? `${lo.toLocaleString("ja-JP")}円` : `${lo.toLocaleString("ja-JP")}〜${hi.toLocaleString("ja-JP")}円`}</td><td>${esc(kinds.join("・") || "—")}</td><td class="n">${esc((s.checked_date || "").slice(5).replace("-", "/"))}</td></tr>`;
+  }).filter(Boolean).slice(0, 6).join("");
   const guideCards = guides.slice(0, 5).map((g) => `<li><a href="${url(`/guide/${g.slug}/`)}"><strong>${esc(g.meta.title)}</strong></a></li>`).join("");
   const body = `
 <section class="hero"><div class="inner">
@@ -414,16 +424,17 @@ function home() {
     </form>
     <p class="small">県外にお住まいで帰省の回数が限られる方は、<a href="${url("/guide/enpou-kara-jikkajimai/")}">帰省2回で終わらせる段取り</a>から。</p>
   </div>
-  <aside class="hero-aside" aria-label="このサイトの数字">
-    <div class="stat"><p class="n">30<small>市町村</small></p><p class="l">新潟県の全市町村の粗大ごみ・持ち込み・補助金を、公式サイトを出典に掲載</p></div>
-    <div class="stat"><p class="n">${(prices.companies || []).length}<small>社</small></p><p class="l">県内業者の公開料金を間取り別に集計。1Kは${yen(Math.min(...(prices.companies || []).map((x) => x.k1).filter(Boolean)))}〜</p></div>
-    <div class="stat"><p class="n">0<small>円</small></p><p class="l">相談と訪問見積もりは無料。運営者が内容を見てから地元の許可業者に取り次ぎます</p></div>
+  <aside class="hero-aside" aria-label="粗大ごみ手数料の抜粋">
+    <p class="cap">粗大ごみ手数料の幅（公式料金表の品目例から・1点あたり）</p>
+    <table><thead><tr><th>市</th><th class="n">手数料</th><th>申し込み</th><th class="n">確認日</th></tr></thead><tbody>${heroRows}</tbody></table>
+    <p class="more"><a href="${url("/data/sodai-hikaku/")}">30市町村の手数料・持ち込みルールを比べる →</a></p>
   </aside>
 </div></section>
+<p class="data-note"><span><b>30</b>市町村の公式サイトを出典に掲載</span><span>県内<b>${(prices.companies || []).length}</b>社の公開料金を集計（1K <b>${yen(Math.min(...(prices.companies || []).map((x) => x.k1).filter(Boolean)))}</b>〜）</span><span>相談・訪問見積もりは<b>無料</b>。運営者が確認してから地元の許可業者へ</span></p>
 <ol class="steps">
-  <li><span class="num">01</span><h2>市のルールを知る</h2><p>粗大ごみは申し込み制で、品目ごとに料金が決まっています。持ち込めば早く安く済むこともあります。</p><a href="${url("/city/")}">市町村別ガイドへ</a></li>
-  <li><span class="num">02</span><h2>進め方と費用を把握する</h2><p>何から手を付けるか、帰省2回で終わらせる段取り、冬の雪対策、業者に頼む分かれ目。</p><a href="${url("/guide/")}">実家じまいの進め方へ</a></li>
-  <li><span class="num">03</span><h2>頼むなら許可のある業者に</h2><p>県内${(prices.companies || []).length}社の公開料金を集計。許可の確認方法と、見積もりで聞くべきこと。</p><a href="${url("/gyosha/")}">業者の料金と選び方へ</a></li>
+  <li><h2>市のルールを知る</h2><p>粗大ごみは申し込み制で、品目ごとに料金が決まっています。持ち込めば早く安く済むこともあります。</p><a href="${url("/city/")}">市町村別ガイドへ</a></li>
+  <li><h2>進め方と費用を把握する</h2><p>何から手を付けるか、帰省2回で終わらせる段取り、冬の雪対策、業者に頼む分かれ目。</p><a href="${url("/guide/")}">実家じまいの進め方へ</a></li>
+  <li><h2>頼むなら許可のある業者に</h2><p>県内${(prices.companies || []).length}社の公開料金を集計。許可の確認方法と、見積もりで聞くべきこと。</p><a href="${url("/gyosha/")}">業者の料金と選び方へ</a></li>
 </ol>
 <section class="home-section"><h2>料金表・持ち込み施設まで載せている市</h2><p class="sub">まず実家のある市を。品目別の手数料、申し込み先、持ち込み施設の受付時間、解体補助金まで1ページで確認できます。</p><ul class="card-grid">${coreCards}</ul><p><a href="${url("/city/")}">30市町村すべてを見る →</a> ／ <a href="${url("/data/sodai-hikaku/")}">30市町村の粗大ごみ手数料・持ち込み比較 →</a></p></section>
 <section class="home-section"><h2>実家じまいの進め方（新潟版）</h2><p class="sub">何から始めるか、いくらかかるか、県外からどう進めるか、冬はどうするか。</p><ul class="guide-list compact">${guideCards}</ul></section>
