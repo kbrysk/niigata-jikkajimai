@@ -40,6 +40,9 @@ const areaOf = (id) => Object.entries(AREA).find(([, ids]) => ids.includes(id))?
 
 const cities = base.map((m) => ({ ...m, sodai: sodai[m.cityId] || null, ay: ay[m.cityId] || null, core: CORE.includes(m.cityId), area: areaOf(m.cityId) }));
 const cityById = Object.fromEntries(cities.map((c) => [c.cityId, c]));
+// 運営者（人感はAI画像や作った声ではなく、実在の運営者本人で出す）
+const PERSON = { name: "大久保 亮佑", role: "運営者・株式会社Kogera代表（新潟県長岡市在住）", img: "/assets/okubo.jpg", imgSq: "/assets/okubo-sq.jpg" };
+const personSmall = (say) => `<div class="person sm"><img src="${url(PERSON.imgSq)}" alt="" width="48" height="48" loading="lazy"><p><strong>${esc(PERSON.name)}</strong><span>${esc(PERSON.role)}</span>${say ? `<span class="say">${esc(say)}</span>` : ""}</p></div>`;
 const latestCheck = () => cities.map((c) => c.sodai?.checked_date).filter(Boolean).sort().pop() || TODAY;
 // 確認印: 朱の角印。サイト全体の署名として、市町村・比較・ガイドの各ページの決まった位置に押す
 const seal = (date, label = "公式サイトで確認") => `<span class="seal" role="img" aria-label="${esc(label)} ${esc(date)}"><span class="seal-l">${esc(label)}</span><span class="seal-d">${esc(date)}</span></span>`;
@@ -147,6 +150,7 @@ ${stickyCta && pathname !== "/mitsumori/" ? `<div class="sticky-cta" aria-label=
     <div class="cols">
       <div>
         <h2>${esc(SITE.name)}</h2>
+        ${personSmall()}
         <p class="foot-lead">長岡市在住の運営者が、新潟県30市町村の公式情報と地元の許可業者を確かめて載せる、実家じまいの案内サイトです。掲載情報は各市町村の公式サイトを出典とし、ページごとに確認日を記載しています。制度や料金は変わることがあるため、申し込み前に公式サイトでご確認ください。</p>
       </div>
       <div>
@@ -177,6 +181,7 @@ const ctaBox = (city) => `
   <h2>${city ? `${esc(city)}の実家の片付けを、まとめて頼みたい方へ` : "自分で出すのが難しいときは、地元の許可業者に"}</h2>
   <p>量が多い、遠方で何度も帰れない、積雪期で搬出が難しい。そんなときは、新潟県内で一般廃棄物の収集運搬許可を持つ地元業者に見積もりを依頼できます。</p>
   <ul class="cta-points"><li>相談・訪問見積もりは無料</li><li>運営者（長岡市在住）が内容を見て1〜2社を選ぶ</li><li>原則2営業日以内に連絡</li><li>断っても費用はかからない</li></ul>
+  ${personSmall("内容は私が確認してから、地元の業者1〜2社に取り次ぎます。")}
   <p class="cta-actions"><a class="btn" href="${url("/mitsumori/")}">無料で見積もり相談する</a> <a class="btn ghost" href="${url("/gyosha/")}">料金の目安と選び方を見る</a></p>
   <p class="cta-note">※ 依頼が成立した場合、業者から紹介料・掲載料を受け取ることがあります。利用者の料金に上乗せはありません（<a href="${url("/ad-policy/")}">広告について</a>）。</p>
 </aside>
@@ -400,7 +405,12 @@ function staticPages() {
       : p.slug === "keisai"
         ? `<div class="b2b-panel"><h2>読者は「新潟の実家を片付けたい子世代」です</h2><p>県内の「粗大ごみ・ごみ持ち込み」の検索は月およそ8,200回（ラッコキーワード、2026年9月時点の直近3か月平均）。当サイトはこの入口で読者を集め、自分で出しきれない方だけを地元の許可業者に取り次ぎます。</p><div class="grid"><div><p class="n">30<small>市町村</small></p><p class="l">全市町村の粗大ごみ・補助金ページから相談導線</p></div><div><p class="n">${cities.filter((c) => c.core).length}<small>市</small></p><p class="l">料金表・持ち込み施設まで掲載する中核市（長岡・新潟・上越ほか）</p></div><div><p class="n">0<small>社</small></p><p class="l">みんなの遺品整理に載る長岡市の業者数（県内27社中）。中越の業者はまだネットに出ていません</p></div></div></div>`
         : "";
-    const body = `<article class="page"><header class="page-head"><h1>${esc(m.title)}</h1>${m.description ? `<p class="lead">${esc(m.description)}</p>` : ""}</header>${trust}<div class="prose">${p.html}</div>${m.cta === "true" ? ctaBox() : ""}</article>`;
+    const person = p.slug === "mitsumori"
+      ? personSmall("送っていただいた内容は、私が読んでから業者に渡します。業者に直接届く仕組みではありません。")
+      : p.slug === "about"
+        ? `<div class="person lg"><img src="${url(PERSON.img)}" alt="運営者 ${esc(PERSON.name)}" width="160" height="200"><div><p><strong>${esc(PERSON.name)}</strong></p><p class="small">${esc(PERSON.role)}</p><p>墓じまいの「ハカラウ」、空き家解体補助金の「ふれあいの丘」を運営する中で、「親の家をどう片付けるか」の相談が多いことから、住んでいる新潟に絞ってこのサイトを始めました。</p></div></div>`
+        : "";
+    const body = `<article class="page"><header class="page-head"><h1>${esc(m.title)}</h1>${m.description ? `<p class="lead">${esc(m.description)}</p>` : ""}</header>${trust}${person}<div class="prose">${p.html}</div>${m.cta === "true" ? ctaBox() : ""}</article>`;
     write(`/${p.slug}/`, layout({ title: m.title, description: m.description || m.title, pathname: `/${p.slug}/`, body, breadcrumbs: [{ name: m.title, path: `/${p.slug}/` }], noindex: m.noindex === "true", stickyCta: p.slug !== "mitsumori" && p.slug !== "keisai" }));
   }
 }
@@ -437,6 +447,7 @@ function home() {
       <button class="btn paper" type="submit">粗大ごみの料金と出し方を見る</button>
     </form>
     <p class="small">県外にお住まいで帰省の回数が限られる方は、<a href="${url("/guide/enpou-kara-jikkajimai/")}">帰省2回で終わらせる段取り</a>から。</p>
+    <div class="person hero-person"><img src="${url(PERSON.img)}" alt="運営者 ${esc(PERSON.name)}" width="96" height="120"><div><p class="say">長岡に住んでいます。市町村の制度は公式サイトを一つずつ読んで載せ、業者は直接会って確かめた先だけを紹介します。相談はまず私が目を通してから、地元の許可業者につなぎます。</p><p class="who"><strong>${esc(PERSON.name)}</strong>${esc(PERSON.role)} ／ <a href="${url("/about/")}">運営者情報</a></p></div></div>
   </div>
   <aside class="hero-aside" aria-label="粗大ごみ手数料の抜粋">
     <p class="cap">粗大ごみ手数料の幅（公式料金表の品目例から・1点あたり）</p>

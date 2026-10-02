@@ -205,14 +205,14 @@ dl.kv dd{margin:0}
 @media (max-width:760px){.card-grid,.guide-list.compact{grid-template-columns:1fr}}
 
 /* ---------- home ---------- */
-.hero{margin:0 calc(50% - 50vw);padding:44px max(24px,calc(50vw - var(--wide)/2)) 40px;background:var(--navy);color:#fff;max-width:none}
+.hero{margin:0;padding:36px 0 32px;background:var(--navy);box-shadow:0 0 0 100vmax var(--navy);clip-path:inset(0 -100vmax);color:#fff;max-width:none}
 .hero .inner{max-width:var(--wide);margin:0 auto;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);gap:56px;align-items:start}
 .hero .eyebrow{color:rgba(255,255,255,.72)}
-.hero h1{font-size:42px;line-height:1.38;margin:4px 0 16px;color:#fff}
+.hero h1{font-size:40px;line-height:1.36;margin:4px 0 12px;color:#fff}
 .hero .lead{font-size:17.5px;color:rgba(255,255,255,.92)}
 .hero .small,.hero .small a{color:rgba(255,255,255,.72)}
 .hero a{color:#fff;text-decoration-color:rgba(255,255,255,.5)}
-.city-jump{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch;margin:22px 0 6px;padding:14px 0 16px;border-top:1px solid rgba(255,255,255,.25);border-bottom:1px solid rgba(255,255,255,.25)}
+.city-jump{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch;margin:16px 0 6px;padding:12px 0 14px;border-top:1px solid rgba(255,255,255,.25);border-bottom:1px solid rgba(255,255,255,.25)}
 .city-jump label{font-size:13px;color:rgba(255,255,255,.75);flex-basis:100%;margin-bottom:-2px}
 .city-jump select{font-size:16px;padding:11px 12px;border:1px solid #fff;border-radius:2px;background:#fff;min-width:240px;font-family:var(--sans);color:var(--ink);flex:1}
 .btn.paper{background:#fff;color:var(--navy);border-color:#fff}
@@ -245,7 +245,7 @@ dl.kv dd{margin:0}
 .promise{list-style:none;padding:0;margin:0}
 .promise li{border-bottom:1px solid var(--line);padding:10px 0;font-size:14.5px}
 .promise li:first-child{border-top:1px solid var(--line)}
-@media (max-width:900px){.hero{padding-left:24px;padding-right:24px}.hero .inner{grid-template-columns:1fr;gap:28px}.hero h1{font-size:31px}.steps{grid-template-columns:1fr}.steps li+li{border-top:1px solid var(--line)}.why{grid-template-columns:1fr}}
+@media (max-width:900px){.hero .inner{grid-template-columns:1fr;gap:28px}.hero h1{font-size:31px}.steps{grid-template-columns:1fr}.steps li+li{border-top:1px solid var(--line)}.why{grid-template-columns:1fr}}
 
 /* 写真枠（運営者の実写1枚だけ。ファイルが無ければ出ない） */
 .photo{margin:36px 0 0;max-width:var(--wide)}
@@ -319,6 +319,31 @@ form.lead-form .btn{justify-self:start}
 .b2b-panel .l{font-size:13px;color:var(--mute);margin:2px 0 0}
 @media (max-width:640px){.b2b-panel .grid{grid-template-columns:1fr}.b2b-panel .grid div+div{border-left:0;border-top:1px solid var(--line);padding-left:0;margin-left:0}}
 
+/* ---------- 運営者: 実在の人を、写真と名前と一言で。丸抜き・影・吹き出しは使わない ---------- */
+.person{display:flex;gap:14px;align-items:flex-start}
+.person img{display:block;flex:none;object-fit:cover;border:1px solid var(--line);background:var(--paper-2)}
+.person.sm img{width:48px;height:48px}
+.person.sm p{margin:0;font-size:13.5px;line-height:1.6}
+.person.sm strong{display:block;font-size:14px;color:var(--ink)}
+.person.sm span{display:block;color:var(--mute);font-size:12.5px}
+.person.sm .say{color:var(--ink-2);font-size:13.5px;margin-top:3px}
+.hero-person{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.25)}
+.hero-person img{width:96px;height:120px;border:2px solid #fff}
+.hero-person .say{margin:0;font-size:15px;line-height:1.8;color:#fff}
+.hero-person .who{margin:6px 0 0;font-size:13px;color:rgba(255,255,255,.75)}
+.hero-person .who strong{color:#fff;font-size:14px;margin-right:8px}
+.cta-box .person.sm{margin:14px 0 2px}
+.cta-box .person.sm img{border-color:rgba(255,255,255,.5)}
+.cta-box .person.sm strong{color:#fff}
+.cta-box .person.sm span{color:rgba(255,255,255,.72)}
+.cta-box .person.sm .say{color:rgba(255,255,255,.92)}
+.person.lg{max-width:var(--read);margin:18px 0 6px;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.person.lg img{width:160px;height:200px}
+.person.lg p{margin:0 0 6px}
+.person.lg strong{font-size:18px}
+.page .person.sm{max-width:var(--read);margin:12px 0 0}
+.site-footer .person.sm{margin:0 0 12px}
+@media (max-width:640px){.hero-person img{width:72px;height:90px}.hero-person .say{font-size:14.5px}.person.lg img{width:112px;height:140px}}
 /* ---------- footer: 紙の上に墨。塗りつぶさない ---------- */
 .site-footer{background:var(--paper-2);border-top:2px solid var(--line-strong);color:var(--ink-2);font-size:14px;padding:36px 0 36px;margin-top:40px;line-height:1.8}
 .site-footer a{color:var(--ink)}
