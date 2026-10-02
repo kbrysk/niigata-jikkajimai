@@ -158,7 +158,7 @@ const sourceList = (urls, checked) => (urls && urls.length ? `<section class="so
 function cityPage(c) {
   const s = c.sodai || {};
   const a = c.ay || {};
-  const feeRows = (s.fee_examples || []).map((f) => `<tr><td>${esc(f.item ?? f.name ?? f[0])}</td><td class="n">${esc(f.fee ?? f.price ?? f[1])}</td></tr>`).join("");
+  const feeRows = (s.fee_examples || []).filter((f) => (f.fee ?? f.price ?? f[1])).map((f) => `<tr><td>${esc(f.item ?? f.name ?? f[0])}</td><td class="n">${esc(f.fee ?? f.price ?? f[1])}</td></tr>`).join("");
   const bring = s.bring_in;
   const bringHtml = bring
     ? typeof bring === "string"
