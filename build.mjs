@@ -179,7 +179,8 @@ const ctaBox = (city) => `
   <ul class="cta-points"><li>相談・訪問見積もりは無料</li><li>運営者（長岡市在住）が内容を見て1〜2社を選ぶ</li><li>原則2営業日以内に連絡</li><li>断っても費用はかからない</li></ul>
   <p class="cta-actions"><a class="btn" href="${url("/mitsumori/")}">無料で見積もり相談する</a> <a class="btn ghost" href="${url("/gyosha/")}">料金の目安と選び方を見る</a></p>
   <p class="cta-note">※ 依頼が成立した場合、業者から紹介料・掲載料を受け取ることがあります。利用者の料金に上乗せはありません（<a href="${url("/ad-policy/")}">広告について</a>）。</p>
-</aside>`;
+</aside>
+${fs.existsSync(path.join(ROOT, "content/pages/tools.md")) ? `<p class="tools-line small">自分で進める方へ: <a href="${url("/tools/")}">実家じまいチェックリスト・業者見積もり比較シート・粗大ごみ早見表（無料・登録不要）</a></p>` : ""}`;
 
 const sourceList = (urls, checked) => (urls && urls.length ? `<section class="sources"><h2>出典</h2><ul>${urls.map((u) => `<li><a href="${esc(u)}" rel="noopener nofollow">${esc(u)}</a></li>`).join("")}</ul><p class="small">確認日: ${esc(checked || TODAY)}。制度・料金は変更されることがあります。必ず公式サイトの最新情報をご確認ください。</p></section>` : "");
 
@@ -481,6 +482,29 @@ function extras() {
   const uniq = entries.filter(([u]) => (seen.has(u) ? false : (seen.add(u), true)));
   write("/sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${uniq.map(([u, d]) => `<url><loc>${abs(u)}</loc><lastmod>${d}</lastmod></url>`).join("\n")}\n</urlset>\n`);
   write("/robots.txt", `User-agent: *\nAllow: /\nSitemap: ${abs("/sitemap.xml")}\n`);
+  // llms.txt: AI検索向けのサイト要約（ハカラウで引用数が伸びた型）
+  const llms = [
+    `# ${SITE.name}`,
+    ``,
+    `> ${SITE.tagline}。新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金・空き家バンク、雪の支援を各市町村の公式サイトを出典に掲載。運営は株式会社Kogera（長岡市）。掲載情報には確認日を付け、公式で確認できない項目は「確認中」と表示する。`,
+    ``,
+    `## 実家じまいの進め方（ガイド）`,
+    ...guides.map((g) => `- [${g.meta.title}](${abs(`/guide/${g.slug}/`)}): ${g.meta.description || ""}`),
+    ``,
+    `## 市町村別ガイド`,
+    ...cities.map((c) => `- [${c.city}](${abs(`/city/${c.cityId}/`)}): ${c.city}の粗大ごみの出し方・料金・持ち込み先・解体補助金・空き家バンク`),
+    ``,
+    `## 比較・一覧`,
+    `- [新潟県30市町村 粗大ごみ手数料・持ち込み比較](${abs("/data/sodai-hikaku/")})`,
+    `- [新潟の遺品整理・実家片付け業者の料金と選び方](${abs("/gyosha/")}): 県内27社の公開料金の集計と、一般廃棄物収集運搬許可の確認方法`,
+    ...(fs.existsSync(path.join(ROOT, "content/pages/tools.md")) ? [`- [無料の様式（チェックリスト・見積もり比較シート・粗大ごみ早見表）](${abs("/tools/")})`] : []),
+    ``,
+    `## 相談`,
+    `- [見積もり相談（無料）](${abs("/mitsumori/")}): 新潟県内の許可業者に取り次ぐ。相談・訪問見積もりは無料。`,
+    `- [業者の掲載について](${abs("/keisai/")})`,
+    `- [運営者情報](${abs("/about/")})`,
+  ].join("\n");
+  write("/llms.txt", llms + "\n");
   write("/feed.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>${esc(SITE.name)}</title><link>${abs("/")}</link><description>${esc(SITE.tagline)}</description>${guides.map((g) => `<item><title>${esc(g.meta.title)}</title><link>${abs(`/guide/${g.slug}/`)}</link><description>${esc(g.meta.description || "")}</description></item>`).join("")}</channel></rss>\n`);
   write("/404.html", layout({ title: "ページが見つかりません", description: "ページが見つかりません", pathname: "/404.html", body: `<h1>ページが見つかりません</h1><p><a href="${url("/")}">トップページへ戻る</a></p>`, noindex: true }));
   // fs.cpSync は Windows + Node 24 でプロセスごと落ちる（exit 0xC0000409）ことがあるため手動コピーにする（2026-10-02）
