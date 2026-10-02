@@ -177,8 +177,8 @@ function cityPage(c) {
 <article class="city">
 <header class="page-head">
   <p class="eyebrow">${esc(c.area)}エリア ${c.core ? "・詳しいガイド" : ""}</p>
-  <h1>${esc(c.city)}の実家じまい・粗大ごみ・空き家ガイド</h1>
-  <p class="lead">${esc(c.city)}の実家を片付けるときに必要な、粗大ごみの出し方と料金、ごみの持ち込み先、解体の補助金、空き家バンクの情報を、${esc(c.city)}の公式サイトを出典にまとめました。</p>
+  <h1>${esc(c.city)}の粗大ごみ｜料金・申し込み方法・持ち込み先と、実家じまいに使える制度</h1>
+  <p class="lead">${esc(c.city)}の粗大ごみの出し方と料金、ごみを自分で持ち込む方法、家電リサイクル、空き家の解体補助金と空き家バンクを、${esc(c.city)}の公式サイトを出典にまとめました。実家の片付けで量が多いときの頼み先も案内します。</p>
   <p class="small">確認日: ${esc(s.checked_date || TODAY)}（粗大ごみ）／ 補助金は<a href="https://www.fureaino-oka.com/" rel="noopener">ふれあいの丘</a>の自治体データを使用</p>
 </header>
 
@@ -192,6 +192,7 @@ ${s.fee_system ? `<h3>料金の仕組み</h3><p>${esc(s.fee_system)}</p>` : ""}
 ${feeRows ? `<h3>主な品目の料金（公式料金表より）</h3><table class="fee"><thead><tr><th>品目</th><th class="n">料金</th></tr></thead><tbody>${feeRows}</tbody></table>` : ""}
 ${s.collection_frequency ? `<h3>収集の頻度</h3><p>${esc(s.collection_frequency)}</p>` : ""}
 ${s.special_notes ? `<p class="note">${esc(s.special_notes)}</p>` : ""}
+<p class="small">県内30市町村の手数料と持ち込みルールの違いは<a href="${url("/data/sodai-hikaku/")}">新潟県30市町村 粗大ごみ手数料・持ち込み比較</a>にまとめています。</p>
 </section>
 
 <section id="bring">
@@ -232,16 +233,53 @@ ${ctaBox(c.city)}
 ${faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("")}
 </section>
 
+<section class="next-read"><h2>${esc(c.city)}の実家じまいで、次に読む</h2><ul class="guide-list compact">${guides.filter((g) => ["jikkajimai-hiyou-niigata", "jikkajimai-tejun-niigata", "jibun-de-dasu-ka-gyousha-ka", "enpou-kara-jikkajimai"].includes(g.slug)).map((g) => `<li><a href="${url(`/guide/${g.slug}/`)}"><strong>${esc(g.meta.title)}</strong></a></li>`).join("")}</ul></section>
+
 ${sourceList(srcs, s.checked_date)}
 ${(s.notes || "").toString().includes("要確認") ? `<p class="small">※ 一部に公式サイトで確認できなかった項目があります。該当箇所は記載を控えています。</p>` : ""}
 </article>`;
-  write(`/city/${c.cityId}/`, layout({ title: `${c.city}の実家じまい・粗大ごみ・空き家ガイド`, description: `${c.city}の粗大ごみの出し方・料金・持ち込み先、解体補助金、空き家バンク、雪の支援を公式情報からまとめました。実家の片付けをまとめて頼める地元業者への相談も。`, pathname: `/city/${c.cityId}/`, body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }, { name: c.city, path: `/city/${c.cityId}/` }], jsonld: [faqLd], updated: s.checked_date || TODAY }));
+  const feeHint = (s.fee_examples || []).length ? `料金は${esc(((s.fee_examples || [])[0] || {}).fee || "").replace(/（.*$/, "")}から。` : "";
+  write(`/city/${c.cityId}/`, layout({ title: `${c.city}の粗大ごみ 料金・申込み・持ち込み先`, description: `${c.city}の粗大ごみの出し方・料金・申し込み方法・持ち込み先を公式サイトから整理。${feeHint}家電リサイクル、空き家の解体補助金、空き家バンクもまとめ、実家の片付けをまとめて頼める地元の許可業者につなぎます。`, pathname: `/city/${c.cityId}/`, body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }, { name: c.city, path: `/city/${c.cityId}/` }], jsonld: [faqLd], updated: s.checked_date || TODAY }));
 }
 
 function cityIndex() {
   const groups = Object.entries(AREA).map(([area, ids]) => `<section><h2>${esc(area)}</h2><ul class="city-grid">${ids.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a>${c.core ? '<span class="badge">詳細</span>' : ""}${c.subsidy?.has ? '<span class="badge sub">解体補助金</span>' : ""}</li>`).join("")}</ul></section>`).join("");
-  const body = `<header class="page-head"><h1>新潟県 市町村別の実家じまいガイド</h1><p class="lead">30市町村ごとに、粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、空き家バンク、雪の支援をまとめています。「詳細」のある市は、料金表や持ち込み施設まで掲載しています。</p></header>${groups}${ctaBox()}`;
-  write("/city/", layout({ title: "市町村別ガイド（新潟県30市町村）", description: "新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、空き家バンクを一覧で。", pathname: "/city/", body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }] }));
+  const body = `<header class="page-head"><h1>新潟県 市町村別の粗大ごみ・実家じまいガイド</h1><p class="lead">30市町村ごとに、粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、空き家バンク、雪の支援をまとめています。「詳細」のある市は、料金表や持ち込み施設まで掲載しています。手数料の違いを一覧で見るなら<a href="${url("/data/sodai-hikaku/")}">30市町村の比較表</a>へ。</p></header>${groups}${ctaBox()}`;
+  write("/city/", layout({ title: "市町村別ガイド（新潟県30市町村の粗大ごみ・空き家）", description: "新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、空き家バンクを一覧で。", pathname: "/city/", body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }] }));
+}
+
+// ---------- 調査レポート: 30市町村 粗大ごみ手数料・持ち込み比較 ----------
+function comparePage() {
+  const checkedDates = cities.map((c) => c.sodai?.checked_date).filter(Boolean).sort();
+  const latest = checkedDates[checkedDates.length - 1] || TODAY;
+  const withFee = cities.filter((c) => c.sodai?.fee_system);
+  const withBring = cities.filter((c) => c.sodai?.bring_in);
+  const feeRow = (c) => {
+    const s = c.sodai || {};
+    const ex = (s.fee_examples || []).filter((f) => f.fee).slice(0, 3).map((f) => `${esc(f.item)}: ${esc(f.fee)}`).join("<br>");
+    return `<tr><td><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a><br><span class="small">${esc(c.area)}</span></td><td>${esc(s.fee_system || "公式サイトで確認できず")}</td><td class="small">${ex || "—"}</td><td>${s.sodai_official_url ? `<a href="${esc(s.sodai_official_url)}" rel="noopener nofollow">公式</a>` : "—"}</td></tr>`;
+  };
+  const bringRow = (c) => {
+    const s = c.sodai || {};
+    const b = s.bring_in;
+    const text = !b ? "公式サイトで持ち込みの案内を確認できず" : typeof b === "string" ? b : Object.entries(b).filter(([, v]) => v && typeof v !== "object").map(([k, v]) => `${esc(k)}: ${esc(v)}`).join(" ／ ");
+    return `<tr><td><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a><br><span class="small">${esc(c.area)}</span></td><td>${typeof b === "string" ? esc(text) : text}</td></tr>`;
+  };
+  const areaSections = (rowFn, head) => Object.entries(AREA).map(([area, ids]) => {
+    const list = ids.map((id) => cityById[id]).filter(Boolean);
+    return `<h3>${esc(area)}（${list.length}市町村）</h3><div class="table-wrap"><table class="fee"><thead>${head}</thead><tbody>${list.map(rowFn).join("")}</tbody></table></div>`;
+  }).join("");
+  const feeHead = `<tr><th>市町村</th><th>手数料の仕組み（公式の記載）</th><th>主な品目の例</th><th>出典</th></tr>`;
+  const bringHead = `<tr><th>市町村</th><th>自分で持ち込む場合（施設・受付・料金・事前連絡）</th></tr>`;
+  const datasetLd = { "@context": "https://schema.org", "@type": "Dataset", name: "新潟県30市町村 粗大ごみ手数料・持ち込みルール比較", description: "新潟県内30市町村の粗大ごみ手数料の仕組み、主な品目の料金、処理施設への持ち込みルールを、各市町村の公式サイトから転記して比較した一覧。", url: abs("/data/sodai-hikaku/"), creator: { "@type": "Organization", name: SITE.operator }, dateModified: latest, license: "https://creativecommons.org/licenses/by/4.0/", spatialCoverage: "新潟県" };
+  const body = `<article class="data"><header class="page-head"><p class="eyebrow">調査レポート</p><h1>新潟県30市町村 粗大ごみ手数料・持ち込みルール比較（${latest.slice(0, 4)}年）</h1><p class="lead">新潟県の30市町村について、粗大ごみの手数料の決まり方と、処理施設へ自分で持ち込む場合のルールを、各市町村の公式サイトから転記して並べました。実家の片付けで「自分で出すか、業者に頼むか」を決めるときの材料にしてください。</p><p class="small">確認日: ${esc(checkedDates[0] || TODAY)}〜${esc(latest)}。手数料の仕組みを確認できた市町村 ${withFee.length}、持ち込みの案内を確認できた市町村 ${withBring.length}。公式サイトに記載が無い項目は「確認できず」と書き、推測で埋めていません。料金は改定されることがあるため、申し込み前に公式サイトでご確認ください。</p></header>
+<section><h2>この表の読み方</h2><ul><li>手数料は「処理券（シール）を品目ごとに貼る」方式が多く、券の単位（200円券のみ、100〜500円の4種類など）と品目ごとの段階の数が市町村で異なります。</li><li>持ち込み（自己搬入）は、収集を待たずに片付けられる一方、受け入れ施設・曜日・事前連絡の要否・10kgあたりの料金が市町村ごとに違います。</li><li>市町村名のリンク先に、申し込み方法・料金表・家電リサイクル・空き家の補助金まで載せています。</li></ul></section>
+<section id="fee"><h2>粗大ごみ手数料の仕組み（30市町村）</h2>${areaSections(feeRow, feeHead)}</section>
+<section id="bring"><h2>ごみの持ち込み（自己搬入）のルール（30市町村）</h2>${areaSections(bringRow, bringHead)}</section>
+<section><h2>データの利用について</h2><p>この比較表は、各市町村の公式サイトの記載を確認日時点で転記したものです。報道・調査・自治体の資料などで、出典（${esc(SITE.name)}、${esc(abs("/data/sodai-hikaku/"))}）を明記のうえ自由にご利用いただけます（CC BY 4.0）。転記誤りや改定にお気づきの場合は<a href="${url("/about/")}">運営者情報</a>のメールまでお知らせください。</p></section>
+${ctaBox()}
+</article>`;
+  write("/data/sodai-hikaku/", layout({ title: `新潟県30市町村 粗大ごみ手数料・持ち込み比較`, description: `新潟県30市町村の粗大ごみ手数料の仕組みと、処理施設への持ち込み（自己搬入）ルールを公式サイトから転記して比較。処理券の単位、品目ごとの料金例、受け入れ施設と事前連絡の要否を一覧に。`, pathname: "/data/sodai-hikaku/", body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }, { name: "30市町村 粗大ごみ比較", path: "/data/sodai-hikaku/" }], jsonld: [datasetLd], updated: latest }));
 }
 
 // ---------- ガイド ----------
@@ -249,7 +287,8 @@ function guidePages() {
   for (const g of guides) {
     const m = g.meta;
     const artLd = { "@context": "https://schema.org", "@type": "Article", headline: m.title, description: m.description, dateModified: m.updated || TODAY, author: { "@type": "Organization", name: SITE.operator }, publisher: { "@type": "Organization", name: SITE.name }, mainEntityOfPage: abs(`/guide/${g.slug}/`) };
-    const body = `<article class="guide"><header class="page-head"><p class="eyebrow">実家じまいの進め方</p><h1>${esc(m.title)}</h1><p class="lead">${esc(m.description || "")}</p><p class="small">更新日: ${esc(m.updated || TODAY)}</p></header><div class="prose">${g.html}</div>${ctaBox()}</article>`;
+    const cityBox = `<section class="next-read"><h2>市町村ごとの粗大ごみの料金・申し込み・持ち込み先</h2><p class="small">実家のある市町村を選ぶと、粗大ごみの料金表、持ち込み施設、空き家の解体補助金を確認できます。</p><ul class="city-grid">${CORE.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a></li>`).join("")}</ul><p><a href="${url("/city/")}">30市町村すべてを見る →</a> ／ <a href="${url("/data/sodai-hikaku/")}">30市町村の手数料・持ち込み比較表 →</a></p></section>`;
+    const body = `<article class="guide"><header class="page-head"><p class="eyebrow">実家じまいの進め方</p><h1>${esc(m.title)}</h1><p class="lead">${esc(m.description || "")}</p><p class="small">更新日: ${esc(m.updated || TODAY)}</p></header><div class="prose">${g.html}</div>${cityBox}${ctaBox()}</article>`;
     write(`/guide/${g.slug}/`, layout({ title: m.title, description: m.description || "", pathname: `/guide/${g.slug}/`, body, breadcrumbs: [{ name: "実家じまいの進め方", path: "/guide/" }, { name: m.title, path: `/guide/${g.slug}/` }], jsonld: [artLd], updated: m.updated }));
   }
   const list = guides.map((g) => `<li><a href="${url(`/guide/${g.slug}/`)}"><strong>${esc(g.meta.title)}</strong><span>${esc(g.meta.description || "")}</span></a></li>`).join("");
@@ -301,7 +340,7 @@ function home() {
   <li><span class="num">02</span><h2>進め方と費用を把握する</h2><p>何から手を付けるか、帰省2回で終わらせる段取り、冬の雪対策、業者に頼む分かれ目。</p><a href="${url("/guide/")}">実家じまいの進め方へ</a></li>
   <li><span class="num">03</span><h2>頼むなら許可のある業者に</h2><p>県内${(prices.companies || []).length}社の公開料金を集計。許可の確認方法と、見積もりで聞くべきこと。</p><a href="${url("/gyosha/")}">業者の料金と選び方へ</a></li>
 </ol>
-<section><h2>詳しいガイドのある市</h2><ul class="card-grid">${coreCards}</ul><p><a href="${url("/city/")}">30市町村すべてを見る →</a></p></section>
+<section><h2>詳しいガイドのある市</h2><ul class="card-grid">${coreCards}</ul><p><a href="${url("/city/")}">30市町村すべてを見る →</a> ／ <a href="${url("/data/sodai-hikaku/")}">30市町村の粗大ごみ手数料・持ち込み比較 →</a></p></section>
 <section><h2>実家じまいの進め方（新潟版）</h2><ul class="guide-list compact">${guideCards}</ul></section>
 <section class="why"><h2>このサイトについて</h2><p>運営者は長岡市に住んでいます。市町村の公式サイトを出典に、確認日を付けて掲載し、業者は直接会って確かめたところだけを載せます。墓じまいは姉妹サイトの<a href="https://hakarau.jp/" rel="noopener">ハカラウ</a>、空き家の解体補助金の全国版は<a href="https://www.fureaino-oka.com/" rel="noopener">ふれあいの丘</a>で扱っています。</p></section>
 ${ctaBox()}`;
@@ -311,17 +350,39 @@ ${ctaBox()}`;
 
 // ---------- sitemap / robots / feed / 404 ----------
 function extras() {
-  const urls = ["/", "/city/", "/guide/", "/gyosha/", "/mitsumori/", ...cities.map((c) => `/city/${c.cityId}/`), ...guides.map((g) => `/guide/${g.slug}/`), ...pages.filter((p) => p.meta.noindex !== "true").map((p) => `/${p.slug}/`)];
-  const uniq = [...new Set(urls)];
-  write("/sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${uniq.map((u) => `<url><loc>${abs(u)}</loc><lastmod>${TODAY}</lastmod></url>`).join("\n")}\n</urlset>\n`);
+  // lastmod は「そのページの情報を最後に確認した日」。ビルド日で全ページを更新すると鮮度信号が信用されなくなる。
+  const cityLatest = cities.map((c) => c.sodai?.checked_date).filter(Boolean).sort().pop() || TODAY;
+  const guideLatest = guides.map((g) => g.meta.updated).filter(Boolean).sort().pop() || TODAY;
+  const entries = [
+    ["/", cityLatest > guideLatest ? cityLatest : guideLatest],
+    ["/city/", cityLatest],
+    ["/data/sodai-hikaku/", cityLatest],
+    ["/guide/", guideLatest],
+    ["/gyosha/", prices.checked || TODAY],
+    ["/mitsumori/", guideLatest],
+    ...cities.map((c) => [`/city/${c.cityId}/`, c.sodai?.checked_date || cityLatest]),
+    ...guides.map((g) => [`/guide/${g.slug}/`, g.meta.updated || guideLatest]),
+    ...pages.filter((p) => p.meta.noindex !== "true").map((p) => [`/${p.slug}/`, p.meta.updated || guideLatest]),
+  ];
+  const seen = new Set();
+  const uniq = entries.filter(([u]) => (seen.has(u) ? false : (seen.add(u), true)));
+  write("/sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${uniq.map(([u, d]) => `<url><loc>${abs(u)}</loc><lastmod>${d}</lastmod></url>`).join("\n")}\n</urlset>\n`);
   write("/robots.txt", `User-agent: *\nAllow: /\nSitemap: ${abs("/sitemap.xml")}\n`);
   write("/feed.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>${esc(SITE.name)}</title><link>${abs("/")}</link><description>${esc(SITE.tagline)}</description>${guides.map((g) => `<item><title>${esc(g.meta.title)}</title><link>${abs(`/guide/${g.slug}/`)}</link><description>${esc(g.meta.description || "")}</description></item>`).join("")}</channel></rss>\n`);
   write("/404.html", layout({ title: "ページが見つかりません", description: "ページが見つかりません", pathname: "/404.html", body: `<h1>ページが見つかりません</h1><p><a href="${url("/")}">トップページへ戻る</a></p>`, noindex: true }));
-  if (fs.existsSync(path.join(ROOT, "public"))) fs.cpSync(path.join(ROOT, "public"), OUT, { recursive: true });
+  // fs.cpSync は Windows + Node 24 でプロセスごと落ちる（exit 0xC0000409）ことがあるため手動コピーにする（2026-10-02）
+  const copyDir = (src, dst) => {
+    fs.mkdirSync(dst, { recursive: true });
+    for (const e of fs.readdirSync(src, { withFileTypes: true })) {
+      const s = path.join(src, e.name), d = path.join(dst, e.name);
+      if (e.isDirectory()) copyDir(s, d); else fs.copyFileSync(s, d);
+    }
+  };
+  if (fs.existsSync(path.join(ROOT, "public"))) copyDir(path.join(ROOT, "public"), OUT);
   fs.writeFileSync(path.join(OUT, ".nojekyll"), "");
 }
 
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(OUT, { recursive: true });
-home(); cityIndex(); cities.forEach(cityPage); guidePages(); gyoshaPage(); staticPages(); extras();
+home(); cityIndex(); cities.forEach(cityPage); comparePage(); guidePages(); gyoshaPage(); staticPages(); extras();
 console.log(`built: ${cities.length} cities, ${guides.length} guides, ${pages.length} pages → ${OUT}`);
