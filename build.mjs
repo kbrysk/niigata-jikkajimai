@@ -82,7 +82,9 @@ const pages = fs.existsSync(path.join(ROOT, "content/pages"))
 // ---------- レイアウト ----------
 const css = fs.readFileSync(path.join(ROOT, "public/assets/site.css"), "utf8");
 function layout({ title, description, pathname, body, breadcrumbs = [], jsonld = [], noindex = false, updated }) {
-  const fullTitle = pathname === "/" ? `${SITE.name}｜${SITE.tagline}` : `${title}｜${SITE.name}`;
+  // <title> は検索結果で切れないよう「｜」より前の主題だけを使う（H1 は本文側で全文を出す）
+  const shortTitle = String(title).split(/[｜|]/)[0].trim();
+  const fullTitle = pathname === "/" ? `${SITE.name}｜${SITE.tagline}` : `${shortTitle}｜${SITE.name}`;
   const crumbs = [{ name: "ホーム", path: "/" }, ...breadcrumbs];
   const crumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: crumbs.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: abs(c.path) })) };
   const ld = [crumbLd, ...jsonld].map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join("\n");
