@@ -241,7 +241,7 @@ updated: 2026-10-02
 
 ## 出典
 
-確認日は、2026-10-01と2026-10-02です。「★」は2026-10-02に確認した出典です。
+確認日は、2026-10-01と2026-10-02です。
 
 - 環境省「廃棄物の処分に「無許可」の回収業者を利用しないでください！」 https://www.env.go.jp/recycle/kaden/tv-recycle/qa.html
 - 長岡市「無許可の不用品回収業者にご注意ください」（更新2025年4月1日） https://www.city.nagaoka.niigata.jp/kurashi/cate08/unauthorized.html
@@ -257,7 +257,7 @@ updated: 2026-10-02
 - 新潟県「除雪作業中の事故にご注意ください」 https://www.pref.niigata.lg.jp/site/chiikiseisaku/191025zikoboushi.html
 - 法務省「相続登記の申請義務化に関するQ＆A」 https://www.moj.go.jp/MINJI/minji05_00565.html
 - 裁判所「相続の放棄の申述」 https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html
-- ★新潟市「市で収集処理しないごみ」（更新2024年4月7日） https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/none.html
-- ★長岡市「収集処理できないごみ」（更新2026年1月19日） https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html
-- ★長岡市「消火器の廃棄について」（更新2026年4月9日） https://www.city.nagaoka.niigata.jp/kurashi/cate16/syoukaki-haiki.html
-- ★上越市「空き家活用のための家財道具等処分費補助金」（更新2026年3月27日） https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-kazaisyobun.html
+- 新潟市「市で収集処理しないごみ」（更新2024年4月7日） https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/none.html（確認日: 2026-10-02）
+- 長岡市「収集処理できないごみ」（更新2026年1月19日） https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html（確認日: 2026-10-02）
+- 長岡市「消火器の廃棄について」（更新2026年4月9日） https://www.city.nagaoka.niigata.jp/kurashi/cate16/syoukaki-haiki.html（確認日: 2026-10-02）
+- 上越市「空き家活用のための家財道具等処分費補助金」（更新2026年3月27日） https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-kazaisyobun.html（確認日: 2026-10-02）

@@ -225,7 +225,7 @@ updated: 2026-10-02
 
 ## 出典
 
-確認日は、2026-10-01と2026-10-02です。「★」は2026-10-02に確認した出典です。
+確認日は、2026-10-01と2026-10-02です。
 
 - 新潟県「冬季における空き家からの落雪や倒壊にご注意ください！」（更新2023年7月4日） https://www.pref.niigata.lg.jp/sec/toshiseisaku/akiya-jyosetsu.html
 - 新潟県「新潟県住宅の屋根雪対策条例」 https://www.pref.niigata.lg.jp/sec/jutaku/1351202476337.html
@@ -240,8 +240,8 @@ updated: 2026-10-02
 - 上越市「除雪費助成制度」 https://www.city.joetsu.niigata.jp/soshiki/engo/lifeguide-238.html
 - 十日町市「要援護世帯除排雪援助事業」 https://www.city.tokamachi.lg.jp/soshiki/shiminfukushibu/fukushika/1/gyomu/1567986077003.html
 - 十日町市「雪おろし作業費補助（雪おろし安全対策事業）」 https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/kensetsuka/3/gyomu/7650.html
-- ★国土交通省「市町村による空き家等の除雪等の考え方（平成28年度版）」（PDF） https://www.mlit.go.jp/common/001090773.pdf
-- ★十日町市「冬期間の空き家の適切な除雪と管理」（更新2023年4月1日） https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/4/1/8493.html
-- ★新潟県「要配慮者（高齢者世帯等）に対する除雪相談窓口について」（更新2025年12月15日） https://www.pref.niigata.lg.jp/sec/fukushihoken/1293144426695.html
-- ★新潟市「大雪に備えましょう（市民のみなさんへのお願い）」（更新2026年2月9日） https://www.city.niigata.lg.jp/kurashi/bosai/oshirase_ichiran/ooyuki_sonae.html
-- ★長岡市「長岡市の空き家対策」（更新2026年10月2日） https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html
+- 国土交通省「市町村による空き家等の除雪等の考え方（平成28年度版）」（PDF） https://www.mlit.go.jp/common/001090773.pdf（確認日: 2026-10-02）
+- 十日町市「冬期間の空き家の適切な除雪と管理」（更新2023年4月1日） https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/4/1/8493.html（確認日: 2026-10-02）
+- 新潟県「要配慮者（高齢者世帯等）に対する除雪相談窓口について」（更新2025年12月15日） https://www.pref.niigata.lg.jp/sec/fukushihoken/1293144426695.html（確認日: 2026-10-02）
+- 新潟市「大雪に備えましょう（市民のみなさんへのお願い）」（更新2026年2月9日） https://www.city.niigata.lg.jp/kurashi/bosai/oshirase_ichiran/ooyuki_sonae.html（確認日: 2026-10-02）
+- 長岡市「長岡市の空き家対策」（更新2026年10月2日） https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html（確認日: 2026-10-02）

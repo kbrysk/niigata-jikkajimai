@@ -240,22 +240,22 @@ updated: 2026-10-02
 
 ## 出典
 
-確認日は、2026-10-01と2026-10-02です。「★」は2026-10-02に確認した出典です。
+確認日は、2026-10-01と2026-10-02です。
 
 - 新潟市「粗大ごみ」 https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html
 - 新潟市「ごみの自己搬入について」 https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/carry.html
 - 新潟市「テレビ・冷蔵庫等の家電リサイクル法対象品目」 https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/kaden.html
-- ★新潟市「市で収集処理しないごみ」（更新2024年4月7日） https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/none.html
+- 新潟市「市で収集処理しないごみ」（更新2024年4月7日） https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/none.html（確認日: 2026-10-02）
 - 新潟市「一般家庭から排出されるごみを自ら運搬することができないときは」 https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/unpankonnan.html
 - 新潟市「空き家の管理の方法」 https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/tekiseikanri/kanri.html
 - 新潟市「空き家の発生を抑制するための特例措置（空き家の譲渡所得の3,000万円特別控除）」 https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/yokusei/akiyatokurei3000.html
-- ★新潟市「大雪に備えましょう（市民のみなさんへのお願い）」（更新2026年2月9日） https://www.city.niigata.lg.jp/kurashi/bosai/oshirase_ichiran/ooyuki_sonae.html
+- 新潟市「大雪に備えましょう（市民のみなさんへのお願い）」（更新2026年2月9日） https://www.city.niigata.lg.jp/kurashi/bosai/oshirase_ichiran/ooyuki_sonae.html（確認日: 2026-10-02）
 - 長岡市「粗大ごみ（事前申込制）戸別収集」 https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html
 - 長岡市「処理施設への持ち込み」 https://www.city.nagaoka.niigata.jp/kurashi/cate08/mochi-gomi.html
-- ★長岡市「収集処理できないごみ」（更新2026年1月19日） https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html
-- ★長岡市「消火器の廃棄について」（更新2026年4月9日） https://www.city.nagaoka.niigata.jp/kurashi/cate16/syoukaki-haiki.html
+- 長岡市「収集処理できないごみ」（更新2026年1月19日） https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html（確認日: 2026-10-02）
+- 長岡市「消火器の廃棄について」（更新2026年4月9日） https://www.city.nagaoka.niigata.jp/kurashi/cate16/syoukaki-haiki.html（確認日: 2026-10-02）
 - 長岡市「長岡市の空き家対策」 https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html
-- ★上越市「空き家活用のための家財道具等処分費補助金」（更新2026年3月27日） https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-kazaisyobun.html
+- 上越市「空き家活用のための家財道具等処分費補助金」（更新2026年3月27日） https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-kazaisyobun.html（確認日: 2026-10-02）
 - 新潟県「冬季における空き家からの落雪や倒壊にご注意ください！」 https://www.pref.niigata.lg.jp/sec/toshiseisaku/akiya-jyosetsu.html
 - 環境省「廃棄物の処分に「無許可」の回収業者を利用しないでください！」 https://www.env.go.jp/recycle/kaden/tv-recycle/qa.html
 - 国民生活センター「こんなはずじゃなかった！遺品整理サービスでの契約トラブル」（2018年7月19日発表） https://www.kokusen.go.jp/news/data/n-20180719_1.html
@@ -263,9 +263,9 @@ updated: 2026-10-02
 - 日本年金機構「年金を受けている方が亡くなったとき」（更新2026年4月1日） https://www.nenkin.go.jp/service/jukyu/tetsuduki/kyotsu/jukyu/20140731-01.html
 - 日本郵便「転居・転送サービス」 http://www.post.japanpost.jp/service/tenkyo/
 - 法務省「相続登記の申請義務化に関するQ＆A」 https://www.moj.go.jp/MINJI/minji05_00565.html
-- ★法務省「戸籍法の一部を改正する法律について（令和6年3月1日施行）」 https://www.moj.go.jp/MINJI/minji04_00082.html
-- ★法務局「法定相続情報証明制度の具体的な手続について」 https://houmukyoku.moj.go.jp/homu/page7_000014.html
+- 法務省「戸籍法の一部を改正する法律について（令和6年3月1日施行）」 https://www.moj.go.jp/MINJI/minji04_00082.html（確認日: 2026-10-02）
+- 法務局「法定相続情報証明制度の具体的な手続について」 https://houmukyoku.moj.go.jp/homu/page7_000014.html（確認日: 2026-10-02）
 - 裁判所「相続の放棄の申述」 https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html
-- ★国税庁「No.2022 準確定申告」 https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2022.htm
-- ★国税庁「No.4205 相続税の申告と納税」 https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4205.htm
+- 国税庁「No.2022 準確定申告」 https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2022.htm（確認日: 2026-10-02）
+- 国税庁「No.4205 相続税の申告と納税」 https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4205.htm（確認日: 2026-10-02）
 - 国税庁「No.3306 被相続人の居住用財産（空き家）を売ったときの特例」 https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3306.htm
