@@ -21,19 +21,21 @@ p,li,dd,dt,td,th,summary{overflow-wrap:anywhere}
 .skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:6px 10px;z-index:99}
 :focus-visible{outline:2px solid var(--navy);outline-offset:2px}
 
-/* ---------- header: 紙のべた塗り＋下罫1本 ---------- */
-.site-header{position:sticky;top:0;z-index:40;background:var(--paper);border-bottom:1px solid var(--line-strong)}
-.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
-.brand-mark{display:inline-grid;place-items:center;width:30px;height:30px;border:1.5px solid var(--ink);color:var(--ink);font-size:17px;font-weight:700;line-height:1}
-.brand-name{font-size:17px;font-weight:700;line-height:1.2}
-.brand-sub{display:block;font-size:11.5px;color:var(--mute);font-weight:400;line-height:1.3;margin-top:2px}
-.nav{display:flex;gap:2px;align-items:center;font-size:14.5px}
+/* ---------- header: 地方紙の題字。上に発行情報の1行、下に太い墨罫 ---------- */
+.site-header{background:var(--paper);border-bottom:3px solid var(--line-strong)}
+.mast-top{display:flex;flex-wrap:wrap;gap:2px 0;margin:0;padding:6px 0 5px;border-bottom:1px solid var(--line);font-size:12px;color:var(--mute);line-height:1.5}
+.mast-top span+span::before{content:"｜";margin:0 8px;color:var(--line)}
+.mast{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;padding:14px 0 12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand-mark{display:inline-grid;place-items:center;width:44px;height:44px;border:2px solid var(--ink);color:var(--ink);font-size:26px;font-weight:700;line-height:1}
+.brand-name{font-size:30px;font-weight:700;line-height:1.1;letter-spacing:.02em}
+.brand-sub{display:none}
+.nav{display:flex;gap:2px;align-items:center;font-size:14.5px;padding-bottom:4px}
 .nav a{text-decoration:none;color:var(--ink);padding:8px 10px}
 .nav a:hover{text-decoration:underline}
 .nav a.cta{color:#fff;background:var(--navy);font-weight:700;margin-left:8px;padding:9px 14px;border-radius:2px}
 .nav a.cta:hover{background:var(--navy-2);text-decoration:none}
-@media (max-width:760px){.nav a:not(.cta){display:none}.brand-sub{display:none}}
+@media (max-width:760px){.nav a:not(.cta){display:none}.mast-top span:not(:last-child){display:none}.mast-top span:last-child::before{content:none}.mast{padding:10px 0 9px;align-items:center}.brand-mark{width:34px;height:34px;font-size:20px}.brand-name{font-size:21px}}
 
 /* ---------- crumbs ---------- */
 .crumbs{font-size:12.5px;color:var(--mute);margin:12px auto 0}
@@ -56,7 +58,15 @@ p{margin:8px 0}
 
 /* 市町村・比較ページの頭。面は変えず、下に太罫1本 */
 .band{margin:0;padding:26px 0 26px;border-bottom:2px solid var(--line-strong)}
-.band>.inner{max-width:var(--wide);margin:0 auto}
+.band>.inner{max-width:var(--wide);margin:0 auto;position:relative}
+@media (min-width:901px){.band>.inner,.guide .page-head{padding-right:170px}}
+.page-head{position:relative}
+/* 確認印: 朱の角印。回転は手で押した程度（-4°）。読み上げ用の文字はそのまま */
+.seal{position:absolute;right:0;top:24px;display:inline-grid;gap:2px;place-items:center;padding:9px 10px 8px;border:2.5px solid var(--seal);color:var(--seal);transform:rotate(-4deg);font-weight:700;line-height:1.15;text-align:center;background:var(--paper);opacity:.92;font-variant-numeric:tabular-nums}
+.seal::after{content:"";position:absolute;inset:3px;border:1px solid var(--seal);opacity:.55}
+.seal-l{font-size:11px;letter-spacing:.06em}
+.seal-d{font-size:15px}
+@media (max-width:900px){.seal{position:static;transform:rotate(-3deg);margin:0 0 10px;justify-self:start}.band .seal,.page-head .seal{display:inline-grid}}
 .band h1{margin-top:6px}
 .meta-row{display:flex;flex-wrap:wrap;gap:4px 0;margin-top:12px;font-size:13.5px;color:var(--mute)}
 .chip{display:inline;color:var(--mute);text-decoration:none;white-space:normal;padding:0;border:0;background:none}
@@ -75,6 +85,15 @@ a.chip{text-decoration:underline;color:var(--navy)}
 @media (max-width:900px){.answer{grid-template-columns:1fr 1fr}.answer .tile:nth-child(2){border-right:0;margin-right:0}.answer .tile:nth-child(n+3){border-top:1px solid var(--line)}}
 @media (max-width:520px){.answer{grid-template-columns:1fr}.answer .tile{border-right:0;margin-right:0;padding-right:0}.answer .tile+.tile{border-top:1px solid var(--line)}}
 
+/* ---------- 右端のインデックス見出し: 冊子の小口のタブ。広い画面だけ ---------- */
+.tabs{display:none}
+@media (min-width:1260px){
+  .tabs{display:flex;flex-direction:row;position:fixed;right:0;top:150px;z-index:20;writing-mode:vertical-rl;gap:0}
+  .tabs a{display:block;padding:14px 9px 14px 8px;font-size:13px;font-weight:700;color:var(--ink);text-decoration:none;background:var(--paper-2);border:1px solid var(--line);border-right:0;border-top:0;letter-spacing:.08em}
+  .tabs a:first-child{border-top:1px solid var(--line)}
+  .tabs a:hover{background:var(--navy-10)}
+  .tabs a.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+}
 /* ---------- toc: 枠なし、上下の罫 ---------- */
 .toc{max-width:var(--read);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin:24px 0 0;font-size:14.5px}
 .toc ol{margin:0;padding-left:1.4em;columns:2;column-gap:28px}
@@ -186,21 +205,28 @@ dl.kv dd{margin:0}
 @media (max-width:760px){.card-grid,.guide-list.compact{grid-template-columns:1fr}}
 
 /* ---------- home ---------- */
-.hero{margin:0;padding:40px 0 36px;border-bottom:2px solid var(--line-strong);max-width:none}
-.hero .inner{max-width:var(--wide);margin:0 auto;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:48px;align-items:start}
-.hero h1{font-size:40px;line-height:1.4;margin:4px 0 14px}
-.hero .lead{font-size:17.5px}
-.city-jump{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch;margin:22px 0 6px;padding:14px 0 16px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.city-jump label{font-size:13px;color:var(--mute);flex-basis:100%;margin-bottom:-2px}
-.city-jump select{font-size:16px;padding:11px 12px;border:1px solid var(--ink);border-radius:2px;background:#fff;min-width:240px;font-family:var(--sans);color:var(--ink);flex:1}
-/* 右: 実データの抜粋表（統計タイルの代わり） */
+.hero{margin:0 calc(50% - 50vw);padding:44px max(24px,calc(50vw - var(--wide)/2)) 40px;background:var(--navy);color:#fff;max-width:none}
+.hero .inner{max-width:var(--wide);margin:0 auto;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);gap:56px;align-items:start}
+.hero .eyebrow{color:rgba(255,255,255,.72)}
+.hero h1{font-size:42px;line-height:1.38;margin:4px 0 16px;color:#fff}
+.hero .lead{font-size:17.5px;color:rgba(255,255,255,.92)}
+.hero .small,.hero .small a{color:rgba(255,255,255,.72)}
+.hero a{color:#fff;text-decoration-color:rgba(255,255,255,.5)}
+.city-jump{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch;margin:22px 0 6px;padding:14px 0 16px;border-top:1px solid rgba(255,255,255,.25);border-bottom:1px solid rgba(255,255,255,.25)}
+.city-jump label{font-size:13px;color:rgba(255,255,255,.75);flex-basis:100%;margin-bottom:-2px}
+.city-jump select{font-size:16px;padding:11px 12px;border:1px solid #fff;border-radius:2px;background:#fff;min-width:240px;font-family:var(--sans);color:var(--ink);flex:1}
+.btn.paper{background:#fff;color:var(--navy);border-color:#fff}
+.btn.paper:hover{background:var(--paper-2);border-color:var(--paper-2)}
+/* 右: 実データの抜粋表（統計タイルの代わり）。藍の上に白の罫 */
 .hero-aside{font-size:14.5px}
-.hero-aside .cap{font-size:13px;color:var(--mute);margin:0 0 6px}
-.hero-aside table{margin-top:0;font-size:14.5px}
+.hero-aside .cap{font-size:13px;color:rgba(255,255,255,.75);margin:0 0 6px}
+.hero-aside table{margin-top:0;font-size:14.5px;border-top-color:#fff;border-bottom-color:rgba(255,255,255,.5);color:#fff}
+.hero-aside th,.hero-aside td{border-bottom-color:rgba(255,255,255,.22)}
+.hero-aside thead th{color:rgba(255,255,255,.8);border-bottom-color:rgba(255,255,255,.5)}
 .hero-aside td:first-child{white-space:nowrap}
-.hero-aside td:first-child a{text-decoration:none;color:var(--ink);font-weight:700}
+.hero-aside td:first-child a{text-decoration:none;color:#fff;font-weight:700}
 .hero-aside td:first-child a:hover{text-decoration:underline}
-.hero-aside .more{font-size:13.5px;margin:8px 0 0}
+.hero-aside .more{font-size:13px;margin:8px 0 0;color:rgba(255,255,255,.75)}
 .data-note{display:flex;flex-wrap:wrap;gap:4px 0;font-size:14px;color:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0;margin:36px 0 0;max-width:none}
 .data-note span+span::before{content:"／";margin:0 10px;color:var(--line)}
 .data-note b{font-variant-numeric:tabular-nums;color:var(--ink)}
@@ -219,8 +245,29 @@ dl.kv dd{margin:0}
 .promise{list-style:none;padding:0;margin:0}
 .promise li{border-bottom:1px solid var(--line);padding:10px 0;font-size:14.5px}
 .promise li:first-child{border-top:1px solid var(--line)}
-@media (max-width:900px){.hero .inner{grid-template-columns:1fr;gap:28px}.hero h1{font-size:31px}.steps{grid-template-columns:1fr}.steps li+li{border-top:1px solid var(--line)}.why{grid-template-columns:1fr}}
+@media (max-width:900px){.hero{padding-left:24px;padding-right:24px}.hero .inner{grid-template-columns:1fr;gap:28px}.hero h1{font-size:31px}.steps{grid-template-columns:1fr}.steps li+li{border-top:1px solid var(--line)}.why{grid-template-columns:1fr}}
 
+/* 写真枠（運営者の実写1枚だけ。ファイルが無ければ出ない） */
+.photo{margin:36px 0 0;max-width:var(--wide)}
+.photo img{display:block;width:100%;aspect-ratio:3/1.4;object-fit:cover}
+.photo figcaption{font-size:13px;color:var(--mute);margin-top:6px}
+/* 市町村ディレクトリ: 4列、密に */
+.dir-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0 28px;border-top:1px solid var(--line)}
+.dir-col h3{font-size:14px;margin:12px 0 4px;color:var(--mute)}
+.dir-col h3 small{font-weight:400;font-size:12px;margin-left:8px}
+.dir-col ul{list-style:none;margin:0;padding:0;columns:2;column-gap:16px}
+.dir-col li{font-size:14.5px;padding:3px 0;break-inside:avoid}
+.dir-col a{text-decoration:none;color:var(--ink)}
+.dir-col a:hover{text-decoration:underline}
+.dir-col a.core{font-weight:700}
+.dir-col .badge{font-size:11px}
+.two{display:grid;grid-template-columns:1.25fr 1fr;gap:0 48px;max-width:none}
+.two .home-section{max-width:none}
+.recent table{font-size:13.5px}
+.recent td,.recent th{padding:7px 8px}
+.guide-list.compact.one{grid-template-columns:1fr}
+@media (max-width:1000px){.dir-grid{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
+@media (max-width:560px){.dir-grid{grid-template-columns:1fr}.dir-col ul{columns:2}}
 /* ---------- 比較ページ（調査レポート） ---------- */
 .report-stats{display:flex;flex-wrap:wrap;gap:4px 0;margin-top:16px;font-size:14.5px;color:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0;max-width:var(--wide)}
 .report-stats .stat{display:inline}
@@ -299,4 +346,4 @@ form.lead-form .btn{justify-self:start}
   .cta-box{padding:20px 18px}
   .card-grid{gap:0}
 }
-@media print{.site-header,.sticky-cta,.cta-box,.nav{display:none}body{font-size:12pt}}
+@media print{.site-header,.sticky-cta,.cta-box,.nav,.tabs{display:none}body{font-size:12pt}.hero{background:none;color:var(--ink)}}
