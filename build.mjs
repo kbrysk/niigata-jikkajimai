@@ -118,6 +118,11 @@ ${noindex ? '<meta name="robots" content="noindex,nofollow">' : ""}
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="${url("/assets/favicon.svg")}" type="image/svg+xml">
+${SITE.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(SITE.googleSiteVerification)}">` : ""}
+${SITE.bingSiteVerification ? `<meta name="msvalidate.01" content="${esc(SITE.bingSiteVerification)}">` : ""}
+${SITE.gaMeasurementId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(SITE.gaMeasurementId)}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${esc(SITE.gaMeasurementId)}',{anonymize_ip:true});
+document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';if(/px\\.a8\\.net|mitsumori|mailto:/.test(h)){gtag('event',h.indexOf('mitsumori')>-1||h.indexOf('mailto:')===0?'lead_click':'affiliate_click',{link_url:h,page_path:location.pathname});}});</script>` : ""}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="${esc(SITE.name)}" href="${abs("/feed.xml")}">
