@@ -319,8 +319,10 @@ form.lead-form .btn{justify-self:start}
 .b2b-panel .l{font-size:13px;color:var(--mute);margin:2px 0 0}
 @media (max-width:640px){.b2b-panel .grid{grid-template-columns:1fr}.b2b-panel .grid div+div{border-left:0;border-top:1px solid var(--line);padding-left:0;margin-left:0}}
 
-/* ---------- 運営者: 実在の人を、写真と名前と一言で。丸抜き・影・吹き出しは使わない ---------- */
-.person{display:flex;gap:14px;align-items:flex-start}
+/* ---------- 運営者: 氏名と一言の文字だけ。顔写真は使わない（2026-10-04） ---------- */
+.person{display:flex;gap:14px;align-items:flex-start;border-left:3px solid var(--line-strong);padding-left:14px}
+.hero-person{border-left-color:#fff}
+.cta-box .person.sm{border-left-color:rgba(255,255,255,.6)}
 .person img{display:block;flex:none;object-fit:cover;border:1px solid var(--line);background:var(--paper-2)}
 .person.sm img{width:48px;height:48px}
 .person.sm p{margin:0;font-size:13.5px;line-height:1.6}
