@@ -364,7 +364,7 @@ ${(s.notes || "").toString().includes("要確認") ? `<p class="small">※ 一�
 function cityIndex() {
   const groups = Object.entries(AREA).map(([area, ids]) => `<section><h2>${esc(area)}</h2><ul class="city-grid">${ids.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a>${c.core ? '<span class="badge">詳細</span>' : ""}${c.subsidy?.has ? '<span class="badge sub">解体補助金</span>' : ""}</li>`).join("")}</ul></section>`).join("");
   const body = `<header class="page-head"><h1>新潟県 市町村別の粗大ごみ・実家じまいガイド</h1><p class="lead">30市町村ごとに、粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、空き家バンク、雪の支援をまとめています。「詳細」のある市は、料金表や持ち込み施設まで掲載しています。手数料の違いを一覧で見るなら<a href="${url("/data/sodai-hikaku/")}">30市町村の比較表</a>へ。</p></header>${groups}${ctaBox()}`;
-  write("/city/", layout({ title: "市町村別ガイド（新潟県30市町村の粗大ごみ・空き家）", description: "新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、空き家バンクを一覧で。", pathname: "/city/", body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }] }));
+  write("/city/", layout({ title: "市町村別ガイド｜新潟県30市町村の粗大ごみ・空き家", description: "新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、空き家バンク、雪下ろし支援を市町村ごとに一覧。各市町村の公式サイトを出典に、確認日を明記しています。", pathname: "/city/", body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }] }));
 }
 
 // ---------- 調査レポート: 30市町村 粗大ごみ手数料・持ち込み比較 ----------
@@ -424,7 +424,7 @@ function guidePages() {
     return items.length ? `<section id="${cat.id}"><h2>${esc(cat.name)}<small class="cnt">${items.length}本</small></h2><p class="sub">${esc(cat.lead)}</p><ul class="guide-list">${items.map((g) => guideItem(g)).join("")}</ul></section>` : "";
   }).join("");
   const catNav = `<nav class="toc" aria-label="分類"><ol>${catOrder.map((id) => GUIDE_CATS.find((c) => c.id === id)).map((cat) => `<li><a href="#${cat.id}">${esc(cat.name)}（${guides.filter((g) => guideCat(g).id === cat.id).length}）</a></li>`).join("")}</ol></nav>`;
-  write("/guide/", layout({ title: "実家じまいの進め方（新潟版）", description: "新潟の実家を片付ける手順、費用、県外からの段取り、冬の雪対策、業者に頼む基準をまとめたガイド。", pathname: "/guide/", body: `<header class="page-head"><h1>実家じまいの進め方（新潟版）<small class="cnt">${guides.length}本</small></h1><p class="lead">何から始めるか、いくらかかるか、県外からどう進めるか、冬はどうするか。新潟の事情に合わせて書いています。</p></header>${catNav}${sections}${ctaBox()}`, breadcrumbs: [{ name: "実家じまいの進め方", path: "/guide/" }] }));
+  write("/guide/", layout({ title: "実家じまいの進め方（新潟版）", description: "新潟の実家を片付ける手順と費用、県外からの段取り、冬の雪対策、品目別のごみの出し方、空き家の税金と売却、業者に頼む基準をまとめたガイド一覧。公式サイトを出典に確認日を明記。", pathname: "/guide/", body: `<header class="page-head"><h1>実家じまいの進め方（新潟版）<small class="cnt">${guides.length}本</small></h1><p class="lead">何から始めるか、いくらかかるか、県外からどう進めるか、冬はどうするか。新潟の事情に合わせて書いています。</p></header>${catNav}${sections}${ctaBox()}`, breadcrumbs: [{ name: "実家じまいの進め方", path: "/guide/" }] }));
 }
 
 // ---------- 業者・料金 ----------
