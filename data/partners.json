@@ -1,0 +1,19 @@
+[
+  {
+    "_comment": "掲載業者の型。status が published のものだけがサイトに出る（draft はビルドで無視）。事実は運営者が直接会って確認したことだけを書き、推薦や体験談は書かない。pr が true の業者には PR 表示が付く（景表法）。",
+    "id": "sample-draft",
+    "status": "draft",
+    "name": "（会社名）",
+    "base": "長岡市",
+    "cities": ["nagaoka", "mitsuke", "ojiya"],
+    "permit": { "type": "own", "municipalities": ["長岡市"], "note": "一般廃棄物収集運搬業 許可番号は見積書に記載" },
+    "services": ["遺品整理", "不用品の搬出", "買取", "仏壇・神棚の供養の手配"],
+    "remote": { "key_handover": true, "photo_report": true, "note": "鍵は郵送または管理会社経由。作業前後の写真をメールで報告" },
+    "estimate": "訪問見積もり無料。見積書に追加料金の条件を明記",
+    "price_note": "",
+    "met_date": "",
+    "contact": { "tel": "", "url": "" },
+    "intro": "運営者が訪問して確認した事実だけを書く（例: 事務所の所在、トラックの台数、見積書の様式、遠方依頼の実績の有無）",
+    "pr": true
+  }
+]
