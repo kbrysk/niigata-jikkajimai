@@ -71,10 +71,10 @@
       "url": "https://www.city.ojiya.niigata.jp/site/iju/akiya-kaitai-tatekae.html"
     },
     "snow_support": {
-      "name": "SOS雪おろし（市が雪おろし作業会員を紹介。ほか福祉課・社協の除雪援助事業の対象世帯が利用可）",
+      "name": "SOS雪おろし（市が雪おろし作業会員を紹介。ほか福祉課・社協の除雪援助事業の対象世帯が利用可。案内ページは冬季のみ掲載で、2026年10月4日時点は2025年度版が終了し新年度版は未公開。建設課のページから確認）",
       "target": "自力で雪おろしが困難で経済的・労力的な援助が受けられない世帯。空き家・別荘のように使う家屋・法人所有の建物は対象外",
       "amount": "補助ではなく紹介制度。作業代金は全額利用者負担で、上限は1人1日28,000円・1人1時間3,500円（検索結果上の記載）。福祉課・社協の除雪援助事業の助成額は未確認",
-      "url": "https://www.city.ojiya.niigata.jp/soshiki/kensetsu/sosyukioroshi-ojiya2025.html"
+      "url": "https://www.city.ojiya.niigata.jp/soshiki/kensetsu/index-2.html"
     },
     "akiya_consult": {
       "section": "防災安全課（空家等総合相談窓口・管理不全空家、0258-83-3515）。空き家バンクは商工振興課 U・Iターン支援室（0258-83-3556）、住宅補助は建設課（0258-83-3514）",
@@ -84,7 +84,7 @@
       "https://www.city.ojiya.niigata.jp/site/iju/akiyabank.html",
       "https://www.city.ojiya.niigata.jp/site/iju/akiya-kaitai-tatekae.html",
       "https://www.city.ojiya.niigata.jp/soshiki/bousai/akiya-soudan.html",
-      "https://www.city.ojiya.niigata.jp/soshiki/kensetsu/sosyukioroshi-ojiya2025.html",
+      "https://www.city.ojiya.niigata.jp/soshiki/kensetsu/index-2.html",
       "https://www.city.ojiya.niigata.jp/soshiki/kensetsu/main-jyutakuhojyo.html"
     ],
     "checked_date": "2026-10-01",

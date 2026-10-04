@@ -1296,5 +1296,11 @@
   "len": 1301,
   "type": "html",
   "checked": "2026-10-04"
+ },
+ "https://www.city.ojiya.niigata.jp/soshiki/kensetsu/index-2.html": {
+  "hash": "a079fd67bea13766",
+  "len": 4485,
+  "type": "html",
+  "checked": "2026-10-04"
  }
 }
