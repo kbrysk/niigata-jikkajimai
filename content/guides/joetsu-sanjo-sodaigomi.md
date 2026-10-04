@@ -30,7 +30,7 @@ updated: 2026-10-02
 
 | 項目 | 上越市 | 三条市 |
 |---|---|---|
-| 戸別収集 | 公式に案内なし [要確認: 戸別収集の有無] | あり（予約制） |
+| 戸別収集 | なし（一辺1m超・30kg超のごみは市で収集しない） | あり（予約制） |
 | 申込 | 市への申込の記載なし | 収集日の前日までに、地区の収集業者へ電話。月〜金 8:00〜17:00（祝日・年末年始を除く） |
 | 収集日 | 集積所は分別カレンダーに従う | 水曜日（祝日の場合は翌日）。朝8時までに玄関先へ |
 | 料金 | 品目別料金なし。許可業者の料金は業者ごと。集積所用の指定シールは60〜330円 | 品目ごとの処理券。例: 布団300円、タンス（90cm未満）500円 |
@@ -209,3 +209,4 @@ updated: 2026-10-02
 - 三条市「粗大ごみの出し方」（2025年12月18日更新） https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/gomigenryo/gomi/2359.html
 - 三条市「清掃センター」（2026年8月10日更新） https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/cleancenter/seisocenter/2444.html
 - 三条市「品目別分別表」PDF（2026/9/18現在） https://www.city.sanjo.niigata.jp/material/files/group/14/hinmokuR80918.pdf
+- 上越市「市では収集しないものの処分方法」「多量のごみを専門業者へ依頼し処理する方法」で、粗大ごみの市収集がなく許可業者へ依頼する案内であることを確認 https://www.city.joetsu.niigata.jp/soshiki/seikatsu/syuusyuusinaimono.html https://www.city.joetsu.niigata.jp/soshiki/seikatsu/kankyo-gomi-irai-list.html（確認日: 2026-10-04）
