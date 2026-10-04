@@ -204,7 +204,7 @@
   "subsidy": {
    "has": true,
    "name": "村上市空家等解体費補助金",
-   "maxAmount": "詳細は窓口にお問い合わせください",
+   "maxAmount": "対象工事費の3分の1（上限20万円）。令和8年度分は2026年5月15日に受付終了（公式サイト確認日: 2026-10-04）",
    "conditions": [
     "市内に存する空家等であること",
     "市税を滞納していないこと",
@@ -338,7 +338,7 @@
     "補助を受ける目的で故意に破損等させたものでないこと",
     "市税を滞納していない所有者または相続人等であること"
    ],
-   "officialUrl": "https://www.city.sado.niigata.jp/soshiki/2013/24761.html",
+   "officialUrl": "https://www.city.sado.niigata.jp/soshiki/2013/80525.html",
    "window": "生活環境課 環境対策係",
    "phone": "0259-63-3113",
    "note": null
