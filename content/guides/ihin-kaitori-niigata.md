@@ -244,3 +244,5 @@ updated: 2026-10-03
 - [新潟市の遺品整理業者の選び方](../ihinseiri-niigata-shi-gyosha-erabikata/)
 - [新潟の実家じまいの手順](../jikkajimai-tejun-niigata/)
 - [相続登記の義務化と新潟の法務局](../souzoku-touki-niigata-houmukyoku/)
+- [新潟市のリサイクルショップ・出張買取](../niigata-shi-recycle-shop/)
+- [上越・三条・柏崎のリサイクルショップと買取](../joetsu-sanjo-kashiwazaki-recycle-shop/)

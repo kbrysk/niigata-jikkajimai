@@ -261,3 +261,4 @@ updated: 2026-10-03
 - [南魚沼市の市町村ページ](../../city/minamiuonuma/)
 - [見附市・小千谷市・十日町市の空き家バンク](../mitsuke-ojiya-tokamachi-akiya-bank/)
 - [妙高市・糸魚川市・魚沼市・南魚沼市の空き家バンク](../myoko-itoigawa-uonuma-akiya-bank/)
+- [新潟の町村10の空き家バンクと相談先](../chouson-akiya-bank-niigata/)

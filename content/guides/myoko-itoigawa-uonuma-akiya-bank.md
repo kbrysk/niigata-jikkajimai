@@ -381,6 +381,7 @@ updated: 2026-10-04
 - [空き家を自分で管理する方法｜電気・水道、火災保険、点検項目（新潟版）](../akiya-kanri-jibunde-niigata/)
 - [上越市・新潟市の空き家バンク｜登録方法と使える制度（新潟市は西蒲区のみ）](../joetsu-niigata-akiya-bank/)
 - [相続登記の義務化と新潟の法務局・相談窓口｜期限・過料・必要書類・相続人申告登記、自分でやる場合の手順](../souzoku-touki-niigata-houmukyoku/)
+- [新潟の町村10の空き家バンクと相談先](../chouson-akiya-bank-niigata/)
 
 ## 出典
 

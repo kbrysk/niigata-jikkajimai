@@ -300,6 +300,7 @@ updated: 2026-10-02
 - [新潟の空き家を買い取ってもらうには](../akiya-kaitori-niigata/)
 - [新発田市・村上市・佐渡市の空き家バンク](../shibata-murakami-sado-akiya-bank/)
 - [実家じまいの近所への挨拶](../jikkajimai-aisatsu-kinjo/)
+- [加茂市・五泉市・阿賀野市・胎内市の空き家バンク](../kamo-gosen-agano-tainai-akiya-bank/)
 
 ## 出典
 

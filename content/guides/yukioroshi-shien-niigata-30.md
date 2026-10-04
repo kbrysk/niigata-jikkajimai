@@ -239,6 +239,7 @@ updated: 2026-10-03
 - [空き家の雪下ろし、誰に頼む？費用は？｜新潟の相談窓口と支援制度](../akiya-yukioroshi-hiyou-gyosha-niigata/)
 - [空き家を自分で管理する方法｜電気・水道、火災保険、点検項目（新潟版）](../akiya-kanri-jibunde-niigata/)
 - [新潟の実家じまいの手順｜何から始める？7つの順番と期限の早見表](../jikkajimai-tejun-niigata/)
+- [新潟の町村10の空き家バンクと相談先](../chouson-akiya-bank-niigata/)
 
 ## 出典
 

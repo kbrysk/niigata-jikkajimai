@@ -326,3 +326,4 @@ JR越後線の「巻駅」から、車で10分です。北陸自動車道の「�
 - [新潟市の一般廃棄物 許可業者一覧](../niigata-shi-kyoka-gyosha/)
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
 - [県外から新潟の実家を片付ける段取り](../enpou-kara-jikkajimai/)
+- [新潟市のリサイクルショップ・出張買取](../niigata-shi-recycle-shop/)

@@ -181,6 +181,7 @@ updated: 2026-10-02
 - [冬の実家じまいと雪対策｜空き家の雪下ろしは誰がやる？新潟の制度と費用](../fuyu-no-jikkajimai-yukioroshi/)
 - [新潟で実家を解体する費用の考え方](../kaitai-hiyou-niigata/)
 - [新潟県30市町村の雪下ろし・除雪支援一覧](../yukioroshi-shien-niigata-30/)
+- [新潟の町村10の空き家バンクと相談先](../chouson-akiya-bank-niigata/)
 
 ## 出典
 

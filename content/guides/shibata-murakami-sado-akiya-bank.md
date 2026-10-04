@@ -390,6 +390,7 @@ updated: 2026-10-04
 - [空き家の固定資産税は本当に6倍になる？｜住宅用地特例と勧告の仕組み](../akiya-koteishisanzei-6bai/)
 - [佐渡市・村上市の粗大ごみの出し方](../sado-murakami-sodaigomi/)
 - [新発田市の粗大ごみの出し方](../shibata-shi-sodaigomi/)
+- [加茂市・五泉市・阿賀野市・胎内市の空き家バンク](../kamo-gosen-agano-tainai-akiya-bank/)
 
 ## 出典
 

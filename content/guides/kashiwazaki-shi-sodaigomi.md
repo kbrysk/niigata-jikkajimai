@@ -214,3 +214,4 @@ updated: 2026-10-02
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
 - [柏崎市の市町村ページ](../../city/kashiwazaki/)
 - [三条市・燕市・柏崎市の空き家バンク](../sanjo-tsubame-kashiwazaki-akiya-bank/)
+- [上越・三条・柏崎のリサイクルショップと買取](../joetsu-sanjo-kashiwazaki-recycle-shop/)

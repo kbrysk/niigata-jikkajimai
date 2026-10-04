@@ -218,3 +218,4 @@ updated: 2026-10-03
 - [冬の実家じまいと雪おろし](../fuyu-no-jikkajimai-yukioroshi/)
 - [五泉市の市町村ページ](../../city/gosen/)
 - [阿賀野市の市町村ページ](../../city/agano/)
+- [加茂市・五泉市・阿賀野市・胎内市の空き家バンク](../kamo-gosen-agano-tainai-akiya-bank/)

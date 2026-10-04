@@ -303,3 +303,4 @@ updated: 2026-10-02
 - [新潟市の一般廃棄物 許可業者一覧](../niigata-shi-kyoka-gyosha/)
 - [県外から新潟の実家を片付ける段取り](../enpou-kara-jikkajimai/)
 - [新潟市の市町村ページ](../../city/niigata/)
+- [新潟市のリサイクルショップ・出張買取](../niigata-shi-recycle-shop/)
