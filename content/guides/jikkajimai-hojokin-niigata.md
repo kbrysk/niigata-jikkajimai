@@ -207,7 +207,7 @@ updated: 2026-10-02
 - 村上市「空家等解体費補助金」 https://www.city.murakami.lg.jp/soshiki/12/akiyakaitaihojyokin.html
 - 魚沼市「空家等解体補助金」 https://www.city.uonuma.lg.jp/page/1029743.html
 - 胎内市「空き家等解体補助金」 https://www.city.tainai.niigata.jp/kurashi/sekatsu/akiya/kaitai.html
-- 阿賀町「空家等解体費補助金」 https://www.town.aga.niigata.jp/info/soumu_info/3253.html
+- 阿賀町「空家等解体費補助金」（2026年10月5日時点で旧URLは404。町サイト更新後の現行ページは未確認） https://www.town.aga.niigata.jp/info/soumu_info/3253.html
 - 佐渡市「佐渡市老朽危険廃屋対策支援事業」 https://www.city.sado.niigata.jp/soshiki/2013/80525.html
 - 新潟市「空き家活用推進事業」 https://www.city.niigata.lg.jp/kurashi/jyutaku/jukankyo/yushi_josei/akiyakatsuyo.html
 - 長岡市「空き家対策総合支援事業補助金」 https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-jyokyo.html

@@ -399,14 +399,14 @@ updated: 2026-10-04
 - 妙高市「空き家対策支援サービスに係る連携協定を締結」 https://www.city.myoko.niigata.jp/docs/84008.html （確認日: 2026-10-04）
 - 妙高市「オンライン内覧」 https://www.city.myoko.niigata.jp/myoko-life/news/5148.html （確認日: 2026-10-04）
 - 妙高市「除排雪等支援制度」 https://www.city.myoko.niigata.jp/docs/419.html （確認日: 2026-10-04）
-- 糸魚川市「糸魚川空き家・空き店舗バンクをご利用ください」 https://www.city.itoigawa.lg.jp/3385.htm （確認日: 2026-10-04）
+- 糸魚川市「糸魚川空き家・空き店舗バンクをご利用ください」 https://www.city.itoigawa.lg.jp/page/1541.html （確認日: 2026-10-04）
 - 糸魚川市「糸魚川市空き家バンク登録手順」 https://www.city.itoigawa.lg.jp/page/1542.html （確認日: 2026-10-04）
 - 糸魚川市「空き家関係補助事業の紹介」 https://www.city.itoigawa.lg.jp/page/1544.html （確認日: 2026-10-04）
 - 糸魚川市「令和8年度 糸魚川市空き家活用事業補助金」（チラシ） https://www.city.itoigawa.lg.jp/uploaded/attachment/18054.pdf （確認日: 2026-10-04）
 - 糸魚川市「危険空き家除却支援補助金」 https://www.city.itoigawa.lg.jp/page/1417.html （確認日: 2026-10-04）
-- 糸魚川市「空き家の適正管理をお願いします。」 https://www.city.itoigawa.lg.jp/6771.htm （確認日: 2026-10-04）
+- 糸魚川市「空き家の適正管理をお願いします。」 https://www.city.itoigawa.lg.jp/page/1415.html （確認日: 2026-10-04）
 - 糸魚川市「雪おろし安全対策（転落防止）設備設置の補助制度」 https://www.city.itoigawa.lg.jp/page/1553.html （確認日: 2026-10-04）
-- 糸魚川市「屋根雪除雪等費用助成事業について」 https://www.city.itoigawa.lg.jp/6427.htm （確認日: 2026-10-04）
+- 糸魚川市「屋根雪除雪等費用助成事業について」 https://www.city.itoigawa.lg.jp/page/1910.html （確認日: 2026-10-04）
 - 魚沼市「空き家バンク制度」 https://www.city.uonuma.lg.jp/page/1409.html （確認日: 2026-10-04）
 - 魚沼市「魚沼市空き家バンク制度実施要綱」 https://www.city.uonuma.lg.jp/reiki/reiki_honbun/r043RG00001301.html （確認日: 2026-10-04）
 - 魚沼市「魚沼市定住促進事業補助金について」 https://www.city.uonuma.lg.jp/page/1386.html （確認日: 2026-10-04）

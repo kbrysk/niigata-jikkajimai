@@ -546,10 +546,10 @@ updated: 2026-10-04
 - 田上町「田上町暮らし応援リフォーム補助金」 https://www.town.tagami.niigata.jp/docs/8296.html （確認日: 2026-10-04）
 - 田上町「住宅・空き家」 https://www.town.tagami.niigata.jp/kurashi/jutaku/ （確認日: 2026-10-04）
 - 出雲崎町「出雲崎町空家等再生活用支援事業補助金」 https://www.town.izumozaki.niigata.jp/kurashi/sumai/akiyasaiseikatuyou.html （確認日: 2026-10-04）
-- 出雲崎町「空き家・空き地情報バンク 手続きの流れ・交渉及び契約等の仲介について」 http://www.town.izumozaki.niigata.jp/takuchi/bank/flow.html （確認日: 2026-10-04）
-- 出雲崎町「空き家等の情報登録の流れ」 http://www.town.izumozaki.niigata.jp/takuchi/bank/owner.html （確認日: 2026-10-04）
-- 出雲崎町「宅地・住宅情報」 http://www.town.izumozaki.niigata.jp/takuchi/ （確認日: 2026-10-04）
-- 出雲崎町「空き家・空き地情報バンク設置要綱」（PDF） http://www.town.izumozaki.niigata.jp/_files/00026970/H291218yoko.pdf （確認日: 2026-10-04）
+- 出雲崎町「空き家・空き地情報バンク 手続きの流れ・交渉及び契約等の仲介について」 https://www.town.izumozaki.niigata.jp/takuchi/bank/flow.html （確認日: 2026-10-04）
+- 出雲崎町「空き家等の情報登録の流れ」 https://www.town.izumozaki.niigata.jp/takuchi/bank/owner.html （確認日: 2026-10-04）
+- 出雲崎町「宅地・住宅情報」 https://www.town.izumozaki.niigata.jp/takuchi/ （確認日: 2026-10-04）
+- 出雲崎町「空き家・空き地情報バンク設置要綱」（PDF） https://www.town.izumozaki.niigata.jp/_files/00026970/H291218yoko.pdf （確認日: 2026-10-04）
 - 刈羽村「空き家バンクを利用しませんか」 http://www.vill.kariwa.niigata.jp/www/info/detail.jsp?id=5991 （確認日: 2026-10-04）
 - 刈羽村「空き家を売りたい・貸したい方へ」 http://www.vill.kariwa.niigata.jp/www/info/detail.jsp?id=5993 （確認日: 2026-10-04）
 - 刈羽村「空き家を買いたい・借りたい方へ」 http://www.vill.kariwa.niigata.jp/www/info/detail.jsp?id=5994 （確認日: 2026-10-04）

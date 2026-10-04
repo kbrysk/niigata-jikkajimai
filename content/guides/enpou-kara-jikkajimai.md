@@ -241,7 +241,7 @@ updated: 2026-10-02
 - 環境省「廃棄物の処分に「無許可」の回収業者を利用しないでください！」 https://www.env.go.jp/recycle/kaden/tv-recycle/qa.html
 - 国民生活センター「こんなはずじゃなかった！遺品整理サービスでの契約トラブル」（2018年7月19日発表） https://www.kokusen.go.jp/news/data/n-20180719_1.html
 - 国民生活センター「不用品回収サービスのトラブル」（2022年11月2日発表） https://www.kokusen.go.jp/news/data/n-20221102_1.html
-- 日本郵便「転居・転送サービス」 http://www.post.japanpost.jp/service/tenkyo/
+- 日本郵便「転居・転送サービス」 https://www.post.japanpost.jp/service/receive/relocation/
 - 日本年金機構「年金を受けている方が亡くなったとき」 https://www.nenkin.go.jp/service/jukyu/tetsuduki/kyotsu/jukyu/20140731-01.html
 - 法務省「相続登記の申請義務化に関するQ＆A」 https://www.moj.go.jp/MINJI/minji05_00565.html
 - 法務省「戸籍法の一部を改正する法律について（令和6年3月1日施行）」（更新2025年3月21日） https://www.moj.go.jp/MINJI/minji04_00082.html（確認日: 2026-10-02）

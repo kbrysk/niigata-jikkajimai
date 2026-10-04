@@ -53,7 +53,7 @@ updated: 2026-10-03
 | 見附市 | 見附市社会福祉協議会の要援護世帯除雪費助成事業。70歳以上の一人暮らしか高齢者のみの要援護世帯。民生委員に申込 | 1回10,000円、年2回（課税収入の制限あり） | ページに明記なし [要確認: 空き家で使えるか] | https://www.city.mitsuke.niigata.jp/soshiki/6/2992.html |
 | 村上市 | 高齢者等除雪費援助事業。65歳以上の単身・高齢者のみ世帯などで、市民税が非課税か均等割のみ。窓口は介護高齢課高齢者支援室と各支所 | 屋根の雪下ろしは1回10,000円まで、避難路は1回1,000円まで。どちらも年3回 | 居住要件の明記なし [要確認: 空き家で使えるか] | https://www.city.murakami.lg.jp/site/koureisya-fukushi/koureisyazyosetu-ennzyo.html |
 | 燕市 | 雪下ろし相談窓口。助成の記載はなく、事業者の紹介 | 作業は有料。費用は事業者に確認 | 助成の制度ではない | https://www.city.tsubame.niigata.jp/yuki/11113.html |
-| 糸魚川市 | 屋根雪除雪等費用助成事業。65歳以上のみの世帯、障害のある方がいる世帯など。市民税非課税で、親族の援助がない世帯 | 屋根雪の除排雪は山間部84,000円、中間部60,000円、平野部24,000円まで。雪踏みは別枠。ページの年度の記載なし | 生活の本拠としている世帯に限る | https://www.city.itoigawa.lg.jp/6427.htm |
+| 糸魚川市 | 屋根雪除雪等費用助成事業。65歳以上のみの世帯、障害のある方がいる世帯など。市民税非課税で、親族の援助がない世帯 | 屋根雪の除排雪は山間部84,000円、中間部60,000円、平野部24,000円まで。雪踏みは別枠。ページの年度の記載なし | 生活の本拠としている世帯に限る | https://www.city.itoigawa.lg.jp/page/1910.html |
 | 妙高市 | 高齢者世帯冬期在宅支援事業。世帯全員が市民税非課税で、前年の収入が単身150万円以下（1人増えるごとに50万円加算）、子がいない世帯など。民生委員を通じて申込 | 屋根雪・避難路の必要最低限の費用。前年の収入が単身80万円（2人120万円、3人以上160万円）を超えると1割が自己負担 [要確認: 上限額] | 除雪する住宅を生活の本拠としている世帯に限る | https://www.city.myoko.niigata.jp/docs/967.html |
 | 五泉市 | 高齢者・障がい者等世帯雪おろし援助。高齢者のみ世帯、高齢者と障がい者のみ世帯など | 1世帯1回20,000円まで、1シーズン2回まで | 居住している家が対象。施設入所など生活拠点が別なら対象外 | https://www.city.gosen.lg.jp/organization/10/4/9380.html |
 | 阿賀野市 | 高齢者世帯等雪降ろし費用扶助事業。65歳以上のみの世帯など。親族の援助が受けられない世帯 | 1回20,000円まで、1年度に原則3回（要綱。令和7年10月改正） | 要綱に「本市に居住する」要件あり | https://www.city.agano.niigata.jp/section/reiki_int/reiki_honbun/r027RG00000391.html |
@@ -263,7 +263,7 @@ updated: 2026-10-03
 - 見附市「介護保険以外のサービス（市単独事業）について」（更新2026年4月1日） https://www.city.mitsuke.niigata.jp/soshiki/6/2992.html
 - 村上市「高齢者等除雪費援助事業」（更新2026年2月10日） https://www.city.murakami.lg.jp/site/koureisya-fukushi/koureisyazyosetu-ennzyo.html
 - 燕市「雪下ろし相談窓口」（更新2025年12月1日） https://www.city.tsubame.niigata.jp/yuki/11113.html
-- 糸魚川市「屋根雪除雪等費用助成事業について」（更新2025年3月17日） https://www.city.itoigawa.lg.jp/6427.htm
+- 糸魚川市「屋根雪除雪等費用助成事業について」（更新2025年3月17日） https://www.city.itoigawa.lg.jp/page/1910.html
 - 妙高市「高齢者福祉」（高齢者世帯冬期在宅支援事業） https://www.city.myoko.niigata.jp/docs/967.html
 - 五泉市「高齢者の暮らしの支えに」（更新2026年2月4日） https://www.city.gosen.lg.jp/organization/10/4/9380.html
 - 阿賀野市「阿賀野市高齢者世帯等雪降ろし費用扶助事業実施要綱」 https://www.city.agano.niigata.jp/section/reiki_int/reiki_honbun/r027RG00000391.html

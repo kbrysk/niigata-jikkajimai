@@ -275,7 +275,7 @@ updated: 2026-10-02
 - 国民生活センター「こんなはずじゃなかった！遺品整理サービスでの契約トラブル」（2018年7月19日発表） https://www.kokusen.go.jp/news/data/n-20180719_1.html
 - 国土交通省「空き家対策 特設サイト」 https://www.mlit.go.jp/jutakukentiku/house/akiya-taisaku/articles/2024020105.html
 - 日本年金機構「年金を受けている方が亡くなったとき」（更新2026年4月1日） https://www.nenkin.go.jp/service/jukyu/tetsuduki/kyotsu/jukyu/20140731-01.html
-- 日本郵便「転居・転送サービス」 http://www.post.japanpost.jp/service/tenkyo/
+- 日本郵便「転居・転送サービス」 https://www.post.japanpost.jp/service/receive/relocation/
 - 法務省「相続登記の申請義務化に関するQ＆A」 https://www.moj.go.jp/MINJI/minji05_00565.html
 - 法務省「戸籍法の一部を改正する法律について（令和6年3月1日施行）」 https://www.moj.go.jp/MINJI/minji04_00082.html（確認日: 2026-10-02）
 - 法務局「法定相続情報証明制度の具体的な手続について」 https://houmukyoku.moj.go.jp/homu/page7_000014.html（確認日: 2026-10-02）

@@ -8,7 +8,7 @@ import io, os, re, glob, ssl, urllib.request, urllib.error, datetime, concurrent
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TODAY = datetime.date.today().isoformat()
-URL_RE = re.compile(r'https?://[^\s<>()\]）」、。"\']+')
+URL_RE = re.compile(r'https?://[^\s<>()\]（）「」、。"\']+')
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) niigata-jikkajimai-linkcheck/1.0"
 ctx = ssl.create_default_context()
 
