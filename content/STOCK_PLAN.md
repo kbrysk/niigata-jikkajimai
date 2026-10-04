@@ -1,6 +1,6 @@
 # コンテンツ在庫計画（2026-10-02 作成・2026-10-03 更新）
 
-2026-10-04 時点: 公開53本（市別ページ30を除く）／在庫7本（すべて監査済み）／執筆中 第5陣5本（#59〜#63）／保留 1本（#56は3サイト役割分担の承認後）。
+2026-10-04 時点: 公開53本（市別ページ30を除く）／在庫12本（すべて監査済み）／保留 1本（#56は3サイト役割分担の承認後）。
 
 運用: 執筆は `content/stock/` に書く（未公開）。裏取り後に `content/guides/` へ移すと次の push で公開される。status は本表で管理する。
 検索数は ラッコキーワード（2026-09-28〜10-01取得、新潟県内KW）と全国KW（2026-09-26）。数値が無いものは [要確認] で、公開順の判断は検索数の大きい順＋入口→出口の導線で決める。
@@ -68,8 +68,8 @@
 | 59 | J 持ち込み | niigata-shi-gomi-mochikomi | 新潟市 ごみ 持ち込み 770／清掃センター 持ち込み | stock（監査済み・公開待ち） |
 | 60 | J | nagaoka-shi-gomi-mochikomi | 長岡市 ごみ 持ち込み／寿クリーンセンター | stock（監査済み・公開待ち） |
 | 61 | F | jikkajimai-gyosha-hiyou-niigata | 実家 片付け 業者 費用 新潟／遺品整理 費用 相場 新潟（27社の公開料金を集計） | stock（監査済み・公開待ち） |
-| 62 | D | shibata-murakami-sado-akiya-bank | 新発田市・村上市・佐渡市 空き家バンク | 執筆中 |
-| 63 | D | myoko-itoigawa-uonuma-akiya-bank | 妙高市・糸魚川市・魚沼市・南魚沼市 空き家バンク | 執筆中 |
+| 62 | D | shibata-murakami-sado-akiya-bank | 新発田市・村上市・佐渡市 空き家バンク | stock（監査済み・公開待ち） |
+| 63 | D | myoko-itoigawa-uonuma-akiya-bank | 妙高市・糸魚川市・魚沼市・南魚沼市 空き家バンク | stock（監査済み・公開待ち） |
 
 執筆ルール（全記事共通）: 公式サイトのみ出典・確認日明記／[要確認: ○○]で正直に／体験談禁止／業者推薦禁止／TOA仏壇禁止／です・ます・短文／front matter（title「主題｜補足」主題25字以内, slug, description≤120字, targetKeywords, updated）／末尾に出典と「次に読む」（実在スラッグのみ、リンクは `../slug/` の相対形式。公開パスは /guide/）。slug に含む語で索引の分類が決まる（yuki|fuyu→雪と冬、sodaigomi|gomi|kaden|futon|sofa|recycle→粗大ごみ・ごみの出し方、gyosha|gyousha|ihinseiri|butsudan→業者に頼む・遺品整理、akiya|souzoku|zeikin→空き家・相続・税金、それ以外→進め方と費用）。
 
