@@ -24,8 +24,21 @@ description: にいがた実家じまい帖では、新潟県内で一般廃棄�
 
 最初の2か月は、依頼をお渡しできなければ掲載料をいただきません。
 
-## お問い合わせ
+## 掲載のご相談
+
+下のフォームから送っていただくと、運営者から折り返しご連絡し、日程を決めて直接伺います。メールでのご連絡（okubo.r.1990@gmail.com）でも構いません。
+
+<form class="lead-form" data-subject="掲載の相談" action="mailto:okubo.r.1990@gmail.com" method="post" enctype="text/plain">
+<div><label for="k-company">会社名<span class="req">必須</span></label><input id="k-company" name="会社名" required></div>
+<div><label for="k-person">ご担当者名<span class="req">必須</span></label><input id="k-person" name="お名前" required></div>
+<div><label for="k-tel">連絡先（電話またはメール）<span class="req">必須</span></label><input id="k-tel" name="連絡先" required></div>
+<div><label for="k-base">拠点の市町村<span class="req">必須</span></label><input id="k-base" name="市町村" placeholder="例: 長岡市" required></div>
+<div><label for="k-area">対応地域</label><input id="k-area" name="対応地域" placeholder="例: 長岡市・見附市・小千谷市、中越全域"></div>
+<div><label for="k-permit">一般廃棄物収集運搬の許可</label><select id="k-permit" name="許可"><option value="">選んでください</option><option>自社で許可あり（市町村名を備考に）</option><option>許可業者と提携</option><option>なし・検討中</option></select></div>
+<div><label for="k-note">備考（許可の市町村、得意な作業、遠方対応の可否など）</label><textarea id="k-note" name="備考" rows="4"></textarea></div>
+<div><label><input type="checkbox" required> <a href="../privacy/">プライバシーポリシー</a>に同意します<span class="req">必須</span></label></div>
+<div><button class="btn" type="submit">送る</button></div>
+</form>
 
 株式会社Kogera（長岡市）  
-メール: okubo.r.1990@gmail.com  
-会社名・所在地・対応地域・許可の有無を添えてご連絡ください。運営者が直接伺います。
+メール: okubo.r.1990@gmail.com

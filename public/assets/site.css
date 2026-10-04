@@ -346,6 +346,23 @@ form.lead-form .btn{justify-self:start}
 .page .person.sm{max-width:var(--read);margin:12px 0 0}
 .site-footer .person.sm{margin:0 0 12px}
 @media (max-width:640px){.hero-person img{width:72px;height:90px}.hero-person .say{font-size:14.5px}.person.lg img{width:112px;height:140px}}
+/* フォーム送信後の案内（本文の控え） */
+.form-done{max-width:620px;margin:18px 0 0;padding:14px 16px;background:var(--paper-2);border-left:3px solid var(--line-strong)}
+.form-done p{margin:4px 0}
+.form-done textarea{width:100%;font-size:13.5px;font-family:var(--sans);border:1px solid var(--line);background:#fff;padding:8px;margin-top:6px;color:var(--ink-2)}
+/* ガイドの分類 */
+.cnt{font-size:13px;color:var(--mute);font-weight:400;margin-left:10px}
+h1 .cnt{font-size:15px}
+.guide-cats{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:1fr;gap:0}
+.guide-cats>li{border-top:1px solid var(--line);padding:12px 0 10px}
+.guide-cats h3{margin:0 0 4px;font-size:15px}
+.guide-cats h3 a{text-decoration:none;color:var(--ink)}
+.guide-cats h3 a:hover{text-decoration:underline}
+.guide-cats h3 small{font-size:12px;color:var(--mute);font-weight:400;margin-left:8px}
+.guide-cats ul{list-style:none;padding:0;margin:0}
+.guide-cats ul li a{display:block;padding:4px 0;text-decoration:none;color:var(--ink-2);font-size:14.5px;line-height:1.55}
+.guide-cats ul li a:hover{text-decoration:underline}
+.guide-cats ul li strong{font-weight:400}
 /* ---------- footer: 紙の上に墨。塗りつぶさない ---------- */
 .site-footer{background:var(--paper-2);border-top:2px solid var(--line-strong);color:var(--ink-2);font-size:14px;padding:36px 0 36px;margin-top:40px;line-height:1.8}
 .site-footer a{color:var(--ink)}

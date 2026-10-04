@@ -21,7 +21,7 @@ description: 新潟県内の実家の片付け・遺品整理・不用品の搬�
 
 ## 相談フォーム
 
-<form class="lead-form" action="mailto:okubo.r.1990@gmail.com" method="post" enctype="text/plain">
+<form class="lead-form" data-subject="見積もり相談" action="mailto:okubo.r.1990@gmail.com" method="post" enctype="text/plain">
 <div><label for="f-name">お名前<span class="req">必須</span></label><input id="f-name" name="お名前" required></div>
 <div><label for="f-tel">連絡先（電話またはメール）<span class="req">必須</span></label><input id="f-tel" name="連絡先" required></div>
 <div><label for="f-city">片付ける家の市町村<span class="req">必須</span></label><input id="f-city" name="市町村" placeholder="例: 長岡市" required></div>
@@ -30,10 +30,10 @@ description: 新潟県内の実家の片付け・遺品整理・不用品の搬�
 <div><label for="f-live">ご自身のお住まい</label><input id="f-live" name="お住まい" placeholder="例: 東京都、新潟市内"></div>
 <div><label for="f-note">状況・ご要望</label><textarea id="f-note" name="状況" rows="5" placeholder="例: 親が施設に入り空き家になった。家具家電が一通り残っている。仏壇あり。買取できる物は引き取ってほしい。"></textarea></div>
 <div><label><input type="checkbox" required> <a href="../privacy/">プライバシーポリシー</a>に同意し、相談内容を業者に伝えることを了承します<span class="req">必須</span></label></div>
-<div><button class="btn" type="submit">メールで送る</button></div>
+<div><button class="btn" type="submit">送る</button></div>
 </form>
 
-送信ボタンを押すと、お使いのメールソフトが開きます。開かない場合は、上の項目を本文に書いて **okubo.r.1990@gmail.com** 宛てにお送りください。原則2営業日以内にご連絡します。
+送信ボタンを押すと、入力内容をまとめた本文がその場に表示され、お使いのメールソフトが開きます。開かない場合は表示された内容をコピーして **okubo.r.1990@gmail.com** 宛てにお送りください。原則2営業日以内にご連絡します。
 
 ## 費用について
 

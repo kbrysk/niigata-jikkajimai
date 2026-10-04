@@ -44,6 +44,16 @@ const cityById = Object.fromEntries(cities.map((c) => [c.cityId, c]));
 // 顔写真は一切使わない（2026-10-04 大久保さん指示）。氏名と一言の文字だけ
 const PERSON = { name: "大久保 亮佑", role: "運営者・株式会社Kogera代表（新潟県長岡市在住）" };
 const personSmall = (say) => `<div class="person sm"><p><strong>${esc(PERSON.name)}</strong><span>${esc(PERSON.role)}</span>${say ? `<span class="say">${esc(say)}</span>` : ""}</p></div>`;
+// ガイドの分類。front matter に category が無いため slug で判定する（上から順、最初に当たった分類）
+const GUIDE_CATS = [
+  { id: "yuki", name: "雪と冬の実家じまい", lead: "積雪期の搬出、雪下ろしの費用と補助。", test: (x) => /yuki|fuyu/.test(x) },
+  { id: "gomi", name: "粗大ごみ・ごみの出し方（市別）", lead: "市ごとの料金表、申し込み、持ち込み施設、分別に迷う物。", test: (x) => /sodaigomi|gomi|kaden|futon|sofa|recycle/.test(x) },
+  { id: "gyosha", name: "業者に頼む・遺品整理", lead: "許可業者の見分け方、料金の目安、仏壇や相続放棄との関係。", test: (x) => /gyosha|gyousha|ihinseiri|butsudan/.test(x) },
+  { id: "akiya", name: "空き家・相続・税金", lead: "売る・貸す・壊すの比べ方、空き家バンク、固定資産税、売却の税金。", test: (x) => /akiya|souzoku|zeikin/.test(x) },
+  { id: "susume", name: "進め方と費用", lead: "何から始めるか、いくらかかるか、県外からの段取り、親との話し方。", test: () => true },
+];
+const guideCat = (g) => GUIDE_CATS.find((c) => c.test(g.slug));
+const guideItem = (g, withDesc = true) => `<li><a href="${url(`/guide/${g.slug}/`)}"><strong>${esc(g.meta.title)}</strong>${withDesc ? `<span>${esc(g.meta.description || "")}</span>` : ""}</a></li>`;
 const latestCheck = () => cities.map((c) => c.sodai?.checked_date).filter(Boolean).sort().pop() || TODAY;
 // 確認印: 朱の角印。サイト全体の署名として、市町村・比較・ガイドの各ページの決まった位置に押す
 const seal = (date, label = "公式サイトで確認") => `<span class="seal" role="img" aria-label="${esc(label)} ${esc(date)}"><span class="seal-l">${esc(label)}</span><span class="seal-d">${esc(date)}</span></span>`;
@@ -117,7 +127,9 @@ ${noindex ? '<meta name="robots" content="noindex,nofollow">' : ""}
 <meta property="og:type" content="${pathname === "/" ? "website" : "article"}">
 <meta property="og:url" content="${abs(pathname)}">
 <meta property="og:locale" content="ja_JP">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="${abs("/assets/og.png")}">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="${url("/assets/favicon.svg")}" type="image/svg+xml">
 ${SITE.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(SITE.googleSiteVerification)}">` : ""}
 ${SITE.bingSiteVerification ? `<meta name="msvalidate.01" content="${esc(SITE.bingSiteVerification)}">` : ""}
@@ -150,6 +162,7 @@ ${pathname === "/" ? "" : `<nav class="crumbs wrap" aria-label="パンくず"><o
 <main id="main" class="wrap">
 ${body}
 </main>
+${body.includes('class="lead-form"') ? formScript : ""}
 ${stickyCta && pathname !== "/mitsumori/" ? `<div class="sticky-cta" aria-label="相談"><a class="btn ghost" href="${url("/city/")}">市町村を選ぶ</a><a class="btn" href="${url("/mitsumori/")}">無料で見積もり相談</a></div>` : ""}
 <footer class="site-footer">
   <div class="wrap">
@@ -175,6 +188,22 @@ ${stickyCta && pathname !== "/mitsumori/" ? `<div class="sticky-cta" aria-label=
 </body>
 </html>`;
 }
+
+// 相談・掲載フォーム。送信時に件名と本文を組み立て、formEndpoint があれば POST、無ければメールソフトを開く。
+// 開かない環境のために、組み立てた本文をその場に表示してコピーできるようにする（内容は外部に送らない）
+const formScript = `<script>(function(){var ep=${JSON.stringify(SITE.formEndpoint || "")};var to=${JSON.stringify(SITE.contactEmail)};
+document.querySelectorAll('form.lead-form').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();
+var lines=[];f.querySelectorAll('input[name],select[name],textarea[name]').forEach(function(el){if(el.type==='checkbox')return;var v=(el.value||'').trim();lines.push(el.name+': '+(v||'（未記入）'));});
+var kind=f.getAttribute('data-subject')||'お問い合わせ';var city=(f.querySelector('[name=市町村]')||{}).value||'';var name=(f.querySelector('[name=お名前],[name=会社名]')||{}).value||'';
+var subject='【${SITE.name}】'+kind+(city?' '+city:'')+(name?' '+name:'');var text=lines.join('\\n')+'\\n\\n送信元: '+location.href;
+var done=f.nextElementSibling&&f.nextElementSibling.classList.contains('form-done')?f.nextElementSibling:null;
+if(!done){done=document.createElement('div');done.className='form-done';f.parentNode.insertBefore(done,f.nextSibling);}
+function show(ok){done.innerHTML=(ok?'<p><strong>送信しました。</strong>原則2営業日以内にご連絡します。</p>':'<p><strong>メールソフトが開かない場合</strong>は、下の内容をコピーして <a href="mailto:'+to+'">'+to+'</a> 宛てに送ってください。</p>')+'<p class="small">件名: '+subject.replace(/</g,'&lt;')+'</p><textarea readonly rows="8">'+text.replace(/</g,'&lt;')+'</textarea><p><button type="button" class="btn ghost copy">内容をコピー</button></p>';
+var b=done.querySelector('.copy');if(b)b.addEventListener('click',function(){var ta=done.querySelector('textarea');ta.select();try{navigator.clipboard.writeText('件名: '+subject+'\\n\\n'+text);}catch(_){document.execCommand('copy');}b.textContent='コピーしました';});done.scrollIntoView({behavior:'smooth',block:'nearest'});}
+if(ep){var btn=f.querySelector('button[type=submit]');if(btn){btn.disabled=true;btn.textContent='送信中…';}
+fetch(ep,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({subject:subject,message:text,_subject:subject})}).then(function(r){if(!r.ok)throw 0;show(true);f.reset();}).catch(function(){show(false);location.href='mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(text);}).finally(function(){if(btn){btn.disabled=false;btn.textContent='送る';}});}
+else{show(false);location.href='mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(text);}
+});});})();</script>`;
 
 function write(pathname, html) {
   const file = pathname.endsWith("/") ? path.join(OUT, pathname, "index.html") : path.join(OUT, pathname);
@@ -380,8 +409,13 @@ function guidePages() {
     const body = `<article class="guide"><header class="page-head">${seal(m.updated || TODAY, "更新")}<p class="eyebrow">実家じまいの進め方</p><h1>${esc(m.title)}</h1><p class="lead">${esc(m.description || "")}</p><p class="small">更新日: ${esc(m.updated || TODAY)}</p></header><div class="prose">${g.html}</div>${cityBox}${ctaBox()}</article>`;
     write(`/guide/${g.slug}/`, layout({ title: m.title, description: m.description || "", pathname: `/guide/${g.slug}/`, body, breadcrumbs: [{ name: "実家じまいの進め方", path: "/guide/" }, { name: m.title, path: `/guide/${g.slug}/` }], jsonld: [artLd], updated: m.updated }));
   }
-  const list = guides.map((g) => `<li><a href="${url(`/guide/${g.slug}/`)}"><strong>${esc(g.meta.title)}</strong><span>${esc(g.meta.description || "")}</span></a></li>`).join("");
-  write("/guide/", layout({ title: "実家じまいの進め方（新潟版）", description: "新潟の実家を片付ける手順、費用、県外からの段取り、冬の雪対策、業者に頼む基準をまとめたガイド。", pathname: "/guide/", body: `<header class="page-head"><h1>実家じまいの進め方（新潟版）</h1><p class="lead">何から始めるか、いくらかかるか、県外からどう進めるか、冬はどうするか。新潟の事情に合わせて書いています。</p></header><ul class="guide-list">${list}</ul>${ctaBox()}`, breadcrumbs: [{ name: "実家じまいの進め方", path: "/guide/" }] }));
+  const catOrder = ["susume", "gomi", "gyosha", "akiya", "yuki"];
+  const sections = catOrder.map((id) => GUIDE_CATS.find((c) => c.id === id)).map((cat) => {
+    const items = guides.filter((g) => guideCat(g).id === cat.id);
+    return items.length ? `<section id="${cat.id}"><h2>${esc(cat.name)}<small class="cnt">${items.length}本</small></h2><p class="sub">${esc(cat.lead)}</p><ul class="guide-list">${items.map((g) => guideItem(g)).join("")}</ul></section>` : "";
+  }).join("");
+  const catNav = `<nav class="toc" aria-label="分類"><ol>${catOrder.map((id) => GUIDE_CATS.find((c) => c.id === id)).map((cat) => `<li><a href="#${cat.id}">${esc(cat.name)}（${guides.filter((g) => guideCat(g).id === cat.id).length}）</a></li>`).join("")}</ol></nav>`;
+  write("/guide/", layout({ title: "実家じまいの進め方（新潟版）", description: "新潟の実家を片付ける手順、費用、県外からの段取り、冬の雪対策、業者に頼む基準をまとめたガイド。", pathname: "/guide/", body: `<header class="page-head"><h1>実家じまいの進め方（新潟版）<small class="cnt">${guides.length}本</small></h1><p class="lead">何から始めるか、いくらかかるか、県外からどう進めるか、冬はどうするか。新潟の事情に合わせて書いています。</p></header>${catNav}${sections}${ctaBox()}`, breadcrumbs: [{ name: "実家じまいの進め方", path: "/guide/" }] }));
 }
 
 // ---------- 業者・料金 ----------
@@ -440,7 +474,10 @@ function home() {
   const photo = fs.existsSync(photoFile) ? `<figure class="photo"><img src="${url("/assets/photo-home.jpg")}" alt="${esc(photoCap)}" loading="lazy" decoding="async"><figcaption>${esc(photoCap)}</figcaption></figure>` : "";
   const dirCols = Object.entries(AREA).map(([area, ids]) => `<div class="dir-col"><h3>${esc(area)}<small>${ids.length}市町村</small></h3><ul>${ids.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}"${c.core ? ' class="core"' : ""}>${esc(c.city)}</a>${c.subsidy?.has ? '<span class="badge sub">解体補助金</span>' : ""}</li>`).join("")}</ul></div>`).join("");
   const recentRows = [...cities].filter((c) => c.sodai?.checked_date).sort((a, b) => (b.sodai.checked_date > a.sodai.checked_date ? 1 : b.sodai.checked_date < a.sodai.checked_date ? -1 : a.city.localeCompare(b.city, "ja"))).slice(0, 12).map((c) => `<tr><td><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a></td><td>${(c.sodai.fee_examples || []).length >= 3 ? "料金表あり" : "重量制・公式で確認"}</td><td>${c.sodai.bring_in ? "案内あり" : "—"}</td><td>${c.ay?.demolition_subsidy?.name || c.subsidy?.has ? "あり" : "—"}</td><td class="n">${esc(c.sodai.checked_date)}</td></tr>`).join("");
-  const guideCards = guides.slice(0, 5).map((g) => `<li><a href="${url(`/guide/${g.slug}/`)}"><strong>${esc(g.meta.title)}</strong></a></li>`).join("");
+  const guideCards = ["susume", "gomi", "gyosha", "akiya", "yuki"].map((id) => GUIDE_CATS.find((c) => c.id === id)).map((cat) => {
+    const items = guides.filter((g) => guideCat(g).id === cat.id);
+    return items.length ? `<li class="cat"><h3><a href="${url("/guide/#" + cat.id)}">${esc(cat.name)}</a><small>${items.length}本</small></h3><ul>${items.slice(0, 3).map((g) => guideItem(g, false)).join("")}</ul></li>` : "";
+  }).join("");
   const body = `
 <section class="hero"><div class="inner">
   <div>
@@ -471,7 +508,7 @@ ${photo}
 <section class="home-section dir"><h2>市町村から探す（新潟県30市町村）</h2><p class="sub">太字の9市は、品目別の料金表・持ち込み施設の受付時間・解体補助金まで掲載。ほかの市町村も申し込み先と料金の仕組みを載せています。</p><div class="dir-grid">${dirCols}</div><p class="small"><a href="${url("/city/")}">市町村別ガイドの一覧 →</a> ／ <a href="${url("/data/sodai-hikaku/")}">30市町村の粗大ごみ手数料・持ち込み比較 →</a></p></section>
 <div class="two">
 <section class="home-section recent"><h2>確認の記録</h2><p class="sub">各市町村の公式サイトを見た日と、載せている内容。古いものから順に見直します。</p><div class="table-wrap"><table><thead><tr><th>市町村</th><th>粗大ごみ</th><th>持ち込み</th><th>解体補助金</th><th class="n">確認日</th></tr></thead><tbody>${recentRows}</tbody></table></div></section>
-<section class="home-section"><h2>実家じまいの進め方（新潟版）</h2><p class="sub">何から始めるか、いくらかかるか、県外からどう進めるか、冬はどうするか。</p><ul class="guide-list compact one">${guideCards}</ul></section>
+<section class="home-section"><h2>実家じまいの進め方（新潟版）</h2><p class="sub">${guides.length}本のガイドを5つに分けています。</p><ul class="guide-cats">${guideCards}</ul><p class="small"><a href="${url("/guide/")}">ガイドの一覧（分類つき） →</a></p></section>
 </div>
 <section class="why"><div><h2>長岡に住む運営者が、公式情報と地元の業者を確かめて載せています</h2><p>運営は株式会社Kogera（新潟県長岡市）。市町村の制度と料金は各自治体の公式サイトだけを出典にし、ページごとに確認日を記載します。業者は運営者が直接会い、一般廃棄物収集運搬の許可と見積もりの出し方を確かめたところだけを載せます。</p><p><a href="${url("/about/")}">運営者情報・編集方針 →</a></p></div><ul class="promise"><li>出典は公式サイト。電話での聞き取りはしない</li><li>業者は会って確かめた先だけ。掲載料・紹介料を受け取る先には「PR」を表示</li><li>体験談や口コミを作らない。分からないことは「要確認」と書く</li><li>墓じまいは姉妹サイト<a href="https://hakarau.jp/" rel="noopener">ハカラウ</a>、解体補助金の全国版は<a href="https://www.fureaino-oka.com/" rel="noopener">ふれあいの丘</a></li></ul></section>
 ${ctaBox()}`;
