@@ -141,7 +141,7 @@ updated: 2026-10-02
 |---|---|
 | 新潟県 | 「住まいのエンディングノート」。全国空き家対策推進協議会が作成。県のホームページからPDFをダウンロードできる（2024年10月8日更新） |
 | 長岡市 | 市が作成した簡易版のPDF。より詳しく書ける国土交通省版も案内している |
-| 新潟市 | 「住まいのエンディングノート」を作成し、各区役所や公民館などで配布していると案内。PDFを市のサイトから入手できる。[要確認: 最新版は、市のページで確認] |
+| 新潟市 | 「住まいのエンディングノート」を作成し、各区役所や公民館などで配布していると案内。市のサイトには令和8年度版（全15ページ、2026年4月1日更新）のPDFがある。 |
 
 目的は、住まいの将来を早いうちに整理して、家族に伝えることです。長岡市は、放置空き家の発生を防ぐために、建物や土地の所有状況、将来の活用方法などを書いてもらう、と説明しています。
 
@@ -260,7 +260,7 @@ updated: 2026-10-02
 確認日はすべて2026-10-02です。
 
 - 新潟県「住まいの将来や今後の相続に「住まいのエンディングノート」を活用しましょう」（2024年10月8日更新） https://www.pref.niigata.lg.jp/sec/toshiseisaku/sumai-ending-note-katuyou.html
-- 新潟市「住まいのエンディングノート」（検索結果の表示で記載を確認。ページ本体は10月2日時点で取得できず） https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/yokusei/akiya_endignote.html
+- 新潟市「空き家に関する情報提供パンフレット」（「住まいのエンディングノート」令和8年度版、2026年4月1日更新）（確認日: 2026-10-04） https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/jukankyoakiya_161228.html
 - 長岡市「長岡市の空き家対策」 https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html
 - 長岡市「地域包括支援センター」 https://www.city.nagaoka.niigata.jp/fukushi/cate02/houkatu_center.html
 - 長岡市「高齢者の助けになるサービス」 https://www.city.nagaoka.niigata.jp/fukushi/cate02/zaitaku_survice.html

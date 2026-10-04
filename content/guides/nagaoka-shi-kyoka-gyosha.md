@@ -142,8 +142,8 @@ updated: 2026-10-02
 
 ## この一覧を使うときの注意
 
-- 一覧のページは「最終更新日 2025年4月1日」ですが、「令和4年4月現在」の注記もあります。現在の許可状況は[要確認: 最新の許可状況]。長岡市環境事業課（0258-24-2837）に確認できます。
-- 一覧は、家庭ごみ専用かどうかの記載がありません。[要確認: 家庭系の対応可否]
+- 一覧のページは「最終更新日 2025年4月1日」ですが、「令和4年4月現在」の注記もあります。同じ14社の一覧は、「事業系一般廃棄物の出し方」のページ（2026年3月16日更新）にも載っています。許可の有無を依頼前に確かめたいときは、長岡市環境事業課（0258-24-2837）に確認できます。
+- 一覧のページ自体は、事業系か家庭系かを分けていません。ただ、市の「市では収集処理できないもの」のページは、家庭の家電4品目やスプリング入りマットレスなどについて、市のごみ収集運搬業許可業者への依頼を案内しています。
 - 口コミや評価は載せていません。
 
 ## よくある質問
@@ -181,6 +181,7 @@ updated: 2026-10-02
 - 長岡市「長岡市ごみ収集運搬業許可業者」（最終更新2025年4月1日） https://www.city.nagaoka.niigata.jp/kurashi/cate08/gomi-gyousya.html
 - 長岡市「無許可の不用品回収業者に関する注意喚起」（2025年4月1日更新） https://www.city.nagaoka.niigata.jp/kurashi/cate08/unauthorized.html
 - 長岡市「処理施設への持ち込み」（2026年3月31日更新） https://www.city.nagaoka.niigata.jp/kurashi/cate08/mochi-gomi.html
-- 長岡市「収集処理できないごみ」（2026年1月19日更新） https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html
+- 長岡市「収集処理できないごみ」（2026年1月19日更新）（家庭系の案内は2026-10-04にも確認） https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html
+- 長岡市「事業系一般廃棄物の出し方」（2026年3月16日更新）（確認日: 2026-10-04） https://www.city.nagaoka.niigata.jp/kurashi/cate08/jigyo-gomi.html
 - 長岡市「粗大ごみ」（2026年3月31日更新） https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html
 - 環境省「廃棄物の処分に「無許可」の回収業者を利用しないでください！」 https://www.env.go.jp/recycle/kaden/tv-recycle/qa.html

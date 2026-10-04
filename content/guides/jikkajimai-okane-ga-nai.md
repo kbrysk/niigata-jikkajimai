@@ -125,7 +125,7 @@ updated: 2026-10-02
 | 上越市 | 家財道具等の搬出・処分と、屋内清掃の費用。経費5万円以上が対象で、2分の1、上限10万円 | 空き家の売却予定者、県外からの移住（予定）者で空き家を持つ人など。申請前に契約・着手すると対象外 |
 | 小千谷市 | 家財の搬出・処分・除去と、清掃の費用。2分の1以内、上限20万円 | 空き家情報バンクに2年以上継続して登録することが確実な人。処分の着手前に申請 |
 
-長岡市は、所有者向けの家財処分の補助を、公式ページで確認できませんでした。市の空き家バンク登録・成約促進事業補助金は、バンクの物件を購入する人向けの制度です。[要確認: 令和8年度の対象経費は、市のお知らせPDFで確認]
+長岡市は、所有者向けの家財処分の補助を、公式ページで確認できませんでした。市の空き家バンク登録・成約促進事業補助金は、バンクの物件を購入する人向けの制度です。令和8年度のお知らせPDFでは、補助の対象工事は屋根・外壁、床・内装、台所・浴室等の水回りの改修で、家財の処分は挙がっていません。
 
 長岡市の内容は、[長岡市の空き家バンク｜登録の流れ・探し方・家財処分や解体に使える支援](../nagaoka-akiya-bank/) にまとめています。
 
@@ -285,6 +285,7 @@ updated: 2026-10-02
 - 上越市「空き家活用のための家財道具等処分費補助金」 https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-kazaisyobun.html
 - 小千谷市「家財道具等処分支援事業補助金」 https://www.city.ojiya.niigata.jp/site/iju/kazaisyobun.html
 - 長岡市「空き家バンク登録・成約促進事業補助金のお知らせ」 https://www.city.nagaoka.niigata.jp/kurashi/life03/vacant-register.html
+- 長岡市「令和8年度長岡市空き家バンク登録・成約促進事業補助金のお知らせ」（PDF）（確認日: 2026-10-04） https://www.city.nagaoka.niigata.jp/kurashi/life03/file/vacant-r0801a.pdf
 - 佐渡市「佐渡市老朽危険廃屋対策支援事業」 https://www.city.sado.niigata.jp/soshiki/2013/80525.html
 - 環境省「廃棄物の処分に「無許可」の回収業者を利用しないでください！」 https://www.env.go.jp/recycle/kaden/tv-recycle/qa.html
 - 消費者庁 特定商取引法ガイド「訪問購入」 https://www.no-trouble.caa.go.jp/what/doortodoorpurchases/

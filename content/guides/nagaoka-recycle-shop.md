@@ -165,7 +165,7 @@ updated: 2026-10-02
 - すべての物が引き取れるわけではない
 - 利用時のトラブルや損害について、長岡市は責任を負わない
 
-当サイトは、このサービスを推薦しません。市が案内している制度として紹介します。利用条件や費用は、市のページに記載がないため、サービス側で確認してください。[要確認: おいくらの費用・条件]
+当サイトは、このサービスを推薦しません。市が案内している制度として紹介します。利用条件や費用は、市のページに記載がありません。サービスの公式サイトには、「全国どこからでもすべて無料」とあります。古すぎる物や故障した家電は、見積りが出ないこともあると書かれています。出張買取を頼むときは、運転免許証やマイナンバーカードなどの本人確認書類が必要です。
 
 ## 「買取」と「不用品回収」は別の許可
 
@@ -246,6 +246,7 @@ updated: 2026-10-02
 - 買取大吉 長岡旭岡店 https://www.kaitori-daikichi.jp/store/nagaoka-asahioka/
 - 警視庁「古物営業法の一部改正について（令和6年4月1日施行）」 https://www.keishicho.metro.tokyo.lg.jp/tetsuzuki/kobutsu/kaisetsu/kobutu_eigyo_r6.html
 - 長岡市「不要品リユース事業で「おいくら」と連携を開始」（2026年3月31日更新） https://www.city.nagaoka.niigata.jp/kurashi/cate08/oikura.html
+- おいくら（運営会社の公式サイト。サービスの利用条件の確認のみに使用）（確認日: 2026-10-04） https://oikura.jp/
 - 長岡市「粗大ごみ（事前申込制）戸別収集」（2026年3月31日更新） https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html
 - 長岡市「無許可の不用品回収業者に関する注意喚起」（2025年4月1日更新） https://www.city.nagaoka.niigata.jp/kurashi/cate08/unauthorized.html
 - 長岡市「収集処理できないごみ」（2026年1月19日更新） https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html
