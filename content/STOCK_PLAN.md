@@ -1,6 +1,6 @@
 # コンテンツ在庫計画（2026-10-02 作成・2026-10-03 更新）
 
-2026-10-04 時点: 公開46本（市別ページ30を除く）／在庫12本（すべて監査済み）／執筆中 2本（#26・#27）／保留 1本（#56は3サイト役割分担の承認後）。
+2026-10-04 時点: 公開46本（市別ページ30を除く）／在庫14本（すべて監査済み）／保留 1本（#56は3サイト役割分担の承認後）。計画の58題はこれで出揃い。
 
 運用: 執筆は `content/stock/` に書く（未公開）。裏取り後に `content/guides/` へ移すと次の push で公開される。status は本表で管理する。
 検索数は ラッコキーワード（2026-09-28〜10-01取得、新潟県内KW）と全国KW（2026-09-26）。数値が無いものは [要確認] で、公開順の判断は検索数の大きい順＋入口→出口の導線で決める。
@@ -32,8 +32,8 @@
 | 23 | B | stove-touyu-shobun-niigata | 石油ストーブ・灯油・ガスコンロ 処分 | published（10/4） |
 | 24 | B | jitensha-tire-shoukaki-niigata | 自転車・タイヤ・消火器・バッテリー（市で出せない物） | published（10/4） |
 | 25 | B | carpet-tatami-futon-niigata | カーペット・畳・カーテン | published（10/4） |
-| 26 | B | kinko-piano-monohoshi-niigata | 金庫・ピアノ・物干し台・コンクリート製品 | wave4 |
-| 27 | B | shokki-hon-shashin-shobun | 食器・本・写真・衣類・人形（大量処分と供養） | wave4 |
+| 26 | B | kinko-piano-monohoshi-niigata | 金庫・ピアノ・物干し台・コンクリート製品・ホームタンク・農機具 | stock（監査済み・公開待ち） |
+| 27 | B | shokki-hon-shashin-shobun | 食器・本・写真・衣類・人形（大量処分と供養） | stock（監査済み・公開待ち） |
 | 28 | C 実家じまい汎用 | jikkajimai-yattewaikenai | 実家じまい やってはいけない 失敗 480 | published |
 | 29 | C | jikkajimai-okane-ga-nai | 実家じまい お金がない 390／費用 誰が払う | published |
 | 30 | C | jikkajimai-hojokin-niigata | 実家じまい 補助金 590（新潟県30市町村の解体補助金一覧） | published |
