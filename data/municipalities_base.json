@@ -1,608 +1,845 @@
 [
- {
-  "cityId": "niigata",
-  "city": "新潟市",
-  "subsidy": {
-   "has": true,
-   "name": "新潟市危険空き家等除却支援事業",
-   "maxAmount": "最大50万円",
-   "conditions": "倒壊の恐れがある危険な空き家で、市が調査し認定したものなど",
-   "officialUrl": "https://www.city.niigata.lg.jp/kurashi/sumai/sumai_kurashi/akiyatokei/akiyajokyaku.html",
-   "window": null,
-   "phone": null,
-   "note": null
+  {
+    "cityId": "niigata",
+    "city": "新潟市",
+    "subsidy": {
+      "has": true,
+      "name": "空き家活用推進事業（跡地活用タイプ・地域活動活用タイプ〔跡地活用〕）",
+      "maxAmount": "空き家の解体費用（外構を含む）の3分の1、最大50万円（令和8年度分の受付は終了）",
+      "conditions": [
+        "跡地活用タイプ：未接道地の購入、未接道地に存する空き家の解体工事（外構を含む）が対象（未接道地＝建築基準法第42条の道路と接する長さが2メートル未満の土地、同条第2項・第3項の道路にのみ接している土地、または道路に接していない土地）",
+        "跡地活用タイプで解体費用のみを補助対象とする場合、交付申請の日から遡って1年以内に申請者等が購入した空き家の解体費用は補助の対象",
+        "法人も補助金を申請することが可能（未接道地の購入費用は補助対象外）",
+        "地域活動活用タイプ（跡地活用）：空き家跡地を地域で活用するための空き家の解体工事、空き家跡地の外構工事（活用例：空き家を除却し、跡地を地域の駐車場や菜園にすることなど）",
+        "補助金交付決定前に事業に着手した場合は対象外",
+        "申請者、空き家、その他の要件は要綱・要領及びリーフレットを確認"
+      ],
+      "officialUrl": "https://www.city.niigata.lg.jp/kurashi/jyutaku/jukankyo/yushi_josei/akiyakatsuyo.html",
+      "window": null,
+      "phone": null,
+      "note": "最終更新日 2026年9月4日。旧掲載の「新潟市危険空き家等除却支援事業」は公式サイトで確認できず（旧URLは404）。倒壊の恐れがある危険空き家を対象とした個人向けの除却補助は新潟市の公式サイトでは確認できない。",
+      "applicationStatus": "終了"
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.niigata.lg.jp/kurashi/gomi/gomi_dashikata/sodaigomi.html",
+      "phone": "025-290-5353"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.niigata.lg.jp/kurashi/gomi/gomi_dashikata/sodaigomi.html",
-   "phone": "025-290-5353"
-  }
- },
- {
-  "cityId": "joetsu",
-  "city": "上越市",
-  "subsidy": {
-   "has": true,
-   "name": "上越市老朽危険空き家等除却支援事業補助金",
-   "maxAmount": "最大50万円",
-   "conditions": "1年以上使用されておらず、危険度が高いと判定された空き家など",
-   "officialUrl": "https://www.city.joetsu.niigata.jp/soshiki/kenchiku/akiyajokyaku.html",
-   "window": null,
-   "phone": null,
-   "note": null
+  {
+    "cityId": "joetsu",
+    "city": "上越市",
+    "subsidy": {
+      "has": true,
+      "name": "空き家等及び特定空き家等除却費補助金",
+      "maxAmount": "除却等に係る費用の2分の1を補助（上限50万円）（特定空き家等除却費補助・空き家等除却費補助とも）",
+      "conditions": [
+        "【特定空き家等除却費補助】対象者：市税に未納がない特定空き家等の所有者またはその法定相続人等で、低所得者層世帯の方（上越市営住宅条例第6条第1項を準用）",
+        "【特定空き家等除却費補助】申請者または申請者の3親等以内の方が、除却後の跡地に建築物を建設しないこと（建設する場合は対象外）",
+        "【空き家等除却費補助】対象者：市税に未納がない空き家等の所有者またはその法定相続人等",
+        "【空き家等除却費補助】空き家等の除却後の跡地が地域活性化（ポケットパーク等）に10年以上供されること（計画書等の提出が必要）",
+        "除却する空き家等に所有権以外の権利の設定がある場合は、権利を有するすべての人及び団体から除却について同意を得ていること",
+        "除却工事及びそれにより生じた廃材等の処分に当たり、市内に本社を有する事業者が請け負うこと",
+        "施工業者との契約・除却工事前に申請すること（申請前に契約・着手すると補助対象外）"
+      ],
+      "officialUrl": "https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-jokyakuhojo.html",
+      "window": null,
+      "phone": null,
+      "note": "掲載日 2026年10月1日更新。旧URL（/soshiki/kenchiku/akiyajokyaku.html）は廃止。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.joetsu.niigata.jp/soshiki/seisaku/gomi-sodai.html",
+      "phone": "025-543-5300"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.joetsu.niigata.jp/soshiki/seisaku/gomi-sodai.html",
-   "phone": "025-543-5300"
-  }
- },
- {
-  "cityId": "nagaoka",
-  "city": "長岡市",
-  "subsidy": {
-   "has": true,
-   "name": "長岡市老朽危険空き家除却支援補助金",
-   "maxAmount": "最大50万円",
-   "conditions": "著しく老朽化し、倒壊の恐れがある空き家で、市が認定したもの",
-   "officialUrl": "https://www.city.nagaoka.niigata.jp/kurashi/cate07/akiya/jokyaku.html",
-   "window": null,
-   "phone": null,
-   "note": null
+  {
+    "cityId": "nagaoka",
+    "city": "長岡市",
+    "subsidy": {
+      "has": false,
+      "name": null,
+      "maxAmount": null,
+      "conditions": [],
+      "officialUrl": "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-jyokyo.html",
+      "window": null,
+      "phone": null,
+      "note": "個人の所有者向けの空き家解体補助は長岡市の公式サイトで確認できません。掲載されているのは、町内会等の地域団体が特定空家等を除却し跡地を地域活性化のために使用する場合の「空き家対策総合支援事業補助金」（補助対象経費の4/5、上限160万円。最終更新日 2021年9月27日）のみです。旧掲載の「長岡市老朽危険空き家除却支援補助金（最大50万円）」は公式サイトで確認できず、旧URLは404のため掲載を取り下げました（2026-10-02確認）。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/gomi/sodai.html",
+      "phone": "0258-25-0053"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/gomi/sodai.html",
-   "phone": "0258-25-0053"
-  }
- },
- {
-  "cityId": "sanjo",
-  "city": "三条市",
-  "subsidy": {
-   "has": true,
-   "name": "三条市特定空家等解体費補助金",
-   "maxAmount": "補助対象経費の5分の4 上限50万円",
-   "conditions": [
-    "市内に存する特定空家等であること",
-    "補助を受ける目的で故意に破損させたものでないこと",
-    "公共事業等による移転等の補助対象となっていないものであること",
-    "特定空家等の所有者または相続人であること（※相続人が複数いる場合は、全ての同意を得ていること）",
-    "市内に本店、支店または営業所等を有する解体施工業者が施工するものであること",
-    "補助対象空家等及びそれに付属する工作物を全て解体・除却し、更地とする工事であること"
-   ],
-   "officialUrl": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/akiyaakichi/15199.html",
-   "window": "三条市 市民部 環境課 生活安全・交通係",
-   "phone": "0256-34-5615",
-   "note": null
+  {
+    "cityId": "sanjo",
+    "city": "三条市",
+    "subsidy": {
+      "has": true,
+      "name": "三条市特定空家等解体費補助金",
+      "maxAmount": "補助対象経費の5分の4 上限50万円",
+      "conditions": [
+        "市内に存する特定空家等であること",
+        "補助を受ける目的で故意に破損させたものでないこと",
+        "公共事業等による移転等の補助対象となっていないものであること",
+        "特定空家等の所有者または相続人であること（※相続人が複数いる場合は、全ての同意を得ていること）",
+        "市内に本店、支店または営業所等を有する解体施工業者が施工するものであること",
+        "補助対象空家等及びそれに付属する工作物を全て解体・除却し、更地とする工事であること"
+      ],
+      "officialUrl": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/akiyaakichi/15199.html",
+      "window": "三条市 市民部 環境課 生活安全・交通係",
+      "phone": "0256-34-5615",
+      "note": "申請前に必ず市による事前調査申込が必要。事前調査で補助対象に該当した件数が予算に達し次第、募集締切。前払制度あり（代理受領制度利用可）。 3階以上の非木造建築物は補助対象経費の5分の4、上限400万円。交付要綱上の正式名称は「三条市特定空家等及び管理不全空家等解体費補助金」。ページに「令和8年度 特定空家等解体費補助金の募集をしております」の記載あり（2026-10-02確認）。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyo/gomi/sodai/",
+      "phone": "0256-34-5629"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyo/gomi/sodai/",
-   "phone": "0256-34-5629"
-  }
- },
- {
-  "cityId": "kashiwazaki",
-  "city": "柏崎市",
-  "subsidy": {
-   "has": true,
-   "name": "柏崎市空家等除却支援事業補助金",
-   "maxAmount": "解体工事に要した費用の2分の1（最大で50万円を補助。ただし、補助対象空き家が「居住誘導区域」内にある場合は、最大で65万円を補助）",
-   "conditions": [
-    "1年以上使用がなされていない空き家",
-    "市税の滞納がなく",
-    "市内に本社のある事業所のうち、解体工事業の登録を受けているものが施工すること",
-    "敷地内に存する家屋、それに附随する工作物を全て除去し、更地とすること",
-    "解体工事前に審査・交付申請・交付決定が必要です（交付決定前に着手した工事は対象外）"
-   ],
-   "officialUrl": "https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/hojo/sumai_seikatsu/47390.html",
-   "window": "柏崎市 都市整備部 建築住宅課 住宅対策係（電話0257-21-2291）",
-   "phone": "0257-21-2291",
-   "note": null
+  {
+    "cityId": "kashiwazaki",
+    "city": "柏崎市",
+    "subsidy": {
+      "has": true,
+      "name": "柏崎市空家等除却支援事業補助金",
+      "maxAmount": "解体工事に要した費用の2分の1（最大で50万円を補助。ただし、補助対象空き家が「居住誘導区域」内にある場合は、最大で65万円を補助）",
+      "conditions": [
+        "1年以上使用がなされていない空き家",
+        "市税の滞納がなく",
+        "市内に本社のある事業所のうち、解体工事業の登録を受けているものが施工すること",
+        "敷地内に存する家屋、それに附随する工作物を全て除去し、更地とすること",
+        "解体工事前に審査・交付申請・交付決定が必要です（交付決定前に着手した工事は対象外）"
+      ],
+      "officialUrl": "https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/hojo/sumai_seikatsu/47390.html",
+      "window": "柏崎市 都市整備部 建築住宅課 住宅対策係（電話0257-21-2291）",
+      "phone": "0257-21-2291",
+      "note": null,
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/gomi_recycle/sodai/",
+      "phone": "0257-23-5111"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/gomi_recycle/sodai/",
-   "phone": "0257-23-5111"
-  }
- },
- {
-  "cityId": "shibata",
-  "city": "新発田市",
-  "subsidy": {
-   "has": false,
-   "name": null,
-   "maxAmount": null,
-   "conditions": [],
-   "officialUrl": "https://www.city.shibata.lg.jp/",
-   "window": "建設課 住宅係",
-   "phone": "0254-22-3110",
-   "note": "※要確認：公式サイトで個人向け空き家解体補助金の記載を確認できず。詳細は市建設課に直接お問い合わせください。"
+  {
+    "cityId": "shibata",
+    "city": "新発田市",
+    "subsidy": {
+      "has": false,
+      "name": null,
+      "maxAmount": null,
+      "conditions": [],
+      "officialUrl": "https://www.city.shibata.lg.jp/kurashi/sumai/josei/1024868.html",
+      "window": "建設課 住宅係",
+      "phone": "0254-22-3110",
+      "note": "新発田市の「令和8年度住宅関係補助金の手引き」（更新日 令和8年4月1日）および空き家関連ページに、空き家の解体・除却費の補助制度は掲載されていません。空き家関連の補助は空き家バンク登録物件向けの家財道具処分補助等のみです（2026-10-02確認）。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.shibata.lg.jp/kurashi/gomi/sodai.html",
+      "phone": "0254-22-3110"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.shibata.lg.jp/kurashi/gomi/sodai.html",
-   "phone": "0254-22-3110"
-  }
- },
- {
-  "cityId": "ojiya",
-  "city": "小千谷市",
-  "subsidy": {
-   "has": false,
-   "name": null,
-   "maxAmount": null,
-   "conditions": [],
-   "officialUrl": "https://www.city.ojiya.niigata.jp/soshiki/kensetsu/index-2.html",
-   "window": "建設課 建築住宅係",
-   "phone": "0258-83-3514",
-   "note": "※要確認：令和7年度住宅補助一覧に空き家解体補助の記載なし。「空き家活用のための家財道具等処分支援事業補助金」（上限20万円）は別途あり。Search Consoleで上位表示中のため公式サイト要確認。"
+  {
+    "cityId": "ojiya",
+    "city": "小千谷市",
+    "subsidy": {
+      "has": true,
+      "name": "移住建替支援事業補助金",
+      "maxAmount": "空き家解体事業（解体のみ）：工事費用の1/5以内、補助上限額50万円（市外事業者が行う場合は25万円）。空き家建替事業（解体と建替）：工事費用の1/2以内、補助上限額200万円（加算要件に該当する場合は上限額500万円）",
+      "conditions": [
+        "個人が所有するものであること",
+        "売買または賃貸目的でないこと",
+        "空家等対策の推進に関する特別措置法第22条第3項の規定による命令または同条第10項の規定による措置に係る特定空家等でないこと",
+        "抵当権その他第三者の権利が設定されていないこと",
+        "公共事業等の補償の対象でないこと",
+        "空き家解体事業にあっては、小千谷市空き家情報バンクにおいて、登録後おおむね1年が経過した空き家、または登録要件を満たさず登録できなかった空き家のいずれかに該当するもの",
+        "対象者：市内にある空き家の登記事項証明書または固定資産課税台帳に所有者として記録されている方（共有者・相続人を含む）、または市内の空き家を取得した転入（移住）者で小千谷市に5年以上定住する意思がある方",
+        "市税などを滞納していない方、暴力団・暴力団員と関係がない方",
+        "着工前に申請が必要（工事は交付決定を受けてから行う）。補助金申請日の属する年度の3月末日までに工事を完了すること"
+      ],
+      "officialUrl": "https://www.city.ojiya.niigata.jp/site/iju/akiya-kaitai-tatekae.html",
+      "window": "建設課 建築住宅係",
+      "phone": "0258-83-3514",
+      "note": "更新日 2026年9月25日。旧掲載の「令和7年度住宅補助一覧に空き家解体補助の記載なし」は誤り。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.ojiya.niigata.jp/soshiki/kankyoeisei/sodai.html",
+      "phone": "0258-83-3500"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.ojiya.niigata.jp/soshiki/kankyoeisei/sodai.html",
-   "phone": "0258-83-3500"
-  }
- },
- {
-  "cityId": "kamo",
-  "city": "加茂市",
-  "subsidy": {
-   "has": false,
-   "name": null,
-   "maxAmount": null,
-   "conditions": [],
-   "officialUrl": "https://www.city.kamo.niigata.jp/",
-   "window": "建設課",
-   "phone": "0256-52-0080",
-   "note": "※要確認：空き家解体補助金の情報を公式サイトで確認できず。詳細は市建設課に直接お問い合わせください。"
+  {
+    "cityId": "kamo",
+    "city": "加茂市",
+    "subsidy": {
+      "has": false,
+      "name": null,
+      "maxAmount": null,
+      "conditions": [],
+      "officialUrl": "https://www.city.kamo.niigata.jp/shisei/hojo/",
+      "window": "建設課",
+      "phone": "0256-52-0080",
+      "note": "加茂市の補助金一覧ページ、空き家バンク、空き家対策ガイドブックに、空き家の解体・除却費の補助制度は掲載されていません（2026-10-02確認）。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.kamo.niigata.jp/",
+      "phone": "0256-52-0080"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.kamo.niigata.jp/",
-   "phone": "0256-52-0080"
-  }
- },
- {
-  "cityId": "tokamachi",
-  "city": "十日町市",
-  "subsidy": {
-   "has": false,
-   "name": null,
-   "maxAmount": null,
-   "conditions": [],
-   "officialUrl": "https://www.city.tokamachi.lg.jp/",
-   "window": "建設課 住宅係",
-   "phone": "025-757-3113",
-   "note": "※要確認：豪雪・過疎地域であり補助制度が充実している可能性が高い。公式サイトで詳細確認を推奨。"
+  {
+    "cityId": "tokamachi",
+    "city": "十日町市",
+    "subsidy": {
+      "has": true,
+      "name": "空き家等除却支援事業補助金",
+      "maxAmount": "補助率50％。居住誘導区域内は上限30万円、居住誘導区域外は上限20万円（令和8年度分の受付は終了）",
+      "conditions": [
+        "補助対象者：空き家などを所有している人またはその相続人で、現住所地の市区町村税の滞納がないこと",
+        "市内の住宅や店舗など（附属家のみの除却は除く）",
+        "過去1年以上使用されていないもの",
+        "公共事業の補助対象となっていないもの",
+        "建て替えを目的としていないもの",
+        "原則として敷地内の対象空き家とそれに付随する附属家などを全て除却し、更地の状態にする工事",
+        "市内に事業所、支店または営業所を有し、建設業許可または解体工事業登録のある法人・個人事業主が施工する工事",
+        "予算を超える申請があった場合は抽選により交付を決定。交付決定前に着手した工事は対象外"
+      ],
+      "officialUrl": "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/4/1/10912.html",
+      "window": "建設課 住宅係",
+      "phone": "025-757-3113",
+      "note": "更新日 2026年5月14日。令和8年度の申込受付は終了。例年春に短期間の申込受付（抽選制）。旧掲載の「補助なし」は誤り。",
+      "applicationStatus": "終了"
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.tokamachi.lg.jp/",
+      "phone": "025-757-3113"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.tokamachi.lg.jp/",
-   "phone": "025-757-3113"
-  }
- },
- {
-  "cityId": "mitsuke",
-  "city": "見附市",
-  "subsidy": {
-   "has": true,
-   "name": "見附市空家等除却支援事業補助金",
-   "maxAmount": "詳細は窓口にお問い合わせください",
-   "conditions": [
-    "特定空家等（損害割合レベル3以上）に認定された住宅であること",
-    "空家等対策特別措置法に基づく助言・指導または勧告に従って措置を講じようとしている者",
-    "市税を滞納していないこと",
-    "世帯の合計所得が別表に定める制限額未満であること（所得制限あり）",
-    "市が認定した空家所有者・相続人等であること"
-   ],
-   "officialUrl": "https://www.city.mitsuke.niigata.jp/",
-   "window": "都市整備課 住宅係",
-   "phone": "0258-62-1700",
-   "note": null
+  {
+    "cityId": "mitsuke",
+    "city": "見附市",
+    "subsidy": {
+      "has": false,
+      "name": null,
+      "maxAmount": null,
+      "conditions": [],
+      "officialUrl": "https://www.city.mitsuke.niigata.jp/soshiki/20/22540.html",
+      "window": "都市整備課 住宅係",
+      "phone": "0258-62-1700",
+      "note": "空き家専用の解体補助は見附市の公式サイトで確認できません。掲載されているのは耐震化目的の「木造住宅の除却工事費補助」（除却工事に要する費用の23％・上限30万円。昭和56年5月31日以前着工で耐震診断の評点が基準未満の木造住宅が対象、除却後の建て替えまたは住み替えが必須。現在居住者のいない住宅を除却する場合は同一敷地での建て替えのみ対象。令和8年4月13日〜11月20日申込）で、空き家を解体するだけでは補助の対象になりません。旧掲載の「見附市空家等除却支援事業補助金」は公式サイトで確認できず、掲載を取り下げました（2026-10-02確認）。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.mitsuke.niigata.jp/",
+      "phone": "0258-62-1700"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.mitsuke.niigata.jp/",
-   "phone": "0258-62-1700"
-  }
- },
- {
-  "cityId": "murakami",
-  "city": "村上市",
-  "subsidy": {
-   "has": true,
-   "name": "村上市空家等解体費補助金",
-   "maxAmount": "対象工事費の3分の1（上限20万円）。令和8年度分は2026年5月15日に受付終了（公式サイト確認日: 2026-10-04）",
-   "conditions": [
-    "市内に存する空家等であること",
-    "市税を滞納していないこと",
-    "空き家の所有者または相続人等であること",
-    "事前申請が必要（工事着手前）"
-   ],
-   "officialUrl": "https://www.city.murakami.lg.jp/soshiki/12/akiyakaitaihojyokin.html",
-   "window": "都市整備課",
-   "phone": "0254-53-2111",
-   "note": null
+  {
+    "cityId": "murakami",
+    "city": "村上市",
+    "subsidy": {
+      "has": true,
+      "name": "村上市空家等解体費補助金",
+      "maxAmount": "対象工事費用（消費税を除く）の3分の1（上限20万円）（令和8年度分の受付は終了）",
+      "conditions": [
+        "村上市内にあって1年以上前から使用されていない空家等",
+        "公共事業等の補償の対象となっていない空家等",
+        "空家法に基づく特定空家等として勧告を受けていない空家等",
+        "空家等の所有者またはその相続人",
+        "過去5年間にこの補助金の交付を受けていない者",
+        "市税を滞納していない者",
+        "暴力団員でない者または暴力団と関係が無い者",
+        "市内に事業所を有する法人または個人事業主が行う、空家等（附属構築物を含む）を全て解体・除去し敷地全体を更地の状態にする工事で、申請年度内に完了するもの"
+      ],
+      "officialUrl": "https://www.city.murakami.lg.jp/soshiki/12/akiyakaitaihojyokin.html",
+      "window": "都市整備課",
+      "phone": "0254-53-2111",
+      "note": "更新日 2026年5月16日。令和8年度の受付は終了。解体した住宅が空家である場合、増加分の固定資産税を3年度間減免する制度あり。",
+      "applicationStatus": "終了"
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.murakami.lg.jp/soshiki/23/sodaigomi.html",
+      "phone": "0254-53-2111"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.murakami.lg.jp/soshiki/23/sodaigomi.html",
-   "phone": "0254-53-2111"
-  }
- },
- {
-  "cityId": "tsubame",
-  "city": "燕市",
-  "subsidy": {
-   "has": true,
-   "name": "特定空き家等解体撤去費助成金",
-   "maxAmount": "対象工事費用（消費税を除く）の2分の1以内及び30万円を上限とします。",
-   "conditions": [
-    "燕市空き家等の適正管理及びまちなか定住促進に関する条例施行規則の基準により、特定空き家等に認定され、解体及び撤去の指導対象となる建物を含んでいること。",
-    "助成対象工事を市内事業者に発注すること。",
-    "助成対象工事額が30万円以上（消費税を除く）であること。",
-    "特定空き家等の所有者又は所有者の3親等以内の親族若しくはその相続人又は特定空き家等に係る固定資産税の納税義務者であること。",
-    "市税の滞納がないこと。",
-    "宅地建物取引業を営んでいない者。"
-   ],
-   "officialUrl": "https://www.city.tsubame.niigata.jp/soshiki/toshi_seibi/3/1/172/19331.html",
-   "window": "都市整備部 都市計画課",
-   "phone": "0256-77-8363",
-   "note": null
+  {
+    "cityId": "tsubame",
+    "city": "燕市",
+    "subsidy": {
+      "has": true,
+      "name": "特定空き家等解体撤去費助成金",
+      "maxAmount": "対象工事費用（消費税を除く）の2分の1以内及び30万円を上限とします。",
+      "conditions": [
+        "燕市空き家等の適正管理及びまちなか定住促進に関する条例施行規則の基準により、特定空き家等に認定され、解体及び撤去の指導対象となる建物を含んでいること。",
+        "助成対象工事を市内事業者に発注すること。",
+        "助成対象工事額が30万円以上（消費税を除く）であること。",
+        "特定空き家等の所有者又は所有者の3親等以内の親族若しくはその相続人又は特定空き家等に係る固定資産税の納税義務者であること。",
+        "市税の滞納がないこと。",
+        "宅地建物取引業を営んでいない者。"
+      ],
+      "officialUrl": "https://www.city.tsubame.niigata.jp/soshiki/toshi_seibi/3/1/172/19331.html",
+      "window": "都市整備部 都市計画課",
+      "phone": "0256-77-8363",
+      "note": null,
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.tsubame.niigata.jp/kurashi/gomi/sodai.html",
+      "phone": "0256-77-8363"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.tsubame.niigata.jp/kurashi/gomi/sodai.html",
-   "phone": "0256-77-8363"
-  }
- },
- {
-  "cityId": "itoigawa",
-  "city": "糸魚川市",
-  "subsidy": {
-   "has": true,
-   "name": "危険空き家除却支援補助金",
-   "maxAmount": "危険空き家の解体および除去にかかる工事に要する経費の2分の1を補助。（上限額50万円）",
-   "conditions": [
-    "市内にあり、1年以上使用のない状態であるもの",
-    "建築資材の飛散または落下により、近隣・公道に影響を及ぼすおそれがあり周囲に与える危険性があるもの",
-    "市が定める「住宅の不良度判定調査基準」の点数が一定以上であること",
-    "市税の滞納がない方で、次のいずれかに該当する方",
-    "補助金の交付決定を受ける前に、工事着手された場合には本補助金の対象とはなりません。"
-   ],
-   "officialUrl": "https://www.city.itoigawa.lg.jp/page/1417.html",
-   "window": "建設課 住宅係",
-   "phone": "025-552-1511",
-   "note": null
+  {
+    "cityId": "itoigawa",
+    "city": "糸魚川市",
+    "subsidy": {
+      "has": true,
+      "name": "危険空き家除却支援補助金",
+      "maxAmount": "危険空き家の解体および除去にかかる工事に要する経費の2分の1を補助。（上限額50万円）",
+      "conditions": [
+        "市内にあり、1年以上使用のない状態であるもの",
+        "建築資材の飛散または落下により、近隣・公道に影響を及ぼすおそれがあり周囲に与える危険性があるもの",
+        "市が定める「住宅の不良度判定調査基準」の点数が一定以上であること",
+        "市税の滞納がない方で、次のいずれかに該当する方",
+        "補助金の交付決定を受ける前に、工事着手された場合には本補助金の対象とはなりません。"
+      ],
+      "officialUrl": "https://www.city.itoigawa.lg.jp/page/1417.html",
+      "window": "建設課 住宅係",
+      "phone": "025-552-1511",
+      "note": null,
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.itoigawa.lg.jp/kurashi/gomi/sodai.html",
+      "phone": "025-552-1511"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.itoigawa.lg.jp/kurashi/gomi/sodai.html",
-   "phone": "025-552-1511"
-  }
- },
- {
-  "cityId": "myoko",
-  "city": "妙高市",
-  "subsidy": {
-   "has": false,
-   "name": null,
-   "maxAmount": null,
-   "conditions": [],
-   "officialUrl": "https://www.city.myoko.niigata.jp/",
-   "window": "建設課 住宅係",
-   "phone": "0255-74-0011",
-   "note": "※要確認：空き家率7.8%で上越地域の過疎問題が深刻。補助制度が存在する可能性があるため公式サイトで要確認。"
+  {
+    "cityId": "myoko",
+    "city": "妙高市",
+    "subsidy": {
+      "has": true,
+      "name": "妙高市特定空き家等除却費補助金",
+      "maxAmount": "補助率：補助対象経費の1/2（1,000円未満切り捨て）、補助限度額：50万円",
+      "conditions": [
+        "特定空き家等所有者（法定相続人含む）",
+        "市税完納者（完納予定者）",
+        "特定空き家等の破損が、補助対象経費を増額するために故意に行われたものでないこと",
+        "所有権及び所有権以外の権利を有する全ての人から同意を得ていること",
+        "解体経費において、他の補助金等の交付を受けていないこと",
+        "補助対象者含む3親等以内の人が建て替えをする目的の解体でないこと",
+        "令和9年3月31日までに工事完了及び支払い完了するものが対象"
+      ],
+      "officialUrl": "https://www.city.myoko.niigata.jp/docs/31250.html",
+      "window": "建設課 住宅係",
+      "phone": "0255-74-0011",
+      "note": "対象は市が認定した特定空き家等に限る（一般の空き家は対象外）。旧掲載の「補助なし（要確認）」は誤り。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.myoko.niigata.jp/",
+      "phone": "0255-74-0011"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.myoko.niigata.jp/",
-   "phone": "0255-74-0011"
-  }
- },
- {
-  "cityId": "gosen",
-  "city": "五泉市",
-  "subsidy": {
-   "has": false,
-   "name": null,
-   "maxAmount": null,
-   "conditions": [],
-   "officialUrl": "https://www.city.gosen.lg.jp/",
-   "window": "建設課",
-   "phone": "0250-43-3911",
-   "note": "※要確認：公式サイトで個人向け空き家解体補助金の情報を確認できず。詳細は市建設課に直接お問い合わせください。"
+  {
+    "cityId": "gosen",
+    "city": "五泉市",
+    "subsidy": {
+      "has": false,
+      "name": null,
+      "maxAmount": null,
+      "conditions": [],
+      "officialUrl": "https://www.city.gosen.lg.jp/municipal_administration/10/index.html",
+      "window": "建設課",
+      "phone": "0250-43-3911",
+      "note": "五泉市の補助金・助成金一覧および空き家対策ページに、空き家解体補助の案内は掲載されていません。令和8年度施政方針（更新日 2026年4月3日）には「特定空家の解体費用の助成制度を新たに創設します」とあり、制度化後に案内ページが公開される可能性があります（2026-10-02確認）。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.gosen.lg.jp/",
+      "phone": "0250-43-3911"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.gosen.lg.jp/",
-   "phone": "0250-43-3911"
-  }
- },
- {
-  "cityId": "agano",
-  "city": "阿賀野市",
-  "subsidy": {
-   "has": false,
-   "name": null,
-   "maxAmount": null,
-   "conditions": [],
-   "officialUrl": "https://www.city.agano.niigata.jp/soshiki/kensetsuka/zumai/2395.html",
-   "window": "産業建設部 建設課 都市計画建築係",
-   "phone": "0250-61-2480",
-   "note": "※要確認：令和7年度は空き家リフォーム支援事業（最大50万円）の記載あり。解体補助については窓口に直接確認が必要。"
+  {
+    "cityId": "agano",
+    "city": "阿賀野市",
+    "subsidy": {
+      "has": true,
+      "name": "令和8年度空き家解体支援事業",
+      "maxAmount": "補助対象経費の2分の1。補助上限額は特定空き家50万円、不良住宅50万円、管理不全空き家20万円",
+      "conditions": [
+        "空き家の所有者（登記事項証明書に所有者として記載されている方）またはその相続人",
+        "市税を滞納していない方",
+        "過去にこの補助金を受けていない方",
+        "特定空き家（市の認定を受けたもの）、不良住宅（不良度判定の合計100点以上）、管理不全空き家（不良度判定の合計10点以上）のいずれかに該当すること",
+        "過去1年以上居住していない空き家",
+        "自己またはその親族の居住のために建築された空き家",
+        "公共事業による移転等の補償対象となっていないこと",
+        "固定資産税を滞納していないこと",
+        "敷地内にある空き家およびそれに付属する工作物（物置、門、塀、フェンス等）を全て解体、除却する工事",
+        "申請者およびその3親等以内の親族が建替えを目的としないこと",
+        "補助金の交付決定前に解体工事に着手した場合は対象外"
+      ],
+      "officialUrl": "https://www.city.agano.niigata.jp/soshiki/kensetsuka/zumai/14246.html",
+      "window": "産業建設部 建設課 都市計画建築係",
+      "phone": "0250-61-2480",
+      "note": "ページの更新日表記は2025年05月01日だが本文は令和8年度の内容。旧掲載の「解体補助は窓口に直接確認が必要」は誤り。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.agano.niigata.jp/soshiki/kensetsuka/zumai/2395.html",
+      "phone": "0250-61-2480"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.agano.niigata.jp/soshiki/kensetsuka/zumai/2395.html",
-   "phone": "0250-61-2480"
-  }
- },
- {
-  "cityId": "sado",
-  "city": "佐渡市",
-  "subsidy": {
-   "has": true,
-   "name": "佐渡市老朽危険廃屋対策支援事業補助金",
-   "maxAmount": "最大80万円（木造：費用の1/2以内）／最大400万円（非木造：費用の4/5以内）※15万円未満は交付なし",
-   "conditions": [
-    "市内に存在する特定空家または不良住宅と認められた空家であること",
-    "解体跡地に建替えを目的としていないこと",
-    "公共事業などによる移転・建替え補償の対象でないこと",
-    "補助を受ける目的で故意に破損等させたものでないこと",
-    "市税を滞納していない所有者または相続人等であること"
-   ],
-   "officialUrl": "https://www.city.sado.niigata.jp/soshiki/2013/80525.html",
-   "window": "生活環境課 環境対策係",
-   "phone": "0259-63-3113",
-   "note": null
+  {
+    "cityId": "sado",
+    "city": "佐渡市",
+    "subsidy": {
+      "has": true,
+      "name": "佐渡市老朽危険廃屋対策支援事業",
+      "maxAmount": "木造建築物 2分の1以内（上限80万円）、非木造建築物 5分の4以内（上限400万円）。補助金額が15万円未満の場合は交付しない",
+      "conditions": [
+        "市税を滞納していない、危険な空家の所有者または相続人など",
+        "市内に存在する特定空家または不良住宅と認められた空家",
+        "解体の跡地に建替えを目的としていないこと",
+        "公共事業などによる移転、建替えの補償対象ではないこと",
+        "補助を受ける目的で故意に破損などをさせたものでないこと",
+        "補助対象の可否について建物の判定を行う必要があるため、申請前に事前相談が必要",
+        "受付件数が多い場合、危険度の高いものを優先"
+      ],
+      "officialUrl": "https://www.city.sado.niigata.jp/soshiki/2013/80525.html",
+      "window": "生活環境課 環境対策係",
+      "phone": "0259-63-3113",
+      "note": "更新日 2026年6月12日。旧URL（/soshiki/2013/24761.html）は404。要綱上の名称は「佐渡市老朽危険廃屋対策支援事業補助金」。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.sado.niigata.jp/soshiki/2013/",
+      "phone": "0259-63-3113"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.sado.niigata.jp/soshiki/2013/",
-   "phone": "0259-63-3113"
-  }
- },
- {
-  "cityId": "uonuma",
-  "city": "魚沼市",
-  "subsidy": {
-   "has": true,
-   "name": "魚沼市空家等解体補助金（令和8年度）",
-   "maxAmount": "最大30万円（補助対象経費の1/2）",
-   "conditions": "1年以上不使用。市内業者施工。世帯所得1,000万円未満、市税滞納なし",
-   "officialUrl": "https://www.city.uonuma.lg.jp/page/1029743.html",
-   "window": "建設課 住宅係",
-   "phone": "025-792-9752",
-   "note": null
+  {
+    "cityId": "uonuma",
+    "city": "魚沼市",
+    "subsidy": {
+      "has": true,
+      "name": "魚沼市空家等解体補助金",
+      "maxAmount": "補助対象経費の2分の1（上限30万円、千円未満切り捨て）（令和8年度分の受付は終了）",
+      "conditions": [
+        "空家等を所有する者又はその相続人（他の所有者・権利者がいる場合は全員の同意が必要）",
+        "世帯の所得が1,000万円以上の者、市税の滞納がある者、過去5年間に当該補助金の交付を受けた者、暴力団関係者は対象外",
+        "公共事業等の補償の対象となっていない建築物",
+        "建て替えを目的とした解体ではない建築物",
+        "1年以上居住その他使用がなされていないことが常態である建築物又は所有者等が今後居住等しない建築物",
+        "原則として敷地全体を更地の状態にする工事",
+        "市内に本店若しくは営業所等を有する法人又は個人事業主が行う工事",
+        "他の同種の補助金等の交付を受けて行う工事でないこと",
+        "補助金を申請する年度内に完了する工事。予算を超える申請があった場合は抽選"
+      ],
+      "officialUrl": "https://www.city.uonuma.lg.jp/page/1029743.html",
+      "window": "建設課 住宅係",
+      "phone": "025-792-9752",
+      "note": "更新日 2026年4月9日。令和8年度分の受付は終了。申込多数の場合は抽選。旧掲載の申請期間「令和7年度（予算がなくなり次第終了）」と窓口「建設課 住宅係」は誤り。",
+      "applicationStatus": "終了"
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.uonuma.lg.jp/kurashi/gomi/sodai.html",
+      "phone": "025-792-9752"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.uonuma.lg.jp/kurashi/gomi/sodai.html",
-   "phone": "025-792-9752"
-  }
- },
- {
-  "cityId": "minamiuonuma",
-  "city": "南魚沼市",
-  "subsidy": {
-   "has": true,
-   "name": "南魚沼市空家等除却事業補助金",
-   "maxAmount": "20万円（居住誘導区域内は4万円加算し最大24万円）",
-   "conditions": [
-    "過去1年以上使用されていない空家等であること",
-    "相続により取得した場合は今後使用する見込みがないこと",
-    "専用住宅または併用住宅（延べ床面積の2分の1以上が居住用）であること",
-    "補助金を受給する目的で故意に放置したものでないこと",
-    "他の補助金受給に伴う財産処分制限期間が経過していること",
-    "公共事業の補償対象になっていないこと"
-   ],
-   "officialUrl": "https://www.city.minamiuonuma.niigata.jp/docs/48331.html",
-   "window": "南魚沼市 総務課 防災庶務班（防災担当）",
-   "phone": "025-773-6667",
-   "note": null
+  {
+    "cityId": "minamiuonuma",
+    "city": "南魚沼市",
+    "subsidy": {
+      "has": true,
+      "name": "南魚沼市空家等除却事業補助金",
+      "maxAmount": "20万円（居住誘導区域内は4万円加算し最大24万円）",
+      "conditions": [
+        "過去1年以上使用されていない空家等であること",
+        "相続により取得した場合は今後使用する見込みがないこと",
+        "専用住宅または併用住宅（延べ床面積の2分の1以上が居住用）であること",
+        "補助金を受給する目的で故意に放置したものでないこと",
+        "他の補助金受給に伴う財産処分制限期間が経過していること",
+        "公共事業の補償対象になっていないこと"
+      ],
+      "officialUrl": "https://www.city.minamiuonuma.niigata.jp/docs/48331.html",
+      "window": "南魚沼市 総務課 防災庶務班（防災担当）",
+      "phone": "025-773-6667",
+      "note": "居住誘導区域内のみ対象。除却後は固定資産税の住宅用地特例が適用されなくなる点に注意。5年に1回の利用制限あり。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.minamiuonuma.niigata.jp/kurashi/gomi/sodai.html",
+      "phone": "025-773-6667"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.minamiuonuma.niigata.jp/kurashi/gomi/sodai.html",
-   "phone": "025-773-6667"
-  }
- },
- {
-  "cityId": "tainai",
-  "city": "胎内市",
-  "subsidy": {
-   "has": false,
-   "name": null,
-   "maxAmount": null,
-   "conditions": [],
-   "officialUrl": "https://www.city.tainai.niigata.jp/",
-   "window": "建設課",
-   "phone": "0254-43-6111",
-   "note": "※要確認：「がけ地近接等危険住宅移転事業」（危険住宅除却費補助）はあり。一般空き家解体補助金については窓口に直接確認が必要。"
+  {
+    "cityId": "tainai",
+    "city": "胎内市",
+    "subsidy": {
+      "has": true,
+      "name": "胎内市空き家等解体補助金",
+      "maxAmount": "解体工事にかかる工事費（税抜き）の1/2以内。特定空き家または不良住宅は上限100万円、老朽空き家は上限50万円",
+      "conditions": [
+        "個人所有（共有の場合も含む）であること",
+        "登記上「居宅」と記載されているもの（未登記の場合は固定資産税家屋課税台帳で「住宅」と記載されているもの）",
+        "特定空き家または住宅地改良法における不良住宅に認定された空き家、もしくは老朽空き家（老朽危険度の基準における評点の合計が50点以上）",
+        "公共工事の対象となっていないもの（敷地内の樹木の伐採、塀の撤去は対象外）",
+        "対象の住宅に係る登記上所有者として登録されている方（所有者が死亡している場合はその相続人）。複数の所有者・相続人・権利者がいるときは全員の同意を得ていること",
+        "同様の趣旨の補助制度を受けていないこと",
+        "申請者本人およびその世帯員が胎内市の市税等の滞納がないこと",
+        "本人およびその世帯員の前年の所得金額の合計が1人世帯で200万円以下、以降世帯員が1人増えるごとに50万円ずつ加算した額以内であること",
+        "補助対象空き家を解体し、かつ撤去する工事で、年度内に実績報告が行えること。申請前に事前申込書の提出が必要"
+      ],
+      "officialUrl": "https://www.city.tainai.niigata.jp/kurashi/sekatsu/akiya/kaitai.html",
+      "window": "建設課",
+      "phone": "0254-43-6111",
+      "note": "更新日 2026年5月1日。令和8年度の申請受付期間（8月31日まで）は経過しているが、ページに受付終了の記載はない。所得要件あり。旧掲載の「補助なし（がけ地近接等危険住宅移転事業はあり）」は誤り。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.city.tainai.niigata.jp/",
+      "phone": "0254-43-6111"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.city.tainai.niigata.jp/",
-   "phone": "0254-43-6111"
-  }
- },
- {
-  "cityId": "seiro",
-  "city": "聖籠町",
-  "subsidy": {
-   "has": false,
-   "name": null,
-   "maxAmount": null,
-   "conditions": [],
-   "officialUrl": "https://www.town.seiro.niigata.jp/",
-   "window": "建設課",
-   "phone": "0254-27-2111",
-   "note": "※要確認：空き家解体補助金の詳細について公式サイトで確認できず。詳細は役場建設課に直接お問い合わせください。"
+  {
+    "cityId": "seiro",
+    "city": "聖籠町",
+    "subsidy": {
+      "has": true,
+      "name": "聖籠町管理不全空き家除却費補助金",
+      "maxAmount": "除却費用の2分の1（上限30万円）",
+      "conditions": [
+        "「聖籠町空き家等の適正管理に関する条例」により「管理不全空き家」と認定された者（その他条件あり）",
+        "補助金を活用した除却後の更地は空き家再生支援センター（空き家バンク）に登録することが条件"
+      ],
+      "officialUrl": "https://www.town.seiro.niigata.jp/8/6/4_1/1469.html",
+      "window": "建設課",
+      "phone": "0254-27-2111",
+      "note": "更新日 2025年6月10日。申請期間・年度の記載なし。詳細な要件は交付要綱で確認が必要。旧掲載の「補助なし（確認できず）」は誤り。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.town.seiro.niigata.jp/",
+      "phone": "0254-27-2111"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.town.seiro.niigata.jp/",
-   "phone": "0254-27-2111"
-  }
- },
- {
-  "cityId": "yahiko",
-  "city": "弥彦村",
-  "subsidy": {
-   "has": true,
-   "name": "弥彦村空き家解体補助金（※名称要確認）",
-   "maxAmount": "詳細は窓口にお問い合わせください",
-   "conditions": [
-    "村内に所在する老朽化した空き家であること",
-    "市税（村税）を滞納していないこと",
-    "詳細条件は窓口にてご確認ください"
-   ],
-   "officialUrl": "https://www.vill.yahiko.niigata.jp/",
-   "window": "建設環境課",
-   "phone": "0256-94-3131",
-   "note": null
+  {
+    "cityId": "yahiko",
+    "city": "弥彦村",
+    "subsidy": {
+      "has": false,
+      "name": null,
+      "maxAmount": null,
+      "conditions": [],
+      "officialUrl": "https://www.vill.yahiko.niigata.jp/life/?content=24",
+      "window": "建設環境課",
+      "phone": "0256-94-3131",
+      "note": "弥彦村の「空き家の対策について」（更新日 2026年4月1日）および補助・助成一覧に、空き家の解体・除却費の補助制度は掲載されていません。旧掲載の「弥彦村空き家解体補助金（※名称要確認）」は公式サイトで確認できなかったため掲載を取り下げました（2026-10-02確認）。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.vill.yahiko.niigata.jp/",
+      "phone": "0256-94-3131"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.vill.yahiko.niigata.jp/",
-   "phone": "0256-94-3131"
-  }
- },
- {
-  "cityId": "tagami",
-  "city": "田上町",
-  "subsidy": {
-   "has": true,
-   "name": "田上町空き家解体補助金（※名称要確認）",
-   "maxAmount": "詳細は窓口にお問い合わせください",
-   "conditions": [
-    "町内に所在する老朽化した空き家であること",
-    "町税を滞納していないこと",
-    "詳細条件は窓口にてご確認ください"
-   ],
-   "officialUrl": "https://www.town.tagami.niigata.jp/",
-   "window": "建設課",
-   "phone": "0256-57-2341",
-   "note": null
+  {
+    "cityId": "tagami",
+    "city": "田上町",
+    "subsidy": {
+      "has": false,
+      "name": null,
+      "maxAmount": null,
+      "conditions": [],
+      "officialUrl": "https://www.town.tagami.niigata.jp/docs/12415.html",
+      "window": "建設課",
+      "phone": "0256-57-2341",
+      "note": "田上町の「空き家対策について」、空き家情報バンク、住宅・空き家カテゴリの一覧に、空き家の解体・除却費の補助制度は掲載されていません。旧掲載の「田上町空き家解体補助金（※名称要確認）」は公式サイトで確認できなかったため掲載を取り下げました（2026-10-02確認）。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.town.tagami.niigata.jp/",
+      "phone": "0256-57-2341"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.town.tagami.niigata.jp/",
-   "phone": "0256-57-2341"
-  }
- },
- {
-  "cityId": "aga",
-  "city": "阿賀町",
-  "subsidy": {
-   "has": false,
-   "name": null,
-   "maxAmount": null,
-   "conditions": [],
-   "officialUrl": "https://www.town.aga.niigata.jp/",
-   "window": "建設課",
-   "phone": "0254-92-3000",
-   "note": "※要確認：過疎地域のため補助制度が充実している可能性あり。公式サイトで詳細確認を推奨。"
+  {
+    "cityId": "aga",
+    "city": "阿賀町",
+    "subsidy": {
+      "has": false,
+      "name": null,
+      "maxAmount": null,
+      "conditions": [],
+      "officialUrl": "https://www.town.aga.niigata.jp/agamachi_soshiki/machizukuri_kanko/hojo_shienseido/211.html",
+      "window": "建設課",
+      "phone": "0254-92-3000",
+      "note": "検索エンジンには「令和8年度 阿賀町空家等解体費補助金の申請受付を開始します」（補助対象工事費の2分の1・最大30万円、受付 令和8年7月15日〜8月14日）という町公式ページが残っていますが、2026-10-02時点で当該ページ（/info/soumu_info/3253.html）は404で、補助・支援制度一覧にも掲載がなく、公式サイト上で制度内容を確認できません。次年度の案内が公開されるまで未掲載とします。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.town.aga.niigata.jp/",
+      "phone": "0254-92-3000"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.town.aga.niigata.jp/",
-   "phone": "0254-92-3000"
-  }
- },
- {
-  "cityId": "izumozaki",
-  "city": "出雲崎町",
-  "subsidy": {
-   "has": false,
-   "name": null,
-   "maxAmount": null,
-   "conditions": [],
-   "officialUrl": "https://www.town.izumozaki.niigata.jp/",
-   "window": "建設課",
-   "phone": "0258-78-2291",
-   "note": "※要確認：複数の解体補助金まとめサイトに出雲崎町の名が記載あり。公式サイトで詳細確認を推奨。"
+  {
+    "cityId": "izumozaki",
+    "city": "出雲崎町",
+    "subsidy": {
+      "has": true,
+      "name": "特定空家等除却支援事業（出雲崎町空家等再生活用支援事業補助金）",
+      "maxAmount": "対象となる経費の1/2で、補助上限額は50万円（1平方メートル当りの工事単価上限は国土交通大臣が定める不良住宅標準除却費）",
+      "conditions": [
+        "特定空家等の所有者等であって、町税の滞納がない方（町長が特に認めた場合はこの限りではない）",
+        "対象となる経費：特定空家等の解体及び除去にかかる工事に要する経費",
+        "補助事業の着手前に補助金の交付を申請する必要がある",
+        "補助事業完了から30日を経過した日又は交付申請年度の3月31日のいずれか早い日までに実績報告をする必要がある"
+      ],
+      "officialUrl": "https://www.town.izumozaki.niigata.jp/kurashi/sumai/akiyasaiseikatuyou.html",
+      "window": "建設課",
+      "phone": "0258-78-2291",
+      "note": "最終更新日 2025年4月1日。対象は特定空家等（空家法の特定空家に認定されたもの）に限る。旧掲載の「補助なし（まとめサイトに記載あり）」は誤り。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.town.izumozaki.niigata.jp/",
+      "phone": "0258-78-2291"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.town.izumozaki.niigata.jp/",
-   "phone": "0258-78-2291"
-  }
- },
- {
-  "cityId": "yuzawa",
-  "city": "湯沢町",
-  "subsidy": {
-   "has": false,
-   "name": null,
-   "maxAmount": null,
-   "conditions": [],
-   "officialUrl": "https://www.town.yuzawa.lg.jp/",
-   "window": "建設課",
-   "phone": "025-784-4850",
-   "note": "※要確認：リゾート地として空き家問題が特有。空き家解体補助金の有無について公式サイトで要確認。"
+  {
+    "cityId": "yuzawa",
+    "city": "湯沢町",
+    "subsidy": {
+      "has": false,
+      "name": null,
+      "maxAmount": null,
+      "conditions": [],
+      "officialUrl": "https://www.town.yuzawa.lg.jp/kurashinojoho/machinitsuiteshiritai/12/2/index.html",
+      "window": "建設課",
+      "phone": "025-784-4850",
+      "note": "湯沢町の住宅関係補助金一覧（克雪・耐震改修・耐震診断・屋根雪下ろし・バリアフリー）、空き家バンク、空家等及び空き地対策計画のいずれにも、空き家の解体・除却費の補助制度は掲載されていません（2026-10-02確認）。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.town.yuzawa.lg.jp/",
+      "phone": "025-784-4850"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.town.yuzawa.lg.jp/",
-   "phone": "025-784-4850"
-  }
- },
- {
-  "cityId": "tsunan",
-  "city": "津南町",
-  "subsidy": {
-   "has": false,
-   "name": null,
-   "maxAmount": null,
-   "conditions": [],
-   "officialUrl": "https://www.town.tsunan.niigata.jp/",
-   "window": "建設課",
-   "phone": "025-765-3113",
-   "note": "※要確認：日本有数の豪雪地帯で過疎化が深刻。空き家解体補助金が存在する可能性が高いため公式サイトで要確認。"
+  {
+    "cityId": "tsunan",
+    "city": "津南町",
+    "subsidy": {
+      "has": true,
+      "name": "津南町空き家等解体補助金",
+      "maxAmount": "補助対象経費に4分の1を乗じて得た額（1,000円未満切り捨て）、30万円を上限",
+      "conditions": [
+        "津南町内に存するものであること",
+        "昭和56年5月31日以前に着工された旧耐震基準の建物で、用途が専用住宅又は併用住宅（延床面積の2分の1以上が居住用）であること",
+        "町が実施した空家等実態調査において空き家として登録されていること",
+        "過去1年以上使用されていないことが常態で、今後も使用する見込みがないこと",
+        "補助金の交付を受ける目的で故意に放置したものでないこと",
+        "公共事業等による移転、建替え等の補償対象となっていないこと",
+        "補助対象者：登記事項証明書に所有者として記載されている者、その相続人、その他町長が特に認める者（世帯員に町税等の滞納がある場合等は対象外）",
+        "補助対象空家等及びそれに附随する工作物を全て除去し、原則として敷地全体を更地の状態にする工事。町内に本店・支店・営業所等を有し解体工事業の許可または登録を受けた事業者が施工すること",
+        "補助対象者及びその2親等以内の親族による建替えを目的とする工事ではないこと。工事完了後3年以内に跡地に建物の建築や駐車場等の整備をしないこと",
+        "家財家具等の処分費は補助対象外。補助金を申請する年度内に完了すること"
+      ],
+      "officialUrl": "https://www.town.tsunan.niigata.jp/soshiki/somu/akiyakaitaihojyokin.html",
+      "window": "建設課",
+      "phone": "025-765-3113",
+      "note": "ページ更新日 2024年6月25日。申請期間の記載なし。令和8年度の受付状況はページ上で確認できない。旧掲載の「補助なし（存在する可能性が高い）」は誤り。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.town.tsunan.niigata.jp/",
+      "phone": "025-765-3113"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.town.tsunan.niigata.jp/",
-   "phone": "025-765-3113"
-  }
- },
- {
-  "cityId": "kariwa",
-  "city": "刈羽村",
-  "subsidy": {
-   "has": true,
-   "name": "刈羽村空き家解体補助金（※名称要確認）",
-   "maxAmount": "詳細は窓口にお問い合わせください",
-   "conditions": [
-    "村内に所在する老朽化した空き家であること",
-    "村税を滞納していないこと",
-    "詳細条件は窓口にてご確認ください"
-   ],
-   "officialUrl": "https://www.vill.kariwa.niigata.jp/",
-   "window": "建設課",
-   "phone": "0257-45-3111",
-   "note": null
+  {
+    "cityId": "kariwa",
+    "city": "刈羽村",
+    "subsidy": {
+      "has": false,
+      "name": null,
+      "maxAmount": null,
+      "conditions": [],
+      "officialUrl": "https://www.vill.kariwa.niigata.jp/www/life/result.jsp?life_genre=019",
+      "window": "建設課",
+      "phone": "0257-45-3111",
+      "note": "刈羽村の公式サイト（空き家バンク、空き家の適正管理、くらしの出来事〔引越・住まい〕一覧）に、空き家の解体・除却費の補助制度は掲載されていません。旧掲載の「刈羽村空き家解体補助金（※名称要確認）」は公式サイトで確認できなかったため掲載を取り下げました（2026-10-02確認）。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.vill.kariwa.niigata.jp/",
+      "phone": "0257-45-3111"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.vill.kariwa.niigata.jp/",
-   "phone": "0257-45-3111"
-  }
- },
- {
-  "cityId": "sekikawa",
-  "city": "関川村",
-  "subsidy": {
-   "has": true,
-   "name": "関川村空き家解体補助金（※名称要確認）",
-   "maxAmount": "詳細は窓口にお問い合わせください",
-   "conditions": [
-    "村内に所在する老朽化した空き家であること",
-    "村税を滞納していないこと",
-    "詳細条件は窓口にてご確認ください"
-   ],
-   "officialUrl": "https://www.vill.sekikawa.niigata.jp/",
-   "window": "建設課",
-   "phone": "0254-64-1111",
-   "note": null
+  {
+    "cityId": "sekikawa",
+    "city": "関川村",
+    "subsidy": {
+      "has": true,
+      "name": "関川村空家等解体費補助金",
+      "maxAmount": "補助対象経費の3分の1を乗じて得た額、上限20万円（千円未満は切捨て）",
+      "conditions": [
+        "空家の登記簿上の所有者、またその相続人であること（他に共有者や権利者がいる場合は全員の同意が必要）",
+        "過去5年間にこの補助金を受けていないこと",
+        "村税等の滞納がないこと",
+        "暴力団関係者でないこと",
+        "関川村内に存する空家等で、個人の所有（共有の場合も含む）であるもの",
+        "公共事業の補償の対象となっていない空家等であること",
+        "登記（未登記の場合は固定資産税家屋課税台帳）において居宅又は住居と記載されているもの（小屋等のみの撤去は対象外）",
+        "空家等対策の推進に関する特別措置法第22条第2項の規定に基づく勧告を受けていない空家等であること",
+        "村内に事業所を有する法人又は個人事業主が行う工事で、交付決定を受けた日以降に契約を締結し、当該年度内に終了する工事であること"
+      ],
+      "officialUrl": "http://www.vill.sekikawa.niigata.jp/life/13/bb3953ab80a8/index.html",
+      "window": "建設課",
+      "phone": "0254-64-1111",
+      "note": "最終更新日 2026年6月17日。公式サイトはhttpsで接続できず、httpのみ。旧掲載の「関川村空き家解体補助金（※名称要確認）」を公式の名称・金額に置き換えた。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.vill.sekikawa.niigata.jp/",
+      "phone": "0254-64-1111"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   },
-  "garbage": {
-   "officialUrl": "https://www.vill.sekikawa.niigata.jp/",
-   "phone": "0254-64-1111"
+  {
+    "cityId": "awashimaura",
+    "city": "粟島浦村",
+    "subsidy": {
+      "has": false,
+      "name": null,
+      "maxAmount": null,
+      "conditions": [],
+      "officialUrl": "https://www.vill.awashimaura.lg.jp/",
+      "window": "村役場",
+      "phone": "0254-55-2311",
+      "note": "粟島浦村の公式サイト（移住案内、暮らしの情報、例規集の体系目次）に、空き家の解体・除却費の補助制度は掲載されていません（2026-10-02確認）。",
+      "applicationStatus": null
+    },
+    "garbage": {
+      "officialUrl": "https://www.vill.awashimaura.lg.jp/",
+      "phone": "0254-55-2311"
+    },
+    "_synced": {
+      "from": "fureaino-oka app/lib/data/municipalities.json",
+      "date": "2026-10-04"
+    }
   }
- },
- {
-  "cityId": "awashimaura",
-  "city": "粟島浦村",
-  "subsidy": {
-   "has": false,
-   "name": null,
-   "maxAmount": null,
-   "conditions": [],
-   "officialUrl": "https://www.vill.awashimaura.lg.jp/",
-   "window": "村役場",
-   "phone": "0254-55-2311",
-   "note": "※離島（粟島）のため補助制度が本土と異なる場合があります。人口約340人の過疎離島。詳細は役場に直接お問い合わせください。"
-  },
-  "garbage": {
-   "officialUrl": "https://www.vill.awashimaura.lg.jp/",
-   "phone": "0254-55-2311"
-  }
- }
 ]

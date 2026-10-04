@@ -7,7 +7,8 @@
     "demolition_subsidy": {
       "name": "空き家対策総合支援事業補助金（特定空家等の除却。町内会等の地域団体が対象・跡地を地域活性化に利用）",
       "max_amount": "補助対象経費の4/5、上限160万円",
-      "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-jyokyo.html"
+      "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-jyokyo.html",
+      "individual": false
     },
     "snow_support": {
       "name": "要援護世帯除雪費助成事業（ほか 屋根雪下ろし命綱固定アンカー設置補助金）",
@@ -37,7 +38,8 @@
     "demolition_subsidy": {
       "name": "木造住宅除却工事費補助（耐震化目的・昭和56年5月以前着工で耐震評点1.0未満の木造住宅が対象。建て替えまたは住み替えが必須で、老朽空き家専用の解体補助ではない）",
       "max_amount": "除却費の23%、上限30万円",
-      "url": "https://www.city.mitsuke.niigata.jp/soshiki/20/22540.html"
+      "url": "https://www.city.mitsuke.niigata.jp/soshiki/20/22540.html",
+      "individual": false
     },
     "snow_support": {
       "name": "要援護世帯除雪費助成事業（見附市社会福祉協議会）",

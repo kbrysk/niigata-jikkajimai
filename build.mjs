@@ -274,7 +274,7 @@ function cityPage(c) {
     <div class="tile"><p class="k">粗大ごみの手数料</p><p class="v big">${feeMin != null ? `${feeMin.toLocaleString("ja-JP")}<small>円〜${feeMax && feeMax !== feeMin ? feeMax.toLocaleString("ja-JP") + "円／点" : ""}</small>` : "—"}</p><p class="small" style="margin:4px 0 0">${feeMin != null ? "公式料金表の品目例から" : "公式サイトで料金表を確認"}</p></div>
     <div class="tile"><p class="k">申し込み</p><p class="v">${applyKinds.length ? esc(applyKinds.join("・")) : s.apply_method ? "事前申込制" : "公式サイトで確認"}</p>${phone ? `<p class="small" style="margin:4px 0 0">受付電話 ${esc(phone)}</p>` : ""}</div>
     <div class="tile"><p class="k">自分で持ち込む</p><p class="v">${bring ? "できる（処理施設へ直接搬入）" : "公式に案内なし"}</p><p class="small" style="margin:4px 0 0"><a href="#bring">施設・受付時間を見る</a></p></div>
-    <div class="tile"><p class="k">空き家の解体補助金</p><p class="v">${a.demolition_subsidy?.name || subsidy.has ? "あり" : "個人向けは確認できず"}</p><p class="small" style="margin:4px 0 0"><a href="#akiya">制度の内容を見る</a></p></div>
+    <div class="tile"><p class="k">空き家の解体補助金</p><p class="v">${a.demolition_subsidy?.individual === false ? "個人向けは確認できず" : (a.demolition_subsidy?.name || subsidy.has) ? "あり" : "個人向けは確認できず"}</p><p class="small" style="margin:4px 0 0"><a href="#akiya">制度の内容を見る</a></p></div>
   </div>
 </div></header>
 <nav class="tabs" aria-label="このページの節"><a href="#sodai">粗大ごみ</a><a href="#bring">持ち込み</a><a href="#appliance">家電</a><a href="#akiya">空き家・補助金</a><a href="#gyosha">業者に頼む</a><a href="#faq">質問</a></nav>
@@ -309,7 +309,7 @@ ${s.not_accepted ? `<p><strong>市で収集できない物の例:</strong> ${esc
 <h2>空き家になる実家の補助金・空き家バンク・雪の支援</h2>
 <h3>空き家の解体に使える補助金</h3>
 ${a.demolition_subsidy?.name
-  ? `<p><strong>${esc(a.demolition_subsidy.name)}</strong>${a.demolition_subsidy.max_amount ? `：${esc(a.demolition_subsidy.max_amount)}` : ""}。${a.demolition_subsidy.url ? `<a href="${esc(a.demolition_subsidy.url)}" rel="noopener nofollow">公式ページ</a>` : ""}</p><p class="small">受付期間や対象は年度ごとに変わります。申請は着工前が原則です。確認日: ${esc(a.checked_date || TODAY)}</p>`
+  ? `${a.demolition_subsidy.individual === false ? `<p>${esc(c.city)}では、個人の所有者向けの空き家解体補助金を公式サイトで確認できませんでした。公式に載っている関連制度は次のとおりです（対象が限られます）。</p>` : ""}<p><strong>${esc(a.demolition_subsidy.name)}</strong>${a.demolition_subsidy.max_amount ? `：${esc(a.demolition_subsidy.max_amount)}` : ""}。${a.demolition_subsidy.url ? `<a href="${esc(a.demolition_subsidy.url)}" rel="noopener nofollow">公式ページ</a>` : ""}</p><p class="small">受付期間や対象は年度ごとに変わります。申請は着工前が原則です。確認日: ${esc(a.checked_date || TODAY)}</p>`
   : subsidy.has
     ? `<p><strong>${esc(subsidy.name)}</strong>${subsidy.maxAmount ? `（${esc(subsidy.maxAmount)}）` : ""}。${subsidy.conditions ? `対象: ${esc(Array.isArray(subsidy.conditions) ? subsidy.conditions.join("／") : subsidy.conditions)}` : ""} ${subsidy.officialUrl ? `<a href="${esc(subsidy.officialUrl)}" rel="noopener nofollow">公式ページ</a>` : ""}</p><p class="small">制度は年度で変わります。最新の受付状況は公式ページでご確認ください。</p>`
     : `<p>${esc(c.city)}では、個人向けの空き家解体補助金を公式サイトで確認できませんでした${subsidy.window ? `（担当: ${esc(subsidy.window)}${subsidy.phone ? ` ${esc(subsidy.phone)}` : ""}）` : ""}。制度は年度で変わるため、市の窓口にご確認ください。</p>`}
