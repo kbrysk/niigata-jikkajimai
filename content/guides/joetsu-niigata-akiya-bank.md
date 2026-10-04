@@ -76,11 +76,11 @@ URLは、この記事の最後の「出典」にあります。
 
 申し込むときは、建築住宅課（025-520-5786）で最新の日程を確認してください。
 
-具体的に必要な書類の一覧は、公式ページに「不動産・所有権に関する書類」「写真・図面」とあるだけです。[要確認: 必要書類の具体名]
+無料相談会には、次の書類を持っていきます（上越市空き家情報バンクの制度概要のPDF）。固定資産税の納税通知書の写し（土地と建物の課税明細書）、運転免許証などの本人確認書類、認印です。そのほか、土地・建物の登記関係書類、図面、写真、相続関係者がわかる書類を、できるだけ用意します。相続登記は、完了していることが原則と書かれています。遠方で参加が難しい人は、「空き家登録シート」と書類の写しを出して、書面で相談する方法があります。
 
 相続登記は、令和6年4月1日から義務化されています。相続を知った日から3年以内の申請が必要です（上越市の空き家情報バンクのページに案内があります）。名義が亡くなった方のままだと、不動産・所有権の書類がそろいません。先に登記簿で名義を確認してください。
 
-登録手数料と登録期間は、公式ページに書かれていません。仲介手数料は、所有者・利用希望者ともに必要です。[要確認: 登録手数料と登録期間]
+登録手数料と登録期間は、公式ページに書かれていません。担当会員による現地調査は、経費がかかる場合があると、制度概要のPDFにあります。仲介手数料は、所有者・利用希望者ともに必要です。[要確認: 登録手数料と登録期間]
 
 ### 掲載件数の見方
 
@@ -137,7 +137,7 @@ URLは、この記事の最後の「出典」にあります。
 | 団体 | 電話 | 備考 |
 |---|---|---|
 | 新潟県宅地建物取引業協会 | 025-247-1177 | 空き家相談は毎月第2・第4木曜、要予約 |
-| 全日本不動産協会新潟県本部 | 025-385-7719 | [要確認: 相談日・受付時間] |
+| 全日本不動産協会新潟県本部 | 025-385-7719 | 受付は月曜から金曜の午前9時から午後5時。相談日の指定は、市の一覧に書かれていません |
 
 新潟市の「空き家をお探しの方へ」には、各団体の物件検索サイトも案内されています。県宅建協会は「ハトマークサイト新潟」、全日本不動産協会は「ラビーネット不動産」です。市の窓口は、住環境政策課（025-226-2813）です。
 
@@ -220,6 +220,7 @@ URLは、この記事の最後の「出典」にあります。
 
 - 上越市 空き家情報バンク https://joetsu-akiyabank.jp/
 - 上越市 空き家情報バンク「空き家情報バンクとは」 https://joetsu-akiyabank.jp/about/
+- 上越市 空き家情報バンク「制度概要のイメージ図」（PDF） https://joetsu-akiyabank.jp/wp-content/uploads/2026/03/ffdfa6ab81ae376993242b6070822282.pdf（確認日: 2026-10-04）
 - 上越市「空き家情報バンクホームページ」 https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiyabank.html
 - 上越市「空き家活用のための家財道具等処分費補助金」 https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-kazaisyobun.html
 - 上越市「空き家等及び特定空き家等除却費補助金」 https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-jokyakuhojo.html
@@ -228,5 +229,5 @@ URLは、この記事の最後の「出典」にあります。
 - 新潟市西蒲区「空き家改修等支援事業補助金交付要綱」（PDF） https://www.city.niigata.lg.jp/nishikan/torikumi/seisaku/nishikanakiyabank.files/akiyakaishuyoukou.pdf
 - 新潟市「空き家をお探しの方へ」 https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/katsuyo/akiya_sagasu.html
 - 新潟県「空き家バンク」 https://www.pref.niigata.lg.jp/sec/toshiseisaku/akiya-bank.html
-- 新潟市「空き家に関する相談窓口一覧」 https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/madoguchi.html
+- 新潟市「空き家に関する相談窓口一覧」（更新2026年8月7日） https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/madoguchi.html（確認日: 2026-10-04）
 - 新潟市「空き家活用推進事業」 https://www.city.niigata.lg.jp/kurashi/jyutaku/jukankyo/yushi_josei/akiyakatsuyo.html

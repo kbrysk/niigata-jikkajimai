@@ -179,7 +179,7 @@ updated: 2026-10-02
 
 ### 解体費用
 
-公的な目安は、今回の確認では見つかりませんでした。[要確認：国・県・市が示す解体費用の目安]
+相場としての公的な目安は、今回の確認では見つかりませんでした。国は、補助金を算定するときの除却工事費の上限を、1㎡あたり木造36,000円、非木造51,000円と定めています（令和8年度）。これは補助の計算上の上限で、実際の解体費の相場ではありません。[要確認：国・県・市が示す、解体費の相場としての目安]
 
 金額は建物の広さ・構造・立地で変わります。複数の解体業者から見積もりを取ってください。
 
@@ -328,6 +328,7 @@ updated: 2026-10-02
 - 新潟市「空き家活用推進事業」 https://www.city.niigata.lg.jp/kurashi/jyutaku/jukankyo/yushi_josei/akiyakatsuyo.html
 - 上越市「空き家等及び特定空き家等除却費補助金」 https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-jokyakuhojo.html
 - 三条市「危険な空家の解体費用を補助します」 https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/akiyaakichi/15199.html
+- 国土交通省「令和８年度における住宅局所管事業に係る標準建設費等について」（PDF） https://www.mlit.go.jp/jutakukentiku/house/content/001997779.pdf（確認日: 2026-10-04）
 - 三条市「管理不全空家等の解体費用を補助します」 https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/akiyaakichi/18216.html
 - 柏崎市「危険な空き家を解体する費用を補助します」 https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/hojo/sumai_seikatsu/47390.html
 - 佐渡市「佐渡市老朽危険廃屋対策支援事業補助金交付要綱」 https://www.city.sado.niigata.jp/reiki_int/reiki_honbun/r028RG00002297.html

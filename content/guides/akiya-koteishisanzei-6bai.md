@@ -117,7 +117,15 @@ updated: 2026-10-02
 - ただし、取り壊した家が住宅の場合、土地は住宅用地の特例から外れます
 - 結果として、土地の税額が上がる場合があります
 
-見るべき日は、1月1日です。長岡市は、建て替え中で1月1日に住宅がないと、特例が適用されない場合があると案内しています。ただし、条件を満たせば、建替えの特例が適用されることもあります。条件の中身は、資産税課に確認してください。[要確認: 長岡市の建替え特例の条件]
+見るべき日は、1月1日です。長岡市は、建て替え中で1月1日に住宅がないと、特例が適用されない場合があると案内しています。ただし、次の条件をすべて満たす場合は、建替え特例が適用されます。長岡市のページは、令和6年に住宅を壊した場合を例に、条件を示しています。
+
+- 建て替えが、建て替え前と同じ敷地で行われている
+- 壊した年の1月1日時点で、その土地に住宅が建っていた
+- 壊した年の翌年の1月1日時点で建設が着手されていて、その翌年の1月1日までに完成する
+- 土地の所有者が、壊した年の1月1日と翌年の1月1日で、原則として同じ人である
+- 建て替え前と建て替え後の住宅の所有者が、原則として同じ人である
+
+条件に当てはまるかは、資産税課に確認してください。
 
 新潟市のページも、1月1日に住宅の建設が予定されている土地や、建設中の土地は、住宅の敷地とはされないと説明しています。建て替え中として一定の要件を満たす場合は、申請で住宅用地として扱われます。
 
@@ -201,7 +209,7 @@ updated: 2026-10-02
 - 国土交通省「空き家対策 特設サイト」 https://www.mlit.go.jp/jutakukentiku/house/akiya-taisaku/articles/2024020105.html
 - 新潟市「住宅用地に対する課税標準の特例」 https://www.city.niigata.lg.jp/kurashi/zei/siraberu/koteishisan/juutakuyouti.html
 - 新潟市「固定資産税・都市計画税」 https://www.city.niigata.lg.jp/kurashi/zei/shinkoku_todokede/kotei_toshi.html
-- 長岡市「住宅が建築されている土地は、税金が安くなるのですか」 https://www.city.nagaoka.niigata.jp/kurashi/cate02/kotei/qa2-Q4.html
+- 長岡市「住宅が建築されている土地は、税金が安くなるのですか」（更新2025年4月1日） https://www.city.nagaoka.niigata.jp/kurashi/cate02/kotei/qa2-Q4.html（確認日: 2026-10-04）
 - 長岡市「家屋を取り壊した場合は」 https://www.city.nagaoka.niigata.jp/kurashi/cate02/kotei/qa3-Q4.html
 - 長岡市「長岡市の空き家対策」 https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html
 - 新潟市「空き家の管理の方法」 https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/tekiseikanri/kanri.html

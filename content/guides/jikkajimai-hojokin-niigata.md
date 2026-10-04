@@ -86,10 +86,10 @@ updated: 2026-10-02
 | 上越市 | 空き家等及び特定空き家等除却費補助金 | 1/2、上限50万円（2種類とも） | 特定空き家等は低所得者層世帯が対象。空き家等は跡地を10年以上、地域活性化に使うこと。市内に本社を置く事業者の施工が条件。契約・着手前に申請 | [公式](https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-jokyakuhojo.html) |
 | 糸魚川市 | 危険空き家除却支援補助金 | 1/2、上限50万円 | 1年以上未使用で、市の不良度判定の点数が一定以上。決定前の着工は対象外 | [公式](https://www.city.itoigawa.lg.jp/page/1417.html) |
 | 南魚沼市 | 空家等除却事業補助金 | 定額20万円（居住誘導区域内は24万円） | 1年以上未使用。2026年度予算は420万円で、達すると終了。決定前の着工は対象外 | [公式](https://www.city.minamiuonuma.niigata.jp/docs/48331.html) |
-| 津南町 | 空き家等解体補助金 | 1/4、上限30万円 | 昭和56年5月31日以前着工の専用住宅など。町の空家等実態調査で空き家として登録済み。町内事業者が施工。[要確認: 令和8年度の受付期間。ページの更新日は2024年6月25日] | [公式](https://www.town.tsunan.niigata.jp/soshiki/somu/akiyakaitaihojyokin.html) |
+| 津南町 | 空き家等解体補助金 | 1/4、上限30万円 | 昭和56年5月31日以前着工の専用住宅など。町の空家等実態調査で空き家として登録済み。町内事業者が施工。[要確認: 令和8年度の受付期間。ページに受付期間と年度の記載はなく、更新日は2024年6月25日] | [公式](https://www.town.tsunan.niigata.jp/soshiki/somu/akiyakaitaihojyokin.html) |
 | 関川村 | 空家等解体費補助金 | 1/3、上限20万円 | 個人所有の空家。共有者全員の同意。村内事業者が施工。交付決定日以降に契約した工事が対象。過去5年以内に同補助金を受けていないこと | [公式](http://www.vill.sekikawa.niigata.jp/life/13/bb3953ab80a8/index.html) |
-| 出雲崎町 | 特定空家等除却支援事業 | 1/2、上限50万円 | 特定空家等。随時受付、着手前に申請。確認できたページは令和7年度版。[要確認: 令和8年度の継続] | [公式](https://www.town.izumozaki.niigata.jp/kurashi/sumai/akiyasaiseikatuyou.html) |
-| 聖籠町 | 管理不全空き家除却費補助金 | 1/2、上限30万円 | 町が認定した管理不全空き家。除却後は空き家バンクへ登録。町の例規集の要綱で確認した内容。[要確認: 例規集のページを10月2日の再確認で取得できず、補助率・上限額と令和8年度の受付期間] | [公式](https://www1.g-reiki.net/town.seiro/reiki_honbun/e427RG00000875.html) |
+| 出雲崎町 | 特定空家等除却支援事業 | 1/2、上限50万円 | 特定空家等。随時受付、着手前に申請。確認できたページの最終更新日は2025年4月1日で、年度の記載はなし。[要確認: 令和8年度の継続] | [公式](https://www.town.izumozaki.niigata.jp/kurashi/sumai/akiyasaiseikatuyou.html) |
+| 聖籠町 | 管理不全空き家除却費補助金 | 1/2、上限30万円 | 町が認定した管理不全空き家。除却後は空き家バンクへ登録。町の例規集の要綱で確認した内容。[要確認: 例規集のページを10月2日と10月4日の再確認で取得できず、補助率・上限額と令和8年度の受付期間] | [公式](https://www1.g-reiki.net/town.seiro/reiki_honbun/e427RG00000875.html) |
 
 ## 2026年度の受付が終わった制度
 
@@ -101,7 +101,7 @@ updated: 2026-10-02
 | 村上市 | 空家等解体費補助金 | 工事費（税抜）の1/3、上限20万円 | 1年以上使用なし。勧告を受けた特定空家等は対象外。2026年4月15日〜5月15日 | [公式](https://www.city.murakami.lg.jp/soshiki/12/akiyakaitaihojyokin.html) |
 | 魚沼市 | 空家等解体補助金 | 1/2、上限30万円 | 世帯所得の制限あり。市内事業者が施工。2026年5月14日〜5月29日 | [公式](https://www.city.uonuma.lg.jp/page/1029743.html) |
 | 胎内市 | 空き家等解体補助金 | 1/2以内。特定空き家・不良住宅は上限100万円、老朽空き家は50万円 | 所得要件あり。全相続人の同意が必要。2026年5月1日〜8月31日 | [公式](https://www.city.tainai.niigata.jp/kurashi/sekatsu/akiya/kaitai.html) |
-| 阿賀町 | 空家等解体費補助金 | 1/2、上限30万円 | 1年以上未使用。町内事業者が施工。2026年7月15日〜8月14日。決定前の着手は対象外。ページは10月2日時点で開けず、検索結果の表示で確認。[要確認: 受付期間は検索結果で再確認できず] | [公式](https://www.town.aga.niigata.jp/info/soumu_info/3253.html) |
+| 阿賀町 | 空家等解体費補助金 | 1/2、上限30万円 | 1年以上未使用。町内事業者が施工。2026年7月15日〜8月14日。決定前の着手は対象外。ページは10月2日と10月4日とも開けず（町サイトの更新でURLが変わった可能性）、検索結果の表示で確認。[要確認: 受付期間は検索結果で再確認できず] | [公式](https://www.town.aga.niigata.jp/info/soumu_info/3253.html) |
 | 佐渡市 | 老朽危険廃屋対策支援事業 | 木造は1/2以内で上限80万円、非木造は4/5以内で上限400万円（15万円未満は交付なし） | 特定空家または不良住宅。解体後に建て替えないこと。2026年4月1日〜5月29日。事前相談が必要。着工前に申請書類を出す | [公式](https://www.city.sado.niigata.jp/soshiki/2013/80525.html) |
 
 ## 個人向けの老朽空き家の解体補助を確認できなかった市
@@ -124,7 +124,7 @@ updated: 2026-10-02
 | 五泉市 | 令和8年度の施政方針に、特定空家の解体費用の助成を新たに創設するとの記載。制度ページは確認できず | [公式](https://www.city.gosen.lg.jp/organization/1/6/4/12696.html) |
 | 弥彦村 | 空き家対策のページに、解体補助の記載なし | [公式](https://www.vill.yahiko.niigata.jp/life/?content=24) |
 | 田上町 | 住宅・空き家のページに、除却補助の記載なし | [公式](https://www.town.tagami.niigata.jp/kurashi/jutaku/) |
-| 湯沢町 | 空家等及び空き地対策計画のPDFへのリンクのみ。ページ上に解体助成の記載を確認できず。[要確認: 計画PDFの内容] | [公式](https://www.town.yuzawa.lg.jp/soshikikarasagasu/somubu/bousaikanzaika/1/akiya_akichi/7336.html) |
+| 湯沢町 | 空家等及び空き地対策計画（令和6年度〜10年度）のPDFへのリンクのみ。ページ上に解体助成の記載なし。計画PDFには、特定空家等などの解体費の一部助成を「検討する」とあり、助成制度としての記載は確認できず | [公式](https://www.town.yuzawa.lg.jp/soshikikarasagasu/somubu/bousaikanzaika/1/akiya_akichi/7336.html) |
 | 刈羽村 | 空き家バンク、リフォーム補助の記載のみ | [公式](http://www.vill.kariwa.niigata.jp/www/info/detail.jsp?id=5991) |
 | 粟島浦村 | 移住ページに空き家の整備の記載のみ | [公式](https://www.vill.awashimaura.lg.jp/emigration/guidance/) |
 
@@ -213,6 +213,7 @@ updated: 2026-10-02
 - 五泉市「令和8年度 施政方針及び予算総括説明」 https://www.city.gosen.lg.jp/organization/1/6/4/12696.html
 - 弥彦村「空き家の対策について」 https://www.vill.yahiko.niigata.jp/life/?content=24
 - 田上町「住宅・空き家」 https://www.town.tagami.niigata.jp/kurashi/jutaku/
-- 湯沢町「空家等及び空き地対策計画」 https://www.town.yuzawa.lg.jp/soshikikarasagasu/somubu/bousaikanzaika/1/akiya_akichi/7336.html
+- 湯沢町「空家等及び空き地対策計画」 https://www.town.yuzawa.lg.jp/soshikikarasagasu/somubu/bousaikanzaika/1/akiya_akichi/7336.html（確認日: 2026-10-04）
+- 湯沢町「湯沢町空家等及び空き地対策計画（令和6年度〜令和10年度）」（PDF、令和7年3月） https://www.town.yuzawa.lg.jp/material/files/group/19/yuzawaakiya_akichikeikaku2025_03.pdf（確認日: 2026-10-04）
 - 刈羽村「空き家バンク」 http://www.vill.kariwa.niigata.jp/www/info/detail.jsp?id=5991
 - 粟島浦村「移住ガイド」 https://www.vill.awashimaura.lg.jp/emigration/guidance/

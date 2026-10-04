@@ -125,7 +125,7 @@ URLは、この記事の最後の「出典」にあります。
 | 所有権などの権利が移った | 市が登録を抹消する | 要綱第7条 |
 | 登録期間（2年以内）が終わる | 延長を申し出るか、抹消される | 要綱第5条・第7条 |
 
-価格の見直しは、市のページのお知らせで公表されます。2026年10月2日にも、2件の価格改定が載っていました。手続きの詳細は、都市政策課へ確認してください。[要確認: 価格改定の手続き]
+価格の見直しは、市のページのお知らせで公表されます。2026年10月2日にも、2件の価格改定が載っていました。要綱の第5条は、登録を延長するとき、所有者が価格を見直すなど購入意欲を高める措置に努めると定めています。手続きの詳細は、都市政策課へ確認してください。[要確認: 価格改定の手続き]
 
 登録期間の満了は、更新の目安にもなります。2年で成約しなかったときは、「売る・貸す・壊す」の方針を考え直す時期です。比べ方は、次の記事にあります。
 
@@ -288,7 +288,7 @@ at home版では、沿線・エリア・地図からも探せます。
 - 長岡市「空き家バンク」 https://www.city.nagaoka.niigata.jp/akiya/
 - 長岡市「空き家バンクについて」 https://www.city.nagaoka.niigata.jp/akiya/akiyabank.html
 - 長岡市「空き家物件登録」 https://www.city.nagaoka.niigata.jp/akiya/btouroku.html
-- 長岡市「長岡市空き家バンク制度実施要綱」（例規集） https://www.city.nagaoka.niigata.jp/shisei/cate03/jyourei/reiki/reiki_honbun/e403RG00001565.html
+- 長岡市「長岡市空き家バンク制度実施要綱」（例規集） https://www.city.nagaoka.niigata.jp/shisei/cate03/jyourei/reiki/reiki_honbun/e403RG00001565.html（確認日: 2026-10-04）
 - 法務省「相続登記の申請義務化について」 https://www.moj.go.jp/MINJI/souzokutouki-gimuka/index.html
 - 長岡市「空き家バンク 物件検索」 https://www.city.nagaoka.niigata.jp/akiya/kensaku.html
 - 長岡市「空き家バンク 成約状況」 https://www.city.nagaoka.niigata.jp/akiya/seiyaku.html
