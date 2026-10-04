@@ -258,7 +258,8 @@ function cityPage(c) {
       : `<dl class="kv">${Object.entries(bring).filter(([, v]) => v).map(([k, v]) => `<dt>${esc({ facility: "施設", name: "施設", address: "所在地", hours: "受付時間", fee: "料金", reservation: "予約", not_accepted: "持ち込めない物", notes: "備考", url: "案内ページ" }[k] || k)}</dt><dd>${k === "url" ? `<a href="${esc(v)}" rel="noopener nofollow">${esc(v)}</a>` : esc(Array.isArray(v) ? v.join("、") : v)}</dd>`).join("")}</dl>`
     : `<p>公式サイトで持ち込みの案内を確認できませんでした。市の環境担当課にお問い合わせください。</p>`;
   const subsidy = c.subsidy || {};
-  const srcs = [...new Set([...(s.source_urls || []), ...(a.source_urls || []), subsidy.officialUrl, c.garbage?.officialUrl].filter(Boolean))];
+  // 出典欄: 粗大ごみの公式URLが確認済みなら、municipalities_base の garbage.officialUrl（粗い入口URL）は重ねて出さない
+  const srcs = [...new Set([...(s.source_urls || []), ...(a.source_urls || []), subsidy.officialUrl, s.sodai_official_url ? null : c.garbage?.officialUrl].filter(Boolean))];
   const faq = [
     { q: `${c.city}で粗大ごみを出すには、どこに申し込みますか？`, a: s.apply_method || `${c.city}の公式サイト（粗大ごみの案内ページ）で申込方法をご確認ください。` },
     { q: `${c.city}の粗大ごみの料金はいくらですか？`, a: s.fee_system || "公式の料金表をご確認ください。" },

@@ -1,0 +1,1300 @@
+{
+ "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html": {
+  "hash": "4f09afa6e20f2621",
+  "len": 3123,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/sodai-gomi01.pdf": {
+  "hash": "d6d83c2d70ad3335",
+  "len": 936362,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.nagaoka.niigata.jp/kurashi/cate08/mochi-gomi.html": {
+  "hash": "02a66963c8daa651",
+  "len": 2542,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html": {
+  "hash": "69641b1bcc69bfcc",
+  "len": 3791,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://ecolife.e-tumo.jp/sodai-nagaoka-u/": {
+  "hash": "60a177d03054634a",
+  "len": 1296,
+  "type": "html",
+  "checked": "2026-10-04",
+  "final": "https://ecolife.e-tumo.jp/sodai-nagaoka-u/offer/offerList_initDisplay"
+ },
+ "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html": {
+  "hash": "30741c860cc3515b",
+  "len": 5397,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/ryoukinichiran.html": {
+  "hash": "e47d53439e806967",
+  "len": 8134,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/carry.html": {
+  "hash": "955c4ef4e77f44c7",
+  "len": 3266,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/haishi20180329.html": {
+  "hash": "846029254c7fb39e",
+  "len": 2775,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/tesuryokaitei.html": {
+  "hash": "9c4205636d9dad37",
+  "len": 1921,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/none.html": {
+  "hash": "ac2612560b1b4be3",
+  "len": 1928,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/kaden.html": {
+  "hash": "3117b3f19ad5bbb7",
+  "len": 3108,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomiappli.html": {
+  "hash": "5aef4a9347adb84b",
+  "len": 2880,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/hi.html": {
+  "hash": "b041a8a3b6b17d56",
+  "len": 2593,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/ta.html": {
+  "hash": "d230a5c983c844eb",
+  "len": 2758,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.joetsu.niigata.jp/soshiki/seikatsu/syuusyuusinaimono.html": {
+  "hash": "23725424986aac3e",
+  "len": 3168,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.joetsu.niigata.jp/soshiki/seikatsu/kankyo-gomi-cleancenter.html": {
+  "hash": "2b785284e0bfdfd4",
+  "len": 1426,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.joetsu.niigata.jp/soshiki/seikatsu/lifeguide-clean.html": {
+  "hash": "af2cda9b404d9cd7",
+  "len": 2954,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.joetsu.niigata.jp/soshiki/seikatsu/kankyo-gomi-irai-list.html": {
+  "hash": "8f351466291706b7",
+  "len": 2133,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.joetsu.niigata.jp/soshiki/seikatsu/kankyo-gomi-kaden.html": {
+  "hash": "7ebd3a852abda2c5",
+  "len": 2470,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.joetsu.niigata.jp/soshiki/seikatsu/syuusekijyo.html": {
+  "hash": "688f2416df5d70c4",
+  "len": 2175,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/gomigenryo/gomi/2359.html": {
+  "hash": "27c724561ffd3b24",
+  "len": 2656,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sanjo.niigata.jp/material/files/group/14/hinmokuR80918.pdf": {
+  "hash": "337422f552bc2bb5",
+  "len": 954415,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/cleancenter/seisocenter/2444.html": {
+  "hash": "dfcdeb6c62dd73f4",
+  "len": 1558,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sanjo.niigata.jp/kurashi_tetsuzuki/gomi/kateigominodashikata/4980.html": {
+  "hash": "8117365c85d2032d",
+  "len": 2387,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/gomigenryo/gomi/2442.html": {
+  "hash": "093a9e51d2e4e47e",
+  "len": 2104,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sanjo.niigata.jp/kurashi_tetsuzuki/gomi/kateigominodashikata/9060.html": {
+  "hash": "bd1f9ffc3ddc0d33",
+  "len": 1636,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tsubame.niigata.jp/soshiki/shimin_seikatsu/3/1/2/9089.html": {
+  "hash": "00334df6c1507603",
+  "len": 2080,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.tysogo.jp/topics_system/public/detail/id/364": {
+  "hash": "0178c278bf85d0ab",
+  "len": 1410,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.tysogo.jp/reiki_int/reiki_honbun/x968RG00000186.html": {
+  "hash": "b6aee6fcc452fbef",
+  "len": 5960,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.tysogo.jp/kankyo/schedule.html": {
+  "hash": "86ff4f19cfb969a8",
+  "len": 1056,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tsubame.niigata.jp/soshiki/shimin_seikatsu/3/1/2/3347.html": {
+  "hash": "0d7b888d5e85ca1c",
+  "len": 2504,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tsubame.niigata.jp/soshiki/shimin_seikatsu/3/1/2/3348.html": {
+  "hash": "bae259462313718d",
+  "len": 1616,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.tysogo.jp/topics_news/recyclebook_katei.pdf": {
+  "hash": "87de2b170bfe035c",
+  "len": 1230624,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/gomi_recycle/gomi_shigembutsunowakekata_dashikata/10386.html": {
+  "hash": "a8907cbbc3d9745c",
+  "len": 3719,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/gomi_recycle/gomi_shigembutsunowakekata_dashikata/13065.html": {
+  "hash": "d56b44d538df57ea",
+  "len": 2648,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kashiwazaki.lg.jp/material/files/group/16/P1-20.pdf": {
+  "hash": "1111e819df02c326",
+  "len": 1368354,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kashiwazaki.lg.jp/material/files/group/16/P45-50.pdf": {
+  "hash": "9ed34bef4a0e1a4d",
+  "len": 4275501,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kashiwazaki.lg.jp/material/files/group/16/P51-52.pdf": {
+  "hash": "e03356604cb9be8b",
+  "len": 556184,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kashiwazaki.lg.jp/material/files/group/16/P53-58.pdf": {
+  "hash": "e073ddc204c5c8b4",
+  "len": 4860484,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/gomi_recycle/gomi_shigembutsunowakekata_dashikata/29843.html": {
+  "hash": "cbab91538d372e01",
+  "len": 2877,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.mitsuke.niigata.jp/soshiki/20/45866.html": {
+  "hash": "ed18d06780eab14d",
+  "len": 2296,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.mitsuke.niigata.jp/soshiki/20/1130.html": {
+  "hash": "321b9893087bacc1",
+  "len": 2397,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.mitsuke.niigata.jp/soshiki/20/1258.html": {
+  "hash": "3028f8fcc10e6cbe",
+  "len": 1696,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.mitsuke.niigata.jp/uploaded/attachment/26044.pdf": {
+  "hash": "46e60159eb474597",
+  "len": 1231717,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.mitsuke.niigata.jp/uploaded/attachment/26047.pdf": {
+  "hash": "c92f02b44c9e92c7",
+  "len": 4521576,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.mitsuke.niigata.jp/soshiki/20/1264.html": {
+  "hash": "743ba179e5412c6c",
+  "len": 2099,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.ojiya.niigata.jp/soshiki/kankyo/gomi-dashikata.html": {
+  "hash": "31ad3a92d501ae44",
+  "len": 2158,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.ojiya.niigata.jp/uploaded/attachment/32793.pdf": {
+  "hash": "fe649925a00c0fb8",
+  "len": 4689207,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.ojiya.niigata.jp/uploaded/attachment/30140.pdf": {
+  "hash": "a0ed07ee8fecc354",
+  "len": 809042,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.ojiya.niigata.jp/uploaded/attachment/30147.pdf": {
+  "hash": "b608b23ef6909d70",
+  "len": 828185,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.ojiya.niigata.jp/uploaded/attachment/30148.pdf": {
+  "hash": "6b0d8eca9e1e3b37",
+  "len": 712172,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.ojiya.niigata.jp/soshiki/kankyo/kurisuporisaikuru.html": {
+  "hash": "e717bcfc8485035e",
+  "len": 1539,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tokamachi.lg.jp/soshiki/kankyoenergybu/kankyoeiseika/1/gyomu/1455500600377.html": {
+  "hash": "62163bb2084e6909",
+  "len": 3650,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tokamachi.lg.jp/soshiki/kankyoenergybu/kankyoeiseika/1/gyomu/1455842707942.html": {
+  "hash": "640da01b3657c8ca",
+  "len": 1525,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tokamachi.lg.jp/soshiki/kankyoenergybu/kankyoeiseika/1/gyomu/1454980313717.html": {
+  "hash": "90a9ce5b22c475df",
+  "len": 2591,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tokamachi.lg.jp/soshiki/kankyoenergybu/kankyoeiseika/1/gyomu/1453877627547.html": {
+  "hash": "361088ba531ce68d",
+  "len": 2901,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tokamachi.lg.jp/material/files/group/21/hinnmokuhyou-2.pdf": {
+  "hash": "9cfa68c8ed78980f",
+  "len": 761535,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tokamachi.lg.jp/material/files/group/21/r4_gomihannyu.pdf": {
+  "hash": "d5e2e13c4d4ce1f2",
+  "len": 906592,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.shibata.lg.jp/kurashi/gomi/gomi/dashikata/1001156.html": {
+  "hash": "d4362a44702f96ac",
+  "len": 1918,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.shibata.lg.jp/kurashi/gomi/gomi/dashikata/1001150.html": {
+  "hash": "fd26e1969d1ee6c0",
+  "len": 5817,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.shibata.lg.jp/kurashi/gomi/gomi/dashikata/1001160.html": {
+  "hash": "5e692a6bc45c897b",
+  "len": 1851,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.shibata.lg.jp/kurashi/iju/akiya/": {
+  "hash": "c2e2e6a866f17092",
+  "len": 2122,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.shibata.lg.jp/kurashi/iju/akiya/1001226.html": {
+  "hash": "9d27f73c139ddba8",
+  "len": 5032,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kamo.niigata.jp/docs/30932.html": {
+  "hash": "905dd65dff3b3e11",
+  "len": 2081,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kamo.niigata.jp/docs/49911.html": {
+  "hash": "a8b7fbab9c6c4c4e",
+  "len": 1517,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kamo.niigata.jp/docs/59608.html": {
+  "hash": "6d3f9b31d4a5689f",
+  "len": 1671,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kamo.niigata.jp/docs/30251.html": {
+  "hash": "c940f0fb28ac5f14",
+  "len": 1429,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.murakami.lg.jp/site/gomi-bunbetsu/zikohannyu.html": {
+  "hash": "96602931029b5930",
+  "len": 2354,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.murakami.lg.jp/site/gomi-recycle/gomi-tesuryo.html": {
+  "hash": "f74131a7e87eef24",
+  "len": 1531,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.murakami.lg.jp/site/gomi-recycle/kyokagyousha.html": {
+  "hash": "72e9b2b5fd60a022",
+  "len": 1518,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.murakami.lg.jp/site/akiya-bank/m-akiya-bank-bukken.html": {
+  "hash": "51f4111d8fbc24e7",
+  "len": 10100,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.itoigawa.lg.jp/page/1330.html": {
+  "hash": "6ea1ac33f04600db",
+  "len": 2852,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.itoigawa.lg.jp/page/1329.html": {
+  "hash": "0cbda9dbea151b7b",
+  "len": 1606,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.itoigawa.lg.jp/page/1332.html": {
+  "hash": "5efb3ddb46658887",
+  "len": 1920,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.itoigawa.lg.jp/uploaded/attachment/14552.pdf": {
+  "hash": "e3cae20ec230589d",
+  "len": 97952,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.itoigawa.lg.jp/3385.htm": {
+  "hash": "e51a1719c5f21194",
+  "len": 1733,
+  "type": "html",
+  "checked": "2026-10-04",
+  "final": "https://www.city.itoigawa.lg.jp/page/1541.html"
+ },
+ "https://www.city.itoigawa.lg.jp/page/1542.html": {
+  "hash": "71e10b4fa2e30929",
+  "len": 2299,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.myoko.niigata.jp/docs/1353.html": {
+  "hash": "41055ed61cc0a55f",
+  "len": 6103,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.myoko.niigata.jp/fs/3/4/3/8/0/_/_______________________.pdf": {
+  "hash": "5b07f77511ee31da",
+  "len": 2027096,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.myoko.niigata.jp/docs/989.html": {
+  "hash": "97070ef3392f82ce",
+  "len": 7160,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.myoko.niigata.jp/myoko-life/house/": {
+  "hash": "9ee2c5da80f4f2c8",
+  "len": 3978,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.gosen.lg.jp/organization/7/1/893.html": {
+  "hash": "5f7bac39dad8eba8",
+  "len": 1399,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.gosen.lg.jp/organization/7/1/895.html": {
+  "hash": "25fc7fb2174d1f2b",
+  "len": 7550,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.gosen.lg.jp/organization/7/1/892.html": {
+  "hash": "84ed0f64affa68a5",
+  "len": 2478,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://gosen-eisei.jp/garbage/garbage-kijun-1": {
+  "hash": "8f0c3539a54d2449",
+  "len": 1605,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://gosen-eisei.jp/garbage/garbage-charge": {
+  "hash": "815a3a1bfa3474b2",
+  "len": 813,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://gosen-c15218.akiya-athome.jp/": {
+  "hash": "5304c454bfc9b7a4",
+  "len": 3549,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.agano.niigata.jp/soshiki/shiminseikatsuka/gomi_kankyo_pets/4/gominodasikata/14144.html": {
+  "hash": "33546deea25fe807",
+  "len": 7198,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.agano.niigata.jp/soshiki/shiminseikatsuka/gomi_kankyo_pets/4/gominodasikata/14143.html": {
+  "hash": "d88d859d1a164683",
+  "len": 7410,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.agano.niigata.jp/soshiki/shiminseikatsuka/gomi_kankyo_pets/4/gominodasikata/2584.html": {
+  "hash": "01f61b0e4ec2fd77",
+  "len": 1502,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.agano.niigata.jp/soshiki/shiminseikatsuka/gomi_kankyo_pets/4/15629.html": {
+  "hash": "85e3e5442e745c9b",
+  "len": 1147,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.agano.niigata.jp/soshiki/kensetsuka/zumai/2395.html": {
+  "hash": "ccdf662ea735f852",
+  "len": 3967,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sado.niigata.jp/soshiki/2013/4071.html": {
+  "hash": "eead947c0423b7e8",
+  "len": 4332,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sado.niigata.jp/soshiki/2013/4072.html": {
+  "hash": "cba0116f5a4a9f20",
+  "len": 1259,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sado.niigata.jp/soshiki/2013/2184.html": {
+  "hash": "83f2ba7ed82f4af8",
+  "len": 2235,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sado.niigata.jp/site/ijyu/5419.html": {
+  "hash": "96f0dda9825039f4",
+  "len": 10477,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sado.niigata.jp/site/ijyu/4043.html": {
+  "hash": "7c3c2c2134fbab31",
+  "len": 3263,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.uonuma.lg.jp/page/2050.html": {
+  "hash": "5f4be2044fe7e02b",
+  "len": 3816,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.uonuma.lg.jp/page/2032.html": {
+  "hash": "d4ace4d34a28aef8",
+  "len": 2984,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.uonuma.lg.jp/page/2033.html": {
+  "hash": "6b217aee7b93f435",
+  "len": 3479,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.uonuma.lg.jp/page/1409.html": {
+  "hash": "2f516e37ad067b08",
+  "len": 3630,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.uonuma.lg.jp/page/1427.html": {
+  "hash": "a7d1a6583fc91f04",
+  "len": 3339,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.minamiuonuma.niigata.jp/docs/1458.html": {
+  "hash": "04999596394bd991",
+  "len": 2235,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.minamiuonuma.niigata.jp/docs/1446.html": {
+  "hash": "7271ab43d35be8ea",
+  "len": 1640,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.minamiuonuma.niigata.jp/docs/1462.html": {
+  "hash": "884124c5a0a8d33f",
+  "len": 1402,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.minamiuonuma.niigata.jp/akiyabank/": {
+  "hash": "239ec498bac763f9",
+  "len": 514,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tainai.niigata.jp/kurashi/sekatsu/gomi/sodaigomi.html": {
+  "hash": "66128b855f40da59",
+  "len": 1440,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tainai.niigata.jp/kurashi/sekatsu/gomi/oogatagomi.html": {
+  "hash": "5ae724c09f000645",
+  "len": 1316,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tainai.niigata.jp/kurashi/sekatsu/gomi/chizu.html": {
+  "hash": "3a2bfa9836e1107c",
+  "len": 1496,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tainai.niigata.jp/kurashi/sekatsu/sumai/akiyabank.html": {
+  "hash": "ca4879391a6311d6",
+  "len": 5628,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.seiro.niigata.jp/1/5/2/1/123.html": {
+  "hash": "be56779042faad05",
+  "len": 2782,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.seiro.niigata.jp/material/files/group/8/2026dictionary.pdf": {
+  "hash": "0fd529a05d6396d2",
+  "len": 3087619,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.seiro.niigata.jp/1/3/1/10/1/420.html": {
+  "hash": "1b4c740c6b8b7080",
+  "len": 2114,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.vill.yahiko.niigata.jp/life/?content=116": {
+  "hash": "3c256d255377366d",
+  "len": 1381,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.vill.yahiko.niigata.jp/life/?content=139": {
+  "hash": "d56d745bd3b90961",
+  "len": 1228,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://akiya.vill.yahiko.niigata.jp/": {
+  "hash": "8dcdfd9040951d96",
+  "len": 2107,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.tagami.niigata.jp/gomi/list/": {
+  "hash": "c7b62d9e5b46cb6d",
+  "len": 3029,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.tagami.niigata.jp/docs/8922.html": {
+  "hash": "d7f8a7f9e7467ae2",
+  "len": 767,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.tagami.niigata.jp/docs/12292.html": {
+  "hash": "788665cc81a70880",
+  "len": 5251,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.aga.niigata.jp/kurashi_tetsuzuki/gomi_seikatsukankyo/635.html": {
+  "hash": "c2c5b0abec086270",
+  "len": 3644,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.aga.niigata.jp/info/chomin_seikatsu_info/2795.html": {
+  "hash": "68a57a7a3f9db8da",
+  "len": 1249,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.aga.niigata.jp/material/files/group/4/sodai.pdf": {
+  "hash": "95a46c1a6d299f57",
+  "len": 254373,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.aga.niigata.jp/agamachi_soshiki/machizukuri_kanko/jutaku_tochijoho/210.html": {
+  "hash": "0feb4dfa291b4f59",
+  "len": 2720,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.izumozaki.niigata.jp/kurashi/seikatsu/gomi-dashikata.html": {
+  "hash": "7d9edf83e763fe15",
+  "len": 1731,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.izumozaki.niigata.jp/kurashi/seikatsu/sodaigomi_LINE": {
+  "hash": "a31c4198f367f2cf",
+  "len": 907,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.izumozaki.niigata.jp/_files/00080675/2025_gomidasikata_ALL.pdf": {
+  "hash": "42097e8058079969",
+  "len": 8584493,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.izumozaki.niigata.jp/_files/00071741/2024_motikomi.pdf": {
+  "hash": "5a507f47a1ed3a29",
+  "len": 645974,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.izumozaki.niigata.jp/takuchi/bank/": {
+  "hash": "937326bb39f2d604",
+  "len": 1076,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kankyonorinka/1/1/1348.html": {
+  "hash": "e87ec76578284158",
+  "len": 2584,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kankyonorinka/1/1/1341.html": {
+  "hash": "55f1895b5610f522",
+  "len": 4950,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kikakukankouka/3/1/6834.html": {
+  "hash": "c2c0d4cf9cf14684",
+  "len": 1869,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.tsunan.niigata.jp/soshiki/zeimuchomin/gomi-bumbetsu.html": {
+  "hash": "914a19f9b43e0060",
+  "len": 7113,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.tsunan.niigata.jp/soshiki/zeimuchomin/gomi-mochikomi.html": {
+  "hash": "5c2eea901d3fc7b7",
+  "len": 2263,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.tsunan.niigata.jp/soshiki/kankou/akiya-bank.html": {
+  "hash": "bfd1e83fe3ed8965",
+  "len": 2348,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.vill.kariwa.niigata.jp/www/info/detail.jsp?id=311": {
+  "hash": "5f17568943261177",
+  "len": 1437,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.vill.kariwa.niigata.jp/open/info/000000001_0000029890.pdf": {
+  "hash": "2a49fdf1dd987d20",
+  "len": 283856,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "http://www.vill.kariwa.niigata.jp/www/info/detail.jsp?id=5991": {
+  "hash": "f6e3a9e34f0e82f6",
+  "len": 874,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://kariwa-v15504.akiya-athome.jp/": {
+  "hash": "97403ba41d03c55e",
+  "len": 2834,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "http://www.vill.sekikawa.niigata.jp/life/12/679/588/index.html": {
+  "hash": "97c65fdabf1aeac9",
+  "len": 7897,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "http://www.vill.sekikawa.niigata.jp/life/12/679/79/index.html": {
+  "hash": "1ef95113ec7ec105",
+  "len": 7721,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "http://www.vill.sekikawa.niigata.jp/life/13/696/index.html": {
+  "hash": "b9ecbb307f636d86",
+  "len": 11380,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.vill.awashimaura.lg.jp/news/5654/": {
+  "hash": "a3bfbdfd6d3ea134",
+  "len": 502,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.vill.awashimaura.lg.jp/wp-content/uploads/2025/02/R7gomibunnbetuhyou.pdf": {
+  "hash": "893dad69738e6fdc",
+  "len": 529240,
+  "type": "pdf",
+  "checked": "2026-10-04"
+ },
+ "https://www.vill.awashimaura.lg.jp/emigration/guidance/": {
+  "hash": "92f37c05256fa9c0",
+  "len": 1736,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.nagaoka.niigata.jp/akiya/": {
+  "hash": "82a3b562a90e71c8",
+  "len": 4679,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html": {
+  "hash": "59b3c60c1e510514",
+  "len": 3989,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-jyokyo.html": {
+  "hash": "284183def92eee98",
+  "len": 1889,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.nagaoka.niigata.jp/fukushi/cate04/y-jyosetu.html": {
+  "hash": "a547bb3fa8028c05",
+  "len": 2993,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.nagaoka.niigata.jp/kurashi/life03/anchor.html": {
+  "hash": "725daf8787341342",
+  "len": 2620,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.mitsuke.niigata.jp/soshiki/20/3080.html": {
+  "hash": "0e507d1794ac5bf9",
+  "len": 1907,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.mitsuke.niigata.jp/soshiki/20/1301.html": {
+  "hash": "d029355fcc8c7a77",
+  "len": 3391,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.mitsuke.niigata.jp/soshiki/20/22540.html": {
+  "hash": "b329c90ffc57c73a",
+  "len": 3919,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.mitsuke.niigata.jp/soshiki/6/2992.html": {
+  "hash": "af490425f5a7439c",
+  "len": 5960,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.ojiya.niigata.jp/site/iju/akiyabank.html": {
+  "hash": "dc7b7ac994425c95",
+  "len": 2699,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.ojiya.niigata.jp/site/iju/akiya-kaitai-tatekae.html": {
+  "hash": "3610de876d326ebb",
+  "len": 4529,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.ojiya.niigata.jp/soshiki/bousai/akiya-soudan.html": {
+  "hash": "37685cb7f58676db",
+  "len": 6031,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.ojiya.niigata.jp/soshiki/kensetsu/main-jyutakuhojyo.html": {
+  "hash": "3b19cce078f6b847",
+  "len": 1779,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kashiwazaki.lg.jp/soshikiichiran/toshiseibibu/kenchikujutakuka/3/3/1/6632.html": {
+  "hash": "3a700569ebff87ec",
+  "len": 4076,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kashiwazaki.lg.jp/soshikiichiran/toshiseibibu/kenchikujutakuka/3/3/1/44327.html": {
+  "hash": "0b543c15e28cb415",
+  "len": 2233,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/hojo/sumai_seikatsu/47390.html": {
+  "hash": "a7d8804cd59ca22d",
+  "len": 3162,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kashiwazaki.lg.jp/soshikiichiran/fukushihokembu/kaigokoreika/3/4/3/3982.html": {
+  "hash": "8ae23a62584f5a2c",
+  "len": 2072,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/akiyatoppage/index.html": {
+  "hash": "f4691afbc99ea838",
+  "len": 3421,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/akiyaakichi/15199.html": {
+  "hash": "6e4915e18a785ad7",
+  "len": 4013,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://sanjo-syakyo.jp/pages/42/": {
+  "hash": "114cf13f05cd232f",
+  "len": 2076,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://sanjo-syakyo.jp/pages/113/": {
+  "hash": "fe4c9888b170c066",
+  "len": 1927,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tsubame.niigata.jp/soshiki/toshi_seibi/3/1/53/index.html": {
+  "hash": "e0c99fe66151b834",
+  "len": 1156,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tsubame.niigata.jp/soshiki/toshi_seibi/3/1/172/19331.html": {
+  "hash": "a22123b989e62d9c",
+  "len": 2613,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tsubame.niigata.jp/yuki/11113.html": {
+  "hash": "a96fd3f11b070089",
+  "len": 1300,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/katsuyo/akiya_sagasu.html": {
+  "hash": "73cf25e77b228f07",
+  "len": 1600,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.niigata.lg.jp/kurashi/jyutaku/jukankyo/yushi_josei/akiyakatsuyo.html": {
+  "hash": "835dbd9c3c6d8349",
+  "len": 7145,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/madoguchi.html": {
+  "hash": "5a96eaa679aaae4f",
+  "len": 3653,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.niigata.lg.jp/kurashi/ku_info/kurashi_nishi/seikatsu/nishikujosetuhijosei.html": {
+  "hash": "7a58e5d12f435cfb",
+  "len": 2817,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiyabank.html": {
+  "hash": "c053c80be39956e4",
+  "len": 1047,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-jokyakuhojo.html": {
+  "hash": "d15e80284deeab89",
+  "len": 3379,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.joetsu.niigata.jp/soshiki/engo/lifeguide-238.html": {
+  "hash": "0863cf36e50cc789",
+  "len": 5258,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tokamachi.lg.jp/soshiki/somubu/kikakuseisakuka/1/gyomu/ijyu_teijyu/1450420682985.html": {
+  "hash": "effe11177097f8bb",
+  "len": 3547,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/4/1/10912.html": {
+  "hash": "84443573551f73a2",
+  "len": 2775,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tokamachi.lg.jp/soshiki/shiminfukushibu/fukushika/1/gyomu/1567986077003.html": {
+  "hash": "aeb8be1dd7025f75",
+  "len": 1832,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/4/1/8494.html": {
+  "hash": "f4d89bcae18c6ec7",
+  "len": 2083,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.shibata.lg.jp/kurashi/sumai/josei/1024868.html": {
+  "hash": "961d638b86d8e5ea",
+  "len": 1855,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kamo.niigata.jp/shisei/hojo/": {
+  "hash": "c484ed060decb45f",
+  "len": 912,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.kamo.niigata.jp/": {
+  "hash": "7222cd0f1c5bc6db",
+  "len": 2067,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tokamachi.lg.jp/": {
+  "hash": "30706a6af80f654b",
+  "len": 1203,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.mitsuke.niigata.jp/": {
+  "hash": "289f1f870d5eca1b",
+  "len": 2437,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.murakami.lg.jp/soshiki/12/akiyakaitaihojyokin.html": {
+  "hash": "338c3670fcce2efc",
+  "len": 1945,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.itoigawa.lg.jp/page/1417.html": {
+  "hash": "acb3cd0790b8e9e2",
+  "len": 2036,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.myoko.niigata.jp/docs/31250.html": {
+  "hash": "d1a7509db57ef8b4",
+  "len": 6185,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.myoko.niigata.jp/": {
+  "hash": "34414c2465f987a9",
+  "len": 158,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.gosen.lg.jp/municipal_administration/10/index.html": {
+  "hash": "147da30e360250f7",
+  "len": 792,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.gosen.lg.jp/": {
+  "hash": "e3beef4aee1fb426",
+  "len": 2388,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.agano.niigata.jp/soshiki/kensetsuka/zumai/14246.html": {
+  "hash": "471abe1b592e6c42",
+  "len": 4141,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sado.niigata.jp/soshiki/2013/80525.html": {
+  "hash": "181495429ad3a72d",
+  "len": 1634,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.sado.niigata.jp/soshiki/2013/": {
+  "hash": "e4875d55c9fdade3",
+  "len": 7044,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.uonuma.lg.jp/page/1029743.html": {
+  "hash": "e5092607c499ec16",
+  "len": 4828,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.minamiuonuma.niigata.jp/docs/48331.html": {
+  "hash": "393cc8566678fa14",
+  "len": 2293,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tainai.niigata.jp/kurashi/sekatsu/akiya/kaitai.html": {
+  "hash": "8105365c84d8dca0",
+  "len": 2455,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.city.tainai.niigata.jp/": {
+  "hash": "67fe843618221522",
+  "len": 2100,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.seiro.niigata.jp/8/6/4_1/1469.html": {
+  "hash": "1348d83467f8a937",
+  "len": 2170,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.seiro.niigata.jp/": {
+  "hash": "98990d741087c6aa",
+  "len": 1638,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.vill.yahiko.niigata.jp/life/?content=24": {
+  "hash": "de311de56fb95938",
+  "len": 1928,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.vill.yahiko.niigata.jp/": {
+  "hash": "f7b3fbad0a49bb03",
+  "len": 2412,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.tagami.niigata.jp/docs/12415.html": {
+  "hash": "61cd1bd9754c32c5",
+  "len": 978,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.tagami.niigata.jp/": {
+  "hash": "69a161808a608923",
+  "len": 293,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.aga.niigata.jp/agamachi_soshiki/machizukuri_kanko/hojo_shienseido/211.html": {
+  "hash": "830db91f8e92ad3f",
+  "len": 3734,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.aga.niigata.jp/": {
+  "hash": "5f742c710576b1cd",
+  "len": 1471,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.izumozaki.niigata.jp/kurashi/sumai/akiyasaiseikatuyou.html": {
+  "hash": "82472950ad142d94",
+  "len": 5170,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.izumozaki.niigata.jp/": {
+  "hash": "80cfe907fae5fd48",
+  "len": 1916,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.yuzawa.lg.jp/kurashinojoho/machinitsuiteshiritai/12/2/index.html": {
+  "hash": "1338a94bd6672d58",
+  "len": 843,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.yuzawa.lg.jp/": {
+  "hash": "2e669547c3269733",
+  "len": 1345,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.tsunan.niigata.jp/soshiki/somu/akiyakaitaihojyokin.html": {
+  "hash": "3ad889e9947d407f",
+  "len": 3889,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.town.tsunan.niigata.jp/": {
+  "hash": "af82b8b353e48a8c",
+  "len": 346,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.vill.kariwa.niigata.jp/www/life/result.jsp?life_genre=019": {
+  "hash": "b6188c1d0e308070",
+  "len": 971,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.vill.kariwa.niigata.jp/": {
+  "hash": "8c29486cb37b09b2",
+  "len": 6,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "http://www.vill.sekikawa.niigata.jp/life/13/bb3953ab80a8/index.html": {
+  "hash": "28657c93d9ebb741",
+  "len": 7974,
+  "type": "html",
+  "checked": "2026-10-04"
+ },
+ "https://www.vill.awashimaura.lg.jp/": {
+  "hash": "dce1873ac574dec6",
+  "len": 1301,
+  "type": "html",
+  "checked": "2026-10-04"
+ }
+}
