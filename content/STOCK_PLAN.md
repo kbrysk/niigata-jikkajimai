@@ -65,10 +65,14 @@
 | 56 | G 供養 | butsudan-jimai-haka-niigata | 樹木葬 新潟 163／永代供養 63／墓じまい 新潟（ハカラウへ送る） | wave4 |
 | 57 | 入口 | nagaoka-gomi-bunbetsu-mayou | 長岡市 ごみ 分別 迷う品目 50音（1,300の受け皿を厚く） | published |
 | 58 | 入口 | niigata-shi-gomi-bunbetsu-mayou | 新潟市 ごみ 分別／燃やさないごみ | published |
-| 59 | J 持ち込み | niigata-shi-gomi-mochikomi | 新潟市 ごみ 持ち込み 770／清掃センター 持ち込み | 執筆中 |
-| 60 | J | nagaoka-shi-gomi-mochikomi | 長岡市 ごみ 持ち込み／寿クリーンセンター | 執筆中 |
-| 61 | F | jikkajimai-gyosha-hiyou-niigata | 実家 片付け 業者 費用 新潟／遺品整理 費用 相場 新潟（27社の公開料金を集計） | 執筆中 |
+| 59 | J 持ち込み | niigata-shi-gomi-mochikomi | 新潟市 ごみ 持ち込み 770／清掃センター 持ち込み | stock（監査済み・公開待ち） |
+| 60 | J | nagaoka-shi-gomi-mochikomi | 長岡市 ごみ 持ち込み／寿クリーンセンター | stock（監査済み・公開待ち） |
+| 61 | F | jikkajimai-gyosha-hiyou-niigata | 実家 片付け 業者 費用 新潟／遺品整理 費用 相場 新潟（27社の公開料金を集計） | stock（監査済み・公開待ち） |
 | 62 | D | shibata-murakami-sado-akiya-bank | 新発田市・村上市・佐渡市 空き家バンク | 執筆中 |
 | 63 | D | myoko-itoigawa-uonuma-akiya-bank | 妙高市・糸魚川市・魚沼市・南魚沼市 空き家バンク | 執筆中 |
 
 執筆ルール（全記事共通）: 公式サイトのみ出典・確認日明記／[要確認: ○○]で正直に／体験談禁止／業者推薦禁止／TOA仏壇禁止／です・ます・短文／front matter（title「主題｜補足」主題25字以内, slug, description≤120字, targetKeywords, updated）／末尾に出典と「次に読む」（実在スラッグのみ、リンクは `../slug/` の相対形式。公開パスは /guide/）。slug に含む語で索引の分類が決まる（yuki|fuyu→雪と冬、sodaigomi|gomi|kaden|futon|sofa|recycle→粗大ごみ・ごみの出し方、gyosha|gyousha|ihinseiri|butsudan→業者に頼む・遺品整理、akiya|souzoku|zeikin→空き家・相続・税金、それ以外→進め方と費用）。
+
+公開時の作業メモ（第5陣A、2026-10-04 監査者の指摘）:
+- niigata-shi-gomi-mochikomi / nagaoka-shi-gomi-mochikomi を公開するとき、guides/niigata-shi-sodaigomi.md と nagaoka-shi-sodaigomi.md の「持ち込み」節を要約1段落＋リンク（../<slug>/）に縮め、同じKWでの共食いを避ける。
+- jikkajimai-gyosha-hiyou-niigata を公開するとき、guides/jikkajimai-hiyou-niigata.md の業者料金表（掲載元の平均値）に「中央値の集計はこちら」の注記とリンクを足す。
