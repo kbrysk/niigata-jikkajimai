@@ -47,7 +47,7 @@ updated: 2026-10-03
 | 三条市 | 三条市社会福祉協議会の除雪援助事業。世帯全員が市民税非課税で、75歳以上のみの世帯、障害のある方のみの世帯、ひとり親世帯など。2親等内の親族から援助できる世帯は対象外 | [要確認: 助成額（ページに記載なし）] | 12月〜翌3月に3か月を超えて入院・入所する予定の世帯は対象外 | https://sanjo-syakyo.jp/pages/42/ |
 | 柏崎市 | 高齢者・障がい者・母子世帯の屋根の雪下ろし費用助成。世帯全員が市民税非課税か均等割課税。事前登録が必要 | 経費の8割、1回の作業につき20,000円まで | 人の住んでいない家は対象外 | https://www.city.kashiwazaki.lg.jp/soshikiichiran/fukushihokembu/kaigokoreika/3/4/3/3982.html |
 | 新発田市 | 高齢者世帯等屋根雪除雪費用助成事業。世帯全員が市民税非課税で、親族の援助がない世帯。市内の一戸建てに居住 | 1回20,000円まで、同一年度に3回まで | 常に居住している家屋の屋根雪が対象 | https://www.city.shibata.lg.jp/kurashi/kenko/kaigohoken/hokengai/1001115.html |
-| 小千谷市 | SOS雪おろし。市が作業会員を紹介する制度（検索結果の表示で確認。ページ本体は取得できず） | 作業代は利用者負担。検索結果の表示では、令和7年度は1人1時間3,500円が上限 [要確認: 令和8年度の額と助成の有無（市ページを今回取得できず）] | [要確認: 空き家・別荘の扱い] | https://www.city.ojiya.niigata.jp/soshiki/kensetsu/sosyukioroshi-ojiya2025.html |
+| 小千谷市 | SOS雪おろし（市が作業会員を紹介する制度）。案内ページは冬季のみ掲載で、2026年10月4日時点では2025年度版が終了し、2026年度版は未公開 | 作業代は利用者負担（2025年度版の案内に基づく） [要確認: 2026年度の条件と上限額（新年度版の公開待ち）] | [要確認: 空き家・別荘の扱い] | https://www.city.ojiya.niigata.jp/soshiki/kensetsu/index-2.html |
 | 加茂市 | 雪下ろし費用の助成は、市の冬・雪のページに記載なし（民間事業所の連絡先一覧あり。市シルバー人材センターは屋根雪下ろし未対応）。命綱固定アンカー設置補助金は別にある | アンカー補助は費用の2分の1、10万円まで（令和8年度） | アンカー補助は、自ら居住し雪下ろしで管理する人が対象 | https://www.city.kamo.niigata.jp/docs/238423.html |
 | 十日町市 | 要援護世帯除排雪援助事業。70歳以上のみの世帯など。世帯全員が市民税非課税で、援助する親族がいない世帯 | 屋根・避難路は多雪区域で年40,000円、その他は年35,000円（ページの更新は2023年12月。要綱も同額） [要確認: 令和8年度の額] | 要綱の目的は「在宅の高齢者世帯」などの支援。空き家の記載なし [要確認: 空き家で使えるか] | https://www.city.tokamachi.lg.jp/soshiki/shiminfukushibu/fukushika/1/gyomu/1567986077003.html |
 | 見附市 | 見附市社会福祉協議会の要援護世帯除雪費助成事業。70歳以上の一人暮らしか高齢者のみの要援護世帯。民生委員に申込 | 1回10,000円、年2回（課税収入の制限あり） | ページに明記なし [要確認: 空き家で使えるか] | https://www.city.mitsuke.niigata.jp/soshiki/6/2992.html |
@@ -283,4 +283,4 @@ updated: 2026-10-03
 - 粟島浦村 公式サイト「暮らし・行政情報」 https://www.vill.awashimaura.lg.jp/information/
 - 新潟市「西区コミュニティ除雪等助成について」（更新2025年5月16日） https://www.city.niigata.lg.jp/kurashi/ku_info/kurashi_nishi/seikatsu/nishikujosetuhijosei.html
 - 新潟市「一人暮らし高齢者等の緊急生活相談窓口について」（更新2024年11月26日） https://www.city.niigata.lg.jp/iryo/kenfuku/chiiki/ooyukisoudan.html
-- 小千谷市「SOS雪おろし」（2026年10月3日時点でページを取得できず） https://www.city.ojiya.niigata.jp/soshiki/kensetsu/sosyukioroshi-ojiya2025.html
+- 小千谷市 建設課のページ（SOS雪おろしの案内は冬季のみ掲載。2026年10月4日時点で2026年度版は未公開、2025年度版のURLは404） https://www.city.ojiya.niigata.jp/soshiki/kensetsu/index-2.html
