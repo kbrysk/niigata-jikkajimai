@@ -205,10 +205,17 @@ fetch(ep,{method:'POST',headers:{'Content-Type':'application/json','Accept':'app
 else{show(false);location.href='mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(text);}
 });});})();</script>`;
 
+// 本文以外（市ページのデータ値・固定ページ・JSON-LD）に残った [要確認] も「※確認中」に揃える。
+// タグ属性と script の中では span を入れず、素の文字にする。
+const chkText = (t, plain) => t
+  .replace(/\[要確認[:：]\s*([^\]]+)\]/g, plain ? "※確認中（$1）" : '<span class="chk">※確認中: $1</span>')
+  .replace(/\[要確認\]/g, plain ? "※確認中" : '<span class="chk">※確認中</span>');
+const fixChk = (html) => html.includes("[要確認") ? html.split(/(<script[\s\S]*?<\/script>|<[^>]*>)/g).map((seg, i) => chkText(seg, i % 2 === 1)).join("") : html;
+
 function write(pathname, html) {
   const file = pathname.endsWith("/") ? path.join(OUT, pathname, "index.html") : path.join(OUT, pathname);
   fs.mkdirSync(path.dirname(file), { recursive: true });
-  fs.writeFileSync(file, html);
+  fs.writeFileSync(file, pathname.endsWith(".html") || pathname.endsWith("/") ? fixChk(html) : html);
 }
 
 const ctaBox = (city) => `
@@ -349,7 +356,9 @@ ${(s.notes || "").toString().includes("要確認") ? `<p class="small">※ 一�
 </article>
 <script>(function(){var t=document.querySelectorAll('.tabs a');if(!t.length||!('IntersectionObserver' in window))return;var m={};t.forEach(function(a){m[a.getAttribute('href').slice(1)]=a});var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){t.forEach(function(a){a.classList.remove('on')});var a=m[e.target.id];if(a)a.classList.add('on')}})},{rootMargin:'-15% 0px -70% 0px'});Object.keys(m).forEach(function(id){var el=document.getElementById(id);if(el)o.observe(el)})})();</script>`;
   const feeHint = (s.fee_examples || []).length ? `料金は${esc(((s.fee_examples || [])[0] || {}).fee || "").replace(/（.*$/, "")}から。` : "";
-  write(`/city/${c.cityId}/`, layout({ title: sodaiGuide ? `${c.city}の実家じまいガイド｜粗大ごみ・解体補助金・空き家バンク` : `${c.city}の粗大ごみ 料金・申込み・持ち込み先`, description: `${c.city}の粗大ごみの出し方・料金・申し込み方法・持ち込み先を公式サイトから整理。${feeHint}家電リサイクル、空き家の解体補助金、空き家バンクもまとめ、実家の片付けをまとめて頼める地元の許可業者につなぎます。`, pathname: `/city/${c.cityId}/`, body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }, { name: c.city, path: `/city/${c.cityId}/` }], jsonld: [faqLd], updated: s.checked_date || TODAY }));
+  const cityDescFull = `${c.city}の粗大ごみの出し方・料金・申込み・持ち込み先を公式サイトから整理。${feeHint}家電リサイクル、解体補助金、空き家バンクもまとめ、片付けを頼める地元の許可業者につなぎます。`;
+  const cityDesc = cityDescFull.length > 120 ? cityDescFull.replace(feeHint, "") : cityDescFull;
+  write(`/city/${c.cityId}/`, layout({ title: sodaiGuide ? `${c.city}の実家じまいガイド｜粗大ごみ・解体補助金・空き家バンク` : `${c.city}の粗大ごみ 料金・申込み・持ち込み先`, description: cityDesc, pathname: `/city/${c.cityId}/`, body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }, { name: c.city, path: `/city/${c.cityId}/` }], jsonld: [faqLd], updated: s.checked_date || TODAY }));
 }
 
 function cityIndex() {
