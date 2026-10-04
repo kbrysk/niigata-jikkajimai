@@ -212,3 +212,4 @@ updated: 2026-10-03
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
 - [実家じまいの手順（新潟）](../jikkajimai-tejun-niigata/)
 - [遺品の買取（新潟）](../ihin-kaitori-niigata/)
+- [実家の食器・本・写真・人形の処分](../shokki-hon-shashin-shobun/)

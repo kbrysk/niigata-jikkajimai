@@ -178,6 +178,7 @@ updated: 2026-10-02
 - [新潟で実家を片付ける費用の目安｜自分で出す場合と業者に頼む場合](../jikkajimai-hiyou-niigata/)
 - [新潟市の粗大ごみ・持ち込み・補助金](../../city/niigata/)
 - [長岡市の一般廃棄物収集運搬 許可業者一覧](../nagaoka-shi-kyoka-gyosha/)
+- [特殊清掃・ゴミ屋敷の片付け（新潟）](../tokushu-seisou-gomiyashiki-niigata/)
 
 ## 出典（確認日: 2026年10月2日）
 

@@ -234,3 +234,4 @@ updated: 2026-10-03
 - [長岡市のリサイクルショップ・出張買取](../nagaoka-recycle-shop/)
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
 - [布団・マットレスの捨て方](../futon-mattress-sutekata-niigata/)
+- [金庫・ピアノ・物干し台の処分（新潟市・長岡市）](../kinko-piano-monohoshi-niigata/)

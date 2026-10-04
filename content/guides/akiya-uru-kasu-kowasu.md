@@ -298,6 +298,8 @@ updated: 2026-10-02
 - [冬の実家じまいと雪対策｜空き家の雪下ろしは誰がやる？新潟の制度と費用](../fuyu-no-jikkajimai-yukioroshi/)
 - [新潟で実家を解体する費用の考え方](../kaitai-hiyou-niigata/)
 - [新潟の空き家を買い取ってもらうには](../akiya-kaitori-niigata/)
+- [新発田市・村上市・佐渡市の空き家バンク](../shibata-murakami-sado-akiya-bank/)
+- [実家じまいの近所への挨拶](../jikkajimai-aisatsu-kinjo/)
 
 ## 出典
 

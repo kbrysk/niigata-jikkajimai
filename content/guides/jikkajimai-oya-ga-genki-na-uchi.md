@@ -254,6 +254,7 @@ updated: 2026-10-02
 - [新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度](../akiya-uru-kasu-kowasu/)
 - [冬の実家じまいと雪対策｜空き家の雪下ろしは誰がやる？新潟の制度と費用](../fuyu-no-jikkajimai-yukioroshi/)
 - [長岡市の空き家バンク｜登録の流れ・探し方・家財処分や解体に使える支援](../nagaoka-akiya-bank/)
+- [生前整理の進め方（新潟版）](../seizenseiri-niigata/)
 
 ## 出典
 

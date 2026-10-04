@@ -238,3 +238,5 @@ updated: 2026-10-02
 - [親が施設に入ったら実家はどうする？](../oya-shisetsu-nyusho-jikka/)
 - [新潟市の市町村ページ](../../city/niigata/)
 - [遺品の買取（新潟）](../ihin-kaitori-niigata/)
+- [実家の片付け業者の費用](../jikkajimai-gyosha-hiyou-niigata/)
+- [特殊清掃・ゴミ屋敷の片付け（新潟）](../tokushu-seisou-gomiyashiki-niigata/)

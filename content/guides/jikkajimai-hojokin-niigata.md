@@ -180,6 +180,7 @@ updated: 2026-10-02
 - [新潟の実家じまい、何から始める？遠方からでも進められる7つの手順](../jikkajimai-tejun-niigata/)
 - [冬の実家じまいと雪対策｜空き家の雪下ろしは誰がやる？新潟の制度と費用](../fuyu-no-jikkajimai-yukioroshi/)
 - [新潟で実家を解体する費用の考え方](../kaitai-hiyou-niigata/)
+- [新潟県30市町村の雪下ろし・除雪支援一覧](../yukioroshi-shien-niigata-30/)
 
 ## 出典
 

@@ -195,3 +195,5 @@ RKCは、異物が混入した品物を引き取れないと注意していま�
 - [長岡市のリサイクルショップ・出張買取](../nagaoka-recycle-shop/)
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
 - [パソコン・スマホ・小型家電の処分](../pc-sumaho-shobun-niigata/)
+- [新潟市のごみ持ち込み](../niigata-shi-gomi-mochikomi/)
+- [金庫・ピアノ・物干し台の処分（新潟市・長岡市）](../kinko-piano-monohoshi-niigata/)

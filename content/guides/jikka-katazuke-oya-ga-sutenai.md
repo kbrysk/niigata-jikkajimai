@@ -231,3 +231,5 @@ updated: 2026-10-03
 - [新潟市で遺品整理を頼むとき](../ihinseiri-niigata-shi-gyosha-erabikata/)
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
 - [実家じまいが寂しい・つらいとき](../jikkajimai-sabishii-kokoro/)
+- [実家の食器・本・写真・人形の処分](../shokki-hon-shashin-shobun/)
+- [生前整理の進め方（新潟版）](../seizenseiri-niigata/)

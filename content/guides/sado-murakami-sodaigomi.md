@@ -238,3 +238,4 @@ updated: 2026-10-03
 - [冬の実家じまいと雪おろし](../fuyu-no-jikkajimai-yukioroshi/)
 - [佐渡市の市町村ページ](../../city/sado/)
 - [村上市の市町村ページ](../../city/murakami/)
+- [新発田市・村上市・佐渡市の空き家バンク](../shibata-murakami-sado-akiya-bank/)

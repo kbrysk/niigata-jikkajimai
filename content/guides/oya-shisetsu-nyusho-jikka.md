@@ -250,3 +250,4 @@ updated: 2026-10-02
 - [新潟市の市町村ページ](../../city/niigata/)
 - [実家じまいが寂しい・つらいとき](../jikkajimai-sabishii-kokoro/)
 - [相続登記の義務化と新潟の法務局・相談窓口](../souzoku-touki-niigata-houmukyoku/)
+- [空き家の冬支度チェックリスト（新潟版）](../akiya-fuyu-kanri-checklist/)

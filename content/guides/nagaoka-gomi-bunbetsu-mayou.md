@@ -238,3 +238,5 @@ updated: 2026-10-02
 - [新潟市で遺品整理を頼むとき](../ihinseiri-niigata-shi-gyosha-erabikata/)
 - [親が施設に入ったら実家はどうする？](../oya-shisetsu-nyusho-jikka/)
 - [長岡市の市町村ページ](../../city/nagaoka/)
+- [長岡市のごみ持ち込み（自己搬入）の料金と手順](../nagaoka-shi-gomi-mochikomi/)
+- [実家の食器・本・写真・人形の処分](../shokki-hon-shashin-shobun/)

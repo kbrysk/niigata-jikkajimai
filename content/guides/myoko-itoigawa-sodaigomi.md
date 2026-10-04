@@ -237,3 +237,4 @@ updated: 2026-10-03
 - [冬の実家じまいと雪おろし](../fuyu-no-jikkajimai-yukioroshi/)
 - [妙高市の市町村ページ](../../city/myoko/)
 - [糸魚川市の市町村ページ](../../city/itoigawa/)
+- [妙高市・糸魚川市・魚沼市・南魚沼市の空き家バンク](../myoko-itoigawa-uonuma-akiya-bank/)

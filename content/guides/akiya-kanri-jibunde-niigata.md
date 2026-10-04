@@ -212,6 +212,8 @@ updated: 2026-10-02
 - [空き家の固定資産税は本当に6倍になる？](../akiya-koteishisanzei-6bai/)
 - [長岡市の空き家バンク｜登録の流れ・探し方・家財処分や解体に使える支援](../nagaoka-akiya-bank/)
 - [新潟の実家じまいの手順｜何から始める？7つの順番と期限の早見表](../jikkajimai-tejun-niigata/)
+- [新潟県30市町村の雪下ろし・除雪支援一覧](../yukioroshi-shien-niigata-30/)
+- [空き家の冬支度チェックリスト（新潟版）](../akiya-fuyu-kanri-checklist/)
 
 ## 出典
 

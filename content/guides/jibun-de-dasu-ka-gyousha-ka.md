@@ -238,6 +238,7 @@ updated: 2026-10-02
 - [空き家の雪下ろしは誰の責任？新潟の実家の冬対策｜支援制度と費用](../fuyu-no-jikkajimai-yukioroshi/)
 - [新潟市の一般廃棄物 許可業者一覧](../niigata-shi-kyoka-gyosha/)
 - [長岡市の一般廃棄物収集運搬 許可業者一覧](../nagaoka-shi-kyoka-gyosha/)
+- [実家の片付け業者の費用](../jikkajimai-gyosha-hiyou-niigata/)
 
 
 ## 市町村別の粗大ごみガイド

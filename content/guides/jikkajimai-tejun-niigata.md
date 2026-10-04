@@ -238,6 +238,7 @@ updated: 2026-10-02
 - [空き家の雪下ろしは誰の責任？新潟の実家の冬対策｜支援制度と費用](../fuyu-no-jikkajimai-yukioroshi/)
 - [新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度](../akiya-uru-kasu-kowasu/)
 - [実家じまいが寂しい・つらいとき](../jikkajimai-sabishii-kokoro/)
+- [実家じまいの近所への挨拶](../jikkajimai-aisatsu-kinjo/)
 
 
 ## 市町村別の粗大ごみガイド

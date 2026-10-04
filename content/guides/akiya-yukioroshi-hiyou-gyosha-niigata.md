@@ -213,6 +213,8 @@ updated: 2026-10-02
 - [長岡市の空き家バンク｜登録の流れ・探し方・家財処分や解体に使える支援](../nagaoka-akiya-bank/)
 - [上越市・新潟市の空き家バンク｜登録方法と使える制度（新潟市は西蒲区のみ）](../joetsu-niigata-akiya-bank/)
 - [新潟の実家じまいの手順｜何から始める？7つの順番と期限の早見表](../jikkajimai-tejun-niigata/)
+- [妙高市・糸魚川市・魚沼市・南魚沼市の空き家バンク](../myoko-itoigawa-uonuma-akiya-bank/)
+- [新潟県30市町村の雪下ろし・除雪支援一覧](../yukioroshi-shien-niigata-30/)
 
 ## 出典
 

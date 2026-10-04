@@ -271,6 +271,7 @@ updated: 2026-10-02
 - [長岡市の粗大ごみの出し方｜申込・料金・持ち込み先・分別Q&A](../nagaoka-shi-sodaigomi/)
 - [長岡市の空き家バンク｜登録の流れ・探し方・家財処分や解体に使える支援](../nagaoka-akiya-bank/)
 - [新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度](../akiya-uru-kasu-kowasu/)
+- [実家の片付け業者の費用](../jikkajimai-gyosha-hiyou-niigata/)
 
 ## 出典
 

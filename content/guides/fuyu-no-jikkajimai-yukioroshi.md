@@ -222,6 +222,8 @@ updated: 2026-10-02
 - [新潟で実家を片付ける費用の目安｜自分で出す場合と業者に頼む場合](../jikkajimai-hiyou-niigata/)
 - [新潟の実家の片付けは自分で？業者？｜5つの判断基準と不用品回収の許可確認](../jibun-de-dasu-ka-gyousha-ka/)
 - [新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度](../akiya-uru-kasu-kowasu/)
+- [新潟県30市町村の雪下ろし・除雪支援一覧](../yukioroshi-shien-niigata-30/)
+- [空き家の冬支度チェックリスト（新潟版）](../akiya-fuyu-kanri-checklist/)
 
 ## 出典
 

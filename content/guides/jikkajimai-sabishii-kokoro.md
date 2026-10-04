@@ -224,3 +224,4 @@ updated: 2026-10-03
 - [遺品整理はいつから？捨ててはいけない物](../ihinseiri-itsukara-sutetewa-ikenai/)
 - [新潟の実家が空き家になったら](../akiya-uru-kasu-kowasu/)
 - [遠方・県外から新潟の実家を片付ける段取り](../enpou-kara-jikkajimai/)
+- [実家じまいの近所への挨拶](../jikkajimai-aisatsu-kinjo/)
