@@ -1,6 +1,6 @@
 # コンテンツ在庫計画（2026-10-02 作成・2026-10-03 更新）
 
-2026-10-04 時点: 公開53本（市別ページ30を除く）／在庫12本（すべて監査済み）／保留 1本（#56は3サイト役割分担の承認後）。
+2026-10-04 夜時点: 公開65本（市別ページ30を除く）／在庫0本／執筆中 第6陣4本（#64〜#67）／保留 1本（#56は3サイト役割分担の承認後）。
 
 運用: 執筆は `content/stock/` に書く（未公開）。裏取り後に `content/guides/` へ移すと次の push で公開される。status は本表で管理する。
 検索数は ラッコキーワード（2026-09-28〜10-01取得、新潟県内KW）と全国KW（2026-09-26）。数値が無いものは [要確認] で、公開順の判断は検索数の大きい順＋入口→出口の導線で決める。
@@ -32,8 +32,8 @@
 | 23 | B | stove-touyu-shobun-niigata | 石油ストーブ・灯油・ガスコンロ 処分 | published（10/4） |
 | 24 | B | jitensha-tire-shoukaki-niigata | 自転車・タイヤ・消火器・バッテリー（市で出せない物） | published（10/4） |
 | 25 | B | carpet-tatami-futon-niigata | カーペット・畳・カーテン | published（10/4） |
-| 26 | B | kinko-piano-monohoshi-niigata | 金庫・ピアノ・物干し台・コンクリート製品・ホームタンク・農機具 | stock（監査済み・公開待ち） |
-| 27 | B | shokki-hon-shashin-shobun | 食器・本・写真・衣類・人形（大量処分と供養） | stock（監査済み・公開待ち） |
+| 26 | B | kinko-piano-monohoshi-niigata | 金庫・ピアノ・物干し台・コンクリート製品・ホームタンク・農機具 | published（10/4） |
+| 27 | B | shokki-hon-shashin-shobun | 食器・本・写真・衣類・人形（大量処分と供養） | published（10/4） |
 | 28 | C 実家じまい汎用 | jikkajimai-yattewaikenai | 実家じまい やってはいけない 失敗 480 | published |
 | 29 | C | jikkajimai-okane-ga-nai | 実家じまい お金がない 390／費用 誰が払う | published |
 | 30 | C | jikkajimai-hojokin-niigata | 実家じまい 補助金 590（新潟県30市町村の解体補助金一覧） | published |
@@ -41,7 +41,7 @@
 | 32 | C | ihinseiri-itsukara-sutetewa-ikenai | 遺品整理 いつから 480／捨ててはいけないもの 480 | published |
 | 33 | C | ihinseiri-jibunde-niigata | 遺品整理 自分で 170／一人暮らし 死亡 片付け | published |
 | 34 | C | ihinseiri-souzokuhouki | 遺品整理 相続放棄 260（一般論＋専門家） | published |
-| 35 | C | jikkajimai-aisatsu-kinjo | 実家じまい 挨拶／近所／手土産 50 | stock（監査済み・公開待ち） |
+| 35 | C | jikkajimai-aisatsu-kinjo | 実家じまい 挨拶／近所／手土産 50 | published（10/4） |
 | 36 | C | jikkajimai-sabishii-kokoro | 実家じまい 寂しい 210／気持ちの整理 | published（10/4） |
 | 37 | C | jikka-katazuke-oya-ga-sutenai | 実家 片付け 親 捨てない／コツ | published |
 | 38 | D 空き家 | akiya-koteishisanzei-6bai | 空き家 固定資産税 2,400／6倍 | published |
@@ -53,11 +53,11 @@
 | 44 | D | sanjo-tsubame-kashiwazaki-akiya-bank | 三条市・燕市・柏崎市 空き家バンク | published（10/4） |
 | 45 | D | mitsuke-ojiya-tokamachi-akiya-bank | 見附市・小千谷市・十日町市 空き家バンク | published（10/4） |
 | 46 | E 雪 | akiya-yukioroshi-hiyou-gyosha-niigata | 空き家 雪下ろし 費用／業者／責任 | published |
-| 47 | E | yukioroshi-shien-niigata-30 | 雪下ろし 支援制度 新潟県30市町村一覧 | stock（監査済み・公開待ち） |
-| 48 | E | akiya-fuyu-kanri-checklist | 空き家 冬 管理 チェックリスト（水抜き・落雪・倒壊） | stock（監査済み・公開待ち） |
+| 47 | E | yukioroshi-shien-niigata-30 | 雪下ろし 支援制度 新潟県30市町村一覧 | published（10/4） |
+| 48 | E | akiya-fuyu-kanri-checklist | 空き家 冬 管理 チェックリスト（水抜き・落雪・倒壊） | published（10/4） |
 | 49 | F 遺品整理 新潟 | ihinseiri-niigata-shi-gyosha-erabikata | 遺品整理 新潟市 170／選び方 | published |
-| 50 | F | seizenseiri-niigata | 生前整理 新潟 13／やり方／チェックリスト | stock（監査済み・公開待ち） |
-| 51 | F | tokushu-seisou-gomiyashiki-niigata | 特殊清掃 新潟 63／ゴミ屋敷 新潟 83（#52と統合） | stock（監査済み・公開待ち） |
+| 50 | F | seizenseiri-niigata | 生前整理 新潟 13／やり方／チェックリスト | published（10/4） |
+| 51 | F | tokushu-seisou-gomiyashiki-niigata | 特殊清掃 新潟 63／ゴミ屋敷 新潟 83（#52と統合） | published（10/4） |
 | 52 | F | gomiyashiki-niigata | ゴミ屋敷 新潟 83／片付け 費用 | 統合済み（#51へ） |
 | 53 | F | ihin-kaitori-niigata | 遺品 買取 新潟／着物 買取 新潟 47／骨董 83／出張買取 113 | published（10/4） |
 | 54 | H 施設入所 | oya-shisetsu-nyusho-jikka | 親 施設入所 実家／老人ホーム 長岡 97 | published |
@@ -65,14 +65,18 @@
 | 56 | G 供養 | butsudan-jimai-haka-niigata | 樹木葬 新潟 163／永代供養 63／墓じまい 新潟（ハカラウへ送る） | wave4 |
 | 57 | 入口 | nagaoka-gomi-bunbetsu-mayou | 長岡市 ごみ 分別 迷う品目 50音（1,300の受け皿を厚く） | published |
 | 58 | 入口 | niigata-shi-gomi-bunbetsu-mayou | 新潟市 ごみ 分別／燃やさないごみ | published |
-| 59 | J 持ち込み | niigata-shi-gomi-mochikomi | 新潟市 ごみ 持ち込み 770／清掃センター 持ち込み | stock（監査済み・公開待ち） |
-| 60 | J | nagaoka-shi-gomi-mochikomi | 長岡市 ごみ 持ち込み／寿クリーンセンター | stock（監査済み・公開待ち） |
-| 61 | F | jikkajimai-gyosha-hiyou-niigata | 実家 片付け 業者 費用 新潟／遺品整理 費用 相場 新潟（27社の公開料金を集計） | stock（監査済み・公開待ち） |
-| 62 | D | shibata-murakami-sado-akiya-bank | 新発田市・村上市・佐渡市 空き家バンク | stock（監査済み・公開待ち） |
-| 63 | D | myoko-itoigawa-uonuma-akiya-bank | 妙高市・糸魚川市・魚沼市・南魚沼市 空き家バンク | stock（監査済み・公開待ち） |
+| 59 | J 持ち込み | niigata-shi-gomi-mochikomi | 新潟市 ごみ 持ち込み 770／清掃センター 持ち込み | published（10/4） |
+| 60 | J | nagaoka-shi-gomi-mochikomi | 長岡市 ごみ 持ち込み／寿クリーンセンター | published（10/4） |
+| 61 | F | jikkajimai-gyosha-hiyou-niigata | 実家 片付け 業者 費用 新潟／遺品整理 費用 相場 新潟（27社の公開料金を集計） | published（10/4） |
+| 62 | D | shibata-murakami-sado-akiya-bank | 新発田市・村上市・佐渡市 空き家バンク | published（10/4） |
+| 63 | D | myoko-itoigawa-uonuma-akiya-bank | 妙高市・糸魚川市・魚沼市・南魚沼市 空き家バンク | published（10/4） |
+| 64 | 買取 | niigata-shi-recycle-shop | リサイクルショップ 新潟市／新潟市 不用品 買取 | 執筆中 |
+| 65 | 買取 | joetsu-sanjo-kashiwazaki-recycle-shop | リサイクルショップ 上越／三条／柏崎 | 執筆中 |
+| 66 | D | kamo-gosen-agano-tainai-akiya-bank | 加茂市・五泉市・阿賀野市・胎内市 空き家バンク | 執筆中 |
+| 67 | D | chouson-akiya-bank-niigata | 町村10（湯沢・津南・阿賀・聖籠ほか）空き家バンク | 執筆中 |
 
 執筆ルール（全記事共通）: 公式サイトのみ出典・確認日明記／[要確認: ○○]で正直に／体験談禁止／業者推薦禁止／TOA仏壇禁止／です・ます・短文／front matter（title「主題｜補足」主題25字以内, slug, description≤120字, targetKeywords, updated）／末尾に出典と「次に読む」（実在スラッグのみ、リンクは `../slug/` の相対形式。公開パスは /guide/）。slug に含む語で索引の分類が決まる（yuki|fuyu→雪と冬、sodaigomi|gomi|kaden|futon|sofa|recycle→粗大ごみ・ごみの出し方、gyosha|gyousha|ihinseiri|butsudan→業者に頼む・遺品整理、akiya|souzoku|zeikin→空き家・相続・税金、それ以外→進め方と費用）。
 
-公開時の作業メモ（第5陣A、2026-10-04 監査者の指摘）:
+公開時の作業メモ（第5陣A、2026-10-04 監査者の指摘。10/4 夜の公開時に対応済み）:
 - niigata-shi-gomi-mochikomi / nagaoka-shi-gomi-mochikomi を公開するとき、guides/niigata-shi-sodaigomi.md と nagaoka-shi-sodaigomi.md の「持ち込み」節を要約1段落＋リンク（../<slug>/）に縮め、同じKWでの共食いを避ける。
 - jikkajimai-gyosha-hiyou-niigata を公開するとき、guides/jikkajimai-hiyou-niigata.md の業者料金表（掲載元の平均値）に「中央値の集計はこちら」の注記とリンクを足す。
