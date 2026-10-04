@@ -237,3 +237,4 @@ updated: 2026-10-02
 - [新潟市のごみ分別で迷う品目50](../niigata-shi-gomi-bunbetsu-mayou/)
 - [親が施設に入ったら実家はどうする？](../oya-shisetsu-nyusho-jikka/)
 - [新潟市の市町村ページ](../../city/niigata/)
+- [遺品の買取（新潟）](../ihin-kaitori-niigata/)

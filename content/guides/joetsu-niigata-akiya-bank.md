@@ -213,6 +213,7 @@ URLは、この記事の最後の「出典」にあります。
 - [新潟の実家じまい、何から始める？遠方からでも進められる7つの手順](../jikkajimai-tejun-niigata/)
 - [新潟市の粗大ごみの出し方](../niigata-shi-sodaigomi/)
 - [上越市・三条市の粗大ごみの出し方](../joetsu-sanjo-sodaigomi/)
+- [見附市・小千谷市・十日町市の空き家バンク](../mitsuke-ojiya-tokamachi-akiya-bank/)
 
 ## 出典
 

@@ -224,3 +224,4 @@ updated: 2026-10-03
 - [新潟の実家じまいの手順｜何から始める？](../jikkajimai-tejun-niigata/)
 - [実家じまいでやってはいけない7つのこと](../jikkajimai-yattewaikenai/)
 - [親が元気なうちに始める実家じまい](../jikkajimai-oya-ga-genki-na-uchi/)
+- [遺品の買取（新潟）](../ihin-kaitori-niigata/)

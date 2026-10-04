@@ -211,3 +211,4 @@ updated: 2026-10-03
 - [長岡市のごみ分別で迷う品目50](../nagaoka-gomi-bunbetsu-mayou/)
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
 - [実家じまいの手順（新潟）](../jikkajimai-tejun-niigata/)
+- [遺品の買取（新潟）](../ihin-kaitori-niigata/)

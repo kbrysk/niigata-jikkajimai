@@ -280,6 +280,8 @@ at home版では、沿線・エリア・地図からも探せます。
 - [長岡市の粗大ごみの出し方](../nagaoka-shi-sodaigomi/)
 - [上越市・新潟市の空き家バンク｜登録方法と使える制度](../joetsu-niigata-akiya-bank/)
 - [冬の実家じまいと雪対策｜空き家の雪下ろしは誰がやる？新潟の制度と費用](../fuyu-no-jikkajimai-yukioroshi/)
+- [新潟の空き家を買い取ってもらうには](../akiya-kaitori-niigata/)
+- [三条市・燕市・柏崎市の空き家バンク](../sanjo-tsubame-kashiwazaki-akiya-bank/)
 
 ## 出典
 

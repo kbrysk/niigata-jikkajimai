@@ -259,3 +259,4 @@ updated: 2026-10-03
 - [十日町市の市町村ページ](../../city/tokamachi/)
 - [魚沼市の市町村ページ](../../city/uonuma/)
 - [南魚沼市の市町村ページ](../../city/minamiuonuma/)
+- [見附市・小千谷市・十日町市の空き家バンク](../mitsuke-ojiya-tokamachi-akiya-bank/)

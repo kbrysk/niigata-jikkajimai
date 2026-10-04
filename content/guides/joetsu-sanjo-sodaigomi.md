@@ -185,6 +185,7 @@ updated: 2026-10-02
 - [長岡市の粗大ごみ](../nagaoka-shi-sodaigomi/)
 - [上越市の粗大ごみ・持ち込み・補助金](../../city/joetsu/)
 - [三条市の粗大ごみ・持ち込み・補助金](../../city/sanjo/)
+- [三条市・燕市・柏崎市の空き家バンク](../sanjo-tsubame-kashiwazaki-akiya-bank/)
 
 
 ## 市町村別の粗大ごみガイド

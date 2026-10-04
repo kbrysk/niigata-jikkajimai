@@ -228,6 +228,7 @@ updated: 2026-10-02
 - [新潟の実家じまい、何から始める？遠方からでも進められる7つの手順](../jikkajimai-tejun-niigata/)
 - [新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度](../akiya-uru-kasu-kowasu/)
 - [自分で出す？業者に頼む？新潟の実家片付け、分かれ目の5つの基準](../jibun-de-dasu-ka-gyousha-ka/)
+- [遺品の買取（新潟）](../ihin-kaitori-niigata/)
 
 ## 出典
 

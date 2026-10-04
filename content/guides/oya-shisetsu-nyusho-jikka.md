@@ -248,3 +248,5 @@ updated: 2026-10-02
 - [新潟市のごみ分別で迷う品目50](../niigata-shi-gomi-bunbetsu-mayou/)
 - [長岡市の市町村ページ](../../city/nagaoka/)
 - [新潟市の市町村ページ](../../city/niigata/)
+- [実家じまいが寂しい・つらいとき](../jikkajimai-sabishii-kokoro/)
+- [相続登記の義務化と新潟の法務局・相談窓口](../souzoku-touki-niigata-houmukyoku/)

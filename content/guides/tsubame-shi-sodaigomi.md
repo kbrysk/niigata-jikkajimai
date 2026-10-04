@@ -209,3 +209,4 @@ updated: 2026-10-02
 - [新潟で実家を片付ける費用の目安](../jikkajimai-hiyou-niigata/)
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
 - [燕市の市町村ページ](../../city/tsubame/)
+- [三条市・燕市・柏崎市の空き家バンク](../sanjo-tsubame-kashiwazaki-akiya-bank/)

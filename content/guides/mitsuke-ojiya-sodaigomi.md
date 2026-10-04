@@ -237,3 +237,4 @@ updated: 2026-10-02
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
 - [見附市の市町村ページ](../../city/mitsuke/)
 - [小千谷市の市町村ページ](../../city/ojiya/)
+- [見附市・小千谷市・十日町市の空き家バンク](../mitsuke-ojiya-tokamachi-akiya-bank/)

@@ -202,3 +202,4 @@ updated: 2026-10-03
 - [親が元気なうちに始める実家じまい](../jikkajimai-oya-ga-genki-na-uchi/)
 - [新潟市の粗大ごみの出し方](../niigata-shi-sodaigomi/)
 - [長岡市の粗大ごみの出し方](../nagaoka-shi-sodaigomi/)
+- [相続登記の義務化と新潟の法務局・相談窓口](../souzoku-touki-niigata-houmukyoku/)
