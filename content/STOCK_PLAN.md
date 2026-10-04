@@ -80,3 +80,5 @@
 公開時の作業メモ（第5陣A、2026-10-04 監査者の指摘。10/4 夜の公開時に対応済み）:
 - niigata-shi-gomi-mochikomi / nagaoka-shi-gomi-mochikomi を公開するとき、guides/niigata-shi-sodaigomi.md と nagaoka-shi-sodaigomi.md の「持ち込み」節を要約1段落＋リンク（../<slug>/）に縮め、同じKWでの共食いを避ける。
 - jikkajimai-gyosha-hiyou-niigata を公開するとき、guides/jikkajimai-hiyou-niigata.md の業者料金表（掲載元の平均値）に「中央値の集計はこちら」の注記とリンクを足す。
+
+掲載業者の追加手順（デザイン担当からの引き継ぎ、2026-10-04）: data/partners.json に1件追加する（必須キー id・status・name・base・cities。status: published のみ出力。見本の draft 1件は型の説明を兼ねるので残す。met_date を入れると詳細ページに「運営者が訪問して確認」の印が出る）。推薦や体験談の文は入れない。追加後に build → QA → push。
