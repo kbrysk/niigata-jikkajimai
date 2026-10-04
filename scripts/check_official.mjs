@@ -40,7 +40,7 @@ const sha = (s) => crypto.createHash("sha1").update(s).digest("hex").slice(0, 16
 
 async function fetchOne(u) {
   const ctrl = new AbortController();
-  const t = setTimeout(() => ctrl.abort(), 25000);
+  const t = setTimeout(() => ctrl.abort(), /.pdf(?|$)/i.test(u) ? 90000 : 25000); // 町村の大きなPDFは遅いので長めに待つ
   try {
     const r = await fetch(u, { signal: ctrl.signal, redirect: "follow", headers: { "user-agent": "Mozilla/5.0 (compatible; niigata-jikkajimai-check/1.0; +https://kbrysk.github.io/niigata-jikkajimai/about/)", accept: "text/html,application/pdf,*/*" } });
     const type = (r.headers.get("content-type") || "").split(";")[0].trim();
