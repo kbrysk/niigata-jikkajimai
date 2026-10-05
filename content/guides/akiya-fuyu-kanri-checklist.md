@@ -217,7 +217,7 @@ https://seppyo.bosai.go.jp/snow-weight-niigata/
 - [空き家の雪下ろし、誰に頼む？費用は？｜新潟の相談窓口と支援制度](../akiya-yukioroshi-hiyou-gyosha-niigata/)
 - [空き家の雪下ろしは誰の責任？新潟の実家の冬対策｜支援制度と費用](../fuyu-no-jikkajimai-yukioroshi/)
 - [新潟の実家じまいの手順｜何から始める？7つの順番と期限の早見表](../jikkajimai-tejun-niigata/)
-- [新潟の雪下ろし料金に公的な目安なし](../yukioroshi-gyosha-ryokin-niigata/)
+- [新潟の雪下ろし料金と業者の頼み方](../yukioroshi-gyosha-ryokin-niigata/)
 
 ## 出典
 

@@ -224,7 +224,7 @@ updated: 2026-10-02
 - [新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度](../akiya-uru-kasu-kowasu/)
 - [新潟県30市町村の雪下ろし・除雪支援一覧](../yukioroshi-shien-niigata-30/)
 - [空き家の冬支度チェックリスト（新潟版）](../akiya-fuyu-kanri-checklist/)
-- [新潟の雪下ろし料金に公的な目安なし](../yukioroshi-gyosha-ryokin-niigata/)
+- [新潟の雪下ろし料金と業者の頼み方](../yukioroshi-gyosha-ryokin-niigata/)
 
 ## 出典
 
