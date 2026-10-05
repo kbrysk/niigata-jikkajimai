@@ -532,7 +532,7 @@ function home() {
   // 写真枠: public/assets/photo-home.jpg を置くと表示される（運営者の実写のみ。AI生成画像は使わない）。説明文は photo-home.txt
   const photoFile = path.join(ROOT, "public/assets/photo-home.jpg");
   const photoCap = fs.existsSync(path.join(ROOT, "public/assets/photo-home.txt")) ? fs.readFileSync(path.join(ROOT, "public/assets/photo-home.txt"), "utf8").trim() : "";
-  const photo = fs.existsSync(photoFile) ? `<figure class="photo"><img src="${url("/assets/photo-home.jpg")}" alt="${esc(photoCap)}" loading="lazy" decoding="async"><figcaption>${esc(photoCap)}</figcaption></figure>` : "";
+  const photo = fs.existsSync(photoFile) ? `<figure class="photo top"><img src="${url("/assets/photo-home.jpg")}" alt="${esc(photoCap)}" fetchpriority="high" decoding="async"><figcaption>${esc(photoCap)}</figcaption></figure>` : "";
   const dirCols = Object.entries(AREA).map(([area, ids]) => `<div class="dir-col"><h3>${esc(area)}<small>${ids.length}市町村</small></h3><ul>${ids.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}"${c.core ? ' class="core"' : ""}>${esc(c.city)}</a>${c.subsidy?.has ? '<span class="badge sub">解体補助金</span>' : ""}</li>`).join("")}</ul></div>`).join("");
   const recentRows = [...cities].filter((c) => c.sodai?.checked_date).sort((a, b) => (b.sodai.checked_date > a.sodai.checked_date ? 1 : b.sodai.checked_date < a.sodai.checked_date ? -1 : a.city.localeCompare(b.city, "ja"))).slice(0, 12).map((c) => `<tr><td><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a></td><td>${(c.sodai.fee_examples || []).length >= 3 ? "料金表あり" : "重量制・公式で確認"}</td><td>${c.sodai.bring_in ? "案内あり" : "—"}</td><td>${c.ay?.demolition_subsidy?.name || c.subsidy?.has ? "あり" : "—"}</td><td class="n">${esc(c.sodai.checked_date)}</td></tr>`).join("");
   // トップの分類カードは、ラッコの月間検索数（research/24）が大きい記事から並べる。リストに無い記事は後ろ。
@@ -543,6 +543,7 @@ function home() {
     return items.length ? `<li class="cat"><h3><a href="${url("/guide/#" + cat.id)}">${esc(cat.name)}</a><small>${items.length}本</small></h3><ul>${items.slice(0, 3).map((g) => guideItem(g, false)).join("")}</ul></li>` : "";
   }).join("");
   const body = `
+${photo}
 <section class="hero"><div class="inner">
   <div>
     <p class="eyebrow">新潟県30市町村の公式情報と、長岡の運営者が会って確かめた業者</p>
@@ -563,7 +564,6 @@ function home() {
   </aside>
 </div></section>
 <p class="data-note"><span><b>30</b>市町村の公式サイトを出典に掲載</span><span>県内<b>${(prices.companies || []).length}</b>社の公開料金を集計（1K <b>${yen(Math.min(...(prices.companies || []).map((x) => x.k1).filter(Boolean)))}</b>〜）</span><span>相談・訪問見積もりは<b>無料</b>。運営者が確認してから地元の許可業者へ</span></p>
-${photo}
 <ol class="steps">
   <li><h2>市のルールを知る</h2><p>粗大ごみは申し込み制で、品目ごとに料金が決まっています。持ち込めば早く安く済むこともあります。</p><a href="${url("/city/")}">市町村別ガイドへ</a></li>
   <li><h2>進め方と費用を把握する</h2><p>何から手を付けるか、帰省2回で終わらせる段取り、冬の雪対策、業者に頼む分かれ目。</p><a href="${url("/guide/")}">実家じまいの進め方へ</a></li>

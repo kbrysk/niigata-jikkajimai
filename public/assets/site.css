@@ -252,7 +252,12 @@ dl.kv dd{margin:0}
 /* 写真枠（運営者の実写1枚だけ。ファイルが無ければ出ない） */
 .photo{margin:36px 0 0;max-width:var(--wide)}
 .photo img{display:block;width:100%;aspect-ratio:3/1.4;object-fit:cover}
-.photo figcaption{font-size:13px;color:var(--mute);margin-top:6px}
+.photo figcaption{font-size:12px;color:var(--mute);margin-top:4px;text-align:right}
+/* トップの版画風イメージ（ファーストビュー）。題字の下、藍の面の上に細長く */
+.photo.top{margin:14px auto 0;max-width:var(--wide)}
+.photo.top img{aspect-ratio:auto;height:210px;object-position:center 38%;border-top:2px solid var(--line-strong)}
+.photo.top figcaption{margin:4px 0 12px}
+@media (max-width:640px){.photo.top{margin-top:8px}.photo.top img{height:130px;object-position:62% 40%}.photo.top figcaption{font-size:11px;margin-bottom:8px}}
 /* 市町村ディレクトリ: 4列、密に */
 .dir-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0 28px;border-top:1px solid var(--line)}
 .dir-col h3{font-size:14px;margin:12px 0 4px;color:var(--mute)}
