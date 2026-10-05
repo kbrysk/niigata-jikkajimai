@@ -356,6 +356,7 @@ ${faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></det
 </section>
 
 <section class="next-read"><h2>同じ${esc(c.area)}エリアの市町村</h2><ul class="city-grid">${(AREA[c.area] || []).filter((id) => id !== c.cityId).map((id) => cityById[id]).filter(Boolean).map((n) => `<li><a href="${url(`/city/${n.cityId}/`)}">${esc(n.city)}</a>${n.core ? '<span class="badge">詳細</span>' : ""}</li>`).join("")}</ul></section>
+${(() => { const own = guides.filter((g) => String(g.meta.title || "").includes(c.city) || String(g.meta.description || "").startsWith(c.city) || [].concat(g.meta.targetKeywords || []).some((k) => String(k).startsWith(c.city) || String(k).startsWith(c.city.replace(/[市町村]$/, "") + " ")) || (/[町村]$/.test(c.city) && g.slug === "chouson-akiya-bank-niigata")); return own.length ? `<section class="next-read"><h2>${esc(c.city)}について書いた記事</h2><ul class="guide-list compact">${own.map((g) => `<li><a href="${url(`/guide/${g.slug}/`)}"><strong>${esc(g.meta.title)}</strong></a></li>`).join("")}</ul></section>` : ""; })()}
 <section class="next-read"><h2>${esc(c.city)}の実家じまいで、次に読む</h2><ul class="guide-list compact">${guides.filter((g) => ["jikkajimai-hiyou-niigata", "jikkajimai-tejun-niigata", "jibun-de-dasu-ka-gyousha-ka", "enpou-kara-jikkajimai"].includes(g.slug)).map((g) => `<li><a href="${url(`/guide/${g.slug}/`)}"><strong>${esc(g.meta.title)}</strong></a></li>`).join("")}</ul></section>
 
 ${sourceList(srcs, s.checked_date)}
