@@ -57,9 +57,9 @@ const GUIDE_CATS = [
   { id: "susume", name: "進め方と費用", lead: "何から始めるか、いくらかかるか、県外からの段取り、親との話し方。", test: () => true },
 ];
 const guideCat = (g) => GUIDE_CATS.find((c) => c.test(g.slug));
-// 版画風イメージ（ChatGPTで生成、藍と生成りの2色）。ファイルがあるときだけ出し、生成画像であることを必ず書く
+// 版画風イメージ（藍と生成りの2色）。ファイルがあるときだけ出す。キャプションは付けない（2026-10-05 大久保さん指示）
 const CAT_IMG_ALT = { susume: "秋の田のあぜ道に並ぶ並木", gomi: "片付けの途中の実家の座敷", gyosha: "農家の前に止まった小型トラック", akiya: "田んぼの中の古い農家と土蔵", yuki: "雪に覆われた田と農家" };
-const catImg = (id, cls = "") => fs.existsSync(path.join(ROOT, `public/assets/cat-${id}.jpg`)) ? `<figure class="photo cat ${cls}"><img src="${url(`/assets/cat-${id}.jpg`)}" alt="${esc(CAT_IMG_ALT[id] || "")}" loading="lazy" decoding="async"><figcaption>イメージ図（生成画像）</figcaption></figure>` : "";
+const catImg = (id, cls = "") => fs.existsSync(path.join(ROOT, `public/assets/cat-${id}.jpg`)) ? `<figure class="photo cat ${cls}"><img src="${url(`/assets/cat-${id}.jpg`)}" alt="${esc(CAT_IMG_ALT[id] || "")}" loading="lazy" decoding="async"></figure>` : "";
 const guideItem = (g, withDesc = true) => `<li><a href="${url(`/guide/${g.slug}/`)}"><strong>${esc(g.meta.title)}</strong>${withDesc ? `<span>${esc(g.meta.description || "")}</span>` : ""}</a></li>`;
 const latestCheck = () => cities.map((c) => c.sodai?.checked_date).filter(Boolean).sort().pop() || TODAY;
 // 確認印: 朱の角印。サイト全体の署名として、市町村・比較・ガイドの各ページの決まった位置に押す
@@ -374,7 +374,7 @@ ${(s.notes || "").toString().includes("要確認") ? `<p class="small">※ 一�
 
 function cityIndex() {
   const groups = Object.entries(AREA).map(([area, ids]) => `<section><h2>${esc(area)}</h2><ul class="city-grid">${ids.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a>${c.core ? '<span class="badge">詳細</span>' : ""}${c.subsidy?.has ? '<span class="badge sub">解体補助金</span>' : ""}</li>`).join("")}</ul></section>`).join("");
-  const body = `<header class="page-head"><h1>新潟県 市町村別の粗大ごみ・実家じまいガイド</h1><p class="lead">30市町村ごとに、粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、空き家バンク、雪の支援をまとめています。「詳細」のある市は、料金表や持ち込み施設まで掲載しています。手数料の違いを一覧で見るなら<a href="${url("/data/sodai-hikaku/")}">30市町村の比較表</a>へ。</p></header>${fs.existsSync(path.join(ROOT, "public/assets/photo-city.jpg")) ? `<figure class="photo cat lead"><img src="${url("/assets/photo-city.jpg")}" alt="雪の越後平野を流れる川と田" loading="lazy" decoding="async"><figcaption>イメージ図（生成画像）</figcaption></figure>` : ""}${searchBox("市町村名や品目で探す")}${groups}${ctaBox()}`;
+  const body = `<header class="page-head"><h1>新潟県 市町村別の粗大ごみ・実家じまいガイド</h1><p class="lead">30市町村ごとに、粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、空き家バンク、雪の支援をまとめています。「詳細」のある市は、料金表や持ち込み施設まで掲載しています。手数料の違いを一覧で見るなら<a href="${url("/data/sodai-hikaku/")}">30市町村の比較表</a>へ。</p></header>${fs.existsSync(path.join(ROOT, "public/assets/photo-city.jpg")) ? `<figure class="photo cat lead"><img src="${url("/assets/photo-city.jpg")}" alt="雪の越後平野を流れる川と田" loading="lazy" decoding="async"></figure>` : ""}${searchBox("市町村名や品目で探す")}${groups}${ctaBox()}`;
   write("/city/", layout({ title: "市町村別ガイド｜新潟県30市町村の粗大ごみ・空き家", description: "新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、空き家バンク、雪下ろし支援を市町村ごとに一覧。各市町村の公式サイトを出典に、確認日を明記しています。", pathname: "/city/", body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }] }));
 }
 
@@ -535,7 +535,7 @@ function home() {
   // 写真枠: public/assets/photo-home.jpg を置くと表示される（運営者の実写のみ。AI生成画像は使わない）。説明文は photo-home.txt
   const photoFile = path.join(ROOT, "public/assets/photo-home.jpg");
   const photoCap = fs.existsSync(path.join(ROOT, "public/assets/photo-home.txt")) ? fs.readFileSync(path.join(ROOT, "public/assets/photo-home.txt"), "utf8").trim() : "";
-  const photo = fs.existsSync(photoFile) ? `<figure class="photo top"><img src="${url("/assets/photo-home.jpg")}" alt="${esc(photoCap)}" fetchpriority="high" decoding="async"><figcaption>${esc(photoCap)}</figcaption></figure>` : "";
+  const photo = fs.existsSync(photoFile) ? `<figure class="photo top"><img src="${url("/assets/photo-home.jpg")}" alt="信濃川と越後平野の田園" fetchpriority="high" decoding="async"></figure>` : "";
   const dirCols = Object.entries(AREA).map(([area, ids]) => `<div class="dir-col"><h3>${esc(area)}<small>${ids.length}市町村</small></h3><ul>${ids.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}"${c.core ? ' class="core"' : ""}>${esc(c.city)}</a>${c.subsidy?.has ? '<span class="badge sub">解体補助金</span>' : ""}</li>`).join("")}</ul></div>`).join("");
   const recentRows = [...cities].filter((c) => c.sodai?.checked_date).sort((a, b) => (b.sodai.checked_date > a.sodai.checked_date ? 1 : b.sodai.checked_date < a.sodai.checked_date ? -1 : a.city.localeCompare(b.city, "ja"))).slice(0, 12).map((c) => `<tr><td><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a></td><td>${(c.sodai.fee_examples || []).length >= 3 ? "料金表あり" : "重量制・公式で確認"}</td><td>${c.sodai.bring_in ? "案内あり" : "—"}</td><td>${c.ay?.demolition_subsidy?.name || c.subsidy?.has ? "あり" : "—"}</td><td class="n">${esc(c.sodai.checked_date)}</td></tr>`).join("");
   // トップの分類カードは、ラッコの月間検索数（research/24）が大きい記事から並べる。リストに無い記事は後ろ。
