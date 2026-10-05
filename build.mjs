@@ -535,8 +535,11 @@ function home() {
   const photo = fs.existsSync(photoFile) ? `<figure class="photo"><img src="${url("/assets/photo-home.jpg")}" alt="${esc(photoCap)}" loading="lazy" decoding="async"><figcaption>${esc(photoCap)}</figcaption></figure>` : "";
   const dirCols = Object.entries(AREA).map(([area, ids]) => `<div class="dir-col"><h3>${esc(area)}<small>${ids.length}市町村</small></h3><ul>${ids.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}"${c.core ? ' class="core"' : ""}>${esc(c.city)}</a>${c.subsidy?.has ? '<span class="badge sub">解体補助金</span>' : ""}</li>`).join("")}</ul></div>`).join("");
   const recentRows = [...cities].filter((c) => c.sodai?.checked_date).sort((a, b) => (b.sodai.checked_date > a.sodai.checked_date ? 1 : b.sodai.checked_date < a.sodai.checked_date ? -1 : a.city.localeCompare(b.city, "ja"))).slice(0, 12).map((c) => `<tr><td><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a></td><td>${(c.sodai.fee_examples || []).length >= 3 ? "料金表あり" : "重量制・公式で確認"}</td><td>${c.sodai.bring_in ? "案内あり" : "—"}</td><td>${c.ay?.demolition_subsidy?.name || c.subsidy?.has ? "あり" : "—"}</td><td class="n">${esc(c.sodai.checked_date)}</td></tr>`).join("");
+  // トップの分類カードは、ラッコの月間検索数（research/24）が大きい記事から並べる。リストに無い記事は後ろ。
+  const HOME_PRIORITY = ["niigata-shi-sodaigomi", "nagaoka-shi-sodaigomi", "nagaoka-gomi-bunbetsu-mayou", "niigata-shi-gomi-mochikomi", "nagaoka-recycle-shop", "niigata-shi-recycle-shop", "nagaoka-akiya-bank", "joetsu-niigata-akiya-bank", "akiya-koteishisanzei-6bai", "yukioroshi-gyosha-ryokin-niigata", "akiya-yukioroshi-hiyou-gyosha-niigata", "yukioroshi-shien-niigata-30", "jikkajimai-tejun-niigata", "jikkajimai-hiyou-niigata", "jikkajimai-hojokin-niigata", "niigata-shi-kyoka-gyosha", "nagaoka-shi-kyoka-gyosha", "ihinseiri-niigata-shi-gyosha-erabikata", "jikkajimai-gyosha-hiyou-niigata"];
+  const prio = (g) => { const i = HOME_PRIORITY.indexOf(g.slug); return i < 0 ? 999 : i; };
   const guideCards = ["susume", "gomi", "gyosha", "akiya", "yuki"].map((id) => GUIDE_CATS.find((c) => c.id === id)).map((cat) => {
-    const items = guides.filter((g) => guideCat(g).id === cat.id);
+    const items = guides.filter((g) => guideCat(g).id === cat.id).sort((a, b) => prio(a) - prio(b));
     return items.length ? `<li class="cat"><h3><a href="${url("/guide/#" + cat.id)}">${esc(cat.name)}</a><small>${items.length}本</small></h3><ul>${items.slice(0, 3).map((g) => guideItem(g, false)).join("")}</ul></li>` : "";
   }).join("");
   const body = `
