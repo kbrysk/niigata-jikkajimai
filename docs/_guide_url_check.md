@@ -1,6 +1,6 @@
-# 記事内の外部URL生存確認（2026-10-04）
+# 記事内の外部URL生存確認（2026-10-05）
 
-対象URL 706 件 ／ 正常 702 ／ 要対応（404・5xx・接続失敗） 2 ／ 403（取得不可） 2 ／ リダイレクト先が別URL 11
+対象URL 709 件 ／ 正常 705 ／ 要対応（404・5xx・接続失敗） 2 ／ 403（取得不可） 2 ／ リダイレクト先が別URL 10
 
 再実行: `PYTHONUTF8=1 python scripts/_check_guide_urls.py`
 
@@ -22,14 +22,13 @@
 
 | 旧URL | 転送先 | 記事 |
 |---|---|---|
-| http://www.town.izumozaki.niigata.jp/takuchi/bank/flow.html | https://www.town.izumozaki.niigata.jp:443/takuchi/bank/flow.html | chouson-akiya-bank-niigata |
-| http://www.town.izumozaki.niigata.jp/takuchi/bank/owner.html | https://www.town.izumozaki.niigata.jp:443/takuchi/bank/owner.html | chouson-akiya-bank-niigata |
-| http://www.town.izumozaki.niigata.jp/takuchi/ | https://www.town.izumozaki.niigata.jp:443/takuchi/ | chouson-akiya-bank-niigata |
-| http://www.town.izumozaki.niigata.jp/_files/00026970/H291218yoko.pdf | https://www.town.izumozaki.niigata.jp:443/_files/00026970/H291218yoko.pdf | chouson-akiya-bank-niigata |
-| https://sekikawa-vill.note.jp/n/n123700c94bc6 | https://sekikawa-vill.note.jp/n/n123700c94bc6?gs=e1547a889e9a94c5ba36ffbf23c9a369 | chouson-akiya-bank-niigata |
-| https://sekikawa-vill.note.jp/n/na270e0ae718e | https://sekikawa-vill.note.jp/n/na270e0ae718e?gs=82c882654d0ec531cadbcfca3c74aaf9 | chouson-akiya-bank-niigata |
-| https://sekikawa-vill.note.jp/n/n2f12da385d77 | https://sekikawa-vill.note.jp/n/n2f12da385d77?gs=30fc6085fc38d6ababdcf34ae37eef22 | chouson-akiya-bank-niigata |
-| http://www.post.japanpost.jp/service/tenkyo/ | https://www.post.japanpost.jp/service/receive/relocation/ | enpou-kara-jikkajimai, jikkajimai-tejun-niigata |
-| https://www.city.itoigawa.lg.jp/3385.htm | https://www.city.itoigawa.lg.jp/page/1541.html | myoko-itoigawa-uonuma-akiya-bank |
-| https://www.city.itoigawa.lg.jp/6771.htm | https://www.city.itoigawa.lg.jp/page/1415.html | myoko-itoigawa-uonuma-akiya-bank |
-| https://www.city.itoigawa.lg.jp/6427.htm | https://www.city.itoigawa.lg.jp/page/1910.html | myoko-itoigawa-uonuma-akiya-bank, yukioroshi-shien-niigata-30 |
+| http://www.vill.sekikawa.niigata.jp/life/13/696/index.html | https://www.vill.sekikawa.niigata.jp:443/life/13/696/index.html | chouson-akiya-bank-niigata |
+| http://www.vill.sekikawa.niigata.jp/life/13/696/699/index.html | https://www.vill.sekikawa.niigata.jp:443/life/13/696/699/index.html | chouson-akiya-bank-niigata |
+| http://www.vill.sekikawa.niigata.jp/reiki_int/reiki_honbun/e499RG00000598.html | https://www.vill.sekikawa.niigata.jp:443/reiki_int/reiki_honbun/e499RG00000598.html | chouson-akiya-bank-niigata |
+| http://www.vill.sekikawa.niigata.jp/life/13/696/3545/index.html | https://www.vill.sekikawa.niigata.jp:443/life/13/696/3545/index.html | chouson-akiya-bank-niigata |
+| http://www.vill.sekikawa.niigata.jp/file/01%E8%A6%81%E7%B6%B1.pdf | https://www.vill.sekikawa.niigata.jp:443/file/01%E8%A6%81%E7%B6%B1.pdf | chouson-akiya-bank-niigata |
+| https://sekikawa-vill.note.jp/n/n123700c94bc6 | https://sekikawa-vill.note.jp/n/n123700c94bc6?gs=f20dad0ad968d3b4210d6714801b4682 | chouson-akiya-bank-niigata |
+| https://sekikawa-vill.note.jp/n/na270e0ae718e | https://sekikawa-vill.note.jp/n/na270e0ae718e?gs=6aa68aa2d132f8e661307ead458220d5 | chouson-akiya-bank-niigata |
+| https://sekikawa-vill.note.jp/n/n2f12da385d77 | https://sekikawa-vill.note.jp/n/n2f12da385d77?gs=ce37800fe633c1a7ffb610f4372a6859 | chouson-akiya-bank-niigata |
+| http://www.vill.sekikawa.niigata.jp/life/13/bb3953ab80a8/index.html | https://www.vill.sekikawa.niigata.jp:443/life/13/bb3953ab80a8/index.html | chouson-akiya-bank-niigata, jikkajimai-hojokin-niigata |
+| http://www.vill.sekikawa.niigata.jp/life/8/4085/index.html | https://www.vill.sekikawa.niigata.jp:443/life/8/4085/index.html | yukioroshi-gyosha-ryokin-niigata, yukioroshi-shien-niigata-30 |
