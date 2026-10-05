@@ -215,6 +215,7 @@ updated: 2026-10-02
 - [新潟の実家じまいの手順｜何から始める？7つの順番と期限の早見表](../jikkajimai-tejun-niigata/)
 - [妙高市・糸魚川市・魚沼市・南魚沼市の空き家バンク](../myoko-itoigawa-uonuma-akiya-bank/)
 - [新潟県30市町村の雪下ろし・除雪支援一覧](../yukioroshi-shien-niigata-30/)
+- [新潟の雪下ろし料金に公的な目安なし](../yukioroshi-gyosha-ryokin-niigata/)
 
 ## 出典
 
