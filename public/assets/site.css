@@ -253,6 +253,17 @@ dl.kv dd{margin:0}
 .photo{margin:36px 0 0;max-width:var(--wide)}
 .photo img{display:block;width:100%;aspect-ratio:3/1.4;object-fit:cover}
 .photo figcaption{font-size:12px;color:var(--mute);margin-top:4px;text-align:right}
+/* 分類ごとの版画風イメージ */
+.photo.cat{margin:10px 0 8px;max-width:var(--read)}
+.photo.cat img{aspect-ratio:auto;height:180px;object-fit:cover;object-position:center 55%;border-top:2px solid var(--line-strong)}
+.photo.cat figcaption{font-size:11.5px;margin-top:3px}
+.photo.cat.lead{margin:18px 0 6px}
+.photo.cat.lead img{height:200px}
+.photo.cat.thumb{float:right;width:132px;margin:2px 0 6px 14px}
+.photo.cat.thumb img{height:74px;border-top-width:1px}
+.photo.cat.thumb figcaption{display:none}
+.guide-cats>li::after{content:"";display:block;clear:both}
+@media (max-width:640px){.photo.cat img,.photo.cat.lead img{height:140px}.photo.cat.thumb{width:96px}.photo.cat.thumb img{height:56px}}
 /* トップの版画風イメージ（ファーストビュー）。題字の下、藍の面の上に細長く */
 .photo.top{margin:14px auto 0;max-width:var(--wide)}
 .photo.top img{aspect-ratio:auto;height:210px;object-position:center 38%;border-top:2px solid var(--line-strong)}

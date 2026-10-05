@@ -57,6 +57,9 @@ const GUIDE_CATS = [
   { id: "susume", name: "進め方と費用", lead: "何から始めるか、いくらかかるか、県外からの段取り、親との話し方。", test: () => true },
 ];
 const guideCat = (g) => GUIDE_CATS.find((c) => c.test(g.slug));
+// 版画風イメージ（ChatGPTで生成、藍と生成りの2色）。ファイルがあるときだけ出し、生成画像であることを必ず書く
+const CAT_IMG_ALT = { susume: "秋の田のあぜ道に並ぶ並木", gomi: "片付けの途中の実家の座敷", gyosha: "農家の前に止まった小型トラック", akiya: "田んぼの中の古い農家と土蔵", yuki: "雪に覆われた田と農家" };
+const catImg = (id, cls = "") => fs.existsSync(path.join(ROOT, `public/assets/cat-${id}.jpg`)) ? `<figure class="photo cat ${cls}"><img src="${url(`/assets/cat-${id}.jpg`)}" alt="${esc(CAT_IMG_ALT[id] || "")}" loading="lazy" decoding="async"><figcaption>イメージ図（生成画像）</figcaption></figure>` : "";
 const guideItem = (g, withDesc = true) => `<li><a href="${url(`/guide/${g.slug}/`)}"><strong>${esc(g.meta.title)}</strong>${withDesc ? `<span>${esc(g.meta.description || "")}</span>` : ""}</a></li>`;
 const latestCheck = () => cities.map((c) => c.sodai?.checked_date).filter(Boolean).sort().pop() || TODAY;
 // 確認印: 朱の角印。サイト全体の署名として、市町村・比較・ガイドの各ページの決まった位置に押す
@@ -371,7 +374,7 @@ ${(s.notes || "").toString().includes("要確認") ? `<p class="small">※ 一�
 
 function cityIndex() {
   const groups = Object.entries(AREA).map(([area, ids]) => `<section><h2>${esc(area)}</h2><ul class="city-grid">${ids.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a>${c.core ? '<span class="badge">詳細</span>' : ""}${c.subsidy?.has ? '<span class="badge sub">解体補助金</span>' : ""}</li>`).join("")}</ul></section>`).join("");
-  const body = `<header class="page-head"><h1>新潟県 市町村別の粗大ごみ・実家じまいガイド</h1><p class="lead">30市町村ごとに、粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、空き家バンク、雪の支援をまとめています。「詳細」のある市は、料金表や持ち込み施設まで掲載しています。手数料の違いを一覧で見るなら<a href="${url("/data/sodai-hikaku/")}">30市町村の比較表</a>へ。</p></header>${searchBox("市町村名や品目で探す")}${groups}${ctaBox()}`;
+  const body = `<header class="page-head"><h1>新潟県 市町村別の粗大ごみ・実家じまいガイド</h1><p class="lead">30市町村ごとに、粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、空き家バンク、雪の支援をまとめています。「詳細」のある市は、料金表や持ち込み施設まで掲載しています。手数料の違いを一覧で見るなら<a href="${url("/data/sodai-hikaku/")}">30市町村の比較表</a>へ。</p></header>${fs.existsSync(path.join(ROOT, "public/assets/photo-city.jpg")) ? `<figure class="photo cat lead"><img src="${url("/assets/photo-city.jpg")}" alt="雪の越後平野を流れる川と田" loading="lazy" decoding="async"><figcaption>イメージ図（生成画像）</figcaption></figure>` : ""}${searchBox("市町村名や品目で探す")}${groups}${ctaBox()}`;
   write("/city/", layout({ title: "市町村別ガイド｜新潟県30市町村の粗大ごみ・空き家", description: "新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、空き家バンク、雪下ろし支援を市町村ごとに一覧。各市町村の公式サイトを出典に、確認日を明記しています。", pathname: "/city/", body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }] }));
 }
 
@@ -423,13 +426,13 @@ function guidePages() {
     const m = g.meta;
     const artLd = { "@context": "https://schema.org", "@type": "Article", headline: m.title, description: m.description, dateModified: m.updated || TODAY, author: { "@type": "Organization", name: SITE.operator }, publisher: { "@type": "Organization", name: SITE.name }, mainEntityOfPage: abs(`/guide/${g.slug}/`) };
     const cityBox = `<section class="next-read"><h2>市町村ごとの粗大ごみの料金・申し込み・持ち込み先</h2><p class="small">実家のある市町村を選ぶと、粗大ごみの料金表、持ち込み施設、空き家の解体補助金を確認できます。</p><ul class="city-grid">${CORE.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a></li>`).join("")}</ul><p><a href="${url("/city/")}">30市町村すべてを見る →</a> ／ <a href="${url("/data/sodai-hikaku/")}">30市町村の手数料・持ち込み比較表 →</a></p></section>`;
-    const body = `<article class="guide"><header class="page-head">${seal(m.updated || TODAY, "更新")}<p class="eyebrow">実家じまいの進め方</p><h1>${esc(m.title)}</h1><p class="lead">${esc(m.description || "")}</p><p class="small">更新日: ${esc(m.updated || TODAY)}</p></header><div class="prose">${g.html}</div>${cityBox}${ctaBox()}</article>`;
+    const body = `<article class="guide"><header class="page-head">${seal(m.updated || TODAY, "更新")}<p class="eyebrow">実家じまいの進め方</p><h1>${esc(m.title)}</h1><p class="lead">${esc(m.description || "")}</p><p class="small">更新日: ${esc(m.updated || TODAY)}</p></header>${catImg(guideCat(g).id, "lead")}<div class="prose">${g.html}</div>${cityBox}${ctaBox()}</article>`;
     write(`/guide/${g.slug}/`, layout({ title: m.title, description: m.description || "", pathname: `/guide/${g.slug}/`, body, breadcrumbs: [{ name: "実家じまいの進め方", path: "/guide/" }, { name: m.title, path: `/guide/${g.slug}/` }], jsonld: [artLd], updated: m.updated }));
   }
   const catOrder = ["susume", "gomi", "gyosha", "akiya", "yuki"];
   const sections = catOrder.map((id) => GUIDE_CATS.find((c) => c.id === id)).map((cat) => {
     const items = guides.filter((g) => guideCat(g).id === cat.id);
-    return items.length ? `<section id="${cat.id}"><h2>${esc(cat.name)}<small class="cnt">${items.length}本</small></h2><p class="sub">${esc(cat.lead)}</p><ul class="guide-list">${items.map((g) => guideItem(g)).join("")}</ul></section>` : "";
+    return items.length ? `<section id="${cat.id}"><h2>${esc(cat.name)}<small class="cnt">${items.length}本</small></h2><p class="sub">${esc(cat.lead)}</p>${catImg(cat.id, "sec")}<ul class="guide-list">${items.map((g) => guideItem(g)).join("")}</ul></section>` : "";
   }).join("");
   const catNav = `<nav class="toc" aria-label="分類"><ol>${catOrder.map((id) => GUIDE_CATS.find((c) => c.id === id)).map((cat) => `<li><a href="#${cat.id}">${esc(cat.name)}（${guides.filter((g) => guideCat(g).id === cat.id).length}）</a></li>`).join("")}</ol></nav>`;
   write("/guide/", layout({ title: "実家じまいの進め方（新潟版）", description: "新潟の実家を片付ける手順と費用、県外からの段取り、冬の雪対策、品目別のごみの出し方、空き家の税金と売却、業者に頼む基準をまとめたガイド一覧。公式サイトを出典に確認日を明記。", pathname: "/guide/", body: `<header class="page-head"><h1>実家じまいの進め方（新潟版）<small class="cnt">${guides.length}本</small></h1><p class="lead">何から始めるか、いくらかかるか、県外からどう進めるか、冬はどうするか。新潟の事情に合わせて書いています。</p></header>${searchBox("ガイドの中を探す")}${catNav}${sections}${ctaBox()}`, breadcrumbs: [{ name: "実家じまいの進め方", path: "/guide/" }] }));
@@ -441,7 +444,7 @@ function gyoshaPage() {
   const stat = (k) => { const v = cs.map((c) => c[k]).filter((x) => x); v.sort((a, b) => a - b); return v.length ? { n: v.length, min: v[0], max: v[v.length - 1], med: v[Math.floor(v.length / 2)] } : null; };
   const rows = [["1K", stat("k1")], ["1LDK", stat("ldk1")], ["2LDK", stat("ldk2")], ["3LDK", stat("ldk3")]].map(([l, s]) => s ? `<tr><td>${l}</td><td class="n">${yen(s.min)}〜</td><td class="n">${yen(s.med)}〜</td><td class="n">${yen(s.max)}〜</td><td class="n">${s.n}社</td></tr>` : "").join("");
   const list = cs.map((c) => `<tr><td>${esc(c.name)}${c.badge ? `<br><span class="small">${esc(c.badge)}</span>` : ""}</td><td>${esc(c.area)}</td><td class="n">${c.k1 ? yen(c.k1) + "〜" : "—"}</td><td class="n">${c.ldk1 ? yen(c.ldk1) + "〜" : "—"}</td><td class="n">${c.ldk2 ? yen(c.ldk2) + "〜" : "—"}</td><td class="n">${c.ldk3 ? yen(c.ldk3) + "〜" : "—"}</td></tr>`).join("");
-  const body = `<article class="gyosha"><header class="page-head"><h1>新潟の遺品整理・実家片付け業者の料金と選び方</h1><p class="lead">新潟県内の業者が公開している間取り別の料金を集計し、見積もりで確認すべき点と、許可のある業者の見分け方をまとめました。</p><p class="small">料金の出典: ${esc(prices.source || "")}（確認日 ${esc(prices.checked || TODAY)}）。各社の「〜円」表記を転記しています。最新の料金は各社にご確認ください。</p></header>
+  const body = `<article class="gyosha"><header class="page-head"><h1>新潟の遺品整理・実家片付け業者の料金と選び方</h1><p class="lead">新潟県内の業者が公開している間取り別の料金を集計し、見積もりで確認すべき点と、許可のある業者の見分け方をまとめました。</p><p class="small">料金の出典: ${esc(prices.source || "")}（確認日 ${esc(prices.checked || TODAY)}）。各社の「〜円」表記を転記しています。最新の料金は各社にご確認ください。</p></header>${catImg("gyosha", "lead")}
 <section><h2>間取り別の料金の目安（新潟県内${cs.length}社の公開料金）</h2><table class="fee"><thead><tr><th>間取り</th><th class="n">最安</th><th class="n">中央値</th><th class="n">最高</th><th class="n">公開社数</th></tr></thead><tbody>${rows}</tbody></table><p>「〜円」は最低料金です。実際の見積もりは、物の量、階段の有無、トラックを停められるか、買取できる物があるか、積雪期かどうかで変わります。</p></section>
 <section><h2>見積もりで確認する6つのこと</h2><ol class="checks"><li><strong>一般廃棄物収集運搬の許可</strong>（市町村ごとの許可。許可業者の一覧は各市の公式サイトにあります）か、許可業者と提携しているか</li><li><strong>見積もりが訪問か写真か</strong>。一軒家は訪問見積もりが基本です</li><li><strong>追加料金の条件</strong>（量が増えた場合、エアコンの取り外し、仏壇や神棚の供養）</li><li><strong>買取の有無と、買取額を作業費から差し引けるか</strong></li><li><strong>作業日と立ち会い</strong>。遠方の場合、鍵の受け渡しと作業後の写真報告ができるか</li><li><strong>積雪期の対応</strong>。12〜3月は搬出経路の除雪が必要になることがあります</li></ol></section>
 <section><h2>新潟県内の業者と公開料金の一覧</h2><div class="table-wrap"><table class="fee"><thead><tr><th>業者</th><th>所在地</th><th class="n">1K</th><th class="n">1LDK</th><th class="n">2LDK</th><th class="n">3LDK</th></tr></thead><tbody>${list}</tbody></table></div><p class="small">掲載順は出典サイトの表示順です。当サイトは特定の業者を推薦するものではありません。所在地が「新潟」とだけ表記されている業者は、県内のどの地域に対応するかを個別にご確認ください。</p></section>
@@ -511,7 +514,7 @@ function staticPages() {
       : p.slug === "about"
         ? `<div class="person lg"><div><p><strong>${esc(PERSON.name)}</strong></p><p class="small">${esc(PERSON.role)}</p><p>墓じまいの「ハカラウ」、空き家解体補助金の「ふれあいの丘」を運営する中で、「親の家をどう片付けるか」の相談が多いことから、住んでいる新潟に絞ってこのサイトを始めました。</p></div></div>`
         : "";
-    const body = `<article class="page"><header class="page-head"><h1>${esc(m.title)}</h1>${m.description ? `<p class="lead">${esc(m.description)}</p>` : ""}</header>${trust}${person}<div class="prose">${p.html}</div>${m.cta === "true" ? ctaBox() : ""}</article>`;
+    const body = `<article class="page"><header class="page-head"><h1>${esc(m.title)}</h1>${m.description ? `<p class="lead">${esc(m.description)}</p>` : ""}</header>${p.slug === "mitsumori" ? catImg("gomi", "lead") : p.slug === "keisai" ? catImg("gyosha", "lead") : ""}${trust}${person}<div class="prose">${p.html}</div>${m.cta === "true" ? ctaBox() : ""}</article>`;
     write(`/${p.slug}/`, layout({ title: m.title, description: m.description || m.title, pathname: `/${p.slug}/`, body, breadcrumbs: [{ name: m.title, path: `/${p.slug}/` }], noindex: m.noindex === "true", stickyCta: p.slug !== "mitsumori" && p.slug !== "keisai" }));
   }
 }
@@ -540,7 +543,7 @@ function home() {
   const prio = (g) => { const i = HOME_PRIORITY.indexOf(g.slug); return i < 0 ? 999 : i; };
   const guideCards = ["susume", "gomi", "gyosha", "akiya", "yuki"].map((id) => GUIDE_CATS.find((c) => c.id === id)).map((cat) => {
     const items = guides.filter((g) => guideCat(g).id === cat.id).sort((a, b) => prio(a) - prio(b));
-    return items.length ? `<li class="cat"><h3><a href="${url("/guide/#" + cat.id)}">${esc(cat.name)}</a><small>${items.length}本</small></h3><ul>${items.slice(0, 3).map((g) => guideItem(g, false)).join("")}</ul></li>` : "";
+    return items.length ? `<li class="cat">${catImg(cat.id, "thumb")}<h3><a href="${url("/guide/#" + cat.id)}">${esc(cat.name)}</a><small>${items.length}本</small></h3><ul>${items.slice(0, 3).map((g) => guideItem(g, false)).join("")}</ul></li>` : "";
   }).join("");
   const body = `
 ${photo}
