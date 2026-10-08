@@ -5,6 +5,7 @@ import path from "node:path";
 import { marked } from "marked";
 import { fileURLToPath } from "node:url";
 import { renderRoadmap, ROADMAP_SLUG } from "./roadmap.mjs";
+import { loadQa, faqLd as qaFaqLd, extractGuideFaq, renderQaPages } from "./qa.mjs";
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(ROOT, "dist");
@@ -429,7 +430,7 @@ function guidePages() {
     const cityBox = `<section class="next-read"><h2>市町村ごとの粗大ごみの料金・申し込み・持ち込み先</h2><p class="small">実家のある市町村を選ぶと、粗大ごみの料金表、持ち込み施設、空き家の解体補助金を確認できます。</p><ul class="city-grid">${CORE.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a></li>`).join("")}</ul><p><a href="${url("/city/")}">30市町村すべてを見る →</a> ／ <a href="${url("/data/sodai-hikaku/")}">30市町村の手数料・持ち込み比較表 →</a></p></section>`;
     const roadmapData = g.slug === ROADMAP_SLUG ? readJSON(path.join(ROOT, "content/roadmap/roadmap.json"), null) : null;
     const body = roadmapData ? renderRoadmap(roadmapData, { esc, url, cities }) + cityBox : `<article class="guide"><header class="page-head">${seal(m.updated || TODAY, "更新")}<p class="eyebrow">実家じまいの進め方</p><h1>${esc(m.title)}</h1><p class="lead">${esc(m.description || "")}</p><p class="small">更新日: ${esc(m.updated || TODAY)}</p></header>${catImg(guideCat(g).id, "lead")}<div class="prose">${g.html}</div>${cityBox}${ctaBox()}</article>`;
-    write(`/guide/${g.slug}/`, layout({ title: m.title, description: m.description || "", pathname: `/guide/${g.slug}/`, body, breadcrumbs: [{ name: "実家じまいの進め方", path: "/guide/" }, { name: m.title, path: `/guide/${g.slug}/` }], jsonld: [artLd], updated: m.updated }));
+    write(`/guide/${g.slug}/`, layout({ title: m.title, description: m.description || "", pathname: `/guide/${g.slug}/`, body, breadcrumbs: [{ name: "実家じまいの進め方", path: "/guide/" }, { name: m.title, path: `/guide/${g.slug}/` }], jsonld: [artLd, ...(() => { const f = roadmapData ? [...(roadmapData.stages || []).flatMap((st) => (st.questions || []).map((q) => ({ q: q.q, a: Array.isArray(q.a) ? q.a.join(" ") : q.a }))), ...(roadmapData.faq || [])] : extractGuideFaq(g.body); return f.length >= 2 ? [qaFaqLd(f)] : []; })()], updated: m.updated }));
   }
   const catOrder = ["susume", "gomi", "gyosha", "akiya", "yuki"];
   const sections = catOrder.map((id) => GUIDE_CATS.find((c) => c.id === id)).map((cat) => {
@@ -600,6 +601,7 @@ function extras() {
     ...published.map((p) => [`/gyosha/${p.id}/`, p.met_date || TODAY]),
     ...cities.map((c) => [`/city/${c.cityId}/`, c.sodai?.checked_date || cityLatest]),
     ...guides.map((g) => [`/guide/${g.slug}/`, g.meta.updated || guideLatest]),
+    ...(qaCats.length ? qaPageList.map((p) => [p.path, p.updated || guideLatest]) : []),
     ...pages.filter((p) => p.meta.noindex !== "true").map((p) => [`/${p.slug}/`, p.meta.updated || guideLatest]),
   ];
   const seen = new Set();
@@ -645,5 +647,13 @@ function extras() {
 
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(OUT, { recursive: true });
-home(); cityIndex(); cities.forEach(cityPage); comparePage(); guidePages(); gyoshaPage(); partnerPages(); searchPage(); staticPages(); extras();
+// ---------- よくある疑問（Q&A） ----------
+const qaCats = loadQa(ROOT);
+const qaPageList = renderQaPages(qaCats, { esc, url });
+function qaPages() {
+  if (!qaCats.length) return;
+  for (const p of qaPageList) write(p.path, layout({ title: p.title, description: p.description, pathname: p.path, body: p.body, breadcrumbs: p.crumbs, jsonld: p.jsonld, updated: p.updated }));
+}
+
+home(); cityIndex(); cities.forEach(cityPage); comparePage(); guidePages(); gyoshaPage(); partnerPages(); searchPage(); staticPages(); qaPages(); extras();
 console.log(`built: ${cities.length} cities, ${guides.length} guides, ${pages.length} pages → ${OUT}`);
