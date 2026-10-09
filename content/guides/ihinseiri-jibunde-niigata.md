@@ -227,3 +227,4 @@ updated: 2026-10-03
 - [遺品の買取（新潟）](../ihin-kaitori-niigata/)
 - [生前整理の進め方（新潟版）](../seizenseiri-niigata/)
 - [特殊清掃・ゴミ屋敷の片付け（新潟）](../tokushu-seisou-gomiyashiki-niigata/)
+- [実家の通帳・権利証・遺言書の探し方](../kichouhin-shorui-sagashikata/)

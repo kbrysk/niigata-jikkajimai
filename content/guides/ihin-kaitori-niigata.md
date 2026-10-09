@@ -246,3 +246,4 @@ updated: 2026-10-03
 - [相続登記の義務化と新潟の法務局](../souzoku-touki-niigata-houmukyoku/)
 - [新潟市のリサイクルショップ・出張買取](../niigata-shi-recycle-shop/)
 - [上越・三条・柏崎のリサイクルショップと買取](../joetsu-sanjo-kashiwazaki-recycle-shop/)
+- [実家の通帳・権利証・遺言書の探し方](../kichouhin-shorui-sagashikata/)

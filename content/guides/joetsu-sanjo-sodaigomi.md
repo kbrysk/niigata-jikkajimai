@@ -187,6 +187,7 @@ updated: 2026-10-02
 - [三条市の粗大ごみ・持ち込み・補助金](../../city/sanjo/)
 - [三条市・燕市・柏崎市の空き家バンク](../sanjo-tsubame-kashiwazaki-akiya-bank/)
 - [上越・三条・柏崎のリサイクルショップと買取](../joetsu-sanjo-kashiwazaki-recycle-shop/)
+- [上越・柏崎・新発田・三条の許可業者の確認方法](../joetsu-kashiwazaki-shibata-sanjo-kyoka-gyosha/)
 
 
 ## 市町村別の粗大ごみガイド

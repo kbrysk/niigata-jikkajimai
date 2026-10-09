@@ -255,3 +255,4 @@ updated: 2026-10-03
 - [遺品の買取（新潟）](../ihin-kaitori-niigata/)
 - [新潟の実家じまいの手順](../jikkajimai-tejun-niigata/)
 - [相続した農地は10か月、山林は90日以内に届出](../nouka-jikka-nouchi-sanrin-niigata/)
+- [実家の通帳・権利証・遺言書の探し方](../kichouhin-shorui-sagashikata/)

@@ -215,3 +215,4 @@ updated: 2026-10-02
 - [柏崎市の市町村ページ](../../city/kashiwazaki/)
 - [三条市・燕市・柏崎市の空き家バンク](../sanjo-tsubame-kashiwazaki-akiya-bank/)
 - [上越・三条・柏崎のリサイクルショップと買取](../joetsu-sanjo-kashiwazaki-recycle-shop/)
+- [上越・柏崎・新発田・三条の許可業者の確認方法](../joetsu-kashiwazaki-shibata-sanjo-kyoka-gyosha/)

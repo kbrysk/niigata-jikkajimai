@@ -196,3 +196,4 @@ updated: 2026-10-02
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
 - [新発田市の市町村ページ](../../city/shibata/)
 - [新発田市・村上市・佐渡市の空き家バンク](../shibata-murakami-sado-akiya-bank/)
+- [上越・柏崎・新発田・三条の許可業者の確認方法](../joetsu-kashiwazaki-shibata-sanjo-kyoka-gyosha/)

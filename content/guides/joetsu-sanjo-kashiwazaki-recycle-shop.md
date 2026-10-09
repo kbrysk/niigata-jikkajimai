@@ -246,6 +246,7 @@ updated: 2026-10-04
 - [遺品の買取（新潟）](../ihin-kaitori-niigata/)
 - [家電4品目の処分（新潟市・長岡市）](../kaden4hinmoku-niigata/)
 - [自分で出す？業者に頼む？新潟の実家片付け、分かれ目の5つの基準](../jibun-de-dasu-ka-gyousha-ka/)
+- [上越・柏崎・新発田・三条の許可業者の確認方法](../joetsu-kashiwazaki-shibata-sanjo-kyoka-gyosha/)
 
 ## 出典
 

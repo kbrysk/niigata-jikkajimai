@@ -224,3 +224,4 @@ updated: 2026-10-03
 - [長岡市の粗大ごみの出し方](../nagaoka-shi-sodaigomi/)
 - [新潟市で遺品整理を頼むとき](../ihinseiri-niigata-shi-gyosha-erabikata/)
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
+- [実家の通帳・権利証・遺言書の探し方](../kichouhin-shorui-sagashikata/)
