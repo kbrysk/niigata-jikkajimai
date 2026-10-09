@@ -59,7 +59,7 @@ for p in pages:
     body = re.sub(r"<script[\s\S]*?</script>", "", s)
     if EMOJI.search(body):
         issues.append(("低", rel, "絵文字・★が含まれる"))
-    for href in re.findall(r'href="([^"#]+)(?:#[^"]*)?"', s):
+    for href in re.findall(r'href="([^"#?]+)(?:[?#][^"]*)?"', s):
         if href.startswith(("http", "mailto:", "tel:", "data:")):
             continue
         target = href if href.startswith("/") else os.path.normpath(os.path.join(page_dir, href)).replace("\\", "/")

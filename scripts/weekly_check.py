@@ -28,6 +28,8 @@ lines.append(f"- 品質点検: 対象 {p[0]} ページ／指摘 {p[1]} 件（高
 _, u = run(["python", "scripts/_check_guide_urls.py"])
 q = (u.split() + ["?"] * 5)[:5]
 lines.append(f"- 記事内URL: {q[0]} 件中 正常 {q[1]}／要対応 {q[2]}／403 {q[3]}／転送先あり {q[4]}。詳細は docs/_guide_url_check.md")
+_, dt = run(["python", "scripts/_check_dates.py"])
+lines.append(f"- 期限が過ぎた締切の記載: {dt.strip() or '?'} 件。docs/_expired_dates.md を見て「受付終了」に直す")
 run(["python", "scripts/_build_youkakunin.py"])
 cnt = os.path.join(ROOT, "docs", "_youkakunin_count.txt")
 if os.path.exists(cnt):
