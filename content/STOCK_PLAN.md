@@ -1,6 +1,6 @@
 # コンテンツ在庫計画（2026-10-02 作成・2026-10-03 更新）
 
-2026-10-05 時点: 公開70本（市別ページ30を除く）／在庫0本／保留 1本（#56は3サイト役割分担の承認後）。空き家バンクは30市町村すべてをカバー。
+2026-10-09 時点: 公開74本（市別ページ30を除く）＋進め方ページ（jikkajimai-tejun-niigata を作り替え）＋疑問Q&A集453問（content/qa、8分類）／在庫0本／保留 1本（#56は3サイト役割分担の承認後）。
 
 運用: 執筆は `content/stock/` に書く（未公開）。裏取り後に `content/guides/` へ移すと次の push で公開される。status は本表で管理する。
 検索数は ラッコキーワード（2026-09-28〜10-01取得、新潟県内KW）と全国KW（2026-09-26）。数値が無いものは [要確認] で、公開順の判断は検索数の大きい順＋入口→出口の導線で決める。
@@ -75,6 +75,10 @@
 | 66 | D | kamo-gosen-agano-tainai-akiya-bank | 加茂市・五泉市・阿賀野市・胎内市 空き家バンク | published（10/5） |
 | 67 | D | chouson-akiya-bank-niigata | 町村10（湯沢・津南・阿賀・聖籠ほか）空き家バンク | published（10/5） |
 | 68 | E 雪 | yukioroshi-gyosha-ryokin-niigata | 雪下ろし 業者（冬997）／雪下ろし 料金（冬540）／代行 | published（10/5） |
+| 69 | F | kichouhin-shorui-sagashikata | 実家 通帳 探し方／亡くなった親 口座 調べ方／権利証 見つからない | published（10/9） |
+| 70 | D | nouka-jikka-nouchi-sanrin-niigata | 相続 農地 新潟／実家 山林 相続／土蔵 片付け | published（10/9） |
+| 71 | F | joetsu-kashiwazaki-shibata-sanjo-kyoka-gyosha | 不用品回収 上越 70／柏崎・新発田・三条 | published（10/9） |
+| 72 | H | ninchisho-mae-jikka-kimeru | 認知症 実家 売却／任意後見 費用 | published（10/9） |
 
 執筆ルール（全記事共通）: 公式サイトのみ出典・確認日明記／[要確認: ○○]で正直に／体験談禁止／業者推薦禁止／TOA仏壇禁止／です・ます・短文／front matter（title「主題｜補足」主題25字以内, slug, description≤120字, targetKeywords, updated）／末尾に出典と「次に読む」（実在スラッグのみ、リンクは `../slug/` の相対形式。公開パスは /guide/）。slug に含む語で索引の分類が決まる（yuki|fuyu→雪と冬、sodaigomi|gomi|kaden|futon|sofa|recycle→粗大ごみ・ごみの出し方、gyosha|gyousha|ihinseiri|butsudan→業者に頼む・遺品整理、akiya|souzoku|zeikin→空き家・相続・税金、それ以外→進め方と費用）。
 
