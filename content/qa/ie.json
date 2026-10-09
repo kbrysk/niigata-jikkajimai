@@ -1,0 +1,2252 @@
+{
+  "id": "ie",
+  "order": 5,
+  "title": "空き家の売却・解体・補助金の疑問",
+  "titleSuffix": "新潟の実家じまい",
+  "lead": "新潟の空き家を売る・貸す・壊すときの税金、補助金、空き家バンクの疑問に、公式の情報で答えます。",
+  "description": "新潟の実家が空き家になったときの売却、解体、固定資産税、3,000万円控除、補助金、空き家バンクの疑問に、市町村・国税庁・法務省などの公式情報で答える一問一答集です。",
+  "updated": "2026-10-09",
+  "items": [
+    {
+      "id": "ie-01",
+      "q": "新潟の空き家は、売る・貸す・壊すのどれを選ぶ？",
+      "a": "新潟の空き家は、立地・築年・冬の雪・相続人の合意の4点を見て、売る・貸す・壊すを比べて決めます。",
+      "detail": [
+        "先に確かめるのは、冬を越せるか、名義、相続人の合意の3つです。",
+        "貸すと3,000万円特別控除は使えず、解体補助は市ごとに条件が違います。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度"
+        },
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金｜3,000万円控除と新潟の相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.3306 被相続人の居住用財産（空き家）を売ったときの特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3306.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-02",
+      "q": "空き家を貸すと、3,000万円特別控除は使えなくなる？",
+      "a": "相続空き家の3,000万円特別控除は、相続から売るまで貸付けや居住に使っていないことが要件のため、貸すと使えません。",
+      "detail": [
+        "貸す前に、控除を使って売った場合の手取りと、貸した場合の賃料収入を並べて比べます。",
+        "使えるかの最終判断は、税務署か税理士に確認します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度"
+        },
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金｜3,000万円控除と新潟の相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.3306 被相続人の居住用財産（空き家）を売ったときの特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3306.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-03",
+      "q": "空き家を貸すとき、雪下ろしとリフォームは誰が負担する？",
+      "a": "貸すと、使うのに必要な修繕は原則として貸す側の義務になります（民法606条）。雪下ろしの担い手を先に決め、改修の範囲は契約で合意します。",
+      "detail": [
+        "国土交通省は、DIY型賃貸借の契約書式例とガイドブックを公表しています。",
+        "借りる人の希望で改修でき、退去時に元に戻すかを先に決めます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度"
+        },
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "冬の実家じまいと雪対策｜空き家の雪下ろしは誰がやる？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国土交通省 DIY型賃貸借に関する契約書式例とガイドブックについて",
+          "url": "https://www.mlit.go.jp/jutakukentiku/house/jutakukentiku_house_tk3_000046.html"
+        },
+        {
+          "label": "新潟県 冬季における空き家からの落雪や倒壊にご注意ください",
+          "url": "https://www.pref.niigata.lg.jp/sec/toshiseisaku/akiya-jyosetsu.html"
+        },
+        {
+          "label": "e-Gov法令検索 民法（第606条 賃貸人による修繕等）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-04",
+      "q": "親が元気なうちに、実家の売却や解体を話しておくべき？",
+      "a": "実家の名義が親なら売る契約は親本人が原則なので、元気なうちにどうしたいかを聞き、メモか書面に残します。",
+      "detail": [
+        "戻る可能性、残したい物、判断が難しくなったとき誰に任せるかも聞きます。",
+        "任意後見は、判断能力のあるうちに公正証書で契約して決める制度です。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？｜空き家にする前に決める5つのこと"
+        },
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 成年後見制度について",
+          "url": "https://www.moj.go.jp/MINJI/a01.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-06",
+      "q": "親が施設にいて判断能力が下がったら、実家を売れる？",
+      "a": "後見人が本人の居住用不動産を売るには家庭裁判所の許可が必要で、許可なく売ると無効です。施設入所中で住んでいない家も対象です。",
+      "detail": [
+        "売却のほか、抵当権の設定、賃貸、建物の取り壊しも許可の対象です。",
+        "判断能力が下がる前に、司法書士か弁護士に相談します。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？｜空き家にする前に決める5つのこと"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所 成年被後見人等の居住用不動産の処分についての許可",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_25_04/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-07",
+      "q": "親が住んでいた家を生前に売ると、3,000万円控除は使える？",
+      "a": "親が所有者として住んでいた家は、住まなくなってから3年を経過する日の属する年の12月31日までに売れば、マイホームの3,000万円控除の対象になりえます。",
+      "detail": [
+        "老人ホーム入所後の売却の扱いは、国税庁No.3302・No.3314に記載がありません。[要確認: 施設入所後の自宅売却の取扱い]",
+        "親子など特別の関係がある人への売却は対象外です。税務署か税理士に確認します。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？｜空き家にする前に決める5つのこと"
+        },
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金｜3,000万円控除と新潟の相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.3302 マイホームを売ったときの特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3302.htm"
+        },
+        {
+          "label": "国税庁 No.3314 過去に居住していたマイホームを売ったとき",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3314.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-08",
+      "q": "空き家は古家付きのまま売るのと、解体して売るのでどちらがよい？",
+      "a": "どちらが有利かを決める公的な基準はなく、解体費、解体後の固定資産税、売れやすさを並べて比べます。",
+      "detail": [
+        "住宅を解体すると、翌年から住宅用地特例が外れて土地の税額が上がります（長岡市）。建物分の課税はなくなるため、差し引きを市の資産税課で確認します。",
+        "小千谷市は、売却が難しいとき解体費を差し引いた金額で売る方法を案内しています。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度"
+        },
+        {
+          "guide": "kaitai-hiyou-niigata",
+          "label": "新潟で実家を解体する費用の考え方｜見積もりの内訳・補助金・滅失登記"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市 家屋を取り壊した場合は",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate02/kotei/qa3-Q4.html"
+        },
+        {
+          "label": "小千谷市 空家に関する相談・問い合わせについて",
+          "url": "https://www.city.ojiya.niigata.jp/soshiki/bousai/akiya-soudan.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-09",
+      "q": "空き家の買取と仲介は何が違う？",
+      "a": "仲介（媒介）は不動産会社が売主と買主の間に立って売買の成立を目指す売り方で、買取は不動産会社自身が買主になる売り方です。",
+      "detail": [
+        "価格と期間の差について、公的な目安は確認できませんでした。[要確認: 買取と仲介の価格差・期間の公的な目安]",
+        "自宅を不動産業者に売った契約は、クーリング・オフができません。複数の会社で査定を取り、条件を書面で比べます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kaitori-niigata",
+          "label": "新潟の空き家を買い取ってもらうには｜買取と仲介の違い・再建築不可・査定書類"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国土交通省 不動産の売却を検討される皆様へ（売却の媒介委託者用）",
+          "url": "https://www.mlit.go.jp/common/001180294.pdf"
+        },
+        {
+          "label": "国土交通省 高齢者の自宅の売却トラブルにご注意ください！",
+          "url": "https://www.mlit.go.jp/totikensangyo/const/totikensangyo_const_tk3_0053.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-10",
+      "q": "一般・専任・専属専任の媒介契約は何が違う？",
+      "a": "一般媒介は複数社に依頼でき、専任と専属専任は1社だけに依頼します。専任・専属専任の有効期間は3か月以内です。",
+      "detail": [
+        "レインズへの登録は、専任が契約から7日以内、専属専任が5日以内です（休業日は数えません）。",
+        "業務の報告は、専任が2週間に1回以上、専属専任が1週間に1回以上です。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kaitori-niigata",
+          "label": "新潟の空き家を買い取ってもらうには｜買取と仲介の違い・再建築不可・査定書類"
+        }
+      ],
+      "sources": [
+        {
+          "label": "e-Gov法令検索 宅地建物取引業法（第34条の2 媒介契約）",
+          "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+        },
+        {
+          "label": "e-Gov法令検索 宅地建物取引業法施行規則（第15条の10 指定流通機構への登録期間）",
+          "url": "https://laws.e-gov.go.jp/law/332M50004000012"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-11",
+      "q": "800万円以下の空き家を売るときの仲介手数料は、上限いくら？",
+      "a": "売買代金が800万円以下の宅地・建物は、令和6年7月1日から、不動産会社が依頼者の一方から受け取る仲介手数料を、原則の上限を超えて最大33万円（税込）まで認める特例があります。",
+      "detail": [
+        "原則の上限は、200万円以下の部分が5.5％、200万円超400万円以下が4.4％、400万円超が3.3％（いずれも税込）で、特例はこれを超えて受け取れる仕組みです。",
+        "特例の範囲内でも、媒介契約の前に不動産会社が報酬額を依頼者に説明し、合意することが必要です。契約書で金額を確認します。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kaitori-niigata",
+          "label": "新潟の空き家を買い取ってもらうには｜買取と仲介の違い・再建築不可・査定書類"
+        },
+        {
+          "guide": "shibata-murakami-sado-akiya-bank",
+          "label": "新発田市・村上市・佐渡市の空き家バンク"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国土交通省 空き家等に係る媒介報酬規制の見直しについて",
+          "url": "https://www.mlit.go.jp/tochi_fudousan_kensetsugyo/const/content/001749923.pdf"
+        },
+        {
+          "label": "国土交通省 報道発表資料 不動産業による空き家対策推進プログラムの策定",
+          "url": "https://www.mlit.go.jp/report/press/tochi_fudousan_kensetsugyo16_hh_000001_00073.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-12",
+      "q": "空き家の査定の前に、どんな書類を用意する？",
+      "a": "査定で求められる書類は会社ごとに違うため、依頼先に確認します。長岡市では、資産評価等証明書を1枚300円で取れます（物件数などで変わります）。",
+      "detail": [
+        "資産評価等証明書は、アオーレ長岡東棟1階の証明書発行窓口、各支所の地域振興・市民生活課、西サービスセンターで請求でき、本人確認書類が必要です。",
+        "名義が亡くなった方のままなら、先に相続登記を済ませます。[要確認: 査定で求められる書類の公的な一覧]"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kaitori-niigata",
+          "label": "新潟の空き家を買い取ってもらうには｜買取と仲介の違い・再建築不可・査定書類"
+        },
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記の義務化と新潟の法務局・相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市 資産評価等証明書",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate02/shisan-syoumei.html"
+        },
+        {
+          "label": "法務省 相続登記の申請義務化について",
+          "url": "https://www.moj.go.jp/MINJI/souzokutouki-gimuka/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-13",
+      "q": "自宅を不動産会社に売る契約は、クーリング・オフできる？",
+      "a": "国民生活センターは、自宅を不動産業者に売った契約はクーリング・オフができないと説明しています。",
+      "detail": [
+        "契約前に内容を理解し、その場で決めず家族や専門家に相談します。",
+        "困ったときは、消費者ホットライン188に相談できます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kaitori-niigata",
+          "label": "新潟の空き家を買い取ってもらうには｜買取と仲介の違い・再建築不可・査定書類"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国民生活センター 高齢者の自宅の売却トラブルに注意",
+          "url": "https://www.kokusen.go.jp/news/data/n-20210624_1.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-14",
+      "q": "再建築不可の空き家は売れる？",
+      "a": "建築基準法上の道路に2メートル以上接していない敷地は建築物を建てられないと、新潟市は説明しています。まず市の建築担当課で、前の道が建築基準法上の道路かを確認します。",
+      "detail": [
+        "再建築不可であることは、相談の最初に会社へ伝えます。",
+        "売れるかどうかは会社と物件で異なり、公的な目安は確認できませんでした。複数の会社で見解を比べます。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kaitori-niigata",
+          "label": "新潟の空き家を買い取ってもらうには｜買取と仲介の違い・再建築不可・査定書類"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 建築基準法の道路について",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/kenchiku/kenchikudoro/kenchikudoro.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-15",
+      "q": "家財を残したままの空き家は、売ったり空き家バンクに載せたりできる？",
+      "a": "家財が残っていても登録できるかは所有者と利用希望者の意向しだいで、南魚沼市は家財のない物件のほうが利用希望者が出やすいと書いています。",
+      "detail": [
+        "解体する場合の家財は、所有者が先に片付けます。",
+        "片付けの補助は市町村ごとに違い、作業の前の申請が条件のことが多いです。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "myoko-itoigawa-uonuma-akiya-bank",
+          "label": "妙高市・糸魚川市・魚沼市・南魚沼市の空き家バンク"
+        },
+        {
+          "guide": "kaitai-hiyou-niigata",
+          "label": "新潟で実家を解体する費用の考え方｜見積もりの内訳・補助金・滅失登記"
+        }
+      ],
+      "sources": [
+        {
+          "label": "南魚沼市 空き家を売りたい人または貸したい人",
+          "url": "https://www.city.minamiuonuma.niigata.jp/akiyabank/faq/39837.html"
+        },
+        {
+          "label": "上越市 空き家活用のための家財道具等処分費補助金",
+          "url": "https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-kazaisyobun.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-16",
+      "q": "相続登記をしていない実家は、売ることができる？",
+      "a": "名義が亡くなった方のままでは売買の登記ができないため、先に相続登記を済ませる必要があります。",
+      "detail": [
+        "相続登記は、取得を知った日から3年以内の申請が義務で、怠ると10万円以下の過料の対象です。",
+        "令和6年4月1日より前に相続した不動産も対象で、その場合の期限は令和9年3月31日までです。",
+        "登記の前に査定を受けられるかは会社ごとに異なります。[要確認: 相続登記前の査定の可否は会社ごと]"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記の義務化と新潟の法務局・相談窓口"
+        },
+        {
+          "guide": "akiya-kaitori-niigata",
+          "label": "新潟の空き家を買い取ってもらうには｜買取と仲介の違い・再建築不可・査定書類"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 相続登記の申請義務化について",
+          "url": "https://www.moj.go.jp/MINJI/souzokutouki-gimuka/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-17",
+      "q": "兄弟で相続した共有名義の実家は、一人だけでは進められない？",
+      "a": "共有名義の空き家は、空き家バンクの登録で共有者全員の同意を求める市があり、一人だけでは進めにくくなります。",
+      "detail": [
+        "村上市は共有名義人の委任状、胎内市は全員の同意書や委任状が必要と案内しています。",
+        "話し合いがつかないときは、家庭裁判所の遺産分割調停があります。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "shibata-murakami-sado-akiya-bank",
+          "label": "新発田市・村上市・佐渡市の空き家バンク"
+        },
+        {
+          "guide": "kamo-gosen-agano-tainai-akiya-bank",
+          "label": "加茂市・五泉市・阿賀野市・胎内市の空き家バンク"
+        }
+      ],
+      "sources": [
+        {
+          "label": "村上市 空き家を売りたい人",
+          "url": "https://www.city.murakami.lg.jp/site/akiya-bank/akiyatourokusya.html"
+        },
+        {
+          "label": "胎内市 空き家バンク",
+          "url": "https://www.city.tainai.niigata.jp/kurashi/sekatsu/sumai/akiyabank.html"
+        },
+        {
+          "label": "裁判所 遺産分割調停",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_07_12/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-18",
+      "q": "空き家の3,000万円特別控除は、いつまでに売れば使える？",
+      "a": "相続開始から3年を経過する日の属する年の12月31日までで、かつ令和9年12月31日までに売る必要があります。",
+      "detail": [
+        "令和9年12月31日までの譲渡という上限があるため、相続から3年の期限がそれより後になる場合でも、売るのは令和9年12月31日までです。",
+        "使うには確定申告と、市が交付する確認書が必要です。自分の期限は、税務署か税理士に確認します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金｜3,000万円控除と新潟の相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.3306 被相続人の居住用財産（空き家）を売ったときの特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3306.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-19",
+      "q": "空き家の3,000万円控除の対象になる家は？",
+      "a": "昭和56年5月31日以前に建築され、区分所有でなく、相続の直前に亡くなった方以外に住人がいなかった家屋が対象で、耐震基準に適合させるか取り壊して売ります。",
+      "detail": [
+        "売却代金は1億円以下で、令和6年1月1日以後の譲渡は相続人が3人以上なら控除は2,000万円までです。",
+        "老人ホーム入所の場合は、別の要件があります（国税庁No.3307）。個別の判断は税務署か税理士に確認します。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金｜3,000万円控除と新潟の相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.3306 被相続人の居住用財産（空き家）を売ったときの特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3306.htm"
+        },
+        {
+          "label": "国税庁 No.3307 被相続人が老人ホーム等に入所していた場合の被相続人居住用家屋",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3307.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-20",
+      "q": "新潟市で、空き家売却の「確認書」はどこに申請する？",
+      "a": "新潟市では、建築部 住環境政策課 空き家対策・活用推進室（025-226-2813）が窓口で、受付から交付まで2週間程度かかります。",
+      "detail": [
+        "売り方に合わせて、申請の手引きは3種類（1-1、1-2、1-3）あります。",
+        "書類に不備があると、そろった時点で受付になります。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金｜3,000万円控除と新潟の相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 空き家の譲渡所得の3,000万円特別控除",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/yokusei/akiyatokurei3000.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-21",
+      "q": "長岡市で、空き家売却の「確認書」はどこに申請する？",
+      "a": "長岡市では、都市整備部 都市政策課 住宅政策担当（0258-39-2265）に申請書を出し、交付は2週間程度で手数料は不要です。",
+      "detail": [
+        "様式は3種類で、耐震基準への適合、取り壊し、そのまま譲渡のどれかで使い分けます。",
+        "売買契約を結ぶ前に、市に聞いておくと安心です。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金｜3,000万円控除と新潟の相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市 空き家の譲渡所得3,000万円特別控除について",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/inheritance.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-22",
+      "q": "実家を売った利益には、税金が何％かかる？",
+      "a": "売った年の1月1日で所有期間が5年を超える長期譲渡は、所得税15％と住民税5％がかかります。復興特別所得税は所得税額に対して別に加算されます。",
+      "detail": [
+        "課税対象は、売却額から取得費と譲渡費用を引いた譲渡所得です。復興特別所得税は基準所得税額の2.1％です。",
+        "取得費が不明か売却額の5％未満なら、売却額の5％を取得費にできます。個別の計算は税務署か税理士に確認します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金｜3,000万円控除と新潟の相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.3208 長期譲渡所得の税額の計算",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3208.htm"
+        },
+        {
+          "label": "国税庁 No.3202 譲渡所得の計算のしかた（分離課税）",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3202.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-23",
+      "q": "空き家を売るとき、低未利用土地の100万円控除は使える？",
+      "a": "売却額が建物の対価を含めて500万円以下（一定の区域は800万円以下）などの要件を満たせば、令和10年12月31日までの売却で100万円を控除できます。",
+      "detail": [
+        "800万円以下になるのは、市街化区域、用途地域が定められた区域、所有者不明土地対策計画を作成した市町村の区域です。売った年の1月1日で所有期間が5年を超える必要もあります。",
+        "市のページと国税庁で期限の記載が違うときは、国税庁の記載で確認し、税務署に相談します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金｜3,000万円控除と新潟の相談窓口"
+        },
+        {
+          "guide": "shibata-murakami-sado-akiya-bank",
+          "label": "新発田市・村上市・佐渡市の空き家バンク"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.3226 低未利用土地等を譲渡した場合の長期譲渡所得の特別控除",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3226.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-24",
+      "q": "空き家にしただけで、固定資産税は6倍になる？",
+      "a": "なりません。住宅用地特例が外れるのは、市の勧告を受けたときか、家を解体して住宅がなくなったときです。",
+      "detail": [
+        "6倍は200㎡以下の部分の数字で、200㎡を超える部分は3倍です。",
+        "指導の段階では特例は外れません。実際の税額は負担調整措置などで変わります。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税は本当に6倍になる？｜住宅用地特例と勧告の仕組み"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国土交通省 空き家対策 特設サイト",
+          "url": "https://www.mlit.go.jp/jutakukentiku/house/akiya-taisaku/articles/2024020105.html"
+        },
+        {
+          "label": "総務省 地方税制度 固定資産税",
+          "url": "https://www.soumu.go.jp/main_sosiki/jichi_zeisei/czaisei/czaisei_seido/150790_15.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-25",
+      "q": "空き家を解体すると、固定資産税は上がる？",
+      "a": "取り壊した家が住宅だったなら、建物分の固定資産税はなくなる一方、翌年から住宅用地特例が外れ、土地の税額が上がります。",
+      "detail": [
+        "固定資産税の賦課期日は毎年1月1日です（地方税法359条）。",
+        "差し引きの額は、市の資産税課で確認できます。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税は本当に6倍になる？｜住宅用地特例と勧告の仕組み"
+        },
+        {
+          "guide": "kaitai-hiyou-niigata",
+          "label": "新潟で実家を解体する費用の考え方｜見積もりの内訳・補助金・滅失登記"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市 家屋を取り壊した場合は",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate02/kotei/qa3-Q4.html"
+        },
+        {
+          "label": "新潟市 住宅用地に対する課税標準の特例",
+          "url": "https://www.city.niigata.lg.jp/kurashi/zei/siraberu/koteishisan/juutakuyouti.html"
+        },
+        {
+          "label": "e-Gov法令検索 地方税法（第359条 固定資産税の賦課期日）",
+          "url": "https://laws.e-gov.go.jp/law/325AC0000000226"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-26",
+      "q": "長岡市で家を壊したら、固定資産税はどうなる？",
+      "a": "長岡市では、家屋を取り壊した翌年から建物分は課税されず、壊した家が住宅だった土地は住宅用地特例から外れます。",
+      "detail": [
+        "取り壊したら、資産税課か最寄りの支所に連絡します。",
+        "登記された建物は、法務局で滅失登記も必要です。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税は本当に6倍になる？｜住宅用地特例と勧告の仕組み"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市 家屋を取り壊した場合は",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate02/kotei/qa3-Q4.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-27",
+      "q": "管理不全空家等と特定空家等はどう違う？",
+      "a": "管理不全空家等は放置すると特定空家等に当たるおそれのある状態で、特定空家等は倒壊の危険など周辺に著しい悪影響がある状態です。",
+      "detail": [
+        "どちらも市町村の指導を受け、改善しないと勧告を受けることがあります。",
+        "勧告を受けると、敷地の住宅用地特例が外れます。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税は本当に6倍になる？｜住宅用地特例と勧告の仕組み"
+        },
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法｜電気・水道、火災保険、点検項目"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 特定空家等、管理不全空家等への対応",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/kanrifuzen/fuzen.html"
+        },
+        {
+          "label": "国土交通省 空き家対策 特設サイト",
+          "url": "https://www.mlit.go.jp/jutakukentiku/house/akiya-taisaku/articles/2024020105.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-28",
+      "q": "村上市で空き家を解体すると、増えた固定資産税は減免される？",
+      "a": "村上市は、住宅の空家を令和6年10月1日から令和11年3月31日までに解体した場合、増えた土地の税額を3年度間減免します。",
+      "detail": [
+        "空家法に基づく特定空家などとして勧告を受けた空家は対象外です。",
+        "申請は解体した日から翌年の1月31日までに、税務課 資産税室か各支所の地域振興課 市民生活室へ出します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "shibata-murakami-sado-akiya-bank",
+          "label": "新発田市・村上市・佐渡市の空き家バンク"
+        },
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税は本当に6倍になる？｜住宅用地特例と勧告の仕組み"
+        }
+      ],
+      "sources": [
+        {
+          "label": "村上市 住宅である空家を除却した土地にかかる固定資産税の減免制度",
+          "url": "https://www.city.murakami.lg.jp/site/shisanzei/sisan-akiyagenmen.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-29",
+      "q": "新潟市で、空き家を解体する補助金は使える？",
+      "a": "新潟市の空き家活用推進事業は解体費の3分の1・上限50万円ですが、令和8年度分は8月28日に受付を終えました。",
+      "detail": [
+        "対象は未接道地の跡地活用などで、老朽空き家向けの個人の解体補助は確認できませんでした。",
+        "交付決定前に着手した工事は対象外です。来年度の予定は市のページで確認します。",
+        "[要確認: 新潟市の危険空き家向け除却補助の有無]"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "jikkajimai-hojokin-niigata",
+          "label": "新潟県30市町村の空き家解体補助金一覧"
+        },
+        {
+          "guide": "kaitai-hiyou-niigata",
+          "label": "新潟で実家を解体する費用の考え方｜見積もりの内訳・補助金・滅失登記"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 空き家活用推進事業",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/jukankyo/yushi_josei/akiyakatsuyo.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-30",
+      "q": "長岡市に、個人が使える空き家の解体補助はある？",
+      "a": "長岡市の公式ページで確認できるのは町内会など地域団体向けの補助で、個人の所有者が直接申請できる解体補助は確認できません。",
+      "detail": [
+        "地域団体向けは特定空家等の除却で、補助対象経費の4/5、上限160万円です。",
+        "[要確認: 長岡市の個人向け除却補助の有無]"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "nagaoka-akiya-bank",
+          "label": "長岡市の空き家バンク｜登録の流れ・探し方・家財処分や解体に使える支援"
+        },
+        {
+          "guide": "jikkajimai-hojokin-niigata",
+          "label": "新潟県30市町村の空き家解体補助金一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市 空き家対策総合支援事業補助金",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-jyokyo.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-31",
+      "q": "上越市の空き家解体補助の金額と条件は？",
+      "a": "上越市の除却費補助金は、除却費の2分の1・上限50万円で、契約や着手の前に申請する必要があります。",
+      "detail": [
+        "特定空き家等は低所得者層世帯が対象、空き家等は跡地を10年以上地域活性化に使うことが条件です。",
+        "市内に本社を置く事業者の施工も条件です。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "joetsu-niigata-akiya-bank",
+          "label": "上越市・新潟市の空き家バンク｜登録方法と使える制度"
+        },
+        {
+          "guide": "jikkajimai-hojokin-niigata",
+          "label": "新潟県30市町村の空き家解体補助金一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "上越市 空き家等及び特定空き家等除却費補助金",
+          "url": "https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-jokyakuhojo.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-32",
+      "q": "十日町市の空き家除却補助は、今も受け付けている？",
+      "a": "十日町市の令和8年度分（4月13日〜5月13日）は受付を終えました。次年度の受付時期は公式ページに記載がありません。",
+      "detail": [
+        "補助率は50％で、上限は居住誘導区域内30万円、区域外20万円です。申込が多いときは抽選です。",
+        "[要確認: 十日町市の次年度の受付時期]"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "mitsuke-ojiya-tokamachi-akiya-bank",
+          "label": "見附市・小千谷市・十日町市の空き家バンク"
+        },
+        {
+          "guide": "jikkajimai-hojokin-niigata",
+          "label": "新潟県30市町村の空き家解体補助金一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "十日町市 空き家等除却支援事業補助金",
+          "url": "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/4/1/10912.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-33",
+      "q": "小千谷市で、空き家を解体するだけの補助はいくら？",
+      "a": "小千谷市の移住建替支援事業補助金は、解体のみなら工事費の5分の1以内・上限50万円（市外事業者の施工は25万円）です。",
+      "detail": [
+        "受付は令和8年10月5日に始まっていて、着工前の申請が必須です。予算額に達すると終了します。",
+        "バンク登録からおおむね1年たった空き家などが対象です。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "mitsuke-ojiya-tokamachi-akiya-bank",
+          "label": "見附市・小千谷市・十日町市の空き家バンク"
+        },
+        {
+          "guide": "jikkajimai-hojokin-niigata",
+          "label": "新潟県30市町村の空き家解体補助金一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "小千谷市 移住建替支援事業補助金",
+          "url": "https://www.city.ojiya.niigata.jp/site/iju/akiya-kaitai-tatekae.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-34",
+      "q": "三条市の空き家解体補助は、一般の空き家も対象？",
+      "a": "三条市の解体費補助金は、市が判定した特定空家等が対象で、補助対象経費の5分の4・上限50万円です。一般の空き家を対象とする記載はありません。",
+      "detail": [
+        "申請の前に事前調査の申込が必要で、予算に達した時点で締め切る先着順です。",
+        "制度の名称は「特定空家等及び管理不全空家等解体費補助金」ですが、管理不全空家等の対象条件と上限額はページに書かれていません。[要確認: 三条市の管理不全空家等の補助上限]"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "sanjo-tsubame-kashiwazaki-akiya-bank",
+          "label": "三条市・燕市・柏崎市の空き家バンク"
+        },
+        {
+          "guide": "jikkajimai-hojokin-niigata",
+          "label": "新潟県30市町村の空き家解体補助金一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "三条市 危険な空家の解体費用を補助します",
+          "url": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/akiyaakichi/15199.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-35",
+      "q": "燕市の空き家の家財処分と解体の助成は、いつまで受け付ける？",
+      "a": "燕市は、家財道具等処分費助成も特定空き家等の解体撤去費助成金も、令和8年4月1日から12月28日まで受け付けています。",
+      "detail": [
+        "家財処分は2分の1以内・上限10万円、解体は2分の1以内・上限30万円です。",
+        "どちらも、交付決定の前に着手した分は対象外です。",
+        "家財処分は、空き家になって1年未満の家の所有者や管理者が対象です。解体は、市内事業者が請け負う30万円以上（税抜）の工事が対象です。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "sanjo-tsubame-kashiwazaki-akiya-bank",
+          "label": "三条市・燕市・柏崎市の空き家バンク"
+        },
+        {
+          "guide": "jikkajimai-okane-ga-nai",
+          "label": "実家じまいのお金がないとき｜費用を抑える順番と、誰が払うか"
+        }
+      ],
+      "sources": [
+        {
+          "label": "燕市 家財道具等処分費助成",
+          "url": "https://www.city.tsubame.niigata.jp/kurashi/kenchiku/1/205/4098.html"
+        },
+        {
+          "label": "燕市 特定空き家等解体撤去費助成金",
+          "url": "https://www.city.tsubame.niigata.jp/soshiki/toshi_seibi/3/1/172/19331.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-36",
+      "q": "阿賀野市の空き家解体支援は、いつまでに申し込む？",
+      "a": "阿賀野市の令和8年度空き家解体支援事業は、事前調査の申込が2026年10月30日（当日消印有効）までです。",
+      "detail": [
+        "補助は経費の2分の1で、特定空き家・不良住宅は上限50万円、管理不全空き家は上限20万円です。",
+        "事前調査の結果通知のあと、交付申請は2026年11月30日（当日消印有効）までです。予算に達すると、期間中でも受付が終わります。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "kamo-gosen-agano-tainai-akiya-bank",
+          "label": "加茂市・五泉市・阿賀野市・胎内市の空き家バンク"
+        },
+        {
+          "guide": "jikkajimai-hojokin-niigata",
+          "label": "新潟県30市町村の空き家解体補助金一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "阿賀野市 令和8年度空き家解体支援事業",
+          "url": "https://www.city.agano.niigata.jp/soshiki/kensetsuka/zumai/14246.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-37",
+      "q": "佐渡市の老朽危険廃屋の解体補助は、いくら？",
+      "a": "佐渡市の老朽危険廃屋対策支援事業は、木造が2分の1以内・上限80万円、非木造が5分の4以内・上限400万円です。",
+      "detail": [
+        "特定空家か不良住宅と認められた空家が対象で、解体後に建て替えないことが条件です。補助額が15万円未満になる場合は交付されません。",
+        "令和8年度の相談受付は4月1日〜5月29日でした。期間終了後も予算状況や空家の状態に応じて対応するため、個別に問い合わせます。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "shibata-murakami-sado-akiya-bank",
+          "label": "新発田市・村上市・佐渡市の空き家バンク"
+        },
+        {
+          "guide": "jikkajimai-hojokin-niigata",
+          "label": "新潟県30市町村の空き家解体補助金一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "佐渡市 佐渡市老朽危険廃屋対策支援事業",
+          "url": "https://www.city.sado.niigata.jp/soshiki/2013/80525.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-38",
+      "q": "新発田市や加茂市に、空き家の解体補助はある？",
+      "a": "新発田市と加茂市の公式ページには、空き家の解体・除却費の補助制度の掲載がありません（2026年10月確認）。",
+      "detail": [
+        "制度がないという意味ではないため、新発田市は建築課、加茂市は建設課に確認します。",
+        "五泉市は、令和8年度の施政方針で特定空家の解体費用の助成制度を新たに創設すると表明しています。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "jikkajimai-hojokin-niigata",
+          "label": "新潟県30市町村の空き家解体補助金一覧"
+        },
+        {
+          "guide": "kamo-gosen-agano-tainai-akiya-bank",
+          "label": "加茂市・五泉市・阿賀野市・胎内市の空き家バンク"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新発田市 令和8年度新発田市住宅関係補助金の手引き",
+          "url": "https://www.city.shibata.lg.jp/kurashi/sumai/josei/1024868.html"
+        },
+        {
+          "label": "加茂市 補助金",
+          "url": "https://www.city.kamo.niigata.jp/shisei/hojo/"
+        },
+        {
+          "label": "五泉市 令和8年度 施政方針及び予算総括説明",
+          "url": "https://www.city.gosen.lg.jp/organization/1/6/4/12696.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-39",
+      "q": "空き家を解体してから、補助金を申請しても出る？",
+      "a": "上越市・十日町市・小千谷市・糸魚川市などは、交付決定前や着工前の契約・着手を対象外にするため、解体してからの申請では出ません。",
+      "detail": [
+        "先に窓口で対象かどうかを確認します。",
+        "受付期間が短い制度や、予算に達すると終わる制度があります。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "jikkajimai-hojokin-niigata",
+          "label": "新潟県30市町村の空き家解体補助金一覧"
+        },
+        {
+          "guide": "kaitai-hiyou-niigata",
+          "label": "新潟で実家を解体する費用の考え方｜見積もりの内訳・補助金・滅失登記"
+        }
+      ],
+      "sources": [
+        {
+          "label": "上越市 空き家等及び特定空き家等除却費補助金",
+          "url": "https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-jokyakuhojo.html"
+        },
+        {
+          "label": "十日町市 空き家等除却支援事業補助金",
+          "url": "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/4/1/10912.html"
+        },
+        {
+          "label": "小千谷市 移住建替支援事業補助金",
+          "url": "https://www.city.ojiya.niigata.jp/site/iju/akiya-kaitai-tatekae.html"
+        },
+        {
+          "label": "糸魚川市 危険空き家除却支援補助金",
+          "url": "https://www.city.itoigawa.lg.jp/page/1417.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-40",
+      "q": "空き家の解体費が払えないときは、どうする？",
+      "a": "小千谷市は、まず建物が売れるかを不動産事業者に相談し、難しければ解体費を差し引いた金額で売る方法を案内しています。",
+      "detail": [
+        "金融機関によっては、空き家の解体ローンがあります（小千谷市の案内）。",
+        "県内30市町村の公式ページで確認した範囲では、補助率は最大で5分の4（三条市など）で、解体費の全額が出る制度は見当たりません。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "kaitai-hiyou-niigata",
+          "label": "新潟で実家を解体する費用の考え方｜見積もりの内訳・補助金・滅失登記"
+        },
+        {
+          "guide": "jikkajimai-okane-ga-nai",
+          "label": "実家じまいのお金がないとき｜費用を抑える順番と、誰が払うか"
+        }
+      ],
+      "sources": [
+        {
+          "label": "小千谷市 空家に関する相談・問い合わせについて",
+          "url": "https://www.city.ojiya.niigata.jp/soshiki/bousai/akiya-soudan.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-41",
+      "q": "空き家の解体費用の相場は、いくら？",
+      "a": "解体費の公的な目安は確認できません。複数の業者から見積書を取り、内訳で比べます。[要確認: 解体費の公的な目安]",
+      "detail": [
+        "国土交通省掲載の標準見積書（全解工連の案）では、共通仮設、直接仮設、直接解体、廃棄物処理、廃棄物運搬、諸経費、法定福利費などに分かれます。",
+        "見積書が「一式」だけのときは、内訳を出してもらいます。",
+        "この標準見積書は平成25年2月現在の案で、消費税は5％の書式です。現在の税率で見積書の総額を比べます。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "kaitai-hiyou-niigata",
+          "label": "新潟で実家を解体する費用の考え方｜見積もりの内訳・補助金・滅失登記"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国土交通省 標準見積書（全解工連・平成25年2月現在の案）",
+          "url": "https://www.mlit.go.jp/common/001023921.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-42",
+      "q": "空き家を解体したあとの建物滅失登記は、いつまでに必要？",
+      "a": "建物を取り壊したら、滅失の日から1か月以内に建物滅失登記を申請します。正当な理由なく怠ると10万円以下の過料の対象です。",
+      "detail": [
+        "申請するのは、表題部所有者または所有権の登記名義人です。取り壊した工事の請負人が作る建物滅失証明書を添えます（法務局の記載例）。",
+        "自分で難しいときは、土地家屋調査士に相談します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "kaitai-hiyou-niigata",
+          "label": "新潟で実家を解体する費用の考え方｜見積もりの内訳・補助金・滅失登記"
+        }
+      ],
+      "sources": [
+        {
+          "label": "e-Gov法令検索 不動産登記法",
+          "url": "https://laws.e-gov.go.jp/law/416AC0000000123"
+        },
+        {
+          "label": "法務局 建物滅失登記の記載例",
+          "url": "https://houmukyoku.moj.go.jp/homu/content/001189459.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-43",
+      "q": "相続した実家の土地を、国に引き取ってもらえる？",
+      "a": "相続土地国庫帰属制度で申請できますが、建物がある土地は申請できないため、建物を取り壊してから申請します。",
+      "detail": [
+        "審査手数料は土地1筆につき14,000円で、不承認になっても返りません。負担金は基本20万円です。",
+        "申請先は、土地のある都道府県の法務局の本局で、支局・出張所では受け付けません。新潟県は新潟地方法務局の本局です。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "jikkajimai-okane-ga-nai",
+          "label": "実家じまいのお金がないとき｜費用を抑える順番と、誰が払うか"
+        },
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 相続土地国庫帰属制度 Q&A",
+          "url": "https://www.moj.go.jp/MINJI/minji05_00459.html"
+        },
+        {
+          "label": "法務省 相続土地国庫帰属制度の概要",
+          "url": "https://www.moj.go.jp/MINJI/minji05_00457.html"
+        },
+        {
+          "label": "新潟地方法務局 相続土地国庫帰属制度",
+          "url": "https://houmukyoku.moj.go.jp/niigata/page000001_00234.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-44",
+      "q": "買い手がつかない実家は、寄付や0円で手放せる？",
+      "a": "新潟市は建物が付属する土地の寄附を受け付けておらず、国庫帰属制度も建物がある土地は申請できません。",
+      "detail": [
+        "0円での空き家バンク登録を明示する市町村は、確認できませんでした。[要確認: 空き家バンクの無償譲渡の扱い]",
+        "建物を壊してから、国庫帰属を検討する方法があります。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "jikkajimai-okane-ga-nai",
+          "label": "実家じまいのお金がないとき｜費用を抑える順番と、誰が払うか"
+        },
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 土地の寄附について",
+          "url": "https://www.city.niigata.lg.jp/shisei/zaisan/sonota/tochikifu.html"
+        },
+        {
+          "label": "法務省 相続土地国庫帰属制度 Q&A",
+          "url": "https://www.moj.go.jp/MINJI/minji05_00459.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-45",
+      "q": "長岡市の空き家バンクに登録できる家の条件は？",
+      "a": "長岡市の空き家バンクに登録できるのは、個人所有で登記済みの一戸建てで、抵当権がなく、管理されていて居住できる家です。",
+      "detail": [
+        "売買の場合は、土地の地目が農地（田・畑）以外であることが条件です。",
+        "申込書と、土地・建物の登記簿謄本の写しを出します。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "nagaoka-akiya-bank",
+          "label": "長岡市の空き家バンク｜登録の流れ・探し方・家財処分や解体に使える支援"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市 空き家物件登録",
+          "url": "https://www.city.nagaoka.niigata.jp/akiya/btouroku.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-46",
+      "q": "長岡市の空き家バンクは、市が売買を仲介してくれる？",
+      "a": "長岡市の空き家バンクは、市が仲介をせず、交渉と契約は所有者と希望者が行います。市は不動産業者への依頼を勧めています。",
+      "detail": [
+        "市が行うのは、物件情報の公開と連絡先の交換の支援までです。",
+        "成約したら、登録抹消届出書を市に出します。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "nagaoka-akiya-bank",
+          "label": "長岡市の空き家バンク｜登録の流れ・探し方・家財処分や解体に使える支援"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市 空き家物件登録",
+          "url": "https://www.city.nagaoka.niigata.jp/akiya/btouroku.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-47",
+      "q": "長岡市の空き家バンクの登録期間と登録料は？",
+      "a": "長岡市の空き家バンクの登録期間は2年以内で、延長できます（実施要綱第5条）。登録料の定めは見当たりません。",
+      "detail": [
+        "[要確認: 長岡市の登録料の有無]",
+        "不動産業者に仲介を頼むと、仲介手数料が別にかかるのが一般的です。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "nagaoka-akiya-bank",
+          "label": "長岡市の空き家バンク｜登録の流れ・探し方・家財処分や解体に使える支援"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市 長岡市空き家バンク制度実施要綱",
+          "url": "https://www.city.nagaoka.niigata.jp/shisei/cate03/jyourei/reiki/reiki_honbun/e403RG00001565.html"
+        },
+        {
+          "label": "長岡市 空き家物件登録",
+          "url": "https://www.city.nagaoka.niigata.jp/akiya/btouroku.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-48",
+      "q": "上越市の空き家バンクに登録する流れと、仲介手数料の負担は？",
+      "a": "上越市は、空き家登録シートを出して無料相談会で確認を受け、登録されます。仲介手数料は所有者と利用希望者の両方に必要です。",
+      "detail": [
+        "上越市と協定を結んだ宅地建物取引業協会と全日本不動産協会が、相談と交渉・契約の仲介を行います。",
+        "無料相談会は毎月第2火曜・第3金曜・第4火曜の午後で、窓口は建築住宅課（025-520-5786）です。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "joetsu-niigata-akiya-bank",
+          "label": "上越市・新潟市の空き家バンク｜登録方法と使える制度"
+        }
+      ],
+      "sources": [
+        {
+          "label": "上越市 空き家情報バンクとは",
+          "url": "https://joetsu-akiyabank.jp/about/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-49",
+      "q": "上越市で、実家の片付けに使える補助金はある？",
+      "a": "上越市の家財道具等処分費補助金は、費用が5万円以上のとき2分の1、上限10万円で、契約や作業の前に申請が必要です。",
+      "detail": [
+        "対象は、売却契約前の売主、契約の相手が県外からの移住（予定）者である売主、県外からの移住（予定）者で空き家を所有する方です。",
+        "市内に本社がある事業者への依頼が条件で、予算に達すると終了します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "joetsu-niigata-akiya-bank",
+          "label": "上越市・新潟市の空き家バンク｜登録方法と使える制度"
+        },
+        {
+          "guide": "jikkajimai-okane-ga-nai",
+          "label": "実家じまいのお金がないとき｜費用を抑える順番と、誰が払うか"
+        }
+      ],
+      "sources": [
+        {
+          "label": "上越市 空き家活用のための家財道具等処分費補助金",
+          "url": "https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-kazaisyobun.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-50",
+      "q": "新潟市に空き家バンクはある？西蒲区以外の相談先は？",
+      "a": "新潟市で空き家バンクを実施しているのは西蒲区のみ（令和7年4月1日開始）です。他の区は不動産団体の窓口を案内しています。",
+      "detail": [
+        "相談先は、県宅建協会（025-247-1177）と全日本不動産協会新潟県本部（025-385-7719）です。",
+        "西蒲区は、西蒲区役所 地域総務課（0256-72-8129）が窓口です。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "joetsu-niigata-akiya-bank",
+          "label": "上越市・新潟市の空き家バンク｜登録方法と使える制度"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 空き家をお探しの方へ",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/katsuyo/akiya_sagasu.html"
+        },
+        {
+          "label": "新潟市 西蒲区空き家バンク",
+          "url": "https://www.city.niigata.lg.jp/nishikan/torikumi/seisaku/nishikanakiyabank.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-51",
+      "q": "新発田市の空き家バンクで使える家財処分の補助は？",
+      "a": "新発田市の家財道具処分支援事業補助金は、経費の3分の2・上限10万円で、予算の範囲内の先着順です。",
+      "detail": [
+        "空き家バンクに登録して家財を処分する所有者が対象で、売買契約の前の物件に限ります。",
+        "申請の期限は、経費の支払いが終わった日から1か月以内です。新発田市は、空き家バンクへの登録と不動産業者への登録を同時にできません。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "shibata-murakami-sado-akiya-bank",
+          "label": "新発田市・村上市・佐渡市の空き家バンク"
+        },
+        {
+          "guide": "jikkajimai-okane-ga-nai",
+          "label": "実家じまいのお金がないとき｜費用を抑える順番と、誰が払うか"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新発田市 令和8年度新発田市住宅関係補助金の手引き",
+          "url": "https://www.city.shibata.lg.jp/kurashi/sumai/josei/1024868.html"
+        },
+        {
+          "label": "新発田市 空き家バンクで物件を「売りたい人」について",
+          "url": "https://www.city.shibata.lg.jp/kurashi/iju/akiya/1001226.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-52",
+      "q": "村上市の空き家バンクに登録できないのは、どんな家？",
+      "a": "村上市は、相続登記や抵当権の抹消が済んでいない家、すでに不動産業者に依頼している家は、空き家バンクに登録できません。",
+      "detail": [
+        "登記簿の種別が居宅でない建物や、小規模な修理で住めないと判断された家も登録できません。",
+        "登録の前に、登記簿で名義を確認します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "shibata-murakami-sado-akiya-bank",
+          "label": "新発田市・村上市・佐渡市の空き家バンク"
+        },
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記の義務化と新潟の法務局・相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "村上市 空き家を売りたい人",
+          "url": "https://www.city.murakami.lg.jp/site/akiya-bank/akiyatourokusya.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-53",
+      "q": "小千谷市の空き家バンクに登録できない物件は？",
+      "a": "小千谷市は、営利目的、大規模な修繕が必要な老朽物件、違法建築、境界が不明な物件などを登録できないとしています。",
+      "detail": [
+        "未登記、移転登記が未了、抵当権付きの物件は、契約の締結までに整理すれば登録できます。",
+        "家財の処分補助は、バンクに2年以上登録する人が対象で、2分の1以内・上限20万円です。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "mitsuke-ojiya-tokamachi-akiya-bank",
+          "label": "見附市・小千谷市・十日町市の空き家バンク"
+        },
+        {
+          "guide": "jikkajimai-okane-ga-nai",
+          "label": "実家じまいのお金がないとき｜費用を抑える順番と、誰が払うか"
+        }
+      ],
+      "sources": [
+        {
+          "label": "小千谷市 空き家情報バンク",
+          "url": "https://www.city.ojiya.niigata.jp/site/iju/akiyabank.html"
+        },
+        {
+          "label": "小千谷市 家財道具等処分支援事業補助金",
+          "url": "https://www.city.ojiya.niigata.jp/site/iju/kazaisyobun.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-54",
+      "q": "南魚沼市の空き家バンクは、相続登記がまだでも登録できる？",
+      "a": "南魚沼市の空き家バンクは、相続登記が済んでおらず所有権の登記を整理できていない物件を登録できません。",
+      "detail": [
+        "登録は無料で、登録期間は2年間、期間満了後も再登録できます。",
+        "書類代、調査費用、仲介手数料は別にかかります。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "myoko-itoigawa-uonuma-akiya-bank",
+          "label": "妙高市・糸魚川市・魚沼市・南魚沼市の空き家バンク"
+        },
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記の義務化と新潟の法務局・相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "南魚沼市 空き家を売りたい人または貸したい人",
+          "url": "https://www.city.minamiuonuma.niigata.jp/akiyabank/faq/39837.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-55",
+      "q": "田んぼや畑がついた実家は、空き家バンクに載せられる？",
+      "a": "市で扱いが分かれ、長岡市は売買の土地の地目が農地（田・畑）以外であることを条件にし、五泉市は農地を登録できないとしています。",
+      "detail": [
+        "南魚沼市は、田畑の売買は農地法の制限があるため空き家バンクで扱わないと書いています。",
+        "付属の小屋や倉庫は、空き家と一緒に売る付属施設として紹介されます（南魚沼市）。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "nagaoka-akiya-bank",
+          "label": "長岡市の空き家バンク｜登録の流れ・探し方・家財処分や解体に使える支援"
+        },
+        {
+          "guide": "myoko-itoigawa-uonuma-akiya-bank",
+          "label": "妙高市・糸魚川市・魚沼市・南魚沼市の空き家バンク"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市 空き家物件登録",
+          "url": "https://www.city.nagaoka.niigata.jp/akiya/btouroku.html"
+        },
+        {
+          "label": "五泉市 空家物件登録",
+          "url": "https://www.city.gosen.lg.jp/organization/7/8/1/4392.html"
+        },
+        {
+          "label": "南魚沼市 空き家を売りたい人または貸したい人",
+          "url": "https://www.city.minamiuonuma.niigata.jp/akiyabank/faq/39837.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-56",
+      "q": "新潟県内の空き家バンクは、どの市町村にもある？",
+      "a": "どの市町村にもあるとは限りません。新潟県のページは、空き家バンクを一部実施していない市町村もあると明記しています。",
+      "detail": [
+        "県の担当課一覧に載るのは29市町村（新潟市は西蒲区のみ）で、粟島浦村は載っていません。",
+        "実家の市町村が実施しているかは、県のページの担当課一覧で確認できます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "chouson-akiya-bank-niigata",
+          "label": "新潟の町村10の空き家バンクと相談先"
+        },
+        {
+          "guide": "joetsu-niigata-akiya-bank",
+          "label": "上越市・新潟市の空き家バンク｜登録方法と使える制度"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県 空き家バンク",
+          "url": "https://www.pref.niigata.lg.jp/sec/toshiseisaku/akiya-bank.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-57",
+      "q": "遠方に住んでいて、空き家の管理を頼める先は？",
+      "a": "新潟県は、管理や売買の相談を受ける「にいがた空き家管理活用サポーター」を登録し、エリア別の一覧を公開しています。",
+      "detail": [
+        "相談料が発生する場合があるため、事前に確認します。",
+        "新潟市は、見回りや除草の相談先としてシルバー人材センター（025-241-3541）を案内しています。"
+      ],
+      "situations": [
+        "s2",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法｜電気・水道、火災保険、点検項目"
+        },
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県 にいがた空き家管理活用サポーター",
+          "url": "https://www.pref.niigata.lg.jp/site/toshiseisaku/niigata-akiya-supporter-soudan.html"
+        },
+        {
+          "label": "新潟市 空き家に関する相談窓口一覧",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/madoguchi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-58",
+      "q": "空き家の電気と水道は、止めてもよい？",
+      "a": "長岡市水道局は、長期間留守にしてブレーカーを落とすなら、給湯器の凍結防止機能が働かなくなるため水抜きをするよう案内しています。",
+      "detail": [
+        "長期不在のときは、メーターボックス内の止水栓を閉め、1〜2か所の蛇口を開け、水が出なくなったら蛇口を閉めます（長岡市水道局）。",
+        "給湯器やトイレの水抜きは、取扱説明書で確認します。"
+      ],
+      "situations": [
+        "s2",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法｜電気・水道、火災保険、点検項目"
+        },
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市水道局 水道管を冬の凍結から守りましょう",
+          "url": "https://www.city.nagaoka.niigata.jp/suidou/info/frozen.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-60",
+      "q": "高齢の親の家の雪下ろしに、助成は使える？",
+      "a": "長岡市と上越市には高齢者世帯などへの除雪費助成がありますが、対象は所得や援助の条件を満たす世帯で、空き家への助成は公式ページに記載がありません。",
+      "detail": [
+        "長岡市は屋根の除雪が1回24,300円まで（令和8年度）、上越市は1世帯126,000円までです。",
+        "長岡市の令和8年度の申請期限は12月9日で、事前登録が必要です。上越市は民生委員・児童委員を経由して申請します。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        },
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "冬の実家じまいと雪対策｜空き家の雪下ろしは誰がやる？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市 要援護世帯除雪費助成事業",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate04/y-jyosetu.html"
+        },
+        {
+          "label": "上越市 要援護世帯除雪費助成事業",
+          "url": "https://www.city.joetsu.niigata.jp/soshiki/engo/lifeguide-238.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-61",
+      "q": "実家を売るまでの間の固定資産税は、誰が払う？",
+      "a": "固定資産税は毎年1月1日現在の所有者に課税され、年の途中で売買があっても変わりません。売ったあとの負担は契約で取り決めることが多いです（新潟市）。",
+      "detail": [
+        "所有者として登記されている人が1月1日より前に亡くなっているときは、その家を現に所有している人（相続人など）が納税義務者になります。",
+        "売る年の1月1日に自分が所有者かを確認し、売ったあとの税金の負担は、売買契約で決めます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税は本当に6倍になる？｜住宅用地特例と勧告の仕組み"
+        },
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記の義務化と新潟の法務局・相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 固定資産税・都市計画税に関するよくある問い合わせ",
+          "url": "https://www.city.niigata.lg.jp/kurashi/zei/siraberu/koteishisan/noutu2020.html"
+        },
+        {
+          "label": "e-Gov法令検索 地方税法（第343条 納税義務者、第359条 賦課期日）",
+          "url": "https://laws.e-gov.go.jp/law/325AC0000000226"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-62",
+      "q": "空き家を解体したあと、土地の固定資産税はいつから上がる？",
+      "a": "取り壊した翌年から建物分の課税がなくなり、住宅だった土地は住宅用地特例から外れて税額が上がります（長岡市）。賦課期日は1月1日です。",
+      "detail": [
+        "判定は1月1日の状況なので、年内に壊し終えれば翌年1月1日は更地になり、翌年度分から土地の税額が上がります。",
+        "年明けに壊すなら、その年の1月1日は建物が残っているため、上がるのは翌々年度分からです（賦課期日の考え方から）。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税は本当に6倍になる？｜住宅用地特例と勧告の仕組み"
+        },
+        {
+          "guide": "kaitai-hiyou-niigata",
+          "label": "新潟で実家を解体する費用の考え方｜見積もりの内訳・補助金・滅失登記"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市 家屋を取り壊した場合は",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate02/kotei/qa3-Q4.html"
+        },
+        {
+          "label": "e-Gov法令検索 地方税法（第359条 固定資産税の賦課期日）",
+          "url": "https://laws.e-gov.go.jp/law/325AC0000000226"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-63",
+      "q": "空き家バンクに登録したまま、不動産会社にも頼める？",
+      "a": "市で扱いが分かれ、新発田市は同時にできず、村上市は業者に依頼済みだと登録できず、長岡市は仲介業者が決まっていても登録できます。",
+      "detail": [
+        "五泉市は、民間の不動産会社にすでに登録している物件は、契約上バンクに登録できない場合があるとして、不動産会社への問い合わせを案内しています。",
+        "実家の市町村の扱いは、依頼する前に市の担当課に確認します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "shibata-murakami-sado-akiya-bank",
+          "label": "新発田市・村上市・佐渡市の空き家バンク"
+        },
+        {
+          "guide": "nagaoka-akiya-bank",
+          "label": "長岡市の空き家バンク｜登録の流れ・探し方・家財処分や解体に使える支援"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新発田市 空き家バンクで物件を「売りたい人」について",
+          "url": "https://www.city.shibata.lg.jp/kurashi/iju/akiya/1001226.html"
+        },
+        {
+          "label": "村上市 空き家を売りたい人",
+          "url": "https://www.city.murakami.lg.jp/site/akiya-bank/akiyatourokusya.html"
+        },
+        {
+          "label": "長岡市 空き家物件登録",
+          "url": "https://www.city.nagaoka.niigata.jp/akiya/btouroku.html"
+        },
+        {
+          "label": "五泉市 空家物件登録",
+          "url": "https://www.city.gosen.lg.jp/organization/7/8/1/4392.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-64",
+      "q": "糸魚川市と妙高市に、空き家の解体補助はある？",
+      "a": "糸魚川市は危険空き家の解体費の2分の1・上限50万円、妙高市は市が認定した特定空き家等の解体費の2分の1・上限50万円を補助します。",
+      "detail": [
+        "糸魚川市は受付期間の記載がなく、年度の予算額に達し次第終了です。交付決定を受ける前に着手した工事は対象外です。",
+        "妙高市の受付は令和8年4月1日〜11月30日で、令和9年3月31日までに工事と支払いを終えるものが対象です。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "myoko-itoigawa-uonuma-akiya-bank",
+          "label": "妙高市・糸魚川市・魚沼市・南魚沼市の空き家バンク"
+        },
+        {
+          "guide": "jikkajimai-hojokin-niigata",
+          "label": "新潟県30市町村の空き家解体補助金一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "糸魚川市 危険空き家除却支援補助金",
+          "url": "https://www.city.itoigawa.lg.jp/page/1417.html"
+        },
+        {
+          "label": "妙高市 特定空き家等除却費補助金",
+          "url": "https://www.city.myoko.niigata.jp/docs/31250.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-65",
+      "q": "今（2026年10月）申し込める空き家の解体補助は、どこにある？",
+      "a": "2026年10月9日時点で期限が明記された解体補助は、阿賀野市が事前調査の申込10月30日、妙高市が11月30日、燕市が12月28日までです。",
+      "detail": [
+        "阿賀野市は予算に達すると期間中でも終了します。三条市と糸魚川市は受付期間の記載がなく、予算に達し次第の終了です。",
+        "小千谷市の移住建替支援事業は、令和8年10月5日に受付が始まり、予算額に達すると終了します。",
+        "[要確認: 期限は変わることがあるため、申込前に各市のページで確認]"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "jikkajimai-hojokin-niigata",
+          "label": "新潟県30市町村の空き家解体補助金一覧"
+        },
+        {
+          "guide": "kaitai-hiyou-niigata",
+          "label": "新潟で実家を解体する費用の考え方｜見積もりの内訳・補助金・滅失登記"
+        }
+      ],
+      "sources": [
+        {
+          "label": "阿賀野市 令和8年度空き家解体支援事業",
+          "url": "https://www.city.agano.niigata.jp/soshiki/kensetsuka/zumai/14246.html"
+        },
+        {
+          "label": "妙高市 特定空き家等除却費補助金",
+          "url": "https://www.city.myoko.niigata.jp/docs/31250.html"
+        },
+        {
+          "label": "燕市 特定空き家等解体撤去費助成金",
+          "url": "https://www.city.tsubame.niigata.jp/soshiki/toshi_seibi/3/1/172/19331.html"
+        },
+        {
+          "label": "三条市 危険な空家の解体費用を補助します",
+          "url": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/seikatsuanzen/akiyaakichi/15199.html"
+        },
+        {
+          "label": "糸魚川市 危険空き家除却支援補助金",
+          "url": "https://www.city.itoigawa.lg.jp/page/1417.html"
+        },
+        {
+          "label": "小千谷市 移住建替支援事業補助金",
+          "url": "https://www.city.ojiya.niigata.jp/site/iju/akiya-kaitai-tatekae.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-66",
+      "q": "兄弟で共有している実家は、一人が反対したら壊せる？",
+      "a": "共有物に変更を加えるには他の共有者の同意が必要です（民法251条1項）。反対する人がいると、解体のように建物を変える行為は進められません。",
+      "detail": [
+        "共有者の所在が分からないときは、裁判所が、その人以外の同意で変更できる旨の裁判をすることがあります（民法251条2項）。",
+        "相続した共有で話合いがつかないときは、家庭裁判所の遺産分割の調停・審判を利用できます。売却の進め方は司法書士か弁護士に相談します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度"
+        },
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記の義務化と新潟の法務局・相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "e-Gov法令検索 民法（第251条 共有物の変更）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        },
+        {
+          "label": "裁判所 遺産分割調停",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_07_12/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-67",
+      "q": "相続した空き家の3,000万円控除を使うとき、確定申告は必要？",
+      "a": "必要です。国税庁は、相続した空き家の3,000万円控除を受けるには、一定の書類を添えて確定申告をすることが必要と案内しています。",
+      "detail": [
+        "添付する書類に、市が交付する被相続人居住用家屋等確認書や、売買契約書の写しなどがあります。",
+        "確認書の交付は、新潟市・長岡市とも受付から2週間程度かかります。申告の可否は、税務署か税理士に確認します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金｜3,000万円控除と新潟の相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.3306 被相続人の居住用財産（空き家）を売ったときの特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3306.htm"
+        },
+        {
+          "label": "新潟市 空き家の譲渡所得の3,000万円特別控除",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/yokusei/akiyatokurei3000.html"
+        },
+        {
+          "label": "長岡市 空き家の譲渡所得3,000万円特別控除について",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/inheritance.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-68",
+      "q": "古い空き家を売ったあと、雨漏りやシロアリを後から言われることはある？",
+      "a": "買主は、売った家が契約の内容に合わなければ修補などを請求できます（民法562条）。雨漏りなど知っている不具合は、契約前に買主へ告げます。",
+      "detail": [
+        "責任を負わない特約をしても、売主が知りながら告げなかった事実の責任は免れません（民法572条）。",
+        "買主が不適合を知った時から1年以内に通知しないと、請求できなくなります（民法566条）。ただし、売主が引渡しの時に知っていた場合などは別です。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kaitori-niigata",
+          "label": "新潟の空き家を買い取ってもらうには｜買取と仲介の違い・再建築不可・査定書類"
+        },
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度"
+        }
+      ],
+      "sources": [
+        {
+          "label": "e-Gov法令検索 民法（第562条・第566条・第572条）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        },
+        {
+          "label": "国土交通省 高齢者の自宅の売却トラブルにご注意ください！",
+          "url": "https://www.mlit.go.jp/totikensangyo/const/totikensangyo_const_tk3_0053.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-69",
+      "q": "相続税を払った実家を売ると、譲渡の税金は軽くなる？",
+      "a": "相続税の申告期限の翌日から3年を経過する日までに売ると、払った相続税の一部を取得費に加算でき、譲渡所得が少なくなる特例があります。",
+      "detail": [
+        "この特例を受けるには、一定の書類を添えて確定申告をすることが必要です。",
+        "売った財産ごとに計算します。適用の可否と金額は、税務署か税理士に確認します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金｜3,000万円控除と新潟の相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.3267 相続財産を譲渡した場合の取得費の特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3267.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "ie-70",
+      "q": "実家を解体する前に、アスベストの調査は必要？",
+      "a": "必要です。環境省は、建築物の解体・改修では令和5年10月1日から、有資格者（建築物石綿含有建材調査者等）による事前調査を義務としています。",
+      "detail": [
+        "一定規模以上の工事は、調査の結果を都道府県などへ報告する必要があります。",
+        "調査や報告の費用がどこに含まれるかは、解体の見積書で確認します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "kaitai-hiyou-niigata",
+          "label": "新潟で実家を解体する費用の考え方｜見積もりの内訳・補助金・滅失登記"
+        }
+      ],
+      "sources": [
+        {
+          "label": "環境省 建物を壊すときにはどうしたら良いの？",
+          "url": "https://www.env.go.jp/air/asbestos/index6.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    }
+  ]
+}

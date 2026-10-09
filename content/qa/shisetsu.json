@@ -1,0 +1,1345 @@
+{
+  "id": "shisetsu",
+  "order": 6,
+  "title": "親が施設に入るときの疑問",
+  "titleSuffix": "新潟の実家じまい",
+  "lead": "親が施設に入るときの住民票・郵便・費用・成年後見・実家の売却と税金・冬の管理の疑問に、公式の情報で短く答えます。",
+  "description": "親が老人ホームなどの施設に入るとき、新潟の実家をどうするか。住民票、住所地特例、郵便、施設費、成年後見と家庭裁判所の許可、売却の税金、冬の管理を公式情報で答えます。",
+  "updated": "2026-10-09",
+  "items": [
+    {
+      "id": "shisetsu-01",
+      "q": "親が施設に入ったら、実家はすぐ売るべき？",
+      "a": "いいえ、すぐに売る必要はありません。本人の意思と費用を確かめてから、管理か手放すかを決めます。",
+      "detail": [
+        "名義が親なら、売る契約をするのは親本人が原則です。",
+        "先に確かめるのは、本人の意思、住所と郵便、施設費と維持費の順です。",
+        "最初の相談先は、親の担当の地域包括支援センターです。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-02",
+      "q": "親が施設に入るとき、新潟市・長岡市では住民票を移すべき？",
+      "a": "移す基準は、新潟市と長岡市の案内ページに書かれていません。移す場合は、新しい住所に住み始めた日から14日以内に届け出ます。",
+      "detail": [
+        "住所変更の届出は、新潟市の市内異動も、長岡市の転居届も、新しい住所に住み始めた日から14日以内です。",
+        "家族が代わりに届けるときは、新潟市は委任状が要ります。長岡市は、本人や同一世帯の親族以外だと委任状等が必要な場合があります。",
+        "介護保険は、住所地特例の対象施設なら、住民票を移しても入所前の市町村が保険者のままです。",
+        "移す場合と移さない場合の影響は、入所の前に市の窓口で確認します。長岡市の住所変更担当は市民課（0258-39-7514）です。",
+        "施設入所時に移すかどうかの基準は、[要確認: 新潟市の区役所・長岡市の市民課]。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 住民異動に関する届出",
+          "url": "https://www.city.niigata.lg.jp/kurashi/todokede/kosekinado/jyuminhyo/jyuumintodoke.html"
+        },
+        {
+          "label": "新潟市 新潟市内での住所異動の届出",
+          "url": "https://www.city.niigata.lg.jp/kurashi/todokede/kosekinado/jyuminhyo/jushoido.html"
+        },
+        {
+          "label": "長岡市 転居届（市内の引越し）",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/tenkyo.html"
+        },
+        {
+          "label": "新潟県 介護保険の住所地特例について",
+          "url": "https://www.pref.niigata.lg.jp/sec/kourei/1194797775806.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-03",
+      "q": "住民票を施設に移すと、介護保険の窓口は変わる？",
+      "a": "住所地特例の対象施設なら、住民票を移しても、入所前の市町村が引き続き介護保険の保険者です。",
+      "detail": [
+        "対象は、介護保険施設、有料老人ホーム、軽費老人ホーム、養護老人ホームなどです。",
+        "特定施設の指定がないサービス付き高齢者向け住宅も、2015年4月から対象です。",
+        "入所予定の施設が対象かは、施設か市に確認します。県ページの更新は2019年9月です。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県 介護保険の住所地特例について",
+          "url": "https://www.pref.niigata.lg.jp/sec/kourei/1194797775806.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-04",
+      "q": "親あての郵便物は、施設に転送できる？",
+      "a": "日本郵便の転居届を出すと、旧住所あての郵便物が届出日から1年間、無料で転送されます。",
+      "detail": [
+        "登録まで3〜7営業日かかり、提出者の本人確認書類が必要です。",
+        "提出方法は、e転居、ポスト投函、郵便局の窓口の3つです。",
+        "家族が親の分を出すときは、窓口では、提出者と転居者が異なる場合に、転居者の本人確認書類の写しを出せます。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "日本郵便 転居・転送サービス",
+          "url": "https://www.post.japanpost.jp/service/receive/relocation/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-05",
+      "q": "転送期間が過ぎた親の郵便物は、どうなる？",
+      "a": "転送期間が過ぎると、旧住所あての郵便物は差出人に返還されます。続けるには、再度、転居届が必要です。",
+      "detail": [
+        "年金、保険、税金の通知は、送付先の変更が要るかを各機関に確認します。",
+        "転送期間は、転送開始希望日ではなく、届出日から数えます。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "日本郵便 転居・転送サービス",
+          "url": "https://www.post.japanpost.jp/service/receive/relocation/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-06",
+      "q": "親が施設に入ったら、実家の電気は止めるべき？",
+      "a": "止めるか残すかの公式の基準はありません。東北電力は、廃止の申込みを廃止日の2営業日前までと案内しています。",
+      "detail": [
+        "冬にブレーカーを落とすと、給湯器の凍結防止機能が働きません。",
+        "電気を止めるなら、水抜きとセットで考えます。",
+        "他の電力会社と契約している場合は、その会社に確認します。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "東北電力 電気の使用開始／終了の手続きについて",
+          "url": "https://faq.tohoku-epco.co.jp/%E9%9B%BB%E6%B0%97%E3%81%AE%E4%BD%BF%E7%94%A8%E9%96%8B%E5%A7%8B%EF%BC%8F%E7%B5%82%E4%BA%86%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6-68cd042b55e5321cc03bdbf4"
+        },
+        {
+          "label": "長岡市水道局 水道管を冬の凍結から守りましょう！",
+          "url": "https://www.city.nagaoka.niigata.jp/suidou/info/frozen.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-07",
+      "q": "長岡市で、空き家の水道を冬に守る手順は？",
+      "a": "長岡市水道局は、止水栓を閉め、蛇口を1〜2か所開けて水を出し切り、蛇口を閉める手順を案内しています。",
+      "detail": [
+        "止水栓は主に水道メーターボックスの中にあり、閉めたままにします。",
+        "漏水した分の水道料金や修理費は、お客さまの負担です。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        },
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市水道局 水道管を冬の凍結から守りましょう！",
+          "url": "https://www.city.nagaoka.niigata.jp/suidou/info/frozen.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-08",
+      "q": "新潟市で、冬に実家を長期間空けるとき水道は？",
+      "a": "新潟市水道局は、冬に長期間留守にするとき、水道メーターボックス内の止水栓を閉めるよう案内しています。",
+      "detail": [
+        "止水栓は時計回りに止まるまで回します。",
+        "寒波のときに、不在の家で水道管が破裂するケースが増えています。",
+        "積雪でメーターボックスが分かりにくくなるため、位置を先に確認します。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        },
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市水道局 水道管の冬じたく",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyogesuido/suido/suido/fuyu.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-09",
+      "q": "空き家になった実家の冬の管理は、何から始める？",
+      "a": "水道の凍結対策と雪の手配先を、雪が降る前に決めます。新潟県は、空き家の管理は所有者の責任と案内しています。",
+      "detail": [
+        "雪が積もった空き家には、落雪や倒壊の危険があり、近づかないよう呼びかけられています。",
+        "困ったときは、お住まいの市町村に連絡するよう県が案内しています。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト"
+        },
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県 冬季における空き家からの落雪や倒壊にご注意ください！",
+          "url": "https://www.pref.niigata.lg.jp/sec/toshiseisaku/akiya-jyosetsu.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-10",
+      "q": "空き家になった実家の雪下ろしの目安は？",
+      "a": "新潟県は、木造住宅では、ふすまや障子などの建具の開閉がスムーズでなくなったときを目安に挙げています。",
+      "detail": [
+        "雨が降ると雪が重くなり、見た目の積雪が少なくても重さが増している場合があります。",
+        "積雪表示板がある建築物は、表示された設計積雪量が目安です。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "冬の実家じまいと雪対策"
+        },
+        {
+          "guide": "akiya-yukioroshi-hiyou-gyosha-niigata",
+          "label": "空き家の雪下ろし、誰に頼む？費用は？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県 速やかな住宅・建築物の屋根雪下ろしに心掛けましょう",
+          "url": "https://www.pref.niigata.lg.jp/sec/jutaku/1296590413216.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-11",
+      "q": "空き家の倒壊や外壁の落下で損害が出たら、誰の責任？",
+      "a": "新潟市は、民法717条により、所有者らが損害賠償責任を負う可能性があると案内しています。",
+      "detail": [
+        "損害を賠償する責任は、まず占有者（管理している人）が負い、必要な注意を尽くしていた場合は所有者が負う、という条文です。",
+        "危険な状態の建築物には、新潟市の条例に基づく指導・勧告があります。",
+        "責任の判断は個別の事情で変わります。新潟県弁護士会（025-222-5533）や法テラス新潟（050-3383-5420）に相談できます。どちらも要予約です。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 建築物の管理責任",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/kenchiku/kanri/kanrisekinin.html"
+        },
+        {
+          "label": "新潟市 空き家に関する相談窓口一覧",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/madoguchi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-12",
+      "q": "遠方で空き家の管理ができないとき、誰に頼める？",
+      "a": "新潟県の「にいがた空き家管理活用サポーター」や、新潟市シルバー人材センターが相談先です。",
+      "detail": [
+        "県のサポーターは、売買・賃貸、管理、除却・解体、相続、活用を相談でき、相談料が発生する場合があります。",
+        "新潟市シルバー人材センターの電話は、025-241-3541です。",
+        "管理委託の料金は、[要確認: 公的な相場資料なし。業者に見積りを取る]。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県 にいがた空き家管理活用サポーター",
+          "url": "https://www.pref.niigata.lg.jp/site/toshiseisaku/niigata-akiya-supporter-soudan.html"
+        },
+        {
+          "label": "新潟市 空き家に関する相談窓口一覧",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/madoguchi.html"
+        },
+        {
+          "label": "新潟市 空き家の管理の方法",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/tekiseikanri/kanri.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-13",
+      "q": "親の通帳を預かって、施設費を払ってもよい？",
+      "a": "親の預金は親の財産です。使う前に、親の同意と、取引銀行の代理人の手続きを確認します。",
+      "detail": [
+        "銀行によっては、独自の代理人制度や財産管理サービスがあります。まず親と一緒に、取引銀行の窓口で聞きます。",
+        "親の判断能力が下がっているときは、独断で払い出さず、銀行と専門家に相談します。相談先は、地域包括支援センター、新潟県司法書士会（電話相談025-240-7867）、新潟県弁護士会（025-222-5533、要予約）、法テラス新潟（050-3383-5420、要予約）です。",
+        "使った金額は、日付と用途を記録しておくと、きょうだいに説明できます。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        },
+        {
+          "guide": "jikkajimai-okane-ga-nai",
+          "label": "実家じまいのお金がないとき"
+        }
+      ],
+      "sources": [
+        {
+          "label": "全国銀行協会 もし認知症になってしまったら",
+          "url": "https://www.zenginkyo.or.jp/article/life/retirement/15761/"
+        },
+        {
+          "label": "新潟市 空き家に関する相談窓口一覧",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/madoguchi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-14",
+      "q": "親の判断力が落ちた後は、誰が財産を管理する？",
+      "a": "家庭裁判所が成年後見人等を選ぶ法定後見制度があります。判断能力の程度で、補助・保佐・後見に分かれます。",
+      "detail": [
+        "後見人等が選ばれるのは、本人がひとりで決めることが心配になったときです。",
+        "元気なうちに契約を結ぶ任意後見は、別の制度です。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "厚生労働省 成年後見制度とは（法定後見制度）",
+          "url": "https://guardianship.mhlw.go.jp/personal/type/legal_guardianship/"
+        },
+        {
+          "label": "法務省 成年後見制度Q&A（成年後見制度とは）",
+          "url": "https://www.moj.go.jp/MINJI/a01.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-15",
+      "q": "成年後見の申立ては、誰がどこでできる？",
+      "a": "本人、配偶者、四親等内の親族などが、本人の住所地の家庭裁判所に申し立てられます。",
+      "detail": [
+        "申立手数料は収入印紙800円分、登記手数料は収入印紙2,600円分です。",
+        "連絡用の郵便切手が別に必要で、鑑定が必要なら費用を申立人が負担することがあります。",
+        "本人の診断書（発行から3か月以内）などの書類が要ります。",
+        "申立ての相談は、新潟市成年後見支援センター（025-248-4545。予約制の専門家相談は無料）、長岡市成年後見センター（0258-86-4715。相談料は無料）でできます。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所 後見開始",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_01/index.html"
+        },
+        {
+          "label": "新潟市 新潟市成年後見支援センター",
+          "url": "https://www.city.niigata.lg.jp/iryo/kenfuku/news/kouken-shien-center.html"
+        },
+        {
+          "label": "長岡市 成年後見制度について",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate07/seinen-kouken.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-16",
+      "q": "後見人がいる親の自宅を売るには、許可が要る？",
+      "a": "後見人等が本人の居住用不動産を売るには、家庭裁判所の許可が必要です。許可なしの処分は無効です。",
+      "detail": [
+        "対象は、売却のほか、抵当権の設定、賃貸借、建物の取り壊しです。",
+        "病院や施設に入所して今は住んでいない家も、対象に含まれます。",
+        "許可の申立手数料は、収入印紙800円分と郵便料です。",
+        "保佐人・補助人が申し立てられるのは、不動産の処分の代理権を与えられている場合です。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所 居住用不動産の処分についての許可",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_25_04/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-17",
+      "q": "認知症になった親の実家は、子が代わりに売れる？",
+      "a": "子でも、親に代わって売る権限は自動では持てません。判断能力が下がった後は、後見人等が家庭裁判所の許可を得て売ります。",
+      "detail": [
+        "不動産を売る契約は、名義人本人が結ぶのが原則です。",
+        "判断能力が下がった後は、後見人等が家庭裁判所の許可を得て売る流れになります。",
+        "元気なうちに備える任意後見は、別の問いにまとめています。",
+        "個別の判断は、司法書士（新潟県司法書士会の電話相談は025-240-7867）や弁護士に相談します。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所 居住用不動産の処分についての許可",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_25_04/index.html"
+        },
+        {
+          "label": "厚生労働省 成年後見制度とは（法定後見制度）",
+          "url": "https://guardianship.mhlw.go.jp/personal/type/legal_guardianship/"
+        },
+        {
+          "label": "新潟市 空き家に関する相談窓口一覧",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/madoguchi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-18",
+      "q": "後見が始まってから実家を売るまで、どんな順番？",
+      "a": "後見開始の申立てで後見人が選ばれた後、居住用不動産の処分の許可を申し立てる2段階です。",
+      "detail": [
+        "許可を得ずに売ると、その処分は無効になります。",
+        "後見開始の審理期間は、令和7年に終局した全国の事件で、2か月以内が約71.1%、4か月以内が約93.8%です。",
+        "居住用不動産の処分の許可にかかる期間の公式な目安は、確認できていません。[要確認: 新潟家庭裁判所の窓口で確認]"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所 後見開始",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_01/index.html"
+        },
+        {
+          "label": "裁判所 居住用不動産の処分についての許可",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_25_04/index.html"
+        },
+        {
+          "label": "最高裁判所 成年後見関係事件の概況（令和7年1月～12月）",
+          "url": "https://www.courts.go.jp/assets/20260316koukengaikyou-r7.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-19",
+      "q": "成年後見より軽い、預金の出し入れを頼める制度は？",
+      "a": "社会福祉協議会が行う日常生活自立支援事業で、預金の払い戻しなどの日常的金銭管理の援助を受けられます。",
+      "detail": [
+        "対象は、判断能力が不十分でも、契約内容を判断できる能力があると認められる人です。",
+        "実施主体は都道府県・指定都市の社協で、窓口は市町村の社協などです。",
+        "利用料は実施主体が定めます。厚生労働省は、訪問1回あたりの平均を約1,200円と示し、契約前の初期相談の経費は無料としています。",
+        "新潟県社会福祉協議会の料金は、[要確認: 新潟県社会福祉協議会・市町村の社協]。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "厚生労働省 日常生活自立支援事業",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/chiiki-fukusi-yougo/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-20",
+      "q": "実家を残すか売るかは、何を基準に決める？",
+      "a": "親が戻る可能性、施設費をまかなえるか、冬の管理を担う人がいるかを並べて決めます。",
+      "detail": [
+        "戻る可能性が高ければ、当面は管理を続ける形が合います。",
+        "戻る可能性が低ければ、売る・貸す・壊すを比べます。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        },
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "新潟の実家が空き家になったら"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-21",
+      "q": "親が「家に帰る」と言うとき、売る話はどう進める？",
+      "a": "売る前提では切り出さず、まず本人が実家に戻る可能性をどう考えているかを聞きます。",
+      "detail": [
+        "進める順番は、1）戻れる見込みを担当のケアマネジャーや施設の相談員に確認する、2）本人に気持ちを聞く、3）施設費と実家の維持費を並べて見せる、4）売る・貸す・残すを一緒に比べる、です。",
+        "聞いた内容は、メモや書面に残します。",
+        "名義が親なら、売る契約をするのは親本人が原則です。",
+        "気持ちの整理は、別の記事にまとめています。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        },
+        {
+          "guide": "jikkajimai-sabishii-kokoro",
+          "label": "実家じまいが寂しい・つらいとき"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-22",
+      "q": "施設の費用と実家の維持費は、どう並べて比べる？",
+      "a": "施設の見積りと実家の維持費を年単位で並べると、親の預貯金や年金でまかなえるかが見えてきます。",
+      "detail": [
+        "実家の維持費は、固定資産税、火災保険、電気・水道の基本料金、雪下ろしや草取りです。",
+        "施設の費用は、施設の種類や部屋のタイプで変わるため、見積りをもらいます。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        },
+        {
+          "guide": "jikkajimai-okane-ga-nai",
+          "label": "実家じまいのお金がないとき"
+        }
+      ],
+      "sources": [
+        {
+          "label": "厚生労働省 介護サービス情報公表システム サービスにかかる利用料",
+          "url": "https://www.kaigokensaku.mhlw.go.jp/commentary/fee.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-23",
+      "q": "介護保険施設に入ると、月々どんな費用がかかる？",
+      "a": "介護サービス費の1割（所得により2割か3割）に加え、居住費、食費、日常生活費がかかります。",
+      "detail": [
+        "厚生労働省の目安は、要介護5の多床室で1か月約109,930円です。",
+        "ユニット型個室の目安は約146,980円で、日常生活費は施設ごとに設定されます。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "厚生労働省 介護サービス情報公表システム サービスにかかる利用料",
+          "url": "https://www.kaigokensaku.mhlw.go.jp/commentary/fee.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-24",
+      "q": "親の預貯金が多いと、施設の居住費・食費の補助は受けられない？",
+      "a": "預貯金等が段階ごとの上限（単身で500万〜1,000万円）を超えると、居住費・食費の補助（補足給付）は受けられません。",
+      "detail": [
+        "単身の上限は、第1段階1,000万円、第2段階650万円、第3段階①550万円、②500万円です。",
+        "市区町村民税課税世帯（第4段階）は対象外です。",
+        "利用には、市区町村への負担限度額認定の申請が必要です。申請先は、下の問いにまとめています。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "厚生労働省 介護サービス情報公表システム サービスにかかる利用料",
+          "url": "https://www.kaigokensaku.mhlw.go.jp/commentary/fee.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-25",
+      "q": "施設の費用が高額になったとき、月の上限はある？",
+      "a": "高額介護サービス費があり、月の負担額が上限を超えた分が支給されます。申請が必要です。",
+      "detail": [
+        "福祉用具購入費や、食費・居住費などの一部は対象外です。",
+        "上限は所得区分で変わり、第4段階①（課税所得380万円未満）は世帯で44,400円です。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "厚生労働省 介護サービス情報公表システム サービスにかかる利用料",
+          "url": "https://www.kaigokensaku.mhlw.go.jp/commentary/fee.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-26",
+      "q": "施設に入った親の費用は、医療費控除の対象になる？",
+      "a": "特別養護老人ホームは自己負担額の2分の1、介護老人保健施設と介護医療院は全額が対象です。",
+      "detail": [
+        "対象は、介護費、食費、居住費の自己負担額です。",
+        "有料老人ホームはNo.1125に記載がありません。[要確認: 税務署・税理士]",
+        "費用を払った子が自分の控除にできるかは、別の問いにまとめています。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.1125 介護保険制度下での施設サービスの対価に係る医療費控除",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1125.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-27",
+      "q": "親が存命のうちに実家を売ると、3,000万円控除は使える？",
+      "a": "居住用財産の3,000万円特別控除が使える場合があります。住まなくなって3年を経過する日の属する年の12月31日までに売る必要があります。",
+      "detail": [
+        "No.3302は、以前住んでいた家屋は、住まなくなった日から3年を経過する日の属する年の12月31日までに売る場合に限り対象と説明しています。例えば2026年10月に住まなくなった場合は、2029年12月31日までです。",
+        "施設入所が「住まなくなった日」に当たるかは、No.3302に記載がなく、国税庁の質疑応答事例でも確認できていません。[要確認: 所轄の税務署・税理士]",
+        "親子や夫婦など、特別の関係がある人に売った場合は対象外です。",
+        "特例を受けるには、確定申告が必要です。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金"
+        },
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.3302 マイホームを売ったときの特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3302.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-28",
+      "q": "施設に入った親の家を壊して、敷地を売る場合の期限は？",
+      "a": "取り壊した日から1年以内に売買契約を結び、住まなくなって3年後の年末までに売る必要があります。",
+      "detail": [
+        "取り壊した後、契約の日まで、貸駐車場などに使っていないことも条件です。",
+        "個別の判断は、税務署か税理士に確認します。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.3302 マイホームを売ったときの特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3302.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-29",
+      "q": "入所していた親が亡くなった後も、空き家の3,000万円控除は使える？",
+      "a": "要介護認定などを受けて対象の施設に入所していた場合、亡くなる直前に住んでいなくても、対象になることがあります。",
+      "detail": [
+        "入所後に、貸したり、事業に使ったり、他の人が住んだりしていないことが条件です。",
+        "昭和56年5月31日以前の建築で、区分所有建物でないことも必要です。",
+        "売る期限は相続開始から3年後の年末で、かつ令和9年12月31日までです。",
+        "売る時点で耐震基準を満たすか、取り壊して土地を売るなどの別の要件があります。売却代金は1億円以下で、市区町村の確認書が要ります。"
+      ],
+      "situations": [
+        "s2",
+        "s3"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.3307 被相続人が老人ホーム等に入所していた場合の被相続人居住用家屋",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3307.htm"
+        },
+        {
+          "label": "国税庁 No.3306 被相続人の居住用財産（空き家）を売ったときの特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3306.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-30",
+      "q": "入所していた親の家の敷地は、小規模宅地等の特例の対象になる？",
+      "a": "要介護認定などを受けて対象施設に入所していた場合、入所前の居住が「被相続人の居住の用」に含まれ、対象になることがあります。",
+      "detail": [
+        "特定居住用宅地等は、330平方メートルまでの部分が80%減額されます。",
+        "入所の直前に、要介護認定または要支援認定を受けていたことが要件です。",
+        "入所後に事業用や、親ら以外の人の居住用になると、この扱いは外れます。",
+        "取得者の要件が別にあります。税務署か税理士に確認します。"
+      ],
+      "situations": [
+        "s2",
+        "s3"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.4124 小規模宅地等の特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4124.htm"
+        },
+        {
+          "label": "国税庁 質疑応答事例 老人ホームへの入所により空家となっていた建物の敷地についての小規模宅地等の特例",
+          "url": "https://www.nta.go.jp/law/shitsugi/sozoku/10/15.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-31",
+      "q": "施設に入って空き家になる実家の火災保険は、そのまま使える？",
+      "a": "契約ごとに扱いが違います。公的機関の一次情報が見つかっていないため、保険会社か代理店に確認します。[要確認: 契約中の保険の空き家の扱い]",
+      "detail": [
+        "確認点は、空き家になった後も有効か、風や雪の被害が補償されるかです。",
+        "空き家になることを、保険会社に伝える必要があるかも聞きます。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-32",
+      "q": "親が施設に入った実家の連絡先は、近所にどう伝える？",
+      "a": "新潟市は、空き家の所有者が自治会・町内会と近所の方に、連絡先を伝えておくよう案内しています。",
+      "detail": [
+        "問題が起きたときに、すぐ連絡がつくようにするためです。",
+        "挨拶の仕方は、別の記事にまとめています。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-aisatsu-kinjo",
+          "label": "実家じまいの近所への挨拶"
+        },
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 空き家の管理の方法",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/tekiseikanri/kanri.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-33",
+      "q": "施設に入った親の実家のことは、最初にどこへ相談する？",
+      "a": "高齢者の公的な相談窓口である地域包括支援センターが、最初の相談先になります。",
+      "detail": [
+        "長岡市は11か所、新潟市は30か所あり、担当する地区が決まっています。長岡市は、町名別の担当一覧が市のページにあります。",
+        "新潟市のセンターは、成年後見制度など権利を守る制度の相談も受けています。",
+        "法律や税の個別の判断は、司法書士、弁護士、税理士に相談します。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 地域包括支援センターとは",
+          "url": "https://www.city.niigata.lg.jp/iryo/kaigo/chiikihokatsu/houkatsutop.html"
+        },
+        {
+          "label": "長岡市 地域包括支援センター",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate02/houkatu_center.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-34",
+      "q": "新潟市と長岡市で、空き家の相談窓口はどこ？",
+      "a": "新潟市は住環境政策課（025-226-2813）、長岡市は都市政策課の住宅政策班（0258-39-2265）です。",
+      "detail": [
+        "長岡市は、各支所の地域振興・市民生活課でも相談できます。",
+        "受付時間や予約の要否は、各市のページで確認します。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        },
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "新潟の実家が空き家になったら"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 空き家に関する相談窓口一覧",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/madoguchi.html"
+        },
+        {
+          "label": "長岡市 長岡市の空き家対策",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-35",
+      "q": "親が亡くなるまで実家を売らずに待つと、税金は変わる？",
+      "a": "売る時期で、使える税の特例が変わります。存命中は居住用財産の特例、亡くなった後は空き家の特例が候補です。",
+      "detail": [
+        "存命中は、住まなくなって3年後の年末までに売るなどの期限があります。",
+        "相続後は、相続開始から3年後の年末まで、かつ令和9年12月31日までです。",
+        "どちらが有利かは個別の事情で変わるため、税理士に確認します。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金"
+        },
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "新潟の実家が空き家になったら"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.3302 マイホームを売ったときの特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3302.htm"
+        },
+        {
+          "label": "国税庁 No.3306 被相続人の居住用財産（空き家）を売ったときの特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3306.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-36",
+      "q": "実家の維持費や交通費は、きょうだいでどう分ける？",
+      "a": "分担割合を決める公式の基準は、確認できていません。立て替えた人と金額を記録し、窓口役を決めて話し合います。",
+      "detail": [
+        "維持費の項目（固定資産税、水道光熱費、雪下ろし、交通費など）を一覧にし、立て替えた人・日付・金額を記録します。",
+        "親の財産から払うか、きょうだいで出し合うかは、親も含めて先に話し合います。",
+        "割合で揉めそうなときは、新潟県弁護士会（025-222-5533、要予約）や法テラス新潟（050-3383-5420、要予約）に相談できます。負担割合は[要確認: 弁護士・司法書士]。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-okane-ga-nai",
+          "label": "実家じまいのお金がないとき"
+        },
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 空き家に関する相談窓口一覧",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/madoguchi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-37",
+      "q": "施設の食費・居住費の補助（負担限度額認定）は、どこで申請する？",
+      "a": "新潟市は住所地の区役所の高齢介護担当（中央区は窓口サービス課）、長岡市は介護保険課に申請します。",
+      "detail": [
+        "新潟市は、申請書、同意書、申請者の本人確認書類、本人と配偶者の預貯金等を証明する書類を、持参か郵送で出します。FAXは使えません。",
+        "長岡市は、申請書と、本人および配偶者名義のすべての通帳等のコピーを出します。介護保険課の電話は0258-39-2245です。",
+        "長岡市は、申請した月の初日から軽減の対象になります。入所の時期に間に合うよう、早めに申請します。",
+        "新潟市の適用開始の時期は、市のページに記載がありません。[要確認: 区役所の高齢介護担当]"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        },
+        {
+          "guide": "jikkajimai-okane-ga-nai",
+          "label": "実家じまいのお金がないとき"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 介護保険の利用者負担軽減について",
+          "url": "https://www.city.niigata.lg.jp/iryo/kaigo/kaigoindex/riyousyahutankeigen.html"
+        },
+        {
+          "label": "長岡市 介護保険利用者負担軽減制度について",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate02/hutan_keigen.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-38",
+      "q": "施設に入った親の費用を子が払うと、子の医療費控除になる？",
+      "a": "生計を一にする親族のために支払った医療費は、支払った人が医療費控除を受けられます。",
+      "detail": [
+        "対象は、その年の1月1日から12月31日までに支払った医療費です。",
+        "施設の費用のうち対象になる範囲は、特別養護老人ホームが自己負担額の2分の1、介護老人保健施設と介護医療院が全額です。",
+        "親と別居している場合に「生計を一にする」と認められるかは、[要確認: 所轄の税務署・税理士]。",
+        "確定申告書に、医療費控除の明細書を添付して提出します。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.1120 医療費を支払ったとき（医療費控除）",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1120.htm"
+        },
+        {
+          "label": "国税庁 No.1125 介護保険制度下での施設サービスの対価に係る医療費控除",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1125.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-39",
+      "q": "親が施設に入って空き家になった実家の固定資産税は、誰が払う？",
+      "a": "毎年1月1日現在の所有者に課税されます。親が入所して空き家になっても、登記上の名義人が納税義務者です。",
+      "detail": [
+        "新潟市と長岡市は、どちらも税率を1.4%としています。住宅用地の特例が適用されると、税額の基になる額が評価額より低くなる場合があります。",
+        "長岡市は、勧告を受けた空き家は、敷地の固定資産税の住宅用地特例が解除されると案内しています。",
+        "親の入所後の納税通知書の送り先は、市の資産税課に確認します。長岡市の資産税課は0258-39-2213です。[要確認: 新潟市の資産税課]"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税が6倍になる条件"
+        },
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 固定資産税の概要",
+          "url": "https://www.city.niigata.lg.jp/kurashi/zei/siraberu/koteishisan/koteishisangaiyou.html"
+        },
+        {
+          "label": "長岡市 固定資産税とは",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate02/kotei/kotei.html"
+        },
+        {
+          "label": "長岡市 長岡市の空き家対策",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-40",
+      "q": "親の成年後見人には、子がなれる？",
+      "a": "申立書に子を候補者として書けますが、選ぶのは家庭裁判所です。令和7年に親族が選ばれたのは約16.4%でした。",
+      "detail": [
+        "最高裁の令和7年の集計では、後見人等に選ばれた人のうち、親族は7,014件（約16.4%）、親族以外は35,718件（約83.6%）でした。",
+        "親族以外の内訳は、司法書士11,966件、弁護士8,903件、社会福祉士7,280件などです。",
+        "親族のうち子は3,647件でした。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "最高裁判所 成年後見関係事件の概況（令和7年1月～12月）",
+          "url": "https://www.courts.go.jp/assets/20260316koukengaikyou-r7.pdf"
+        },
+        {
+          "label": "裁判所 後見開始",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_01/index.html"
+        },
+        {
+          "label": "法務省 成年後見制度Q&A（成年後見制度とは）",
+          "url": "https://www.moj.go.jp/MINJI/a01.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-41",
+      "q": "成年後見人への報酬は、いくらかかる？",
+      "a": "報酬は家庭裁判所が審判で決め、本人の財産から支払われます。新潟家庭裁判所のめやす（平成26年2月）は、基本報酬が月額2万円です。",
+      "detail": [
+        "管理財産額（預貯金と有価証券等の合計）が1,000万円超5,000万円以下なら月額3万〜4万円、5,000万円超なら月額5万〜6万円がめやすです。",
+        "身上監護に特別な困難があった場合は、基本報酬の50%の範囲で付加報酬が付くことがあります。",
+        "報酬額の基準は法律で決まっておらず、裁判官が事務の内容と財産の状況から決めます。報酬を受け取るには、家庭裁判所への申立て（収入印紙800円分）が必要です。",
+        "めやすは平成26年2月の文書です。現在の運用は、[要確認: 新潟家庭裁判所の後見の窓口]。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟家庭裁判所 成年後見人等の報酬額のめやす（平成26年2月）",
+          "url": "https://www.courts.go.jp/niigata/vc-files/niigata/2021/kasaisyosiki/R3211.pdf"
+        },
+        {
+          "label": "裁判所 報酬の付与（成年後見制度、未成年後見制度）",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_25_06/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-42",
+      "q": "成年後見の申立費用や後見人の報酬を払えないとき、助成はある？",
+      "a": "新潟市と長岡市に、申立費用や報酬を助成する制度があります。対象は生活保護受給者などで、市ごとに要件が違います。",
+      "detail": [
+        "新潟市は、本人または申立人が生活保護を受けている人などが対象です。報酬の助成は、在宅の人は月額28,000円まで、施設入所の人は月額18,000円までです。",
+        "新潟市は、後見人が配偶者・直系血族・兄弟姉妹のときは対象外です。",
+        "長岡市は、生活保護の受給者のほか、世帯が住民税非課税で、単身の場合は年間収入150万円以下・資産350万円以下などの要件があります。報酬の助成は同額の上限で、最長24か月分です。申請は審判の確定から1年以内です。",
+        "窓口は、新潟市は区役所の高齢介護担当、長岡市は長寿はつらつ課（0258-89-7440）です。費用に余裕がない場合は、法テラスの民事法律扶助（0570-078374）もあります。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        },
+        {
+          "guide": "jikkajimai-okane-ga-nai",
+          "label": "実家じまいのお金がないとき"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 成年後見制度利用支援事業",
+          "url": "https://www.city.niigata.lg.jp/iryo/korei/anshinseikatsu/koreisha-seinenkoken.html"
+        },
+        {
+          "label": "長岡市 法定後見制度利用支援事業（成年後見制度利用支援事業）について",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate07/shien-jigyo.html"
+        },
+        {
+          "label": "厚生労働省 成年後見制度とは（法定後見制度）",
+          "url": "https://guardianship.mhlw.go.jp/personal/type/legal_guardianship/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shisetsu-43",
+      "q": "入所前に要介護認定を受けていないと、相続後の空き家特例は使えない？",
+      "a": "国税庁No.3307は、入所の直前に要介護認定または要支援認定を受けていたことを、要件に挙げています。",
+      "detail": [
+        "判定は、家屋が居住の用に供されなくなる直前の認定の状況で行います。",
+        "障害支援区分の認定を受けていた人が、障害者支援施設などに入所した場合も、対象に含まれます。",
+        "小規模宅地等の特例（No.4124）も、要介護認定または要支援認定を受けて対象の施設に入所した場合を対象にしています。",
+        "入所前後の認定の時期をどう扱うかは、[要確認: 所轄の税務署・税理士]。"
+      ],
+      "situations": [
+        "s2",
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金"
+        },
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.3307 被相続人が老人ホーム等に入所していた場合の被相続人居住用家屋",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3307.htm"
+        },
+        {
+          "label": "国税庁 No.4124 小規模宅地等の特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4124.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    }
+  ]
+}

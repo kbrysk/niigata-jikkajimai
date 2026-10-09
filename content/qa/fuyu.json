@@ -1,0 +1,1910 @@
+{
+  "id": "fuyu",
+  "order": 8,
+  "title": "雪・冬の管理・遠方からの疑問",
+  "titleSuffix": "新潟の実家じまい",
+  "lead": "雪下ろしの責任と助成、冬の空き家の水抜き、年末年始のごみ、遠方からの見回りを、新潟の公式情報で答えます。",
+  "description": "新潟の実家じまいで、雪下ろしの責任と費用、助成が空き家で使えるか、命綱アンカー補助、冬の水抜きと水道の止め方、年末年始のごみ、冬の帰省と遠方からの管理の頼み先を公式情報で答えます。",
+  "updated": "2026-10-09",
+  "items": [
+    {
+      "id": "fuyu-01",
+      "q": "空き家の雪下ろしは、誰の責任になりますか？",
+      "a": "新潟県は、空き家の管理は所有者の責任と案内しています。",
+      "detail": [
+        "雪による事故などで周辺に迷惑がかかるおそれがあるため、と県は説明しています。",
+        "遠方に住む所有者は、冬の前に雪下ろしの頼み先を決めておきます（当サイトの整理）。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "空き家の雪下ろしは誰の責任？新潟の実家の冬対策"
+        },
+        {
+          "guide": "akiya-yukioroshi-hiyou-gyosha-niigata",
+          "label": "空き家の雪下ろし、誰に頼む？費用は？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県「冬季における空き家からの落雪や倒壊にご注意ください！」",
+          "url": "https://www.pref.niigata.lg.jp/sec/toshiseisaku/akiya-jyosetsu.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-02",
+      "q": "空き家の落雪で隣家に被害が出たら、賠償責任はありますか？",
+      "a": "新潟市は、建物の倒壊や外壁材の落下で損害が出ると、所有者等が賠償責任を求められるおそれがあると案内しています。",
+      "detail": [
+        "根拠として民法717条を示し、こまめな雪下ろしと落雪防護策を勧めています。",
+        "民法717条は、まず占有者が賠償し、占有者が必要な注意をしていたときは所有者が賠償すると定めています。",
+        "建築物の安全に関する問い合わせ先は、建築行政課 監察指導係（025-226-2845）です。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "空き家の雪下ろしは誰の責任？新潟の実家の冬対策"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「知っておきたい建築物の管理責任」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/kenchiku/kanri/kanrisekinin.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-03",
+      "q": "雪が積もった空き家には、近づいてもよいですか？",
+      "a": "新潟県は、雪が積もった空き家に近づかないよう呼びかけています。",
+      "detail": [
+        "適切に雪処理されていない空き家には、落雪や倒壊の危険があるためです。",
+        "困ったときは、空き家のある市町村に連絡するよう県は案内しています。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        },
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "空き家の雪下ろしは誰の責任？新潟の実家の冬対策"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県「冬季における空き家からの落雪や倒壊にご注意ください！」",
+          "url": "https://www.pref.niigata.lg.jp/sec/toshiseisaku/akiya-jyosetsu.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-04",
+      "q": "新潟の屋根の雪下ろしの料金相場は、いくらですか？",
+      "a": "県や市町村の公式ページに、屋根の雪下ろしの料金相場は載っていません。",
+      "detail": [
+        "上越市は、災害救助法による除雪費助成の単価表で、人力除雪の上限を1人1時間4,000円（税込、年度の記載なし）と定めています。",
+        "これは通常の相場ではありません。見積りは書面でもらい、作業内容と別料金の有無を確認します（国民生活センター）。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-gyosha-ryokin-niigata",
+          "label": "新潟の雪下ろし料金と業者の頼み方"
+        },
+        {
+          "guide": "akiya-yukioroshi-hiyou-gyosha-niigata",
+          "label": "空き家の雪下ろし、誰に頼む？費用は？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "上越市「災害救助法による屋根雪等の除雪費助成（障害物の撤去）単価表」",
+          "url": "https://www.city.joetsu.niigata.jp/uploaded/attachment/263423.pdf"
+        },
+        {
+          "label": "国民生活センター 見守り新鮮情報 第500号「雪下ろし・除雪サービスのトラブル」",
+          "url": "https://www.kokusen.go.jp/mimamori/mj_mailmag/mj-shinsen500.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-05",
+      "q": "長岡市の屋根の雪下ろし助成は、1回いくらまでですか？",
+      "a": "長岡市の要援護世帯除雪費助成は、屋根の除雪が1回24,300円までです（令和8年度）。",
+      "detail": [
+        "回数は一冬3回で、山古志・川口地域など一部は4回です。",
+        "助成の上限額で、業者の料金の相場ではありません。",
+        "対象は、自力で除雪できず、市民税が非課税か均等割のみで、親族の援助を受けられない世帯などです。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        },
+        {
+          "guide": "yukioroshi-gyosha-ryokin-niigata",
+          "label": "新潟の雪下ろし料金と業者の頼み方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「要援護世帯除雪費助成事業」",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate04/y-jyosetu.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-06",
+      "q": "長岡市の除雪費助成の登録は、いつまでですか？",
+      "a": "令和8年度の事前登録の期限は、12月9日（水）です。",
+      "detail": [
+        "毎年10〜12月に、各地区の民生委員・児童委員を通じて受け付けています。",
+        "期限後も3月31日まで申請できますが、対象は登録決定後の除雪の費用だけです。",
+        "問い合わせは福祉総務課（0258-39-2217）です。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「要援護世帯除雪費助成事業」",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate04/y-jyosetu.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-07",
+      "q": "長岡市の除雪費助成は、空き家の所有者も使えますか？",
+      "a": "長岡市の除雪費助成について、空き家の所有者が使えるかは公式ページに書かれていません。",
+      "detail": [
+        "対象は、自力で除雪が困難で親族の援助が受けられない要援護世帯です。",
+        "[要確認: 空き家の所有者が使えるか。福祉総務課 0258-39-2217に確認]",
+        "対象外のときは、雪下ろしを業者に有料で頼みます。長岡市は、必要に応じて専門業者へ依頼するよう案内しています。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-yukioroshi-hiyou-gyosha-niigata",
+          "label": "空き家の雪下ろし、誰に頼む？費用は？"
+        },
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「要援護世帯除雪費助成事業」",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate04/y-jyosetu.html"
+        },
+        {
+          "label": "長岡市「住宅・建築物の屋根の雪下ろしについて（お願い）」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/snow-removal.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-08",
+      "q": "長岡市の命綱固定アンカー補助は、いつまでで、いくら出ますか？",
+      "a": "長岡市は、令和8年度は11月30日までの先着順で、一般世帯は費用の2分の1（上限5万円）です。",
+      "detail": [
+        "要援護世帯は3分の2で上限8万円、非課税等の要援護世帯は10分の9で上限10万円です。",
+        "対象は市内に住所があり居住している住宅の所有者などで、空き家の記載はありません。[要確認: 空き家で使えるか。都市政策課 0258-39-2265に確認]"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        },
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "空き家の雪下ろしは誰の責任？新潟の実家の冬対策"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「屋根雪下ろし命綱固定アンカー設置補助金」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/anchor.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-09",
+      "q": "長岡市の空き家の庇や物置の雪も、下ろす必要がありますか？",
+      "a": "長岡市は、庇・車庫・物置・雁木などの付属物も、積雪が増えると荷重が急に増し倒壊のおそれがあると案内しています。",
+      "detail": [
+        "令和8年2月の降雪では、雁木やアーケードが倒壊する被害が出ています。",
+        "無理をせず、必要に応じて専門業者への依頼を検討するよう案内しています。",
+        "同ページに空き家の記載はなく、住宅・建築物全般への案内です。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        },
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "空き家の雪下ろしは誰の責任？新潟の実家の冬対策"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「住宅・建築物の屋根の雪下ろしについて（お願い）」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/snow-removal.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-10",
+      "q": "柏崎市の雪下ろし助成は、空き家でも使えますか？",
+      "a": "柏崎市の雪下ろし助成は、人の住んでいない家は対象外です。",
+      "detail": [
+        "助成は経費の8割で、1回の作業につき2万円までです。",
+        "事前登録が必要で、登録前に終わった雪下ろしは対象になりません。",
+        "対象外のときは、雪下ろしを業者に有料で頼みます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-yukioroshi-hiyou-gyosha-niigata",
+          "label": "空き家の雪下ろし、誰に頼む？費用は？"
+        },
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "柏崎市「屋根の雪下ろしに掛かる費用を助成します」",
+          "url": "https://www.city.kashiwazaki.lg.jp/soshikiichiran/fukushihokembu/kaigokoreika/3/4/3/3982.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-11",
+      "q": "柏崎市の雪下ろし助成の第一次申請は、いつまでですか？",
+      "a": "令和8年度の第一次申請の期限は、10月31日（土）です。",
+      "detail": [
+        "第二次以降は随時受け付けで、市のページに明記された期限はありません。",
+        "対象は65歳以上のみの世帯など。世帯全員の市民税が非課税か均等割のみであることも条件です。",
+        "申請先は、地区の民生委員か介護高齢課（0257-21-2228）です。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "柏崎市「屋根の雪下ろしに掛かる費用を助成します」",
+          "url": "https://www.city.kashiwazaki.lg.jp/soshikiichiran/fukushihokembu/kaigokoreika/3/4/3/3982.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-12",
+      "q": "親が施設に入ると、上越市の除雪費助成は使えなくなりますか？",
+      "a": "上越市は、施設入所等で住民票上の住所に生活しておらず、将来帰宅する見込みがない世帯を、除雪費助成の対象外としています。",
+      "detail": [
+        "対象外とされるのは、帰宅の見込みがない場合と注記されています。帰宅の見込みがあるかの判断は、生活援護課（025-520-5779）に確認します。",
+        "通常期の限度額は1世帯126,000円で、申請は民生委員・児童委員を通じて行います。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        },
+        {
+          "guide": "akiya-yukioroshi-hiyou-gyosha-niigata",
+          "label": "空き家の雪下ろし、誰に頼む？費用は？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "上越市「除雪費助成制度」",
+          "url": "https://www.city.joetsu.niigata.jp/soshiki/engo/lifeguide-238.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-13",
+      "q": "上越市の命綱固定アンカー補助は、空き家も対象ですか？",
+      "a": "上越市は、住民登録のない人が所有する空き家等も対象に含むと明記しています（令和8年度）。",
+      "detail": [
+        "受付は11月30日（月）までで、予算額に達し次第終了します。窓口は建築住宅課 住宅対策係（025-520-5786）です。",
+        "一般世帯は50%で上限15万円、要援護世帯は90%で上限27万円。契約・着工前の申請が必要です。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        },
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "空き家の雪下ろしは誰の責任？新潟の実家の冬対策"
+        }
+      ],
+      "sources": [
+        {
+          "label": "上越市「令和8年度 屋根雪下ろし命綱固定アンカー等設置費補助金」",
+          "url": "https://www.city.joetsu.niigata.jp/soshiki/kenjuu/annka.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-14",
+      "q": "十日町市の雪おろし作業費補助は、いつまで申請できますか？",
+      "a": "十日町市の雪おろし作業費補助は、令和8年度は7月13日から12月25日までの受付です。",
+      "detail": [
+        "上限は1シーズン35,000円で、業者が墜落防止器具を使って行う作業が対象です。",
+        "自分や親戚が行う作業は対象外です。",
+        "申請して交付決定を受けたあとに、業者へ依頼する流れです。窓口は建設課 克雪利水係（025-761-7412）です。"
+      ],
+      "situations": [
+        "s1",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-gyosha-ryokin-niigata",
+          "label": "新潟の雪下ろし料金と業者の頼み方"
+        },
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "十日町市「雪おろし作業費補助（雪おろし安全対策事業）」",
+          "url": "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/kensetsuka/3/gyomu/7650.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-15",
+      "q": "十日町市の雪おろし作業費補助は、空き家の所有者も対象ですか？",
+      "a": "十日町市の作業費補助は、墜落防止器具の取付設備がある住宅の所有者または居住者が対象です。",
+      "detail": [
+        "空き家の所有者が使えるかは、市のページから判断できません。",
+        "[要確認: 空き家で使えるか。建設課 025-761-7412に確認]",
+        "使えないときは、雪下ろしを業者に有料で頼みます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-yukioroshi-hiyou-gyosha-niigata",
+          "label": "空き家の雪下ろし、誰に頼む？費用は？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "十日町市「雪おろし作業費補助（雪おろし安全対策事業）」",
+          "url": "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/kensetsuka/3/gyomu/7650.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-16",
+      "q": "十日町市のすまい雪おろし安全対策支援は、いつまでですか？",
+      "a": "令和8年度は7月21日から11月30日までの受付で、予算額に達し次第終了します。",
+      "detail": [
+        "一般世帯は工事費の50%で1棟15万円、要援護世帯は90%で1棟27万円までです。",
+        "対象は自ら居住する住宅とその付属屋で、空き家の記載はありません。",
+        "着工前の申請が必要です。窓口は都市計画課 建築住宅係（025-757-9935）です。"
+      ],
+      "situations": [
+        "s1",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "十日町市「すまい雪おろし安全対策支援事業」",
+          "url": "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/1/gyomu/1553041640146.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-17",
+      "q": "南魚沼市の屋根雪の除雪助成は、空き家で使えますか？",
+      "a": "南魚沼市の屋根雪の除雪助成は、空き家が対象外と明記されています。",
+      "detail": [
+        "3か月以上不在の世帯も対象外で、実際に居住している住宅が対象です。",
+        "申請は、地区の民生委員・児童委員か福祉課福祉総務係（025-773-6667）に利用申請書を出します。",
+        "空き家の雪下ろしは、助成を使わず業者に有料で頼みます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        },
+        {
+          "guide": "akiya-yukioroshi-hiyou-gyosha-niigata",
+          "label": "空き家の雪下ろし、誰に頼む？費用は？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "南魚沼市「高齢者や要配慮者世帯などへの住宅除雪事業」",
+          "url": "https://www.city.minamiuonuma.niigata.jp/docs/2328.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-18",
+      "q": "魚沼市の除雪援助を使うには、どれくらい自宅にいる必要がありますか？",
+      "a": "魚沼市は、11月から翌年3月までの日数の半数以上、自宅で生活している実態を求めています。",
+      "detail": [
+        "利用者負担は屋根雪で作業員1人1時間500円です。市の補助は一冬32・40・48時間のいずれかです。",
+        "年度ごとに申請が必要で、具体的な申請期限はページに書かれていません。問い合わせは介護福祉課 高齢福祉係（025-792-9755）です。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "魚沼市「軽度生活支援事業（除雪援助）について」",
+          "url": "https://www.city.uonuma.lg.jp/page/2111.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-19",
+      "q": "妙高市の除雪支援は、空き家になった実家でも使えますか？",
+      "a": "妙高市は、除雪する住宅を生活の本拠としている世帯に限っています。",
+      "detail": [
+        "世帯全員の市民税が非課税で、前年の収入が単身150万円以下などの条件があります。",
+        "申込は民生委員・児童委員を通じて行うか、福祉介護課（0255-74-0016）に相談します。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "妙高市「高齢者福祉（高齢者世帯冬期在宅支援事業）」",
+          "url": "https://www.city.myoko.niigata.jp/docs/967.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-20",
+      "q": "親が冬に施設へ入ると、三条市の除雪援助は使えませんか？",
+      "a": "三条市社協は、12月から3月に3か月を超えて入院・入所などで不在となる世帯を対象外としています。",
+      "detail": [
+        "対象は、世帯全員の市民税が非課税の75歳以上のみの世帯などです。",
+        "申請は令和9年3月4日（木）までで、雪下ろしの実施後に社協か民生委員へ連絡します。",
+        "助成額はページに書かれていません。[要確認: 助成額。生活支援係 0256-33-8511（ページ記載）に確認]"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "三条市社会福祉協議会「除雪援助事業」",
+          "url": "https://sanjo-syakyo.jp/pages/42/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-21",
+      "q": "小千谷市のSOS雪おろしは、2026年度の案内が出ていますか？",
+      "a": "2026年10月9日時点で、小千谷市の建設課のページにSOS雪おろしの案内は見当たりません。",
+      "detail": [
+        "2026年度版のSOS雪おろしは、建設課のページで公開されていません。同ページの克雪すまいづくり支援事業補助金は、克雪住宅の建築・改良への補助で、雪下ろしの費用ではありません。",
+        "[要確認: 2026年度の条件と作業料金の上限。建設課 0258-83-3514に確認]"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-yukioroshi-hiyou-gyosha-niigata",
+          "label": "空き家の雪下ろし、誰に頼む？費用は？"
+        },
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "小千谷市 建設課",
+          "url": "https://www.city.ojiya.niigata.jp/soshiki/kensetsu/index-2.html"
+        },
+        {
+          "label": "小千谷市「克雪すまいづくり支援事業補助金」",
+          "url": "https://www.city.ojiya.niigata.jp/soshiki/kensetsu/kokusetsujutaku.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-22",
+      "q": "燕市の雪下ろし相談窓口では、助成を受けられますか？",
+      "a": "燕市の雪下ろし相談窓口は助成ではなく、事業者に依頼するための窓口です。",
+      "detail": [
+        "受付は燕市建設業協同組合（0256-63-6016）などで、作業は有料です。",
+        "費用などの依頼条件は、事業者に直接問い合わせます。",
+        "市の担当は防災課 防災対策係（0256-77-8381）です。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-gyosha-ryokin-niigata",
+          "label": "新潟の雪下ろし料金と業者の頼み方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "燕市「雪下ろし相談窓口」",
+          "url": "https://www.city.tsubame.niigata.jp/yuki/11113.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-23",
+      "q": "新潟市に、個人向けの屋根の雪下ろし助成はありますか？",
+      "a": "新潟市全域の個人向けの屋根雪下ろし助成は、公式ページで確認できませんでした。",
+      "detail": [
+        "西区のコミュニティ除雪等助成は、自治会などの団体向けです。個人向けの記載はありません。",
+        "[要確認: 区ごとの個人向け助成の有無。各区役所に確認。西区は建設課 025-264-7661]",
+        "個人向けの助成が見当たらないときは、県の除雪相談窓口の一覧や、業者への有料の依頼を検討します。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「西区コミュニティ除雪等助成について」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/ku_info/kurashi_nishi/seikatsu/nishikujosetuhijosei.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-24",
+      "q": "雪下ろしに困ったとき、県の除雪相談窓口は使えますか？",
+      "a": "新潟県は、高齢者世帯等向けの除雪相談窓口を市町村ごとに一覧で公開しています（令和7年度）。",
+      "detail": [
+        "支援の内容は市町村で違い、住宅の雪下ろしに対応しない市町村もあります。",
+        "[要確認: 空き家になった実家で使えるか。各市町村の窓口に確認]",
+        "県の担当は福祉保健総務課 企画調整室（025-280-5176）です。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県「要配慮者（高齢者世帯等）に対する除雪相談窓口について」",
+          "url": "https://www.pref.niigata.lg.jp/sec/fukushihoken/1293144426695.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-25",
+      "q": "命綱固定アンカーの補助は、県内のどこの市町村にありますか？",
+      "a": "令和8年度は、新潟県内の16市町村が命綱固定アンカーの設置補助を実施しています。",
+      "detail": [
+        "県が、特別豪雪地帯のある市町村の費用の一部を補助する仕組みで、住民が県に直接申請する形ではありません。",
+        "補助率・上限額・対象住宅は市町村で違います（長岡市は上限5万円、上越市は上限15万円）。着工前に建設地の市町村で確認します。"
+      ],
+      "situations": [
+        "s1",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県「補助金のお知らせ（命綱固定アンカー普及促進事業）」",
+          "url": "https://www.pref.niigata.lg.jp/sec/jutaku/1356838728905.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-26",
+      "q": "屋根の雪下ろしのタイミングは、どう判断しますか？",
+      "a": "木造住宅では、屋内の建具の開閉がスムーズでなくなったときが、新潟県の示す目安です。",
+      "detail": [
+        "積雪表示板がある建物は、設計積雪量が目安です。",
+        "雪の密度は1立方メートルあたり300kgで、雨のあとは見た目より重くなります。",
+        "建物に異常を感じたら、建築士などの専門家に見てもらうよう県は案内しています。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "空き家の雪下ろしは誰の責任？新潟の実家の冬対策"
+        },
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県「速やかな住宅・建築物の屋根雪下ろしに心掛けましょう」",
+          "url": "https://www.pref.niigata.lg.jp/sec/jutaku/1296590413216.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-27",
+      "q": "遠方から、実家の屋根の雪の重さを確認する方法はありますか？",
+      "a": "新潟県が紹介する「雪おろシグナル」で、積雪の重さと危険度を確認できます。",
+      "detail": [
+        "毎年12月から3月の間に更新されます。",
+        "雪下ろしをした日を入力すると、屋根の雪の重さをリアルタイムで確認できます。",
+        "長岡市も、見た目では屋根の重さが分からないため確認を勧めています。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        },
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "空き家の雪下ろしは誰の責任？新潟の実家の冬対策"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県「雪おろシグナル（積雪重量分布情報）をご活用ください」",
+          "url": "https://www.pref.niigata.lg.jp/sec/kikitaisaku/1356885093295.html"
+        },
+        {
+          "label": "長岡市「住宅・建築物の屋根の雪下ろしについて（お願い）」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/snow-removal.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-28",
+      "q": "帰省したついでに、自分で屋根の雪下ろしをしてもよいですか？",
+      "a": "新潟県は、除雪作業中の死亡事故の多くが一人での作業中に起きていると指摘し、2人以上での作業を求めています。",
+      "detail": [
+        "令和6年度の雪下ろし等の除雪作業による人的被害は137件でした。",
+        "県は、ヘルメットと命綱を使い、はしごの足下と上部を固定するよう求めています。",
+        "帰省中に慣れない雪下ろしをするより、業者に頼むほうが安全です（当サイトの見解）。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "空き家の雪下ろしは誰の責任？新潟の実家の冬対策"
+        },
+        {
+          "guide": "yukioroshi-gyosha-ryokin-niigata",
+          "label": "新潟の雪下ろし料金と業者の頼み方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県「除雪作業中の事故にご注意ください」",
+          "url": "https://www.pref.niigata.lg.jp/site/chiikiseisaku/191025zikoboushi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-29",
+      "q": "雪が降る前に、新潟の空き家でやることは何ですか？",
+      "a": "管理の担当を決め、近所に連絡先を渡し、水抜きと雪の手配先を決めておきます（当サイトの整理）。",
+      "detail": [
+        "新潟市は、自治会や近隣の方に連絡先を伝えておくよう案内しています。",
+        "アンカー補助の締切は、長岡市・上越市・十日町市（すまい雪おろし安全対策支援）とも11月30日です。長岡市は空き家の記載がなく、上越市は空き家を含むと明記しています。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        },
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "空き家の雪下ろしは誰の責任？新潟の実家の冬対策"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「空き家の管理の方法」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/tekiseikanri/kanri.html"
+        },
+        {
+          "label": "新潟県「補助金のお知らせ（命綱固定アンカー普及促進事業）」",
+          "url": "https://www.pref.niigata.lg.jp/sec/jutaku/1356838728905.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-30",
+      "q": "新潟市の初雪は、例年いつごろですか？",
+      "a": "新潟市の観測地点「新潟」で、雪の初日の平年値は11月23日です（1991〜2020年）。",
+      "detail": [
+        "雪の終日の平年値は4月6日、積雪1cm以上の初日は12月15日です。",
+        "[要確認: 新潟市以外（長岡・十日町・魚沼など）の初雪の平年日。気象庁のページで確認できませんでした]"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "空き家の雪下ろしは誰の責任？新潟の実家の冬対策"
+        }
+      ],
+      "sources": [
+        {
+          "label": "気象庁「平年値（霜・雪・結氷の初終日）新潟」",
+          "url": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_season.php?prec_no=54&block_no=47604&year=&month=&day=&view="
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-31",
+      "q": "十日町市と魚沼市では、12月にどれくらい雪が積もりますか？",
+      "a": "12月の月最深積雪の平年値は、十日町が87cm、魚沼（小出）が75cmです（1991〜2020年）。",
+      "detail": [
+        "1月の平年値は十日町176cm、小出154cm。2月は十日町210cm、小出197cmと、さらに深くなります。",
+        "平年値のため、年による差は大きくなります。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "空き家の雪下ろしは誰の責任？新潟の実家の冬対策"
+        }
+      ],
+      "sources": [
+        {
+          "label": "気象庁 平年値（年・月ごとの値）十日町",
+          "url": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=54&block_no=0537&year=&month=&day=&view="
+        },
+        {
+          "label": "気象庁 平年値（年・月ごとの値）小出",
+          "url": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=54&block_no=0534&year=&month=&day=&view=a4"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-32",
+      "q": "実家じまいは、新潟では何月ごろ始めるとよいですか？",
+      "a": "新潟の実家じまいは、10月に動き始めて11月中に搬出まで終える日程が目安です（当サイトの見解）。",
+      "detail": [
+        "新潟市の雪の初日の平年値は11月23日、十日町の12月の月最深積雪の平年値は87cmです（気象庁、1991〜2020年）。",
+        "令和8年度の解体補助は、十日町市が4月13日、新潟市が4月20日に受付を始めました。公式に「例年の時期」の記載はありません。",
+        "新潟市のごみの自己搬入は、12月31日の午後から1月3日まで休止です。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方・県外から新潟の実家を片付ける段取り"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        }
+      ],
+      "sources": [
+        {
+          "label": "気象庁「平年値（霜・雪・結氷の初終日）新潟」",
+          "url": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_season.php?prec_no=54&block_no=47604&year=&month=&day=&view="
+        },
+        {
+          "label": "気象庁 平年値（年・月ごとの値）十日町",
+          "url": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=54&block_no=0537&year=&month=&day=&view="
+        },
+        {
+          "label": "新潟市「受入日時と区ごとに自己搬入できる施設」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/haishi20180329.html"
+        },
+        {
+          "label": "十日町市「空き家等除却支援事業補助金」",
+          "url": "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/4/1/10912.html"
+        },
+        {
+          "label": "新潟市「空き家活用推進事業」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/jukankyo/yushi_josei/akiyakatsuyo.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-33",
+      "q": "新潟の解体補助は、いつごろ申し込むと間に合いますか？",
+      "a": "令和8年度は、十日町市が4月13日から5月13日、魚沼市が5月14日から5月29日の短期受付でした。",
+      "detail": [
+        "新潟市の空き家活用推進事業は、4月20日に始まり8月28日に予算上限で終了しました。",
+        "どの市も例年の時期は公式に書かれておらず、来年度は4月に窓口へ確認します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "jikkajimai-hojokin-niigata",
+          "label": "新潟の実家じまいで使える補助金"
+        },
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "実家が空き家になったら、売る・貸す・壊す"
+        }
+      ],
+      "sources": [
+        {
+          "label": "十日町市「空き家等除却支援事業補助金」",
+          "url": "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/4/1/10912.html"
+        },
+        {
+          "label": "魚沼市「空家等解体補助金」",
+          "url": "https://www.city.uonuma.lg.jp/page/1029743.html"
+        },
+        {
+          "label": "新潟市「空き家活用推進事業」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/jukankyo/yushi_josei/akiyakatsuyo.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-34",
+      "q": "年内に実家を解体するのと年明けでは、固定資産税は変わりますか？",
+      "a": "固定資産税は1月1日の状態で決まり、1月末に壊してもその年度の家屋分は課税されます（新潟市）。",
+      "detail": [
+        "新潟市は、固定資産税を毎年1月1日現在に存在する固定資産に、その年度分として課税すると案内しています。",
+        "12月31日までに壊し終えれば、翌年1月1日に家屋がないため、翌年度の家屋分は課税されません（当サイトの整理。長岡市は「壊した翌年から」と案内）。",
+        "住宅を壊すと住宅用地の特例が外れ、土地の税額が上がる場合があります。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税は本当に6倍になる？"
+        },
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "実家が空き家になったら、売る・貸す・壊す"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「固定資産税・都市計画税に関するよくある問い合わせ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/zei/siraberu/koteishisan/noutu2020.html"
+        },
+        {
+          "label": "長岡市「家屋を取り壊した場合は」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate02/kotei/qa3-Q4.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-35",
+      "q": "相続した空き家の3,000万円控除は、年末までに売る必要がありますか？",
+      "a": "相続の開始から3年を経過する日の属する年の12月31日までに売ることが要件です（国税庁）。",
+      "detail": [
+        "対象の譲渡は、令和9年12月31日までのものです。相続人が3人以上のときの控除は2,000万円までです。",
+        "売ったあとに取り壊すか耐震基準を満たすようにする場合は、譲渡の年の翌年2月15日までに行う要件があります。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "空き家を売るときの税金（新潟版）"
+        },
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税は本当に6倍になる？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサー No.3306",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3306.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-36",
+      "q": "冬に空き家の水道を止めるとき、水抜きはどうしますか？",
+      "a": "長岡市水道局は、止水栓を閉めて蛇口を1〜2か所開け、水を出し切る手順を案内しています。",
+      "detail": [
+        "水が出なくなったら蛇口を閉め、止水栓は閉めたままにします。",
+        "給湯器の水抜きは、取扱説明書かメーカーで手順を確認します（当サイトの整理）。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        },
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市水道局「水道管を冬の凍結から守りましょう！」",
+          "url": "https://www.city.nagaoka.niigata.jp/suidou/info/frozen.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-37",
+      "q": "冬の空き家でブレーカーを落とすと、給湯器はどうなりますか？",
+      "a": "長岡市水道局によると、ブレーカーを落とすと給湯器の凍結防止機能は働きません。",
+      "detail": [
+        "長期間留守にしてブレーカーを落とすなら、水抜きが必要です。",
+        "電気を止める判断は、水抜きとセットで考えます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        },
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市水道局「水道管を冬の凍結から守りましょう！」",
+          "url": "https://www.city.nagaoka.niigata.jp/suidou/info/frozen.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-38",
+      "q": "新潟市で水道管が凍結するのは、何度以下のときですか？",
+      "a": "新潟市は、最低気温がマイナス4度以下になると、水道管が凍結し破裂するおそれがあると案内しています。",
+      "detail": [
+        "長期間家を空けるときは、止水栓を閉めておくと安心としています。",
+        "新潟市水道局は、不在の家での破裂は発見が遅れやすく、周囲に迷惑がかかることもあると案内しています。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「大雪に備えましょう」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/bosai/oshirase_ichiran/ooyuki_sonae.html"
+        },
+        {
+          "label": "新潟市水道局「水道管の冬じたく」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyogesuido/suido/suido/fuyu.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-39",
+      "q": "凍結した蛇口は、どうやって溶かせばよいですか？",
+      "a": "新潟市水道局は、蛇口にタオルを巻き、約40〜50度のぬるま湯をかけるよう案内しています。",
+      "detail": [
+        "熱湯は水道管が壊れるおそれがあるため使いません。",
+        "ぬるま湯がないときは、ドライヤーの温風を使います。",
+        "給湯器からお湯が出ないときは、取扱説明書を確認するか、メーカーや設置業者に問い合わせます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市水道局「水道管の冬じたく」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyogesuido/suido/suido/fuyu.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-40",
+      "q": "新潟市のごみの持ち込みは、年末年始はいつ休みですか？",
+      "a": "新潟市の自己搬入は、12月31日の午後から1月3日まで持ち込めません。",
+      "detail": [
+        "祝日も持ち込みできません（鎧潟クリーンセンターを除く）。",
+        "案内ページの更新は2023年10月2日です。[要確認: 令和8年度の年末年始の休止日。環境部 循環社会推進課 025-226-1423に確認]"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-gomi-mochikomi",
+          "label": "新潟市のごみ持ち込み"
+        },
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方・県外から新潟の実家を片付ける段取り"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「受入日時と区ごとに自己搬入できる施設」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/haishi20180329.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-41",
+      "q": "新潟市のごみ収集は、年末年始はどうなりますか？",
+      "a": "新潟市の新潟地区は、12月31日に燃やすごみの特別収集を行い、1月1日から3日は収集を休みます。",
+      "detail": [
+        "粗大ごみの電話受付は、12月29日から1月3日が休みです。",
+        "案内は2023年8月17日更新です。[要確認: 令和8年度の収集日はカレンダーで確認。他の区は各区のスケジュールで確認]"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-sodaigomi",
+          "label": "新潟市の粗大ごみの出し方"
+        },
+        {
+          "guide": "niigata-shi-gomi-mochikomi",
+          "label": "新潟市のごみ持ち込み"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 ごみ出しスケジュール（新潟地区）",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/gomi_calemder/schedule/niigata/haitai1-1.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-42",
+      "q": "長岡市の粗大ごみは、年末年始に申し込めますか？",
+      "a": "長岡市の粗大ごみは、インターネットとFAXなら年末年始も申し込めますが、電話は休みです。",
+      "detail": [
+        "確認の連絡は休み明けになり、混雑時は収集まで2週間程度かかります。",
+        "処理施設への持ち込みも年末年始は休みです。[要確認: 具体的な休止日]",
+        "申込専用電話は0258-25-0053で、月〜金の8:30〜17:00です（年末年始を除く）。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "nagaoka-shi-sodaigomi",
+          "label": "長岡市の粗大ごみの出し方"
+        },
+        {
+          "guide": "nagaoka-shi-gomi-mochikomi",
+          "label": "長岡市のごみ持ち込み"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「粗大ごみ（事前申込制）戸別収集」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html"
+        },
+        {
+          "label": "長岡市「処理施設への持ち込み」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/mochi-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-43",
+      "q": "冬に庭木の枝や草を処分したいとき、長岡市では持ち込めますか？",
+      "a": "長岡市の枝葉・草の持ち込みは、1月と2月はできません。",
+      "detail": [
+        "受付は中之島信条クリーンセンター（0256-97-7260）のみで、月・火・金・土曜日です。前日までの電話確認が必要です。",
+        "新潟市の枝葉・草の収集も、新潟地区のスケジュールでは1月・2月は休みです。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "nagaoka-shi-gomi-mochikomi",
+          "label": "長岡市のごみ持ち込み"
+        },
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「処理施設への持ち込み」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/mochi-gomi.html"
+        },
+        {
+          "label": "新潟市 ごみ出しスケジュール（新潟地区）",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/gomi_calemder/schedule/niigata/haitai1-1.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-44",
+      "q": "遠方の実家の管理は、県のどこに相談できますか？",
+      "a": "新潟県の「にいがた空き家管理活用サポーター」に、管理などの相談ができます。",
+      "detail": [
+        "相談料が発生する場合があるため、事前に確認します。",
+        "相談分野は売買・賃貸、管理、除却・解体、相続、活用の5つです。登録サポーターの一覧は、令和8年7月9日時点のPDFで公開されています。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        },
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方・県外から新潟の実家を片付ける段取り"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県「にいがた空き家管理活用サポーター」",
+          "url": "https://www.pref.niigata.lg.jp/site/toshiseisaku/niigata-akiya-supporter-soudan.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-45",
+      "q": "新潟市で、空き家の見回りや草取りはどこに頼めますか？",
+      "a": "新潟市は、管理の相談先として、新潟市シルバー人材センター（025-241-3541）を案内しています。",
+      "detail": [
+        "内容は庭木の剪定、除草、見回り、掃除で、受付は月〜金の8:30〜17:15です。",
+        "料金は市のページに載っていません。[要確認: シルバー人材センターの料金]"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        },
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「空き家に関する相談窓口一覧」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/madoguchi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-46",
+      "q": "燕市のシルバー人材センターの空き家見回りは、いくらですか？",
+      "a": "2021年3月1日更新の燕市のページでは、燕市シルバー人材センターの空き家の見回り（年4回）が6,000円（消費税含む）とされています。",
+      "detail": [
+        "草取りは15〜20坪で10,000円（別途処分費）です。",
+        "現在の料金は変わっている可能性があります。[要確認: 現在の料金。燕市シルバー人材センター 0256-64-2483に確認]"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "燕市「シルバー人材センター協定（空き家管理）」",
+          "url": "https://www.city.tsubame.niigata.jp/soshiki/toshi_seibi/3/1/171/3243.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-47",
+      "q": "長岡市の空き家の見守りサービスは、誰が使えますか？",
+      "a": "長岡市は、遠方に住むなどで見守りができない所有者向けに、ふるさと納税の見守りサービスを案内しています。",
+      "detail": [
+        "提供は長岡市シルバー人材センターで、対象は市内に建物等を所有し、遠方に住むなどで定期的な見守りができない方です。",
+        "申込は、ふるさと納税サイトで「長岡市 空き家・空き地管理サービス」を検索して行います。内容と料金は市の公式ページにありません。[要確認: 雪の確認が含まれるか]"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方・県外から新潟の実家を片付ける段取り"
+        },
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「長岡市の空き家対策」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-48",
+      "q": "東京で、長岡市の実家の空き家を相談できる場はありますか？",
+      "a": "長岡市は、令和8年11月3日（火・祝）13:30から東京で開かれる無料の空き家相談会を案内しています。",
+      "detail": [
+        "会場は移住・交流情報ガーデン（東京都中央区京橋）で、17:30までです。",
+        "申込先は長岡市ではなく、主催の全国不動産コンサルティング協会（06-6210-3746）です。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方・県外から新潟の実家を片付ける段取り"
+        },
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "実家が空き家になったら、売る・貸す・壊す"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「長岡市の空き家対策」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-49",
+      "q": "県外から実家を片付けるとき、帰省は何回に絞ればよいですか？",
+      "a": "当サイトは、帰省を「決める回」と「動かす回」の2回に絞る計画を勧めています。",
+      "detail": [
+        "1回目は仕分けと貴重品の確認、業者の見積り立会いです。",
+        "2回目は搬出の立会い、最終確認、鍵の回収。間の期間に手続きを進めます。",
+        "長岡市の粗大ごみは、混雑時は受付から収集まで2週間程度かかります。1回目の帰省で申し込むと、2回目に間に合わせやすくなります（当サイトの整理）。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方・県外から新潟の実家を片付ける段取り"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「粗大ごみ（事前申込制）戸別収集」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-50",
+      "q": "冬の間だけ実家の水道を止めたいとき、手続きはどうしますか？",
+      "a": "新潟市水道局は、水道の使用中止を申し込むと、11月から翌年2月の中止は冬期間の破裂防止のため止水すると案内しています。",
+      "detail": [
+        "申込は、お客さま番号を用意し、インターネットか水道局お客さまコールセンター（0120-411-002）で行います。",
+        "通常、立会いは不要です。現金清算を希望する場合や、メーターが家の中にある場合は立会いが必要です。",
+        "長岡市水道局は、水抜きの手順のあとに、「水道使用中止申し込み」フォームでの手続きを案内しています。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        },
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市水道局「お引っ越しの手続き」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyogesuido/suido/faq/faq3.html"
+        },
+        {
+          "label": "長岡市水道局「水道管を冬の凍結から守りましょう！」",
+          "url": "https://www.city.nagaoka.niigata.jp/suidou/info/frozen.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-51",
+      "q": "不在の実家で水道管が破裂したら、どうすればよいですか？",
+      "a": "新潟市水道局は、水道管が破裂したら、メーターボックス内の止水栓を時計回りに止まるまで回して水漏れを止めるよう案内しています。",
+      "detail": [
+        "そのあと、寒波対応工事事業者に修理を依頼します。修理費用は利用者の負担です。",
+        "近所の人が不在の家の漏水に気づいたときは、水道局のフリーダイヤル（0120-411-002）に知らせるよう案内されています。",
+        "遠方の所有者は、近隣に連絡先を伝えておくと知らせてもらえます（当サイトの整理）。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        },
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市水道局「水道管の冬じたく」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyogesuido/suido/suido/fuyu.html"
+        },
+        {
+          "label": "新潟市「空き家の管理の方法」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/tekiseikanri/kanri.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-52",
+      "q": "冬に実家を解体しても、解体補助は使えますか？",
+      "a": "十日町市・魚沼市・新潟市は令和8年度の解体補助の受付を終えており、冬に解体しても令和8年度分は使えません。",
+      "detail": [
+        "十日町市と魚沼市は、交付決定前に着工した工事を対象外としています。魚沼市は申請年度内の完了も条件です。",
+        "来年度の受付時期は公式に「例年の時期」の記載がなく、4月に窓口へ確認します。",
+        "冬の解体工事の可否や工期の目安は、公式ページに書かれていません。[要確認: 積雪期の解体の可否は、解体業者に確認]"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "jikkajimai-hojokin-niigata",
+          "label": "新潟の実家じまいで使える補助金"
+        },
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "実家が空き家になったら、売る・貸す・壊す"
+        }
+      ],
+      "sources": [
+        {
+          "label": "十日町市「空き家等除却支援事業補助金」",
+          "url": "https://www.city.tokamachi.lg.jp/soshiki/kensetsubu/toshikeikakuka/4/1/10912.html"
+        },
+        {
+          "label": "魚沼市「空家等解体補助金」",
+          "url": "https://www.city.uonuma.lg.jp/page/1029743.html"
+        },
+        {
+          "label": "新潟市「空き家活用推進事業」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/jukankyo/yushi_josei/akiyakatsuyo.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-53",
+      "q": "雪で傷んだ空き家を放置すると、固定資産税は上がりますか？",
+      "a": "国土交通省は、市町村から勧告を受けた管理不全空家等の敷地は、固定資産税の住宅用地特例が解除されると案内しています。",
+      "detail": [
+        "勧告の前に、市町村から助言・指導があります。新潟市は、管理不全空家等を「そのまま放置すれば特定空家等に該当するおそれのある状態」と説明しています。",
+        "特定空家等には、倒壊などにより著しく保安上危険となるおそれがある状態も含まれます。",
+        "相談先は、新潟市は住環境政策課（025-226-2813）、長岡市は都市政策課（0258-39-2265）です。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税は本当に6倍になる？"
+        },
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国土交通省「『空家法』と『2023改正空家法』」",
+          "url": "https://www.mlit.go.jp/jutakukentiku/house/content/001753652.pdf"
+        },
+        {
+          "label": "新潟市「特定空家等、管理不全空家等への対応」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/kanrifuzen/fuzen.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-54",
+      "q": "屋根から下ろした雪を、道路に出してもよいですか？",
+      "a": "新潟市は、道路は人や車が通る場所で交通事故の原因になるため、道路に雪を出さず、自宅の雪は敷地内で処理するよう求めています。",
+      "detail": [
+        "案内ページの更新は2020年12月1日で、屋根雪を道路に下ろす場合の扱いは書かれていません。",
+        "[要確認: 屋根雪を道路に下ろす必要がある場合の連絡先。新潟市 土木総務課 025-226-3017に確認]",
+        "業者に頼むときは、下ろした雪の置き場を見積りの段階で確認します（当サイトの整理）。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "空き家の雪下ろしは誰の責任？新潟の実家の冬対策"
+        },
+        {
+          "guide": "yukioroshi-gyosha-ryokin-niigata",
+          "label": "新潟の雪下ろし料金と業者の頼み方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「市民の皆様へのお願い（道路除雪）」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/doro/road/doroizikanri/jyosetsu/dorojosetsu-joho/josetu.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-55",
+      "q": "新潟県の条例では、空き家の屋根雪はどう扱われていますか？",
+      "a": "新潟県は、住宅の屋根雪対策条例の案内で、空き家の所有者や管理者に屋根雪下ろしなどの必要な管理を求めています。",
+      "detail": [
+        "この条例は平成24年10月12日に制定され、屋根雪対策に特化した全国初の条例とされています。",
+        "条例本文と施行規則は、県のページにPDFで公開されています。",
+        "県の担当は建築住宅課 街並み推進係（025-280-5442）です。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "空き家の雪下ろしは誰の責任？新潟の実家の冬対策"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県「新潟県住宅の屋根雪対策条例」",
+          "url": "https://www.pref.niigata.lg.jp/sec/jutaku/1351202476337.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-56",
+      "q": "冬に県外から車で実家へ帰るとき、何を準備しますか？",
+      "a": "新潟県は、スタッドレスタイヤを装着し、タイヤチェーンを準備して冬道に備えるよう案内しています。",
+      "detail": [
+        "いつもより速度を控え、車間距離を十分に確保するよう県は求めています。",
+        "国土交通省の「おしえて！雪ナビ」の「雪みちの備え」は、乗車前に車の雪を落とし、燃料の残量を確認するよう案内しています。",
+        "通行止めなどの最新の道路情報は、出発前に雪ナビで確認します（当サイトの整理）。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方・県外から新潟の実家を片付ける段取り"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県「『冬道の安全走行』を心がけましょう」",
+          "url": "https://www.pref.niigata.lg.jp/sec/kenminseikatsu/1356885043301.html"
+        },
+        {
+          "label": "国土交通省 おしえて！雪ナビ「雪みちの備え」",
+          "url": "https://www.hrr.mlit.go.jp/hokugi/yukinavi/sonae/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-57",
+      "q": "雪下ろしを業者に頼む前に、何を確認すればよいですか？",
+      "a": "国民生活センターは、雪下ろしを頼む前に、作業内容・料金体系・別料金の有無を確認し、書面でもらうよう助言しています。",
+      "detail": [
+        "作業が完了しなかったときの対応と、作業で自宅設備が壊れたときの対応も確認します。",
+        "契約書や領収書を保管し、作業日を記録します。一人で対応せず、家族や周りの人に立ち会ってもらうことも勧めています。",
+        "困ったときは、消費者ホットライン188や、自治体の消費生活センターに相談できます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "yukioroshi-gyosha-ryokin-niigata",
+          "label": "新潟の雪下ろし料金と業者の頼み方"
+        },
+        {
+          "guide": "akiya-yukioroshi-hiyou-gyosha-niigata",
+          "label": "空き家の雪下ろし、誰に頼む？費用は？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国民生活センター 見守り新鮮情報 第500号",
+          "url": "https://www.kokusen.go.jp/mimamori/mj_mailmag/mj-shinsen500.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "fuyu-58",
+      "q": "実家の屋根や建物の傷みが心配なとき、どこに相談できますか？",
+      "a": "新潟県の空き家の雪対策ページは、除雪に関する技術的な助言の窓口として、建築住宅課を案内しています。",
+      "detail": [
+        "新潟市は、日常的な点検や定期的な点検について、建築士などに相談するよう案内しています。",
+        "建物に異常を感じたら、建築士などの専門家に見てもらうよう県は案内しています。",
+        "県の担当は建築住宅課 街並み推進係（025-280-5442）です。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-fuyu-kanri-checklist",
+          "label": "空き家の冬支度チェックリスト（新潟版）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県「冬季における空き家からの落雪や倒壊にご注意ください！」",
+          "url": "https://www.pref.niigata.lg.jp/sec/toshiseisaku/akiya-jyosetsu.html"
+        },
+        {
+          "label": "新潟市「知っておきたい建築物の管理責任」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/kenchiku/kanri/kanrisekinin.html"
+        },
+        {
+          "label": "新潟県「速やかな住宅・建築物の屋根雪下ろしに心掛けましょう」",
+          "url": "https://www.pref.niigata.lg.jp/sec/jutaku/1296590413216.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    }
+  ]
+}

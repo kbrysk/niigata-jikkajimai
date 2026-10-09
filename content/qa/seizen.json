@@ -1,0 +1,1160 @@
+{
+  "id": "seizen",
+  "order": 7,
+  "title": "親が元気なうちに準備する疑問",
+  "titleSuffix": "新潟の実家じまい",
+  "lead": "親が元気なうちの切り出し方、生前整理、エンディングノート、遺言、任意後見、名義、生前贈与の疑問に、公式の情報で短く答えます。",
+  "description": "親が元気なうちに、新潟の実家じまいで準備すること。切り出し方、生前整理、エンディングノート、遺言、任意後見、家族信託の国の案内、名義の確認、生前贈与を公式情報で答えます。",
+  "updated": "2026-10-09",
+  "items": [
+    {
+      "id": "seizen-01",
+      "q": "親に実家の話を切り出すには、どう言えばいい？",
+      "a": "「片付けて」とは言わず、「この家、これからどうしたい？」と聞く形で、帰省のたびに1つずつ切り出します。",
+      "detail": [
+        "聞く順番は、1）住まい（住み続けたいか）、2）持ち物（残したい物）、3）万一のとき（連絡先と書類の場所）です。",
+        "時期は、お盆や年末年始などの帰省のたびに、1つだけ聞きます。",
+        "一度で決めず、期限を切らず、「今年中に」と迫りません。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-02",
+      "q": "親が実家の話を聞いてくれないときは、どうする？",
+      "a": "期限を切らず、話題を「冬の安全」や「万一のときの連絡先」に変えます。",
+      "detail": [
+        "話が進まないときは、親と一緒に地域包括支援センター（長岡市11か所、新潟市30か所）に相談する方法があります。",
+        "書類の一覧だけでも先に作るなど、一部だけ進めます。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        },
+        {
+          "guide": "jikka-katazuke-oya-ga-sutenai",
+          "label": "実家の片付けで親が捨てない・怒るとき"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 地域包括支援センターとは",
+          "url": "https://www.city.niigata.lg.jp/iryo/kaigo/chiikihokatsu/houkatsutop.html"
+        },
+        {
+          "label": "長岡市 地域包括支援センター",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate02/houkatu_center.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-03",
+      "q": "親が元気なうちに実家の話をするのは、早すぎる？",
+      "a": "早すぎません。亡くなった後は手続きに期限や条件が出るため、元気なうちの方が親の意思を聞きながら進められます。",
+      "detail": [
+        "相続登記は、不動産の取得を知った日から3年以内の申請が義務です。",
+        "任意後見のように、親が元気なうちにしかできない制度もあります。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 相続登記の申請義務化について",
+          "url": "https://www.moj.go.jp/MINJI/minji05_00599.html"
+        },
+        {
+          "label": "法務省 成年後見制度Q&A（成年後見制度とは）",
+          "url": "https://www.moj.go.jp/MINJI/a01.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-04",
+      "q": "親の意向は、きょうだいにいつ共有すればいい？",
+      "a": "親の了解を得たら、早めにきょうだい全員へ同時に伝えます。親に無断で、先にきょうだいへ話すことは避けます。",
+      "detail": [
+        "窓口役を決め、話し合った内容は書面に残します。",
+        "全員が同じ内容を同じ時期に知るよう、集まる機会か書面で一斉に伝えます。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-05",
+      "q": "生前整理は、何歳から始めればいい？",
+      "a": "公式ページに目安の年齢はありません。親が元気で、自分で判断できるうちが始めやすい時期です。",
+      "detail": [
+        "判断力が心配になってからでは、本人の意思を聞きにくくなります。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "seizenseiri-niigata",
+          "label": "生前整理の進め方（新潟版）"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-06",
+      "q": "生前整理は、何から、どの順に進める？",
+      "a": "本人が残す物の基準を決めてから、ごみ、使わない大物、衣類・食器・本、思い出の品の順に仕分けます。",
+      "detail": [
+        "写真や手紙は手が止まりやすいため、最後に親と一緒に見ます。",
+        "一度に家全体は終わらないため、1回に1か所と決めます。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "seizenseiri-niigata",
+          "label": "生前整理の進め方（新潟版）"
+        },
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-07",
+      "q": "親の物を勝手に処分してはいけないのは、なぜ？",
+      "a": "親が元気なうちは、家の物は親のものだからです。親の了解を得てから出します。",
+      "detail": [
+        "勝手に捨てると、信頼を失い、その後の片付けが進みにくくなります。",
+        "通帳、印鑑、権利書類は、本人と一緒に確認してから分けます。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "seizenseiri-niigata",
+          "label": "生前整理の進め方（新潟版）"
+        },
+        {
+          "guide": "jikka-katazuke-oya-ga-sutenai",
+          "label": "実家の片付けで親が捨てない・怒るとき"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-08",
+      "q": "親が物を捨てたがらないとき、どう進める？",
+      "a": "範囲を小さくし、残す・迷う・手放すを親が決める形にします。迷う物は保留で構いません。",
+      "detail": [
+        "親が怒ったときは、その日は中断して構いません。",
+        "安全面や判断力が心配なときは、地域包括支援センターに相談できます。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "jikka-katazuke-oya-ga-sutenai",
+          "label": "実家の片付けで親が捨てない・怒るとき"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-09",
+      "q": "親が重い物をごみに出せないとき、新潟市の支援は？",
+      "a": "新潟市のごみ出し支援事業は、高齢者・障がい者等のごみ出しが困難な世帯が対象です。",
+      "detail": [
+        "自治会などの団体が実施するため、地域によって使えるかが変わります。",
+        "問い合わせは、廃棄物対策課（025-226-1407）か区役所の区民生活課です。",
+        "長岡市の「高齢者の助けになるサービス」のページに、ごみ出し支援の記載はありません。長岡市は「ふれあい収集」の利用申請書を公開しており、介護度等が分かる書類のコピーを添えます。対象の要件は、[要確認: 長岡市環境事業課のふれあい収集]。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "seizenseiri-niigata",
+          "label": "生前整理の進め方（新潟版）"
+        },
+        {
+          "guide": "jikka-katazuke-oya-ga-sutenai",
+          "label": "実家の片付けで親が捨てない・怒るとき"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市 ごみ出し支援事業",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomi_recycl/seidoannai/furtherance.html"
+        },
+        {
+          "label": "長岡市 高齢者の助けになるサービス",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate02/zaitaku_survice.html"
+        },
+        {
+          "label": "長岡市 ごみ・環境 ダウンロード（ふれあい収集利用申請書）",
+          "url": "https://www.city.nagaoka.niigata.jp/download/cate03/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-10",
+      "q": "親の実家の名義は、どうやって確認する？",
+      "a": "法務局の登記事項証明書で、登記上の名義人を確認できます。令和7年4月1日以降、書面請求の手数料は1通600円です。",
+      "detail": [
+        "オンライン請求は、送付が520円、窓口受取が490円です。",
+        "権利証や納税通知書の場所も、あわせて親に聞いておきます。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        },
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記の義務化と新潟の法務局・相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 登記手数料について",
+          "url": "https://www.moj.go.jp/MINJI/TESURYO/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-11",
+      "q": "実家の名義が祖父母のままだったら、どうする？",
+      "a": "2024年4月1日より前に祖父母から相続した不動産は、2027年3月31日までに登記を申請する必要があります。",
+      "detail": [
+        "正当な理由なく怠ると、10万円以下の過料の対象です。",
+        "相続人が増えているなど複雑な場合は、司法書士に相談します。新潟県司法書士会の電話相談は025-240-7867です。"
+      ],
+      "situations": [
+        "s1",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記の義務化と新潟の法務局・相談窓口"
+        },
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 相続登記の申請義務化について",
+          "url": "https://www.moj.go.jp/MINJI/minji05_00599.html"
+        },
+        {
+          "label": "新潟市 空き家に関する相談窓口一覧",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/madoguchi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-12",
+      "q": "名義人が持つ不動産を、一覧で調べる方法はある？",
+      "a": "令和8年2月2日に始まった所有不動産記録証明制度で、法務局が名義人の不動産を一覧にして証明書を交付します。",
+      "detail": [
+        "請求できるのは、所有権の登記名義人本人、相続人などです。",
+        "手数料は、書面請求で検索条件1件につき1,600円です。",
+        "氏名・住所が登記と異なると、一覧に出ない場合があります。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記の義務化と新潟の法務局・相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 所有不動産記録証明制度について",
+          "url": "https://www.moj.go.jp/MINJI/minji05_00740.html"
+        },
+        {
+          "label": "新潟地方法務局 所有不動産記録証明制度について",
+          "url": "https://houmukyoku.moj.go.jp/niigata/page000001_00503.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-13",
+      "q": "権利証をなくしていたら、実家は売れなくなる？",
+      "a": "売れなくなるとは限りません。登記識別情報（権利証）は再通知されませんが、提供できないときは事前通知などで本人確認をします。",
+      "detail": [
+        "登記官が、事前通知で本人確認を行うのが原則です。",
+        "司法書士などの本人確認情報で、事前通知を省略できる場合があります。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 新不動産登記法Q&A（登記識別情報）",
+          "url": "https://www.moj.go.jp/MINJI/minji76.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-14",
+      "q": "住まいのエンディングノートは、新潟でどこで手に入る？",
+      "a": "新潟県と長岡市はホームページからPDFを入手でき、新潟市は各区役所や公民館などで配布しています。",
+      "detail": [
+        "新潟市は令和8年度版（全15ページ）です。",
+        "新潟県のノートは、全国空き家対策推進協議会が作成したものです。",
+        "長岡市は簡易版のPDFと、家系図も書ける国のエンディングノートの案内があります。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県 住まいのエンディングノートを活用しましょう",
+          "url": "https://www.pref.niigata.lg.jp/sec/toshiseisaku/sumai-ending-note-katuyou.html"
+        },
+        {
+          "label": "新潟市 空き家に関する情報提供パンフレット（住まいのエンディングノート）",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/jukankyoakiya_161228.html"
+        },
+        {
+          "label": "長岡市 長岡市の空き家対策",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-15",
+      "q": "住まいのエンディングノートには、何を書く？",
+      "a": "所有者や家族の状況と不動産情報、住まいの将来の選択肢（売却・賃貸・所有の継続）と相続の手続きを整理します。",
+      "detail": [
+        "親が自分で、書ける所から書くのがコツです。",
+        "暗証番号は書かず、保管場所だけ残します。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県 住まいのエンディングノートを活用しましょう",
+          "url": "https://www.pref.niigata.lg.jp/sec/toshiseisaku/sumai-ending-note-katuyou.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-16",
+      "q": "エンディングノートがあれば、遺言は要らない？",
+      "a": "別のものです。財産の分け方を確実にしたいときは、遺言の制度を使います。",
+      "detail": [
+        "遺言は、民法の定める方式で作る必要があります。",
+        "遺言の内容は、司法書士、弁護士、公証役場で相談します。法務局の遺言書保管所は、内容の相談には応じません。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 自筆証書遺言書の作成上の注意",
+          "url": "https://www.moj.go.jp/MINJI/03.html"
+        },
+        {
+          "label": "法務省 遺言書保管制度（遺言者の手続）",
+          "url": "https://www.moj.go.jp/MINJI/02.html"
+        },
+        {
+          "label": "日本公証人連合会 公正証書の作成など公証人の法的サービスを受けるためには",
+          "url": "https://www.koshonin.gr.jp/system/s02/s02_08"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-17",
+      "q": "自筆の遺言書に、決まった書き方はある？",
+      "a": "全文、日付、氏名を遺言者が自書し、押印します。財産目録はパソコンで作ってもかまいません。",
+      "detail": [
+        "日付は「吉日」ではなく、特定の日を書きます。",
+        "財産目録を付けるときは、全ページに署名と押印が必要です。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 自筆証書遺言書の作成上の注意",
+          "url": "https://www.moj.go.jp/MINJI/03.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-18",
+      "q": "遺言書を法務局に預けることはできる？",
+      "a": "自筆証書遺言書保管制度で預けられます。手数料は遺言書1通につき3,900円です。",
+      "detail": [
+        "申請できるのは遺言者本人のみで、予約が必須です。",
+        "保管所は、住所地、本籍地、所有不動産の所在地のいずれかを選べます。",
+        "保管所は、遺言の内容の相談には応じません。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 自筆証書遺言書保管制度の手数料",
+          "url": "https://www.moj.go.jp/MINJI/minji06_00010.html"
+        },
+        {
+          "label": "法務省 遺言書保管制度（遺言者の手続）",
+          "url": "https://www.moj.go.jp/MINJI/02.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-19",
+      "q": "法務局に預けた遺言書は、家庭裁判所の検認が要る？",
+      "a": "不要です。法務局の保管制度を使った自筆証書遺言は、遺言書情報証明書を使う場合、家庭裁判所の検認が要りません。",
+      "detail": [
+        "公正証書遺言も、検認は不要です。",
+        "保管制度を使わない自筆証書遺言は、検認が必要です。",
+        "検認は、遺言の有効・無効を判断する手続ではありません。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所 遺言書の検認",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_17/index.html"
+        },
+        {
+          "label": "日本公証人連合会 公正証書遺言",
+          "url": "https://www.koshonin.gr.jp/notary/ow02"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-20",
+      "q": "公正証書遺言は、どうやって作る？",
+      "a": "公証役場で、公証人が作ります。証人は2人以上が必要で、原本は公証役場に保管されます。",
+      "detail": [
+        "未成年者や推定相続人などは、証人になれません。",
+        "適当な証人がいなければ、公証役場で紹介してもらえます。",
+        "手数料は、財産の価額に応じて決まります。金額の例は、別の問いにまとめています。",
+        "公証人への相談は無料です。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "日本公証人連合会 公正証書遺言",
+          "url": "https://www.koshonin.gr.jp/notary/ow02"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-21",
+      "q": "長岡市と新潟市で、公正証書の相談先はどこ？",
+      "a": "長岡公証人合同役場（0258-86-6925）と、新潟公証人合同役場（025-240-2610）です。",
+      "detail": [
+        "長岡は、長岡市長町1丁目甲1672番地1にあります。",
+        "新潟は、新潟市中央区天神1丁目1番地プラーカ3棟6階にあります。",
+        "受付時間は、両役場のページに記載がありません。日本公証人連合会は、予約制の役場があり、相談は無料と案内しています。[要確認: 各役場の受付時間と予約の要否]"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟地方法務局 長岡公証人合同役場",
+          "url": "https://houmukyoku.moj.go.jp/niigata/table/kousyou/all/nagaoka_kou.html"
+        },
+        {
+          "label": "新潟地方法務局 新潟公証人合同役場",
+          "url": "https://houmukyoku.moj.go.jp/niigata/table/kousyou/all/niigata_kou.html"
+        },
+        {
+          "label": "日本公証人連合会 公正証書の作成など公証人の法的サービスを受けるためには",
+          "url": "https://www.koshonin.gr.jp/system/s02/s02_08"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-22",
+      "q": "任意後見とは、どんな制度？",
+      "a": "本人に判断能力があるうちに、任意後見人と任せる内容を、公正証書の契約で決めておく制度です。",
+      "detail": [
+        "判断能力が不十分になった後、家庭裁判所が任意後見監督人を選び、事務が始まります。",
+        "法定後見は、判断能力が不十分になってから、家庭裁判所が後見人等を選ぶ制度です。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        },
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 成年後見制度Q&A（成年後見制度とは）",
+          "url": "https://www.moj.go.jp/MINJI/a01.html"
+        },
+        {
+          "label": "法務省 成年後見制度",
+          "url": "https://www.moj.go.jp/MINJI/minji17.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-23",
+      "q": "成年後見の相談窓口は、新潟のどこにある？",
+      "a": "新潟市は新潟市成年後見支援センター（025-248-4545）、長岡市は長岡市成年後見センター（0258-86-4715）が相談窓口です。",
+      "detail": [
+        "新潟市のセンターは、平日の午前9時から午後5時まで受け付けています。予約制の弁護士・司法書士の相談は無料です。",
+        "長岡市のセンターは、平日の午前8時30分から午後5時15分まで受け付けています。相談料は無料で、予約するとスムーズです。",
+        "申立ての手続・必要書類・費用は、家庭裁判所に聞きます。任意後見契約の相談は、公証役場です。",
+        "法務省は、このほか地域包括支援センター、弁護士会、司法書士会、法テラス、社会福祉士会、社会福祉協議会などを挙げています。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        },
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 成年後見制度",
+          "url": "https://www.moj.go.jp/MINJI/minji17.html"
+        },
+        {
+          "label": "新潟市 地域包括支援センターとは",
+          "url": "https://www.city.niigata.lg.jp/iryo/kaigo/chiikihokatsu/houkatsutop.html"
+        },
+        {
+          "label": "長岡市 地域包括支援センター",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate02/houkatu_center.html"
+        },
+        {
+          "label": "新潟市 新潟市成年後見支援センター",
+          "url": "https://www.city.niigata.lg.jp/iryo/kenfuku/news/kouken-shien-center.html"
+        },
+        {
+          "label": "長岡市 成年後見制度について",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate07/seinen-kouken.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-24",
+      "q": "家族信託は、国の案内ではどこまで分かる？",
+      "a": "法務省民事局が、令和8年3月31日に、信託制度のパンフレット「知って活用 信託制度」を公表しています。",
+      "detail": [
+        "公表ページは、認知症などに備えた財産管理では、親族間の信託の利用が有効とされると説明しています。",
+        "実家を売れるかなど個別の設計は、この記事の範囲を超えます。[要確認: パンフレット本文（PDF）・専門家]",
+        "個別の設計は、司法書士や弁護士に相談します。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 信託制度のパンフレットの公表について",
+          "url": "https://www.moj.go.jp/MINJI/minji07_00386.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-25",
+      "q": "認知症になる前に、親と決めておくことは？",
+      "a": "住まいの将来、判断が難しくなったときに任せる人、遺言の有無、書類の保管場所を、親の言葉で決めておきます。",
+      "detail": [
+        "親が自分の言葉で話せるうちに聞き、メモや書面に残します。",
+        "使う制度の候補は、任意後見、遺言、エンディングノートです。",
+        "どの方法が合うかは、司法書士や弁護士に相談します。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 成年後見制度Q&A（成年後見制度とは）",
+          "url": "https://www.moj.go.jp/MINJI/a01.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-26",
+      "q": "「人生会議」とは、何？",
+      "a": "望む医療やケアを前もって考え、家族等や医療・ケアチームと繰り返し話し合い、共有する取組です。",
+      "detail": [
+        "厚生労働省は、これまで「ACP」と呼ばれていた取組の愛称としています。",
+        "持ち物の整理も、一度で決めず、話し合いを重ねる進め方が合います。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        },
+        {
+          "guide": "seizenseiri-niigata",
+          "label": "生前整理の進め方（新潟版）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "厚生労働省 「人生会議」（ACP）について",
+          "url": "https://www.mhlw.go.jp/stf/newpage_02783.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-27",
+      "q": "親の書類と連絡先は、何を一覧にしておく？",
+      "a": "お金、年金・医療、不動産、契約、連絡先、遺言・意向の6分類で一覧にし、暗証番号は書かず保管場所だけ残します。",
+      "detail": [
+        "お金は、預貯金の口座、保険、借入、ローンです。",
+        "不動産は、登記の名義と、固定資産税の納税通知書を入れます。",
+        "一度に聞かず、帰省のたびに1つずつ聞きます。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-28",
+      "q": "親から子への生前贈与で、贈与税がかからないのは？",
+      "a": "暦年課税では、1年間にもらった財産の合計が110万円以下なら、贈与税はかからず、申告も不要です。",
+      "detail": [
+        "110万円を超える場合の申告・納税は、贈与を受けた年の翌年2月1日から3月15日です。",
+        "実家の名義を贈与で子に移すときの登記の税金と不動産取得税は、別の問いにまとめています。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.4402 贈与税の計算と税率（暦年課税）",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/zoyo/4402.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-29",
+      "q": "相続時精算課税とは、どんな制度？",
+      "a": "贈与年の1月1日時点で60歳以上の父母・祖父母から、同日時点で18歳以上の推定相続人・孫への贈与で選べます。特別控除は2,500万円です。",
+      "detail": [
+        "年110万円の基礎控除が別にあり、届出書は贈与を受けた年の翌年2月1日から3月15日に出します。",
+        "一度選ぶと、その贈与者からの贈与は暦年課税に戻せません。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.4103 相続時精算課税制度",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4103.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-30",
+      "q": "生前贈与は、相続税の計算に足される？",
+      "a": "相続人などへの暦年課税の贈与は、相続開始前の一定期間分が、相続税の計算に加算されます。",
+      "detail": [
+        "相続開始が令和8年12月31日までは、相続開始前3年以内です。",
+        "令和9年1月1日〜令和12年12月31日は、令和6年1月1日から死亡日までです。",
+        "令和13年1月1日以後は、相続開始前7年以内です。",
+        "令和9年1月2日以後の相続開始では、相続開始前3年より前の贈与分は、合計100万円まで加算されません。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.4161 相続開始前に贈与があった場合（生前贈与加算）",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4161.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-31",
+      "q": "離れて暮らす新潟の親の見守り制度は、何がある？",
+      "a": "長岡市の安心連絡システムと、新潟市のあんしん連絡システムがあり、対象と月額が違います。",
+      "detail": [
+        "長岡市は65歳以上のひとり暮らしの高齢者等が対象で、月額は住民税非課税世帯が500円、課税世帯が1,500円です。",
+        "新潟市は、65歳以上の世帯員で構成される世帯などで、要介護状態か、治療が必要な慢性疾患等があり、定期的な安否確認が必要な人が対象です。月額は0円・550円・1,100円です。",
+        "窓口は、長岡市が長寿はつらつ課（0258-39-2268）、新潟市は区役所の高齢介護担当、地域保健福祉センター、地域包括支援センターです。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市 高齢者の助けになるサービス",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate02/zaitaku_survice.html"
+        },
+        {
+          "label": "新潟市 あんしん連絡システム",
+          "url": "https://www.city.niigata.lg.jp/iryo/korei/anshinseikatsu/anshinrenraku.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-32",
+      "q": "親が自分で屋根の雪下ろしをしていて心配なときは？",
+      "a": "新潟県は、2人以上での作業を呼びかけています。令和6年度の人的被害は137件で、死亡事故の多くは一人での作業中です。",
+      "detail": [
+        "やむを得ず一人で行うときは、家族や近所の人に声をかけます。",
+        "ハシゴの先端は軒先より60cm以上高くかけ、ヘルメットや命綱を使います。",
+        "頼み先や費用は、別の記事にまとめています。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "冬の実家じまいと雪対策"
+        },
+        {
+          "guide": "yukioroshi-shien-niigata-30",
+          "label": "新潟県30市町村の雪下ろし・除雪支援一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県 除雪作業中の事故にご注意ください",
+          "url": "https://www.pref.niigata.lg.jp/site/chiikiseisaku/191025zikoboushi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-33",
+      "q": "実家を誰も継がないなら、先に何を決める？",
+      "a": "親の意思を聞いてから、住み続ける、売る・貸す、壊すを家族で比べます。",
+      "detail": [
+        "売る・貸す・壊すの比べ方は、実家が空き家になったときの記事にまとめています。",
+        "新潟では、冬の雪対策も計画に入れます。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "新潟の実家が空き家になったら"
+        },
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-34",
+      "q": "親から子へ実家の名義を生前に移すと、どんな費用や税金がかかる？",
+      "a": "贈与で名義を移すと、登録免許税（評価額の2%）と不動産取得税（令和9年3月31日まで土地・住宅3%）がかかります。",
+      "detail": [
+        "登録免許税は、贈与が2%、相続が0.4%、土地の売買が2%（令和11年3月31日までは1.5%）です。課税の基になる額は、原則として固定資産課税台帳の価格です。",
+        "不動産取得税は、贈与で取得すると課税され、相続で取得すると課税されません。免税点は、令和8年4月1日以降の取得で、土地16万円、中古家屋34万円です。",
+        "贈与税は、1年間にもらった財産の合計が110万円を超えるときに申告します。",
+        "どの方法が有利かは個別の事情で変わります。司法書士や税理士に相談します。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        },
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記の義務化と新潟の法務局・相談窓口"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 No.7191 登録免許税の税額表",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7191.htm"
+        },
+        {
+          "label": "新潟県 不動産取得税",
+          "url": "https://www.pref.niigata.lg.jp/sec/zeimu/fudosan.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-35",
+      "q": "任意後見契約を結ぶのに、費用はいくらかかる？",
+      "a": "公証役場の手数料は1契約13,000円です。収入印紙2,600円と登記嘱託手数料1,600円を加えた基本の合計は17,200円です。",
+      "detail": [
+        "書留郵便料や、原本が3枚を超える場合の枚数加算（1枚300円）などが別にかかります。",
+        "財産管理の委任契約を同時に結ぶ場合は、その委任契約の手数料が別にかかります。受任者が複数いると、契約が増え、費用も増えます。",
+        "任意後見人への報酬は契約で定めます。任意後見監督人の報酬は、家庭裁判所が決めます。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "日本公証人連合会 任意後見契約公正証書を作成する費用は、いくらでしょうか？",
+          "url": "https://www.koshonin.gr.jp/notary/ow04/4-q22"
+        },
+        {
+          "label": "厚生労働省 任意後見制度とは（手続の流れ、費用）",
+          "url": "https://guardianship.mhlw.go.jp/personal/type/optional_guardianship/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-36",
+      "q": "公正証書遺言の手数料は、いくらかかる？",
+      "a": "財産を受け取る人ごとの価額で手数料を求めて合計します。全体の財産が1億円以下なら、13,000円が加算されます。",
+      "detail": [
+        "手数料表は、1,000万円超3,000万円以下が26,000円、3,000万円超5,000万円以下が33,000円、5,000万円超1億円以下が49,000円です。",
+        "例として、3,000万円の財産を1人に遺すと、26,000円に遺言加算13,000円を足した39,000円です（手数料表からの計算例）。",
+        "原本が3枚を超えると、1枚ごとに300円が加算されます。病床での作成や出張には、別に加算や日当がかかります。",
+        "公証人への相談は無料です。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "日本公証人連合会 公正証書遺言",
+          "url": "https://www.koshonin.gr.jp/notary/ow02"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-37",
+      "q": "法務局に預けた遺言書を、家族に知らせる仕組みはある？",
+      "a": "遺言者が希望すれば、死亡が確認されたときに、指定した人（3名まで）へ遺言書が保管されている旨が通知されます。",
+      "detail": [
+        "これは指定者通知といい、遺言者が希望した場合に限って行われます。指定は、変更の届出で追加できます。",
+        "関係遺言書保管通知は、関係相続人等のだれかが閲覧などをしたときに、ほかの関係相続人等へ送られます。遺言者の手続は要りません。",
+        "預けたこと自体は、保管証の保管場所とあわせて、家族に伝えておきます。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省 自筆証書遺言書保管制度 通知",
+          "url": "https://www.moj.go.jp/MINJI/10.html"
+        },
+        {
+          "label": "法務省 遺言書保管制度（遺言者の手続）",
+          "url": "https://www.moj.go.jp/MINJI/02.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-38",
+      "q": "親の物忘れが増えてきたら、実家のことは誰に相談する？",
+      "a": "最初の相談先は、地域包括支援センターです。長岡市のセンターは、認知症に関する相談も受けています。",
+      "detail": [
+        "新潟市のセンターは、成年後見制度など権利を守る制度の相談も受けています。",
+        "元気なうちにできる備え（任意後見、遺言、エンディングノート）は、この記事の別の問いにまとめています。",
+        "法律の個別の判断は、司法書士や弁護士に相談します。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市 地域包括支援センター",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate02/houkatu_center.html"
+        },
+        {
+          "label": "新潟市 地域包括支援センターとは",
+          "url": "https://www.city.niigata.lg.jp/iryo/kaigo/chiikihokatsu/houkatsutop.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "seizen-39",
+      "q": "遺言で実家を1人に継がせると、ほかのきょうだいは何も言えない？",
+      "a": "遺言があっても、子には遺留分があり、侵害された額に相当する金銭の支払いを請求できる場合があります。",
+      "detail": [
+        "請求できるのは、兄弟姉妹以外の相続人です。被相続人の兄弟姉妹には遺留分がありません。",
+        "請求権は、相続の開始と遺留分を侵害する贈与・遺贈があったことを知った時から1年、または相続開始から10年で、時効により消滅します。",
+        "話し合いがつかないときは、家庭裁判所の調停（収入印紙1,200円分と郵便切手）を使えます。調停の申立てだけでは意思表示にならず、内容証明郵便などが別に要ります。",
+        "遺言を作る前に、親と相続人の考えを聞いておきます。個別の判断は、弁護士に相談します。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 1,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所 遺留分侵害額の請求調停",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/lkazi_07_26/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    }
+  ]
+}

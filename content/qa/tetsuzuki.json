@@ -1,0 +1,2177 @@
+{
+  "id": "tetsuzuki",
+  "order": 2,
+  "title": "期限のある手続き・相続・お金の疑問",
+  "titleSuffix": "新潟の実家じまい",
+  "lead": "死亡届、年金、相続放棄、相続税、相続登記など、期限のある手続きとお金の疑問に、公式情報で短く答えます。",
+  "description": "死亡後の届出、相続放棄、準確定申告、相続税、相続登記の義務化、遺言書の検認、預貯金の払戻し、葬祭費まで、新潟の窓口に合わせて公式情報で整理したQ&Aです。",
+  "updated": "2026-10-09",
+  "items": [
+    {
+      "id": "tetsuzuki-01",
+      "q": "死亡届はいつまでに出す？",
+      "a": "死亡届の期限は、死亡の事実を知った日から7日以内で、長岡市と新潟市の案内では知った日を含めて数えます。",
+      "detail": [
+        "長岡市は「死亡の事実を知った日を含めて7日以内」と案内しています。",
+        "新潟市は、「ご逝去に伴う手続き」のページが「知った日を含めて7日以内」、「死亡届」のページが「知った日から7日以内」と、ページごとに文言が違います。",
+        "国外で死亡したときは、知った日から3か月以内です（戸籍法86条）。数え方に迷うときは、戸籍の窓口に確認します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「死亡届」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life04/sibo_todoke.html"
+        },
+        {
+          "label": "新潟市「死亡届」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/todokede/kosekinado/koseki/kosekitodoke.html"
+        },
+        {
+          "label": "新潟市「ご逝去に伴う手続き」",
+          "url": "https://www.city.niigata.lg.jp/life_event/gofukou/index.html"
+        },
+        {
+          "label": "e-Gov法令検索「戸籍法86条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=322AC0000000224;article=86"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-02",
+      "q": "長岡市で死亡届を出す窓口はどこ？",
+      "a": "長岡市では、アオーレ長岡東棟1階の住所変更・戸籍届出窓口か、各支所の地域振興・市民生活課に出します。",
+      "detail": [
+        "西サービスセンターでは取り扱っていません。",
+        "提出先は、死亡者の本籍地・届出人の住所地・死亡地のいずれかです。",
+        "埋火葬許可証は同時に申請し、問い合わせは市民課戸籍担当（0258-39-7513）です。",
+        "持参するのは、医師の診断書または検案書が記入された死亡届書と届出人の印鑑です。死亡者の住民登録が長岡市にあるときは住民異動届も要ります。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「死亡届」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life04/sibo_todoke.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-03",
+      "q": "新潟市で死亡届を出す窓口はどこ？",
+      "a": "新潟市では、各区役所か出張所に出します。市役所本庁舎では戸籍届を受け付けていません。",
+      "detail": [
+        "手数料は無料です。",
+        "届出人の範囲は新潟市のページに記載がなく、戸籍法87条は、同居の親族、その他の同居者、家主・地主・家屋や土地の管理人の順と定めています。",
+        "同居の親族以外の親族や後見人なども届け出られます（戸籍法87条2項）。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「死亡届」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/todokede/kosekinado/koseki/kosekitodoke.html"
+        },
+        {
+          "label": "e-Gov法令検索「戸籍法87条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=322AC0000000224;article=87"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-04",
+      "q": "年金受給者が亡くなったら、届出はいつまで？",
+      "a": "年金受給者が亡くなったら年金事務所へ届け出ます。期限は日本年金機構の2ページで「すみやかに」と「10日（国民年金は14日）以内」に割れています。",
+      "detail": [
+        "案内ページ（2026年4月更新）は「すみやかに」とだけ書き、日数がありません。提出先は年金事務所への郵送が基本です。",
+        "FAQ（2025年11月更新）は「10日（国民年金は14日）以内」ですが、起算点の記載がありません。",
+        "遅れると過払いになり後日返還です。[要確認: 年金の死亡届の起算点（年金事務所）]"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "日本年金機構「年金を受けている方が亡くなったとき」",
+          "url": "https://www.nenkin.go.jp/service/jukyu/tetsuduki/kyotsu/jukyu/20140731-01.html"
+        },
+        {
+          "label": "日本年金機構「年金受給者が亡くなりました」",
+          "url": "https://www.nenkin.go.jp/section/faq/jukyu/jukyushatodoke/kyotsu/shibo/20140421.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-05",
+      "q": "年金の死亡届は、マイナンバーで省略できる？",
+      "a": "日本年金機構にマイナンバーが収録されている人は、年金受給権者の死亡届が原則不要です。",
+      "detail": [
+        "未支給年金の請求などの届出は、別に必要です。",
+        "提出先は年金事務所か年金相談センターで、障害・遺族基礎年金のみの人は市区町村です。",
+        "[要確認: 親のマイナンバーが機構に収録済みか（年金事務所）]"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "日本年金機構「年金受給者が亡くなりました」",
+          "url": "https://www.nenkin.go.jp/section/faq/jukyu/jukyushatodoke/kyotsu/shibo/20140421.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-06",
+      "q": "未支給年金は誰が受け取れる？",
+      "a": "未支給年金は、生計を同じくしていた遺族が、配偶者、子、父母、孫、祖父母、兄弟姉妹の順で受け取れます。",
+      "detail": [
+        "その他の3親等内の親族が最後の順位で、先の順位の人がいれば後の順位の人は受け取れません。",
+        "同じ順位の人が複数いるときは、1名が代表して請求します。",
+        "請求は、「年金受給権者死亡届（報告書）兼 未支給年金・未支払給付金請求書」を年金事務所へ出して行います。年金証書、戸籍謄本（または法定相続情報一覧図の写し）、生計同一を示す住民票なども要ります。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        }
+      ],
+      "sources": [
+        {
+          "label": "日本年金機構「年金を受けている方が亡くなったとき」",
+          "url": "https://www.nenkin.go.jp/service/jukyu/tetsuduki/kyotsu/jukyu/20140731-01.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-07",
+      "q": "年金の請求に時効はある？",
+      "a": "未支給年金の請求の時効は5年で、起算日は受給権者の年金の支払日の翌月の初日です。",
+      "detail": [
+        "遺族年金の時効も5年で、起算日は支給事由が生じた日の翌日が原則です（年金の支分権は支払日の翌月の初日）。",
+        "やむを得ない事情で請求できなかったときは、理由を書面で申し立てる取扱いがあります。",
+        "このページの更新日は2020年12月25日と古いため、年金事務所でも確認します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        }
+      ],
+      "sources": [
+        {
+          "label": "日本年金機構「年金の時効」",
+          "url": "https://www.nenkin.go.jp/service/jukyu/seido/kyotsu/shikyu/20140421-01.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-08",
+      "q": "国民健康保険は、亡くなってから何日以内に届け出る？",
+      "a": "新潟市では、国民健康保険の加入者が亡くなったら14日以内に届け出ます。",
+      "detail": [
+        "資格確認書等を窓口（区役所の区民生活課給付担当、中央区は窓口サービス課給付係）に返却します。新潟市の別の一覧ページには期限の記載がありません。",
+        "長岡市は死亡届の窓口で案内していますが、日数は公式ページで確認できません。問い合わせは国保年金課（0258-39-2250）です。",
+        "[要確認: 長岡市の国民健康保険の届出期限]"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「ご逝去に伴う手続き」",
+          "url": "https://www.city.niigata.lg.jp/life_event/gofukou/index.html"
+        },
+        {
+          "label": "新潟市「死亡後の手続き」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/todokede/kosekinado/sibou_tetsuduki.html"
+        },
+        {
+          "label": "長岡市「死亡届」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life04/sibo_todoke.html"
+        },
+        {
+          "label": "長岡市「お亡くなりになった場合の国民年金の手続きについて」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate04/onakunari.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-09",
+      "q": "後期高齢者医療は、亡くなってから何日以内に届け出る？",
+      "a": "新潟市では、後期高齢者医療の加入者が亡くなったら14日以内に届け出ます。",
+      "detail": [
+        "資格確認書等を窓口（区役所の区民生活課給付担当、中央区は窓口サービス課給付係）に返却します。新潟市の別の一覧ページには期限の記載がありません。",
+        "長岡市は死亡届の窓口で案内していますが、日数は公式ページで確認できません。問い合わせは国保年金課 後期高齢者医療担当（0258-39-2317）です。",
+        "[要確認: 長岡市の後期高齢者医療の届出期限]"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「後期高齢者医療の届出」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/hoken/kokikorei/todokede.html"
+        },
+        {
+          "label": "新潟市「死亡後の手続き」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/todokede/kosekinado/sibou_tetsuduki.html"
+        },
+        {
+          "label": "長岡市「死亡届」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life04/sibo_todoke.html"
+        },
+        {
+          "label": "長岡市「葬祭費」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate03/iryouhi/sousaihi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-10",
+      "q": "世帯主が亡くなったら、世帯主変更はいつまで？",
+      "a": "新潟市では、世帯主変更届は、変更を生じた日から14日以内に出します。",
+      "detail": [
+        "他の世帯員が2人以上残る場合に必要で、郵送では手続きできません。窓口は区役所の区民生活課（中央区は窓口サービス課）、出張所、連絡所です。",
+        "新潟市の死亡後手続き一覧ページには、期限の記載がありません。",
+        "長岡市は死亡届に新しい世帯主を記入します。期限は[要確認: 長岡市の世帯主変更の期限]。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「世帯主変更届」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/todokede/kosekinado/jyuminhyo/setaihenkou.html"
+        },
+        {
+          "label": "新潟市「死亡後の手続き」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/todokede/kosekinado/sibou_tetsuduki.html"
+        },
+        {
+          "label": "長岡市「死亡届」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life04/sibo_todoke.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-11",
+      "q": "親あての郵便物は、新しい住所に転送できる？",
+      "a": "日本郵便の転居届で、届出日から1年間、旧住所あての郵便物を無料で転送できます。",
+      "detail": [
+        "登録まで3〜7営業日かかり、期間後は差出人に返還されます。",
+        "死亡した人あての郵便の扱いは、日本郵便のページに記載がありません。",
+        "[要確認: 死亡した人あての郵便の扱い（日本郵便）]"
+      ],
+      "situations": [
+        "s2",
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "日本郵便「転居届」",
+          "url": "https://www.post.japanpost.jp/service/receive/relocation/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-12",
+      "q": "相続放棄の期限はいつまで？",
+      "a": "相続放棄の期限は、自分のために相続が開始したと知った時から3か月以内で、被相続人の最後の住所地の家庭裁判所に申述します。",
+      "detail": [
+        "相続人が複数いるときも、期限は各人が「自己のために相続の開始があったことを知った時」から数えます（民法915条1項）。",
+        "費用は申述人1人につき収入印紙800円と、連絡用の郵便切手です。",
+        "期間内に放棄も限定承認もしないと、単純承認したとみなされます（民法921条2号）。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら、遺品整理の前に相談"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「相続の放棄の申述」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html"
+        },
+        {
+          "label": "e-Gov法令検索「民法915条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=915"
+        },
+        {
+          "label": "e-Gov法令検索「民法921条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=921"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-13",
+      "q": "3か月で相続放棄を決められないときは？",
+      "a": "3か月以内に判断できないときは、家庭裁判所に「相続の承認又は放棄の期間の伸長」を申し立てられます。",
+      "detail": [
+        "財産を調査しても、承認や放棄の判断資料が得られない場合の手続です。",
+        "民法915条1項ただし書は、利害関係人または検察官の請求としています。",
+        "伸長を認めるかは家庭裁判所が判断するため、弁護士・司法書士に相談します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら、遺品整理の前に相談"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「相続の放棄の申述」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html"
+        },
+        {
+          "label": "e-Gov法令検索「民法915条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=915"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-14",
+      "q": "実家を片付けると、相続放棄できなくなる？",
+      "a": "相続財産の全部または一部を処分すると、単純承認したとみなされ、放棄できなくなる場合があります。",
+      "detail": [
+        "根拠は民法921条1号で、保存行為などは例外とされています。",
+        "処分にあたる行為の範囲を示す公式の一覧は確認できていません。[要確認: 処分にあたる行為の範囲]",
+        "片付けや売却の前に、弁護士・司法書士に確認します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら、遺品整理の前に相談"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        }
+      ],
+      "sources": [
+        {
+          "label": "e-Gov法令検索「民法921条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=921"
+        },
+        {
+          "label": "裁判所「相続の放棄の申述」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-15",
+      "q": "相続放棄したあとも、実家の管理は必要？",
+      "a": "放棄の時に実家を現に占有していた人は、引き渡すまで自己の財産と同じ注意で保存する義務があります（民法940条）。",
+      "detail": [
+        "引き渡す相手は、相続人または相続財産の清算人です。",
+        "占有の有無や管理の範囲の判断は、弁護士・司法書士に相談します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら、遺品整理の前に相談"
+        },
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "新潟の空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "e-Gov法令検索「民法940条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=940"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-16",
+      "q": "準確定申告の期限はいつまで？",
+      "a": "準確定申告の期限は、相続の開始があったことを知った日の翌日から4か月以内で、申告と納税を同じ期限までに行います。",
+      "detail": [
+        "申告先は、被相続人の死亡当時の納税地を管轄する税務署です。",
+        "相続人が複数のときは連署で提出するか、各人が別々に提出できます。",
+        "別々に出す場合は、他の相続人に申告内容を通知します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサーNo.2022",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2022.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-17",
+      "q": "相続税の申告期限はいつまで？",
+      "a": "相続税の申告期限は、死亡を知った日（通常は死亡の日）の翌日から10か月以内です。",
+      "detail": [
+        "期限が土曜・日曜・祝日などに当たるときは、その翌日が期限です。",
+        "申告先は、相続人ではなく被相続人の住所地を所轄する税務署です。",
+        "延納・物納を希望するときは、申告書の提出期限までに申請して許可を受けます。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサーNo.4205",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4205.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-18",
+      "q": "相続税の基礎控除はいくら？",
+      "a": "相続税の基礎控除は、3,000万円＋600万円×法定相続人の数です。",
+      "detail": [
+        "放棄した人がいても、放棄がなかったものとして人数を数えます。",
+        "養子は、実子がいれば1人、実子がいなければ2人まで数えます。",
+        "法定相続人が2人なら、3,000万円＋600万円×2で4,200万円です。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサーNo.4152",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4152.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-19",
+      "q": "相続税の申告が必要か、自分で調べられる？",
+      "a": "国税庁の「相続税の申告要否判定コーナー」で、財産額などを入力しておおよその要否を確認できます。",
+      "detail": [
+        "基礎控除額の内側かどうかが、申告が必要かの出発点です。",
+        "小規模宅地等の特例を使うには、相続税の申告書に適用を受ける旨を記載することなどが要件です（No.4124）。税額が0円でも申告が必要になる場合があります。",
+        "最終的な判断は、税務署または税理士に確認します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサーNo.4152",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4152.htm"
+        },
+        {
+          "label": "国税庁 タックスアンサーNo.4124",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4124.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-20",
+      "q": "小規模宅地等の特例とは？",
+      "a": "小規模宅地等の特例は、被相続人の居住用などの宅地について、一定面積まで相続税の評価額を減らす制度です。",
+      "detail": [
+        "被相続人の居住用（特定居住用宅地等）は、330平方メートルまで80%減額されます。",
+        "取得する親族ごとに要件があり、同居の有無や持ち家の有無などで変わります。",
+        "適用できるかの判断は、税務署または税理士に確認します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        },
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサーNo.4124",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4124.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-21",
+      "q": "施設に入っていた親の実家も、小規模宅地等の特例の対象？",
+      "a": "要介護・要支援認定を受けて対象の施設に入所していた場合、入所前の居住が「居住の用」に含まれます。",
+      "detail": [
+        "対象は、特別養護老人ホーム、有料老人ホーム、サービス付き高齢者向け住宅などです。",
+        "入所後に事業用や、被相続人以外の人の居住用に使った場合は除かれます。",
+        "取得する人ごとの要件は別にあるため、税理士に確認します。"
+      ],
+      "situations": [
+        "s2",
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサーNo.4124",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4124.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-22",
+      "q": "遺産分割が終わっていないと、小規模宅地等の特例は使えない？",
+      "a": "原則として申告期限までに遺産分割が済んでいる必要があり、未分割のまま申告すると適用できません。",
+      "detail": [
+        "申告期限後3年以内に分割できれば、更正の請求で適用できる場合があります。申告時に「分割見込書」を添えます。",
+        "更正の請求は、分割があったことを知った日の翌日から4か月以内です。",
+        "3年以内に分割できないやむを得ない事情があるときは、申告期限から3年を経過する日の翌日から2か月以内に承認申請書を出す方法があります。",
+        "未分割でも申告期限は延びないため、期限内に申告します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサーNo.4124",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4124.htm"
+        },
+        {
+          "label": "国税庁 タックスアンサーNo.4208",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4208.htm"
+        },
+        {
+          "label": "国税庁 タックスアンサーNo.4208（Q&A）",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4208_qa.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-23",
+      "q": "相続登記はいつまでに申請する？",
+      "a": "相続登記は、相続の開始と不動産の取得を知った日から3年以内に申請します。",
+      "detail": [
+        "遺産分割が成立したときは、成立の日から3年以内に、その内容の登記を申請します。",
+        "義務化は2024年4月1日に始まりました。",
+        "申請先は、不動産の所在地を管轄する法務局です。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記は知った日から3年以内に申請"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省「相続登記の申請義務化について」",
+          "url": "https://www.moj.go.jp/MINJI/minji05_00599.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-24",
+      "q": "相続登記をしないと、過料はいくら？",
+      "a": "正当な理由なく申請を怠ると、10万円以下の過料の対象になります。",
+      "detail": [
+        "登記官が催告し、期間内に申請しないと地方裁判所に通知されます。催告は、遺言や遺産分割協議書の内容から違反を知った場合に限られます。",
+        "正当な理由にあたるかは、法務局または司法書士に確認します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記は知った日から3年以内に申請"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省「相続登記の申請義務化について」",
+          "url": "https://www.moj.go.jp/MINJI/minji05_00599.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-25",
+      "q": "2024年4月より前に相続した実家の登記の期限は？",
+      "a": "2024年4月1日より前に相続して未登記の不動産は、2027年3月31日までに登記します。",
+      "detail": [
+        "相続を知ったのが2024年4月以降のときは、その日から3年以内になります。",
+        "法務省の案内ページの更新日は2026年4月1日です。"
+      ],
+      "situations": [
+        "s1",
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記は知った日から3年以内に申請"
+        },
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省「相続登記の申請義務化について」",
+          "url": "https://www.moj.go.jp/MINJI/minji05_00599.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-26",
+      "q": "相続人申告登記とは？",
+      "a": "相続人申告登記は、相続人が単独で申し出て、3年以内の基本の申請義務を簡易に果たせる制度です。",
+      "detail": [
+        "登録免許税はかからず、申出書への押印や電子署名も不要です。",
+        "申出人の氏名・住所などが、登記官によって登記に付記されます。",
+        "遺産分割が成立したあとの3年の登記義務は、この申出では果たせません。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記は知った日から3年以内に申請"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省「相続人申告登記について」",
+          "url": "https://www.moj.go.jp/MINJI/minji05_00602.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-27",
+      "q": "相続人申告登記だけで、実家を売れる？",
+      "a": "相続人申告登記だけでは売却できず、売却や抵当権の設定には別に相続登記が必要です。",
+      "detail": [
+        "相続人申告登記は、不動産の権利関係を公示するものではありません。",
+        "売却を考えているなら、相続登記の準備を早めに始めます。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記は知った日から3年以内に申請"
+        },
+        {
+          "guide": "akiya-uru-kasu-kowasu",
+          "label": "新潟の実家が空き家になったら"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省「相続人申告登記について」",
+          "url": "https://www.moj.go.jp/MINJI/minji05_00602.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-28",
+      "q": "長岡市の実家の相続登記は、どの法務局？",
+      "a": "長岡市の不動産は、新潟地方法務局の長岡支局が管轄です。",
+      "detail": [
+        "管轄は、長岡市、小千谷市、見附市です。",
+        "所在地は、長岡市千歳1丁目3番91号の長岡地方合同庁舎（別館）です。",
+        "窓口は平日の9時から17時で、登記申請の手続案内は事前予約が必要です。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記は知った日から3年以内に申請"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟地方法務局「長岡支局」",
+          "url": "https://houmukyoku.moj.go.jp/niigata/table/shikyokutou/all/nagaoka.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-29",
+      "q": "新潟市の実家の相続登記は、どの法務局？",
+      "a": "新潟市の不動産は、多くの区で新潟地方法務局の本局が管轄し、秋葉区と南区は新津支局です。",
+      "detail": [
+        "東区・中央区・江南区・西区・西蒲区と、北区の大部分は本局の管轄です。",
+        "北区の旧豊栄地域は、新発田支局が管轄します。",
+        "登記申請の手続案内は、事前の予約が必要です。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記は知った日から3年以内に申請"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟地方法務局「管轄区域一覧」",
+          "url": "https://houmukyoku.moj.go.jp/niigata/table/shikyokutou/all.html"
+        },
+        {
+          "label": "新潟地方法務局「長岡支局」",
+          "url": "https://houmukyoku.moj.go.jp/niigata/table/shikyokutou/all/nagaoka.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-30",
+      "q": "法定相続情報証明制度とは？",
+      "a": "法定相続情報一覧図の写しが無料で交付され、戸除籍謄本の束の代わりに使える制度です。",
+      "detail": [
+        "相続登記のほか、預貯金の払戻し、相続税の申告、年金の手続などで使える場合があります。",
+        "申出先は、被相続人の本籍地・最後の住所地・申出人の住所地・不動産所在地の登記所から選べます。",
+        "一覧図は申出日の翌年から5年間保管され、再交付は申出人だけが受けられます。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記は知った日から3年以内に申請"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務局「法定相続情報証明制度」について",
+          "url": "https://houmukyoku.moj.go.jp/homu/page7_000013.html"
+        },
+        {
+          "label": "法務局「法定相続情報証明制度の具体的な手続」",
+          "url": "https://houmukyoku.moj.go.jp/homu/page7_000014.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-31",
+      "q": "自宅で遺言書を見つけたら、開封していい？",
+      "a": "封印のある遺言書は、家庭裁判所で相続人等の立会いのもとで開封するため、自分で開けてはいけません。",
+      "detail": [
+        "検認を経ずに執行したり、家庭裁判所外で開封したりすると、5万円以下の過料の対象です（民法1005条）。",
+        "公正証書遺言と、法務局保管の自筆証書遺言の遺言書情報証明書は、検認が不要です。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「遺言書の検認」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_17/index.html"
+        },
+        {
+          "label": "e-Gov法令検索「民法1005条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=1005"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-32",
+      "q": "遺言書の検認は、いつまでに請求する？",
+      "a": "検認は、遺言者の死亡を知った後、遅滞なく家庭裁判所に請求します。日数の定めは裁判所のページにありません。",
+      "detail": [
+        "申立人は遺言書の保管者か、遺言書を発見した相続人で、申立先は遺言者の最後の住所地の家庭裁判所です。",
+        "費用は遺言書1通につき収入印紙800円と、連絡用の郵便切手です。",
+        "検認済証明書の申請には、1通につき収入印紙150円が別に必要です。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「遺言書の検認」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_17/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-33",
+      "q": "法務局の自筆証書遺言書保管制度とは？",
+      "a": "遺言者本人が自筆の遺言書を法務局の遺言書保管所に預けられる制度で、手数料は1通3,900円です。",
+      "detail": [
+        "申請は遺言者本人だけで、代理や郵送はできず、事前の予約が必要です。",
+        "保管所は、住所地・本籍地・所有する不動産の所在地を管轄するところから選べます。",
+        "相続開始後は、相続人などが遺言書情報証明書（1通1,400円）を請求できます。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省「自筆証書遺言書保管制度」",
+          "url": "https://www.moj.go.jp/MINJI/02.html"
+        },
+        {
+          "label": "法務省「遺言書保管の手数料」",
+          "url": "https://www.moj.go.jp/MINJI/minji06_00010.html"
+        },
+        {
+          "label": "裁判所「遺言書の検認」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_17/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-34",
+      "q": "公正証書遺言は、長岡市と新潟市のどこで作る？",
+      "a": "公証役場で作ります。長岡市は長岡公証人合同役場、新潟市は新潟公証人合同役場です。",
+      "detail": [
+        "長岡公証人合同役場は、長岡市長町1丁目甲1672番地1で、電話は0258-86-6925です。",
+        "新潟公証人合同役場は、新潟市中央区天神1丁目1番地プラーカ3棟6階で、電話は025-240-2610です。",
+        "受付時間は両ページに記載がありません。[要確認: 受付時間（各役場）]"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟地方法務局「長岡公証人合同役場」",
+          "url": "https://houmukyoku.moj.go.jp/niigata/table/kousyou/all/nagaoka_kou.html"
+        },
+        {
+          "label": "新潟地方法務局「新潟公証人合同役場」",
+          "url": "https://houmukyoku.moj.go.jp/niigata/table/kousyou/all/niigata_kou.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-35",
+      "q": "遺産分割の前に、親の預金を引き出せる？",
+      "a": "預貯金は、相続開始時の残高×3分の1×法定相続分（同一の金融機関で上限150万円）まで、他の相続人の同意なしに単独で払い戻せます。",
+      "detail": [
+        "遺産分割の前でも、各相続人は家庭裁判所を通さずに、口座ごとの計算式の範囲で払戻しを受けられます。",
+        "150万円を超えて必要なときは、遺産分割の調停・審判を申し立てたうえで、家庭裁判所の仮分割の仮処分（保全処分）を申し立てます。",
+        "必要書類は金融機関ごとに異なるので、取引先に確認します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        },
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら、遺品整理の前に相談"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省「相続法の改正」",
+          "url": "https://www.moj.go.jp/MINJI/minji07_00222.html"
+        },
+        {
+          "label": "全国銀行協会「亡くなった親の預貯金、すぐに引き出すことは可能ですか?」",
+          "url": "https://www.zenginkyo.or.jp/article/life/others/14668/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-36",
+      "q": "預金の払戻しを受けると、遺産分割に影響する？",
+      "a": "家庭裁判所を経ない払戻しは、その相続人が遺産の一部を分割で取得したものとみなされます。",
+      "detail": [
+        "払い戻した分は、その相続人の相続分から差し引かれます。",
+        "相続放棄との関係は公式ページに記載がありません。[要確認: 払戻しと相続放棄の関係]",
+        "相続放棄を考えているときは、払戻しの前に弁護士・司法書士に相談します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら、遺品整理の前に相談"
+        }
+      ],
+      "sources": [
+        {
+          "label": "全国銀行協会「亡くなった親の預貯金、すぐに引き出すことは可能ですか?」",
+          "url": "https://www.zenginkyo.or.jp/article/life/others/14668/"
+        },
+        {
+          "label": "法務省「相続法の改正」",
+          "url": "https://www.moj.go.jp/MINJI/minji07_00222.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-37",
+      "q": "亡くなった親の生命保険の契約を調べるには？",
+      "a": "生命保険協会の「生命保険契約照会制度」で、加入していた生命保険会社を一括して照会できます。",
+      "detail": [
+        "費用は照会対象者1名につき、WEB申請が6,000円、書面申請が7,000円です。",
+        "死亡日から最低3年さかのぼって調べ、解約済みや支払済みの契約は対象外です。",
+        "保険金の請求は各保険会社に行い、協会は手続きを代行しません。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        }
+      ],
+      "sources": [
+        {
+          "label": "生命保険協会「生命保険契約照会制度」",
+          "url": "https://www.seiho.or.jp/contact/inquiry/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-38",
+      "q": "葬祭費の申請期限はいつまで？",
+      "a": "長岡市と新潟市の国民健康保険では、葬祭を行った日の翌日から2年以内に申請します。",
+      "detail": [
+        "金額は5万円で、葬祭を行った人（喪主）に支給されます。",
+        "長岡市は後期高齢者医療も2年以内で、以前の社会保険等から支給される場合は対象外です。",
+        "新潟市の葬祭費ページは国民健康保険向けで、後期高齢者医療の起算点の記載がありません。県広域連合のしおりは給付全般を「法律により2年間」とだけ書いています。[要確認: 新潟市の後期高齢者医療の葬祭費の起算点]"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「葬祭費」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate03/iryouhi/sousaihi.html"
+        },
+        {
+          "label": "新潟市「葬祭費」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/hoken/kokuho/kokuhokyufu/sousaihi.html"
+        },
+        {
+          "label": "新潟県後期高齢者医療広域連合「葬祭費」",
+          "url": "https://www.niigata-kouiki.jp/system/payment/sousai.html"
+        },
+        {
+          "label": "新潟県後期高齢者医療広域連合「後期高齢者医療制度のしおり（令和7年度）」",
+          "url": "https://www.niigata-kouiki.jp/system/img/d53b13800e6d4214200b1057dc69888b2eea45b2.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-39",
+      "q": "葬祭費は、長岡市と新潟市のどこで申請する？",
+      "a": "長岡市はアオーレ長岡東棟1階の健康保険・年金窓口か各支所、新潟市は各区役所の区民生活課などです。",
+      "detail": [
+        "長岡市は郵送でも申請でき、代理人でも申請できます。",
+        "新潟市は、区民生活課（中央区は窓口サービス課）、出張所、連絡所で申請できます。",
+        "長岡市では、申請書、亡くなった方の資格確認書等、葬祭を行った人名義の口座情報が必要です。",
+        "後期高齢者医療の葬祭費は、広域連合ではなく、亡くなった方が住んでいた市町村の窓口で申請します。必要書類は市町村で異なります。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「葬祭費」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate03/iryouhi/sousaihi.html"
+        },
+        {
+          "label": "新潟市「葬祭費」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/hoken/kokuho/kokuhokyufu/sousaihi.html"
+        },
+        {
+          "label": "新潟県後期高齢者医療広域連合「葬祭費」",
+          "url": "https://www.niigata-kouiki.jp/system/payment/sousai.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-40",
+      "q": "協会けんぽの埋葬料は、いつまで請求できる？",
+      "a": "埋葬料・家族埋葬料は死亡年月日の翌日から、埋葬費は埋葬年月日の翌日から、2年で時効です。",
+      "detail": [
+        "金額は埋葬料・家族埋葬料が5万円で、埋葬費は5万円の範囲内の実費です。",
+        "協会けんぽの給付案内ページには期限の記載がなく、申請ページに2年とあります。",
+        "対象は、業務外の事由で亡くなった協会けんぽの被保険者・被扶養者です。国民健康保険・後期高齢者医療の加入者は葬祭費の案内を見ます。",
+        "協会けんぽ以外の健康保険は、[要確認: 加入していた保険者の期限]。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "協会けんぽ「埋葬料・埋葬費」",
+          "url": "https://www.kyoukaikenpo.or.jp/benefit/burial_charges/index.html"
+        },
+        {
+          "label": "協会けんぽ「埋葬料(費)の申請」",
+          "url": "https://www.kyoukaikenpo.or.jp/application_form/benefit/012/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-41",
+      "q": "兄弟で実家の分け方がまとまらないときは？",
+      "a": "話合いがつかないときは、家庭裁判所に遺産分割調停を申し立てられます。",
+      "detail": [
+        "申立先は、相手方の一人の住所地の家庭裁判所か、当事者が合意で定める家庭裁判所です。",
+        "費用は被相続人1人につき収入印紙1,200円分と、連絡用の郵便切手です。",
+        "調停が不成立になると、審判の手続が自動的に始まります。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「遺産分割調停」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_07_12/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-42",
+      "q": "連絡が取れない相続人がいると、手続きは進められない？",
+      "a": "行方不明の相続人がいるときは、家庭裁判所に不在者財産管理人の選任を申し立てる方法があります。",
+      "detail": [
+        "申立てができるのは、相続人などの利害関係人と検察官です。",
+        "管理人は、権限外行為の許可を得て、遺産分割や不動産の売却を行えます。",
+        "予納金の額は公式ページにありません。[要確認: 予納金の額（家庭裁判所）]"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「不在者財産管理人選任」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_05/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-43",
+      "q": "相続した実家を売る3,000万円控除の期限は？",
+      "a": "被相続人が住んでいた空き家の3,000万円控除は、相続開始から3年を経過する日の属する年の12月31日まで、かつ令和9年12月31日までの売却が条件です。",
+      "detail": [
+        "売却代金は1億円以下で、控除額は最高3,000万円です。",
+        "令和6年1月1日以後の譲渡で、相続人が3人以上のときは2,000万円までです。",
+        "令和9年末より先の延長の有無は、今後の税制改正で変わりえます。"
+      ],
+      "situations": [
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサーNo.3306",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3306.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-44",
+      "q": "空き家の3,000万円控除の確認書は、どこでもらう？",
+      "a": "売った家の所在地を管轄する市区町村で、被相続人居住用家屋等確認書の交付を受けます。",
+      "detail": [
+        "長岡市は都市政策課 住宅政策担当（0258-39-2265）で、交付に2週間程度、手数料は不要です。",
+        "新潟市は住環境政策課 空き家対策・活用推進室（025-226-2813）で、2週間程度かかります。",
+        "確認書は、確定申告のときに添付する書類の一つです。"
+      ],
+      "situations": [
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサーNo.3306",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3306.htm"
+        },
+        {
+          "label": "長岡市「相続した空き家の特例」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/inheritance.html"
+        },
+        {
+          "label": "新潟市「被相続人居住用家屋等確認書」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/yokusei/akiyatokurei3000.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-45",
+      "q": "実家を取り壊すと、固定資産税はどうなる？",
+      "a": "家屋の固定資産税は翌年から課税されなくなる一方、土地は住宅用地の特例から外れて税額が上がります（長岡市）。",
+      "detail": [
+        "特例が外れるのは、取り壊した家屋が住宅だった場合です。",
+        "取り壊したら、資産税課か最寄りの支所に連絡します。",
+        "登記されている建物は、法務局で滅失登記が必要です。"
+      ],
+      "situations": [
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税が6倍になる条件"
+        },
+        {
+          "guide": "kaitai-hiyou-niigata",
+          "label": "新潟で実家を解体する費用の考え方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「家屋を取り壊した場合の固定資産税」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate02/kotei/qa3-Q4.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-46",
+      "q": "建物を壊したら、滅失登記はいつまでに？",
+      "a": "建物の滅失登記は、滅失の日から1か月以内に申請します（不動産登記法57条）。",
+      "detail": [
+        "申請するのは、表題部所有者または所有権の登記名義人です。",
+        "名義人が亡くなっているときの申請者は、[要確認: 法務局の案内（相続人が申請できるか）]。",
+        "正当な理由なく怠ると、10万円以下の過料の対象です（不動産登記法164条1項）。"
+      ],
+      "situations": [
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税が6倍になる条件"
+        },
+        {
+          "guide": "kaitai-hiyou-niigata",
+          "label": "新潟で実家を解体する費用の考え方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "e-Gov法令検索「不動産登記法57条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=416AC0000000123;article=57"
+        },
+        {
+          "label": "長岡市「家屋を取り壊した場合の固定資産税」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate02/kotei/qa3-Q4.html"
+        },
+        {
+          "label": "e-Gov法令検索「不動産登記法164条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=416AC0000000123;article=164"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-47",
+      "q": "空き家が勧告を受けると、固定資産税は上がる？",
+      "a": "長岡市は、特定空家等または管理不全空家等が勧告されると、敷地の住宅用地特例が解除されると案内しています。",
+      "detail": [
+        "新潟市のページは、特定空家等の土地について特例が適用されないと書いています。",
+        "新潟市のページには、管理不全空家等の記載がありません。",
+        "税額が上がる時期や特例が戻る条件は、[要確認: 市の資産税課]。"
+      ],
+      "situations": [
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税が6倍になる条件"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「空き家対策」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html"
+        },
+        {
+          "label": "新潟市「住宅用地に対する課税標準の特例」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/zei/siraberu/koteishisan/juutakuyouti.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-49",
+      "q": "親が亡くなったあとの固定資産税は、誰が払う？",
+      "a": "賦課期日の1月1日より前に所有者が亡くなっていれば、相続人が納税義務を引き継ぎます。",
+      "detail": [
+        "新潟市は、現所有者であることを知った日の翌日から3か月を経過する日までに申告します。",
+        "新潟市の申告先は資産税課管理担当（025-226-2266）で、登記名義は変わりません。",
+        "長岡市は、資産税課（0258-39-2213）に現所有者（相続人代表者）申告書を出します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "akiya-koteishisanzei-6bai",
+          "label": "空き家の固定資産税が6倍になる条件"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「固定資産現所有者の申告について」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/zei/siraberu/koteishisan/genshoyushashinkoku.html"
+        },
+        {
+          "label": "長岡市「固定資産税」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate02/kotei/kotei.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-50",
+      "q": "農地を相続したら、届出は必要？",
+      "a": "新潟市では、農地の権利を取得したことを知った日から10か月以内に、農業委員会へ届出書を出します。",
+      "detail": [
+        "様式は「農地法第3条の3の規定による届出書」です。",
+        "農林水産省の相続農地のページには、期限の記載がありません。",
+        "届出をしないと、10万円以下の過料の対象です（農地法69条）。",
+        "長岡市は様式を市のダウンロードページに載せていますが、期限の案内は確認できません。[要確認: 長岡市農業委員会の期限案内]"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「死亡後の手続き」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/todokede/kosekinado/sibou_tetsuduki.html"
+        },
+        {
+          "label": "農林水産省「農地を相続した方へ」",
+          "url": "https://www.maff.go.jp/j/keiei/koukai/nouchi_souzoku.html"
+        },
+        {
+          "label": "e-Gov法令検索「農地法69条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=327AC0000000229;article=69"
+        },
+        {
+          "label": "長岡市「農林業（届出書様式）」",
+          "url": "https://www.city.nagaoka.niigata.jp/download/cate15/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-51",
+      "q": "親が施設に入ったら、住民票は移すべき？",
+      "a": "施設入所時に住民票を移すかの基準は新潟市・長岡市の公式ページになく、新潟市では移したら転入・転居の日から14日以内に届け出ます。",
+      "detail": [
+        "新潟市では、転入・転居をしたら、その日から14日以内に届け出ます。",
+        "移す場合は、介護保険の住所地特例の対象かも確認します。",
+        "[要確認: 施設入所時の住民票の扱い（施設・市の窓口）]"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「転入・転居の届出」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/todokede/kosekinado/jyuminhyo/jyuumintodoke.html"
+        },
+        {
+          "label": "新潟県「介護保険の住所地特例」",
+          "url": "https://www.pref.niigata.lg.jp/sec/kourei/1194797775806.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-53",
+      "q": "親が認知症になると、実家は売れなくなる？",
+      "a": "後見が始まると、本人の居住用不動産の処分には家庭裁判所の許可が必要で、許可なしの処分は無効です。",
+      "detail": [
+        "施設に入所して今は住んでいない家も、将来住む可能性があれば居住用不動産です。",
+        "手順は、後見開始の申立て、後見人の選任、処分の許可の順です。",
+        "処分許可の申立ては収入印紙800円と郵便料で、売買契約書の写しなどを添えます。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「居住用不動産の処分についての許可」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_25_04/index.html"
+        },
+        {
+          "label": "厚生労働省「法定後見制度とは」",
+          "url": "https://guardianship.mhlw.go.jp/personal/type/legal_guardianship/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-55",
+      "q": "成年後見や任意後見は、どこに相談する？",
+      "a": "法務省は、地域包括支援センター、弁護士会、司法書士会、法テラス、社会福祉協議会などを相談窓口に挙げています。",
+      "detail": [
+        "任意後見契約の案内先は、公証役場です。",
+        "長岡市の地域包括支援センターは11か所で、長寿はつらつ課は0258-89-7440です。",
+        "新潟市の地域包括支援センターは30か所で、中学校区を基準に設置されています。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        },
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省「成年後見制度の相談窓口」",
+          "url": "https://www.moj.go.jp/MINJI/minji17.html"
+        },
+        {
+          "label": "長岡市「地域包括支援センター」",
+          "url": "https://www.city.nagaoka.niigata.jp/fukushi/cate02/houkatu_center.html"
+        },
+        {
+          "label": "新潟市「地域包括支援センター」",
+          "url": "https://www.city.niigata.lg.jp/iryo/kaigo/chiikihokatsu/houkatsutop.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-56",
+      "q": "家族信託で、認知症に備えられる？",
+      "a": "法務省は、認知症などに備えた財産管理で親族間の信託が有効と指摘し、信託制度のパンフレットを公表しています。",
+      "detail": [
+        "パンフレットの題は「知って活用　信託制度」で、2026年3月31日に公表されました。",
+        "実家を売れるかなど個別の設計は、司法書士・弁護士に相談します。",
+        "家族信託専用の公的な相談窓口は、[要確認: 公的相談窓口の有無]。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省「信託制度のパンフレットの公表について」",
+          "url": "https://www.moj.go.jp/MINJI/minji07_00386.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-57",
+      "q": "生前贈与は、相続税にいつまで足される？",
+      "a": "相続開始前の贈与は相続税に加算され、加算される期間は2027年以後の相続から、3年が7年へ段階的に延びます。",
+      "detail": [
+        "2026年12月31日までの相続は、相続開始前3年以内の贈与が対象です。",
+        "2027年1月1日〜2030年12月31日の相続は、2024年1月1日から死亡日までの贈与が対象です。",
+        "2031年1月1日以後の相続は、相続開始前7年以内の贈与が対象です。",
+        "延長された期間の贈与は、総額100万円まで加算されません（国税庁は相続開始が2027年1月2日以後の場合と注記し、表は1月1日からで日付が揃っていません）。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサーNo.4161",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4161.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-58",
+      "q": "新潟県で、相続登記を無料で相談できる窓口は？",
+      "a": "新潟県司法書士会の司法書士総合相談センター（025-240-7867）が、電話相談を無料で受けています。",
+      "detail": [
+        "受付は平日の10時〜12時と13時〜16時です。",
+        "本人申請に係る書類作成の助言と確認は、相談の対象外です。",
+        "相続登記相談センター（0120-13-7832）も、平日の同じ時間帯に無料で受けています。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記は知った日から3年以内に申請"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県司法書士会「司法書士総合相談センター」",
+          "url": "https://niigata-shiho.net/soudan_2center"
+        },
+        {
+          "label": "新潟県司法書士会「相続登記相談センター」",
+          "url": "https://niigata-shiho.net/souzoku/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-59",
+      "q": "長岡市で、市の弁護士相談を受けられる？",
+      "a": "長岡市の市民相談で、長岡市民は弁護士相談を年1回、予約制で受けられます。",
+      "detail": [
+        "金曜の午後1時〜5時で、1人25分まで、年1回、長岡市民のみが対象です。",
+        "場所はアオーレ長岡東棟1階の市役所総合窓口で、電話は0258-39-2255です。",
+        "費用は、[要確認: 長岡市の弁護士相談の費用]。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「市民相談」",
+          "url": "https://www.city.nagaoka.niigata.jp/soudan/case01.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-60",
+      "q": "税の無料相談は、新潟県のどこで受けられる？",
+      "a": "関東信越税理士会 新潟県支部連合会が、予約制の無料相談を開いています。",
+      "detail": [
+        "新潟支部は4月〜12月の第1水曜9:30〜16:00で、電話は025-225-2203です。",
+        "長岡支部は毎月第1・第3水曜9:30〜12:00で、電話は0258-33-8080です。",
+        "相談には予約が必要で、事前に電話で申し込みます。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        }
+      ],
+      "sources": [
+        {
+          "label": "関東信越税理士会 新潟県支部連合会「無料相談」",
+          "url": "https://zeirisi-niigata.jp/consultation/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-61",
+      "q": "親が亡くなってから最初の1週間で、何をする？",
+      "a": "死亡届を7日以内に出し、新潟市では国民健康保険・後期高齢者医療・世帯主変更を14日以内に届け出ます。",
+      "detail": [
+        "死亡届は医師の診断書または検案書が付いた届書で出し、長岡市では埋火葬許可証も同時に申請します。",
+        "年金受給者の死亡届は、日本年金機構の案内ページが「すみやかに」、FAQが「10日（国民年金は14日）以内」と書いています。",
+        "期限が先の手続きは、準確定申告が4か月以内、相続放棄が3か月以内、相続税が10か月以内です。起算点は手続きごとに違います。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「ご逝去に伴う手続き」",
+          "url": "https://www.city.niigata.lg.jp/life_event/gofukou/index.html"
+        },
+        {
+          "label": "長岡市「死亡届」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life04/sibo_todoke.html"
+        },
+        {
+          "label": "新潟市「世帯主変更届」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/todokede/kosekinado/jyuminhyo/setaihenkou.html"
+        },
+        {
+          "label": "日本年金機構「年金受給者が亡くなりました」",
+          "url": "https://www.nenkin.go.jp/section/faq/jukyu/jukyushatodoke/kyotsu/shibo/20140421.html"
+        },
+        {
+          "label": "国税庁 タックスアンサーNo.2022",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2022.htm"
+        },
+        {
+          "label": "国税庁 タックスアンサーNo.4205",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4205.htm"
+        },
+        {
+          "label": "裁判所「相続の放棄の申述」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-62",
+      "q": "相続放棄をすると、次は誰が相続人になる？",
+      "a": "放棄した人は初めから相続人でなかったとみなされ（民法939条）、次の順位の人が相続人になる場合があります。",
+      "detail": [
+        "子がいないと父母などの直系尊属、直系尊属もいないと兄弟姉妹の順に相続人になります（民法887条・889条）。",
+        "民法887条2項の代襲相続の原因に、放棄は挙がっていません。",
+        "次の順位の人の3か月も、その人が「自己のために相続の開始があったことを知った時」から数えます（民法915条1項）。",
+        "親族への連絡や順位の整理は、弁護士・司法書士に相談します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら、遺品整理の前に相談"
+        }
+      ],
+      "sources": [
+        {
+          "label": "e-Gov法令検索「民法939条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=939"
+        },
+        {
+          "label": "e-Gov法令検索「民法887条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=887"
+        },
+        {
+          "label": "e-Gov法令検索「民法889条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=889"
+        },
+        {
+          "label": "e-Gov法令検索「民法915条」",
+          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=915"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-63",
+      "q": "相続放棄の申述には、どんな書類が必要？",
+      "a": "申述書のほか、被相続人の住民票除票か戸籍附票と、申述人の戸籍謄本が共通で必要です。",
+      "detail": [
+        "続柄で追加書類が変わります。配偶者や子・孫は、被相続人の死亡が記載された戸籍が要ります。代襲相続では被代襲者の死亡が記載された戸籍も必要です。",
+        "父母・祖父母は被相続人の出生から死亡までの全戸籍が、兄弟姉妹・おい・めいは直系尊属の戸籍なども要ります。",
+        "申述前に取得できない戸籍は、申述後の追加提出もできます。法定相続情報一覧図の写しで代えられるかは、申述先の家庭裁判所に確認します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら、遺品整理の前に相談"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「相続の放棄の申述」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-64",
+      "q": "遠方に住む相続人は、窓口に行かずにできる手続きは？",
+      "a": "法定相続情報証明の申出と交付は郵送でき、長岡市の葬祭費も郵送で申請できます。新潟市の世帯主変更は郵送できません。",
+      "detail": [
+        "法定相続情報証明は、申出書に希望を書き、返信用の封筒と切手を同封して、郵送で申出と受取ができます。",
+        "長岡市の葬祭費は、郵送でも代理人でも申請できます。新潟市の葬祭費の郵送は、各窓口に確認します。",
+        "新潟市の世帯主変更届は、郵送では手続きできません。代理人が届け出るときは、委任者が自署または記名・押印した委任状が要ります。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務局「法定相続情報証明制度の具体的な手続」",
+          "url": "https://houmukyoku.moj.go.jp/homu/page7_000014.html"
+        },
+        {
+          "label": "長岡市「葬祭費」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate03/iryouhi/sousaihi.html"
+        },
+        {
+          "label": "新潟市「葬祭費」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/hoken/kokuho/kokuhokyufu/sousaihi.html"
+        },
+        {
+          "label": "新潟市「世帯主変更届」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/todokede/kosekinado/jyuminhyo/setaihenkou.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-65",
+      "q": "空き家の3,000万円控除は、どんな実家でも使える？",
+      "a": "対象は昭和56年5月31日以前に建築された被相続人の居住用家屋と、その敷地などで、耐震や取壊しの条件があります。",
+      "detail": [
+        "区分所有建物登記がされておらず、相続開始の直前に被相続人以外に居住者がいなかったことも条件です。",
+        "譲渡時に耐震基準を満たすか、譲渡の翌年2月15日までに耐震改修か全部の取壊しをします（取壊しは令和6年1月1日以後の譲渡）。",
+        "取り壊して敷地を売るときは、家屋を相続時から取壊しまで、敷地を相続時から譲渡時まで、事業・貸付け・居住に使わないことが必要です。",
+        "個別の判断は、税務署または税理士に確認します。"
+      ],
+      "situations": [
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "akiya-baikyaku-zeikin-niigata",
+          "label": "相続した実家を売ったときの税金"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサーNo.3306",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3306.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-66",
+      "q": "成年後見の申立てには、いくらかかる？",
+      "a": "申立手数料は収入印紙800円、登記手数料は収入印紙2,600円で、医師の鑑定が必要なときは鑑定料もかかります。",
+      "detail": [
+        "鑑定料は、ほとんどの場合10万円以下です。",
+        "戸籍謄本、登記事項証明書、診断書などの書類の取得費用も別にかかります。",
+        "申立ての前に、地域包括支援センター、弁護士会、司法書士会、社会福祉協議会などに相談できます。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったら実家はどうする？"
+        }
+      ],
+      "sources": [
+        {
+          "label": "厚生労働省「法定後見制度とは」",
+          "url": "https://guardianship.mhlw.go.jp/personal/type/legal_guardianship/"
+        },
+        {
+          "label": "法務省「成年後見制度の相談窓口」",
+          "url": "https://www.moj.go.jp/MINJI/minji17.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-67",
+      "q": "相続登記の登録免許税は、いくらかかる？",
+      "a": "相続登記の登録免許税は不動産の価額の1000分の4で、価額100万円以下の土地は2027年3月31日まで免税です。",
+      "detail": [
+        "持分を相続するときは、不動産全体の価額に持分の割合を乗じた額が不動産の価額になります。",
+        "免税を受けるには、申請書に「租税特別措置法第84条の2の2第2項により非課税」と書きます。書かないと免税になりません。",
+        "相続登記をしないまま相続人が亡くなった場合の免税もあり、期限は同じく2027年3月31日です。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記は知った日から3年以内に申請"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務局「相続登記の登録免許税の免税措置について」",
+          "url": "https://houmukyoku.moj.go.jp/homu/page7_000017.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-68",
+      "q": "親が法務局に遺言書を預けたか、亡くなったあとに調べられる？",
+      "a": "相続人は、遺言者の死亡後に遺言書保管事実証明書を請求し、関係する遺言書が保管されているかを確認できます。",
+      "detail": [
+        "保管されていれば、遺言書情報証明書を請求して内容を確認できます。手数料は事実証明書が1通800円、情報証明書が1通1,400円です。",
+        "相続人以外が請求して「保管されていない」と出ても、他の遺言書が保管されている可能性は残ります。",
+        "法務局保管の自筆証書遺言は、検認が不要です。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから？期限のある手続きが先"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省「遺言書保管事実証明書・遺言書情報証明書について」",
+          "url": "https://www.moj.go.jp/MINJI/05.html"
+        },
+        {
+          "label": "法務省「遺言書保管の手数料」",
+          "url": "https://www.moj.go.jp/MINJI/minji06_00010.html"
+        },
+        {
+          "label": "裁判所「遺言書の検認」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_17/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-69",
+      "q": "親が亡くなったら、介護保険の被保険者証はどうする？",
+      "a": "新潟市では、緑色の介護保険被保険者証を、区役所の担当窓口かケアマネージャーに返却します。",
+      "detail": [
+        "持っている場合のみ、負担割合証（紫色）、負担限度額認定証（ピンク色）、社会福祉法人等利用者負担軽減確認証（黄色）も返却します。",
+        "相続や税の申告で使える場合があるため、コピーの保管が勧められています。",
+        "窓口は区役所の健康福祉課高齢介護担当で、期限は新潟市のページに記載がありません。長岡市は[要確認: 長岡市の介護保険被保険者証の返却先と期限]。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「死亡後の手続き」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/todokede/kosekinado/sibou_tetsuduki.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "tetsuzuki-70",
+      "q": "夜間や休日でも、死亡届は出せる？",
+      "a": "新潟市は区役所の夜間・休日窓口で預かり、長岡市は日曜休業で、土曜・祝日に受理できない場合は預かりになります。",
+      "detail": [
+        "新潟市では、平日夜間と休日に届書を出せるのは区役所だけで、夜間受付窓口（守衛室等）で預かります。",
+        "不備がなければ届出日に受理されます。市役所本庁舎、出張所、連絡所、行政サービスコーナーでは夜間・休日の受付がありません。",
+        "長岡市は、預かった届書を翌平日に確認し、預かった日にさかのぼって受理します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 2,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順と期限の早見表"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「死亡届」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/todokede/kosekinado/koseki/kosekitodoke.html"
+        },
+        {
+          "label": "長岡市「死亡届」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life04/sibo_todoke.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    }
+  ]
+}

@@ -107,7 +107,7 @@ d.querySelectorAll("[data-sits]").forEach(function(el){var on=!id||el.getAttribu
 d.querySelectorAll(".rm-sit button").forEach(function(b){b.addEventListener("click",function(){sit(b.getAttribute("data-sit"))})});
 function city(id){d.querySelectorAll("[data-city-anchor]").forEach(function(a){a.href=id?base+id+"/#"+a.getAttribute("data-city-anchor"):base});ls.set("rm-city",id||"")}
 var sel=d.getElementById("rm-city-sel");if(sel){sel.addEventListener("change",function(){city(sel.value)});var c=ls.get("rm-city");if(c){sel.value=c;city(c)}}
-var s=ls.get("rm-sit");if(s)sit(s);
+var qs=null;try{qs=new URLSearchParams(location.search).get("sit")}catch(e){}var s=qs||ls.get("rm-sit");if(s)sit(s);
 d.querySelectorAll(".rm-todo input[data-key]").forEach(function(i){var k="rm-chk-"+i.getAttribute("data-key");i.checked=ls.get(k)==="1";i.addEventListener("change",function(){ls.set(k,i.checked?"1":"0")})});
 })();</script>`;
 

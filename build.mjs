@@ -160,8 +160,9 @@ ${ld}
     <a class="brand" href="${url("/")}"><span class="brand-mark" aria-hidden="true">帖</span><span class="brand-name">${esc(SITE.name)}</span></a>
     <nav class="nav" aria-label="主要メニュー">
       <a href="${url("/city/")}">市町村別ガイド</a>
-      <a href="${url("/guide/")}">進め方と費用</a>
+      <a href="${url("/guide/jikkajimai-tejun-niigata/")}">実家じまいの進め方</a>
       <a href="${url("/gyosha/")}">業者の料金と選び方</a>
+      <a href="${url("/qa/")}">疑問Q&amp;A</a>
       <a href="${url("/search/")}">検索</a>
       <a class="cta" href="${url("/mitsumori/")}">無料で見積もり相談</a>
     </nav>
@@ -570,6 +571,7 @@ ${photo}
   </aside>
 </div></section>
 <p class="data-note"><span><b>30</b>市町村の公式サイトを出典に掲載</span><span>県内<b>${(prices.companies || []).length}</b>社の公開料金を集計（1K <b>${yen(Math.min(...(prices.companies || []).map((x) => x.k1).filter(Boolean)))}</b>〜）</span><span>相談・訪問見積もりは<b>無料</b>。運営者が確認してから地元の許可業者へ</span></p>
+<section class="home-section start-here"><h2>いまの状況から、進め方を見る</h2><p class="sub">状況を選ぶと、その状況で最初にやること・期限のある手続き・新潟の窓口だけを順番に表示します。</p><ul class="start-sits"><li><a href="${url("/guide/jikkajimai-tejun-niigata/")}?sit=s1"><strong>親が元気なうちに準備する</strong><span>話の切り出し方、生前整理、認知症の前に決めること</span></a></li><li><a href="${url("/guide/jikkajimai-tejun-niigata/")}?sit=s2"><strong>親が施設に入る・入った</strong><span>住民票、実家を残すか売るか、親のお金の管理</span></a></li><li><a href="${url("/guide/jikkajimai-tejun-niigata/")}?sit=s3"><strong>親が亡くなった</strong><span>7日・3か月・10か月・3年の期限と、まだ捨てない物</span></a></li><li><a href="${url("/guide/jikkajimai-tejun-niigata/")}?sit=s4"><strong>すでに空き家になっている</strong><span>税金・相続登記・冬の管理・売る／壊すの判断</span></a></li></ul><p class="small"><a href="${url("/guide/jikkajimai-tejun-niigata/")}">状況を選ばずに全体の流れを見る →</a>　<a href="${url("/qa/")}">疑問Q&amp;Aから探す →</a></p><style>.start-sits{list-style:none;padding:0;margin:12px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}.start-sits a{display:block;height:100%;padding:14px 16px;border:1px solid var(--line-strong,#ccc);text-decoration:none;color:inherit;background:var(--paper,#fff)}.start-sits a:hover{border-color:var(--navy,#1d3557)}.start-sits strong{display:block;font-size:16px;margin-bottom:4px}.start-sits span{display:block;font-size:13.5px;color:var(--mute,#666)}</style></section>
 <ol class="steps">
   <li><h2>市のルールを知る</h2><p>粗大ごみは申し込み制で、品目ごとに料金が決まっています。持ち込めば早く安く済むこともあります。</p><a href="${url("/city/")}">市町村別ガイドへ</a></li>
   <li><h2>進め方と費用を把握する</h2><p>何から手を付けるか、帰省2回で終わらせる段取り、冬の雪対策、業者に頼む分かれ目。</p><a href="${url("/guide/")}">実家じまいの進め方へ</a></li>
@@ -613,6 +615,10 @@ function extras() {
     `# ${SITE.name}`,
     ``,
     `> ${SITE.tagline}。新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金・空き家バンク、雪の支援を各市町村の公式サイトを出典に掲載。運営は株式会社Kogera（長岡市）。掲載情報には確認日を付け、公式で確認できない項目は「確認中」と表示する。`,
+    ``,
+    `## まず読むページ`,
+    `- [新潟の実家じまいの進め方（状況別の手順と期限の早見表）](${abs("/guide/jikkajimai-tejun-niigata/")}): 親が元気なうち・施設に入る・亡くなった・空き家の4つの状況別に、決める→期限のある手続き→仕分け→片付け→家の行き先の順で、新潟の窓口と公式の期限をまとめたページ`,
+    ...(qaCats.length ? [`- [実家じまいの疑問Q&A（新潟版）](${abs("/qa/")}): 公式の情報をもとに、1問ごとに結論から答えたQ&A集`, ...qaCats.map((c) => `  - [${c.title}](${abs(`/qa/${c.id}/`)}): ${c.items.length}問`)] : []),
     ``,
     `## 実家じまいの進め方（ガイド）`,
     ...guides.map((g) => `- [${g.meta.title}](${abs(`/guide/${g.slug}/`)}): ${g.meta.description || ""}`),

@@ -1,0 +1,2426 @@
+{
+  "id": "katazuke",
+  "order": 4,
+  "title": "片付け・ごみ・業者の疑問",
+  "titleSuffix": "新潟の実家じまい",
+  "lead": "新潟市・長岡市をはじめ県内各市の粗大ごみ・持ち込み・家電・業者選び・見積もりの疑問に、公式情報で短く答えます。",
+  "description": "新潟の実家じまいで出る片付けの疑問を、市のごみ・粗大ごみ・持ち込み・家電・灯油・業者の許可・費用・見積もり・トラブルまで、公式情報で一問ずつ答えます。",
+  "updated": "2026-10-09",
+  "items": [
+    {
+      "id": "katazuke-01",
+      "q": "新潟市の粗大ごみは、どこで申し込みますか？",
+      "a": "新潟市の粗大ごみは、粗大ごみ受付センターへ事前に申し込みます。ネット・チャットボット・LINEは24時間です。",
+      "detail": [
+        "電話は025-290-5353で、月〜土の9:00〜17:00です。祝休日と12/29〜1/3は除きます。",
+        "対象は一般家庭のごみです。事業所のごみは申し込めません。",
+        "ネットとチャットボットの受付には、申込者のメールアドレスが必要です。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-sodaigomi",
+          "label": "新潟市の粗大ごみの申込・料金・持ち込み"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「粗大ごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-02",
+      "q": "新潟市の粗大ごみは、申込から何日で収集されますか？",
+      "a": "新潟市の粗大ごみは、通常は申込から3日〜1週間以降に収集されます。申込が多いと、さらに延びます。",
+      "detail": [
+        "土曜・日曜・祝日の収集はありません。",
+        "出すのは収集日の午前8時までです。指定の排出場所に、品物ごとに処理券を貼って出します。出していない物や、処理券のない物は収集されません。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-sodaigomi",
+          "label": "新潟市の粗大ごみの申込・料金・持ち込み"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「粗大ごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-03",
+      "q": "新潟市の粗大ごみは、1回に何点まで申し込めますか？",
+      "a": "新潟市の公式ページに、粗大ごみの1回の申込点数の上限の記載はありません。[要確認: 1回の申込点数の上限]",
+      "detail": [
+        "長岡市は1回5点まで、新発田市は1世帯1か月5個までと上限があります。",
+        "点数が多い実家は、受付センター（025-290-5353）で先に聞くと確実です。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-sodaigomi",
+          "label": "新潟市の粗大ごみの申込・料金・持ち込み"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「粗大ごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-04",
+      "q": "新潟市で布団・たんす・ソファーを出すと、いくらですか？",
+      "a": "新潟市の粗大ごみは、布団100円、たんす（合計2.5m未満）300円、ソファー500円で、合計900円です。",
+      "detail": [
+        "たんすは幅・奥行・高さの合計が2.5m以上だと500円です。",
+        "処理券は100円・200円・300円・500円の4種類です。小売店や区役所で買います。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-sodaigomi",
+          "label": "新潟市の粗大ごみの申込・料金・持ち込み"
+        },
+        {
+          "guide": "sofa-bed-tansu-sutekata-niigata",
+          "label": "ソファ・ベッド・タンスの捨て方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「粗大ごみ品目別料金一覧」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/ryoukinichiran.html"
+        },
+        {
+          "label": "新潟市「粗大ごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-05",
+      "q": "新潟市のごみ持ち込みは、いくらかかりますか？",
+      "a": "新潟市の家庭ごみの持ち込みは、10kgまでごとに100円です。2026年6月1日に60円から改定されました。",
+      "detail": [
+        "積んだ車ごと入口と出口で2回量り、重さの差で決まります。",
+        "50kgなら500円、100kgなら1,000円です。支払いは現金のみです。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-gomi-mochikomi",
+          "label": "新潟市のごみ持ち込み（自己搬入）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「ごみの自己搬入について」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/carry.html"
+        },
+        {
+          "label": "新潟市「ごみの自己搬入について（概要）」PDF",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/carry.files/gomizikohan.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-06",
+      "q": "新潟市のごみ持ち込みに、予約は要りますか？",
+      "a": "新潟市の公式ページに、ごみの持ち込みの事前予約の記載はありません。[要確認: 事前予約や事前連絡の要否]",
+      "detail": [
+        "受付で「廃棄物処理依頼書」を出します。市のサイトから事前に書けます。",
+        "豊栄環境センターだけ、依頼書の様式が別です。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-gomi-mochikomi",
+          "label": "新潟市のごみ持ち込み（自己搬入）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「ごみの自己搬入について」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/carry.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-07",
+      "q": "新潟市のごみ持ち込みは、日曜も受け付けていますか？",
+      "a": "新潟市で日曜・祝日に持ち込めるのは鎧潟クリーンセンターだけで、対象は西蒲区と西区の四ツ郷屋地区の人です。",
+      "detail": [
+        "ほかの5施設は月〜土の8:30〜12:00と13:00〜16:00（土曜は15:00まで）で、12:00〜13:00は受け付けません。祝日は不可で、土曜が祝日のときも不可です。",
+        "12月31日の午後から1月3日までは、全施設で持ち込めません。鎧潟は電気設備点検日も不可です。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-gomi-mochikomi",
+          "label": "新潟市のごみ持ち込み（自己搬入）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「受入日時と区ごとに自己搬入できる施設」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/haishi20180329.html"
+        },
+        {
+          "label": "新潟市「ごみの自己搬入について」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/carry.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-08",
+      "q": "新潟市で実家が別の区のとき、どの施設に持ち込めますか？",
+      "a": "持ち込める施設は住んでいる区で決まり、実家の区が違う場合の扱いは記載がありません。[要確認: 実家の区が違うときの扱い]",
+      "detail": [
+        "北区は5施設（豊栄環境センターを含む）、西蒲区と西区の四ツ郷屋地区は5施設（鎧潟クリーンセンターを含む）、ほかの区は4施設から選べます。",
+        "迷うときは、循環社会推進課（025-226-1423）に聞きます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-gomi-mochikomi",
+          "label": "新潟市のごみ持ち込み（自己搬入）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「受入日時と区ごとに自己搬入できる施設」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/haishi20180329.html"
+        },
+        {
+          "label": "新潟市「ごみの自己搬入について」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/carry.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-09",
+      "q": "県外に住む子が、新潟市の実家のごみを持ち込めますか？",
+      "a": "新潟市の持ち込みの対象は市内に住む人です。県外在住の家族の可否は記載がありません。[要確認: 市外在住の家族の持ち込み]",
+      "detail": [
+        "対象は、新潟市に住む人と、市内に所在地のある事業者です。",
+        "持ち込む前に、循環社会推進課（025-226-1423）へ聞きます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-gomi-mochikomi",
+          "label": "新潟市のごみ持ち込み（自己搬入）"
+        },
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方から実家を片付ける段取り"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「ごみの自己搬入について」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/carry.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-10",
+      "q": "県外の子が、新潟市の粗大ごみを代わりに申し込めますか？",
+      "a": "新潟市の公式ページに、別居の家族による代理申込の可否の記載はありません。[要確認: 代理申込の可否]",
+      "detail": [
+        "ネットとチャットボットなら24時間申し込めます。申込者のメールアドレスと、出す場所・連絡先が必要です。",
+        "収集日の朝8時までに指定場所へ出す人を、先に決めておきます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-sodaigomi",
+          "label": "新潟市の粗大ごみの申込・料金・持ち込み"
+        },
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方から実家を片付ける段取り"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「粗大ごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-11",
+      "q": "軽トラを借りて、新潟市のごみを持ち込めますか？",
+      "a": "新潟市の公式ページに、車種や積載量の制限の記載はありません。[要確認: 車種・積載量・台数の制限]",
+      "detail": [
+        "ごみを積んだ車ごと計量します。荷下ろしは持ち込んだ人が自分でします。",
+        "量が多い・重いときは、複数人で行くよう案内されています。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-gomi-mochikomi",
+          "label": "新潟市のごみ持ち込み（自己搬入）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「ごみの自己搬入について」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/carry.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-12",
+      "q": "新潟市のごみ持ち込みが混むのは、いつですか？",
+      "a": "新潟市は、年末年始・お盆・引っ越しシーズン・連休の翌日・土曜日の持ち込みが混むと案内しています。",
+      "detail": [
+        "多い日は100台以上が並び、1時間以上待つ状況です。",
+        "混雑状況によっては、安全のため搬入を断られることがあります。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-gomi-mochikomi",
+          "label": "新潟市のごみ持ち込み（自己搬入）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「ごみの自己搬入による混雑について」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/zikohankonzatu.html"
+        },
+        {
+          "label": "新潟市「ごみの自己搬入について」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/carry.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-13",
+      "q": "新潟市で、高齢の親が粗大ごみを運び出せないときは？",
+      "a": "新潟市には、高齢者や障がい者などでごみ出しが困難な世帯向けに、粗大ごみも対象のごみ出し支援事業があります。",
+      "detail": [
+        "自治会・地域コミュニティ協議会・各地区社会福祉協議会などの有償ボランティアが手伝います。実施しているかは地域ごとに違います。",
+        "問い合わせは廃棄物対策課（025-226-1407）か、各区の区民生活課（中央区は窓口サービス課）です。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-sodaigomi",
+          "label": "新潟市の粗大ごみの申込・料金・持ち込み"
+        },
+        {
+          "guide": "jikka-katazuke-oya-ga-sutenai",
+          "label": "親が物を捨てないときの片付け"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「ごみ出し支援事業（各種助成制度のご案内）」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomi_recycl/seidoannai/furtherance.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-14",
+      "q": "長岡市の粗大ごみは、どうやって申し込みますか？",
+      "a": "長岡市の粗大ごみは、ネットとFAXなら24時間、電話なら月〜金8:30〜17:00に事前申込します。",
+      "detail": [
+        "電話は0258-25-0053、FAXは0258-25-0064です。祝日・年末年始は電話不可です。",
+        "品目・縦横高さ・数量を伝えると、金額と収集日が案内されます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "nagaoka-shi-sodaigomi",
+          "label": "長岡市の粗大ごみの申込・料金・持ち込み"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「粗大ごみ（事前申込制）戸別収集」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-15",
+      "q": "長岡市の粗大ごみは、1回に何点まで出せますか？",
+      "a": "長岡市の粗大ごみは、1回の収集で5点までです。2人で持てない物は収集できません。",
+      "detail": [
+        "6点以上あるときの申込の分け方は、記載がありません。[要確認: 6点以上のときの申込方法]",
+        "混雑時は受付から収集まで2週間程度かかります。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "nagaoka-shi-sodaigomi",
+          "label": "長岡市の粗大ごみの申込・料金・持ち込み"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「粗大ごみ（事前申込制）戸別収集」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-16",
+      "q": "長岡市の粗大ごみは、いくらかかりますか？",
+      "a": "長岡市の粗大ごみは、1点200円・600円・1,000円の3段階です。布団は1枚200円です。",
+      "detail": [
+        "たんすは大きさで600円か1,000円です。縦・横・高さを申込時に伝えます。",
+        "処理券シールは200円券のみで、600円は3枚、1,000円は5枚貼ります。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "nagaoka-shi-sodaigomi",
+          "label": "長岡市の粗大ごみの申込・料金・持ち込み"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「粗大ごみ（事前申込制）戸別収集」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html"
+        },
+        {
+          "label": "長岡市「長岡市粗大ごみ品目一覧」PDF",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/sodai-gomi01.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-17",
+      "q": "長岡市の粗大ごみは、申込から何日で収集されますか？",
+      "a": "長岡市の粗大ごみは、受付の数日後に収集されます。混雑時は受付から2週間程度かかります。",
+      "detail": [
+        "収集日は月〜金で、時間の指定はできません。当日の8:30までに出します。",
+        "引っ越しシーズンは、さらに遅れます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "nagaoka-shi-sodaigomi",
+          "label": "長岡市の粗大ごみの申込・料金・持ち込み"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「粗大ごみ（事前申込制）戸別収集」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-18",
+      "q": "長岡市のごみは、どこに持ち込めますか？",
+      "a": "長岡市の持ち込み先は、寿と中之島信条の2つのクリーンセンターです。粗大ごみは中之島信条だけです。",
+      "detail": [
+        "持ち込めるのは引越しなどで多量に出たときに限られ、前日までに電話が必要です。受付は月〜土の8:30〜16:30（祝日・振替休日・年末年始を除く）です。",
+        "寿クリーンセンターは、燃やすごみだけです。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "nagaoka-shi-gomi-mochikomi",
+          "label": "長岡市のごみ持ち込み（自己搬入）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「処理施設への持ち込み」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/mochi-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-19",
+      "q": "長岡市で、実家の片付けのごみは持ち込めますか？",
+      "a": "持ち込めるのは引越しなどで多量に出たときで、実家の片付けが当たるかは記載がありません。[要確認: 当たるか]",
+      "detail": [
+        "持ち込む施設へ、前日までに電話して聞きます。",
+        "電話で施設の確認を受けてから持ち込む決まりです。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "nagaoka-shi-gomi-mochikomi",
+          "label": "長岡市のごみ持ち込み（自己搬入）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「処理施設への持ち込み」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/mochi-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-20",
+      "q": "長岡市で、指定袋なしのごみを持ち込むといくらですか？",
+      "a": "長岡市で指定袋に入れずに持ち込むと、100kgまで300円です。超えた分は10kgごとに30円です。",
+      "detail": [
+        "指定袋に入れたごみは無料です。",
+        "150kgなら、300円に30円×5を足して450円です。",
+        "段ボール箱に入れての持ち込みは禁止です。大きい物は50cm四方に切ります。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "nagaoka-shi-gomi-mochikomi",
+          "label": "長岡市のごみ持ち込み（自己搬入）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「処理施設への持ち込み」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/mochi-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-21",
+      "q": "長岡市で、スプリング入りのマットレスはどう出しますか？",
+      "a": "長岡市はスプリング入りのマットレス・ソファー・ベッドを収集しません。市の許可業者に頼みます。",
+      "detail": [
+        "スプリングなしのマットレスは収集します。シングルは200円、セミダブル以上は600円です。",
+        "許可業者の料金は公式に記載がありません。[要確認: 運搬・処分料金]",
+        "ごみ収集運搬業許可業者の一覧は、市のサイトにあります（令和4年4月現在の記載）。料金は各業者で異なります。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "futon-mattress-sutekata-niigata",
+          "label": "布団・マットレスの捨て方"
+        },
+        {
+          "guide": "nagaoka-shi-kyoka-gyosha",
+          "label": "長岡市の許可業者一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「収集できないごみ」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html"
+        },
+        {
+          "label": "長岡市「粗大ごみ」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html"
+        },
+        {
+          "label": "長岡市「粗大ごみ品目一覧」PDF",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/sodai-gomi01.pdf"
+        },
+        {
+          "label": "長岡市「ごみ収集運搬業許可業者」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/gomi-gyousya.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-22",
+      "q": "長岡市の粗大ごみは、値上がりしますか？",
+      "a": "長岡市の公式ページ（2026年3月31日更新）の粗大ごみ料金は、200円・600円・1,000円の3段階のままで、改定の案内はありません。",
+      "detail": [
+        "2026年2月に、新潟日報が「2027年7月に400〜2,000円へ改める案」と報じています。市の公式ページには載っておらず、確定とは言えません。[要確認: 市の公式発表と施行日]",
+        "処理券シールは200円券のみの販売です。現行は600円の物に3枚、1,000円の物に5枚を貼ります。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "nagaoka-shi-sodaigomi",
+          "label": "長岡市の粗大ごみの申込・料金・持ち込み"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「粗大ごみ」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-23",
+      "q": "上越市の粗大ごみは、戸別収集してもらえますか？",
+      "a": "上越市の公式サイトに、粗大ごみの戸別収集の案内はありません。一辺1m超、30kg超のごみは市で収集しません。",
+      "detail": [
+        "自分で処分先へ持ち込むか、市の許可業者に有料で頼みます。",
+        "分解しても指定袋に入らないごみは、指定シールを直接貼って集積所に出します。収集の上限は、一辺1m・30kgです。",
+        "木製家具・布団・い草の畳は、上越市クリーンセンターに持ち込めます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "joetsu-sanjo-sodaigomi",
+          "label": "上越市・三条市の粗大ごみの出し方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "上越市「市では収集しないものの処分方法」",
+          "url": "https://www.city.joetsu.niigata.jp/soshiki/seikatsu/syuusyuusinaimono.html"
+        },
+        {
+          "label": "上越市「集積所への出し方」",
+          "url": "https://www.city.joetsu.niigata.jp/soshiki/seikatsu/syuusekijyo.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-24",
+      "q": "上越市のクリーンセンターには、何を持ち込めますか？",
+      "a": "上越市クリーンセンターは燃やせるごみのみで、木製家具・布団・い草の畳を持ち込めます。",
+      "detail": [
+        "大きさは長さ3m以下、厚さ20cm以下です。家庭ごみは10kgまでごとに30円です。",
+        "受付は月〜土の8:30〜11:30と13:00〜16:30で、日曜と1月1〜3日は休みです。予約の要否は記載なし。[要確認: 予約]"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "joetsu-sanjo-sodaigomi",
+          "label": "上越市・三条市の粗大ごみの出し方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "上越市「木製家具や畳など燃やせるごみを直接クリーンセンターに搬入する方法」",
+          "url": "https://www.city.joetsu.niigata.jp/soshiki/seikatsu/kankyo-gomi-cleancenter.html"
+        },
+        {
+          "label": "上越市「上越市クリーンセンター」",
+          "url": "https://www.city.joetsu.niigata.jp/soshiki/seikatsu/lifeguide-clean.html"
+        },
+        {
+          "label": "上越市「市では収集しないものの処分方法」",
+          "url": "https://www.city.joetsu.niigata.jp/soshiki/seikatsu/syuusyuusinaimono.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-25",
+      "q": "上越市で、実家の家財処分に補助金はありますか？",
+      "a": "上越市の空き家家財道具等処分費補助金は、費用5万円以上の2分の1で、上限10万円です。空き家情報バンクへの登録（予定）が条件です。",
+      "detail": [
+        "市内に本社を置く事業者が請け負うことと、対象の空き家に定住する意思があることも条件です。",
+        "業者との契約・作業の前に申請します。受付は年度の予算額に達し次第、終了します。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "jikkajimai-hiyou-niigata",
+          "label": "実家の片付け費用の目安"
+        },
+        {
+          "guide": "joetsu-sanjo-sodaigomi",
+          "label": "上越市・三条市の粗大ごみの出し方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "上越市「空き家活用のための家財道具等処分費補助金」",
+          "url": "https://www.city.joetsu.niigata.jp/soshiki/kenjuu/akiya-kazaisyobun.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-26",
+      "q": "三条市の粗大ごみは、どこに予約しますか？",
+      "a": "三条市の粗大ごみは、収集日の前日までに、住んでいる地区の収集業者へ電話で予約します。",
+      "detail": [
+        "受付は月〜金の8:00〜17:00です。収集日は水曜日（祝日は翌日）で、申込時に伝えられます。",
+        "三条・栄・下田の地区ごとに、申込先の業者が違います。",
+        "処理券（シール）を貼り、収集日の朝8時までに玄関先へ出します。立会いは不要です。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "joetsu-sanjo-sodaigomi",
+          "label": "上越市・三条市の粗大ごみの出し方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "三条市「粗大ごみの出し方」",
+          "url": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/gomigenryo/gomi/2359.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-27",
+      "q": "三条市清掃センターへの持ち込みは、いくらですか？",
+      "a": "三条市清掃センターの手数料は10kgあたり65円です。粗大ごみは重量精算で、処理券は貼らなくてよいと案内されています。",
+      "detail": [
+        "受付は月〜土の8:30〜17:00です。搬入の手続きがあるため、16:30までの来所が案内されています。",
+        "清掃センターのページには、処理券（シール）を貼って持ち込めば手数料がかからないとも書かれ、粗大ごみの扱いが2ページで食い違います。[要確認: 粗大ごみ持ち込み時の処理券と手数料]"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "joetsu-sanjo-sodaigomi",
+          "label": "上越市・三条市の粗大ごみの出し方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "三条市「清掃センター」",
+          "url": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/cleancenter/seisocenter/2444.html"
+        },
+        {
+          "label": "三条市「粗大ごみの出し方」",
+          "url": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/gomigenryo/gomi/2359.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-28",
+      "q": "燕市の粗大ごみは、予約なしで持ち込めますか？",
+      "a": "燕市の環境センターへの粗大ごみの持ち込みは、事前予約が不要です。原則1回5点までです。",
+      "detail": [
+        "受付は月〜金13:00〜17:00、土9:00〜12:00です。シール代は現金のみです。",
+        "燕市・弥彦村在住が対象で、免許証などの持参が必要です。排出者本人が持ち込めない場合は、代理の人が持ち込めます（事前に環境センターへ連絡）。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "tsubame-shi-sodaigomi",
+          "label": "燕市の粗大ごみの出し方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "燕・弥彦総合事務組合「粗大ごみの直接持ち込み」",
+          "url": "https://www.tysogo.jp/topics_system/public/detail/id/364"
+        },
+        {
+          "label": "燕市「粗大ごみ」",
+          "url": "https://www.city.tsubame.niigata.jp/soshiki/shimin_seikatsu/3/1/2/9089.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-29",
+      "q": "柏崎市の粗大ごみは、月に何回収集されますか？",
+      "a": "柏崎市の粗大ごみは、月1回の決められた収集日に、申込者の家へ収集に来ます。申込は電話です。",
+      "detail": [
+        "申込先は、クリーンセンターかしわざき（0257-23-5170）です。分別ガイドブックには、1回の申込は5点までとあります。",
+        "申込期限は収集日ごとに決まっています。町内会ごとの収集カレンダーか、同センターで確認します。処理券は1枚300円です。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "kashiwazaki-shi-sodaigomi",
+          "label": "柏崎市の粗大ごみの出し方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "柏崎市「資源物・ごみの分別ガイドブック」",
+          "url": "https://www.city.kashiwazaki.lg.jp/kurashi_tetsuzuki/gomi_recycle/gomi_shigembutsunowakekata_dashikata/10386.html"
+        },
+        {
+          "label": "柏崎市「分別ガイドブック 燃やすごみ・燃やさないごみ・粗大ごみ」PDF",
+          "url": "https://www.city.kashiwazaki.lg.jp/material/files/group/16/P45-50.pdf"
+        },
+        {
+          "label": "柏崎市「指定ごみ袋・粗大ごみ処理券などの取扱所と価格」",
+          "url": "https://www.city.kashiwazaki.lg.jp/soshikiichiran/shiminseikatsubu/kankyoka/6/1_1/4190.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-30",
+      "q": "新発田市の粗大ごみは、1個いくらですか？",
+      "a": "新発田市の粗大ごみは、品目を問わず1個500円で、青色の指定収集券を貼って出します。",
+      "detail": [
+        "申込は1世帯1か月に5個までです。布団は3枚までで1個です。",
+        "大きさは150×100×100cm以内、重さは60kg以内です。収集券は、指定ごみ袋の販売店で買います。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "shibata-shi-sodaigomi",
+          "label": "新発田市の粗大ごみの出し方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新発田市「粗大ごみ」",
+          "url": "https://www.city.shibata.lg.jp/kurashi/gomi/gomi/dashikata/1001156.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-31",
+      "q": "新発田市の粗大ごみは、申込からいつ収集されますか？",
+      "a": "新発田市の粗大ごみは、申し込んだ月の翌月に収集されます。日時の指定はできません。",
+      "detail": [
+        "申込期限は毎月末です。4月9日の申込は、5月中の収集です。",
+        "申込はオンラインか、電話・窓口（環境衛生課0254-28-9115）です。収集日は業者から連絡があり、朝8:30までに自宅前へ出します。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "shibata-shi-sodaigomi",
+          "label": "新発田市の粗大ごみの出し方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新発田市「粗大ごみ」",
+          "url": "https://www.city.shibata.lg.jp/kurashi/gomi/gomi/dashikata/1001156.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-32",
+      "q": "見附市の粗大ごみ処理券は、いくらですか？",
+      "a": "見附市の粗大ごみ処理券は、2026年8月1日以降、大990円・中660円・小330円です。",
+      "detail": [
+        "旧価格は大900円・中600円・小300円でした。2026年7月31日までに買った処理券は、8月以降も使えます。",
+        "券はスーパー・コンビニ・ドラッグストア・ホームセンターなどで買います。市役所や収集業者では売っていません。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "mitsuke-ojiya-sodaigomi",
+          "label": "見附市・小千谷市の粗大ごみの出し方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "見附市「粗大ごみの出し方」",
+          "url": "https://www.city.mitsuke.niigata.jp/soshiki/20/45866.html"
+        },
+        {
+          "label": "見附市「令和8年8月1日よりごみ処理手数料を改定します」",
+          "url": "https://www.city.mitsuke.niigata.jp/soshiki/20/52308.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-33",
+      "q": "十日町市の粗大ごみは、戸別収集してもらえますか？",
+      "a": "十日町市の公式サイトに、粗大ごみの戸別収集や処理券の制度の記載はありません。家具は分解して材質別に、自己搬入します。",
+      "detail": [
+        "エコクリーンセンターへの自己搬入は、家庭ごみで50kgまで450円です。超えた分は10kgごとに90円です（2024年4月1日から）。",
+        "ステーションに出せない大きな物や重い物で、分解や自己搬入が難しいときは、運搬許可業者に有料で頼みます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "tokamachi-uonuma-sodaigomi",
+          "label": "十日町市・魚沼市・南魚沼市の粗大ごみ"
+        }
+      ],
+      "sources": [
+        {
+          "label": "十日町市「ごみ・資源物の分け方、出し方（ごみ焼却場への自己搬入）」",
+          "url": "https://www.city.tokamachi.lg.jp/soshiki/kankyoenergybu/kankyoeiseika/1/gyomu/1455500600377.html"
+        },
+        {
+          "label": "十日町市「家庭用ごみ分別品目表」PDF",
+          "url": "https://www.city.tokamachi.lg.jp/material/files/group/21/hinnmokuhyou-2.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-34",
+      "q": "小千谷市の粗大ごみは、申込が必要ですか？",
+      "a": "小千谷市の粗大ごみは、10kg・2m以内の不燃物を除き、処理場へ直接搬入します。公式案内に事前申込の記載はありません。",
+      "detail": [
+        "可燃粗大ごみは時水清掃工場で100kg以下300円、不燃粗大ごみはクリーンスポット大原で20kg以下100円です。身分証（免許証など）を窓口で見せます。",
+        "10kg以内・2m以内の不燃粗大ごみは、処理券（1枚100円）を貼って、埋立ごみの日に収集場所へ出せます。",
+        "受付は月〜金8:30〜16:00、土8:30〜11:00で、日曜・祝日・年末年始は休みです。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "mitsuke-ojiya-sodaigomi",
+          "label": "見附市・小千谷市の粗大ごみの出し方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "小千谷市「ごみの出し方」",
+          "url": "https://www.city.ojiya.niigata.jp/soshiki/kankyo/gomi-dashikata.html"
+        },
+        {
+          "label": "小千谷市「ごみの分け方と出し方」PDF",
+          "url": "https://www.city.ojiya.niigata.jp/uploaded/attachment/41410.pdf"
+        },
+        {
+          "label": "小千谷市「処理場について」PDF",
+          "url": "https://www.city.ojiya.niigata.jp/uploaded/attachment/30147.pdf"
+        },
+        {
+          "label": "小千谷市「粗大ごみ」PDF",
+          "url": "https://www.city.ojiya.niigata.jp/uploaded/attachment/30140.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-35",
+      "q": "新潟の実家の片付けは、自分でやるか業者か、どう決めますか？",
+      "a": "新潟の実家は、量・階段・積雪期・遠方・期限の5つで、自分で片付けるか業者かを決めます。難しい項目が多いほど業者向きです。",
+      "detail": [
+        "市で出せる物は市に出し、運べない物や家電だけ業者に頼む分け方もあります。",
+        "市の収集は家の前まで出すのが基本で、家の中の運び出しは自分でします。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "jibun-de-dasu-ka-gyousha-ka",
+          "label": "自分で出すか業者に頼むか"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「粗大ごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html"
+        },
+        {
+          "label": "長岡市「粗大ごみ（事前申込制）戸別収集」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-36",
+      "q": "新潟市で、不用品回収業者の許可はどう確認しますか？",
+      "a": "新潟市の一般家庭向けの許可業者は、公式の一覧（36社、2024年3月7日現在）に名前があるかで確認します。",
+      "detail": [
+        "家庭のごみを運べるのは、市の一般廃棄物の収集運搬の許可を持つ業者です。一覧は多量排出・排出困難時に頼める業者で、取り扱いエリアは収集許可の範囲です。",
+        "一覧にない場合は、依頼前に廃棄物対策課（025-226-1407）へ確認します。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-kyoka-gyosha",
+          "label": "新潟市の許可業者一覧"
+        },
+        {
+          "guide": "jibun-de-dasu-ka-gyousha-ka",
+          "label": "自分で出すか業者に頼むか"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「一般家庭から排出されるごみを自ら運搬することができないときは」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/unpankonnan.html"
+        },
+        {
+          "label": "新潟市「多量排出・排出困難時に依頼可能な許可業者一覧」PDF",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/unpankonnan.files/20240307.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-37",
+      "q": "無許可の不用品回収業者は、どう見分けますか？",
+      "a": "新潟市・長岡市は、チラシ配布・空き地での回収・街中の巡回・ネット広告を、無許可回収の例として挙げています。",
+      "detail": [
+        "見た目では見分けにくいので、新潟市の許可業者一覧や市の窓口で許可を確認します。環境省は、産業廃棄物や古物商の許可では家庭の廃棄物を回収できないと案内しています。",
+        "「無料回収」と言いながら、後から高額な料金を請求するトラブルもあります。無許可の業者に頼んだ側にも責任があると、新潟市は案内しています。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "jibun-de-dasu-ka-gyousha-ka",
+          "label": "自分で出すか業者に頼むか"
+        },
+        {
+          "guide": "niigata-shi-kyoka-gyosha",
+          "label": "新潟市の許可業者一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「無許可の不用品回収業者にご注意ください」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/oshirase/mukyokahuyouhin.html"
+        },
+        {
+          "label": "環境省「廃棄物の処分に「無許可」の回収業者を利用しないでください！」",
+          "url": "https://www.env.go.jp/recycle/kaden/tv-recycle/qa.html"
+        },
+        {
+          "label": "長岡市「無許可の不用品回収業者にご注意ください」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/unauthorized.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-38",
+      "q": "古物商の許可だけの業者は、家庭のごみを回収できますか？",
+      "a": "できません。古物商や産業廃棄物の許可では家庭の廃棄物は回収できず、市の一般廃棄物の許可が必要です。",
+      "detail": [
+        "古物商の許可は、中古品の買取に関する許可です。",
+        "環境省と新潟市・長岡市が、同じ内容を案内しています。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-kyoka-gyosha",
+          "label": "新潟市の許可業者一覧"
+        },
+        {
+          "guide": "nagaoka-shi-kyoka-gyosha",
+          "label": "長岡市の許可業者一覧"
+        }
+      ],
+      "sources": [
+        {
+          "label": "環境省「廃棄物の処分に「無許可」の回収業者を利用しないでください！」",
+          "url": "https://www.env.go.jp/recycle/kaden/tv-recycle/qa.html"
+        },
+        {
+          "label": "新潟市「無許可の不用品回収業者にご注意ください」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/oshirase/mukyokahuyouhin.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-39",
+      "q": "遺品整理士がいる業者なら、許可は確認しなくてよいですか？",
+      "a": "いいえ。遺品整理士の資格があっても、ごみを運ぶには市の一般廃棄物の許可が別に必要です。許可は見積もり前に確認します。",
+      "detail": [
+        "新潟市は、許可のない遺品整理業者は分別はできても回収はできないと案内しています。",
+        "ごみを運ぶのが自社か別会社かを、見積もり前に聞きます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "ihinseiri-niigata-shi-gyosha-erabikata",
+          "label": "新潟市で遺品整理を頼むとき"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「無許可の不用品回収業者にご注意ください」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/oshirase/mukyokahuyouhin.html"
+        },
+        {
+          "label": "環境省「廃棄物の処分に「無許可」の回収業者を利用しないでください！」",
+          "url": "https://www.env.go.jp/recycle/kaden/tv-recycle/qa.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-40",
+      "q": "新潟で実家の片付けを業者に頼むと、いくらですか？",
+      "a": "比較サイト掲載の県内27社の公開料金（当サイト集計）では、中央値は1Kで35,000円〜、3LDKで180,000円〜です。請求額は見積もりで決まります。",
+      "detail": [
+        "「円〜」は下限の表記で、上限ではありません。27社のうち、料金が載るのは18〜19社です。",
+        "民間の比較サイトの掲載額の集計で、公的な統計ではありません。遺品整理の料金に公定や公認の仕組みはないと、総務省の調査報告書に書かれています。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "jikkajimai-gyosha-hiyou-niigata",
+          "label": "実家の片付け業者の費用"
+        },
+        {
+          "guide": "jikkajimai-hiyou-niigata",
+          "label": "実家の片付け費用の目安"
+        }
+      ],
+      "sources": [
+        {
+          "label": "みんなの遺品整理「新潟県の遺品整理業者・料金相場」（民間比較サイト。当サイトの集計元。2026年9〜10月取得）",
+          "url": "https://m-ihinseiri.jp/partners/pref-15/"
+        },
+        {
+          "label": "総務省行政評価局「遺品整理のサービスをめぐる現状に関する調査結果報告書」（料金に公定の仕組みがないこと）",
+          "url": "https://www.soumu.go.jp/main_content/000675388.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-41",
+      "q": "実家の片付け業者の見積もりは、何社から取りますか？",
+      "a": "国民生活センターは、複数の業者から見積もりを取り、内容を比べるよう勧めています。社数の決まりはありません。",
+      "detail": [
+        "追加料金の有無、作業内容、料金、キャンセル料を、見積書で明確に出してもらいます。",
+        "見積書は書面でもらいます。依頼後に無許可の業者と分かったときは、作業を断ります。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "jibun-de-dasu-ka-gyousha-ka",
+          "label": "自分で出すか業者に頼むか"
+        },
+        {
+          "guide": "jikkajimai-gyosha-hiyou-niigata",
+          "label": "実家の片付け業者の費用"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国民生活センター「こんなはずじゃなかった！遺品整理サービスでの契約トラブル」",
+          "url": "https://www.kokusen.go.jp/news/data/n-20180719_1.html"
+        },
+        {
+          "label": "国民生活センター「不用品回収サービスのトラブル」",
+          "url": "https://www.kokusen.go.jp/news/data/n-20221102_1.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-42",
+      "q": "業者の見積もりで、追加料金は何を確認しますか？",
+      "a": "追加料金が出る条件を、契約前に書面で確認します。事前説明のない処理困難物や、当日の急な作業が出たときが例です。",
+      "detail": [
+        "見積もりでは、家財の量、トラックの駐車場所、エレベーターの有無などが確認されます。総務省の調査では、見積書に「隠れた場所の物で費用がかかるときは別途」と書く事業者もありました。",
+        "国民生活センターには、作業当日に見積額の2倍を請求された事例があります。",
+        "見積もりと違う提案は、作業前に断ります。想定外の請求は、その場の支払いを断ります。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "jibun-de-dasu-ka-gyousha-ka",
+          "label": "自分で出すか業者に頼むか"
+        },
+        {
+          "guide": "jikkajimai-gyosha-hiyou-niigata",
+          "label": "実家の片付け業者の費用"
+        }
+      ],
+      "sources": [
+        {
+          "label": "総務省行政評価局「遺品整理のサービスをめぐる現状に関する調査結果報告書」",
+          "url": "https://www.soumu.go.jp/main_content/000675388.pdf"
+        },
+        {
+          "label": "国民生活センター「こんなはずじゃなかった！遺品整理サービスでの契約トラブル」",
+          "url": "https://www.kokusen.go.jp/news/data/n-20180719_1.html"
+        },
+        {
+          "label": "国民生活センター「不用品回収サービスのトラブル」",
+          "url": "https://www.kokusen.go.jp/news/data/n-20221102_1.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-43",
+      "q": "実家の片付け業者とトラブルになったら、どこに相談しますか？",
+      "a": "消費者ホットライン188が相談先です。新潟市の無許可回収は、廃棄物対策課（025-226-1403）に確認できます。",
+      "detail": [
+        "長岡市は環境事業課（0258-24-2837）が窓口です。",
+        "作業前に納得できない提案があれば、作業前にきっぱり断ります。身の危険を感じるときは、警察に連絡します。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "ihinseiri-niigata-shi-gyosha-erabikata",
+          "label": "新潟市で遺品整理を頼むとき"
+        },
+        {
+          "guide": "jibun-de-dasu-ka-gyousha-ka",
+          "label": "自分で出すか業者に頼むか"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国民生活センター「遺品整理を頼むときは、事業者選びは慎重に」",
+          "url": "https://www.kokusen.go.jp/mimamori/mj_mailmag/mj-shinsen525.html"
+        },
+        {
+          "label": "国民生活センター「不用品回収サービスのトラブル」",
+          "url": "https://www.kokusen.go.jp/news/data/n-20221102_1.html"
+        },
+        {
+          "label": "新潟市「無許可の不用品回収業者にご注意ください」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/oshirase/mukyokahuyouhin.html"
+        },
+        {
+          "label": "長岡市「無許可の不用品回収業者にご注意ください」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/unauthorized.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-44",
+      "q": "遠方に住んでいると、実家の片付けは何回帰省しますか？",
+      "a": "当サイトは、仕分けと見積もりの「決める回」と、搬出の「動かす回」の2回を目安にしています。",
+      "detail": [
+        "量が多い家や家族の判断が割れる場合は、回数が増えます。",
+        "間の期間は、粗大ごみのネット申込など、帰省せずにできる手続きを進めます。戸籍は、住まいの最寄りの市区町村の窓口で請求できます（広域交付。本人・配偶者・直系親族のみ、郵送・代理は不可）。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方から実家を片付ける段取り"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「粗大ごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html"
+        },
+        {
+          "label": "長岡市「粗大ごみ（事前申込制）戸別収集」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html"
+        },
+        {
+          "label": "法務省「戸籍法の一部を改正する法律について（令和6年3月1日施行）」",
+          "url": "https://www.moj.go.jp/MINJI/minji04_00082.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-45",
+      "q": "立ち会えないとき、業者と何を取り決めますか？",
+      "a": "作業範囲・残す物と処分する物の区分・追加料金・キャンセル料を、見積もりの段階で書面にしておきます。",
+      "detail": [
+        "立会いの要否は事業者で違い、総務省の調査では69事業者のうち14事業者が原則立会い不要でした。理由は「依頼者が遠方に住んでいる場合が多いため」などです。",
+        "国民生活センターは、残す遺品と処分する遺品を明確に分け、作業時はできるだけ立ち会うよう勧めています。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方から実家を片付ける段取り"
+        }
+      ],
+      "sources": [
+        {
+          "label": "総務省行政評価局「遺品整理のサービスをめぐる現状に関する調査結果報告書」",
+          "url": "https://www.soumu.go.jp/main_content/000675388.pdf"
+        },
+        {
+          "label": "国民生活センター「こんなはずじゃなかった！遺品整理サービスでの契約トラブル」",
+          "url": "https://www.kokusen.go.jp/news/data/n-20180719_1.html"
+        },
+        {
+          "label": "国民生活センター「遺品整理を頼むときは、事業者選びは慎重に」",
+          "url": "https://www.kokusen.go.jp/mimamori/mj_mailmag/mj-shinsen525.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-46",
+      "q": "実家の片付けの前に、近所へ何を伝えますか？",
+      "a": "片付けの日程と、日中につながる連絡先を伝えます。トラックが入る日や音が出る日は、事前に知らせます。",
+      "detail": [
+        "空き家になる場合は、何かあったときの連絡先も残します。",
+        "新潟市は、自治会や町内会、近隣に連絡先を伝えておくよう案内しています。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "jikkajimai-aisatsu-kinjo",
+          "label": "実家じまいの近所への挨拶"
+        },
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方から実家を片付ける段取り"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「空き家の管理の方法」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/akiya/tekiseikanri/kanri.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-47",
+      "q": "実家の片付け費用を、親の財産から出してもよいですか？",
+      "a": "親が元気なうちは、親の了解のもとで、親の財産から払うか子が負担するかを決めます。",
+      "detail": [
+        "亡くなった後は、相続人で先に話し合ってから払います。",
+        "相続放棄を考えるなら、遺産の一部を処分すると相続を承認したとみなされ、放棄が認められなくなります。放棄の申述は、相続の開始を知ってから3か月以内です。処分の前に、家庭裁判所か専門家に相談します。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "jikkajimai-okane-ga-nai",
+          "label": "実家じまいのお金がないとき"
+        },
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら、遺品整理の前に相談"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「相続の放棄の申述」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html"
+        },
+        {
+          "label": "名古屋家庭裁判所「相続放棄について」PDF（遺産の一部を処分した場合）",
+          "url": "https://www.courts.go.jp/nagoya-f/vc-files/nagoya-f/04kajibu/05/02souzokuhouki.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-48",
+      "q": "新潟で、冬に実家を片付けても大丈夫ですか？",
+      "a": "片付けはできますが、搬出路の雪や業者の追加料金の条件に注意が必要です。雪の前に終える日程が安全です。",
+      "detail": [
+        "当サイトの目安は、11月中に搬出を終える日程です。公式の基準ではありません。",
+        "新潟県は、雪の中の作業事故の防止を呼びかけています。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "fuyu-no-jikkajimai-yukioroshi",
+          "label": "冬の実家じまいと雪対策"
+        },
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方から実家を片付ける段取り"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県「除雪作業中の事故にご注意ください」",
+          "url": "https://www.pref.niigata.lg.jp/site/chiikiseisaku/191025zikoboushi.html"
+        },
+        {
+          "label": "新潟市「粗大ごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-49",
+      "q": "家電4品目は、新潟市や長岡市の粗大ごみで出せますか？",
+      "a": "出せません。エアコン・テレビ・冷蔵庫・冷凍庫・洗濯機・衣類乾燥機は、新潟市も長岡市も収集しません。",
+      "detail": [
+        "新潟市では、販売店に引き取り義務があるのは、買い替えの場合と、以前その店で買った場合です。ほかは、指定引取場所へ持ち込むか、許可業者に頼みます。",
+        "運搬を頼むと、リサイクル料金のほかに運搬料金がかかります。長岡市の販売店への依頼は、購入店に限ります。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "kaden4hinmoku-niigata",
+          "label": "家電4品目の処分方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「テレビ・冷蔵庫等の家電リサイクル法対象品目」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/kaden.html"
+        },
+        {
+          "label": "長岡市「市では収集処理できないもの」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-50",
+      "q": "家電4品目のリサイクル料金は、いくらですか？",
+      "a": "長岡市が示す主なメーカーの例は、エアコン990円、洗濯機・衣類乾燥機2,530円、冷蔵庫(170L以下)3,740円です。",
+      "detail": [
+        "テレビは15型以下1,870円、16型以上2,970円。冷蔵庫171L以上は4,730円です。",
+        "料金はメーカーで違います。家電リサイクル券センター（0120-31-9640）で調べられます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "kaden4hinmoku-niigata",
+          "label": "家電4品目の処分方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「市では収集処理できないもの」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html"
+        },
+        {
+          "label": "家電製品協会 家電リサイクル券センター「再商品化等料金一覧」",
+          "url": "https://www.rkc.aeha.or.jp/recycle_price_compact.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-51",
+      "q": "エアコンの取り外し工事の費用は、いくらですか？",
+      "a": "取り外し工事とその費用は、新潟市・長岡市の公式案内に記載がありません。[要確認: エアコンの取り外し工事の費用]",
+      "detail": [
+        "工事を頼むときは、リサイクル料金・運搬料金と別に見積もりを取ります。",
+        "購入店や買い替え先の販売店に、頼めるかを先に聞きます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "kaden4hinmoku-niigata",
+          "label": "家電4品目の処分方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「テレビ・冷蔵庫等の家電リサイクル法対象品目」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/kaden.html"
+        },
+        {
+          "label": "長岡市「市では収集処理できないもの」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-52",
+      "q": "灯油が残った石油ストーブは、どう出しますか？",
+      "a": "新潟市では灯油を抜いてから、粗大ごみで出します。石油ストーブ100円、ファンヒーター200円です。",
+      "detail": [
+        "長岡市は粗大ごみで、石油・電気・ガスのストーブは、1人で持てれば200円、持てなければ600円です。",
+        "電池が入っていれば外します。抜いた灯油は、新潟市では販売店に相談します。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "stove-touyu-shobun-niigata",
+          "label": "石油ストーブ・灯油の処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「粗大ごみ品目別料金一覧」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/ryoukinichiran.html"
+        },
+        {
+          "label": "新潟市「分別早見表（す）」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/su.html"
+        },
+        {
+          "label": "新潟市「分別早見表（と）」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/to.html"
+        },
+        {
+          "label": "長岡市「粗大ごみ品目一覧」PDF",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/sodai-gomi01.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-53",
+      "q": "消火器は、新潟市や長岡市でどう処分しますか？",
+      "a": "消火器は新潟市も長岡市も収集しません。消火器リサイクル推進センター（03-5829-6773）の窓口検索で、引き取り先を探します。",
+      "detail": [
+        "リサイクルシールがない消火器は、窓口でシールを購入して貼ります。国内メーカー製が対象で、外国メーカー製やスプレー式は対象外です。",
+        "腐食・凹み・変形のある消火器は、薬剤を放射したり分解したりせず、すぐにリサイクルに出します。耐用年数は住宅用5年、業務用10年です。",
+        "同センターの電話は平日9:00〜17:00（12:00〜13:00を除く）です。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "jitensha-tire-shoukaki-niigata",
+          "label": "自転車・タイヤ・消火器・バッテリーの処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "消火器リサイクル推進センター「処分の手順」",
+          "url": "https://www.ferpc.jp/disposal/help/"
+        },
+        {
+          "label": "消火器リサイクル推進センター「注意事項」",
+          "url": "https://www.ferpc.jp/disposal/note/"
+        },
+        {
+          "label": "消火器リサイクル推進センター「リサイクルシールの購入方法」",
+          "url": "https://www.ferpc.jp/recycleseal/buy/"
+        },
+        {
+          "label": "新潟市「市で収集処理しないごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/none.html"
+        },
+        {
+          "label": "長岡市「収集できないごみ」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-54",
+      "q": "車のタイヤは、新潟市や長岡市でどう処分しますか？",
+      "a": "車のタイヤは、新潟市も長岡市も収集しません。新潟市は販売店に相談、長岡市は市の許可業者に収集を頼みます。",
+      "detail": [
+        "新潟市の自己搬入施設にも、タイヤは持ち込めません。",
+        "車のバッテリーも、両市とも収集しません。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "jitensha-tire-shoukaki-niigata",
+          "label": "自転車・タイヤ・消火器・バッテリーの処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「分別早見表（た）」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/ta.html"
+        },
+        {
+          "label": "新潟市「分別早見表（は）」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/ha.html"
+        },
+        {
+          "label": "新潟市「ごみの自己搬入について」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/carry.html"
+        },
+        {
+          "label": "長岡市「収集できないごみ」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-55",
+      "q": "パソコンは、粗大ごみで出せますか？",
+      "a": "出せません。新潟市も長岡市も、家庭用パソコンは収集しません。メーカー回収か小型家電の回収を使います。",
+      "detail": [
+        "PCリサイクルマークのある家庭用パソコンは、メーカーが無償で回収します。マークがない物は、回収再資源化料金が必要です。",
+        "新潟市の小型家電の拠点回収は、ボックスに入る大きさ（概ね縦15×横35×奥行20cm）の物が対象です。出す前に、自分でデータを消します。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "pc-sumaho-shobun-niigata",
+          "label": "パソコン・スマホ・小型家電の処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "パソコン3R推進協会「リサイクルの手順」",
+          "url": "https://www.pc3r.jp/home/recycle_flow.html"
+        },
+        {
+          "label": "新潟市「使用済小型家電のリサイクルにご協力ください」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/recycle/koden_recycle/koden_recycle.html"
+        },
+        {
+          "label": "長岡市「市では収集処理できないもの」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-56",
+      "q": "使わない自転車を処分する前に、何をしますか？",
+      "a": "新潟県防犯協会は、廃棄の前に防犯登録の抹消をするよう案内しています。手数料はかかりません。",
+      "detail": [
+        "自転車防犯登録所か警察で手続きします。運転免許証などの身分証と、防犯登録証など所有を示す書類が必要です。",
+        "粗大ごみは新潟市・長岡市とも200円です。電動アシストは新潟市300円、長岡市600円です。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "jitensha-tire-shoukaki-niigata",
+          "label": "自転車・タイヤ・消火器・バッテリーの処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟県防犯協会「自転車防犯登録」",
+          "url": "https://niigata-bouhan.or.jp/pages/26/"
+        },
+        {
+          "label": "新潟市「粗大ごみ品目別料金一覧」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/ryoukinichiran.html"
+        },
+        {
+          "label": "長岡市「長岡市粗大ごみ品目一覧」PDF",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/sodai-gomi01.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-57",
+      "q": "実家の納屋で見つかった、市で出せない物はどうしますか？",
+      "a": "新潟市は農薬・塗料・灯油・車のタイヤとバッテリーを収集せず、販売店への相談を案内しています。消火器はリサイクル窓口です。",
+      "detail": [
+        "長岡市は、タイヤとバッテリーを許可業者へ、農薬と灯油を販売店または取扱店へ問い合わせるよう案内しています。",
+        "新潟市の問い合わせは廃棄物対策課（025-226-1407）、長岡市は環境事業課（0258-24-2837）です。先に仕分けておかないと、搬出の日程が崩れます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "jibun-de-dasu-ka-gyousha-ka",
+          "label": "自分で出すか業者に頼むか"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "実家じまいの手順"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「分別早見表（と）」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/to.html"
+        },
+        {
+          "label": "新潟市「分別早見表（の）」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/no.html"
+        },
+        {
+          "label": "新潟市「分別早見表（は）」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/ha.html"
+        },
+        {
+          "label": "新潟市「分別早見表（た）」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/ta.html"
+        },
+        {
+          "label": "新潟市「市で収集処理しないごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/none.html"
+        },
+        {
+          "label": "長岡市「収集できないごみ」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-58",
+      "q": "布団は、新潟市と長岡市でいくらで出せますか？",
+      "a": "新潟市は布団100円、長岡市は1枚200円の粗大ごみです。切れば燃やすごみにもできます。",
+      "detail": [
+        "切る大きさは、新潟市が1辺50cm以内、長岡市が50cm四方です。",
+        "長岡市は、切らずに指定袋で出すと処理施設の故障の原因になります。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "futon-mattress-sutekata-niigata",
+          "label": "布団・マットレスの捨て方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「粗大ごみ品目別料金一覧」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/ryoukinichiran.html"
+        },
+        {
+          "label": "新潟市「分別早見表（ふ）」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/hu.html"
+        },
+        {
+          "label": "長岡市「粗大ごみ品目一覧」PDF",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/sodai-gomi01.pdf"
+        },
+        {
+          "label": "長岡市「処理施設への持ち込み」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/mochi-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-59",
+      "q": "ソファーとベッドは、新潟市と長岡市でいくらですか？",
+      "a": "新潟市はソファー・ベッドとも500円です。長岡市はソファー200円か600円、ベッド600円か1,000円です。",
+      "detail": [
+        "長岡市の料金は、スプリングなしの場合です。スプリング入りは収集しません。",
+        "新潟市はマットレスを別に申し込みます（スプリング式以外200円、式500円）。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "sofa-bed-tansu-sutekata-niigata",
+          "label": "ソファ・ベッド・タンスの捨て方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「粗大ごみ品目別料金一覧」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/ryoukinichiran.html"
+        },
+        {
+          "label": "長岡市「長岡市粗大ごみ品目一覧」PDF",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/sodai-gomi01.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-60",
+      "q": "売れる家具や家電は、先に売ってから処分できますか？",
+      "a": "新潟市と長岡市は、粗大ごみに出す前にリユースを検討するよう案内しています。両市とも「おいくら」と連携しています。",
+      "detail": [
+        "買取の対象は再販できる物だけです。出張費や作業費がかかる場合があります。",
+        "取引は個人と買取店の間で行われ、トラブルに市は責任を負いません。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-recycle-shop",
+          "label": "新潟市のリサイクルショップ・出張買取"
+        },
+        {
+          "guide": "nagaoka-recycle-shop",
+          "label": "長岡市のリサイクルショップ・出張買取"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「粗大ごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html"
+        },
+        {
+          "label": "長岡市「粗大ごみ（事前申込制）戸別収集」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-61",
+      "q": "古い冷蔵庫や洗濯機は、買い替えれば新潟市の販売店が引き取りますか？",
+      "a": "新潟市では、買い替えの場合と、以前その店で買った場合に、販売店が冷蔵庫・洗濯機などを引き取る義務があります。",
+      "detail": [
+        "引き取り義務がある場合でも、リサイクル料金が必要です。場合によっては収集運搬料金も必要です。",
+        "買い替えも購入履歴もない実家の家電は、指定引取場所へ自分で持ち込むか、市の許可業者に収集を頼みます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "kaden4hinmoku-niigata",
+          "label": "家電4品目の処分方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「テレビ・冷蔵庫等の家電リサイクル法対象品目」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/kaden.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-62",
+      "q": "家電を自分で持ち込める引取場所は、新潟市と長岡市のどこですか？",
+      "a": "新潟市は万代と美咲町の2か所、長岡市は新組町と要町の2か所です。事前に連絡してから、家電リサイクル券を添えて持ち込みます。",
+      "detail": [
+        "新潟市は日本通運新潟支店万代デポ（025-244-9121）と豊和商事新潟支店（025-284-0131）です。営業日は不定休のため、直接問い合わせます。",
+        "長岡市は豊和商事（0258-24-6322）と日本通運長岡指定取引所（0258-36-4400）です。受付は9〜16時（12〜13時を除く）で、祝祭日は休み、土曜は問い合わせです。",
+        "メーカー名と品番を調べ、郵便局でリサイクル料金を払って家電リサイクル券を入手します。振込手数料が別にかかります。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "kaden4hinmoku-niigata",
+          "label": "家電4品目の処分方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「テレビ・冷蔵庫等の家電リサイクル法対象品目」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/kaden.html"
+        },
+        {
+          "label": "長岡市「収集できないごみ」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-63",
+      "q": "新潟市の使用済み小型家電は、どこに出せますか？",
+      "a": "新潟市の使用済み小型家電は、市内30拠点の回収ボックスに出せます。縦15×横35×奥行20cm程度の物が対象です。",
+      "detail": [
+        "対象は、パソコン、スマートフォン、携帯電話、デジタルカメラ、ゲーム機、ヘアドライヤーなど16品目です。出せる時間は、施設の開館時間に準じます。",
+        "取り外せる電池・バッテリーは外します。パソコンや携帯電話は、データを削除してから出します。一度入れた物は取り出せません。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "pc-sumaho-shobun-niigata",
+          "label": "パソコン・スマホ・小型家電の処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「使用済小型家電のリサイクルにご協力ください」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/recycle/koden_recycle/koden_recycle.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-64",
+      "q": "新潟市のごみ持ち込みは、どんな袋に入れて行きますか？",
+      "a": "新潟市の持ち込みは、燃やすごみ・燃やさないごみ・粗大ごみに分け、90リットル以下の透明か半透明の袋に入れます。",
+      "detail": [
+        "粗大ごみで袋に入らない大きさの物は、そのままで構いません。「燃やさないごみ」に特定5品目が含まれるときは、分けて搬入します。",
+        "有料の指定袋に入れたごみも、持ち込むと重さで手数料がかかります。指定袋に入れたごみは、ごみ集積所に出すよう案内されています。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-gomi-mochikomi",
+          "label": "新潟市のごみ持ち込み（自己搬入）"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「ごみの自己搬入について」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/carry.html"
+        },
+        {
+          "label": "新潟市「ごみの自己搬入について（概要）」PDF",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/carry.files/gomizikohan.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-65",
+      "q": "収集日に実家へ行けなくても、粗大ごみは出せますか？",
+      "a": "長岡市・見附市・三条市・柏崎市は、処理券を貼って玄関先や自宅前に出せば、立ち会い不要で収集します。",
+      "detail": [
+        "家の中に入っての収集はしません（長岡市・見附市・柏崎市）。三条市も玄関先に出します。品物は家の外に出しておくので、出す人を先に決めておきます。",
+        "新潟市は、受付時に指定した排出場所に、収集日の午前8時までに出します。立ち会いの要否は記載がありません。[要確認: 新潟市の立ち会いの要否]"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方から実家を片付ける段取り"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「粗大ごみ」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html"
+        },
+        {
+          "label": "見附市「粗大ごみの出し方」",
+          "url": "https://www.city.mitsuke.niigata.jp/soshiki/20/45866.html"
+        },
+        {
+          "label": "三条市「粗大ごみの出し方」",
+          "url": "https://www.city.sanjo.niigata.jp/soshiki/shimimbu/kankyoka/gomigenryo/gomi/2359.html"
+        },
+        {
+          "label": "柏崎市「分別ガイドブック 燃やすごみ・燃やさないごみ・粗大ごみ」PDF",
+          "url": "https://www.city.kashiwazaki.lg.jp/material/files/group/16/P45-50.pdf"
+        },
+        {
+          "label": "新潟市「粗大ごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-66",
+      "q": "「粗大ごみがあれば収集に行きます」という電話が来たら、どうしますか？",
+      "a": "長岡市は、「粗大ごみがあれば収集に行きます」「家に入って収集します」という勧誘電話は、市の収集と一切関係がないと注意しています。",
+      "detail": [
+        "長岡市の粗大ごみは、事前申込制の戸別収集です。家屋に入っての収集はしません。",
+        "許可なく廃棄物を収集運搬する行為は法律違反です。不安なときは、環境事業課（0258-24-2837）に確認します。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "nagaoka-shi-sodaigomi",
+          "label": "長岡市の粗大ごみの申込・料金・持ち込み"
+        },
+        {
+          "guide": "jibun-de-dasu-ka-gyousha-ka",
+          "label": "自分で出すか業者に頼むか"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「粗大ごみ」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html"
+        },
+        {
+          "label": "長岡市「無許可の不用品回収業者にご注意ください」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/unauthorized.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-67",
+      "q": "長岡市の粗大ごみ処理券シールは、どこで買えますか？",
+      "a": "長岡市の粗大ごみ処理券シールは、指定ごみ袋を販売している店舗で買えます。販売は200円券のみです。",
+      "detail": [
+        "販売店は、長岡・越路・三島・山古志・小国・寺泊・栃尾・与板・川口の各地域にあります。一覧は2026年9月1日現在です。",
+        "600円の物には3枚、1,000円の物には5枚を貼ります。金額は、申込時に案内されます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "nagaoka-shi-sodaigomi",
+          "label": "長岡市の粗大ごみの申込・料金・持ち込み"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「指定ごみ袋・粗大ごみ処理券販売店について」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/barauri.html"
+        },
+        {
+          "label": "長岡市「粗大ごみ」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-68",
+      "q": "十日町市で、不要なパソコンや携帯電話は出せますか？",
+      "a": "十日町市エコクリーンセンターで、パソコン・携帯電話・タブレットなどを無料で回収します。受付は月〜土の8:45〜17:00です。",
+      "detail": [
+        "電池は外し、データは確実に消去してから持ち込みます。分解（破壊）した物や、著しく破損した物は断られることがあります。",
+        "日曜・祝日・年末年始（12月31日〜1月3日）は休みです。事業所から出る物は受け付けません。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "tokamachi-uonuma-sodaigomi",
+          "label": "十日町市・魚沼市・南魚沼市の粗大ごみ"
+        },
+        {
+          "guide": "pc-sumaho-shobun-niigata",
+          "label": "パソコン・スマホ・小型家電の処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "十日町市「ごみ・資源物の分け方、出し方（ごみ焼却場への自己搬入）」",
+          "url": "https://www.city.tokamachi.lg.jp/soshiki/kankyoenergybu/kankyoeiseika/1/gyomu/1455500600377.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-69",
+      "q": "小千谷市で、不要なパソコンはどう出しますか？",
+      "a": "小千谷市の家庭用パソコンは、リネットジャパンの宅配回収（無料）、メーカー回収、クリーンスポット大原への持ち込みから選びます。",
+      "detail": [
+        "クリーンスポット大原への持ち込みは、100kg以下300円で、超えると10kgごとに30円です。ごみ収集場所には出せません。",
+        "PCリサイクルマークがあれば、メーカーが無料で回収します。CRTディスプレイは持ち込めません。データは必ず消去します。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "mitsuke-ojiya-sodaigomi",
+          "label": "見附市・小千谷市の粗大ごみの出し方"
+        },
+        {
+          "guide": "pc-sumaho-shobun-niigata",
+          "label": "パソコン・スマホ・小型家電の処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "小千谷市「パソコンの処分」PDF",
+          "url": "https://www.city.ojiya.niigata.jp/uploaded/attachment/32792.pdf"
+        },
+        {
+          "label": "小千谷市「ごみの分け方と出し方」PDF",
+          "url": "https://www.city.ojiya.niigata.jp/uploaded/attachment/41410.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "katazuke-70",
+      "q": "新潟市の粗大ごみの電話がつながらないときは、どうしますか？",
+      "a": "新潟市の粗大ごみは、電話が混む月曜や連休明けを避けるか、ネット・チャットボット・LINEで24時間申し込めます。",
+      "detail": [
+        "オペレーターが全員対応中のときは、自動音声ガイダンスで、ネットとチャットボットの申込URLをスマートフォンに送る機能があります。固定電話など使えない電話もあります。",
+        "申込先の電話番号は025-290-5353です。かけ間違いが多いため、番号をよく確かめます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 4,
+      "links": [
+        {
+          "guide": "niigata-shi-sodaigomi",
+          "label": "新潟市の粗大ごみの申込・料金・持ち込み"
+        },
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方から実家を片付ける段取り"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「粗大ごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    }
+  ]
+}

@@ -1,0 +1,1803 @@
+{
+  "id": "shiwake",
+  "order": 3,
+  "title": "仕分け・遺品・貴重品の疑問",
+  "titleSuffix": "新潟の実家じまい",
+  "lead": "残す・迷う・処分の分け方、遺品と貴重品、形見分け、写真・手紙、仏壇・人形の疑問に答えます。",
+  "description": "新潟の実家じまいの仕分けで迷う疑問を、公式情報で短く答えます。遺品と貴重品の探し方、形見分けの揉めごと、デジタル遺品、写真・仏壇・人形の扱いまで。",
+  "updated": "2026-10-09",
+  "items": [
+    {
+      "id": "shiwake-01",
+      "q": "実家の仕分けは何から始めればよいですか？",
+      "a": "実家の仕分けは、期限のある手続きの確認、貴重品と書類の捜索、生活用品の仕分けの順に始めます。",
+      "detail": [
+        "いきなり捨てず、最初は「残す・迷う・処分」に分けるだけにします。",
+        "相続放棄の申述は、自己のために相続の開始があったことを知った時から3か月以内です。",
+        "放棄を考えているなら、財産の処分は単純承認とみなされる場合があるため（民法921条1号）、処分の前に専門家へ相談します。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「相続の放棄の申述」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html"
+        },
+        {
+          "label": "e-Gov法令検索「民法」（第921条）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-02",
+      "q": "「残す・迷う・処分」の3つの箱とは何ですか？",
+      "a": "3つの箱は、残す物、判断を保留する物、誰が見ても不要な物を分けるための仕分けの方法です。",
+      "detail": [
+        "段ボールなどに「残す」「迷う」「処分」と書き、部屋ごとに同じ3つを使います。",
+        "迷う箱は、期限のある手続きが終わるまで処分せず、見直す日を決めます。",
+        "処分する箱に入れる前に、ポケットや引き出しの奥を確認します。",
+        "相続放棄を考えているなら、処分する箱の物も専門家に相談するまで捨てません。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-03",
+      "q": "物の量が多すぎて、手が止まるときはどうしますか？",
+      "a": "量が多くて手が止まるときは、残す量の枠を先に決め、引き出し1つか棚1段だけを区切って仕分けます。",
+      "detail": [
+        "枠の例は、残す物を箱2個までにする方法です。",
+        "1回の作業は短く区切り、引き出し1つや棚1段で終わりにします。",
+        "迷う物は保留箱に入れます。「全部残す」も「全部捨てる」も、後で後悔しやすい方法です。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "jikkajimai-sabishii-kokoro",
+          "label": "実家じまいが寂しい・つらいときの進め方"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-04",
+      "q": "遠方で帰省中しか作業できないとき、どう進めますか？",
+      "a": "遠方から進めるときは、帰省を「決める回」と「動かす回」の2回に分けて計画します。",
+      "detail": [
+        "1回目は仕分けと貴重品の捜索、2回目は搬出の立会いと最終確認です。",
+        "1回目の最後に、2回目の日程（業者の搬出日、粗大ごみの収集日）を決めておきます。",
+        "2回で必ず終わるとは限らず、量が多いと回数は増えます。",
+        "戸籍の請求など帰省せずにできる手続きは、帰省の間に進めます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方から実家を片付ける段取り"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-05",
+      "q": "仕分けの前に、きょうだいと決めておくことは何ですか？",
+      "a": "仕分けの前に、窓口になる人と、誰が何を引き取りたいかをきょうだいで決めておきます。",
+      "detail": [
+        "窓口になる人を1人決め、誰が何を引き取りたいかを、片付ける前に各自挙げてもらいます。",
+        "片付ける前に物の写真を撮って共有すると、あとで揉めにくくなります。",
+        "形見分けの希望は、帰省の前に聞いておきます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        },
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方から実家を片付ける段取り"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-06",
+      "q": "親が実家の物を捨ててくれないとき、どう進めますか？",
+      "a": "親が物を捨てないときは、物の持ち主である親が決める形にして、小さな範囲から進めます。",
+      "detail": [
+        "引き出し1つなど、親が「ここならいい」と言う場所から始めます。",
+        "運ぶ、拭く、市のごみに出す手間は、家族が引き受けます。",
+        "捨てない理由は決めつけず、「いちばん大事な物はどれ？」と聞きます。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "jikka-katazuke-oya-ga-sutenai",
+          "label": "実家の片付けで親が捨てない・怒るとき"
+        },
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-07",
+      "q": "親が怒ったら、片付けを止めてもよいですか？",
+      "a": "親が怒ったときは、その日の片付けを止めて構いません。",
+      "detail": [
+        "「今日はここまでにしよう」と切り上げ、話題を変えて気持ちを落ち着かせます。",
+        "後日、「いちばん大事な物はどれ？」のように聞き方を変えて話し直します。",
+        "きょうだいや地域包括支援センターなど、第三者に入ってもらう方法もあります。本人の意思に反して第三者が物を処分するのは避けます。",
+        "物の山で転倒や火の元が心配なときは、地域包括支援センターに相談できます。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "jikka-katazuke-oya-ga-sutenai",
+          "label": "実家の片付けで親が捨てない・怒るとき"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-08",
+      "q": "親に黙って、不要そうな物を捨ててもよいですか？",
+      "a": "いいえ、親が元気なうちの家の物は親のものなので、了解なしに捨てるのは避けます。",
+      "detail": [
+        "信頼を失うと、その後の片付けが進みにくくなります。",
+        "親が「手放す」と決めた物だけを、家族が市のルールで出します。"
+      ],
+      "situations": [
+        "s1",
+        "s2"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "jikka-katazuke-oya-ga-sutenai",
+          "label": "実家の片付けで親が捨てない・怒るとき"
+        },
+        {
+          "guide": "jikkajimai-yattewaikenai",
+          "label": "実家じまいでやってはいけないこと"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-09",
+      "q": "親の通帳や権利証の場所は、いつ聞けばよいですか？",
+      "a": "親の通帳や権利証の場所は、親が元気で話せるうちに、帰省のたびに少しずつ聞きます。",
+      "detail": [
+        "一覧には保管場所だけを書き、暗証番号は書きません。",
+        "聞く内容は、住まい・持ち物・万一のときの3つに分けると進みます。",
+        "一度で決めず、答えが変わっても構いません。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        },
+        {
+          "guide": "seizenseiri-niigata",
+          "label": "生前整理の進め方"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-10",
+      "q": "親のスマホやネット銀行の情報は、どう聞いて残しますか？",
+      "a": "親のスマホやネット銀行は、サービス名を一覧にし、パスワードの保管場所を親と決めて残します。",
+      "detail": [
+        "遺族がロックを解除できるようにしておく方法も挙げられています。",
+        "エンディングノートの活用も、国民生活センターが勧めています。",
+        "親の了解を得て、親自身が整理する形で進めます。"
+      ],
+      "situations": [
+        "s1"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "pc-sumaho-shobun-niigata",
+          "label": "パソコン・スマホ・小型家電の処分"
+        },
+        {
+          "guide": "jikkajimai-oya-ga-genki-na-uchi",
+          "label": "親が元気なうちに始める実家じまい"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国民生活センター「今から考えておきたい「デジタル終活」」（2024年11月20日）",
+          "url": "https://www.kokusen.go.jp/news/data/n-20241120_1.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-11",
+      "q": "親が施設に入った後、実家の物の処分は誰が決めますか？",
+      "a": "親が自分で決められるうちは、実家の物の処分は親本人が決めます。",
+      "detail": [
+        "親が施設に入っても、実家の物は親の持ち物です。処分したい物は、親から「手放してよい」と聞いて、メモに残します。",
+        "判断能力が下がった後の家財の処分に必要な権限は、公式資料で直接の記載を確認できませんでした。[要確認: 家財道具の処分に必要な権限]",
+        "成年後見人でも、本人の居住用の不動産（施設入所中で住んでいない家を含む）を売る・壊すには、家庭裁判所の許可が必要です。",
+        "判断力の低下が心配なときは、地域包括支援センターに相談できます。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったあとの実家"
+        },
+        {
+          "guide": "jikka-katazuke-oya-ga-sutenai",
+          "label": "実家の片付けで親が捨てない・怒るとき"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「成年被後見人（被保佐人、被補助人）の居住用不動産の処分についての許可」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_25_04/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-12",
+      "q": "施設に持っていく物と実家に置く物は、どう分けますか？",
+      "a": "施設に持っていく物は、入所前に施設へ持ち込みの決まりを確認してから分けます。",
+      "detail": [
+        "持ち込める物の範囲は施設ごとに違うため、入所前に施設から持ち込み可否の案内をもらい、それに合わせて仕分けます。[要確認: 入所予定の施設の持ち込み規則]",
+        "実家に残す物は、親が帰る可能性を聞いたうえで「残す・迷う・手放す」に分けます。",
+        "親が大事にしている物（写真、仏壇、通帳、印鑑など）は、仕分けの前に親に聞きます。"
+      ],
+      "situations": [
+        "s2"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "oya-shisetsu-nyusho-jikka",
+          "label": "親が施設に入ったあとの実家"
+        },
+        {
+          "guide": "jikka-katazuke-oya-ga-sutenai",
+          "label": "実家の片付けで親が捨てない・怒るとき"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-13",
+      "q": "遺品整理は、四十九日までに始めないといけませんか？",
+      "a": "いいえ、遺品整理を始める時期について、公的機関が定めた決まりは確認できません。",
+      "detail": [
+        "四十九日を一区切りにする家庭は多いですが、慣習で、宗派や地域で違います。",
+        "四十九日まで何も触らなくても、手続きの期限は進みます。先に期限を書き出します。",
+        "賃貸住宅の場合は、契約上の退去期限が優先されます。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-14",
+      "q": "遺品整理より先に確認すべき手続きの期限は何ですか？",
+      "a": "先に確認する期限は、相続放棄の3か月、準確定申告の4か月、相続税の10か月、相続登記の3年です。",
+      "detail": [
+        "数え始める日は手続きごとに違い、放棄の3か月は相続の開始を知った時からです。",
+        "相続登記は、不動産を相続したと知った日から3年以内に申請します。",
+        "年金を受けていた人の死亡の届出は、すみやかに行います。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「相続の放棄の申述」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html"
+        },
+        {
+          "label": "国税庁 タックスアンサー No.2022「準確定申告」",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2022.htm"
+        },
+        {
+          "label": "国税庁 タックスアンサー No.4205「相続税の申告と納税」",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4205.htm"
+        },
+        {
+          "label": "法務省「相続登記の申請義務化に関するQ＆A」",
+          "url": "https://www.moj.go.jp/MINJI/minji05_00565.html"
+        },
+        {
+          "label": "日本年金機構「年金を受けている方が亡くなったとき」",
+          "url": "https://www.nenkin.go.jp/service/jukyu/tetsuduki/kyotsu/jukyu/20140731-01.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-15",
+      "q": "遺品整理で捨ててはいけない物は何ですか？",
+      "a": "遺言書、通帳、印鑑、権利証、保険証券、契約書、鍵、スマホ、写真は、手続きや相続に使うため捨てません。",
+      "detail": [
+        "価値が分からない貴金属・着物・骨董も、処分せず取っておきます。相続税は、金銭に見積もれる経済的価値のあるすべての物にかかります。",
+        "ごみに見える書類の中に、借金や契約の手がかりが混ざります。",
+        "借用書や督促状は、捨てずに専門家へ見せます。",
+        "相続放棄を考えているなら、財産の処分は単純承認とみなされる場合があるため、捨てる前に専門家へ相談します（民法921条1号）。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサー No.4105「相続税がかかる財産」",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4105.htm"
+        },
+        {
+          "label": "裁判所「遺言書の検認」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_17/index.html"
+        },
+        {
+          "label": "e-Gov法令検索「民法」（第921条）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-16",
+      "q": "相続放棄を考えているとき、遺品を捨ててよいですか？",
+      "a": "相続放棄を考えているなら、遺品の処分は専門家に相談するまで待ちます。",
+      "detail": [
+        "民法921条1号は、相続財産の全部または一部を処分すると、単純承認したものとみなすと定めています。保存行為は例外です。",
+        "財産や借金の手がかりを調べることは、承認や放棄の前にできます（民法915条2項）。物を動かしすぎず、写真を撮って一覧にして保管します。",
+        "放棄の申述は、自己のために相続の開始があったことを知った時から3か月以内です。決められないときは、期間の伸長を申し立てられます。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら遺品整理に注意"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「相続の放棄の申述」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html"
+        },
+        {
+          "label": "e-Gov法令検索「民法」（第915条、第921条）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        },
+        {
+          "label": "裁判所「相続の承認又は放棄の期間の伸長」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_25/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-17",
+      "q": "遺品を処分する前に、相続人全員の了承は必要ですか？",
+      "a": "遺品を処分する前は、相続人全員に確認して了承を得ておくのが安全です。",
+      "detail": [
+        "相続人が数人いるとき、相続財産は相続人全員の共有です（民法898条1項）。ひとりの判断で処分すると、他の相続人の権利に関わります。",
+        "全員に物の写真つき一覧を送り、「処分してよい物」の返事をメッセージなど文字で残します。",
+        "遺産の分け方がまとまらないときは、家庭裁判所の遺産分割調停があります。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "jikkajimai-yattewaikenai",
+          "label": "実家じまいでやってはいけないこと"
+        },
+        {
+          "guide": "ihinseiri-jibunde-niigata",
+          "label": "遺品整理を自分でやる手順"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「遺産分割調停」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_07_12/index.html"
+        },
+        {
+          "label": "e-Gov法令検索「民法」（第898条）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-18",
+      "q": "遺言書を見つけたら、開封してもよいですか？",
+      "a": "遺言書を見つけたら、封があれば開封せず、家庭裁判所に検認を請求します。公正証書遺言は検認が不要です。",
+      "detail": [
+        "封印のある遺言書は、家庭裁判所で相続人等の立会いのもとで開封します。家庭裁判所の外で開封すると、5万円以下の過料の規定があります（民法1005条）。",
+        "公正証書遺言と、法務局保管の自筆証書遺言は、検認が不要です。",
+        "検認の申立ては、遺言書1通につき収入印紙800円分と連絡用の郵便切手が要ります。種類が分からないときは、開封せずに裁判所や法務局へ聞きます。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        },
+        {
+          "guide": "jikkajimai-yattewaikenai",
+          "label": "実家じまいでやってはいけないこと"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「遺言書の検認」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_17/index.html"
+        },
+        {
+          "label": "e-Gov法令検索「民法」（第1005条）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-19",
+      "q": "通帳や印鑑、権利証は、家のどこを探せばよいですか？",
+      "a": "通帳・印鑑・権利証は、タンスの引き出し、仏壇まわり、本の間などを順に探します。",
+      "detail": [
+        "冷蔵庫の上や衣類の間に入っていることもあります。",
+        "見つけた物は使わず、一つの「貴重品箱」にまとめて、保管できる場所へ移します。",
+        "ごみ袋や段ボールに入れる前に、必ず確認します。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-20",
+      "q": "権利証が見つからないとき、再発行できますか？",
+      "a": "権利証は再発行できませんが、紛失しても不動産の所有権を失うことはありません。",
+      "detail": [
+        "紛失した権利証を再発行することはできません、と法務省は案内しています。",
+        "紛失しただけで、直ちに不正な登記がされるわけではなく、不動産の売却等の処分ができなくなるわけでもありません。",
+        "予防策として不正登記防止申出制度があり、最寄りの登記所に相談できます。申出から3か月以内の登記申請を知らせてもらえます。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記の義務化と新潟の法務局"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省「権利証（登記済証・登記識別情報通知書）を紛失した場合について」（令和8年7月29日、令和8年熊本地震に伴う案内）",
+          "url": "https://www.moj.go.jp/content/001467740.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-21",
+      "q": "預金口座がどこにあるか分からないとき、どう調べますか？",
+      "a": "預金口座が分からないときは、相続人が相続時預貯金口座照会で、マイナンバー付番済みの口座を一括で調べられます。",
+      "detail": [
+        "調べられるのは、亡くなった人が生前に預貯金口座へマイナンバーを付番していた口座です。付番していない口座や、対象外の金融機関の口座は分かりません。",
+        "相続人のいずれか1名が、任意の金融機関で申し込み、結果は預金保険機構から郵送で届きます。手数料がかかり、亡くなってから10年後まで申し込めます。",
+        "先に通帳・キャッシュカード・郵便物から取引先を探し、分かった金融機関には直接問い合わせます。見つけた通帳やカードは使わず、記録だけ取って保管します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        }
+      ],
+      "sources": [
+        {
+          "label": "デジタル庁「よくある質問：預貯金口座付番制度について」（相続時の口座照会）",
+          "url": "https://www.digital.go.jp/policies/mynumber_faq_09"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-22",
+      "q": "通帳が見つかったら、お金を引き出してもよいですか？",
+      "a": "通帳が見つかっても、預金の引き出しは避け、記録だけ取って保管します。",
+      "detail": [
+        "引き出しは、相続財産の処分にあたる可能性があります。",
+        "遺産分割前の払戻し制度は、相続開始時の預貯金額の3分の1に法定相続分を掛けた額で、1つの金融機関につき150万円が限度です。",
+        "払戻しの前に、相続放棄への影響を専門家に確認します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        },
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら遺品整理に注意"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省「民法及び家事事件手続法の一部を改正する法律について（相続法の改正）」",
+          "url": "https://www.moj.go.jp/MINJI/minji07_00222.html"
+        },
+        {
+          "label": "e-Gov法令検索「民法」（第915条、第921条）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-23",
+      "q": "生命保険に入っていたか分からないとき、どう調べますか？",
+      "a": "生命保険に入っていたか分からないときは、生命保険協会の契約照会制度で契約の有無を調べられます。",
+      "detail": [
+        "分かるのは契約の有無で、契約内容の確認や請求は各保険会社に行います。",
+        "利用料は、調査対象者1名につきWEB申請6,000円、書面申請7,000円です。",
+        "先に、保険証券や保険会社からの郵便を探します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        }
+      ],
+      "sources": [
+        {
+          "label": "生命保険協会「生命保険契約照会制度」",
+          "url": "https://www.seiho.or.jp/contact/inquiry/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-24",
+      "q": "家から現金やタンス預金が出てきたら、どうしますか？",
+      "a": "現金が出てきたら、使わずに金額を記録して保管し、相続人で共有します。",
+      "detail": [
+        "金額を数えて写真を撮り、封筒に入れて保管します。",
+        "現金は、相続税がかかる財産の例に挙げられています。",
+        "相続放棄を考えているなら、使うことは処分や消費にあたるおそれがあるため、使う前に専門家へ相談します（民法921条）。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        },
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら遺品整理に注意"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサー No.4105「相続税がかかる財産」",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4105.htm"
+        },
+        {
+          "label": "e-Gov法令検索「民法」（第921条）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-25",
+      "q": "形見分けで、きょうだいが取り合いになったらどうしますか？",
+      "a": "形見分けで意見が割れたときは、先に処分せず相続人で話し合い、まとまらなければ調停を使います。",
+      "detail": [
+        "取り合いになった物は処分せず保留箱に入れ、全員の希望を一覧にして見ます。",
+        "物の写真を共有し、欲しい物の希望を一覧にすると話し合いやすくなります。",
+        "遺産分割調停は、相続人間で話合いがつかないときの家庭裁判所の手続きです。申立てには、被相続人1人につき収入印紙1,200円と連絡用の郵便切手が要ります。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        },
+        {
+          "guide": "jikkajimai-yattewaikenai",
+          "label": "実家じまいでやってはいけないこと"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「遺産分割調停」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_07_12/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-26",
+      "q": "価値のある物を、形見分けとして先に渡してよいですか？",
+      "a": "相続放棄を考えているなら、価値のある物の形見分けは、専門家に相談するまで待ちます。",
+      "detail": [
+        "売る・譲る・あげる行為は、処分にあたるかが問題になりえます（民法921条1号）。",
+        "相続税は、現金や宝石など、金銭に見積もれる経済的価値のあるすべての物にかかります。価値が分からない物ほど、先に取っておきます。",
+        "放棄を考えていなくても、相続人全員に確認してから渡します。"
+      ],
+      "situations": [
+        "s3"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら遺品整理に注意"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサー No.4105「相続税がかかる財産」",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4105.htm"
+        },
+        {
+          "label": "裁判所「相続の放棄の申述」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html"
+        },
+        {
+          "label": "e-Gov法令検索「民法」（第921条）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-27",
+      "q": "亡くなった親のスマホは、解約や初期化してもよいですか？",
+      "a": "亡くなった親のスマホは、契約の内容を確認するまで、解約も初期化もしません。",
+      "detail": [
+        "ネット銀行やサブスクの契約が残っていることがあります。手がかりは、郵便物や通帳の引き落とし記録から探します。",
+        "サブスクは、解約しない限り請求が続きます。",
+        "本人以外がロックを解除するのは困難で、困ったら消費者ホットライン188に相談できます。",
+        "相続放棄を考えているなら、契約の解除や名義の変更は、先に専門家へ相談します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "pc-sumaho-shobun-niigata",
+          "label": "パソコン・スマホ・小型家電の処分"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国民生活センター「今から考えておきたい「デジタル終活」」（2024年11月20日）",
+          "url": "https://www.kokusen.go.jp/news/data/n-20241120_1.html"
+        },
+        {
+          "label": "消費者庁「消費者ホットライン」",
+          "url": "https://www.caa.go.jp/policies/policy/local_cooperation/local_consumer_administration/hotline/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-28",
+      "q": "古いパソコンは、新潟市や長岡市の粗大ごみで出せますか？",
+      "a": "いいえ、新潟市も長岡市も、家庭用パソコンは市の粗大ごみとして収集しません。",
+      "detail": [
+        "メーカー回収、市の小型家電回収、収集運搬の依頼から選びます。",
+        "出す前に、パソコンのデータを自分で消します。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "pc-sumaho-shobun-niigata",
+          "label": "パソコン・スマホ・小型家電の処分"
+        },
+        {
+          "guide": "ihinseiri-jibunde-niigata",
+          "label": "遺品整理を自分でやる手順"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「市で収集処理しないごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/none.html"
+        },
+        {
+          "label": "長岡市「市では収集処理できないもの」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/dekinai-gomi.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-29",
+      "q": "出張買取の業者は、断ってもよいですか？",
+      "a": "訪問購入（出張買取）は断れます。勧誘を要請していない人への訪問勧誘は禁止されています。",
+      "detail": [
+        "査定を頼んだ場合でも、査定を超えて売却を勧める勧誘は、特定商取引法に触れます。一度断ると、再度の勧誘も禁止されています。",
+        "売るつもりのない物の売却を迫られたら、きっぱり断ります。",
+        "相続放棄を考えているなら、価値のある物を売ることは処分にあたりうるため、売る前に専門家へ相談します。",
+        "困ったときは、消費者ホットライン188に相談できます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihin-kaitori-niigata",
+          "label": "遺品の買取と出張買取の注意"
+        },
+        {
+          "guide": "jikka-katazuke-oya-ga-sutenai",
+          "label": "実家の片付けで親が捨てない・怒るとき"
+        }
+      ],
+      "sources": [
+        {
+          "label": "消費者庁 特定商取引法ガイド「訪問購入」",
+          "url": "https://www.no-trouble.caa.go.jp/what/doortodoorpurchases/"
+        },
+        {
+          "label": "消費者庁「消費者ホットライン」",
+          "url": "https://www.caa.go.jp/policies/policy/local_cooperation/local_consumer_administration/hotline/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-30",
+      "q": "出張買取で契約した後、クーリング・オフできますか？",
+      "a": "訪問購入は、法律で決められた書面を受け取った日から8日以内なら、クーリング・オフできます。",
+      "detail": [
+        "期間中は、売った物の引渡しを断ることもできます。",
+        "期間は書面を受け取った日から数えるため、受け取った日をメモし、書面は捨てずに保管します。",
+        "規制の対象外になる物品があるため、迷うときは188で確認します。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihin-kaitori-niigata",
+          "label": "遺品の買取と出張買取の注意"
+        }
+      ],
+      "sources": [
+        {
+          "label": "消費者庁 特定商取引法ガイド「訪問購入」",
+          "url": "https://www.no-trouble.caa.go.jp/what/doortodoorpurchases/"
+        },
+        {
+          "label": "消費者庁「消費者ホットライン」",
+          "url": "https://www.caa.go.jp/policies/policy/local_cooperation/local_consumer_administration/hotline/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-31",
+      "q": "着物や骨董を売る前に、何を用意しますか？",
+      "a": "着物は証紙やたとう紙、骨董は箱・箱書き・鑑定書を、売る前に探して揃えます。",
+      "detail": [
+        "買取の可否と金額は、店ごとの査定で決まります。",
+        "価値が分からない物は、まとめて処分しません。",
+        "相続放棄を考えているなら、売ることは処分にあたりうるため、売る前に専門家へ相談します。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihin-kaitori-niigata",
+          "label": "遺品の買取と出張買取の注意"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-32",
+      "q": "遺品を売った代金に、税金はかかりますか？",
+      "a": "家具や衣服など、生活に通常必要な動産を売った所得には、税金がかかりません。",
+      "detail": [
+        "貴金属・宝石・書画・骨とうは、1個または1組の価額が30万円を超えると課税されます。売却代金の合計ではなく、1個または1組ごとに判定します。",
+        "個別の判断は、税務署や税理士に相談します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihin-kaitori-niigata",
+          "label": "遺品の買取と出張買取の注意"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサー No.3105「生活用動産の譲渡による所得」",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3105.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-33",
+      "q": "実家の大量の写真は、どうやって減らせばよいですか？",
+      "a": "写真はスマートフォンで撮影するかスキャンして残し、アルバムは気に入った数ページだけ持ち帰ります。",
+      "detail": [
+        "保存先は、パソコン・外付け媒体・クラウドなど2か所以上にします。",
+        "日付・人名・場所をメモし、家族と共有します。",
+        "元の写真をどうするかは、デジタル化の後に家族で決めます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "jikkajimai-sabishii-kokoro",
+          "label": "実家じまいが寂しい・つらいときの進め方"
+        },
+        {
+          "guide": "shokki-hon-shashin-shobun",
+          "label": "実家の食器・本・写真・人形の処分"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-34",
+      "q": "写真とアルバムは、新潟市と長岡市で何ごみですか？",
+      "a": "写真は新潟市も長岡市も燃やすごみで、アルバムは新潟市が燃やすごみ、長岡市が燃やさないごみです。",
+      "detail": [
+        "ネガ・フィルムは、新潟市が燃やすごみ、長岡市が燃やさないごみです。",
+        "区分は市で違うため、出す前に各市の分別表で確認します。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "shokki-hon-shashin-shobun",
+          "label": "実家の食器・本・写真・人形の処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「分別早見表（50音順）あ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/a.html"
+        },
+        {
+          "label": "新潟市「分別早見表（50音順）し」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/si.html"
+        },
+        {
+          "label": "長岡市「ごみ分別表（五十音順）（PDF）」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/r0604-19.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-35",
+      "q": "手紙や日記は、読んでから捨てるか決めてもよいですか？",
+      "a": "手紙や日記は、読む時間を取ってから残すか決めて構いません。急ぐ必要はありません。",
+      "detail": [
+        "保留の箱に入れ、見直す期限を決めます。",
+        "他人の目に触れさせたくない物は、自分で処分します。",
+        "住所・氏名・番号が載る紙は、破るか切り分けて読み取れない状態にして出します。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "jikkajimai-sabishii-kokoro",
+          "label": "実家じまいが寂しい・つらいときの進め方"
+        },
+        {
+          "guide": "shokki-hon-shashin-shobun",
+          "label": "実家の食器・本・写真・人形の処分"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-36",
+      "q": "写真のお焚き上げは、新潟でできますか？",
+      "a": "新潟県内で写真やアルバムのお焚き上げを受ける寺社は、確認できていません。",
+      "detail": [
+        "確認できた新潟縣護國神社の人形感謝清祓は人形が対象で、写真の記載はありません。",
+        "受付の有無は、各寺社の公式サイトで確認します。[要確認: 写真・アルバムを受け付ける新潟県内の寺社]",
+        "お焚き上げをしなくても、写真は新潟市・長岡市とも燃やすごみで出せます。顔や名前が写る物は、袋の外から見えないようにします。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "shokki-hon-shashin-shobun",
+          "label": "実家の食器・本・写真・人形の処分"
+        },
+        {
+          "guide": "jikkajimai-sabishii-kokoro",
+          "label": "実家じまいが寂しい・つらいときの進め方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟縣護國神社「人形感謝清祓」",
+          "url": "https://www.niigata-gokoku.or.jp/sp/player/doll.php"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-37",
+      "q": "新潟市で、仏壇は粗大ごみで出せますか？",
+      "a": "新潟市の仏壇は、指定袋に入れば燃やすごみ、入らなければ粗大ごみです。",
+      "detail": [
+        "粗大ごみ品目別料金一覧に「仏壇」の品名はありません。どの品目にも当たらない物の「その他」区分（幅・奥行・高さの合計が1.5m未満100円、2m未満200円、3m未満300円、3m以上500円）に当たる可能性があります。[要確認: 仏壇が「その他」区分か]",
+        "「その他」区分はインターネットで申し込めず、粗大ごみ受付センター（025-290-5353）に電話で申し込みます。",
+        "収集日は、申込後3日〜1週間以降が通常です。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "butsudan-kamidana-shobun-niigata",
+          "label": "仏壇・神棚・位牌の処分"
+        },
+        {
+          "guide": "niigata-shi-sodaigomi",
+          "label": "新潟市の粗大ごみの出し方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「分別早見表（50音順）ふ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/hu.html"
+        },
+        {
+          "label": "新潟市「粗大ごみ品目別料金一覧」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/ryoukinichiran.html"
+        },
+        {
+          "label": "新潟市「粗大ごみ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-38",
+      "q": "長岡市で、仏壇の粗大ごみ料金はいくらですか？",
+      "a": "長岡市の仏壇は、長辺90cm以下で1人で持てない物が600円、長辺90cm超で2人で持てる物が1,000円です。",
+      "detail": [
+        "2人で持ち運べない仏壇は、収集できません。",
+        "申込のとき、縦・横・高さを伝えます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "butsudan-kamidana-shobun-niigata",
+          "label": "仏壇・神棚・位牌の処分"
+        },
+        {
+          "guide": "nagaoka-shi-sodaigomi",
+          "label": "長岡市の粗大ごみの出し方"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「粗大ごみ品目一覧（PDF）」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/sodai-gomi01.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-39",
+      "q": "親が亡くなったら、仏壇はすぐ処分しますか？",
+      "a": "いいえ、親が亡くなっても、仏壇をすぐ処分する必要はありません。",
+      "detail": [
+        "仏壇の中の位牌・写真・書類を取り出して箱にまとめ、引き取りたい親族がいるかを聞くまで、仏壇は動かしません。",
+        "菩提寺があれば、先に相談するのが一般的です。",
+        "急ぐ事情があるときは、仏壇だけ残して他の片付けを進められます。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "butsudan-kamidana-shobun-niigata",
+          "label": "仏壇・神棚・位牌の処分"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-40",
+      "q": "仏壇を処分する前に、位牌はどうしますか？",
+      "a": "仏壇を処分する前に、位牌・写真・書類は取り出して、行き先を決めておきます。",
+      "detail": [
+        "位牌は、新潟市・長岡市の分別表に記載が見つかりませんでした。[要確認: 位牌の分別区分]",
+        "位牌は、ごみに出す前に寺へ相談するのが先です。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "butsudan-kamidana-shobun-niigata",
+          "label": "仏壇・神棚・位牌の処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「分別早見表（50音順）」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/index.html"
+        },
+        {
+          "label": "長岡市「ごみ分別表（五十音順）（PDF）」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/r0604-19.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-41",
+      "q": "仏壇の閉眼供養は、市がしてくれますか？",
+      "a": "いいえ、長岡市は粗大ごみの仏壇について「供養はしない」と品目一覧に明記しています。",
+      "detail": [
+        "供養を望むなら、菩提寺や仏具店、地域の寺に相談します。",
+        "閉眼供養の呼び方や進め方は、宗派や寺で違います。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "butsudan-kamidana-shobun-niigata",
+          "label": "仏壇・神棚・位牌の処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「粗大ごみ品目一覧（PDF）」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/sodai-gomi01.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-42",
+      "q": "神棚のお札や神具は、どうすればよいですか？",
+      "a": "神棚のお札や神具は、授かった神社に相談するのが一般的です。",
+      "detail": [
+        "長岡市の神棚は200円の粗大ごみで、指定袋に入れば燃やすごみです。",
+        "新潟市の神棚の区分は、分別表に記載が見つかりませんでした。[要確認: 新潟市の神棚の区分]"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "butsudan-kamidana-shobun-niigata",
+          "label": "仏壇・神棚・位牌の処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "長岡市「粗大ごみ品目一覧（PDF）」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/sodai-gomi01.pdf"
+        },
+        {
+          "label": "新潟市「分別早見表（50音順）」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/index.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-43",
+      "q": "人形やぬいぐるみは、燃やすごみに出せますか？",
+      "a": "人形とぬいぐるみは、新潟市も長岡市も燃やすごみで出せます。",
+      "detail": [
+        "新潟市の金属製の人形は、燃やさないごみです。人形ケースは、新潟市・長岡市とも燃やさないごみです。",
+        "長岡市は、人形やぬいぐるみが指定袋に入らなければ粗大ごみ200円です。人形ケースが入らない場合は、新潟市・長岡市とも粗大ごみです。",
+        "供養を望む場合は、市のごみ収集とは別に寺社へ相談します。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "shokki-hon-shashin-shobun",
+          "label": "実家の食器・本・写真・人形の処分"
+        },
+        {
+          "guide": "butsudan-kamidana-shobun-niigata",
+          "label": "仏壇・神棚・位牌の処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「分別早見表（50音順）に」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/ni.html"
+        },
+        {
+          "label": "新潟市「分別早見表（50音順）ぬ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/nu.html"
+        },
+        {
+          "label": "長岡市「ごみ分別表（五十音順）（PDF）」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/r0604-19.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-44",
+      "q": "人形供養は、新潟のどこで受け付けていますか？",
+      "a": "公式サイトで確認できた例は、新潟縣護國神社の人形感謝清祓で、45リットルの袋に入るだけを1件とします。",
+      "detail": [
+        "ガラスケースは受け付けません。電話は025-229-4345（9時〜17時）です。",
+        "受付日と料金は確認できませんでした。[要確認: 受付日・料金]"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "shokki-hon-shashin-shobun",
+          "label": "実家の食器・本・写真・人形の処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟縣護國神社「人形感謝清祓」",
+          "url": "https://www.niigata-gokoku.or.jp/sp/player/doll.php"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-45",
+      "q": "墓じまいも考えているとき、仏壇の処分は先ですか？",
+      "a": "仏壇と墓のどちらが先と決まってはおらず、墓の方針が決まると仏壇と位牌の行き先も決めやすくなります。",
+      "detail": [
+        "親族に話す前に、仏壇の処分を進めないようにします。",
+        "墓の方針が決まるまで、位牌・写真・遺影は処分せず、保管しておきます。",
+        "墓じまいの手続きは、姉妹サイトのハカラウで案内しています。"
+      ],
+      "situations": [
+        "s1",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "butsudan-kamidana-shobun-niigata",
+          "label": "仏壇・神棚・位牌の処分"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-46",
+      "q": "思い出の品が多すぎて、捨てられないときはどうしますか？",
+      "a": "思い出の品が捨てられないときは、残す量の枠を先に決め、迷う物は保留箱に入れて見直す日を決めます。",
+      "detail": [
+        "枠の例は箱2個までです。物は「残す」「譲る」「手放す」「保留」の4つに分けます。",
+        "写真に撮れば気持ちが済む物は、撮ってから手放します。衣類は、数点だけ、袖や生地の一部を残す方法もあります。",
+        "期限が来たら保留箱を1回だけ見直し、家族の誰かが引き継ぎたい物がないかを聞きます。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "jikkajimai-sabishii-kokoro",
+          "label": "実家じまいが寂しい・つらいときの進め方"
+        },
+        {
+          "guide": "shokki-hon-shashin-shobun",
+          "label": "実家の食器・本・写真・人形の処分"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-47",
+      "q": "相続放棄を考えているとき、遺品整理を業者に頼んでもよいですか？",
+      "a": "相続放棄を考えているなら、遺品整理を業者に頼む前に、専門家に相談します。",
+      "detail": [
+        "家財の処分を業者に頼むことは、処分に近い行為です。民法921条1号は、相続財産の処分で単純承認とみなすと定めています。",
+        "依頼の前に、弁護士や司法書士に、頼んでよい範囲を確認します。",
+        "放棄の申述は、自己のために相続の開始があったことを知った時から3か月以内です。決められないときは、期間の伸長を申し立てられます。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら遺品整理に注意"
+        },
+        {
+          "guide": "ihinseiri-niigata-shi-gyosha-erabikata",
+          "label": "新潟市で遺品整理を頼むとき"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「相続の放棄の申述」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html"
+        },
+        {
+          "label": "e-Gov法令検索「民法」（第915条、第921条）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-48",
+      "q": "財産や借金が分からず、3か月以内に相続放棄を決められないときはどうしますか？",
+      "a": "3か月以内に決められないときは、家庭裁判所に、相続の承認または放棄の期間の伸長を申し立てます。",
+      "detail": [
+        "申立ては、自己のために相続の開始があったことを知った時から3か月以内に、亡くなった人の最後の住所地を管轄する家庭裁判所にします。",
+        "費用は、収入印紙800円（相続人1人につき）と連絡用の郵便切手です。",
+        "調べるときは、通帳・督促状・契約書を捨てずに集め、写真で記録します。調査は民法915条2項で認められています。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら遺品整理に注意"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        }
+      ],
+      "sources": [
+        {
+          "label": "裁判所「相続の承認又は放棄の期間の伸長」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_25/index.html"
+        },
+        {
+          "label": "裁判所「相続の放棄の申述」",
+          "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html"
+        },
+        {
+          "label": "e-Gov法令検索「民法」（第915条）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-49",
+      "q": "亡くなった親名義の不動産がほかにもあるか分からないとき、どう調べますか？",
+      "a": "亡くなった親名義の不動産は、相続人が法務局に所有不動産記録証明書を請求して、一覧で調べられます。",
+      "detail": [
+        "2026年2月2日に始まった制度で、全国のどの法務局でも、書面またはオンラインで請求できます。",
+        "手数料は、書面請求（収入印紙）で、検索条件1件・1通あたり1,600円です。該当がなくても返金されません。",
+        "検索は、請求書に書いた氏名・住所と登記簿上の記載が一致する不動産だけが対象です。転居や改姓があれば、過去の氏名・住所も条件に加えます。",
+        "先に、固定資産税の納税通知書で、分かっている土地・建物を確認します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "souzoku-touki-niigata-houmukyoku",
+          "label": "相続登記の義務化と新潟の法務局"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        }
+      ],
+      "sources": [
+        {
+          "label": "法務省「所有不動産記録証明制度について」",
+          "url": "https://www.moj.go.jp/MINJI/minji05_00740.html"
+        },
+        {
+          "label": "新潟地方法務局「令和８年２月２日スタート！「所有不動産記録証明制度」について」",
+          "url": "https://houmukyoku.moj.go.jp/niigata/page000001_00503.html"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-50",
+      "q": "亡くなった親が株式を持っていたか分からないとき、どう調べますか？",
+      "a": "株式等の口座の開設先は、相続人が証券保管振替機構（ほふり）に郵送で開示請求して調べられます。",
+      "detail": [
+        "分かるのは、口座を開設している証券会社や信託銀行などの名前です。保有状況は、開示結果をもとに各証券会社へ確認します。",
+        "請求は郵送のみで有料です。書類に不備がなければ、受付から約2か月かかります。該当がなくても費用がかかります。",
+        "先に、証券会社からの郵便物や取引の書類を探します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        },
+        {
+          "guide": "jikkajimai-tejun-niigata",
+          "label": "新潟の実家じまいの手順"
+        }
+      ],
+      "sources": [
+        {
+          "label": "証券保管振替機構「ご本人又は亡くなった方の株式等に係る口座の開設先を確認したい場合」",
+          "url": "https://www.jasdec.com/procedure/shareholders/disclosure/direct/"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-51",
+      "q": "仏壇や仏具には、相続税がかかりますか？",
+      "a": "日常礼拝をしている仏壇や仏具は、相続税がかからない財産です。",
+      "detail": [
+        "国税庁は、墓地や墓石、仏壇、仏具、神を祭る道具など日常礼拝をしている物を、相続税がかからない財産に挙げています。",
+        "ただし、骨とう的価値があるなど投資の対象となる物や、商品として所有している物には、相続税がかかります。",
+        "個別の判断は、税務署や税理士に相談します。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "butsudan-kamidana-shobun-niigata",
+          "label": "仏壇・神棚・位牌の処分"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        }
+      ],
+      "sources": [
+        {
+          "label": "国税庁 タックスアンサー No.4108「相続税がかからない財産」",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4108.htm"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-52",
+      "q": "仏壇やお墓は、きょうだいで分ける遺産に入りますか？",
+      "a": "仏壇やお墓などの祭祀財産は、民法897条により、慣習に従って祭祀を主宰する人が承継します。",
+      "detail": [
+        "民法897条は、系譜・祭具・墳墓の所有権を、慣習に従って祖先の祭祀を主宰すべき者が承継すると定めています。",
+        "被相続人の指定があれば、その人が承継します。慣習が明らかでないときは、家庭裁判所が定めます。",
+        "個々の物が祭祀財産にあたるかは個別の判断になるため、親が元気なうちに、誰に引き継ぎたいかを聞いておきます。"
+      ],
+      "situations": [
+        "s1",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "butsudan-kamidana-shobun-niigata",
+          "label": "仏壇・神棚・位牌の処分"
+        },
+        {
+          "guide": "jikkajimai-yattewaikenai",
+          "label": "実家じまいでやってはいけないこと"
+        }
+      ],
+      "sources": [
+        {
+          "label": "e-Gov法令検索「民法」（第897条）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-53",
+      "q": "お焚き上げをしないと、人形や仏壇は市のごみに出せませんか？",
+      "a": "新潟市・長岡市とも、人形は燃やすごみ、仏壇は粗大ごみとして出せます。供養は市の収集とは別です。",
+      "detail": [
+        "長岡市は、粗大ごみの仏壇について「供養はしない」と品目一覧に明記しています。",
+        "供養を望む場合は、市のごみ収集とは別に、菩提寺や仏具店、寺社に相談します。",
+        "仏壇の中の位牌・写真・書類は、出す前に取り出して行き先を決めます。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "shokki-hon-shashin-shobun",
+          "label": "実家の食器・本・写真・人形の処分"
+        },
+        {
+          "guide": "butsudan-kamidana-shobun-niigata",
+          "label": "仏壇・神棚・位牌の処分"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「分別早見表（50音順）に」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/ni.html"
+        },
+        {
+          "label": "新潟市「分別早見表（50音順）ふ」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/chart/hu.html"
+        },
+        {
+          "label": "長岡市「ごみ分別表（五十音順）（PDF）」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/r0604-19.pdf"
+        },
+        {
+          "label": "長岡市「粗大ごみ品目一覧（PDF）」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate08/file/sodai-gomi01.pdf"
+        }
+      ],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-54",
+      "q": "年賀状や住所録は、捨てる前にどうしますか？",
+      "a": "年賀状や住所録は、訃報や挨拶状を送る相手の手がかりになるため、捨てる前に連絡先を控えます。",
+      "detail": [
+        "控える連絡先は、親族・親しい友人・菩提寺・お世話になった人に絞ります。",
+        "控え終えた年賀状や住所録は、住所・氏名の部分を破るか切り分けて、読み取れない状態にして出します。"
+      ],
+      "situations": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "shokki-hon-shashin-shobun",
+          "label": "実家の食器・本・写真・人形の処分"
+        },
+        {
+          "guide": "ihinseiri-itsukara-sutetewa-ikenai",
+          "label": "遺品整理はいつから始めるか、捨ててはいけない物"
+        }
+      ],
+      "sources": [],
+      "checked": "2026-10-09"
+    },
+    {
+      "id": "shiwake-55",
+      "q": "相続放棄を考えているとき、実家の戸締まりや水道の管理はしてもよいですか？",
+      "a": "戸締まりなどの保存行為は処分の例外ですが、どこまでが保存行為かは、専門家に確認します。",
+      "detail": [
+        "民法921条1号は、保存行為を処分の例外としています。何が保存行為にあたるかは個別に判断されます。",
+        "放棄の時に実家を現に占有している人は、次の人に引き渡すまで、自己の財産と同一の注意で保存する義務があります（民法940条）。",
+        "鍵の管理、郵便物の確認、戸締まりの写真記録など、物を動かさない作業から始めます。"
+      ],
+      "situations": [
+        "s3",
+        "s4"
+      ],
+      "stage": 3,
+      "links": [
+        {
+          "guide": "ihinseiri-souzokuhouki",
+          "label": "相続放棄をするなら遺品整理に注意"
+        },
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "e-Gov法令検索「民法」（第921条、第940条）",
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+        }
+      ],
+      "checked": "2026-10-09"
+    }
+  ]
+}
