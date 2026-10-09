@@ -329,3 +329,4 @@ updated: 2026-10-04
 - [家電4品目の処分（新潟市・長岡市）](../kaden4hinmoku-niigata/)
 - [自転車・タイヤ・消火器・バッテリーの処分](../jitensha-tire-shoukaki-niigata/)
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
+- [相続した農地は10か月、山林は90日以内に届出](../nouka-jikka-nouchi-sanrin-niigata/)

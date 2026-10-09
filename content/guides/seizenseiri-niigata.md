@@ -181,6 +181,7 @@ updated: 2026-10-03
 - [新潟市の粗大ごみの出し方｜料金一覧・申込・持ち込み先](../niigata-shi-sodaigomi/)
 - [長岡市の粗大ごみの出し方｜料金・申込・持ち込み・分別](../nagaoka-shi-sodaigomi/)
 - [新潟の実家の片付けは自分で？業者？｜5つの判断基準と不用品回収の許可確認](../jibun-de-dasu-ka-gyousha-ka/)
+- [親が認知症になると実家は売れない？](../ninchisho-mae-jikka-kimeru/)
 
 ## 出典
 

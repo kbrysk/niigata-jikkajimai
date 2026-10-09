@@ -254,3 +254,4 @@ updated: 2026-10-03
 - [遺品整理はいつから？捨ててはいけない物](../ihinseiri-itsukara-sutetewa-ikenai/)
 - [遺品の買取（新潟）](../ihin-kaitori-niigata/)
 - [新潟の実家じまいの手順](../jikkajimai-tejun-niigata/)
+- [相続した農地は10か月、山林は90日以内に届出](../nouka-jikka-nouchi-sanrin-niigata/)

@@ -303,6 +303,7 @@ updated: 2026-10-02
 - [新発田市・村上市・佐渡市の空き家バンク](../shibata-murakami-sado-akiya-bank/)
 - [実家じまいの近所への挨拶](../jikkajimai-aisatsu-kinjo/)
 - [加茂市・五泉市・阿賀野市・胎内市の空き家バンク](../kamo-gosen-agano-tainai-akiya-bank/)
+- [相続した農地は10か月、山林は90日以内に届出](../nouka-jikka-nouchi-sanrin-niigata/)
 
 ## 出典
 

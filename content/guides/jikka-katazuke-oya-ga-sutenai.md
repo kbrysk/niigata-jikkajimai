@@ -233,3 +233,4 @@ updated: 2026-10-03
 - [実家じまいが寂しい・つらいとき](../jikkajimai-sabishii-kokoro/)
 - [実家の食器・本・写真・人形の処分](../shokki-hon-shashin-shobun/)
 - [生前整理の進め方（新潟版）](../seizenseiri-niigata/)
+- [親が認知症になると実家は売れない？](../ninchisho-mae-jikka-kimeru/)
