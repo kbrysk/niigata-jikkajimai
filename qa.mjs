@@ -83,3 +83,15 @@ ${c.items.map((it) => `<section class="qa-item" id="q-${esc(it.id)}"><h2>${esc(s
   }
   return pages;
 }
+
+// ガイド記事の下に「関連する疑問」を出すための逆引き。Q&A の links に記事の slug がある問いを集める。
+export function qaForGuide(cats, slug, limit = 6) {
+  const out = [];
+  for (const c of cats) for (const it of c.items) if ((it.links || []).some((l) => l.guide === slug)) out.push({ cat: c, it });
+  return out.slice(0, limit);
+}
+export function renderRelatedQa(list, h) {
+  if (!list.length) return "";
+  const { esc, url } = h;
+  return `<section class="next-read rel-qa"><h2>この記事に関係する疑問</h2><ul class="guide-list compact">${list.map(({ cat, it }) => `<li><a href="${url(`/qa/${cat.id}/`)}#q-${esc(it.id)}"><strong>${esc(strip(it.q))}</strong><span>${esc(strip(it.a))}</span></a></li>`).join("")}</ul><p class="small"><a href="${url("/qa/")}">疑問Q&amp;Aの一覧を見る</a></p></section>`;
+}
