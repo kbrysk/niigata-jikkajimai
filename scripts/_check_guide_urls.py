@@ -18,7 +18,7 @@ for d in ("guides", "pages"):
         slug = os.path.splitext(os.path.basename(p))[0]
         for u in URL_RE.findall(io.open(p, encoding="utf-8").read()):
             u = u.rstrip(".,;:)")
-            if "kbrysk.github.io" in u:
+            if "kbrysk.github.io" in u or "niigata-jikkajimai.com" in u:
                 continue
             urls.setdefault(u, set()).add(slug)
 

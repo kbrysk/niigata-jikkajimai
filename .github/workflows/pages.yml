@@ -22,7 +22,7 @@ jobs:
       - run: npm ci
       - run: node build.mjs
         env:
-          BASE_PATH: /niigata-jikkajimai
+          BASE_PATH: ""
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
