@@ -10,7 +10,8 @@ targetKeywords:
   - 雪下ろし 補助 上越市
   - 命綱アンカー 補助 上越市
   - 雪下ろし 助成 柏崎市
-updated: 2026-10-12
+updated: 2026-10-12
+cities: [joetsu, myoko, itoigawa, kashiwazaki]
 affiliate: akiya_fuyu
 ---
 

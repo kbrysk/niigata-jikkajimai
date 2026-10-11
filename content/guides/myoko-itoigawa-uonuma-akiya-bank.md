@@ -9,6 +9,7 @@ targetKeywords:
   - 南魚沼市 空き家バンク
   - 湯沢 空き家
 updated: 2026-10-04
+cities: [itoigawa, myoko, uonuma]
 affiliate: kaitori
 ---
 

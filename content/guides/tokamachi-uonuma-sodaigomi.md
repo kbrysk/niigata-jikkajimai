@@ -9,6 +9,7 @@ targetKeywords:
   - 魚沼市 大型ごみ 予約
   - 十日町市 エコクリーンセンター 持ち込み
 updated: 2026-10-03
+cities: [tokamachi, uonuma]
 affiliate: katazuke
 ---
 

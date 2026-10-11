@@ -9,6 +9,7 @@ targetKeywords:
   - 糸魚川市 清掃センター 持ち込み
   - 糸魚川市 ごみ 自己搬入 料金
 updated: 2026-10-03
+cities: [itoigawa, myoko]
 affiliate: katazuke
 ---
 

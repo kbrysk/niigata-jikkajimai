@@ -9,6 +9,7 @@ targetKeywords:
   - 村上市 ごみ処理場 持ち込み
   - 村上市 粗大ごみ 料金
 updated: 2026-10-03
+cities: [murakami, sado]
 affiliate: katazuke
 ---
 

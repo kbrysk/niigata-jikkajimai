@@ -11,6 +11,7 @@ targetKeywords:
   - 上越市 指定シール 価格
   - 上越市 家財処分 補助金
 updated: 2026-10-02
+cities: [joetsu, sanjo]
 affiliate: katazuke
 ---
 

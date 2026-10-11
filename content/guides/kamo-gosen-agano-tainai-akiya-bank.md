@@ -9,6 +9,7 @@ targetKeywords:
   - 胎内市 空き家バンク
   - 空き家バンク 登録 条件
 updated: 2026-10-04
+cities: [agano, gosen, kamo, tainai]
 affiliate: kaitori
 ---
 

@@ -16,6 +16,7 @@ targetKeywords:
   - 新発田市 ごみ 収集運搬 許可業者
   - 三条市 一般廃棄物 許可業者
 updated: 2026-10-09
+cities: [joetsu, kashiwazaki, sanjo, shibata]
 affiliate: katazuke
 ---
 

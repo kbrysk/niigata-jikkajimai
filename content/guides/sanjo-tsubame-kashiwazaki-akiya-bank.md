@@ -10,6 +10,7 @@ targetKeywords:
   - 燕市 家財道具 処分 助成
   - 柏崎市 空き家 補助金
 updated: 2026-10-03
+cities: [kashiwazaki, sanjo, tsubame]
 affiliate: kaitori
 ---
 

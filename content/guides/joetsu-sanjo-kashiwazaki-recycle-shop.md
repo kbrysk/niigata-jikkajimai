@@ -9,6 +9,7 @@ targetKeywords:
   - 上越市 不用品 買取
   - 三条 家具 買取
 updated: 2026-10-04
+cities: [joetsu, kashiwazaki, sanjo]
 affiliate: kaitori_mono
 ---
 

@@ -11,6 +11,7 @@ targetKeywords:
   - 三条市 解体 補助金
   - 柏崎市 解体 補助金
 updated: 2026-10-11
+cities: [joetsu, kashiwazaki, sanjo, shibata]
 affiliate: kaitori
 ---
 

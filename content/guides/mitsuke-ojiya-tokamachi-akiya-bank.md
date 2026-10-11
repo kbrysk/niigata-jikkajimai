@@ -10,6 +10,7 @@ targetKeywords:
   - 十日町市 空き家 解体 補助金
   - 空き家バンク 登録できない
 updated: 2026-10-03
+cities: [mitsuke, ojiya, tokamachi]
 affiliate: kaitori
 ---
 

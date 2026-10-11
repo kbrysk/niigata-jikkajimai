@@ -9,6 +9,7 @@ targetKeywords:
   - 佐渡 空き家 補助金
   - 空き家バンク 登録 条件
 updated: 2026-10-04
+cities: [murakami, sado, shibata]
 affiliate: kaitori
 ---
 

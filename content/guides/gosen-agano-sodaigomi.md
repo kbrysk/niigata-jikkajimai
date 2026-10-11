@@ -9,6 +9,7 @@ targetKeywords:
   - クリーンセンターあがのがわ 料金
   - 阿賀野市 木製家具 処分
 updated: 2026-10-03
+cities: [agano, gosen]
 affiliate: katazuke
 ---
 

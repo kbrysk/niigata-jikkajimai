@@ -9,6 +9,7 @@ targetKeywords:
   - 小千谷市 ごみ 持ち込み
   - 見附市 清掃センター 持ち込み
 updated: 2026-10-02
+cities: [mitsuke, ojiya]
 affiliate: katazuke
 ---
 
