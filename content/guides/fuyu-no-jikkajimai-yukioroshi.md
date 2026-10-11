@@ -226,6 +226,8 @@ affiliate: akiya_fuyu
 - [新潟県30市町村の雪下ろし・除雪支援一覧](../yukioroshi-shien-niigata-30/)
 - [空き家の冬支度チェックリスト（新潟版）](../akiya-fuyu-kanri-checklist/)
 - [新潟の雪下ろし料金と業者の頼み方](../yukioroshi-gyosha-ryokin-niigata/)
+- [長岡市・小千谷市・魚沼市・十日町市・南魚沼市・津南町・湯沢町の空き家の雪下ろし](../yukioroshi-nagaoka-chuetsu/)
+- [上越市・妙高市・糸魚川市・柏崎市の空き家の雪下ろし](../yukioroshi-joetsu-myoko-itoigawa/)
 
 ## 出典
 

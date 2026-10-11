@@ -242,6 +242,8 @@ affiliate: akiya_fuyu
 - [新潟の実家じまいの手順｜何から始める？7つの順番と期限の早見表](../jikkajimai-tejun-niigata/)
 - [新潟の町村10の空き家バンクと相談先](../chouson-akiya-bank-niigata/)
 - [新潟の雪下ろし料金と業者の頼み方](../yukioroshi-gyosha-ryokin-niigata/)
+- [長岡市・小千谷市・魚沼市・十日町市・南魚沼市・津南町・湯沢町の空き家の雪下ろし](../yukioroshi-nagaoka-chuetsu/)
+- [上越市・妙高市・糸魚川市・柏崎市の空き家の雪下ろし](../yukioroshi-joetsu-myoko-itoigawa/)
 
 ## 出典
 

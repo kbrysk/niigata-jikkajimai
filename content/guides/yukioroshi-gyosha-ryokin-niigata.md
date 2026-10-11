@@ -225,6 +225,8 @@ SOS雪おろしは、市が雪おろし作業会員を紹介する制度とさ�
 - [空き家の雪下ろしは誰の責任？新潟の実家の冬対策｜支援制度と費用](../fuyu-no-jikkajimai-yukioroshi/)
 - [遠方・県外から新潟の実家を片付ける段取り](../enpou-kara-jikkajimai/)
 - [空き家の冬支度チェックリスト（新潟版）](../akiya-fuyu-kanri-checklist/)
+- [長岡市・小千谷市・魚沼市・十日町市・南魚沼市・津南町・湯沢町の空き家の雪下ろし](../yukioroshi-nagaoka-chuetsu/)
+- [上越市・妙高市・糸魚川市・柏崎市の空き家の雪下ろし](../yukioroshi-joetsu-myoko-itoigawa/)
 
 ## 出典
 
