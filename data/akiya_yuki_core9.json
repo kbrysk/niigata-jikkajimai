@@ -183,7 +183,8 @@
     "akiya_bank_operator": "新潟市（西蒲区のみ・令和7年4月1日開始）。西蒲区以外は市と連携協定を結ぶ新潟県宅地建物取引業協会（025-247-1177）・全日本不動産協会新潟県本部（025-385-7719）を案内",
     "demolition_subsidy": {
       "name": "空き家活用推進事業（跡地活用タイプ／地域活動活用タイプの跡地活用。空き家の解体費が対象）",
-      "max_amount": "解体費の1/3、上限50万円（法人は解体のみ）",
+      "max_amount": "解体費の1/3、上限50万円（法人は解体のみ）。対象は、未接道地の購入とあわせた解体（跡地活用タイプ）か、跡地を地域活動に使う解体（地域活動活用タイプ）。令和8年度分は令和8年8月28日に予算上限で受付を終了",
+    "individual": false,
       "url": "https://www.city.niigata.lg.jp/kurashi/jyutaku/jukankyo/yushi_josei/akiyakatsuyo.html"
     },
     "snow_support": {

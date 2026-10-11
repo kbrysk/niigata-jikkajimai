@@ -436,3 +436,4 @@ h1 .cnt{font-size:15px}
 .pr-box ul{margin:8px 0 8px 1.2em}
 .pr-box li{margin:4px 0}
 .site-footer .sister-h{margin-top:18px}.site-footer .small{color:var(--ink-2)}
+.win{table-layout:fixed}.win th:nth-child(1){width:36%}.win th:nth-child(2){width:24%}.win th:nth-child(3){width:40%}.win td{overflow-wrap:anywhere}

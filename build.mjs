@@ -260,7 +260,8 @@ function cityPage(c) {
   const feeNums = (s.fee_examples || []).flatMap((f) => [...String(f.fee || "").matchAll(/([\d,]+)円/g)].map((m) => Number(m[1].replace(/,/g, "")))).filter((n) => n > 0);
   const feeMin = feeNums.length ? Math.min(...feeNums) : null;
   const feeMax = feeNums.length ? Math.max(...feeNums) : null;
-  const phone = (String(s.apply_method || "").match(/0\d{1,4}-\d{1,4}-\d{3,4}/) || [])[0] || c.garbage?.phone || null;
+  // 申込方法の文から電話番号を拾う。FAX の番号は拾わない（長岡市は FAX が先に書かれている）
+  const phone = ([...String(s.apply_method || "").matchAll(/(FAX|ＦＡＸ|ファクス)?[^0-9]{0,4}(0\d{1,4}-\d{1,4}-\d{3,4})/g)].find((m) => !m[1]) || [])[2] || c.garbage?.phone || null;
   const applyKinds = ["インターネット", "LINE", "電話", "FAX", "窓口", "チャットボット", "アプリ"].filter((k) => String(s.apply_method || "").includes(k));
   const cs = prices.companies || [];
   const minOf = (k) => { const v = cs.map((x) => x[k]).filter(Boolean); return v.length ? Math.min(...v) : null; };
@@ -286,7 +287,7 @@ function cityPage(c) {
   if (ex) srcs.push(...new Set([...(ex.localNotes || []).flatMap((n) => n.sources || []), ...(ex.stats || []).map((x) => x.url), ...(ex.windows || []).map((w) => w.url), ...exFaq.flatMap((f) => f.sources)].filter((u) => u && !srcs.includes(u))));
   const exTop = ex ? `<section id="local" class="local-first"><h2>${esc(c.city)}の実家じまい、まず知っておくこと</h2>${ex.summary ? `<p>${esc(chkPlain(ex.summary))}</p>` : ""}${(ex.firstSteps || []).length ? `<h3>最初にやること</h3><ol>${ex.firstSteps.map((x) => `<li>${esc(chkPlain(x))}</li>`).join("")}</ol>` : ""}</section>` : "";
   const exLocal = ex && ((ex.localNotes || []).length || (ex.stats || []).length) ? `<section id="jijo"><h2>${esc(c.city)}ならではの事情</h2>${(ex.stats || []).length ? `<h3>数字で見る${esc(c.city)}</h3><table class="fee"><thead><tr><th>項目</th><th>値</th><th>出典</th></tr></thead><tbody>${ex.stats.map((x) => `<tr><td>${esc(x.label)}</td><td>${esc(chkPlain(x.value))}${x.note ? `<br><span class="small">${esc(chkPlain(x.note))}</span>` : ""}</td><td>${x.url ? `<a href="${esc(x.url)}" rel="noopener nofollow">公式</a>` : ""}</td></tr>`).join("")}</tbody></table>` : ""}${(ex.localNotes || []).map((n) => `<h3>${esc(n.h)}</h3>${(n.p || []).map((t) => `<p>${esc(chkPlain(t))}</p>`).join("")}`).join("")}</section>` : "";
-  const exWin = ex && (ex.windows || []).length ? `<section id="madoguchi"><h2>${esc(c.city)}の実家の手続き窓口</h2><p class="small">実家が${esc(c.city)}にある場合の窓口です。管轄は各機関の公式の案内で確かめたものです（確認日: ${esc(ex.checked || TODAY)}）。</p><div class="table-wrap"><table class="fee"><thead><tr><th>手続き</th><th>窓口</th><th>所在地・電話</th></tr></thead><tbody>${ex.windows.map((w) => `<tr><td>${esc(w.what)}</td><td>${w.url ? `<a href="${esc(w.url)}" rel="noopener nofollow">${esc(w.name)}</a>` : esc(w.name)}</td><td>${esc(chkPlain([w.where, w.tel].filter(Boolean).join("／")))}</td></tr>`).join("")}</tbody></table></div></section>` : "";
+  const exWin = ex && (ex.windows || []).length ? `<section id="madoguchi"><h2>${esc(c.city)}の実家の手続き窓口</h2><p class="small">実家が${esc(c.city)}にある場合の窓口です。管轄は各機関の公式の案内で確かめたものです（確認日: ${esc(ex.checked || TODAY)}）。</p><div class="table-wrap"><table class="fee win"><thead><tr><th>手続き</th><th>窓口</th><th>所在地・電話</th></tr></thead><tbody>${ex.windows.map((w) => `<tr><td>${esc(w.what)}</td><td>${w.url ? `<a href="${esc(w.url)}" rel="noopener nofollow">${esc(w.name)}</a>` : esc(w.name)}</td><td>${esc(chkPlain([w.where, w.tel].filter(Boolean).join("／")))}</td></tr>`).join("")}</tbody></table></div></section>` : "";
   const faqLd = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
   const body = `
 <article class="city">
