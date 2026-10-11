@@ -3708,6 +3708,47 @@
         }
       ],
       "checked": "2026-10-11"
+    },
+    {
+      "id": "ie-k61",
+      "q": "県外に住んでいますが、新潟の実家の固定資産税の通知や管理はどうなりますか？",
+      "a": "納税通知書は納税義務者あてに届きます。長岡市は、市外に住む人が市内の親族を納税管理人に立て、通知をそちらに送ってもらう手続きを案内しています。",
+      "detail": [
+        "固定資産税は、毎年1月1日現在に市内の土地・家屋を持つ人にかかります（新潟市）。長岡市は、所有者が1月1日より前に亡くなっているときは、相続人の代表者に通知書を送るとしています。",
+        "長岡市の納税管理人は、納税管理人申告書で届け出ます。窓口は資産税課（0258-39-2213）です。[要確認: 新潟市の納税管理人の手続き。新潟市 資産税課管理担当 025-226-2266]",
+        "遠くて管理が難しいときは、長岡市にふるさと納税を通じた空き家・空き地の見守りサービス（長岡市シルバー人材センター）があります。ほかの市町村は、各市町村のページで確認します。"
+      ],
+      "situations": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "stage": 5,
+      "links": [
+        {
+          "guide": "enpou-kara-jikkajimai",
+          "label": "遠方・県外から新潟の実家を片付ける段取り"
+        },
+        {
+          "guide": "akiya-kanri-jibunde-niigata",
+          "label": "新潟の空き家を自分で管理する方法"
+        }
+      ],
+      "sources": [
+        {
+          "label": "新潟市「固定資産税の概要」",
+          "url": "https://www.city.niigata.lg.jp/kurashi/zei/siraberu/koteishisan/koteishisangaiyou.html"
+        },
+        {
+          "label": "長岡市「固定資産税」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/cate02/kotei/kotei.html"
+        },
+        {
+          "label": "長岡市「長岡市の空き家対策」",
+          "url": "https://www.city.nagaoka.niigata.jp/kurashi/life03/akiya-taisaku.html"
+        }
+      ],
+      "checked": "2026-10-11"
     }
   ]
 }
