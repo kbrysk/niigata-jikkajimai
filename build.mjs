@@ -110,8 +110,9 @@ function cleanBody(src) {
 const pages = fs.existsSync(path.join(ROOT, "content/pages"))
   ? fs.readdirSync(path.join(ROOT, "content/pages")).filter((f) => f.endsWith(".md")).map((f) => {
       const { meta, body } = parseFM(fs.readFileSync(path.join(ROOT, "content/pages", f), "utf8"));
-      // 連絡先は site.json の contactEmail だけで管理する。本文では {{contactEmail}} と書く
-      return { slug: meta.slug || f.replace(/\.md$/, ""), meta, html: marked.parse(body.split("{{contactEmail}}").join(SITE.contactEmail || "")) };
+      // 連絡先・所在地は site.json だけで管理する。本文では {{contactForm}}（お問い合わせフォームへのリンク）・{{operatorAddress}}・{{contactEmail}} と書く
+      const vars = { contactForm: SITE.contactFormUrl ? `[お問い合わせフォーム](${SITE.contactFormUrl})` : "", operatorAddress: SITE.operatorAddress || "", contactEmail: SITE.contactEmail || "" };
+      return { slug: meta.slug || f.replace(/\.md$/, ""), meta, html: marked.parse(body.replace(/\{\{(contactForm|operatorAddress|contactEmail)\}\}/g, (_, k) => vars[k])) };
     })
   : [];
 
@@ -147,7 +148,7 @@ ${SITE.googleSiteVerification ? `<meta name="google-site-verification" content="
 ${SITE.bingSiteVerification ? `<meta name="msvalidate.01" content="${esc(SITE.bingSiteVerification)}">` : ""}
 ${SITE.gaMeasurementId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(SITE.gaMeasurementId)}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${esc(SITE.gaMeasurementId)}',{anonymize_ip:true});
-document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';if(/px\\.a8\\.net|mitsumori|mailto:/.test(h)){gtag('event',h.indexOf('mitsumori')>-1||h.indexOf('mailto:')===0?'lead_click':'affiliate_click',{link_url:h,page_path:location.pathname});}});</script>` : ""}
+document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';if(/px\\.a8\\.net|mitsumori|mailto:|docs\\.google\\.com\\/forms/.test(h)){gtag('event',/mitsumori|^mailto:|docs\\.google\\.com\\/forms/.test(h)?'lead_click':'affiliate_click',{link_url:h,page_path:location.pathname});}});</script>` : ""}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="${esc(SITE.name)}" href="${abs("/feed.xml")}">
@@ -158,7 +159,7 @@ ${ld}
 <a class="skip" href="#main">本文へ</a>
 <header class="site-header">
   <div class="wrap">
-    <p class="mast-top"><span>新潟県30市町村の粗大ごみ・実家の片付け・空き家の案内</span><span>発行 ${esc(SITE.operator)}（新潟県長岡市）</span><span>最終確認 ${esc(latestCheck())}</span></p>
+    <p class="mast-top"><span>新潟県30市町村の粗大ごみ・実家の片付け・空き家の案内</span><span>発行 ${esc(SITE.operator)}</span><span>最終確認 ${esc(latestCheck())}</span></p>
     <div class="mast">
     <a class="brand" href="${url("/")}"><span class="brand-mark" aria-hidden="true">帖</span><span class="brand-name">${esc(SITE.name)}</span></a>
     <nav class="nav" aria-label="主要メニュー">
@@ -203,20 +204,23 @@ ${stickyCta && pathname !== "/mitsumori/" ? `<div class="sticky-cta" aria-label=
 </html>`;
 }
 
-// 相談・掲載フォーム。送信時に件名と本文を組み立て、formEndpoint があれば POST、無ければメールソフトを開く。
-// 開かない環境のために、組み立てた本文をその場に表示してコピーできるようにする（内容は外部に送らない）
-const formScript = `<script>(function(){var ep=${JSON.stringify(SITE.formEndpoint || "")};var to=${JSON.stringify(SITE.contactEmail)};
+// 相談・掲載フォーム。送信時に件名と本文を組み立て、Google フォーム（site.json の formEndpoint・formEntries）へ送る。
+// Google フォームは no-cors でしか受けられず結果が読めないため、送信できたら完了表示にする。
+// 送れなかったときは、組み立てた本文をその場に表示し、お問い合わせフォームから送ってもらう。
+const formScript = `<script>(function(){var ep=${JSON.stringify(SITE.formEndpoint || "")};var en=${JSON.stringify(SITE.formEntries || {})};
 document.querySelectorAll('form.lead-form').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();
 var lines=[];f.querySelectorAll('input[name],select[name],textarea[name]').forEach(function(el){if(el.type==='checkbox')return;var v=(el.value||'').trim();lines.push(el.name+': '+(v||'（未記入）'));});
 var kind=f.getAttribute('data-subject')||'お問い合わせ';var city=(f.querySelector('[name=市町村]')||{}).value||'';var name=(f.querySelector('[name=お名前],[name=会社名]')||{}).value||'';
 var subject='【${SITE.name}】'+kind+(city?' '+city:'')+(name?' '+name:'');var lt=(f.querySelector('[name=相談の種類]')||{}).value||'';try{if(window.gtag)gtag('event','lead_submit',{lead_kind:kind,lead_type:lt,city:city});}catch(_){}var text=lines.join('\\n')+'\\n\\n送信元: '+location.href;
 var done=f.nextElementSibling&&f.nextElementSibling.classList.contains('form-done')?f.nextElementSibling:null;
 if(!done){done=document.createElement('div');done.className='form-done';f.parentNode.insertBefore(done,f.nextSibling);}
-function show(ok){done.innerHTML=(ok?'<p><strong>送信しました。</strong>原則2営業日以内にご連絡します。</p>':'<p><strong>メールソフトが開かない場合</strong>は、下の内容をコピーして <a href="mailto:'+to+'">'+to+'</a> 宛てに送ってください。</p>')+'<p class="small">件名: '+subject.replace(/</g,'&lt;')+'</p><textarea readonly rows="8">'+text.replace(/</g,'&lt;')+'</textarea><p><button type="button" class="btn ghost copy">内容をコピー</button></p>';
+function show(ok){done.innerHTML=(ok?'<p><strong>送信しました。</strong>原則2営業日以内にご連絡します。</p>':'<p><strong>送信できませんでした。</strong>お手数ですが、下の内容をコピーして <a href="${esc(SITE.contactFormUrl || "")}" target="_blank" rel="noopener">お問い合わせフォーム</a> から送ってください。</p>')+'<p class="small">件名: '+subject.replace(/</g,'&lt;')+'</p><textarea readonly rows="8">'+text.replace(/</g,'&lt;')+'</textarea><p><button type="button" class="btn ghost copy">内容をコピー</button></p>';
 var b=done.querySelector('.copy');if(b)b.addEventListener('click',function(){var ta=done.querySelector('textarea');ta.select();try{navigator.clipboard.writeText('件名: '+subject+'\\n\\n'+text);}catch(_){document.execCommand('copy');}b.textContent='コピーしました';});done.scrollIntoView({behavior:'smooth',block:'nearest'});}
-if(ep){var btn=f.querySelector('button[type=submit]');if(btn){btn.disabled=true;btn.textContent='送信中…';}
-fetch(ep,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({subject:subject,message:text,_subject:subject})}).then(function(r){if(!r.ok)throw 0;show(true);f.reset();}).catch(function(){show(false);location.href='mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(text);}).finally(function(){if(btn){btn.disabled=false;btn.textContent='送る';}});}
-else{show(false);location.href='mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(text);}
+if(ep&&en.kind){var btn=f.querySelector('button[type=submit]');if(btn){btn.disabled=true;btn.textContent='送信中…';}
+var co=(f.querySelector('[name=会社名]')||{}).value||'';var pn=(f.querySelector('[name=お名前]')||{}).value||'';var ct=(f.querySelector('[name=連絡先]')||{}).value||'';
+var p=new URLSearchParams();p.append(en.kind,kind);p.append(en.name,(co?co+' ':'')+pn);p.append(en.contact,ct);p.append(en.message,'件名: '+subject+'\\n\\n'+text);
+fetch(ep,{method:'POST',mode:'no-cors',body:p}).then(function(){show(true);f.reset();}).catch(function(){show(false);}).finally(function(){if(btn){btn.disabled=false;btn.textContent='送る';}});}
+else{show(false);}
 });});})();</script>`;
 
 // 本文以外（市ページのデータ値・固定ページ・JSON-LD）に残った [要確認] も「※確認中」に揃える。
@@ -585,7 +589,7 @@ ${photo}
 <section class="home-section recent"><h2>確認の記録</h2><p class="sub">各市町村の公式サイトを見た日と、載せている内容。古いものから順に見直します。</p><div class="table-wrap"><table><thead><tr><th>市町村</th><th>粗大ごみ</th><th>持ち込み</th><th>解体補助金</th><th class="n">確認日</th></tr></thead><tbody>${recentRows}</tbody></table></div></section>
 <section class="home-section"><h2>実家じまいの進め方（新潟版）</h2><p class="sub">${guides.length}本のガイドを5つに分けています。</p><ul class="guide-cats">${guideCards}</ul><p class="small"><a href="${url("/guide/")}">ガイドの一覧（分類つき） →</a></p></section>
 </div>
-<section class="why"><div><h2>長岡に住む運営者が、公式情報と地元の業者を確かめて載せています</h2><p>運営は株式会社Kogera（新潟県長岡市）。市町村の制度と料金は各自治体の公式サイトだけを出典にし、ページごとに確認日を記載します。業者は運営者が直接会い、一般廃棄物収集運搬の許可と見積もりの出し方を確かめたところだけを載せます。</p><p><a href="${url("/about/")}">運営者情報・編集方針 →</a></p></div><ul class="promise"><li>出典は公式サイト。電話での聞き取りはしない</li><li>業者は会って確かめた先だけ。掲載料・紹介料を受け取る先には「PR」を表示</li><li>体験談や口コミを作らない。分からないことは「要確認」と書く</li>${SISTERS.length ? `<li>${SISTERS.map((x) => `${esc(x.note)}は姉妹サイト<a href="${esc(x.url)}" rel="noopener">${esc(x.name)}</a>`).join("、")}</li>` : ""}</ul></section>
+<section class="why"><div><h2>長岡に住む運営者が、公式情報と地元の業者を確かめて載せています</h2><p>運営は株式会社Kogera。運営者は長岡市に住んでいます。市町村の制度と料金は各自治体の公式サイトだけを出典にし、ページごとに確認日を記載します。業者は運営者が直接会い、一般廃棄物収集運搬の許可と見積もりの出し方を確かめたところだけを載せます。</p><p><a href="${url("/about/")}">運営者情報・編集方針 →</a></p></div><ul class="promise"><li>出典は公式サイト。電話での聞き取りはしない</li><li>業者は会って確かめた先だけ。掲載料・紹介料を受け取る先には「PR」を表示</li><li>体験談や口コミを作らない。分からないことは「要確認」と書く</li>${SISTERS.length ? `<li>${SISTERS.map((x) => `${esc(x.note)}は姉妹サイト<a href="${esc(x.url)}" rel="noopener">${esc(x.name)}</a>`).join("、")}</li>` : ""}</ul></section>
 ${ctaBox()}`;
   const orgLd = { "@context": "https://schema.org", "@type": "WebSite", name: SITE.name, url: abs("/"), description: SITE.tagline, publisher: { "@type": "Organization", name: SITE.operator } };
   write("/", layout({ title: SITE.name, description: `新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、雪の支援を公式情報からまとめた実家じまいの案内。長岡から運営。まとめて頼むときは地元の許可業者へ。`, pathname: "/", body, jsonld: [orgLd] }));
@@ -617,7 +621,7 @@ function extras() {
   const llms = [
     `# ${SITE.name}`,
     ``,
-    `> ${SITE.tagline}。新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金・空き家バンク、雪の支援を各市町村の公式サイトを出典に掲載。運営は株式会社Kogera（長岡市）。掲載情報には確認日を付け、公式で確認できない項目は「確認中」と表示する。`,
+    `> ${SITE.tagline}。新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金・空き家バンク、雪の支援を各市町村の公式サイトを出典に掲載。運営は株式会社Kogera。掲載情報には確認日を付け、公式で確認できない項目は「確認中」と表示する。`,
     ``,
     `## まず読むページ`,
     `- [新潟の実家じまいの進め方（状況別の手順と期限の早見表）](${abs("/guide/jikkajimai-tejun-niigata/")}): 親が元気なうち・施設に入る・亡くなった・空き家の4つの状況別に、決める→期限のある手続き→仕分け→片付け→家の行き先の順で、新潟の窓口と公式の期限をまとめたページ`,

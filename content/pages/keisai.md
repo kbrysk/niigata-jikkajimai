@@ -26,9 +26,9 @@ description: にいがた実家じまい帖では、新潟県内で一般廃棄�
 
 ## 掲載のご相談
 
-下のフォームから送っていただくと、運営者から折り返しご連絡し、日程を決めて直接伺います。メールでのご連絡（{{contactEmail}}）でも構いません。
+下のフォームから送っていただくと、運営者から折り返しご連絡し、日程を決めて直接伺います。{{contactForm}}からでも構いません。
 
-<form class="lead-form" data-subject="掲載の相談" action="mailto:{{contactEmail}}" method="post" enctype="text/plain">
+<form class="lead-form" data-subject="掲載の相談" method="post">
 <div><label for="k-company">会社名<span class="req">必須</span></label><input id="k-company" name="会社名" required></div>
 <div><label for="k-person">ご担当者名<span class="req">必須</span></label><input id="k-person" name="お名前" required></div>
 <div><label for="k-tel">連絡先（電話またはメール）<span class="req">必須</span></label><input id="k-tel" name="連絡先" required></div>
@@ -40,5 +40,5 @@ description: にいがた実家じまい帖では、新潟県内で一般廃棄�
 <div><button class="btn" type="submit">送る</button></div>
 </form>
 
-株式会社Kogera（長岡市）  
-メール: {{contactEmail}}
+株式会社Kogera  
+お問い合わせ: {{contactForm}}

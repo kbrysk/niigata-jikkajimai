@@ -21,7 +21,7 @@ description: 新潟県内の実家の片付け・遺品整理・不用品の搬�
 
 ## 相談フォーム
 
-<form class="lead-form" data-subject="見積もり相談" action="mailto:{{contactEmail}}" method="post" enctype="text/plain">
+<form class="lead-form" data-subject="見積もり相談" method="post">
 <div><label for="f-name">お名前<span class="req">必須</span></label><input id="f-name" name="お名前" required></div>
 <div><label for="f-tel">連絡先（電話またはメール）<span class="req">必須</span></label><input id="f-tel" name="連絡先" required></div>
 <div><label for="f-city">片付ける家の市町村<span class="req">必須</span></label><input id="f-city" name="市町村" placeholder="例: 長岡市" required></div>
@@ -37,7 +37,7 @@ description: 新潟県内の実家の片付け・遺品整理・不用品の搬�
 「相続・名義の手続き」を選んだご相談は、業者への取り次ぎはしません。内容に合う公的な相談窓口（法務局、司法書士会、税理士会、法テラスなど）をご案内します。当サイトは、士業の方から紹介料を受け取りません。
 
 
-送信ボタンを押すと、入力内容をまとめた本文がその場に表示され、お使いのメールソフトが開きます。開かない場合は表示された内容をコピーして **{{contactEmail}}** 宛てにお送りください。原則2営業日以内にご連絡します。
+送信ボタンを押すと、その場で送信されます。原則2営業日以内に、ご記入の連絡先へご連絡します。送れなかったときは、表示される内容をコピーして{{contactForm}}からお送りください。
 
 ## 費用について
 

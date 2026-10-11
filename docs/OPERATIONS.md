@@ -9,7 +9,7 @@
 | 設定 | `site.json` | サイト名、URL、連絡先、運営者の表示、姉妹サイト、計測ID。売却・移管時はここを書き換える |
 | 記事 | `content/guides/*.md` | ガイド記事（front matter: title / slug / description / targetKeywords / updated） |
 | 在庫 | `content/stock/*.md` | 未公開の記事。監査が済んだら `content/guides/` へ移すと公開される |
-| 固定ページ | `content/pages/*.md` | 運営者情報、相談フォーム、掲載案内、プライバシー等。連絡先は `{{contactEmail}}` と書く |
+| 固定ページ | `content/pages/*.md` | 運営者情報、相談フォーム、掲載案内、プライバシー等。連絡先は `{{contactForm}}`（お問い合わせフォームへのリンク）、所在地は `{{operatorAddress}}` と書く |
 | 進め方ページ | `content/roadmap/roadmap.json` | 状況別×段階別の進め方（表示は `roadmap.mjs`） |
 | Q&A | `content/qa/*.json` | 分類ごとのQ&A（表示は `qa.mjs`。1問ごとにアンカーとFAQPage構造化データ） |
 | データ | `data/*.json` | 30市町村の粗大ごみ・補助金・空き家バンク等。すべて公式サイトを出典に自前で確認したもの |
@@ -78,4 +78,4 @@
 | Bing Webmaster Tools | 新しい所有者を追加 |
 | IndexNow の鍵 | `.indexnow-key` と `public/<鍵>.txt`。移管後に作り直してよい |
 | 問い合わせ用メールアドレス | サイト専用のアドレスを使う（個人アドレスにしない）。移管時は転送先を変更 |
-| フォームの送信先（設定時） | `site.json` の formEndpoint |
+| フォームの送信先 | `site.json` の formEndpoint・formEntries（Google フォーム。設問を変えたら entry 番号を取り直す）、表示用は contactFormUrl |
