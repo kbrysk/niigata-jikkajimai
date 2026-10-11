@@ -9,6 +9,7 @@ targetKeywords:
   - 新田清掃センター 持ち込み
   - 亀田清掃センター 持ち込み
 updated: 2026-10-04
+affiliate: katazuke
 ---
 
 # 新潟市のごみ持ち込み｜全6施設の受付時間・料金・持ち込めない物

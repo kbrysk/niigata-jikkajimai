@@ -9,6 +9,7 @@ targetKeywords:
   - 雪下ろし 費用 新潟
   - 除雪 業者 新潟
 updated: 2026-10-05
+affiliate: akiya_fuyu
 ---
 
 # 新潟の雪下ろし・除雪を頼むときの料金と、業者・依頼先の探し方

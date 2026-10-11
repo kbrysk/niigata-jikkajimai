@@ -9,6 +9,7 @@ targetKeywords:
   - 家族信託 実家
   - 成年後見 不動産 売却 許可
 updated: 2026-10-09
+affiliate: kaitori
 ---
 
 # 親が認知症になると実家は売れない？｜元気なうちに決める備えと費用・窓口

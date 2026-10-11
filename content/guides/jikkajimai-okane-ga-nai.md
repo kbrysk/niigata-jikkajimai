@@ -9,6 +9,7 @@ targetKeywords:
   - 実家 片付け 安く
   - 実家じまい 補助金
 updated: 2026-10-02
+affiliate: kaitori
 ---
 
 # 実家じまいのお金がないとき｜費用を抑える順番と、誰が払うか

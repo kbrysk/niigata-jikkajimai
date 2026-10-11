@@ -10,6 +10,7 @@ targetKeywords:
   - 実家じまい 費用 目安
   - 実家 片付け 補助金 新潟
 updated: 2026-10-02
+affiliate: ihinseiri
 ---
 
 # 新潟で実家を片付ける費用の目安｜自分と業者を比較

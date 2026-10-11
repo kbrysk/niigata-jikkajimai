@@ -10,6 +10,7 @@ targetKeywords:
   - 長岡市 指定ごみ袋 価格
   - 長岡市 粗大ごみ 値上げ
 updated: 2026-10-02
+affiliate: katazuke
 ---
 
 # 長岡市の粗大ごみの出し方｜料金・申込・持ち込み・分別

@@ -9,6 +9,7 @@ targetKeywords:
   - 小千谷市 ごみ 持ち込み
   - 見附市 清掃センター 持ち込み
 updated: 2026-10-02
+affiliate: katazuke
 ---
 
 # 見附市・小千谷市の粗大ごみの出し方｜制度が違う2市を比較

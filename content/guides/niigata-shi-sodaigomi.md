@@ -9,6 +9,7 @@ targetKeywords:
   - 新潟市 粗大ごみ シール
   - 新潟市 粗大ごみ 運び出し 支援
 updated: 2026-10-02
+affiliate: katazuke
 ---
 
 # 新潟市の粗大ごみの出し方｜料金一覧・申込・持ち込み先

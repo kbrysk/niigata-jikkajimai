@@ -9,6 +9,7 @@ targetKeywords:
   - 村上市 ごみ処理場 持ち込み
   - 村上市 粗大ごみ 料金
 updated: 2026-10-03
+affiliate: katazuke
 ---
 
 # 佐渡市・村上市の粗大ごみの出し方｜処理券・自己搬入・許可業者

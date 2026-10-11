@@ -9,6 +9,7 @@ targetKeywords:
   - 新潟 雪下ろし 相談窓口
   - 雪下ろし 補助 新潟
 updated: 2026-10-02
+affiliate: akiya_fuyu
 ---
 
 # 空き家の雪下ろし、誰に頼む？費用は？｜新潟の相談窓口と支援制度

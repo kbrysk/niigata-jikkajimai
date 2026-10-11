@@ -11,6 +11,7 @@ targetKeywords:
   - 上越市 指定シール 価格
   - 上越市 家財処分 補助金
 updated: 2026-10-02
+affiliate: katazuke
 ---
 
 # 上越市・三条市の粗大ごみの出し方｜申込・料金・持ち込み

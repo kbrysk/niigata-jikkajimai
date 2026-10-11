@@ -9,6 +9,7 @@ targetKeywords:
   - 写真 処分 方法
   - 衣類 処分 大量 長岡
 updated: 2026-10-04
+affiliate: kaitori_mono
 ---
 
 # 実家の食器・本・写真・人形の処分｜新潟市・長岡市の区分と出し方、人形供養の考え方

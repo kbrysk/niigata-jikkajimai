@@ -9,6 +9,7 @@ targetKeywords:
   - 実家じまい 費用 シミュレーション
   - 相続 実家 費用 全部
 updated: 2026-10-11
+affiliate: ihinseiri
 ---
 
 # 実家じまいに全部でいくらかかる？新潟の費用を、公開数字で積み上げる

@@ -9,6 +9,7 @@ targetKeywords:
   - 燕市 ごみ 持ち込み
   - 燕市 粗大ごみ シール
 updated: 2026-10-02
+affiliate: katazuke
 ---
 
 # 燕市の粗大ごみの出し方｜申込・料金・持ち込み・市で出せない物

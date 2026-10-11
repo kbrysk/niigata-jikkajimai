@@ -11,6 +11,7 @@ targetKeywords:
   - 長岡 家具 買取
   - 長岡 家電 買取
 updated: 2026-10-02
+affiliate: kaitori_mono
 ---
 
 # 長岡市のリサイクルショップ・出張買取｜実家の家具・家電の売り方と、売れない物の出し方

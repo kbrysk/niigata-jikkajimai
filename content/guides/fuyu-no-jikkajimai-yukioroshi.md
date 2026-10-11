@@ -10,6 +10,7 @@ targetKeywords:
   - 雪下ろし 補助 新潟
   - 要援護世帯 除雪費 助成
 updated: 2026-10-02
+affiliate: akiya_fuyu
 ---
 
 # 空き家の雪下ろしは誰の責任？新潟の実家の冬対策｜支援制度と費用

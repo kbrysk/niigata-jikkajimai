@@ -9,6 +9,7 @@ targetKeywords:
   - 新発田市 粗大ごみ 持ち込み
   - 新発田市 指定収集券
 updated: 2026-10-02
+affiliate: katazuke
 ---
 
 # 新発田市の粗大ごみの出し方｜一律500円の収集券・申込・持ち込み先

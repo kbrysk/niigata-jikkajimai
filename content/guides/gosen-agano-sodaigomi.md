@@ -9,6 +9,7 @@ targetKeywords:
   - クリーンセンターあがのがわ 料金
   - 阿賀野市 木製家具 処分
 updated: 2026-10-03
+affiliate: katazuke
 ---
 
 # 五泉市・阿賀野市の粗大ごみの出し方｜重量制の持ち込みと新施設
