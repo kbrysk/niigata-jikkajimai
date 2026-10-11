@@ -13,6 +13,7 @@ targetKeywords:
   - 命綱アンカー 補助 新潟
 updated: 2026-10-12
 affiliate: akiya_fuyu
+cities: [nagaoka, ojiya, uonuma, tokamachi, minamiuonuma, tsunan, yuzawa]
 ---
 
 # 中越・魚沼7市町の空き家の雪下ろし｜頼み先・費用の助成・期限（令和8年度）
