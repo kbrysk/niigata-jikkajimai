@@ -1,0 +1,27 @@
+{
+  "name": "にいがた実家じまい帖",
+  "tagline": "新潟県の実家じまい・粗大ごみ・空き家の案内",
+  "operator": "株式会社Kogera",
+  "origin": "https://kbrysk.github.io",
+  "basePath": "/niigata-jikkajimai",
+  "contactEmail": "okubo.r.1990@gmail.com",
+  "gaMeasurementId": "",
+  "googleSiteVerification": "",
+  "bingSiteVerification": "",
+  "operatorPerson": {
+    "name": "大久保 亮佑",
+    "role": "運営者・株式会社Kogera代表（新潟県長岡市在住）"
+  },
+  "sisterSites": [
+    {
+      "name": "ハカラウ",
+      "url": "https://hakarau.jp/",
+      "note": "墓じまい・改葬"
+    },
+    {
+      "name": "ふれあいの丘",
+      "url": "https://www.fureaino-oka.com/",
+      "note": "空き家解体の補助金・全国"
+    }
+  ]
+}

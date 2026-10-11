@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+<title>業者見積もり比較シート（新潟版）</title>
+<style>
+:root{--ink:#37352f;--sub:#6b6a66;--line:#d9d8d4;--soft:#f7f7f5}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic","Meiryo",sans-serif;line-height:1.6;font-size:15px}
+.wrap{max-width:900px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:22px;margin:0 0 4px;font-weight:700}
+h2{font-size:16px;margin:28px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--ink)}
+.meta{color:var(--sub);font-size:13px;margin:0 0 12px}
+.note{font-size:13px;color:var(--sub)}
+.bar{display:flex;gap:8px;align-items:center;margin:0 0 16px;flex-wrap:wrap}
+.btn{font:inherit;font-size:14px;padding:6px 14px;border:1px solid var(--ink);background:#fff;color:var(--ink);border-radius:4px;cursor:pointer}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:var(--soft);font-weight:700;font-size:13px}
+.footer{margin-top:24px;padding-top:8px;border-top:1px solid var(--line);font-size:12px;color:var(--sub)}
+input[type=checkbox]{appearance:none;-webkit-appearance:none;width:15px;height:15px;border:1.5px solid #000;border-radius:2px;margin:0;vertical-align:-2px;background:#fff;cursor:pointer;position:relative}
+input[type=checkbox]:checked::after{content:"";position:absolute;left:3px;top:-1px;width:4px;height:9px;border:solid #000;border-width:0 2px 2px 0;transform:rotate(45deg)}
+
+.wrap{max-width:1100px}
+table.cmp td.item{width:15%;font-weight:700}
+table.cmp td.hint{width:23%;font-size:12px;color:var(--sub);background:var(--soft)}
+table.cmp td.v{height:34px}
+table.cmp tr.tall td.v{height:62px}
+table.six td.no{width:30px;text-align:center}
+table.six td.q{width:30%;font-weight:700}
+table.six td.why{width:26%;font-size:12px;color:var(--sub);background:var(--soft)}
+table.six td.ans{height:70px}
+.who{display:flex;gap:16px;flex-wrap:wrap;margin:8px 0 4px;font-size:13px}
+.who span{border-bottom:1px solid var(--ink);min-width:150px;display:inline-block;height:1.4em}
+.pg2{margin-top:28px}
+@page{size:A4 landscape;margin:10mm}
+@media print{
+  body{font-size:9.5pt;line-height:1.4;color:#000}
+  .wrap{max-width:none;padding:0}
+  .bar{display:none}
+  h1{font-size:15pt}
+  h2{font-size:11pt;border-bottom:1.5px solid #000;margin-top:0}
+  .pg2{page-break-before:always;margin-top:0}
+  th,td{border-color:#000;padding:3px 5px}
+  th{background:#fff;border-bottom:1.5px solid #000}
+  td.hint,td.why{background:#fff;color:#000}
+  tr{page-break-inside:avoid}
+  .meta,.note,.footer{color:#000}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>業者見積もり比較シート（新潟版）</h1>
+<p class="meta">にいがた実家じまい帖／更新 2026-10-03／A4横・白黒印刷用／登録不要・無料・再配布可（出典明記）。表計算で入力する場合は同じ内容の mitsumori-hikaku.xlsx を使ってください（合計は自動計算）。</p>
+<div class="bar"><button class="btn" onclick="window.print()">印刷する</button></div>
+<div class="who"><div>実家の所在地: <span></span></div><div>記入日: <span></span></div></div>
+<h2>見積もり比較（3社分）</h2>
+<table class="cmp"><thead><tr><th>項目</th><th>確認の目安</th><th>業者A</th><th>業者B</th><th>業者C</th><th>確認点のメモ</th></tr></thead><tbody><tr class=""><td class="item">業者名</td><td class="hint"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td></tr><tr class=""><td class="item">許可の有無（一般廃棄物収集運搬）</td><td class="hint">市の公式一覧で確認する。運搬を行う会社が許可業者かも尋ねる。産業廃棄物・古物商の許可では家庭の廃棄物は回収できない</td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td></tr><tr class=""><td class="item">見積もり方法（訪問・写真）</td><td class="hint">訪問見積もりか、写真見積もりか。写真の場合、当日の変更の扱いを聞く</td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td></tr><tr class=""><td class="item">基本料金（円）</td><td class="hint">何が含まれるか（作業人数・車両・仕分け・清掃）を書面で確認</td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td></tr><tr class="tall"><td class="item">追加料金の条件</td><td class="hint">階段・駐車場・量の増加・特殊な品目で増えるか。キャンセル料はいつから・いくらか</td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td></tr><tr class=""><td class="item">追加料金の見込み額（円）</td><td class="hint">条件に当てはまる場合の見込み額。分からなければ空欄</td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td></tr><tr class="tall"><td class="item">買取の有無・金額</td><td class="hint">売れる物（家具・着物・家電など）の買取があるか。処分費と相殺されるか</td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td></tr><tr class=""><td class="item">買取金額（円）</td><td class="hint">合計から差し引く金額</td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td></tr><tr class="tall"><td class="item">作業日・立会い</td><td class="hint">作業日の候補。立会いの要否、鍵の預け方と返却</td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td></tr><tr class="tall"><td class="item">積雪期の対応</td><td class="hint">雪の時期に日程・料金の条件が変わるか</td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td></tr><tr class=""><td class="item">写真報告の有無</td><td class="hint">作業前後の写真報告があるか（遠方の場合は特に）</td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td></tr><tr class=""><td class="item">合計（円）</td><td class="hint">基本料金 + 追加料金の見込み額 - 買取金額（自動計算）</td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td></tr><tr class="tall"><td class="item">備考</td><td class="hint"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td></tr></tbody></table>
+<h2 class="pg2">見積もりで聞く6つのこと</h2>
+<table class="six"><thead><tr><th>No.</th><th>聞くこと</th><th>見るポイント</th><th>業者Aの回答</th><th>業者Bの回答</th><th>業者Cの回答</th></tr></thead><tbody><tr><td class="no">1</td><td class="q"><input type="checkbox" aria-label="聞いた"> 一般廃棄物の収集運搬の許可はありますか。運ぶのは自社ですか</td><td class="why">市の公式一覧にある業者か確認する。遺品整理の会社が別の会社に運搬を任せる場合、その運搬会社が許可業者か確認する</td><td class="ans"></td><td class="ans"></td><td class="ans"></td></tr><tr><td class="no">2</td><td class="q"><input type="checkbox" aria-label="聞いた"> 追加料金は、どんな場合に、いくら増えますか</td><td class="why">階段・駐車場・量の増加・特殊な品目。見積書に追加料金の条件を書いてもらう</td><td class="ans"></td><td class="ans"></td><td class="ans"></td></tr><tr><td class="no">3</td><td class="q"><input type="checkbox" aria-label="聞いた"> キャンセル料は、いつから、いくらかかりますか</td><td class="why">日程変更の扱いも聞く。後から高額なキャンセル料を請求される相談例がある</td><td class="ans"></td><td class="ans"></td><td class="ans"></td></tr><tr><td class="no">4</td><td class="q"><input type="checkbox" aria-label="聞いた"> 残す物と処分する物を、どう区別しますか。作業範囲はどこまでですか</td><td class="why">仕分け・搬出・清掃・買取のどこまでか。処分しないよう頼んだ物の取り違えを防ぐ</td><td class="ans"></td><td class="ans"></td><td class="ans"></td></tr><tr><td class="no">5</td><td class="q"><input type="checkbox" aria-label="聞いた"> 家電4品目（エアコン・テレビ・冷蔵庫/冷凍庫・洗濯機/衣類乾燥機）は、どう扱いますか</td><td class="why">リサイクル料金と運搬料金を、見積もりでどう扱うか。市では出せない品目</td><td class="ans"></td><td class="ans"></td><td class="ans"></td></tr><tr><td class="no">6</td><td class="q"><input type="checkbox" aria-label="聞いた"> 立会いは必要ですか。当日、見積もりと違う提案があった場合はどうなりますか</td><td class="why">鍵の預け方と返却も確認。見積もりと異なる提案は作業前に断り、その場の支払いも拒否してよい</td><td class="ans"></td><td class="ans"></td><td class="ans"></td></tr></tbody></table>
+<p class="footer">見積もりは複数社から取り、見積書は作業内容と費用が分かる書面で受け取ってください（国民生活センターの案内）。トラブルが起きたら、消費生活センターに相談してください。業者名は、市の公式の許可業者一覧と照らして記入してください。<br>出典: にいがた実家じまい帖「新潟の実家の片付けは自分で？業者？」（環境省・国民生活センターの公開情報に基づく）。このシートは出典を明記すれば自由に再配布できます。</p>
+</div>
+</body>
+</html>
