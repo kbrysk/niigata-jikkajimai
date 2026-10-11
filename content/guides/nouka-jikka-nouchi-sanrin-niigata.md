@@ -436,6 +436,7 @@ affiliate: kaitori
 - [新潟の実家じまいの進め方｜状況別の手順と期限の早見表](../jikkajimai-tejun-niigata/)
 - [十日町市・魚沼市・南魚沼市の粗大ごみの出し方｜十日町は重量制の持ち込み、魚沼・南魚沼は予約制の戸別収集](../tokamachi-uonuma-sodaigomi/)
 - [相続土地国庫帰属制度を新潟で使うには](../souzoku-tochi-kokko-kizoku-niigata/)
+- [市街化調整区域の実家（新潟）を売る・建て替えるときの注意](../shigaika-chousei-kuiki-jikka-niigata/)
 
 ## 出典
 

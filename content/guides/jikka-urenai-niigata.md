@@ -314,6 +314,7 @@ AとBが重なる家もあります。Aを先に直します。名義や荷物�
 - [新潟の実家じまいの総費用の目安｜片付け・解体・売却・税金を積み上げ](../jikkajimai-sohiyou-niigata/)
 - [実家じまいのお金がないとき｜費用を抑える順番と、誰が払うか](../jikkajimai-okane-ga-nai/)
 - [再建築できない実家（新潟）を売る・手放すには](../saikenchiku-fuka-jikka-niigata/)
+- [市街化調整区域の実家（新潟）を売る・建て替えるときの注意](../shigaika-chousei-kuiki-jikka-niigata/)
 
 ## 出典
 
