@@ -320,6 +320,7 @@ affiliate: kaitori
 - [相続登記の義務化と新潟の法務局・相談窓口](../souzoku-touki-niigata-houmukyoku/)
 - [遠方・県外から新潟の実家を片付ける段取り](../enpou-kara-jikkajimai/)
 - [新潟で実家が売れないときにできること](../jikka-urenai-niigata/)
+- [再建築できない実家（新潟）を売る・手放すには](../saikenchiku-fuka-jikka-niigata/)
 
 ## 出典
 

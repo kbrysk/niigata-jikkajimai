@@ -454,6 +454,7 @@ affiliate: kaitori
 - [新潟の実家じまいの進め方](../jikkajimai-tejun-niigata/)
 - [新潟で実家を解体する費用の考え方](../kaitai-hiyou-niigata/)
 - [新潟で実家が売れないときにできること](../jikka-urenai-niigata/)
+- [再建築できない実家（新潟）を売る・手放すには](../saikenchiku-fuka-jikka-niigata/)
 
 ## 出典
 

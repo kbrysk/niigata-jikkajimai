@@ -311,6 +311,7 @@ affiliate: kaitori
 - [実家の解体は着工7日前に届出](../jikka-kaitai-tetsuzuki-niigata/)
 - [新潟で実家が売れないときにできること](../jikka-urenai-niigata/)
 - [相続土地国庫帰属制度を新潟で使うには](../souzoku-tochi-kokko-kizoku-niigata/)
+- [再建築できない実家（新潟）を売る・手放すには](../saikenchiku-fuka-jikka-niigata/)
 
 ## 出典
 

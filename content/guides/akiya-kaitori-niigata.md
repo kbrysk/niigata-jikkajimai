@@ -193,6 +193,7 @@ affiliate: kaitori
 - [長岡市の実家を売る流れは6段階](../nagaoka-shi-jikka-uru/)
 - [新潟で実家が売れないときにできること](../jikka-urenai-niigata/)
 - [共有名義の実家を売る・手放す](../kyouyuu-meigi-jikka-niigata/)
+- [再建築できない実家（新潟）を売る・手放すには](../saikenchiku-fuka-jikka-niigata/)
 
 ## 出典
 
