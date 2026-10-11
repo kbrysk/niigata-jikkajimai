@@ -194,7 +194,7 @@ ${stickyCta && pathname !== "/mitsumori/" ? `<div class="sticky-cta" aria-label=
       <div>
         <h2>運営</h2>
         <ul><li><a href="${url("/about/")}">運営者情報・編集方針</a></li><li><a href="${url("/keisai/")}">業者の方へ（掲載について）</a></li><li><a href="${url("/ad-policy/")}">広告について</a></li><li><a href="${url("/privacy/")}">プライバシーポリシー</a></li><li><a href="${url("/tokusho/")}">特定商取引法に基づく表記</a></li></ul>
-        ${SISTERS.length ? `<p class="small" style="color:rgba(255,255,255,.6);margin-top:12px">姉妹サイト: ${SISTERS.map((x) => `<a href="${esc(x.url)}" rel="noopener">${esc(x.name)}</a>（${esc(x.note)}）`).join(" ／ ")}</p>` : ""}
+        ${SISTERS.length ? `<h2 class="sister-h">姉妹サイト</h2><ul>${SISTERS.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x.name)}</a><span class="small">（${esc(x.note)}）</span></li>`).join("")}</ul>` : ""}
       </div>
     </div>
     <p class="copy">© ${new Date().getFullYear()} ${esc(SITE.operator)}${updated ? ` ・ このページの情報の確認日: ${esc(updated)}` : ""}</p>
@@ -278,6 +278,15 @@ function cityPage(c) {
     { q: `${c.city}の粗大ごみの料金はいくらですか？`, a: s.fee_system || "公式の料金表をご確認ください。" },
     { q: `実家の片付けをまとめて業者に頼むといくらかかりますか？`, a: "新潟県内の業者が公開している料金の目安は、1Kで2.5万〜5万円から、3LDKで15.8万〜23万円からです（みんなの遺品整理 新潟県ページの掲載料金、2026年10月1日確認）。量や搬出条件で変わるため、2〜3社の見積もりを比べることをおすすめします。" },
   ];
+  // その市ならではの内容（content/city_extra/<cityId>.json）。公式の出典つきで、市ごとに別の担当が書く
+  const ex = readJSON(path.join(ROOT, "content/city_extra", `${c.cityId}.json`), null);
+  const chkPlain = (t) => String(t ?? "").replace(/\[要確認[:：]\s*([^\]]+)\]/g, "※確認中（$1）").replace(/\[要確認\]/g, "※確認中");
+  const exFaq = (ex?.faq || []).map((f) => ({ q: f.q, a: chkPlain(f.a), sources: f.sources || [] }));
+  faq.push(...exFaq);
+  if (ex) srcs.push(...new Set([...(ex.localNotes || []).flatMap((n) => n.sources || []), ...(ex.stats || []).map((x) => x.url), ...(ex.windows || []).map((w) => w.url), ...exFaq.flatMap((f) => f.sources)].filter((u) => u && !srcs.includes(u))));
+  const exTop = ex ? `<section id="local" class="local-first"><h2>${esc(c.city)}の実家じまい、まず知っておくこと</h2>${ex.summary ? `<p>${esc(chkPlain(ex.summary))}</p>` : ""}${(ex.firstSteps || []).length ? `<h3>最初にやること</h3><ol>${ex.firstSteps.map((x) => `<li>${esc(chkPlain(x))}</li>`).join("")}</ol>` : ""}</section>` : "";
+  const exLocal = ex && ((ex.localNotes || []).length || (ex.stats || []).length) ? `<section id="jijo"><h2>${esc(c.city)}ならではの事情</h2>${(ex.stats || []).length ? `<h3>数字で見る${esc(c.city)}</h3><table class="fee"><thead><tr><th>項目</th><th>値</th><th>出典</th></tr></thead><tbody>${ex.stats.map((x) => `<tr><td>${esc(x.label)}</td><td>${esc(chkPlain(x.value))}${x.note ? `<br><span class="small">${esc(chkPlain(x.note))}</span>` : ""}</td><td>${x.url ? `<a href="${esc(x.url)}" rel="noopener nofollow">公式</a>` : ""}</td></tr>`).join("")}</tbody></table>` : ""}${(ex.localNotes || []).map((n) => `<h3>${esc(n.h)}</h3>${(n.p || []).map((t) => `<p>${esc(chkPlain(t))}</p>`).join("")}`).join("")}</section>` : "";
+  const exWin = ex && (ex.windows || []).length ? `<section id="madoguchi"><h2>${esc(c.city)}の実家の手続き窓口</h2><p class="small">実家が${esc(c.city)}にある場合の窓口です。管轄は各機関の公式の案内で確かめたものです（確認日: ${esc(ex.checked || TODAY)}）。</p><div class="table-wrap"><table class="fee"><thead><tr><th>手続き</th><th>窓口</th><th>所在地・電話</th></tr></thead><tbody>${ex.windows.map((w) => `<tr><td>${esc(w.what)}</td><td>${w.url ? `<a href="${esc(w.url)}" rel="noopener nofollow">${esc(w.name)}</a>` : esc(w.name)}</td><td>${esc(chkPlain([w.where, w.tel].filter(Boolean).join("／")))}</td></tr>`).join("")}</tbody></table></div></section>` : "";
   const faqLd = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
   const body = `
 <article class="city">
@@ -296,10 +305,11 @@ function cityPage(c) {
     <div class="tile"><p class="k">空き家の解体補助金</p><p class="v">${a.demolition_subsidy?.individual === false ? "個人向けは確認できず" : (a.demolition_subsidy?.name || subsidy.has) ? "あり" : "個人向けは確認できず"}</p><p class="small" style="margin:4px 0 0"><a href="#akiya">制度の内容を見る</a></p></div>
   </div>
 </div></header>
-<nav class="tabs" aria-label="このページの節"><a href="#sodai">粗大ごみ</a><a href="#bring">持ち込み</a><a href="#appliance">家電</a><a href="#akiya">空き家・補助金</a><a href="#gyosha">業者に頼む</a><a href="#faq">質問</a></nav>
+<nav class="tabs" aria-label="このページの節">${ex ? `<a href="#local">まず知ること</a>` : ""}<a href="#sodai">粗大ごみ</a><a href="#bring">持ち込み</a><a href="#appliance">家電</a><a href="#akiya">空き家・補助金</a><a href="#gyosha">業者に頼む</a>${exWin ? `<a href="#madoguchi">窓口</a>` : ""}<a href="#faq">質問</a></nav>
 
 <nav class="toc" aria-label="目次"><ol>
-<li><a href="#sodai">粗大ごみの出し方と料金</a></li><li><a href="#bring">ごみの持ち込み</a></li><li><a href="#appliance">家電リサイクル・市で出せない物</a></li><li><a href="#akiya">空き家・解体の補助金・雪の支援</a></li><li><a href="#gyosha">まとめて頼む場合</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+${ex ? `<li><a href="#local">${esc(c.city)}の実家じまい、まず知っておくこと</a></li>` : ""}<li><a href="#sodai">粗大ごみの出し方と料金</a></li><li><a href="#bring">ごみの持ち込み</a></li><li><a href="#appliance">家電リサイクル・市で出せない物</a></li><li><a href="#akiya">空き家・解体の補助金・雪の支援</a></li>${exLocal ? `<li><a href="#jijo">${esc(c.city)}ならではの事情</a></li>` : ""}${exWin ? `<li><a href="#madoguchi">手続きの窓口</a></li>` : ""}<li><a href="#gyosha">まとめて頼む場合</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+${exTop}
 
 <section id="sodai">
 <h2>${esc(c.city)}の粗大ごみの出し方と料金</h2>
@@ -337,6 +347,8 @@ ${a.snow_support?.name ? `<h3>雪下ろし・除雪の支援</h3><p><strong>${es
 ${a.akiya_consult?.section ? `<p>空き家の相談窓口: ${esc(a.akiya_consult.section)}${a.akiya_consult.url ? `（<a href="${esc(a.akiya_consult.url)}" rel="noopener nofollow">案内ページ</a>）` : ""}</p>` : ""}
 <p class="small">空き家を売る・買い取ってもらう選択肢は<a href="${url("/guide/akiya-uru-kasu-kowasu/")}">売る・貸す・壊すの比べ方</a>で、墓じまいや仏壇の処分は姉妹サイト<a href="https://hakarau.jp/" rel="noopener">ハカラウ</a>で扱っています。</p>
 </section>
+${exLocal}
+${exWin}
 
 <section class="decide" id="decide">
 <h2>自分で出す？ 業者に頼む？ 3つの質問で分かれ目を確認</h2>
@@ -365,7 +377,7 @@ ${ctaBox(c.city)}
 
 <section id="faq" class="faq">
 <h2>よくある質問</h2>
-${faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("")}
+${faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p>${(f.sources || []).length ? `<p class="small">出典: ${f.sources.map((u, i) => `<a href="${esc(u)}" rel="noopener nofollow">公式${f.sources.length > 1 ? i + 1 : ""}</a>`).join("、")}</p>` : ""}</details>`).join("")}
 </section>
 
 <section class="next-read"><h2>同じ${esc(c.area)}エリアの市町村</h2><ul class="city-grid">${(AREA[c.area] || []).filter((id) => id !== c.cityId).map((id) => cityById[id]).filter(Boolean).map((n) => `<li><a href="${url(`/city/${n.cityId}/`)}">${esc(n.city)}</a>${n.core ? '<span class="badge">詳細</span>' : ""}</li>`).join("")}</ul></section>
