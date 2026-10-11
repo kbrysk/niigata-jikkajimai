@@ -11,7 +11,7 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.worksheet.datavalidation import DataValidation
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SITE = "にいがた実家じまい帖"
+SITE = "新潟 実家じまいナビ"
 UPDATED = "2026-10-03"
 ROBOTS = '<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">'
 e = html.escape

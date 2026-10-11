@@ -1,7 +1,7 @@
 ---
 title: 特定商取引法に基づく表記
 slug: tokusho
-description: にいがた実家じまい帖（株式会社Kogera）の特定商取引法に基づく表記。
+description: 新潟 実家じまいナビ（株式会社Kogera）の特定商取引法に基づく表記。
 noindex: true
 ---
 

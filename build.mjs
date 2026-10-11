@@ -1,4 +1,4 @@
-// にいがた実家じまい帖 — 静的サイト生成（依存: marked のみ）
+// 新潟 実家じまいナビ — 静的サイト生成（依存: marked のみ）
 // 使い方: node build.mjs  → dist/ に出力。BASE_PATH 環境変数でサブパス配信（例: /niigata-jikkajimai）。
 import fs from "node:fs";
 import path from "node:path";
@@ -161,7 +161,7 @@ ${ld}
   <div class="wrap">
     <p class="mast-top"><span>新潟県30市町村の粗大ごみ・実家の片付け・空き家の案内</span><span>発行 ${esc(SITE.operator)}</span><span>最終確認 ${esc(latestCheck())}</span></p>
     <div class="mast">
-    <a class="brand" href="${url("/")}"><span class="brand-mark" aria-hidden="true">帖</span><span class="brand-name">${esc(SITE.name)}</span></a>
+    <a class="brand" href="${url("/")}"><span class="brand-mark" aria-hidden="true">ナビ</span><span class="brand-name">${esc(SITE.name)}</span></a>
     <nav class="nav" aria-label="主要メニュー">
       <a href="${url("/city/")}">市町村別ガイド</a>
       <a href="${url("/guide/jikkajimai-tejun-niigata/")}">実家じまいの進め方</a>
@@ -506,7 +506,7 @@ res.sort(function(a,b){return b[0]-a[0];});st.textContent=res.length?res.length+
 out.textContent='';res.slice(0,60).forEach(function(r){var it=r[1],li=document.createElement('li'),ty=document.createElement('span'),a=document.createElement('a'),st=document.createElement('strong'),sd=document.createElement('span');ty.className='ty';ty.textContent=it.y;a.setAttribute('href',it.u);st.textContent=it.t;a.appendChild(st);sd.className='sd';sd.textContent=it.d;li.appendChild(ty);li.appendChild(a);li.appendChild(sd);out.appendChild(li);});}
 fetch('${url("/search.json")}').then(function(r){return r.json();}).then(function(j){ix=j;var m=location.search.match(/[?&]q=([^&]*)/);if(m){inp.value=decodeURIComponent(m[1].replace(/\\+/g,' '));}run();}).catch(function(){st.textContent='検索の読み込みに失敗しました。上の一覧からお探しください。';});
 inp.addEventListener('input',run);document.querySelector('.search-box').addEventListener('submit',function(e){e.preventDefault();run();});})();</script>`;
-  write("/search/", layout({ title: "サイト内を検索", description: "にいがた実家じまい帖のサイト内検索。市町村名や品目、知りたいことで探せます。", pathname: "/search/", body, breadcrumbs: [{ name: "検索", path: "/search/" }], noindex: true }));
+  write("/search/", layout({ title: "サイト内を検索", description: "新潟 実家じまいナビのサイト内検索。市町村名や品目、知りたいことで探せます。", pathname: "/search/", body, breadcrumbs: [{ name: "検索", path: "/search/" }], noindex: true }));
 }
 const searchBox = (label = "このサイトの中を探す") => `<form class="search-box inline" action="${url("/search/")}" method="get" role="search"><label for="q-inline" class="small">${esc(label)}</label><div class="row"><input id="q-inline" name="q" type="search" placeholder="例: 長岡市 持ち込み／仏壇／雪下ろし 補助" autocomplete="off"><button class="btn ghost" type="submit">検索</button></div></form>`;
 
