@@ -430,3 +430,8 @@ h1 .cnt{font-size:15px}
   .card-grid{gap:0}
 }
 @media print{.site-header,.sticky-cta,.cta-box,.nav,.tabs{display:none}body{font-size:12pt}.hero{background:none;color:var(--ink)}}
+/* 広告（A8）の枠。PR を見つけにくくしない */
+.pr-box{border:1px solid var(--line,#d9d9d9);border-left:4px solid var(--mute,#888);padding:14px 16px;margin:28px 0;background:var(--paper-2)}
+.pr-box .pr-label{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;border:1px solid currentColor;padding:0 6px;margin:0 0 8px;color:var(--mute,#666)}
+.pr-box ul{margin:8px 0 8px 1.2em}
+.pr-box li{margin:4px 0}

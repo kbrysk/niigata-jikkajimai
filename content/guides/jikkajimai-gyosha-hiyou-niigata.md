@@ -8,6 +8,7 @@ targetKeywords:
   - 不用品回収 料金 新潟市
   - 片付け業者 長岡 料金
 updated: 2026-10-04
+affiliate: ihinseiri
 ---
 
 # 実家の片付け業者の費用｜新潟県内27社の公開料金を集計

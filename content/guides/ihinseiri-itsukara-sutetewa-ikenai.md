@@ -9,6 +9,7 @@ targetKeywords:
   - 遺言書 勝手に開封
   - 遺品整理 新潟
 updated: 2026-10-03
+affiliate: ihinseiri
 ---
 
 # 遺品整理はいつから始める？捨ててはいけない物のリスト｜四十九日・相続・契約の観点で整理

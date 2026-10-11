@@ -10,6 +10,7 @@ targetKeywords:
   - 新潟 空き家バンク
   - 空き家 長岡
 updated: 2026-10-02
+affiliate: kaitori
 ---
 
 # 長岡市の空き家バンク｜登録の流れ・探し方・家財処分や解体に使える支援

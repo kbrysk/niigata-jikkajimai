@@ -12,6 +12,7 @@ targetKeywords:
   - 空き家 新潟
   - 空き家 長岡
 updated: 2026-10-02
+affiliate: kaitori
 ---
 
 # 新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度

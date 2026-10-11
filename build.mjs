@@ -430,6 +430,31 @@ ${ctaBox()}
   write("/data/sodai-hikaku/", layout({ title: `新潟県30市町村 粗大ごみ手数料・持ち込み比較`, description: `新潟県30市町村の粗大ごみ手数料の仕組みと、処理施設への持ち込み（自己搬入）ルールを公式サイトから転記して比較。処理券の単位、品目ごとの料金例、受け入れ施設と事前連絡の要否を一覧に。`, pathname: "/data/sodai-hikaku/", body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }, { name: "30市町村 粗大ごみ比較", path: "/data/sodai-hikaku/" }], jsonld: [datasetLd], updated: latest }));
 }
 
+// ---------- 広告（A8）の枠 ----------
+// 案件は site.json の affiliates に集約する。記事では front matter の affiliate: kaitori（複数は [a, b]）で指定し、
+// 本文に <!-- affiliate-slot: kaitori --> があればそこへ、無ければ「よくある質問」の見出しの直前へ差し込む。
+// 枠には必ず「PR」を付け、記事の冒頭にも広告を含む旨を1行出す（見つけにくくしない）。
+const AFF = SITE.affiliates || {};
+function prBox(key) {
+  const a = AFF[key];
+  if (!a || !(a.items || []).length) return "";
+  return `<aside class="pr-box" aria-label="広告"><p class="pr-label">PR</p><p>${esc(a.lead)}</p><ul>${a.items.map((it) => `<li><a href="${esc(it.url)}" rel="nofollow sponsored noopener" target="_blank">${esc(it.name)}</a>（${esc(it.what)}）</li>`).join("")}</ul><p class="small">この枠は広告です。リンク先で申し込むと、当サイトに報酬が支払われることがあります。当サイトは特定の会社を推薦しません。条件や費用は、各社のページで確かめてください。</p></aside>`;
+}
+function withAffiliates(html, meta) {
+  const keys = [].concat(meta.affiliate || []).filter((k) => AFF[k]);
+  const placed = new Set();
+  let used = false;
+  let out = html.replace(/<!--\s*affiliate-slot:\s*([a-z_]+)\s*-->/g, (_, k) => { const b = prBox(k); if (b) { used = true; placed.add(k); } return b; });
+  for (const k of keys) {
+    if (placed.has(k)) continue;
+    const box = prBox(k);
+    const at = out.search(/<h2[^>]*>[^<]*よくある質問/);
+    out = at >= 0 ? out.slice(0, at) + box + out.slice(at) : out + box;
+    used = true;
+  }
+  return { html: out, used };
+}
+
 // ---------- ガイド ----------
 function guidePages() {
   for (const g of guides) {
@@ -437,7 +462,8 @@ function guidePages() {
     const artLd = { "@context": "https://schema.org", "@type": "Article", headline: m.title, description: m.description, dateModified: m.updated || TODAY, author: { "@type": "Organization", name: SITE.operator }, publisher: { "@type": "Organization", name: SITE.name }, mainEntityOfPage: abs(`/guide/${g.slug}/`) };
     const cityBox = `<section class="next-read"><h2>市町村ごとの粗大ごみの料金・申し込み・持ち込み先</h2><p class="small">実家のある市町村を選ぶと、粗大ごみの料金表、持ち込み施設、空き家の解体補助金を確認できます。</p><ul class="city-grid">${CORE.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a></li>`).join("")}</ul><p><a href="${url("/city/")}">30市町村すべてを見る →</a> ／ <a href="${url("/data/sodai-hikaku/")}">30市町村の手数料・持ち込み比較表 →</a></p></section>`;
     const roadmapData = g.slug === ROADMAP_SLUG ? readJSON(path.join(ROOT, "content/roadmap/roadmap.json"), null) : null;
-    const body = roadmapData ? renderRoadmap(roadmapData, { esc, url, cities }) + cityBox : `<article class="guide"><header class="page-head">${seal(m.updated || TODAY, "更新")}<p class="eyebrow">実家じまいの進め方</p><h1>${esc(m.title)}</h1><p class="lead">${esc(m.description || "")}</p><p class="small">更新日: ${esc(m.updated || TODAY)}</p></header>${catImg(guideCat(g).id, "lead")}<div class="prose">${g.html}</div>${renderRelatedQa(qaForGuide(qaCats, g.slug), { esc, url })}${cityBox}${ctaBox()}</article>`;
+    const aff = withAffiliates(g.html, m);
+    const body = roadmapData ? renderRoadmap(roadmapData, { esc, url, cities }) + cityBox : `<article class="guide"><header class="page-head">${seal(m.updated || TODAY, "更新")}<p class="eyebrow">実家じまいの進め方</p><h1>${esc(m.title)}</h1><p class="lead">${esc(m.description || "")}</p><p class="small">更新日: ${esc(m.updated || TODAY)}${aff.used ? `／この記事には広告（PR）を含みます。<a href="${url("/ad-policy/")}">広告について</a>` : ""}</p></header>${catImg(guideCat(g).id, "lead")}<div class="prose">${aff.html}</div>${renderRelatedQa(qaForGuide(qaCats, g.slug), { esc, url })}${cityBox}${ctaBox()}</article>`;
     write(`/guide/${g.slug}/`, layout({ title: m.title, description: m.description || "", pathname: `/guide/${g.slug}/`, body, breadcrumbs: [{ name: "実家じまいの進め方", path: "/guide/" }, { name: m.title, path: `/guide/${g.slug}/` }], jsonld: [artLd, ...(() => { const f = roadmapData ? [...(roadmapData.stages || []).flatMap((st) => (st.questions || []).map((q) => ({ q: q.q, a: Array.isArray(q.a) ? q.a.join(" ") : q.a }))), ...(roadmapData.faq || [])] : extractGuideFaq(g.body); return f.length >= 2 ? [qaFaqLd(f)] : []; })()], updated: m.updated }));
   }
   const catOrder = ["susume", "gomi", "gyosha", "akiya", "yuki"];

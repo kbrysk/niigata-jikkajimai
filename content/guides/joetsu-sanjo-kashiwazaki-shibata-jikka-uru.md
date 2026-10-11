@@ -11,6 +11,7 @@ targetKeywords:
   - 三条市 解体 補助金
   - 柏崎市 解体 補助金
 updated: 2026-10-11
+affiliate: kaitori
 ---
 
 # 上越・三条・柏崎・新発田の実家を売る｜4市の窓口と補助の違い

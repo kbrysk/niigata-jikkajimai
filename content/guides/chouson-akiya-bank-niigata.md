@@ -14,6 +14,7 @@ targetKeywords:
   - 関川村 空き家バンク
   - 粟島浦村 空き家
 updated: 2026-10-04
+affiliate: kaitori
 ---
 
 # 新潟の町村10の空き家バンクと相談先｜登録の流れと家財処分・解体の補助

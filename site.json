@@ -32,5 +32,52 @@
       "url": "https://www.fureaino-oka.com/",
       "note": "空き家解体の補助金・全国"
     }
-  ]
+  ],
+  "affiliates": {
+    "kaitori": {
+      "lead": "古い家・再建築できない家・共有名義の家などで、売り先が見つからないときは、買取の査定を受けて比べる方法もあります。",
+      "items": [
+        {
+          "name": "ワケガイ",
+          "what": "訳あり不動産を専門に買い取る会社の査定申込",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4AXDCK+E6TZCY+5J56+5YRHE"
+        },
+        {
+          "name": "ラクウル",
+          "what": "空き家・中古の戸建てを専門に買い取る会社の査定申込",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4BCA7B+CXL1DU+56AO+HV7V6"
+        }
+      ]
+    },
+    "ihinseiri": {
+      "lead": "自分たちで片付けきれないときは、遺品整理の業者の見積もりを取って比べる方法もあります。",
+      "items": [
+        {
+          "name": "遺品整理110番",
+          "what": "遺品整理の業者を紹介するサービスの見積もり依頼",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4AXDCK+AGVG8Y+39GM+5MFLEA"
+        }
+      ]
+    },
+    "kaitai": {
+      "lead": "解体の見積もりは、複数の業者から取って比べます。",
+      "items": [
+        {
+          "name": "解体工事110番",
+          "what": "解体工事の業者を紹介するサービスの見積もり依頼",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4AXDCK+E3UTC2+39GM+1ZG8B6"
+        }
+      ]
+    },
+    "kaitori_mono": {
+      "lead": "着物・骨董・切手など、値段がつくか分からない物は、出張買取の査定を受けてから処分を決める方法もあります。",
+      "items": [
+        {
+          "name": "出張買取ウリエル",
+          "what": "出張買取の無料査定の依頼",
+          "url": "https://px.a8.net/svt/ejp?a8mat=4AXDCK+9OAN7M+5O4W+2N9KIA"
+        }
+      ]
+    }
+  }
 }
