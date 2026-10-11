@@ -40,7 +40,7 @@ ${sits.map((s) => `<div class="rm-sitnote" data-sits="${esc(s.id)}"><p><strong>$
   const overview = `<nav class="rm-flow" aria-label="全体の流れ"><ol>${(data.stages || []).map((st) => `<li><a href="#stage-${st.id}"><span class="rm-n">段階${st.id}</span><strong>${esc(st.title)}</strong><span class="rm-p">${esc(st.period || "")}</span></a></li>`).join("")}</ol></nav>`;
 
   const deadlines = data.deadlines && data.deadlines.length ? `<section id="deadlines" class="rm-sec"><h2>${esc(data.deadlinesTitle || "期限のある手続きの早見表")}</h2>${data.deadlinesLead ? `<p>${inl(data.deadlinesLead)}</p>` : ""}
-<div class="rm-tablewrap"><table class="rm-dl"><thead><tr><th>期限</th><th>手続き</th><th>数え始め</th><th>どこで</th><th>過ぎると</th></tr></thead><tbody>${data.deadlines.map((d) => `<tr${sitAttr(d.situations)}><td class="rm-due">${esc(d.due)}</td><td><strong>${inl(d.label)}</strong>${sitTags(d.situations)}${d.link ? `<br>${link(d.link)}` : ""}</td><td>${inl(d.start || "")}</td><td>${inl(d.where || "")}</td><td>${inl(d.risk || "")}${d.source ? ` <a class="rm-src" href="${esc(d.source)}" rel="noopener nofollow">出典</a>` : ""}</td></tr>`).join("")}</tbody></table></div></section>` : "";
+<div class="rm-tablewrap"><table class="rm-dl"><thead><tr><th>期限</th><th>手続き</th><th>数え始め</th><th>どこで</th><th>過ぎると</th></tr></thead><tbody>${data.deadlines.map((d) => `<tr${sitAttr(d.situations)}><td class="rm-due">${esc(d.due)}</td><td><strong>${inl(d.label)}</strong>${sitTags(d.situations)}${d.link ? `<br>${link(d.link)}` : ""}</td><td data-label="数え始め">${inl(d.start || "")}</td><td data-label="どこで">${inl(d.where || "")}</td><td data-label="過ぎると">${inl(d.risk || "")}${d.source ? ` <a class="rm-src" href="${esc(d.source)}" rel="noopener nofollow">出典</a>` : ""}</td></tr>`).join("")}</tbody></table></div></section>` : "";
 
   const forks = data.forks && data.forks.length ? `<section id="forks" class="rm-sec"><h2>${esc(data.forksTitle || "先に決める分かれ道")}</h2>${data.forksLead ? `<p>${inl(data.forksLead)}</p>` : ""}${data.forks.map((f) => `<div class="rm-fork"${sitAttr(f.situations)}><h3>${esc(f.q)}</h3>${f.why ? `<p>${inl(f.why)}</p>` : ""}<div class="rm-opts">${(f.options || []).map((o) => `<div class="rm-opt"><p class="rm-opt-h">${esc(o.label)}</p><p>${inl(o.then)}</p>${links(o.links)}</div>`).join("")}</div></div>`).join("")}</section>` : "";
 
@@ -86,7 +86,9 @@ ${sits.map((s) => `<div class="rm-sitnote" data-sits="${esc(s.id)}"><p><strong>$
 .rm-detail{margin:4px 0 0 26px;font-size:14.5px;color:var(--ink-2,#333)}.rm-todo .rm-links{margin:4px 0 0 26px}
 .rm-tags{margin-left:6px}.rm-tag{display:inline-block;font-size:11.5px;border:1px solid var(--line-strong,#ccc);color:var(--mute,#666);padding:0 5px;margin:0 3px 0 0;border-radius:2px}
 .rm-links{font-size:14.5px}.rm-links a{margin-right:4px}
-.rm-tablewrap{overflow-x:auto}.rm-dl td,.rm-season td{vertical-align:top}.rm-due{white-space:nowrap;font-weight:600}
+.rm-tablewrap{overflow-x:auto}.rm-dl td,.rm-season td{vertical-align:top}.rm-due{font-weight:600}
+.rm-dl{table-layout:fixed}.rm-dl th:nth-child(1){width:16%}.rm-dl th:nth-child(2){width:22%}.rm-dl th:nth-child(3),.rm-dl th:nth-child(4),.rm-dl th:nth-child(5){width:20.6%}.rm-dl td{overflow-wrap:anywhere}
+@media (max-width:760px){.rm-dl,.rm-dl tbody,.rm-dl tr,.rm-dl td{display:block;width:auto}.rm-dl thead{display:none}.rm-dl tr{border-bottom:1px solid var(--line,#ddd);padding:10px 0}.rm-dl td{border:0;padding:2px 0}.rm-dl td[data-label]::before{content:attr(data-label) "：";color:var(--mute,#666);font-size:13px;font-weight:400}}
 .rm-src{font-size:12px}
 .rm-qa details{border-bottom:1px solid var(--line,#ddd);padding:10px 0}.rm-qa summary{cursor:pointer;font-weight:600}.rm-qa details>div{padding-top:6px}
 .rm-fork{border:1px solid var(--line,#ddd);padding:14px 16px;margin:12px 0}.rm-fork h3{margin-top:0}
