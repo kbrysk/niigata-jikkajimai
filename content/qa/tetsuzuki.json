@@ -41,7 +41,7 @@
         },
         {
           "label": "e-Gov法令検索「戸籍法86条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=322AC0000000224;article=86"
+          "url": "https://laws.e-gov.go.jp/law/322AC0000000224#Mp-At_86"
         }
       ],
       "checked": "2026-10-09"
@@ -100,7 +100,7 @@
         },
         {
           "label": "e-Gov法令検索「戸籍法87条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=322AC0000000224;article=87"
+          "url": "https://laws.e-gov.go.jp/law/322AC0000000224#Mp-At_87"
         }
       ],
       "checked": "2026-10-09"
@@ -412,11 +412,11 @@
         },
         {
           "label": "e-Gov法令検索「民法915条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=915"
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089#Mp-At_915"
         },
         {
           "label": "e-Gov法令検索「民法921条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=921"
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089#Mp-At_921"
         }
       ],
       "checked": "2026-10-09"
@@ -447,7 +447,7 @@
         },
         {
           "label": "e-Gov法令検索「民法915条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=915"
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089#Mp-At_915"
         }
       ],
       "checked": "2026-10-09"
@@ -478,7 +478,7 @@
       "sources": [
         {
           "label": "e-Gov法令検索「民法921条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=921"
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089#Mp-At_921"
         },
         {
           "label": "裁判所「相続の放棄の申述」",
@@ -513,7 +513,7 @@
       "sources": [
         {
           "label": "e-Gov法令検索「民法940条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=940"
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089#Mp-At_940"
         }
       ],
       "checked": "2026-10-09"
@@ -1003,7 +1003,7 @@
         },
         {
           "label": "e-Gov法令検索「民法1005条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=1005"
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089#Mp-At_1005"
         }
       ],
       "checked": "2026-10-09"
@@ -1496,7 +1496,7 @@
       "sources": [
         {
           "label": "e-Gov法令検索「不動産登記法57条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=416AC0000000123;article=57"
+          "url": "https://laws.e-gov.go.jp/law/416AC0000000123#Mp-At_57"
         },
         {
           "label": "長岡市「家屋を取り壊した場合の固定資産税」",
@@ -1504,7 +1504,7 @@
         },
         {
           "label": "e-Gov法令検索「不動産登記法164条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=416AC0000000123;article=164"
+          "url": "https://laws.e-gov.go.jp/law/416AC0000000123#Mp-At_164"
         },
         {
           "label": "法務局（佐賀地方法務局）「不動産登記申請書提出前のチェックリスト（建物滅失）」",
@@ -1608,7 +1608,7 @@
         },
         {
           "label": "e-Gov法令検索「農地法69条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=327AC0000000229;article=69"
+          "url": "https://laws.e-gov.go.jp/law/327AC0000000229#Mp-At_69"
         },
         {
           "label": "長岡市「農林業（届出書様式）」",
@@ -1953,19 +1953,19 @@
       "sources": [
         {
           "label": "e-Gov法令検索「民法939条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=939"
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089#Mp-At_939"
         },
         {
           "label": "e-Gov法令検索「民法887条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=887"
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089#Mp-At_887"
         },
         {
           "label": "e-Gov法令検索「民法889条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=889"
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089#Mp-At_889"
         },
         {
           "label": "e-Gov法令検索「民法915条」",
-          "url": "https://laws.e-gov.go.jp/api/1/articles;lawId=129AC0000000089;article=915"
+          "url": "https://laws.e-gov.go.jp/law/129AC0000000089#Mp-At_915"
         }
       ],
       "checked": "2026-10-09"
