@@ -319,6 +319,7 @@ affiliate: kaitori
 - [新潟県30市町村の空き家解体補助金一覧](../jikkajimai-hojokin-niigata/)
 - [相続登記の義務化と新潟の法務局・相談窓口](../souzoku-touki-niigata-houmukyoku/)
 - [遠方・県外から新潟の実家を片付ける段取り](../enpou-kara-jikkajimai/)
+- [新潟で実家が売れないときにできること](../jikka-urenai-niigata/)
 
 ## 出典
 

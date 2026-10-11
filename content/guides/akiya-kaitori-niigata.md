@@ -191,6 +191,8 @@ affiliate: kaitori
 - [見附市・小千谷市・十日町市の空き家バンク｜登録方法と家財処分・解体の支援](../mitsuke-ojiya-tokamachi-akiya-bank/)
 - [新潟市の実家を売る流れは7段階](../niigata-shi-jikka-uru/)
 - [長岡市の実家を売る流れは6段階](../nagaoka-shi-jikka-uru/)
+- [新潟で実家が売れないときにできること](../jikka-urenai-niigata/)
+- [共有名義の実家を売る・手放す](../kyouyuu-meigi-jikka-niigata/)
 
 ## 出典
 

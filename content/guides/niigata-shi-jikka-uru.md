@@ -386,6 +386,7 @@ affiliate: kaitori
 - [上越市・新潟市の空き家バンク｜登録方法と使える制度](../joetsu-niigata-akiya-bank/)
 - [相続登記は知った日から3年以内に申請](../souzoku-touki-niigata-houmukyoku/)
 - [新潟の実家じまいの進め方｜状況別の手順と期限の早見表](../jikkajimai-tejun-niigata/)
+- [新潟で実家が売れないときにできること](../jikka-urenai-niigata/)
 
 売る前の片付けや残置物の処分で、地元の業者の見積もりが必要なときは、[無料で見積もり相談](../../mitsumori/)もご利用いただけます。
 

@@ -453,6 +453,7 @@ affiliate: kaitori
 - [空き家の雪下ろしは所有者の責任](../fuyu-no-jikkajimai-yukioroshi/)
 - [新潟の実家じまいの進め方](../jikkajimai-tejun-niigata/)
 - [新潟で実家を解体する費用の考え方](../kaitai-hiyou-niigata/)
+- [新潟で実家が売れないときにできること](../jikka-urenai-niigata/)
 
 ## 出典
 

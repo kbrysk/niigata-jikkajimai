@@ -220,6 +220,7 @@ updated: 2026-10-02
 - [自分で出す？業者に頼む？新潟の実家片付け、分かれ目の5つの基準](../jibun-de-dasu-ka-gyousha-ka/)
 - [新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度](../akiya-uru-kasu-kowasu/)
 - [実家じまいが寂しい・つらいとき](../jikkajimai-sabishii-kokoro/)
+- [共有名義の実家を売る・手放す](../kyouyuu-meigi-jikka-niigata/)
 
 ## 出典
 

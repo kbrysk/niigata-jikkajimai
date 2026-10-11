@@ -372,6 +372,7 @@ updated: 2026-10-09
 - [相続した実家を売ったときの税金｜3,000万円控除と新潟の相談窓口](../akiya-baikyaku-zeikin-niigata/)
 - [新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度](../akiya-uru-kasu-kowasu/)
 - [実家じまいのお金がないとき｜費用を抑える順番と、誰が払うか](../jikkajimai-okane-ga-nai/)
+- [共有名義の実家を売る・手放す](../kyouyuu-meigi-jikka-niigata/)
 
 ## 出典
 

@@ -273,6 +273,8 @@ updated: 2026-10-02
 - [新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度](../akiya-uru-kasu-kowasu/)
 - [実家の片付け業者の費用](../jikkajimai-gyosha-hiyou-niigata/)
 - [新潟の実家じまいの総費用の目安](../jikkajimai-sohiyou-niigata/)
+- [新潟で実家が売れないときにできること](../jikka-urenai-niigata/)
+- [相続土地国庫帰属制度を新潟で使うには](../souzoku-tochi-kokko-kizoku-niigata/)
 
 ## 出典
 
