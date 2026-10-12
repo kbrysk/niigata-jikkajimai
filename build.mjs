@@ -621,7 +621,7 @@ function staticPages() {
             { ic: "trash", t: "粗大ごみ早見表", d: "30市町村の申込先・料金の仕組み・持ち込み先", href: url("/tools/sodaigomi-hayamihyo.html") },
           ], "cols3")}</nav>`
       : p.slug === "keisai"
-        ? `<div class="b2b-panel"><h2>読者は「新潟の実家を片付けたい子世代」です</h2><p>県内の「粗大ごみ・ごみ持ち込み」の検索は月およそ8,200回（ラッコキーワード、2026年9月時点の直近3か月平均）。当サイトはこの入口で読者を集め、自分で出しきれない方だけを地元の許可業者に取り次ぎます。</p><div class="grid"><div><p class="n">30<small>市町村</small></p><p class="l">全市町村の粗大ごみ・補助金ページから相談導線</p></div><div><p class="n">${cities.filter((c) => c.core).length}<small>市</small></p><p class="l">料金表・持ち込み施設まで掲載する中核市（長岡・新潟・上越ほか）</p></div><div><p class="n">0<small>社</small></p><p class="l">みんなの遺品整理に載る長岡市の業者数（県内27社中）。中越の業者はまだネットに出ていません</p></div></div></div>`
+        ? `<div class="b2b-panel"><h2>読者は「新潟の実家を片付けたい子世代」です</h2><p>県内の「粗大ごみ・ごみ持ち込み」の検索は月およそ8,200回。当サイトはこの入口で読者を集め、自分で出しきれない方だけを地元の許可業者に取り次ぎます。</p><div class="grid"><div><p class="n">30<small>市町村</small></p><p class="l">全市町村の粗大ごみ・補助金ページから相談導線</p></div><div><p class="n">${cities.filter((c) => c.core).length}<small>市</small></p><p class="l">料金表・持ち込み施設まで掲載する中核市（長岡・新潟・上越ほか）</p></div><div><p class="n">0<small>社</small></p><p class="l">みんなの遺品整理に載る長岡市の業者数（県内27社中）。中越の業者はまだネットに出ていません</p></div></div></div>`
         : "";
     const person = p.slug === "mitsumori"
       ? personSmall("送っていただいた内容は、私が読んでからお返事します。ご本人の了承なく、業者に内容を渡すことはしません。")
