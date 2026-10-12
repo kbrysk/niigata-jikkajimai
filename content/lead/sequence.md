@@ -12,7 +12,7 @@
 # 差し込み（送信時）: {{pdf_url}} ガイドPDF／{{situation_block}} 申し込み時に選んだ状況の「最初にやること」／{{city_block}} 選んだ市町村のページ
 #           {{site}} サイトのURL／{{price_count}} {{price_1k}} {{price_3ldk}} 業者の公開料金（data/price_list_minnano.json から計算）
 # 共通の署名・お問い合わせ・配信停止は、Apps Script が末尾に自動で付ける（sequence.json の footer）。
-approved: true
+approved: false
 # 状況別の「最初にやること」（{{situation_block}}）は、下の「## situation:」のメール用の文を使う（サイトの roadmap.json の文は「〜する」調で長いため、メールでは音読のテンポに合わせて書き直す。事実は roadmap.json と同じにする）。無い状況は roadmap.json の first を使う。
 ---
 
