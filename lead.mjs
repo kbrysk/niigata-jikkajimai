@@ -33,6 +33,11 @@ export function setupLead({ ROOT, SITE, esc, url, abs, cities, prices, roadmap }
     const body = lines.replace(/^offsetDays:.*\n/m, "").replace(/^subject:.*\n/m, "").trim();
     return { step: Number(head.trim()), offsetDays, subject: who(subject), body: who(body) };
   });
+  // 状況別の「最初にやること」のメール用の文（sequence.md の「## situation: s1」）。行頭「- 」が1項目、続く行は字下げして改行を残す
+  const sitMail = {};
+  for (const m of seqSrc.matchAll(/\n## situation:\s*(\w+)\s*\n([\s\S]*?)(?=\n## |$)/g)) {
+    sitMail[m[1]] = m[2].trim().split(/\n(?=- )/).map((it) => it.replace(/^- /, "").split("\n").map((l, i) => (i ? "　　" : "") + l.trim()).join("\n")).filter(Boolean);
+  }
   const cs = prices.companies || [];
   const minOf = (k) => { const v = cs.map((x) => x[k]).filter(Boolean); return v.length ? `${Math.min(...v).toLocaleString("ja-JP")}円` : ""; };
   const sequence = {
@@ -41,7 +46,7 @@ export function setupLead({ ROOT, SITE, esc, url, abs, cities, prices, roadmap }
     senderName: SITE.operatorPerson && SITE.operatorPerson.name ? `${who("{{operator_last}}")}（${SITE.name}）` : SITE.name,
     pdfPath: LEAD_PDF,
     pdfName: "新潟の実家じまい_完全ガイド.pdf",
-    situations: Object.fromEntries((roadmap.situations || []).map((s) => [s.id, { label: s.label, first: s.first || [] }])),
+    situations: Object.fromEntries((roadmap.situations || []).map((s) => [s.id, { label: s.label, first: sitMail[s.id] || s.first || [] }])),
     cities: Object.fromEntries(cities.map((c) => [c.cityId, { name: c.city }])),
     prices: { count: cs.length, k1: minOf("k1"), ldk3: minOf("ldk3") },
     footer: [
@@ -50,7 +55,7 @@ export function setupLead({ ROOT, SITE, esc, url, abs, cities, prices, roadmap }
       SITE.operatorAddress ? `所在地: ${SITE.operatorAddress}` : "",
       // お問い合わせと配信停止は、URLをむき出しにせずテキストリンクにする（Apps Script の toHtml_ が [文字](URL) をリンクにする）
       [SITE.contactFormUrl ? `[お問い合わせ](${SITE.contactFormUrl})` : "", "[配信停止はこちら]({{unsubscribe_url}})"].filter(Boolean).join("　｜　"),
-      "このメールは、「新潟の実家じまい 完全ガイド」のお申し込み時に、メールの受け取りに同意いただいた方にお送りしています。配信はいつでも停止できます。",
+      "このメールは、「新潟の実家じまい 完全ガイド」の\nお申し込み時に、受け取りに同意いただいた方に\nお送りしています。配信はいつでも停止できます。",
     ].filter(Boolean).join("\n"),
     steps,
   };
