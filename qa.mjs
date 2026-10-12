@@ -48,6 +48,8 @@ export function extractGuideFaq(md) {
 
 export function renderQaPages(cats, h) {
   const { esc, url } = h;
+  // アイコンは build.mjs から受け取る（無ければ出さない）
+  const ic = (id, cls) => (h.icon && h.QA_ICON?.[id] ? h.icon(h.QA_ICON[id], cls) : "");
   const inl = (t) => marked.parseInline(String(t ?? ""));
   const link = (L) => {
     if (!L) return "";
@@ -58,8 +60,6 @@ export function renderQaPages(cats, h) {
     return "";
   };
   const style = `<style>
-.qa-cats{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border-top:1px solid var(--line-strong,#ccc)}
-.qa-cats li a{display:block;padding:12px 10px;border-bottom:1px solid var(--line,#ddd);text-decoration:none;color:inherit}.qa-cats strong{display:block}.qa-cats span{font-size:13px;color:var(--mute,#666)}
 .qa-item{border-top:1px solid var(--line,#ddd);padding:16px 0 6px}.qa-item h2,.qa-item h3{font-size:17px;margin:0 0 6px;line-height:1.5}
 .qa-a{font-weight:600}.qa-a::before{content:"答え ";color:var(--mute,#666);font-weight:400;font-size:13px}
 .qa-meta{font-size:13px;color:var(--mute,#666)}.qa-meta a{margin-right:6px}
@@ -69,13 +69,13 @@ export function renderQaPages(cats, h) {
   const total = cats.reduce((n, c) => n + c.items.length, 0);
   // 索引
   const idxBody = `${style}<article class="page"><header class="page-head"><p class="eyebrow">よくある疑問</p><h1>実家じまいの疑問${total}問（新潟版）</h1><p class="lead">新潟の実家じまいで迷いやすい疑問に、公式の情報をもとに短く答えます。答えの1文目だけで結論が分かるように書き、詳しい手順は各記事につないでいます。</p></header>
-<ul class="qa-cats">${cats.map((c) => `<li><a href="${url(`/qa/${c.id}/`)}"><strong>${esc(c.title)}（${c.items.length}問）</strong><span>${esc(c.lead || "")}</span></a></li>`).join("")}</ul>
-${cats.map((c) => `<section><h2><a href="${url(`/qa/${c.id}/`)}">${esc(c.title)}</a></h2><ul class="qa-list">${c.items.map((it) => `<li><a href="${url(`/qa/${c.id}/`)}#q-${esc(it.id)}">${esc(strip(it.q))}</a></li>`).join("")}</ul></section>`).join("")}
+<ul class="qa-cats qn-grid cols4">${cats.map((c) => `<li><a href="${url(`/qa/${c.id}/`)}"><span class="ic-badge">${ic(c.id)}</span><span class="qn-t"><strong>${esc(c.title)}（${c.items.length}問）</strong><span>${esc(c.lead || "")}</span></span></a></li>`).join("")}</ul>
+${cats.map((c) => `<section><h2>${ic(c.id) ? `<span class="h-ic">${ic(c.id)}</span>` : ""}<a href="${url(`/qa/${c.id}/`)}">${esc(c.title)}</a></h2><ul class="qa-list">${c.items.map((it) => `<li><a href="${url(`/qa/${c.id}/`)}#q-${esc(it.id)}">${esc(strip(it.q))}</a></li>`).join("")}</ul></section>`).join("")}
 </article>`;
   pages.push({ path: "/qa/", title: `実家じまいの疑問${total}問｜新潟の手続き・片付け・空き家`, description: `新潟の実家じまいで迷いやすい疑問${total}問に、公式の情報をもとに短く答えます。家族の決め方、期限のある手続き、仕分け、ごみと業者、空き家の売却・解体・補助金、冬の管理まで。`, body: idxBody, jsonld: [], crumbs: [{ name: "よくある疑問", path: "/qa/" }] });
   // 分類ごと
   for (const c of cats) {
-    const body = `${style}<article class="page qa"><header class="page-head"><p class="eyebrow">よくある疑問</p><h1>${esc(c.title)}（${c.items.length}問）</h1><p class="lead">${inl(c.lead || "")}</p><p class="small">更新日: ${esc(c.updated || "")}</p></header>
+    const body = `${style}<article class="page qa"><header class="page-head"><p class="eyebrow cat-eyebrow"><a href="${url("/qa/")}">${ic(c.id, "ic sm")}よくある疑問</a></p><h1>${esc(c.title)}（${c.items.length}問）</h1><p class="lead">${inl(c.lead || "")}</p><p class="small">更新日: ${esc(c.updated || "")}</p></header>
 <nav class="toc" aria-label="質問の一覧"><ol>${c.items.map((it) => `<li><a href="#q-${esc(it.id)}">${esc(strip(it.q))}</a></li>`).join("")}</ol></nav>
 ${c.items.map((it) => `<section class="qa-item" id="q-${esc(it.id)}"><h2>${esc(strip(it.q))}</h2><p class="qa-a">${inl(it.a)}</p>${(it.detail || []).map((p) => `<p>${inl(p)}</p>`).join("")}<p class="qa-meta">${(it.links || []).map(link).join("")}${(it.sources || []).map((s) => `<a href="${esc(s.url)}" rel="noopener nofollow">出典: ${esc(s.label)}</a>`).join("")}${it.checked ? `確認日 ${esc(it.checked)}` : ""}</p></section>`).join("")}
 ${c.id === "tetsuzuki" || c.id === "seizen" ? "" : `<aside class="qa-cta" style="border:1px solid var(--navy,#1d3557);padding:12px 16px;margin:20px 0;background:var(--navy-10,#eef2f7)"><p style="margin:0 0 4px"><strong>片付け・遺品整理・空き家の売却や解体を、まとめて相談できます</strong></p><p style="margin:0 0 6px">新潟県内の許可を持つ地元の業者に取り次ぎます。相談と訪問見積もりは無料で、断っても費用はかかりません。</p><p style="margin:0"><a class="btn" href="${url("/mitsumori/")}">無料で見積もり相談</a></p></aside>`}<p><a href="${url("/qa/")}">疑問の一覧に戻る</a>　<a href="${url("/guide/jikkajimai-tejun-niigata/")}">実家じまいの進め方を見る</a></p></article>`;
@@ -93,5 +93,5 @@ export function qaForGuide(cats, slug, limit = 6) {
 export function renderRelatedQa(list, h) {
   if (!list.length) return "";
   const { esc, url } = h;
-  return `<section class="next-read rel-qa"><h2>この記事に関係する疑問</h2><ul class="guide-list compact">${list.map(({ cat, it }) => `<li><a href="${url(`/qa/${cat.id}/`)}#q-${esc(it.id)}"><strong>${esc(strip(it.q))}</strong><span>${esc(strip(it.a))}</span></a></li>`).join("")}</ul><p class="small"><a href="${url("/qa/")}">疑問Q&amp;Aの一覧を見る</a></p></section>`;
+  return `<section class="next-read rel-qa"><h2>${h.icon ? h.icon("qa", "ic sm") : ""}この記事に関係する疑問</h2><ul class="guide-list compact">${list.map(({ cat, it }) => `<li><a href="${url(`/qa/${cat.id}/`)}#q-${esc(it.id)}"><strong>${esc(strip(it.q))}</strong><span>${esc(strip(it.a))}</span></a></li>`).join("")}</ul><p class="small"><a href="${url("/qa/")}">疑問Q&amp;Aの一覧を見る</a></p></section>`;
 }

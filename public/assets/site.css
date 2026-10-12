@@ -1,7 +1,9 @@
 /* 新潟 実家じまいナビ — デザイン v3「帳面」（2026-10-02）
    役所の窓口でもらう、よくできた案内冊子。白い紙に墨の文字、藍の罫、数字は等幅。
    やらないこと: 角丸カード・影・グラデ・eyebrow・装飾番号・✓リスト・ピル・ホバーで動く・統計タイル。
-   残すもの: 即答→自己判定→相談の構造、確認日と出典、モバイル下部の固定バー1本。 */
+   残すもの: 即答→自己判定→相談の構造、確認日と出典、モバイル下部の固定バー1本。
+   2026-10-12 追記: トップは文字だけだと行き先が想像しにくいため（大久保さん依頼）、線のアイコン・目的別の入口・状況カード・段階の流れ図を入れた。
+   色は藍と生成りのまま。影・グラデ・動くホバーは引き続き使わない。 */
 :root{
   --paper:#fcfbf8; --paper-2:#f4f2ec; --line:#d9d7d0; --line-strong:#1f2328;
   --ink:#1f2328; --ink-2:#3b414a; --mute:#5f6670; --mute-2:#8a9099;
@@ -232,12 +234,68 @@ dl.kv dd{margin:0}
 .data-note{display:flex;flex-wrap:wrap;gap:4px 0;font-size:14px;color:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0;margin:36px 0 0;max-width:none}
 .data-note span+span::before{content:"／";margin:0 10px;color:var(--line)}
 .data-note b{font-variant-numeric:tabular-nums;color:var(--ink)}
-.steps{list-style:none;padding:0;margin:40px 0 0;max-width:none;display:grid;grid-template-columns:repeat(3,1fr);gap:0 32px;border-top:2px solid var(--line-strong)}
-.steps li{display:block;padding:16px 0 12px}
-.steps .num{display:none}
-.steps h2{margin:0 0 6px;font-size:18px;border:0;padding:0}
-.steps p{margin:2px 0 8px;font-size:14.5px;color:var(--ink-2)}
-.steps a{font-size:14.5px;font-weight:700}
+.data-note .ic{width:18px;height:18px;color:var(--navy);margin-right:6px;vertical-align:-4px}
+/* 線のアイコン（build.mjs の icon()） */
+.ic{display:inline-block;width:22px;height:22px;vertical-align:middle;flex:none}
+.ic.sm{width:16px;height:16px}
+.ic-badge{display:inline-grid;place-items:center;width:44px;height:44px;flex:none;border-radius:8px;background:var(--navy-10);color:var(--navy)}
+.ic-badge .ic{width:24px;height:24px}
+/* トップ: 知りたいことから探す（目的別の入口） */
+.qn-grid{list-style:none;padding:0;margin:12px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.qn-grid a{display:flex;gap:12px;align-items:flex-start;height:100%;padding:14px 14px 13px;border:1px solid var(--line);border-radius:8px;background:#fff;text-decoration:none;color:var(--ink)}
+.qn-grid a:hover{border-color:var(--navy);background:var(--navy-10)}
+.qn-grid a:hover .ic-badge{background:var(--navy);color:#fff}
+.qn-t strong{display:block;font-size:15.5px;line-height:1.45}
+.qn-t span{display:block;font-size:12.5px;color:var(--mute);line-height:1.6;margin-top:3px}
+/* トップ: 状況カードと段階の流れ */
+.sh-step{display:flex;align-items:center;gap:10px;margin:22px 0 10px;font-weight:700;font-size:15.5px}
+.sh-n{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;font-size:13.5px;font-variant-numeric:tabular-nums;flex:none}
+.start-sits{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.start-sits a{display:flex;flex-direction:column;height:100%;padding:16px 16px 14px;border:1px solid var(--line);border-top:3px solid var(--navy);border-radius:8px;background:#fff;text-decoration:none;color:var(--ink)}
+.start-sits a:hover{border-color:var(--navy);background:var(--navy-10)}
+.start-sits .ic-badge{margin-bottom:10px}
+.start-sits strong{display:block;font-size:16px;line-height:1.5;margin-bottom:4px}
+.start-sits .sd{display:block;font-size:13.5px;color:var(--mute);line-height:1.65}
+.start-sits .go{display:flex;align-items:center;gap:4px;margin-top:auto;padding-top:10px;font-size:13.5px;font-weight:700;color:var(--navy)}
+.flow{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:none}
+.flow li{position:relative}
+.flow li+li::before{content:"";position:absolute;top:27px;left:calc(-50% + 34px);right:calc(50% + 34px);border-top:2px dashed var(--line-strong);opacity:.35}
+.flow a{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 8px 6px;text-decoration:none;color:var(--ink)}
+.flow .fl-ic{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;border:2px solid var(--navy);background:#fff;color:var(--navy);position:relative;z-index:1}
+.flow .fl-ic .ic{width:26px;height:26px}
+.flow a:hover .fl-ic{background:var(--navy);color:#fff}
+.flow a:hover strong{text-decoration:underline}
+.flow .fl-n{font-size:12px;color:var(--mute);margin-top:8px;letter-spacing:.06em}
+.flow strong{font-size:15px;line-height:1.45}
+.flow .fl-p{font-size:12.5px;color:var(--mute);line-height:1.55;margin-top:4px}
+.sh-more{margin-top:16px}
+/* 見出しにアイコンを添える（市町村の地域・ガイドの分類） */
+.dir-col h3{display:flex;align-items:center;gap:6px}
+.dir-col h3 .ic{width:16px;height:16px;color:var(--navy)}
+.dir-col h3 small{margin-left:2px}
+.guide-cats h3 a{display:inline-flex;align-items:center;gap:8px}
+.guide-cats h3 .ic{width:20px;height:20px;color:var(--navy)}
+@media (max-width:1000px){.qn-grid{grid-template-columns:repeat(2,1fr)}.start-sits{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){
+  .flow{grid-template-columns:1fr;gap:0}
+  .flow li+li::before{top:-14px;bottom:auto;left:27px;right:auto;height:28px;border-top:0;border-left:2px dashed var(--line-strong)}
+  .flow li+li{margin-top:14px}
+  .flow a{display:grid;grid-template-columns:56px 1fr;gap:0 12px;align-items:start;text-align:left;padding:0}
+  .flow .fl-ic{grid-row:1/4}
+  .flow .fl-n,.flow strong,.flow .fl-p{grid-column:2;margin:0}
+}
+@media (max-width:560px){
+  .qn-grid{grid-template-columns:1fr 1fr;gap:8px}
+  .qn-grid a{align-items:center;gap:10px;padding:10px}
+  .ic-badge{width:38px;height:38px}
+  .qn-t strong{font-size:14px}
+  .qn-t span{display:none}
+  .start-sits{grid-template-columns:1fr}
+  .start-sits a{display:grid;grid-template-columns:44px 1fr;gap:0 12px}
+  .start-sits .ic-badge{grid-row:1/4;margin:0}
+  .start-sits .go{padding-top:6px}
+  .data-note{flex-direction:column;gap:6px}.data-note span+span::before{content:none}
+}
 .home-section{max-width:none;margin-top:56px}
 .home-section>h2{font-size:24px}
 .home-section .sub{margin:-6px 0 12px;color:var(--mute);font-size:14.5px}
@@ -247,7 +305,7 @@ dl.kv dd{margin:0}
 .promise{list-style:none;padding:0;margin:0}
 .promise li{border-bottom:1px solid var(--line);padding:10px 0;font-size:14.5px}
 .promise li:first-child{border-top:1px solid var(--line)}
-@media (max-width:900px){.hero .inner{grid-template-columns:1fr;gap:28px}.hero h1{font-size:31px}.steps{grid-template-columns:1fr}.steps li+li{border-top:1px solid var(--line)}.why{grid-template-columns:1fr}}
+@media (max-width:900px){.hero .inner{grid-template-columns:1fr;gap:28px}.hero h1{font-size:31px}.why{grid-template-columns:1fr}}
 
 /* 写真枠（運営者の実写1枚だけ。ファイルが無ければ出ない） */
 .photo{margin:36px 0 0;max-width:var(--wide)}
@@ -437,3 +495,80 @@ h1 .cnt{font-size:15px}
 .pr-box li{margin:4px 0}
 .site-footer .sister-h{margin-top:18px}.site-footer .small{color:var(--ink-2)}
 .win{table-layout:fixed}.win th:nth-child(1){width:36%}.win th:nth-child(2){width:24%}.win th:nth-child(3){width:40%}.win td{overflow-wrap:anywhere}
+
+/* ---------- 2026-10-12 下層ページにも同じ道案内（アイコン・入口カード・流れ図）を広げる ---------- */
+/* ヘッダー: メニューにアイコン、いまいる場所に下線。スマートフォンは題字の下にアイコンのメニュー */
+.nav a{display:inline-flex;align-items:center;gap:5px}
+.nav a .ic{color:var(--navy)}
+.nav a[aria-current="page"]{box-shadow:inset 0 -2px 0 var(--navy);font-weight:700}
+.nav-m{display:none}
+@media (max-width:760px){
+  .nav-m{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line)}
+  .nav-m a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:7px 2px 6px;font-size:11.5px;line-height:1.3;color:var(--ink);text-decoration:none;white-space:nowrap}
+  .nav-m a+a{border-left:1px solid var(--line)}
+  .nav-m .ic{width:20px;height:20px;color:var(--navy)}
+  .nav-m a[aria-current="page"]{background:var(--navy-10);font-weight:700;box-shadow:inset 0 -2px 0 var(--navy)}
+}
+/* 見出しの頭のアイコン */
+.h-ic{display:inline-grid;place-items:center;width:34px;height:34px;margin-right:10px;border-radius:8px;background:var(--navy-10);color:var(--navy);vertical-align:-6px}
+.h-ic .ic{width:20px;height:20px}
+h2 .h-ic+a{text-decoration:none;color:inherit}
+.h3-ic{display:flex;align-items:center;gap:6px}.h3-ic .ic{color:var(--navy)}
+.next-read h2 .ic,.rel-qa h2 .ic{color:var(--navy);margin-right:6px;vertical-align:-3px}
+.cat-eyebrow a{display:inline-flex;align-items:center;gap:6px;color:var(--navy);text-decoration:none;font-weight:700}
+.cat-eyebrow a:hover{text-decoration:underline}
+/* 入口カードの列数違い */
+.qn-grid.cols3{grid-template-columns:repeat(3,1fr)}
+.qn-grid.cols4{grid-template-columns:repeat(4,1fr)}
+.area-nav,.cat-nav{margin-top:26px}
+.sec-nav-h{font-size:13.5px;font-weight:700;color:var(--mute);margin:0 0 8px}
+@media (max-width:1000px){.qn-grid.cols3,.qn-grid.cols4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.qn-grid.cols3,.qn-grid.cols4{grid-template-columns:1fr 1fr}}
+/* ページ内の目次: アイコン付きのタイル */
+.sec-nav{max-width:var(--wide);margin:26px 0 0}
+.sec-nav ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px}
+.sec-nav a{display:flex;align-items:center;gap:10px;height:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);text-decoration:none;font-size:14px;line-height:1.45}
+.sec-nav a .ic{width:22px;height:22px;color:var(--navy);flex:none}
+.sec-nav a:hover{border-color:var(--navy);background:var(--navy-10)}
+@media (max-width:560px){.sec-nav ol{grid-template-columns:1fr 1fr;gap:6px}.sec-nav a{padding:9px 10px;font-size:13px;gap:8px}.sec-nav a .ic{width:18px;height:18px}}
+/* 市町村ページの即答・自己判定 */
+.answer .k{display:flex;align-items:center;gap:6px}
+.answer .k .ic{color:var(--navy)}
+.q-n{display:inline-grid;place-items:center;width:24px;height:24px;margin-right:8px;border-radius:50%;background:var(--ink);color:#fff;font-size:13px;vertical-align:1px}
+/* 市町村の一覧: 罫の目録から、押せるタイルへ */
+.city-grid{gap:8px;border-top:0;grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+.city-grid li{border:1px solid var(--line);border-radius:8px;background:#fff;padding:9px 12px}
+.city-grid li:has(a:hover){border-color:var(--navy);background:var(--navy-10)}
+.city-grid .badge{font-size:11px;padding:0 6px;border-radius:3px;background:var(--paper-2);color:var(--mute)}
+.city-grid .badge::before{content:none}
+.city-grid .badge.sub{background:var(--navy-10);color:var(--navy)}
+@media (max-width:560px){.city-grid{grid-template-columns:1fr 1fr}}
+/* 比較ページの数字にアイコン */
+.report-stats .stat .ic{width:18px;height:18px;color:var(--navy);margin-right:6px;vertical-align:-3px}
+.report-stats .stat .n{display:inline}
+/* 業者ページ: 見積もりで確認する6つのこと */
+.check-cards{list-style:none;padding:0;margin:12px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.check-cards li{position:relative;display:grid;grid-template-columns:44px 1fr;gap:0 12px;align-items:start;margin:0;padding:14px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.check-cards p{margin:0;font-size:14.5px;line-height:1.7}
+.check-cards .cc-n{position:absolute;left:8px;top:8px;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--ink);color:#fff;font-size:11.5px;font-weight:700}
+@media (max-width:640px){.check-cards{grid-template-columns:1fr}}
+/* 相談ページの安心材料 */
+.trust-strip .ic{display:block;width:24px;height:24px;color:var(--navy);margin-bottom:4px}
+/* 比較ページの数字: 3つのタイルに */
+.report-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;border:0;padding:0}
+.report-stats .stat{display:block;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.report-stats .stat+.stat::before{content:none}
+.report-stats .stat .ic{display:block;width:24px;height:24px;margin:0 0 6px}
+.report-stats .stat .n{display:block;font-size:22px;line-height:1.3}
+.report-stats .stat .n small{font-size:13px;color:var(--mute)}
+.report-stats .l{display:block;margin:4px 0 0;font-size:13px;color:var(--mute);line-height:1.6}
+@media (max-width:640px){.report-stats{grid-template-columns:1fr}}
+/* ガイド記事の目次 */
+.art-toc{max-width:var(--read);margin:22px 0 8px;padding:14px 16px 12px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.art-toc .sec-nav-h{display:flex;align-items:center;gap:6px}.art-toc .sec-nav-h .ic{color:var(--navy)}
+.art-toc ol{list-style:none;padding:0;margin:0;columns:2;column-gap:20px}
+.art-toc li{break-inside:avoid}
+.art-toc a{display:flex;gap:8px;align-items:baseline;padding:4px 0;color:var(--ink);text-decoration:none;font-size:14px;line-height:1.55}
+.art-toc a:hover span+span{text-decoration:underline}
+.art-toc .at-n{display:inline-grid;place-items:center;flex:none;width:20px;height:20px;border-radius:50%;background:var(--navy-10);color:var(--navy);font-size:11.5px;font-weight:700;transform:translateY(-1px)}
+@media (max-width:640px){.art-toc ol{columns:1}}

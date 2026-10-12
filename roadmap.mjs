@@ -7,6 +7,10 @@ export const ROADMAP_SLUG = "jikkajimai-tejun-niigata";
 
 export function renderRoadmap(data, h) {
   const { esc, url, cities } = h;
+  // アイコンは build.mjs から受け取る（トップの状況カード・流れ図と同じもの）
+  const icon = h.icon || (() => "");
+  const SIT_ICON = h.SIT_ICON || {};
+  const STAGE_ICON = h.STAGE_ICON || [];
   const sits = data.situations || [];
   const sitIds = sits.map((s) => s.id);
   const inl = (t) => marked.parseInline(String(t ?? ""));
@@ -32,12 +36,12 @@ export function renderRoadmap(data, h) {
   const picker = `<section class="rm-pick" aria-label="あなたの状況">
 <h2 class="rm-pick-h">いまの状況を選んでください</h2>
 <p class="small">選ぶと、その状況に関係する手順と期限だけを表示します。選ばなければ、すべてを表示します。</p>
-<div class="rm-sit" role="group" aria-label="状況">${sits.map((s) => `<button type="button" data-sit="${esc(s.id)}" aria-pressed="false"><strong>${esc(s.label)}</strong><span>${esc(s.hint || "")}</span></button>`).join("")}<button type="button" data-sit="" aria-pressed="true" class="rm-all"><strong>すべて表示</strong><span>まだ決まっていない・全体を見たい</span></button></div>
+<div class="rm-sit" role="group" aria-label="状況">${sits.map((s) => `<button type="button" data-sit="${esc(s.id)}" aria-pressed="false"><span class="ic-badge">${icon(SIT_ICON[s.id] || "route")}</span><strong>${esc(s.label)}</strong><span>${esc(s.hint || "")}</span></button>`).join("")}<button type="button" data-sit="" aria-pressed="true" class="rm-all"><span class="ic-badge">${icon("route")}</span><strong>すべて表示</strong><span>まだ決まっていない・全体を見たい</span></button></div>
 <div class="rm-city"><label for="rm-city-sel">実家のある市町村</label><select id="rm-city-sel"><option value="">選ぶと、ごみ・補助金のリンクがその市町村のページになります</option>${(cities || []).map((c) => `<option value="${esc(c.cityId)}">${esc(c.city)}</option>`).join("")}</select></div>
 ${sits.map((s) => `<div class="rm-sitnote" data-sits="${esc(s.id)}"><p><strong>${esc(s.label)}の場合:</strong> ${inl(s.lead)}</p>${s.first && s.first.length ? `<ol class="rm-first">${s.first.map((f) => `<li>${inl(f)}</li>`).join("")}</ol>` : ""}</div>`).join("")}
 </section>`;
 
-  const overview = `<nav class="rm-flow" aria-label="全体の流れ"><ol>${(data.stages || []).map((st) => `<li><a href="#stage-${st.id}"><span class="rm-n">段階${st.id}</span><strong>${esc(st.title)}</strong><span class="rm-p">${esc(st.period || "")}</span></a></li>`).join("")}</ol></nav>`;
+  const overview = `<nav class="rm-flow" aria-label="全体の流れ"><p class="sec-nav-h">全体の流れ（${(data.stages || []).length}段階）</p><ol class="flow">${(data.stages || []).map((st, i) => `<li><a href="#stage-${st.id}"><span class="fl-ic">${icon(STAGE_ICON[i] || "doc")}</span><span class="fl-n">段階${st.id}</span><strong>${esc(st.title)}</strong>${st.period ? `<span class="fl-p">${esc(st.period)}</span>` : ""}</a></li>`).join("")}</ol></nav>`;
 
   const deadlines = data.deadlines && data.deadlines.length ? `<section id="deadlines" class="rm-sec"><h2>${esc(data.deadlinesTitle || "期限のある手続きの早見表")}</h2>${data.deadlinesLead ? `<p>${inl(data.deadlinesLead)}</p>` : ""}
 <div class="rm-tablewrap"><table class="rm-dl"><thead><tr><th>期限</th><th>手続き</th><th>数え始め</th><th>どこで</th><th>過ぎると</th></tr></thead><tbody>${data.deadlines.map((d) => `<tr${sitAttr(d.situations)}><td class="rm-due">${esc(d.due)}</td><td><strong>${inl(d.label)}</strong>${sitTags(d.situations)}${d.link ? `<br>${link(d.link)}` : ""}</td><td data-label="数え始め">${inl(d.start || "")}</td><td data-label="どこで">${inl(d.where || "")}</td><td data-label="過ぎると">${inl(d.risk || "")}${d.source ? ` <a class="rm-src" href="${esc(d.source)}" rel="noopener nofollow">出典</a>` : ""}</td></tr>`).join("")}</tbody></table></div></section>` : "";
@@ -52,7 +56,7 @@ ${sits.map((s) => `<div class="rm-sitnote" data-sits="${esc(s.id)}"><p><strong>$
     const niigata = st.niigata && st.niigata.length ? `<h3>新潟の窓口と制度</h3><ul class="rm-ni">${st.niigata.map((n) => `<li${sitAttr(n.situations)}>${inl(n.text)}${n.link ? ` ${link(n.link)}` : ""}</li>`).join("")}</ul>` : "";
     const done = st.doneWhen ? `<p class="rm-done"><strong>この段階が終わった目安:</strong> ${inl(st.doneWhen)}</p>` : "";
     const cta = st.cta ? `<aside class="rm-cta"><p><strong>${esc(st.cta.title)}</strong></p><p>${inl(st.cta.text)}</p><p>${link(st.cta.link)}${st.cta.tool ? `　${link(st.cta.tool)}` : ""}</p></aside>` : "";
-    return `<section id="stage-${st.id}" class="rm-sec rm-stage"${sitAttr(st.situations)}><p class="rm-eyebrow">段階${st.id}</p><h2>${esc(st.title)}</h2>${st.goal ? `<p class="rm-goal">${inl(st.goal)}</p>` : ""}${meta ? `<dl class="rm-meta">${meta}</dl>` : ""}${(st.body || []).map((p) => `<p>${inl(p)}</p>`).join("")}<h3>やること</h3><ol class="rm-todo">${todo}</ol>${costs}${qa}${niigata}${done}${cta}${st.next && st.next.length ? `<h3>この段階で読む記事</h3>${links(st.next)}` : ""}</section>`;
+    return `<section id="stage-${st.id}" class="rm-sec rm-stage"${sitAttr(st.situations)}><div class="rm-stage-h"><span class="fl-ic">${icon(STAGE_ICON[(data.stages || []).indexOf(st)] || "doc")}</span><div><p class="rm-eyebrow">段階${st.id}</p><h2>${esc(st.title)}</h2></div></div>${st.goal ? `<p class="rm-goal">${inl(st.goal)}</p>` : ""}${meta ? `<dl class="rm-meta">${meta}</dl>` : ""}${(st.body || []).map((p) => `<p>${inl(p)}</p>`).join("")}<h3 class="h3-ic">${icon("check", "ic sm")}やること</h3><ol class="rm-todo">${todo}</ol>${costs}${qa}${niigata}${done}${cta}${st.next && st.next.length ? `<h3>この段階で読む記事</h3>${links(st.next)}` : ""}</section>`;
   }).join("");
 
   const season = data.season && data.season.length ? `<section id="season" class="rm-sec"><h2>${esc(data.seasonTitle || "新潟では、いつやるか")}</h2>${data.seasonLead ? `<p>${inl(data.seasonLead)}</p>` : ""}<div class="rm-tablewrap"><table class="rm-season"><thead><tr><th>時期</th><th>新潟で起きること</th><th>やると良いこと</th></tr></thead><tbody>${data.season.map((m) => `<tr><td class="rm-due">${esc(m.when)}</td><td>${inl(m.happens)}</td><td>${inl(m.todo)}${m.source ? ` <a class="rm-src" href="${esc(m.source)}" rel="noopener nofollow">出典</a>` : ""}</td></tr>`).join("")}</tbody></table></div></section>` : "";
@@ -61,20 +65,31 @@ ${sits.map((s) => `<div class="rm-sitnote" data-sits="${esc(s.id)}"><p><strong>$
 
   const faq = data.faq && data.faq.length ? `<section id="faq" class="faq rm-sec"><h2>よくある質問</h2>${data.faq.map((f) => `<details${sitAttr(f.situations)}><summary>${esc(f.q)}</summary><p>${inl(f.a)}</p></details>`).join("")}</section>` : "";
   const sources = data.sources && data.sources.length ? `<section class="sources"><h2>出典</h2><ul>${data.sources.map((s) => `<li>${esc(s.label)}${s.checked ? `（確認日: ${esc(s.checked)}）` : ""} <a href="${esc(s.url)}" rel="noopener nofollow">${esc(s.url)}</a></li>`).join("")}</ul></section>` : "";
-  const toc = `<nav class="toc rm-toc" aria-label="目次"><ol>${data.deadlines && data.deadlines.length ? `<li><a href="#deadlines">期限の早見表</a></li>` : ""}${data.forks && data.forks.length ? `<li><a href="#forks">先に決める分かれ道</a></li>` : ""}${(data.stages || []).map((st) => `<li><a href="#stage-${st.id}">段階${st.id}　${esc(st.title)}</a></li>`).join("")}${data.family ? `<li><a href="#family">${esc(data.family.title)}</a></li>` : ""}${season ? `<li><a href="#season">新潟では、いつやるか</a></li>` : ""}${faq ? `<li><a href="#faq">よくある質問</a></li>` : ""}</ol></nav>`;
+  const tocItems = [
+    data.deadlines && data.deadlines.length && ["deadlines", "calendar", "期限の早見表"],
+    data.forks && data.forks.length && ["forks", "route", "先に決める分かれ道"],
+    ...(data.stages || []).map((st, i) => [`stage-${st.id}`, STAGE_ICON[i] || "doc", `段階${st.id}　${st.title}`]),
+    data.family && ["family", "people", data.family.title],
+    season && ["season", "snow", "新潟では、いつやるか"],
+    faq && ["faq", "qa", "よくある質問"],
+  ].filter(Boolean);
+  const toc = `<nav class="sec-nav rm-toc" aria-label="目次"><p class="sec-nav-h">このページの目次</p><ol>${tocItems.map(([id, ic, t]) => `<li><a href="#${id}">${icon(ic)}<span>${esc(t)}</span></a></li>`).join("")}</ol></nav>`;
 
   const style = `<style>
 .rm-pick{border:1px solid var(--line-strong,#ccc);padding:18px 18px 8px;margin:18px 0 26px;background:var(--paper-2,#fafafa)}
 .rm-pick-h{font-size:18px;margin:0 0 4px}
 .rm-sit{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin:12px 0}
-.rm-sit button{text-align:left;font:inherit;padding:10px 12px;border:1px solid var(--line-strong,#ccc);background:var(--paper,#fff);color:var(--ink,#222);cursor:pointer;border-radius:4px}
-.rm-sit button strong{display:block;font-size:15px}.rm-sit button span{display:block;font-size:12.5px;color:var(--mute,#666);margin-top:2px}
+.rm-sit button{display:grid;grid-template-columns:40px 1fr;gap:0 10px;align-items:start;text-align:left;font:inherit;padding:12px;border:1px solid var(--line,#ddd);border-radius:8px;background:#fff;color:var(--ink,#222);cursor:pointer}
+.rm-sit button .ic-badge{grid-row:1/3;width:40px;height:40px}
+.rm-sit button strong{display:block;font-size:15px;line-height:1.45}.rm-sit button>span:not(.ic-badge){display:block;font-size:12.5px;color:var(--mute,#666);margin-top:2px;line-height:1.5}
+.rm-sit button:hover{border-color:var(--navy,#1d3557)}
 .rm-sit button[aria-pressed="true"]{border-color:var(--navy,#1d3557);box-shadow:inset 0 0 0 1px var(--navy,#1d3557);background:var(--navy-10,#eef2f7)}
+.rm-sit button[aria-pressed="true"] .ic-badge{background:var(--navy,#1d3557);color:#fff}
 .rm-city{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:4px 0 12px}.rm-city label{font-weight:600;font-size:14px}.rm-city select{font:inherit;font-size:14px;padding:6px;max-width:100%}
 .rm-sitnote{border-top:1px solid var(--line,#ddd);padding-top:10px;margin-bottom:8px}.rm-first{margin:6px 0 0}
-.rm-flow ol{list-style:none;padding:0;margin:0 0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border-top:2px solid var(--ink,#222)}
-.rm-flow li a{display:block;padding:10px 10px 12px;border-bottom:1px solid var(--line,#ddd);text-decoration:none;color:inherit}
-.rm-flow .rm-n{display:block;font-size:12px;color:var(--mute,#666)}.rm-flow strong{display:block;font-size:15px}.rm-flow .rm-p{display:block;font-size:12.5px;color:var(--mute,#666)}
+.rm-flow{margin:8px 0 26px}
+.rm-stage-h{display:flex;gap:14px;align-items:center;margin-bottom:6px}.rm-stage-h h2{margin:0;padding:0;border:0}
+.rm-stage-h .fl-ic{display:grid;place-items:center;width:52px;height:52px;flex:none;border-radius:50%;border:2px solid var(--navy,#1d3557);color:var(--navy,#1d3557);background:#fff}.rm-stage-h .fl-ic svg{width:24px;height:24px}
 .rm-sec{border-top:1px solid var(--line-strong,#ccc);padding-top:22px;margin-top:30px}
 .rm-eyebrow{font-size:12.5px;letter-spacing:.08em;color:var(--mute,#666);margin:0}
 .rm-goal{font-size:16.5px;font-weight:600}
