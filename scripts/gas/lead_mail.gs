@@ -19,6 +19,13 @@ function prop_(k, d) { var v = PropertiesService.getScriptProperties().getProper
 function webAppUrl_() { return prop_('WEBAPP_URL', ScriptApp.getService().getUrl()); }
 function siteUrl_() { return String(prop_('SITE_URL', 'https://niigata-jikkajimai.com')).replace(/\/$/, ''); }
 
+// 「送信済み」の列を読む。1通目だけ送った行は "0" を書くが、スプレッドシートが数値の 0 に変えてしまう。
+// 以前は `値 || ''` で読んでいたため 0 が「未送信」になり、1通目が毎時くり返し送られた（2026-10-13 の不具合）。数値の 0 も「0を送信済み」と読む
+function sentList_(v) {
+  if (v === '' || v === null || v === undefined) return [];
+  return String(v).split(',').map(function (x) { return x.trim(); }).filter(String);
+}
+
 function sheet_() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sh = ss.getSheetByName(SHEET) || ss.insertSheet(SHEET);
@@ -101,7 +108,7 @@ function runSteps() {
   for (var i = 0; i < rows.length && budget > 0; i++) {
     var row = rows[i];
     if (row[C.unsub - 1] || row[C.status - 1] !== '配信中') continue;
-    var sent = String(row[C.sent - 1] || '').split(',').filter(String);
+    var sent = sentList_(row[C.sent - 1]);
     // 間隔は「前の1通を送った日」から数える（承認前に申し込んだ人に、承認後まとめて届かないように）
     var last = row[C.last - 1] ? new Date(row[C.last - 1]) : null;
     for (var s = 0; s < seq.steps.length; s++) {
@@ -124,7 +131,7 @@ function sendStep_(r, index) {
   var v = sh.getRange(r, 1, 1, HEAD.length).getValues()[0];
   if (v[C.unsub - 1]) return;
   var st = seq.steps[index];
-  var sent = String(v[C.sent - 1] || '').split(',').filter(String);
+  var sent = sentList_(v[C.sent - 1]);
   if (!st || sent.indexOf(String(st.step)) >= 0) return;
   var vars = varsFor_(seq, v[C.sit - 1], v[C.city - 1], webAppUrl_() + '?u=' + v[C.token - 1]);
   var mail = compose_(seq, st, vars);
@@ -134,7 +141,7 @@ function sendStep_(r, index) {
   }
   MailApp.sendEmail(v[C.email - 1], mail.subject, mail.text, opts);
   sent.push(String(st.step));
-  sh.getRange(r, C.sent).setValue(sent.join(','));
+  sh.getRange(r, C.sent).setNumberFormat('@').setValue(sent.join(',')); // 文字として保存（数値に変えさせない）
   sh.getRange(r, C.last).setValue(new Date());
 }
 
