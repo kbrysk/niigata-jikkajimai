@@ -168,7 +168,7 @@ ${ld}
       <a href="${url("/gyosha/")}">業者の料金と選び方</a>
       <a href="${url("/qa/")}">疑問Q&amp;A</a>
       <a href="${url("/search/")}">検索</a>
-      <a class="cta" href="${url("/mitsumori/")}">無料で見積もり相談</a>
+      <a class="cta" href="${url("/mitsumori/")}">見積もり・相談</a>
     </nav>
     </div>
   </div>
@@ -178,7 +178,7 @@ ${pathname === "/" ? "" : `<nav class="crumbs wrap" aria-label="パンくず"><o
 ${body}
 </main>
 ${body.includes('class="lead-form"') ? formScript : ""}
-${stickyCta && pathname !== "/mitsumori/" ? `<div class="sticky-cta" aria-label="相談"><a class="btn ghost" href="${url("/city/")}">市町村を選ぶ</a><a class="btn" href="${url("/mitsumori/")}">無料で見積もり相談</a></div>` : ""}
+${stickyCta && pathname !== "/mitsumori/" ? `<div class="sticky-cta" aria-label="相談"><a class="btn ghost" href="${url("/city/")}">市町村を選ぶ</a><a class="btn" href="${url("/mitsumori/")}">見積もり・相談</a></div>` : ""}
 <footer class="site-footer">
   <div class="wrap">
     <div class="cols">
@@ -189,7 +189,7 @@ ${stickyCta && pathname !== "/mitsumori/" ? `<div class="sticky-cta" aria-label=
       </div>
       <div>
         <h2>読む</h2>
-        <ul><li><a href="${url("/city/")}">市町村別ガイド（30市町村）</a></li><li><a href="${url("/data/sodai-hikaku/")}">30市町村 粗大ごみ手数料・持ち込み比較</a></li><li><a href="${url("/guide/")}">実家じまいの進め方と費用</a></li><li><a href="${url("/gyosha/")}">業者の料金と選び方</a></li><li><a href="${url("/mitsumori/")}">無料で見積もり相談</a></li></ul>
+        <ul><li><a href="${url("/city/")}">市町村別ガイド（30市町村）</a></li><li><a href="${url("/data/sodai-hikaku/")}">30市町村 粗大ごみ手数料・持ち込み比較</a></li><li><a href="${url("/guide/")}">実家じまいの進め方と費用</a></li><li><a href="${url("/gyosha/")}">業者の料金と選び方</a></li><li><a href="${url("/mitsumori/")}">見積もり・相談</a></li></ul>
       </div>
       <div>
         <h2>運営</h2>
@@ -239,11 +239,11 @@ function write(pathname, html) {
 const ctaBox = (city) => `
 <aside class="cta-box">
   <h2>${city ? `${esc(city)}の実家の片付けを、まとめて頼みたい方へ` : "自分で出すのが難しいときは、地元の許可業者に"}</h2>
-  <p>量が多い、遠方で何度も帰れない、積雪期で搬出が難しい。そんなときは、新潟県内で一般廃棄物の収集運搬許可を持つ地元業者に見積もりを依頼できます。</p>
-  <ul class="cta-points"><li>相談・訪問見積もりは無料</li><li>運営者（長岡市在住）が内容を見て1〜2社を選ぶ</li><li>原則2営業日以内に連絡</li><li>断っても費用はかからない</li></ul>
-  ${personSmall("内容は私が確認してから、地元の業者1〜2社に取り次ぎます。")}
-  <p class="cta-actions"><a class="btn" href="${url("/mitsumori/")}">無料で見積もり相談する</a> <a class="btn ghost" href="${url("/gyosha/")}">料金の目安と選び方を見る</a></p>
-  <p class="cta-note">※ 依頼が成立した場合、業者から紹介料・掲載料を受け取ることがあります。利用者の料金に上乗せはありません（<a href="${url("/ad-policy/")}">広告について</a>）。</p>
+  <p>量が多い、遠方で何度も帰れない、積雪期で搬出が難しい。そんなときは、業者の見積もりを取って比べてから頼む方法があります。</p>
+  <ul class="cta-points"><li>見積もりサービス（PR）で業者を比べる</li><li>運営者への無料相談（原則2営業日以内に返信）</li><li>市町村の許可業者一覧の見方も案内</li><li>相談しても依頼の義務はない</li></ul>
+  ${personSmall("相談の内容は私が読んで、合う窓口や頼み方をお返しします。")}
+  <p class="cta-actions"><a class="btn" href="${url("/mitsumori/")}">見積もり・相談の窓口を見る</a> <a class="btn ghost" href="${url("/gyosha/")}">料金の目安と選び方を見る</a></p>
+  <p class="cta-note">※ 見積もりサービスの枠は広告です。リンク先で申し込むと、当サイトに報酬が支払われることがあります（<a href="${url("/ad-policy/")}">広告について</a>）。</p>
 </aside>
 ${fs.existsSync(path.join(ROOT, "content/pages/tools.md")) ? `<p class="tools-line small">自分で進める方へ: <a href="${url("/tools/")}">実家じまいチェックリスト・業者見積もり比較シート・粗大ごみ早見表（無料・登録不要）</a></p>` : ""}`;
 
@@ -365,8 +365,8 @@ ${exWin}
   <div class="col"><h3>市の粗大ごみで出す</h3><p class="num">${feeMin != null ? `${feeMin.toLocaleString("ja-JP")}<small>円〜／点</small>` : "公式料金表"}</p><p>安いが、申し込み・搬出・立ち会いはすべて自分で行う。収集日は申し込みから数日〜2週間。</p></div>
   <div class="col"><h3>許可業者にまとめて頼む</h3><p class="num">${proK1 ? `${(proK1 / 10000).toFixed(1).replace(/\.0$/, "")}<small>万円〜（1K）</small>` : "見積もり"}${proLdk3 ? `<small>／3LDK ${(proLdk3 / 10000).toFixed(1).replace(/\.0$/, "")}万円〜</small>` : ""}</p><p>県内${cs.length}社の公開料金の下限。搬出・分別・運搬まで任せられ、帰省1回で終えられることが多い。</p></div>
 </div>
-<p class="cta-actions"><a class="btn" href="${url("/mitsumori/")}">無料で見積もり相談する</a> <a class="btn ghost" href="${url("/guide/jibun-de-dasu-ka-gyousha-ka/")}">分かれ目の5つの基準を読む</a></p>
-<script>(function(){var r=document.getElementById('decide-result');if(!r)return;var box=r.parentNode;box.addEventListener('change',function(){var qs=['q1','q2','q3'],n=0,done=0;qs.forEach(function(q){var el=box.querySelector('input[name='+q+']:checked');if(el){done++;n+=Number(el.value);}});if(done<3)return;var v=r.querySelector('.verdict'),h=r.querySelector('.hint');if(n>=2){r.setAttribute('data-side','pro');v.textContent='業者にまとめて頼む方が現実的です（'+n+'/3項目が「頼む」側）';h.innerHTML='搬出条件か通える回数のどちらかで詰まりやすい状態です。相談は無料で、運営者が内容を見て地元の許可業者1〜2社を選びます。<a href="${url("/mitsumori/")}">無料で見積もり相談する</a>';}else{r.setAttribute('data-side','self');v.textContent='市の粗大ごみで自分で出せる範囲です（'+n+'/3項目が「頼む」側）';h.innerHTML='上の料金表と申し込み方法のとおり進めれば大丈夫です。持ち込みが使えるなら収集を待たずに片付きます。大型家電は<a href="#appliance">家電リサイクル</a>を確認してください。';}});})();</script>
+<p class="cta-actions"><a class="btn" href="${url("/mitsumori/")}">見積もり・相談の窓口を見る</a> <a class="btn ghost" href="${url("/guide/jibun-de-dasu-ka-gyousha-ka/")}">分かれ目の5つの基準を読む</a></p>
+<script>(function(){var r=document.getElementById('decide-result');if(!r)return;var box=r.parentNode;box.addEventListener('change',function(){var qs=['q1','q2','q3'],n=0,done=0;qs.forEach(function(q){var el=box.querySelector('input[name='+q+']:checked');if(el){done++;n+=Number(el.value);}});if(done<3)return;var v=r.querySelector('.verdict'),h=r.querySelector('.hint');if(n>=2){r.setAttribute('data-side','pro');v.textContent='業者にまとめて頼む方が現実的です（'+n+'/3項目が「頼む」側）';h.innerHTML='搬出条件か通える回数のどちらかで詰まりやすい状態です。業者の見積もりを比べて頼む方法と、運営者への無料相談があります。<a href="${url("/mitsumori/")}">見積もり・相談の窓口を見る</a>';}else{r.setAttribute('data-side','self');v.textContent='市の粗大ごみで自分で出せる範囲です（'+n+'/3項目が「頼む」側）';h.innerHTML='上の料金表と申し込み方法のとおり進めれば大丈夫です。持ち込みが使えるなら収集を待たずに片付きます。大型家電は<a href="#appliance">家電リサイクル</a>を確認してください。';}});})();</script>
 </section>
 
 <section id="gyosha">
@@ -514,7 +514,7 @@ function partnerPages() {
 <section><h2>運営者が確認したこと</h2><p>${esc(p.intro || "")}</p>
 <dl class="kv"><dt>拠点</dt><dd>${esc(p.base)}</dd><dt>対応市町村</dt><dd>${cityNames.map((c) => `<a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a>`).join("・")}</dd><dt>許可</dt><dd>${esc(permitLabel(p))}${p.permit?.note ? `。${esc(p.permit.note)}` : ""}</dd><dt>できること</dt><dd>${(p.services || []).map(esc).join("、")}</dd><dt>遠方からの依頼</dt><dd>${p.remote?.key_handover ? "鍵の受け渡しに対応" : "鍵の受け渡しは要相談"}${p.remote?.photo_report ? "。作業前後の写真報告あり" : ""}${p.remote?.note ? `。${esc(p.remote.note)}` : ""}</dd><dt>見積もり</dt><dd>${esc(p.estimate || "要確認")}</dd>${p.price_note ? `<dt>料金の目安</dt><dd>${esc(p.price_note)}</dd>` : ""}${p.met_date ? `<dt>確認日</dt><dd>${esc(p.met_date)}（運営者が訪問）</dd>` : ""}</dl>
 <p class="small">この欄は運営者が直接会って確認した事実だけを書いています。口コミ・体験談は載せません。料金は見積もりで確定します。</p></section>
-<section><h2>この業者に見積もりを依頼する</h2><p>下の相談フォームから送っていただくと、運営者が内容を確認してこの業者に取り次ぎます。相談・訪問見積もりは無料で、断っても費用はかかりません。</p><p class="cta-actions"><a class="btn" href="${url("/mitsumori/")}?gyosha=${encodeURIComponent(p.id)}">無料で見積もり相談する</a> <a class="btn ghost" href="${url("/gyosha/")}">料金の目安と選び方を見る</a></p></section>
+<section><h2>この業者に見積もりを依頼する</h2><p>下の相談フォームから送っていただくと、運営者が内容を確認してこの業者に取り次ぎます。相談・訪問見積もりは無料で、断っても費用はかかりません。</p><p class="cta-actions"><a class="btn" href="${url("/mitsumori/")}?gyosha=${encodeURIComponent(p.id)}">見積もり・相談の窓口を見る</a> <a class="btn ghost" href="${url("/gyosha/")}">料金の目安と選び方を見る</a></p></section>
 </article>`;
     write(`/gyosha/${p.id}/`, layout({ title: `${p.name}（${p.base}）｜実家の片付け・遺品整理`, description: `${p.name}は${p.base}を拠点に${cityNames.map((c) => c.city).join("・")}に対応。${permitLabel(p)}。運営者が訪問して確認した内容を掲載。`, pathname: `/gyosha/${p.id}/`, body, breadcrumbs: [{ name: "業者の料金と選び方", path: "/gyosha/" }, { name: p.name, path: `/gyosha/${p.id}/` }], jsonld: [ld], updated: p.met_date }));
   }
@@ -527,7 +527,7 @@ function searchPage() {
     ...guides.map((g) => ({ t: g.meta.title, d: g.meta.description || "", k: (g.meta.targetKeywords || []).join(" "), u: url(`/guide/${g.slug}/`), y: "ガイド" })),
     { t: "新潟県30市町村 粗大ごみ手数料・持ち込みルール比較", d: "手数料の仕組みと自己搬入のルールを一覧で", k: "比較 一覧 手数料 持ち込み 自己搬入", u: url("/data/sodai-hikaku/"), y: "比較表" },
     { t: "新潟の遺品整理・実家片付け業者の料金と選び方", d: "県内業者の公開料金の集計と、許可業者の見分け方", k: "業者 料金 遺品整理 許可 見積もり", u: url("/gyosha/"), y: "ページ" },
-    { t: "見積もり相談（無料）", d: "地元の許可業者に無料で見積もりを依頼", k: "相談 見積もり 無料 業者", u: url("/mitsumori/"), y: "ページ" },
+    { t: "見積もり・相談（無料）", d: "見積もりの比べ方と、運営者への無料相談", k: "相談 見積もり 無料 業者", u: url("/mitsumori/"), y: "ページ" },
     ...published.map((p) => ({ t: p.name, d: `${p.base}拠点の掲載業者`, k: (p.cities || []).map((id) => cityById[id]?.city).filter(Boolean).join(" ") + " 業者", u: url(`/gyosha/${p.id}/`), y: "業者" })),
   ];
   write("/search.json", JSON.stringify(index));
@@ -555,16 +555,17 @@ function staticPages() {
     const m = p.meta;
     // 意図別の補助ブロック: 相談ページには「無料・2営業日・運営者が選別」を先に、業者向けページには読者と需要の根拠を先に出す
     const trust = p.slug === "mitsumori"
-      ? `<div class="trust-strip"><div><strong>相談・訪問見積もりは無料</strong>断っても費用はかかりません</div><div><strong>原則2営業日以内に連絡</strong>運営者（長岡市在住）が内容を確認します</div><div><strong>許可業者だけを紹介</strong>一般廃棄物収集運搬の許可、または許可業者との提携を確認した先のみ</div></div>`
+      ? `<div class="trust-strip"><div><strong>運営者への相談は無料</strong>相談しても依頼の義務はありません</div><div><strong>原則2営業日以内に返信</strong>運営者（長岡市在住）が内容を読んでお返しします</div><div><strong>見積もりを比べたい方へ</strong>「PR」と書いた枠は見積もりサービスの広告です</div></div>`
       : p.slug === "keisai"
         ? `<div class="b2b-panel"><h2>読者は「新潟の実家を片付けたい子世代」です</h2><p>県内の「粗大ごみ・ごみ持ち込み」の検索は月およそ8,200回（ラッコキーワード、2026年9月時点の直近3か月平均）。当サイトはこの入口で読者を集め、自分で出しきれない方だけを地元の許可業者に取り次ぎます。</p><div class="grid"><div><p class="n">30<small>市町村</small></p><p class="l">全市町村の粗大ごみ・補助金ページから相談導線</p></div><div><p class="n">${cities.filter((c) => c.core).length}<small>市</small></p><p class="l">料金表・持ち込み施設まで掲載する中核市（長岡・新潟・上越ほか）</p></div><div><p class="n">0<small>社</small></p><p class="l">みんなの遺品整理に載る長岡市の業者数（県内27社中）。中越の業者はまだネットに出ていません</p></div></div></div>`
         : "";
     const person = p.slug === "mitsumori"
-      ? personSmall("送っていただいた内容は、私が読んでから業者に渡します。業者に直接届く仕組みではありません。")
+      ? personSmall("送っていただいた内容は、私が読んでからお返事します。ご本人の了承なく、業者に内容を渡すことはしません。")
       : p.slug === "about"
         ? `<div class="person lg"><div><p><strong>${esc(PERSON.name)}</strong></p><p class="small">${esc(PERSON.role)}</p><p>墓じまいの「ハカラウ」、空き家解体補助金の「ふれあいの丘」を運営する中で、「親の家をどう片付けるか」の相談が多いことから、住んでいる新潟に絞ってこのサイトを始めました。</p></div></div>`
         : "";
-    const body = `<article class="page"><header class="page-head"><h1>${esc(m.title)}</h1>${m.description ? `<p class="lead">${esc(m.description)}</p>` : ""}</header>${p.slug === "mitsumori" ? catImg("gomi", "lead") : p.slug === "keisai" ? catImg("gyosha", "lead") : ""}${trust}${person}<div class="prose">${p.html}</div>${m.cta === "true" ? ctaBox() : ""}</article>`;
+    const pAff = withAffiliates(p.html, m);
+    const body = `<article class="page"><header class="page-head"><h1>${esc(m.title)}</h1>${m.description ? `<p class="lead">${esc(m.description)}</p>` : ""}${pAff.used ? `<p class="small">このページには広告（PR）を含みます。<a href="${url("/ad-policy/")}">広告について</a></p>` : ""}</header>${p.slug === "mitsumori" ? catImg("gomi", "lead") : p.slug === "keisai" ? catImg("gyosha", "lead") : ""}${trust}${person}<div class="prose">${pAff.html}</div>${m.cta === "true" ? ctaBox() : ""}</article>`;
     write(`/${p.slug}/`, layout({ title: m.title, description: m.description || m.title, pathname: `/${p.slug}/`, body, breadcrumbs: [{ name: m.title, path: `/${p.slug}/` }], noindex: m.noindex === "true", stickyCta: p.slug !== "mitsumori" && p.slug !== "keisai" }));
   }
 }
