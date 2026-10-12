@@ -11,7 +11,7 @@ targetKeywords:
   - 無許可 不用品回収 リスク
   - 遺品整理 見積り 確認項目
   - 新潟 実家 片付け 業者 選び方
-updated: 2026-10-02
+updated: 2026-10-12
 affiliate: katazuke
 ---
 
@@ -164,7 +164,7 @@ affiliate: katazuke
 2. **許可の対象地域を確認する。** 長岡市の一覧には、「川口地域に限り収集できる業者」と「川口地域を除く市内全域を収集できる業者」の区別があります。実家のある地域に対応しているかを確認します。
 3. **許可の種類を、業者に尋ねる。** 「一般廃棄物の収集運搬の許可はありますか」と聞き、市の許可であることを確認します。
 4. **ごみの運搬を誰が行うかを尋ねる。** 遺品整理の会社が自社で運搬するのか、別の会社に任せるのかを尋ねます。運搬を行う会社が許可業者か、確認してください。
-5. **分からないときは、市の担当課に問い合わせる。** 長岡市は環境事業課（0258-24-2837）、新潟市は廃棄物対策課（025-226-1407）です。
+5. **分からないときは、市の担当課に問い合わせる。** 長岡市は環境事業課（0258-24-2837）、新潟市は廃棄物対策課（025-226-1403）です。
 
 一覧に載っていない場合は、依頼する前に、市の担当課へ確認してください。ホームページに「許可あり」と書いてあるだけでは、確認になりません。
 
@@ -265,6 +265,7 @@ affiliate: katazuke
 - 長岡市「粗大ごみ（事前申込制）戸別収集」 https://www.city.nagaoka.niigata.jp/kurashi/cate08/sodai-gomi.html
 - 長岡市「処理施設への持ち込み」 https://www.city.nagaoka.niigata.jp/kurashi/cate08/mochi-gomi.html
 - 新潟市「一般家庭から排出されるごみを自ら運搬することができないときは」 https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/unpankonnan.html
+- 新潟市「無許可の不用品回収業者にご注意ください」（更新2026年2月24日） https://www.city.niigata.lg.jp/kurashi/gomi/oshirase/mukyokahuyouhin.html（確認日: 2026-10-12）
 - 新潟市「ごみの自己搬入について」 https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/zikohan/carry.html
 - 新潟市「粗大ごみ」 https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/niigata/discard.html
 - 新潟市「テレビ・冷蔵庫等の家電リサイクル法対象品目」 https://www.city.niigata.lg.jp/kurashi/gomi/gomishigen/gomidasi/syusyunasi/kaden.html

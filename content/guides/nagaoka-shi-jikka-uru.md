@@ -458,6 +458,7 @@ affiliate: kaitori
 - [市街化調整区域の実家（新潟）を売る・建て替えるときの注意](../shigaika-chousei-kuiki-jikka-niigata/)
 - [新潟の空き家3,000万円控除は2026年末が期限の人も](../akiya-3000man-kigen-gyakusan-niigata/)
 - [新潟の実家の購入価格が不明でも売却額の5%を取得費にできる](../shutokuhi-fumei-jikka-baikyaku-niigata/)
+- [新潟の実家を売る費用は4つに分けて出す](../jikka-uru-hiyou-souichiran-niigata/)
 
 ## 出典
 

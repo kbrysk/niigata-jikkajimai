@@ -9,7 +9,7 @@ targetKeywords:
   - 空き家 火災保険
   - 空き家 点検 項目
   - 空き家 冬 水抜き
-updated: 2026-10-02
+updated: 2026-10-12
 affiliate: akiya_fuyu
 ---
 
@@ -133,6 +133,8 @@ affiliate: akiya_fuyu
 
 この記事の本文では、特定の会社や商品を推薦しません（「PR」と書いた枠は広告です）。[要確認: 契約中の保険の空き家の扱い]
 
+空き家の火災保険が切れたとき・雪の被害の扱いは[新潟の空き家の火災保険が切れたとき](../akiya-kasai-hoken-hairenai-niigata/)で、損害保険協会などの公的資料をもとに整理しています。
+
 ## 月1回の点検項目
 
 公式ページで項目として確認できたのは、換気、通水、庭木、雪、漏水の確認です。それ以外は、一般的な確認例です。
@@ -215,6 +217,7 @@ affiliate: akiya_fuyu
 - [新潟の実家じまいの手順｜何から始める？7つの順番と期限の早見表](../jikkajimai-tejun-niigata/)
 - [新潟県30市町村の雪下ろし・除雪支援一覧](../yukioroshi-shien-niigata-30/)
 - [空き家の冬支度チェックリスト（新潟版）](../akiya-fuyu-kanri-checklist/)
+- [新潟の空き家の火災保険が切れたとき](../akiya-kasai-hoken-hairenai-niigata/)
 
 ## 出典
 
