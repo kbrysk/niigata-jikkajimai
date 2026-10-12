@@ -5,6 +5,8 @@ import path from "node:path";
 import { marked } from "marked";
 import { fileURLToPath } from "node:url";
 import { renderRoadmap, ROADMAP_SLUG } from "./roadmap.mjs";
+import { icon } from "./icons.mjs";
+import { setupLead, LEAD_PATH } from "./lead.mjs";
 import { loadQa, faqLd as qaFaqLd, extractGuideFaq, renderQaPages, qaForGuide, renderRelatedQa } from "./qa.mjs";
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
@@ -69,34 +71,7 @@ const guideItem = (g, withDesc = true) => `<li><a href="${url(`/guide/${g.slug}/
 const latestCheck = () => cities.map((c) => c.sodai?.checked_date).filter(Boolean).sort().pop() || TODAY;
 // 確認印: 朱の角印。サイト全体の署名として、市町村・比較・ガイドの各ページの決まった位置に押す
 const seal = (date, label = "公式サイトで確認") => `<span class="seal" role="img" aria-label="${esc(label)} ${esc(date)}"><span class="seal-l">${esc(label)}</span><span class="seal-d">${esc(date)}</span></span>`;
-// 線のアイコン（24px格子・currentColor）。絵文字は使わない（_qa_site.py が絵文字を指摘する）。トップの道案内で使う（2026-10-12 大久保さん依頼）
-const ICONS = {
-  pin: '<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>',
-  chart: '<path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/>',
-  route: '<path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/>',
-  calc: '<rect width="16" height="20" x="4" y="2" rx="2"/><path d="M8 6h8"/><path d="M16 14v4"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/>',
-  house: '<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/>',
-  snow: '<path d="M2 12h20"/><path d="M12 2v20"/><path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/><path d="m16 4-4 4-4-4"/><path d="m8 20 4-4 4 4"/>',
-  qa: '<circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/>',
-  tool: '<rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/>',
-  trash: '<path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M10 11v6"/><path d="M14 11v6"/>',
-  truck: '<path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/>',
-  people: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
-  building: '<path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/>',
-  calendar: '<path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h5"/><path d="M17.5 17.5 16 16.3V14"/><circle cx="16" cy="16" r="6"/>',
-  talk: '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
-  doc: '<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/>',
-  box: '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7 12 12l8.7-5"/><path d="M12 22V12"/>',
-  shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>',
-  arrow: '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
-  search: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
-  plug: '<path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/>',
-  phone: '<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/>',
-  yen: '<path d="m6 3 6 8 6-8"/><path d="M12 11v10"/><path d="M7 13h10"/><path d="M7 17h10"/>',
-  book: '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
-  check: '<circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>',
-};
-const icon = (name, cls = "ic") => `<svg class="${cls}" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${ICONS[name] || ""}</svg>`;
+// 線のアイコンは icons.mjs（PDFと共用）。絵文字は使わない（_qa_site.py が絵文字を指摘する）。2026-10-12 大久保さん依頼で導入
 const CAT_ICON = { susume: "route", gomi: "trash", gyosha: "truck", akiya: "house", yuki: "snow" };
 // 状況（roadmap.json の situations）と段階（stages）のアイコン。トップと進め方ページで同じものを使う
 const SIT_ICON = { s1: "people", s2: "building", s3: "calendar", s4: "house" };
@@ -165,6 +140,8 @@ const pages = fs.existsSync(path.join(ROOT, "content/pages"))
 
 // ---------- レイアウト ----------
 const css = fs.readFileSync(path.join(ROOT, "public/assets/site.css"), "utf8");
+// 登録特典PDF（完全ガイド）の申し込み導線: 申し込みページ・追従CTA・ステップメールの本文（lead.mjs）
+const LEAD = setupLead({ ROOT, SITE, esc, url, abs, cities, prices, roadmap: readJSON(path.join(ROOT, "content/roadmap/roadmap.json"), {}) });
 // ヘッダーのメニュー。スマートフォンでは題字の下にアイコン付きで1列に並べる（short はその表示名）
 const NAV = [
   { href: "/city/", t: "市町村別ガイド", short: "市町村", ic: "pin", on: /^\/(city|data)\// },
@@ -231,7 +208,8 @@ ${pathname === "/" ? "" : `<nav class="crumbs wrap" aria-label="パンくず"><o
 ${body}
 </main>
 ${body.includes('class="lead-form"') ? formScript : ""}
-${stickyCta && pathname !== "/mitsumori/" ? `<div class="sticky-cta" aria-label="相談"><a class="btn ghost" href="${url("/city/")}">市町村を選ぶ</a><a class="btn" href="${url("/mitsumori/")}">見積もり・相談</a></div>` : ""}
+${stickyCta && pathname !== "/mitsumori/" ? `<div class="sticky-cta" aria-label="相談">${LEAD.mobileBtn || `<a class="btn ghost" href="${url("/city/")}">市町村を選ぶ</a>`}<a class="btn" href="${url("/mitsumori/")}">見積もり・相談</a></div>` : ""}
+${LEAD.floatCta(pathname)}${LEAD.floatCta(pathname) ? LEAD.floatScript : ""}${body.includes('id="guide-form"') ? LEAD.leadScript : ""}
 <footer class="site-footer">
   <div class="wrap">
     <div class="cols">
@@ -242,7 +220,7 @@ ${stickyCta && pathname !== "/mitsumori/" ? `<div class="sticky-cta" aria-label=
       </div>
       <div>
         <h2>読む</h2>
-        <ul><li><a href="${url("/city/")}">市町村別ガイド（30市町村）</a></li><li><a href="${url("/data/sodai-hikaku/")}">30市町村 粗大ごみ手数料・持ち込み比較</a></li><li><a href="${url("/guide/")}">実家じまいの進め方と費用</a></li><li><a href="${url("/gyosha/")}">業者の料金と選び方</a></li><li><a href="${url("/mitsumori/")}">見積もり・相談</a></li></ul>
+        <ul><li><a href="${url("/city/")}">市町村別ガイド（30市町村）</a></li><li><a href="${url("/data/sodai-hikaku/")}">30市町村 粗大ごみ手数料・持ち込み比較</a></li><li><a href="${url("/guide/")}">実家じまいの進め方と費用</a></li><li><a href="${url("/gyosha/")}">業者の料金と選び方</a></li><li><a href="${url("/mitsumori/")}">見積もり・相談</a></li>${LEAD.hasPdf ? `<li><a href="${url(LEAD_PATH)}">無料ガイド（PDF）</a></li>` : ""}</ul>
       </div>
       <div>
         <h2>運営</h2>
@@ -605,6 +583,7 @@ function searchPage() {
     { t: "新潟県30市町村 粗大ごみ手数料・持ち込みルール比較", d: "手数料の仕組みと自己搬入のルールを一覧で", k: "比較 一覧 手数料 持ち込み 自己搬入", u: url("/data/sodai-hikaku/"), y: "比較表" },
     { t: "新潟の遺品整理・実家片付け業者の料金と選び方", d: "県内業者の公開料金の集計と、許可業者の見分け方", k: "業者 料金 遺品整理 許可 見積もり", u: url("/gyosha/"), y: "ページ" },
     { t: "見積もり・相談（無料）", d: "見積もりの比べ方と、運営者への無料相談", k: "相談 見積もり 無料 業者", u: url("/mitsumori/"), y: "ページ" },
+    ...(LEAD.hasPdf ? [{ t: "新潟の実家じまい 完全ガイド（無料PDF）", d: "期限の早見表・やることチェックリスト・30市町村の粗大ごみ早見表を1冊に", k: "PDF ガイド 無料 チェックリスト 印刷 まとめ", u: url(LEAD_PATH), y: "ページ" }] : []),
     ...published.map((p) => ({ t: p.name, d: `${p.base}拠点の掲載業者`, k: (p.cities || []).map((id) => cityById[id]?.city).filter(Boolean).join(" ") + " 業者", u: url(`/gyosha/${p.id}/`), y: "業者" })),
   ];
   write("/search.json", JSON.stringify(index));
@@ -745,6 +724,13 @@ ${ctaBox()}`;
   write("/", layout({ title: SITE.name, description: `新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、雪の支援を公式情報からまとめた実家じまいの案内。長岡から運営。まとめて頼むときは地元の許可業者へ。`, pathname: "/", body, jsonld: [orgLd] }));
 }
 
+// ---------- 完全ガイド（無料PDF）の申し込みページと、ステップメールの本文 ----------
+function leadPage() {
+  write("/lead/sequence.json", JSON.stringify(LEAD.sequence));
+  if (!LEAD.hasPdf) return;
+  write(LEAD_PATH, layout({ title: "新潟の実家じまい 完全ガイド（無料PDF）", description: `新潟の実家じまいの期限・手順・費用と、県内の窓口をまとめた無料ガイドブック（PDF・${LEAD.pages}ページ）。期限のある手続きの早見表、やることチェックリスト、30市町村の粗大ごみ早見表つき。`, pathname: LEAD_PATH, body: LEAD.landingBody, breadcrumbs: [{ name: "無料ガイド（PDF）", path: LEAD_PATH }], stickyCta: false }));
+}
+
 // ---------- sitemap / robots / feed / 404 ----------
 function extras() {
   // lastmod は「そのページの情報を最後に確認した日」。ビルド日で全ページを更新すると鮮度信号が信用されなくなる。
@@ -757,6 +743,7 @@ function extras() {
     ["/guide/", guideLatest],
     ["/gyosha/", prices.checked || TODAY],
     ["/mitsumori/", guideLatest],
+    ...(LEAD.hasPdf ? [[LEAD_PATH, guideLatest]] : []),
     ...published.map((p) => [`/gyosha/${p.id}/`, p.met_date || TODAY]),
     ...cities.map((c) => [`/city/${c.cityId}/`, c.sodai?.checked_date || cityLatest]),
     ...guides.map((g) => [`/guide/${g.slug}/`, g.meta.updated || guideLatest]),
@@ -766,7 +753,8 @@ function extras() {
   const seen = new Set();
   const uniq = entries.filter(([u]) => (seen.has(u) ? false : (seen.add(u), true)));
   write("/sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${uniq.map(([u, d]) => `<url><loc>${abs(u)}</loc><lastmod>${d}</lastmod></url>`).join("\n")}\n</urlset>\n`);
-  write("/robots.txt", `User-agent: *\nAllow: /\nSitemap: ${abs("/sitemap.xml")}\n`);
+  // /dl/（特典PDF）と /lead/（ステップメールの本文）は検索に出さない
+  write("/robots.txt", `User-agent: *\nAllow: /\nDisallow: ${url("/dl/")}\nDisallow: ${url("/lead/")}\nSitemap: ${abs("/sitemap.xml")}\n`);
   // llms.txt: AI検索向けのサイト要約（ハカラウで引用数が伸びた型）
   const llms = [
     `# ${SITE.name}`,
@@ -818,5 +806,5 @@ function qaPages() {
   for (const p of qaPageList) write(p.path, layout({ title: p.title, description: p.description, pathname: p.path, body: p.body, breadcrumbs: p.crumbs, jsonld: p.jsonld, updated: p.updated }));
 }
 
-home(); cityIndex(); cities.forEach(cityPage); comparePage(); guidePages(); gyoshaPage(); partnerPages(); searchPage(); staticPages(); qaPages(); extras();
+leadPage(); home(); cityIndex(); cities.forEach(cityPage); comparePage(); guidePages(); gyoshaPage(); partnerPages(); searchPage(); staticPages(); qaPages(); extras();
 console.log(`built: ${cities.length} cities, ${guides.length} guides, ${pages.length} pages → ${OUT}`);

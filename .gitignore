@@ -11,3 +11,6 @@ content/_review_log_*
 content/_resolve_log_*
 content/_title_review_*
 content/STOCK_PLAN.md
+
+# 登録特典PDFの作業用（scripts/build_guide_pdf.mjs）
+.pdf-build/

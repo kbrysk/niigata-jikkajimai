@@ -16,6 +16,7 @@
 | 掲載業者 | `data/partners.json` | 掲載する業者（status: published のものだけ出力） |
 | 生成 | `build.mjs` | `dist/` に静的サイトを出力 |
 | 公開 | `.github/workflows/pages.yml` | main への push で GitHub Pages に自動公開 |
+| 無料ガイド（リード獲得） | `lead.mjs`・`content/lead/sequence.md`・`scripts/gas/lead_mail.gs`・`scripts/build_guide_pdf.mjs` | 特典PDF・申し込みページ・追従CTA・ステップメール。仕組みと立ち上げ手順は `docs/LEAD_SETUP.md` |
 
 ## 2. 毎日・記事を公開するとき
 
@@ -79,6 +80,7 @@
 | IndexNow の鍵 | `.indexnow-key` と `public/<鍵>.txt`。移管後に作り直してよい |
 | 問い合わせ用メールアドレス | サイト専用のアドレスを使う（個人アドレスにしない）。移管時は転送先を変更 |
 | フォームの送信先 | `site.json` の formEndpoint・formEntries（Google フォーム。設問を変えたら entry 番号を取り直す）、表示用は contactFormUrl |
+| 無料ガイドの申し込み・ステップメール | サイト専用の Google アカウントのスプレッドシート＋Apps Script（`site.json` の lead.endpoint）。移管時はスプレッドシートとスクリプトの所有者を移す |
 
 ## 予約公開（2026-10-12 追加）
 - 監査を通った記事は content/guides/ に置き、front matter に `publish: YYYY-MM-DD` を書く。その日まではサイトに出ない（一覧・サイトマップ・RSS・他記事からのリンクも出さない）。
