@@ -161,7 +161,7 @@ function compose_(seq, st, vars) {
   return {
     subject: fill(st.subject),
     text: toText_(body) + '\n\n' + toText_(foot),
-    html: '<div style="font-family:\'Hiragino Sans\',\'Yu Gothic\',Meiryo,sans-serif;font-size:15px;line-height:1.85;color:#1f2328;max-width:600px">' + toHtml_(body) + '<hr style="border:none;border-top:1px solid #d9d7d0;margin:32px 0 14px">' + toHtml_(footBody, true) + '</div>',
+    html: '<div style="font-family:\'Hiragino Sans\',\'Yu Gothic\',Meiryo,sans-serif;font-size:15px;line-height:1.7;color:#1f2328;max-width:600px">' + toHtml_(body) + '<hr style="border:none;border-top:1px solid #d9d7d0;margin:32px 0 14px">' + toHtml_(footBody, true) + '</div>',
   };
 }
 
@@ -169,12 +169,13 @@ function compose_(seq, st, vars) {
 var LINK_RE = /\[([^\]\n]+)\]\((https?:\/\/[^)\s]+)\)/g;
 function toHtml_(text, small) {
   var esc = function (s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); };
-  var pStyle = small ? 'margin:0 0 8px;font-size:12px;line-height:1.7;color:#5f6670' : 'margin:0 0 16px';
+  // 本文は sequence.md の中で、スマートフォンで読みやすい長さ（1行24字前後）に手で改行している。段落の間は1行分あける程度に（2026-10-12 大久保さん指摘「行間が空きすぎ」）
+  var pStyle = small ? 'margin:0 0 8px;font-size:12px;line-height:1.6;color:#5f6670' : 'margin:0 0 14px';
   return text.split(/\n{2,}/).map(function (para) {
     var t = para.trim();
     if (!t) return '';
     var only = t.match(/^\[([^\]\n]+)\]\((https?:\/\/[^)\s]+)\)$/);
-    if (only && !small) return '<p style="margin:22px 0 26px"><a href="' + esc(only[2]) + '" style="display:inline-block;background:#1f3f6b;color:#ffffff;text-decoration:none;font-weight:bold;padding:13px 24px;border-radius:6px">' + esc(only[1]) + '</a></p>';
+    if (only && !small) return '<p style="margin:18px 0 20px"><a href="' + esc(only[2]) + '" style="display:inline-block;background:#1f3f6b;color:#ffffff;text-decoration:none;font-weight:bold;padding:13px 24px;border-radius:6px">' + esc(only[1]) + '</a></p>';
     var links = [];
     var h = esc(para.replace(LINK_RE, function (all, label, url) { links.push([label, url]); return '\u0000' + (links.length - 1) + '\u0000'; }));
     h = h.replace(/https?:\/\/[^\s<\u0000]+/g, function (u) { return '<a href="' + u + '" style="color:#1f3f6b">' + u + '</a>'; });
