@@ -36,7 +36,7 @@ BG_RULES = [
     ("butsudan", r"butsudan"),
     ("kaitori", r"kaitori-doji|ihin-kaitori|recycle"),
     ("ihinseiri", r"ihinseiri|gomiyashiki|tokushu"),
-    ("gyosha", r"gyosha|gyousha|kyoka|matomete"),
+    ("gyosha", r"gyosha|gyousha|kyoka(?!i)|matomete"),
     ("kaden", r"kaden|pc-sumaho|stove|jitensha"),
     ("futon", r"futon|carpet|shokki"),
     ("sodai", r"sodaigomi|sofa|kinko"),
@@ -103,51 +103,67 @@ def front_matter(path):
     return fm
 
 # ---- 文字の分割（数字＋単位・カタカナ・英字はひと固まり。助詞・句読点の後ろを改行の候補にする）----
-UNIT = r"(?:万円|億円|円|か月|ヶ月|年度|年末|年|月末|月|日|時間|分|%|％|社|者|本|点|件|枚|kg|ｋｇ|cm|㎡|m|倍|割|段階|つ|歳|字|人|市町村|市|町|村|か所)?"
+UNIT = r"(?:万円|億円|円|か月|ヶ月|年度|年末|年|月末|月|日|時間|分|%|％|社|者|本|点|件|枚|kg|ｋｇ|cm|㎡|m|倍|割|段階|ルート|品目|項目|通り|問|つ|歳|字|人|市町村|町村|市|町|村|か所)?"
 TOKEN = re.compile(r"[0-9０-９][0-9０-９,，.．〜~]*" + UNIT + r"|[ァ-ヴー・]+|[A-Za-z]+|.", re.S)
 NUM = re.compile(r"^[0-9０-９]")
-BREAK_AFTER = set("はがをにでとのもへや、。・？！）」』")
-NO_HEAD = set("、。）」』？！ーっゃゅょ")
+BREAK_AFTER = set("はがをにでのへ、。・？！）」』")
+NO_HEAD = set("、。）」』？！ーっゃゅょ・")
 
 def tokens(text):
     return TOKEN.findall(text)
 
+_BX = None
+def phrases(text):
+    """BudouX で文節に分け（「新潟の/実家で/孤独死が/あっても/売却できる」）、「・」「、」の後ろと「（」の前でも分ける。「/」は手動の改行。"""
+    global _BX
+    if _BX is None:
+        import budoux  # pip install budoux
+        _BX = budoux.load_default_japanese_parser()
+    out = []
+    for i, part in enumerate(text.split("/")):
+        if i:
+            out.append(None)  # 改行
+        for ph in _BX.parse(part):
+            for x in re.split(r"(?<=[・、])|(?=（)", ph):
+                # 行頭に来てはいけない文字（「・」「、」など）は前の文節にくっつける
+                while x and x[0] in NO_HEAD and out and out[-1] is not None:
+                    out[-1] += x[0]; x = x[1:]
+                if x:
+                    out.append(x)
+    return out
+
 def wrap(text, font, maxw, draw):
-    """貪欲に詰め、はみ出したら直近の改行候補まで戻す。"""
-    toks, lines, cur, last_ok = tokens(text), [], [], -1
-    for t in toks:
-        if t == "/":  # 手動改行
-            lines.append(cur); cur, last_ok = [], -1; continue
-        trial = "".join(cur) + t
-        if cur and draw.textlength(trial, font=font) > maxw and t not in NO_HEAD:
-            if 0 <= last_ok < len(cur) - 1:
-                lines.append(cur[: last_ok + 1]); cur = cur[last_ok + 1 :]
-            else:
-                lines.append(cur); cur = []
-            last_ok = -1
-            # 戻した分の改行候補を数え直す
-            for i, x in enumerate(cur):
-                if x[-1] in BREAK_AFTER or NUM.match(x):
-                    last_ok = i
-        cur.append(t)
-        if t[-1] in BREAK_AFTER or NUM.match(t):
-            last_ok = len(cur) - 1
+    w = lambda x: draw.textlength(x, font=font)
+    lines, cur = [], ""
+    for ph in phrases(text):
+        if ph is None:
+            lines.append(cur); cur = ""; continue
+        if w(cur + ph) <= maxw:
+            cur += ph; continue
+        if cur:
+            lines.append(cur); cur = ""
+        if w(ph) <= maxw:
+            cur = ph; continue
+        for t in tokens(ph):  # 1つの文節が長すぎるときだけ、数字と単位を割らずに文字で折る
+            if cur and w(cur + t) > maxw and t not in NO_HEAD:
+                lines.append(cur); cur = ""
+            cur += t
     if cur:
         lines.append(cur)
-    return ["".join(l) for l in lines if l]
+    return [l for l in lines if l]
 
 def fit(text, draw, maxw, maxh):
     for size in range(88, 51, -4):
         f = ImageFont.truetype(FB, size)
         lines = wrap(text, f, maxw, draw)
         lh = int(size * 1.32)
-        if len(lines) <= (3 if size >= 72 else 4) and lh * len(lines) <= maxh:
-            # 行の長さをそろえる（最後の行だけ極端に短くならないように）
-            total = draw.textlength(text.replace("/", ""), font=f)
-            if "/" not in text and len(lines) > 1:
-                for w in range(int(total / len(lines)) + 10, maxw + 1, 12):
-                    alt = wrap(text, f, w, draw)
-                    if len(alt) == len(lines):
+        fits = all(draw.textlength(l, font=f) <= maxw + 4 for l in lines)  # 長いカタカナ語がはみ出すなら小さくする
+        if fits and len(lines) <= (3 if size >= 72 else 4) and lh * len(lines) <= maxh:
+            if len(lines) > 1:  # 行の長さをそろえる（最後の行だけ極端に短くならないように）
+                total = draw.textlength(text.replace("/", ""), font=f)
+                for wd in range(int(total / len(lines)), maxw + 1, 10):
+                    alt = wrap(text, f, wd, draw)
+                    if len(alt) == len(lines) and all(draw.textlength(l, font=f) <= maxw + 4 for l in alt):
                         lines = alt
                         break
             return f, lines, lh
@@ -198,7 +214,18 @@ def card(hook, chip, bg_path, out):
     d.rectangle([sx - 18, sy, sx + 160, sy + 42], fill=PAPER, outline=SEAL, width=3)
     d.text((sx + 71, sy + 21), "公式情報で確認", font=fs, fill=SEAL, anchor="mm")
     os.makedirs(os.path.dirname(out), exist_ok=True)
-    img.save(out, "JPEG", quality=86, optimize=True, progressive=True)
+    buf = io.BytesIO(); img.save(buf, "JPEG", quality=86, optimize=True, progressive=True)
+    data = buf.getvalue()
+    if os.path.exists(out) and open(out, "rb").read() == data:
+        return  # 変化なし（書き込まない）
+    for i in range(6):  # Windows で一時的にファイルがつかまれていることがあるので、少し待って再試行
+        try:
+            with open(out, "wb") as fo:
+                fo.write(data)
+            return
+        except OSError:
+            import time; time.sleep(0.5 * (i + 1))
+    raise OSError("書き込めません: " + out)
 
 def main():
     made = 0
