@@ -189,6 +189,7 @@ affiliate: katazuke
 - [長岡市の粗大ごみの出し方｜料金・申込・持ち込み・分別](../nagaoka-shi-sodaigomi/)
 - [新潟の実家じまいの手順｜何から始める？7つの順番と期限の早見表](../jikkajimai-tejun-niigata/)
 - [新潟の実家で孤独死があっても売却できる](../jiko-bukken-jikka-baikyaku-niigata/)
+- [新潟の実家がゴミ屋敷だったとき](../gomiyashiki-jikka-katazuke-niigata/)
 
 ## 出典
 

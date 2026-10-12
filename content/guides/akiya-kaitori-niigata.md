@@ -197,6 +197,7 @@ affiliate: kaitori
 - [市街化調整区域の実家（新潟）を売る・建て替えるときの注意](../shigaika-chousei-kuiki-jikka-niigata/)
 - [家財が残ったままの新潟の実家も売却できる](../kazai-nokoshi-genjo-jikka-uru-niigata/)
 - [新潟の実家で孤独死があっても売却できる](../jiko-bukken-jikka-baikyaku-niigata/)
+- [新潟で不動産の査定額が違う理由は6つ](../satei-chigai-ikkatsu-satei-niigata/)
 
 ## 出典
 

@@ -243,3 +243,4 @@ affiliate: ihinseiri
 - [特殊清掃・ゴミ屋敷の片付け（新潟）](../tokushu-seisou-gomiyashiki-niigata/)
 - [実家じまいの一括依頼は、許可を分野ごとに確認](../jikkajimai-matomete-tanomu/)
 - [新潟で遺品整理を頼むなら市の許可を先に確認](../ihinseiri-shi-shikaku-gyosha-mikiwame/)
+- [新潟で遺品整理と買取を同時に頼む順番は4段階](../ihinseiri-kaitori-doji-niigata/)

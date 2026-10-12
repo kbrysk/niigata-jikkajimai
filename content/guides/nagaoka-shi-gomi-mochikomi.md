@@ -305,3 +305,4 @@ affiliate: katazuke
 - [長岡市の一般廃棄物 許可業者一覧](../nagaoka-shi-kyoka-gyosha/)
 - [長岡市のリサイクルショップ・出張買取](../nagaoka-recycle-shop/)
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
+- [新潟の実家がゴミ屋敷だったとき](../gomiyashiki-jikka-katazuke-niigata/)

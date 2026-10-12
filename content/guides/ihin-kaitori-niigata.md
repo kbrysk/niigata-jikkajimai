@@ -248,3 +248,4 @@ affiliate: kaitori_mono
 - [新潟市のリサイクルショップ・出張買取](../niigata-shi-recycle-shop/)
 - [上越・三条・柏崎のリサイクルショップと買取](../joetsu-sanjo-kashiwazaki-recycle-shop/)
 - [実家の通帳・権利証・遺言書の探し方](../kichouhin-shorui-sagashikata/)
+- [新潟で遺品整理と買取を同時に頼む順番は4段階](../ihinseiri-kaitori-doji-niigata/)

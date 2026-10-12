@@ -476,3 +476,4 @@ BがAより多いかどうかが、解体を選ぶ目安です。控除が使え
 - [実家の解体は着工7日前に届出](../jikka-kaitai-tetsuzuki-niigata/)
 - [新潟の実家じまいとは、片付け・売却・解体の3作業](../jikkajimai-towa-niigata/)
 - [新潟の実家を売る費用は4つに分けて出す](../jikka-uru-hiyou-souichiran-niigata/)
+- [新潟の実家売却で測量が要るかは契約の形で変わる](../kyokai-sokuryo-jikka-baikyaku-niigata/)

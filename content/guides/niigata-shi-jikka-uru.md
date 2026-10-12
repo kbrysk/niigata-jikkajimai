@@ -392,6 +392,8 @@ affiliate: kaitori
 - [新潟の空き家3,000万円控除は2026年末が期限の人も](../akiya-3000man-kigen-gyakusan-niigata/)
 - [新潟の実家の購入価格が不明でも売却額の5%を取得費にできる](../shutokuhi-fumei-jikka-baikyaku-niigata/)
 - [新潟の実家を売る費用は4つに分けて出す](../jikka-uru-hiyou-souichiran-niigata/)
+- [新潟で不動産の査定額が違う理由は6つ](../satei-chigai-ikkatsu-satei-niigata/)
+- [新潟の実家売却で測量が要るかは契約の形で変わる](../kyokai-sokuryo-jikka-baikyaku-niigata/)
 
 売る前の片付けや残置物の処分で、地元の業者の見積もりが必要なときは、[無料で見積もり相談](../../mitsumori/)もご利用いただけます。
 

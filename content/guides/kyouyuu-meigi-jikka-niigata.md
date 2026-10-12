@@ -401,6 +401,7 @@ updated: 2026-10-11
 - [相続放棄をするなら、遺品整理の前に相談｜処分すると単純承認になる場合・新潟の窓口](../ihinseiri-souzokuhouki/)
 - [親が認知症になると実家は売れない？｜元気なうちに決める備えと費用・窓口](../ninchisho-mae-jikka-kimeru/)
 - [新潟の実家じまいの進め方｜状況別の手順と期限の早見表](../jikkajimai-tejun-niigata/)
+- [新潟の実家売却で測量が要るかは契約の形で変わる](../kyokai-sokuryo-jikka-baikyaku-niigata/)
 
 ## 出典
 

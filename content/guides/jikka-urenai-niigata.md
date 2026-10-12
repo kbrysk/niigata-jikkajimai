@@ -318,6 +318,7 @@ AとBが重なる家もあります。Aを先に直します。名義や荷物�
 - [家財が残ったままの新潟の実家も売却できる](../kazai-nokoshi-genjo-jikka-uru-niigata/)
 - [新潟の空き家バンクで売れない家](../akiya-bank-urenai-kirikae-niigata/)
 - [新潟の実家で孤独死があっても売却できる](../jiko-bukken-jikka-baikyaku-niigata/)
+- [新潟で不動産の査定額が違う理由は6つ](../satei-chigai-ikkatsu-satei-niigata/)
 
 ## 出典
 

@@ -237,3 +237,4 @@ affiliate: katazuke
 - [実家の食器・本・写真・人形の処分](../shokki-hon-shashin-shobun/)
 - [生前整理の進め方（新潟版）](../seizenseiri-niigata/)
 - [親が認知症になると実家は売れない？](../ninchisho-mae-jikka-kimeru/)
+- [新潟の実家がゴミ屋敷だったとき](../gomiyashiki-jikka-katazuke-niigata/)

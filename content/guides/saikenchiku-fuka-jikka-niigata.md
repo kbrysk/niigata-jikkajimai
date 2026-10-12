@@ -378,6 +378,7 @@ updated: 2026-10-12
 - [共有名義の実家を売る・手放す](../kyouyuu-meigi-jikka-niigata/)
 - [新潟の実家じまいの進め方｜状況別の手順と期限の早見表](../jikkajimai-tejun-niigata/)
 - [市街化調整区域の実家（新潟）を売る・建て替えるときの注意](../shigaika-chousei-kuiki-jikka-niigata/)
+- [新潟の実家売却で測量が要るかは契約の形で変わる](../kyokai-sokuryo-jikka-baikyaku-niigata/)
 
 ## 出典
 

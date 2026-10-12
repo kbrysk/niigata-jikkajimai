@@ -229,3 +229,4 @@ affiliate: ihinseiri
 - [生前整理の進め方（新潟版）](../seizenseiri-niigata/)
 - [特殊清掃・ゴミ屋敷の片付け（新潟）](../tokushu-seisou-gomiyashiki-niigata/)
 - [実家の通帳・権利証・遺言書の探し方](../kichouhin-shorui-sagashikata/)
+- [新潟で遺品整理と買取を同時に頼む順番は4段階](../ihinseiri-kaitori-doji-niigata/)

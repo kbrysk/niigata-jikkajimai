@@ -289,6 +289,7 @@ affiliate: kaitori_mono
 - [仏壇・神棚・位牌の処分](../butsudan-kamidana-shobun-niigata/)
 - [新潟市の一般廃棄物収集運搬 許可業者一覧](../niigata-shi-kyoka-gyosha/)
 - [長岡市のリサイクルショップ・出張買取](../nagaoka-recycle-shop/)
+- [新潟で遺品整理と買取を同時に頼む順番は4段階](../ihinseiri-kaitori-doji-niigata/)
 
 ## 出典
 
