@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """SNS（X・LINE・Facebook）で共有されたときのアイキャッチ（1200x630）を、記事と市町村ページごとに作る。
 使い方: PYTHONUTF8=1 python scripts/build_og_cards.py   （記事を足したとき・title を変えたときに実行してコミットする）
+       背景を足すとき: PYTHONUTF8=1 python scripts/build_og_cards.py --import <ChatGPTの画像を置いたフォルダ>
 
 - 出力: public/og/guide/<slug>.jpg、public/og/city/<cityId>.jpg（build.mjs がファイルがあるページだけ og:image に使う）
 - 文字: title の「｜」より前（答え）。front matter に ogText があればそれを使う（「/」で改行位置を指定できる）
@@ -26,6 +27,65 @@ CATS = [  # build.mjs の GUIDE_CATS と同じ
     ("akiya", "空き家・相続・税金", r"akiya|souzoku|zeikin"),
     ("susume", "実家じまいの進め方と費用", r""),
 ]
+
+# 背景を話題ごとに変える（同じ絵が並ばないように）。public/assets/og-bg/<key>.jpg があればそれを使い、無ければ分類の絵（cat-*.jpg）。
+# 上から順に、最初に当たったもの。絵の作り方は niigata_private/proposals/og背景_ChatGPTプロンプト_2026-10-12.md
+BG_RULES = [
+    ("yukioroshi", r"yukioroshi"),
+    ("fuyu-kanri", r"fuyu|kasai-hoken|kanri"),
+    ("butsudan", r"butsudan"),
+    ("kaitori", r"kaitori-doji|ihin-kaitori|recycle"),
+    ("ihinseiri", r"ihinseiri|gomiyashiki|tokushu"),
+    ("gyosha", r"gyosha|gyousha|kyoka|matomete"),
+    ("kaden", r"kaden|pc-sumaho|stove|jitensha"),
+    ("futon", r"futon|carpet|shokki"),
+    ("sodai", r"sodaigomi|sofa|kinko"),
+    ("mochikomi", r"mochikomi|bunbetsu"),
+    ("kaitai", r"kaitai|hojokin"),
+    ("akiyabank", r"akiya-bank"),
+    ("kyokai", r"kyokai|shigaika|saikenchiku|nouchi|kokko"),
+    ("touki", r"touki|kyouyuu|souzokuhouki"),
+    ("zeikin", r"zeikin|3000man|shutokuhi|koteishisanzei|ijihi"),
+    ("uru", r"uru|urenai|satei|baikyaku|akiya-kaitori|kazai-nokoshi|jiko-bukken"),
+    ("kichouhin", r"kichouhin"),
+    ("oya", r"oya|sabishii|ninchisho|shisetsu|aisatsu"),
+    ("enpou", r"enpou"),
+    ("hiyou", r"hiyou|okane"),
+    ("tejun", r"tejun|towa|yattewaikenai|seizenseiri|akiya-uru"),
+]
+# 市町村ページは地域ごと（build.mjs の AREA と同じ）
+AREA = {
+    "chuetsu": "nagaoka sanjo kashiwazaki ojiya kamo tokamachi mitsuke uonuma minamiuonuma tsubame yahiko tagami izumozaki yuzawa tsunan kariwa",
+    "kaetsu": "niigata shibata murakami gosen agano tainai seiro aga sekikawa awashimaura",
+    "joetsu": "joetsu itoigawa myoko",
+    "sado": "sado",
+}
+ASSETS = os.path.join(ROOT, "public", "assets")
+
+def variants(key):
+    """<key>.jpg、<key>-2.jpg、<key>-3.jpg … のうち、あるもの。"""
+    out, i = [], 1
+    while True:
+        f = os.path.join(ASSETS, "og-bg", f"{key}.jpg" if i == 1 else f"{key}-{i}.jpg")
+        if not os.path.exists(f):
+            return out
+        out.append(f); i += 1
+
+def bg_for(slug, cid):
+    for key, rx in BG_RULES:
+        if re.search(rx, slug):
+            vs = variants(key)
+            if vs:  # 同じ話題が多いときは、slug で決まった1枚を選ぶ（毎回同じ結果になる）
+                return vs[sum(map(ord, slug)) % len(vs)]
+            break
+    return os.path.join(ASSETS, f"cat-{cid}.jpg")
+
+def bg_for_city(city_id):
+    for key, ids in AREA.items():
+        f = os.path.join(ASSETS, "og-bg", f"area-{key}.jpg")
+        if city_id in ids.split() and os.path.exists(f):
+            return f
+    return os.path.join(ASSETS, "photo-city.jpg")
 
 def cat_of(slug):
     for cid, name, rx in CATS:
@@ -150,16 +210,31 @@ def main():
         slug = fm.get("slug") or f[:-3]
         hook = fm.get("ogText") or re.split(r"[｜|]", fm.get("title", slug))[0].strip()
         cid, cname = cat_of(slug)
-        card(hook, cname, os.path.join(ROOT, "public", "assets", f"cat-{cid}.jpg"), os.path.join(ROOT, "public", "og", "guide", f"{slug}.jpg"))
+        card(hook, cname, bg_for(slug, cid), os.path.join(ROOT, "public", "og", "guide", f"{slug}.jpg"))
         made += 1
     base = json.load(io.open(os.path.join(ROOT, "data", "municipalities_base.json"), encoding="utf-8"))
     for c in base:
-        card(f"{c['city']}の/実家じまい", "粗大ごみ・解体補助金・空き家バンク", os.path.join(ROOT, "public", "assets", "photo-city.jpg"), os.path.join(ROOT, "public", "og", "city", f"{c['cityId']}.jpg"))
+        card(f"{c['city']}の/実家じまい", "粗大ごみ・解体補助金・空き家バンク", bg_for_city(c["cityId"]), os.path.join(ROOT, "public", "og", "city", f"{c['cityId']}.jpg"))
         made += 1
     print(made)
 
+def import_bg(src):
+    """ChatGPT で作った背景（<key>.png など。名前はプロンプト集どおり）を、幅1400のJPEGにして og-bg に置く。"""
+    dst = os.path.join(ASSETS, "og-bg"); os.makedirs(dst, exist_ok=True); n = 0
+    for f in sorted(os.listdir(src)):
+        stem, ext = os.path.splitext(f)
+        if ext.lower() not in (".png", ".jpg", ".jpeg", ".webp") or not re.fullmatch(r"[a-z0-9-]+", stem):
+            continue
+        im = Image.open(os.path.join(src, f)).convert("RGB")
+        if im.width > 1400:
+            im = im.resize((1400, round(im.height * 1400 / im.width)), Image.LANCZOS)
+        im.save(os.path.join(dst, stem + ".jpg"), "JPEG", quality=84, optimize=True, progressive=True); n += 1
+    print("imported", n)
+
 if __name__ == "__main__":
-    if len(sys.argv) > 1:  # 試し: build_og_cards.py "文字" 出力パス
+    if len(sys.argv) > 2 and sys.argv[1] == "--import":  # build_og_cards.py --import <フォルダ>
+        import_bg(sys.argv[2]); main()
+    elif len(sys.argv) > 1:  # 試し: build_og_cards.py "文字" 出力パス
         card(sys.argv[1], "試し", os.path.join(ROOT, "public", "assets", "cat-akiya.jpg"), sys.argv[2])
     else:
         main()

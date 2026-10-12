@@ -92,4 +92,6 @@
 - 記事と市町村ページには、ページごとのアイキャッチ（1200x630）が付く。`public/og/guide/<slug>.jpg`・`public/og/city/<cityId>.jpg`。無いページはサイト共通の `public/assets/og.png`。
 - **記事を足したとき・title を変えたときは、コミットの前に `PYTHONUTF8=1 python scripts/build_og_cards.py` を実行する**（CI には Python が無いので、画像は手元で作ってコミットする）。
 - 文字は title の「｜」より前。短くしたいときは front matter に `ogText: 長岡市の/粗大ごみは/1点200円から` のように書く（「/」で改行）。数字は黄色で強調される。
-- 背景は分類ごとの版画風イメージ（`public/assets/cat-*.jpg`）。分類の判定は build.mjs の GUIDE_CATS とスクリプトの CATS を同じにしておく。
+- 背景は話題ごとの版画風イメージ `public/assets/og-bg/<話題>.jpg`（スクリプトの BG_RULES で slug から選ぶ。同じ話題に `-2.jpg` があれば交互）。無い話題は分類の絵（`public/assets/cat-*.jpg`）。市町村は地域ごと（`area-<地域>.jpg`、中越は `photo-city.jpg`）。
+- 背景を足すときは ChatGPT で作り（プロンプト集は private リポジトリ側 `proposals/og背景_ChatGPTプロンプト_2026-10-12.md`）、決まったファイル名でフォルダに置いて `python scripts/build_og_cards.py --import <フォルダ>`。同じ絵が10本を超えて並ぶ話題が出てきたら、`-2`・`-3` を足す。
+- 分類の判定は build.mjs の GUIDE_CATS とスクリプトの CATS を同じにしておく。
