@@ -222,6 +222,7 @@ affiliate: katazuke
 - [新潟の片付け業者の料金｜間取り別の公開料金・追加料金の聞き方](../jikkajimai-gyosha-hiyou-niigata/)
 - [長岡市の一般廃棄物 許可業者一覧](../nagaoka-shi-kyoka-gyosha/)
 - [新潟市の一般廃棄物 許可業者一覧](../niigata-shi-kyoka-gyosha/)
+- [新潟で遺品整理を頼むなら市の許可を先に確認](../ihinseiri-shi-shikaku-gyosha-mikiwame/)
 
 ## 出典
 

@@ -315,6 +315,9 @@ AとBが重なる家もあります。Aを先に直します。名義や荷物�
 - [実家じまいのお金がないとき｜費用を抑える順番と、誰が払うか](../jikkajimai-okane-ga-nai/)
 - [再建築できない実家（新潟）を売る・手放すには](../saikenchiku-fuka-jikka-niigata/)
 - [市街化調整区域の実家（新潟）を売る・建て替えるときの注意](../shigaika-chousei-kuiki-jikka-niigata/)
+- [家財が残ったままの新潟の実家も売却できる](../kazai-nokoshi-genjo-jikka-uru-niigata/)
+- [新潟の空き家バンクで売れない家](../akiya-bank-urenai-kirikae-niigata/)
+- [新潟の実家で孤独死があっても売却できる](../jiko-bukken-jikka-baikyaku-niigata/)
 
 ## 出典
 

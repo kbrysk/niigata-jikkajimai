@@ -8,7 +8,6 @@ targetKeywords:
   - 実家じまい 何から
   - 実家じまい 流れ
   - 実家じまい 新潟
-  - 実家じまい とは
   - 実家 片付け 手順
   - 実家じまい 遠方
   - 新潟 粗大ごみ 実家
@@ -242,6 +241,8 @@ updated: 2026-10-09
 - [新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度](../akiya-uru-kasu-kowasu/)
 - [実家じまいが寂しい・つらいとき](../jikkajimai-sabishii-kokoro/)
 - [実家じまいの近所への挨拶](../jikkajimai-aisatsu-kinjo/)
+- [新潟の空き家3,000万円控除は2026年末が期限の人も](../akiya-3000man-kigen-gyakusan-niigata/)
+- [新潟の実家じまいとは、片付け・売却・解体の3作業](../jikkajimai-towa-niigata/)
 
 
 ## 市町村別の粗大ごみガイド

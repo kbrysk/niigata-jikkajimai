@@ -229,6 +229,7 @@ affiliate: kaitori
 - [空き家の雪下ろしは誰の責任？新潟の実家の冬対策｜支援制度と費用](../fuyu-no-jikkajimai-yukioroshi/)
 - [実家じまいの近所への挨拶](../jikkajimai-aisatsu-kinjo/)
 - [実家じまいの一括依頼は、許可を分野ごとに確認](../jikkajimai-matomete-tanomu/)
+- [新潟の実家じまいとは、片付け・売却・解体の3作業](../jikkajimai-towa-niigata/)
 
 ## 出典
 

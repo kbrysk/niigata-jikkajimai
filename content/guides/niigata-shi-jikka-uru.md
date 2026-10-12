@@ -389,6 +389,8 @@ affiliate: kaitori
 - [新潟で実家が売れないときにできること](../jikka-urenai-niigata/)
 - [再建築できない実家（新潟）を売る・手放すには](../saikenchiku-fuka-jikka-niigata/)
 - [市街化調整区域の実家（新潟）を売る・建て替えるときの注意](../shigaika-chousei-kuiki-jikka-niigata/)
+- [新潟の空き家3,000万円控除は2026年末が期限の人も](../akiya-3000man-kigen-gyakusan-niigata/)
+- [新潟の実家の購入価格が不明でも売却額の5%を取得費にできる](../shutokuhi-fumei-jikka-baikyaku-niigata/)
 
 売る前の片付けや残置物の処分で、地元の業者の見積もりが必要なときは、[無料で見積もり相談](../../mitsumori/)もご利用いただけます。
 

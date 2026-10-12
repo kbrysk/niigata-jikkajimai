@@ -195,6 +195,8 @@ affiliate: kaitori
 - [共有名義の実家を売る・手放す](../kyouyuu-meigi-jikka-niigata/)
 - [再建築できない実家（新潟）を売る・手放すには](../saikenchiku-fuka-jikka-niigata/)
 - [市街化調整区域の実家（新潟）を売る・建て替えるときの注意](../shigaika-chousei-kuiki-jikka-niigata/)
+- [家財が残ったままの新潟の実家も売却できる](../kazai-nokoshi-genjo-jikka-uru-niigata/)
+- [新潟の実家で孤独死があっても売却できる](../jiko-bukken-jikka-baikyaku-niigata/)
 
 ## 出典
 

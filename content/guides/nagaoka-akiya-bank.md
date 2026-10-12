@@ -285,6 +285,7 @@ at home版では、沿線・エリア・地図からも探せます。
 - [新潟の空き家を買い取ってもらうには](../akiya-kaitori-niigata/)
 - [三条市・燕市・柏崎市の空き家バンク](../sanjo-tsubame-kashiwazaki-akiya-bank/)
 - [長岡市の実家を売る流れは6段階](../nagaoka-shi-jikka-uru/)
+- [新潟の空き家バンクで売れない家](../akiya-bank-urenai-kirikae-niigata/)
 
 ## 出典
 

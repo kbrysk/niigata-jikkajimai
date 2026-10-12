@@ -221,6 +221,8 @@ affiliate: kaitori
 - [新潟市の実家を売る流れは7段階](../niigata-shi-jikka-uru/)
 - [新潟の実家じまいの総費用の目安](../jikkajimai-sohiyou-niigata/)
 - [長岡市の実家を売る流れは6段階](../nagaoka-shi-jikka-uru/)
+- [新潟の空き家3,000万円控除は2026年末が期限の人も](../akiya-3000man-kigen-gyakusan-niigata/)
+- [新潟の実家の購入価格が不明でも売却額の5%を取得費にできる](../shutokuhi-fumei-jikka-baikyaku-niigata/)
 
 ## 出典
 

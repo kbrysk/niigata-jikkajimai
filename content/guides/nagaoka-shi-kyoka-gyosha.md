@@ -176,6 +176,7 @@ affiliate: katazuke
 - [新潟で実家を片付ける費用の目安｜自分で出す場合と業者に頼む場合](../jikkajimai-hiyou-niigata/)
 - [長岡市の粗大ごみ・持ち込み・補助金](../../city/nagaoka/)
 - [新潟市の一般廃棄物収集運搬 許可業者一覧](../niigata-shi-kyoka-gyosha/)
+- [新潟で遺品整理を頼むなら市の許可を先に確認](../ihinseiri-shi-shikaku-gyosha-mikiwame/)
 
 ## 出典（確認日: 2026年10月2日）
 

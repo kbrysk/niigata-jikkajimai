@@ -223,6 +223,7 @@ updated: 2026-10-12
 - [新潟の実家が空き家になったら｜売る・貸す・壊すの比べ方と、使える制度](../akiya-uru-kasu-kowasu/)
 - [実家じまいが寂しい・つらいとき](../jikkajimai-sabishii-kokoro/)
 - [共有名義の実家を売る・手放す](../kyouyuu-meigi-jikka-niigata/)
+- [新潟の実家じまいとは、片付け・売却・解体の3作業](../jikkajimai-towa-niigata/)
 
 ## 出典
 

@@ -288,3 +288,5 @@ affiliate: ihinseiri
 - [実家じまいに使える補助金｜新潟県30市町村の空き家解体補助金一覧](../jikkajimai-hojokin-niigata/)
 - [実家じまいの一括依頼は、許可を分野ごとに確認](../jikkajimai-matomete-tanomu/)
 - [新潟の実家じまいの総費用の目安](../jikkajimai-sohiyou-niigata/)
+- [家財が残ったままの新潟の実家も売却できる](../kazai-nokoshi-genjo-jikka-uru-niigata/)
+- [新潟で仏壇を処分する費用は4ルートで比べる](../butsudan-shobun-hiyou-4route-niigata/)

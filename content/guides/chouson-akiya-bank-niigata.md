@@ -512,6 +512,7 @@ affiliate: kaitori
 - [新潟の空き家を買い取ってもらうには｜買取と仲介の違い・再建築不可・査定書類](../akiya-kaitori-niigata/)
 - [空き家を自分で管理する方法｜電気・水道、火災保険、点検項目（新潟版）](../akiya-kanri-jibunde-niigata/)
 - [相続登記の義務化と新潟の法務局・相談窓口｜期限・過料・必要書類・相続人申告登記、自分でやる場合の手順](../souzoku-touki-niigata-houmukyoku/)
+- [新潟の空き家バンクで売れない家](../akiya-bank-urenai-kirikae-niigata/)
 
 ## 出典
 

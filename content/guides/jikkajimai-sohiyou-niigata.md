@@ -474,3 +474,4 @@ BがAより多いかどうかが、解体を選ぶ目安です。控除が使え
 - [空き家の固定資産税は本当に6倍になる？](../akiya-koteishisanzei-6bai/)
 - [冬の実家じまいと雪対策｜空き家の雪下ろしは誰がやる？新潟の制度と費用](../fuyu-no-jikkajimai-yukioroshi/)
 - [実家の解体は着工7日前に届出](../jikka-kaitai-tetsuzuki-niigata/)
+- [新潟の実家じまいとは、片付け・売却・解体の3作業](../jikkajimai-towa-niigata/)

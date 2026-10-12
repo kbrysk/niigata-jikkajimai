@@ -213,3 +213,4 @@ updated: 2026-10-03
 - [実家じまいの手順（新潟）](../jikkajimai-tejun-niigata/)
 - [遺品の買取（新潟）](../ihin-kaitori-niigata/)
 - [実家の食器・本・写真・人形の処分](../shokki-hon-shashin-shobun/)
+- [新潟で仏壇を処分する費用は4ルートで比べる](../butsudan-shobun-hiyou-4route-niigata/)

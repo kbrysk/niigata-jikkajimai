@@ -180,6 +180,7 @@ affiliate: katazuke
 - [新潟市の粗大ごみ・持ち込み・補助金](../../city/niigata/)
 - [長岡市の一般廃棄物収集運搬 許可業者一覧](../nagaoka-shi-kyoka-gyosha/)
 - [特殊清掃・ゴミ屋敷の片付け（新潟）](../tokushu-seisou-gomiyashiki-niigata/)
+- [新潟で遺品整理を頼むなら市の許可を先に確認](../ihinseiri-shi-shikaku-gyosha-mikiwame/)
 
 ## 出典（確認日: 2026年10月2日）
 

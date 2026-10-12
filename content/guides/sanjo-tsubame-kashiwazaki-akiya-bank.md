@@ -198,6 +198,7 @@ affiliate: kaitori
 - [新潟で実家を解体する費用の考え方｜見積もりの内訳と補助金](../kaitai-hiyou-niigata/)
 - [三条市のページ](../../city/sanjo/)、[燕市のページ](../../city/tsubame/)、[柏崎市のページ](../../city/kashiwazaki/)
 - [上越・三条・柏崎・新発田の実家を売る](../joetsu-sanjo-kashiwazaki-shibata-jikka-uru/)
+- [新潟の空き家バンクで売れない家](../akiya-bank-urenai-kirikae-niigata/)
 
 ## 出典
 

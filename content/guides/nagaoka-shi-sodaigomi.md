@@ -331,3 +331,4 @@ affiliate: katazuke
 - [長岡市のリサイクルショップ・出張買取](../nagaoka-recycle-shop/)
 - [長岡市の市町村ページ](../../city/nagaoka/)
 - [長岡市の実家を売る流れは6段階](../nagaoka-shi-jikka-uru/)
+- [新潟で仏壇を処分する費用は4ルートで比べる](../butsudan-shobun-hiyou-4route-niigata/)

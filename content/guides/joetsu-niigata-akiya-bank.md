@@ -217,6 +217,7 @@ URLは、この記事の最後の「出典」にあります。
 - [見附市・小千谷市・十日町市の空き家バンク](../mitsuke-ojiya-tokamachi-akiya-bank/)
 - [上越・三条・柏崎・新発田の実家を売る](../joetsu-sanjo-kashiwazaki-shibata-jikka-uru/)
 - [新潟市の実家を売る流れは7段階](../niigata-shi-jikka-uru/)
+- [新潟の空き家バンクで売れない家](../akiya-bank-urenai-kirikae-niigata/)
 
 ## 出典
 
