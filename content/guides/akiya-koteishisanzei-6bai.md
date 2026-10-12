@@ -206,6 +206,7 @@ affiliate: kaitori
 - [新潟で実家を解体する費用の考え方](../kaitai-hiyou-niigata/)
 - [新潟の空き家を買い取ってもらうには](../akiya-kaitori-niigata/)
 - [相続登記の義務化と新潟の法務局・相談窓口](../souzoku-touki-niigata-houmukyoku/)
+- [新潟の空き家の維持費は年いくら](../akiya-ijihi-nenkan-souhi-niigata/)
 
 ## 出典
 

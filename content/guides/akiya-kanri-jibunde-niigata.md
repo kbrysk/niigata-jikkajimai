@@ -218,6 +218,7 @@ affiliate: akiya_fuyu
 - [新潟県30市町村の雪下ろし・除雪支援一覧](../yukioroshi-shien-niigata-30/)
 - [空き家の冬支度チェックリスト（新潟版）](../akiya-fuyu-kanri-checklist/)
 - [新潟の空き家の火災保険が切れたとき](../akiya-kasai-hoken-hairenai-niigata/)
+- [新潟の空き家の維持費は年いくら](../akiya-ijihi-nenkan-souhi-niigata/)
 
 ## 出典
 

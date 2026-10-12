@@ -312,6 +312,7 @@ affiliate: kaitori
 - [新潟で実家が売れないときにできること](../jikka-urenai-niigata/)
 - [相続土地国庫帰属制度を新潟で使うには](../souzoku-tochi-kokko-kizoku-niigata/)
 - [再建築できない実家（新潟）を売る・手放すには](../saikenchiku-fuka-jikka-niigata/)
+- [新潟の空き家の維持費は年いくら](../akiya-ijihi-nenkan-souhi-niigata/)
 
 ## 出典
 
