@@ -118,7 +118,6 @@ function fin(){try{localStorage.setItem('nj-guide-registered','1')}catch(_){}try
 f.hidden=true;done.hidden=false;done.focus();done.scrollIntoView({behavior:'smooth',block:'center'});}
 req.then(fin,fin);});})();</script>`;
 
-  const timeline = steps.map((s) => `<li><span class="tl-d">${s.offsetDays === 0 ? "すぐ" : `${s.offsetDays}日後`}</span><span class="tl-s">${esc(s.subject.replace(/^【[^】]+】/, ""))}</span></li>`).join("");
   const landingBody = `<article class="lead-page">
 <section class="lead-hero"><div class="inner">
   <div class="lh-text">
@@ -131,7 +130,6 @@ req.then(fin,fin);});})();</script>`;
 </div></section>
 <section class="home-section"><h2>${icon("book", "ic")}このガイドでわかること</h2><ul class="qn-grid cols3 lead-inside">${inside.map(([ic, t, d]) => `<li><div class="li-card"><span class="ic-badge">${icon(ic)}</span><span class="qn-t"><strong>${esc(t)}</strong><span>${esc(d)}</span></span></div></li>`).join("")}</ul>
 <p class="small">掲載している制度・期限・料金は、国・裁判所・県・市町村などの公式サイトを確認したものだけです。確認日と出典はガイドの中に載せています。</p></section>
-${steps.length ? `<section class="home-section"><h2>${icon("talk", "ic")}お申し込みのあとに届くメール（全${steps.length}回）</h2><p class="sub">ガイドのあと、実家じまいで迷いやすいところを、2週間ほどで${steps.length - 1}回に分けてお送りします。いつでも配信を停止できます。</p><ol class="lead-tl">${timeline}</ol></section>` : ""}
 <section class="home-section faq"><h2>${icon("qa", "ic")}よくある質問</h2>
 <details><summary>本当に無料ですか？</summary><p>無料です。お支払いが発生することはありません。</p></details>
 <details><summary>メールアドレス以外の入力は必要ですか？</summary><p>必要なのはメールアドレスだけです。市町村といまの状況は任意で、選ぶと、その状況や市町村に合わせた案内をお送りします。お名前・電話番号・住所はお聞きしません。</p></details>
