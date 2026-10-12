@@ -126,35 +126,67 @@ function sendStep_(r, index) {
   var st = seq.steps[index];
   var sent = String(v[C.sent - 1] || '').split(',').filter(String);
   if (!st || sent.indexOf(String(st.step)) >= 0) return;
-  var site = siteUrl_();
-  var unsubUrl = webAppUrl_() + '?u=' + v[C.token - 1];
-  var sit = seq.situations[v[C.sit - 1]];
-  var city = seq.cities[v[C.city - 1]];
-  var vars = {
-    site: site,
-    pdf_url: site + seq.pdfPath,
-    situation_block: sit ? 'お申し込みのときに「' + sit.label + '」を選ばれました。この場合に最初にやることは、次のとおりです。\n' + sit.first.map(function (f, i) { return (i + 1) + '. ' + f; }).join('\n') : 'いまの状況がはっきりしない場合は、ガイドの1章にある4つの状況から、近いものを選んでください。',
-    city_block: city ? city.name + 'の粗大ごみの出し方・持ち込み先・解体補助金は、こちらにまとめています。\n' + site + '/city/' + v[C.city - 1] + '/' : '実家のある市町村のページで、料金表と持ち込み先を確かめられます。\n' + site + '/city/',
-    price_count: seq.prices.count, price_1k: seq.prices.k1, price_3ldk: seq.prices.ldk3,
-    unsubscribe_url: unsubUrl,
-  };
-  var fill = function (t) { return String(t).replace(/\{\{(\w+)\}\}/g, function (all, k) { return vars[k] != null ? vars[k] : ''; }); };
-  var body = fill(st.body) + '\n\n' + fill(seq.footer);
-  var opts = { name: seq.senderName, htmlBody: toHtml_(body) };
+  var vars = varsFor_(seq, v[C.sit - 1], v[C.city - 1], webAppUrl_() + '?u=' + v[C.token - 1]);
+  var mail = compose_(seq, st, vars);
+  var opts = { name: seq.senderName, htmlBody: mail.html };
   if (index === 0) {
     try { opts.attachments = [UrlFetchApp.fetch(vars.pdf_url).getBlob().setName(seq.pdfName)]; } catch (err) { console.warn('PDFを添付できませんでした: ' + err); }
   }
-  MailApp.sendEmail(v[C.email - 1], fill(st.subject), body, opts);
+  MailApp.sendEmail(v[C.email - 1], mail.subject, mail.text, opts);
   sent.push(String(st.step));
   sh.getRange(r, C.sent).setValue(sent.join(','));
   sh.getRange(r, C.last).setValue(new Date());
 }
 
-function toHtml_(text) {
-  var esc = function (s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); };
-  return '<div style="font-family:sans-serif;font-size:15px;line-height:1.8;color:#1f2328;max-width:600px">' + esc(text).split(/\n{2,}/).map(function (p) {
-    return '<p style="margin:0 0 14px">' + p.replace(/https?:\/\/[^\s<]+/g, function (u) { return '<a href="' + u + '" style="color:#1f3f6b">' + u + '</a>'; }).replace(/\n/g, '<br>') + '</p>';
-  }).join('') + '</div>';
+// 差し込みの値。状況・市町村は申し込み時に選んだもの（選ばなければ汎用の文）
+function varsFor_(seq, sitId, cityId, unsubUrl) {
+  var site = siteUrl_();
+  var sit = seq.situations[sitId];
+  var city = seq.cities[cityId];
+  return {
+    site: site,
+    pdf_url: site + seq.pdfPath,
+    situation_block: sit ? '**「' + sit.label + '」を選んだ方へ**\n最初にやることは、次の' + sit.first.length + 'つです。\n' + sit.first.map(function (f, i) { return (i + 1) + '. ' + f; }).join('\n') : 'いまの状況がはっきりしない場合は、ガイドの1章にある4つの状況から、近いものを選んでください。',
+    city_block: city ? city.name + 'の粗大ごみの料金・申し込み方法・持ち込み先と、空き家の解体補助金は、こちらにまとめています。\n\n[' + city.name + 'のページを見る](' + site + '/city/' + cityId + '/)' : '実家のある市町村のページで、料金表と持ち込み先を確かめられます。\n\n[市町村別ガイドを見る](' + site + '/city/)',
+    price_count: seq.prices.count, price_1k: seq.prices.k1, price_3ldk: seq.prices.ldk3,
+    unsubscribe_url: unsubUrl,
+  };
+}
+
+// 件名・テキスト版・HTML版を組み立てる
+function compose_(seq, st, vars) {
+  var fill = function (t) { return String(t).replace(/\{\{(\w+)\}\}/g, function (all, k) { return vars[k] != null ? vars[k] : ''; }); };
+  var body = fill(st.body), foot = fill(seq.footer);
+  var footBody = foot.replace(/^─+\n/, '');
+  return {
+    subject: fill(st.subject),
+    text: toText_(body) + '\n\n' + toText_(foot),
+    html: '<div style="font-family:\'Hiragino Sans\',\'Yu Gothic\',Meiryo,sans-serif;font-size:15px;line-height:1.85;color:#1f2328;max-width:600px">' + toHtml_(body) + '<hr style="border:none;border-top:1px solid #d9d7d0;margin:32px 0 14px">' + toHtml_(footBody, true) + '</div>',
+  };
+}
+
+// 本文の記法: 空行で段落／[文字](URL) はテキストリンク／リンクだけの段落はボタン／**太字**
+var LINK_RE = /\[([^\]\n]+)\]\((https?:\/\/[^)\s]+)\)/g;
+function toHtml_(text, small) {
+  var esc = function (s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); };
+  var pStyle = small ? 'margin:0 0 8px;font-size:12px;line-height:1.7;color:#5f6670' : 'margin:0 0 16px';
+  return text.split(/\n{2,}/).map(function (para) {
+    var t = para.trim();
+    if (!t) return '';
+    var only = t.match(/^\[([^\]\n]+)\]\((https?:\/\/[^)\s]+)\)$/);
+    if (only && !small) return '<p style="margin:22px 0 26px"><a href="' + esc(only[2]) + '" style="display:inline-block;background:#1f3f6b;color:#ffffff;text-decoration:none;font-weight:bold;padding:13px 24px;border-radius:6px">' + esc(only[1]) + '</a></p>';
+    var links = [];
+    var h = esc(para.replace(LINK_RE, function (all, label, url) { links.push([label, url]); return '\u0000' + (links.length - 1) + '\u0000'; }));
+    h = h.replace(/https?:\/\/[^\s<\u0000]+/g, function (u) { return '<a href="' + u + '" style="color:#1f3f6b">' + u + '</a>'; });
+    h = h.replace(/\u0000(\d+)\u0000/g, function (all, i) { return '<a href="' + esc(links[i][1]) + '" style="color:#1f3f6b">' + esc(links[i][0]) + '</a>'; });
+    h = h.replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+    return '<p style="' + pStyle + '">' + h + '</p>';
+  }).join('');
+}
+
+// テキスト版: リンクは「文字（URL）」、太字の記号は外す
+function toText_(text) {
+  return String(text).replace(LINK_RE, '$1（$2）').replace(/\*\*([^*\n]+)\*\*/g, '$1');
 }
 
 function text_(s) { return ContentService.createTextOutput(s).setMimeType(ContentService.MimeType.TEXT); }
@@ -172,11 +204,9 @@ function setup() {
 function sendTestToMe() {
   var me = Session.getActiveUser().getEmail();
   var seq = sequence_();
-  var site = siteUrl_();
+  var vars = varsFor_(seq, 's1', 'nagaoka', webAppUrl_() + '?u=test');
   seq.steps.forEach(function (st) {
-    var vars = { site: site, pdf_url: site + seq.pdfPath, situation_block: '（ここに、申し込み時に選んだ状況の「最初にやること」が入ります）', city_block: '（ここに、申し込み時に選んだ市町村のページが入ります）', price_count: seq.prices.count, price_1k: seq.prices.k1, price_3ldk: seq.prices.ldk3, unsubscribe_url: webAppUrl_() + '?u=test' };
-    var fill = function (t) { return String(t).replace(/\{\{(\w+)\}\}/g, function (all, k) { return vars[k] != null ? vars[k] : ''; }); };
-    var body = fill(st.body) + '\n\n' + fill(seq.footer);
-    MailApp.sendEmail(me, '[テスト] ' + fill(st.subject), body, { name: seq.senderName, htmlBody: toHtml_(body) });
+    var mail = compose_(seq, st, vars);
+    MailApp.sendEmail(me, '[テスト] ' + mail.subject, mail.text, { name: seq.senderName, htmlBody: mail.html });
   });
 }

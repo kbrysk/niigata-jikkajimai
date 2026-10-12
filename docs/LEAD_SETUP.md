@@ -39,6 +39,8 @@
 ## 3. 運用
 
 - 文面を直すときは `content/lead/sequence.md` を直して公開するだけ（Apps Script は10分以内に新しい文面を読む）。止めたいときは `approved: false` に戻す。
+- 公開の前に、`node build.mjs && node scripts/preview_lead_mails.mjs` で5通の見た目を確かめる（`.pdf-build/mail-preview.html`。Apps Script と同じ組み立て方で表示する）。記法は `[文字](URL)` がテキストリンク、リンクだけの段落がボタン、`**太字**`。
+- 名乗り・署名・差出人名は運営者の名字だけ（site.json の operatorPerson から差し込む）。返信は送信元の Gmail に届くので、運営者が読んで返す。
 - 申し込み一覧・配信状況・配信停止は、スプレッドシートの「leads」で見る（状態: 配信中／配信完了／配信停止）。個人情報なので、このリポジトリには入れない。
 - 無料の Google アカウントの送信上限は1日100通。1日の申し込みが30件を超えるようになったら、Google Workspace か、送信サービス（Resend など。このサイト専用のアカウントで契約）への切り替えを検討する。
 - 特典PDFを作り直したら、`/kanzen-guide/` のページ数表示も自動で変わる（ビルド時にPDFから数える）。

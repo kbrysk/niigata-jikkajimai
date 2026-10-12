@@ -22,19 +22,23 @@ export function setupLead({ ROOT, SITE, esc, url, abs, cities, prices, roadmap }
   const seqSrc = fs.existsSync(path.join(ROOT, "content/lead/sequence.md")) ? fs.readFileSync(path.join(ROOT, "content/lead/sequence.md"), "utf8").replace(/\r\n?/g, "\n") : "";
   const fm = (seqSrc.match(/^---\n([\s\S]*?)\n---\n/) || [])[1] || "";
   const approved = /^approved:\s*true\s*$/m.test(fm);
+  // 運営者の名前は site.json の operatorPerson から差し込む（本文に直書きしない。移管時はそこだけ差し替える）
+  const opName = (SITE.operatorPerson && SITE.operatorPerson.name) || SITE.name;
+  const who = (t) => t.replace(/\{\{operator\}\}/g, opName).replace(/\{\{operator_last\}\}/g, opName.split(/[\s　]+/)[0]);
   const steps = seqSrc.split(/\n## step:\s*/).slice(1).map((blk) => {
     const [head, ...rest] = blk.split("\n");
     const lines = rest.join("\n").replace(/^\n+/, "");
     const offsetDays = Number((lines.match(/^offsetDays:\s*(\d+)/m) || [])[1] || 0);
     const subject = (lines.match(/^subject:\s*(.+)$/m) || [])[1] || "";
     const body = lines.replace(/^offsetDays:.*\n/m, "").replace(/^subject:.*\n/m, "").trim();
-    return { step: Number(head.trim()), offsetDays, subject, body };
+    return { step: Number(head.trim()), offsetDays, subject: who(subject), body: who(body) };
   });
   const cs = prices.companies || [];
   const minOf = (k) => { const v = cs.map((x) => x[k]).filter(Boolean); return v.length ? `${Math.min(...v).toLocaleString("ja-JP")}円` : ""; };
   const sequence = {
     approved,
-    senderName: SITE.name,
+    // 差出人名も運営者の名字で出す（例: 大久保（新潟 実家じまいナビ））。フルネームは出さない（2026-10-12 大久保さん指定）
+    senderName: SITE.operatorPerson && SITE.operatorPerson.name ? `${who("{{operator_last}}")}（${SITE.name}）` : SITE.name,
     pdfPath: LEAD_PDF,
     pdfName: "新潟の実家じまい_完全ガイド.pdf",
     situations: Object.fromEntries((roadmap.situations || []).map((s) => [s.id, { label: s.label, first: s.first || [] }])),
@@ -44,9 +48,9 @@ export function setupLead({ ROOT, SITE, esc, url, abs, cities, prices, roadmap }
       "────────────",
       `${SITE.name}（運営: ${SITE.operator}）`,
       SITE.operatorAddress ? `所在地: ${SITE.operatorAddress}` : "",
-      SITE.contactFormUrl ? `お問い合わせ: ${SITE.contactFormUrl}` : "",
-      "このメールは、「新潟の実家じまい 完全ガイド」のお申し込み時に、メールの受け取りに同意いただいた方にお送りしています。",
-      "配信の停止（いつでも解除できます）: {{unsubscribe_url}}",
+      // お問い合わせと配信停止は、URLをむき出しにせずテキストリンクにする（Apps Script の toHtml_ が [文字](URL) をリンクにする）
+      [SITE.contactFormUrl ? `[お問い合わせ](${SITE.contactFormUrl})` : "", "[配信停止はこちら]({{unsubscribe_url}})"].filter(Boolean).join("　｜　"),
+      "このメールは、「新潟の実家じまい 完全ガイド」のお申し込み時に、メールの受け取りに同意いただいた方にお送りしています。配信はいつでも停止できます。",
     ].filter(Boolean).join("\n"),
     steps,
   };
@@ -91,7 +95,7 @@ f.addEventListener('click',function(e){var a=e.target.closest('a[data-cta]');if(
   <select id="gf-city" name="city"><option value="">選ばない</option>${cities.map((c) => `<option value="${esc(c.cityId)}">${esc(c.city)}</option>`).join("")}</select>
   <fieldset><legend>いまの状況<span class="opt">任意</span></legend><div class="lf-sits">${situationOpts}</div></fieldset>
   <div class="hp" aria-hidden="true"><label>ウェブサイト<input name="website" tabindex="-1" autocomplete="off"></label></div>
-  <label class="gf-consent"><input type="checkbox" name="consent" value="yes" required><span>ガイドの送付と、実家じまいのヒントのメール（全${steps.length || 5}回）を受け取ること、および<a href="${url("/privacy/")}" target="_blank" rel="noopener">プライバシーポリシー</a>に同意します。</span></label>
+  <label class="gf-consent"><input type="checkbox" name="consent" value="yes" required><span>ガイドの送付と、実家じまいに役立つお知らせのメールを受け取ること、および<a href="${url("/privacy/")}" target="_blank" rel="noopener">プライバシーポリシー</a>に同意します。</span></label>
   <p class="gf-err" role="alert" hidden></p>
   <button class="btn gf-submit" type="submit">無料でガイドを受け取る</button>
   <p class="small">メールはいつでも配信を停止できます。メールアドレスは、ガイドの送付とメール配信の管理だけに使います。</p>
