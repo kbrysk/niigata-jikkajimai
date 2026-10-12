@@ -3,6 +3,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # 予約公開: 毎朝 7:05（日本時間）に作り直し、publish: が今日の記事を公開する
+  schedule:
+    - cron: "5 22 * * *"
 permissions:
   contents: read
   pages: write
@@ -36,3 +39,13 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+  notify:
+    # 公開のあと、今日が公開日の記事だけを IndexNow で検索エンジンに知らせる
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/indexnow_today.mjs

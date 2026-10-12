@@ -12,7 +12,8 @@ const OUT = path.join(ROOT, "dist");
 const SITE = JSON.parse(fs.readFileSync(path.join(ROOT, "site.json"), "utf8"));
 const BASE = (process.env.BASE_PATH ?? SITE.basePath ?? "").replace(/\/$/, "");
 const ORIGIN = SITE.origin.replace(/\/$/, "");
-const TODAY = new Date().toISOString().slice(0, 10);
+// 日付は日本時間で数える（予約公開の判定に使う）
+const TODAY = new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
 
 const readJSON = (p, fallback) => (fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf8")) : fallback);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -93,6 +94,15 @@ const guides = fs.existsSync(path.join(ROOT, "content/guides"))
       return { slug, meta, body, html: marked.parse(body) };
     })
   : [];
+// 予約公開: front matter の publish: YYYY-MM-DD が今日（日本時間）より後の記事は出さない。
+// 毎朝の定時ビルド（.github/workflows/pages.yml の schedule）で、その日の記事が自動で公開される。
+const SCHEDULED = new Set(guides.filter((g) => g.meta.publish && String(g.meta.publish) > TODAY).map((g) => g.slug));
+for (let i = guides.length - 1; i >= 0; i--) if (SCHEDULED.has(guides[i].slug)) guides.splice(i, 1);
+for (const g of guides) {
+  if (g.meta.publish && !g.meta.updated) g.meta.updated = String(g.meta.publish);
+  // まだ公開していない記事へのリンクは、公開日まで文字だけにする（リンク切れを出さない）
+  if (SCHEDULED.size) g.html = g.html.replace(/<a href="(?:\.\.\/|\/guide\/)([a-z0-9-]+)\/?"[^>]*>([\s\S]*?)<\/a>/g, (all, slug, text) => (SCHEDULED.has(slug) ? text : all));
+}
 // 市ごとの「粗大ごみ」専用ガイド（slug: <cityId>-shi-sodaigomi / <cityA>-<cityB>-sodaigomi）がある市は、
 // 市町村ページと同じ検索語を取り合わないよう、市町村ページ側の名乗りを「実家じまいガイド」に寄せる（2026-10-02 カニバリ対策）
 const sodaiGuideFor = {};
