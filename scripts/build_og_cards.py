@@ -1,0 +1,165 @@
+# -*- coding: utf-8 -*-
+"""SNS（X・LINE・Facebook）で共有されたときのアイキャッチ（1200x630）を、記事と市町村ページごとに作る。
+使い方: PYTHONUTF8=1 python scripts/build_og_cards.py   （記事を足したとき・title を変えたときに実行してコミットする）
+
+- 出力: public/og/guide/<slug>.jpg、public/og/city/<cityId>.jpg（build.mjs がファイルがあるページだけ og:image に使う）
+- 文字: title の「｜」より前（答え）。front matter に ogText があればそれを使う（「/」で改行位置を指定できる）
+- 数字（金額・日数・件数）は黄色で強調。数字と単位の途中では改行しない
+- 背景は分類ごとの版画風イメージ public/assets/cat-*.jpg（市町村ページは photo-city.jpg）
+- 分類の判定は build.mjs の GUIDE_CATS と同じ順・同じ正規表現（変えるときは両方を直す）
+- CI（GitHub Actions）には Python が無いので、画像はここで作ってコミットする
+"""
+import io, json, os, re, sys
+from PIL import Image, ImageDraw, ImageFont
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+FB = r"C:\Windows\Fonts\BIZ-UDGothicB.ttc"
+FR = r"C:\Windows\Fonts\BIZ-UDGothicR.ttc"
+W, H = 1200, 630
+NAVY, NAVY2 = (31, 63, 107), (23, 48, 79)
+PAPER, WHITE, HL, SEAL = (247, 244, 236), (255, 255, 255), (255, 210, 77), (179, 65, 47)
+
+CATS = [  # build.mjs の GUIDE_CATS と同じ
+    ("yuki", "雪と冬の実家じまい", r"yuki|fuyu"),
+    ("gomi", "粗大ごみ・ごみの出し方", r"sodaigomi|gomi|kaden|futon|sofa|recycle"),
+    ("gyosha", "業者・遺品整理", r"gyosha|gyousha|ihinseiri|butsudan"),
+    ("akiya", "空き家・相続・税金", r"akiya|souzoku|zeikin"),
+    ("susume", "実家じまいの進め方と費用", r""),
+]
+
+def cat_of(slug):
+    for cid, name, rx in CATS:
+        if not rx or re.search(rx, slug):
+            return cid, name
+
+def front_matter(path):
+    s = io.open(path, encoding="utf-8").read().replace("\r\n", "\n")
+    m = re.match(r"---\n(.*?)\n---", s, re.S)
+    fm = {}
+    for line in (m.group(1) if m else "").split("\n"):
+        mm = re.match(r"^([A-Za-z]+):\s*(.*)$", line)
+        if mm:
+            fm[mm.group(1)] = mm.group(2).strip().strip('"').strip("'")
+    return fm
+
+# ---- 文字の分割（数字＋単位・カタカナ・英字はひと固まり。助詞・句読点の後ろを改行の候補にする）----
+UNIT = r"(?:万円|億円|円|か月|ヶ月|年度|年末|年|月末|月|日|時間|分|%|％|社|者|本|点|件|枚|kg|ｋｇ|cm|㎡|m|倍|割|段階|つ|歳|字|人|市町村|市|町|村|か所)?"
+TOKEN = re.compile(r"[0-9０-９][0-9０-９,，.．〜~]*" + UNIT + r"|[ァ-ヴー・]+|[A-Za-z]+|.", re.S)
+NUM = re.compile(r"^[0-9０-９]")
+BREAK_AFTER = set("はがをにでとのもへや、。・？！）」』")
+NO_HEAD = set("、。）」』？！ーっゃゅょ")
+
+def tokens(text):
+    return TOKEN.findall(text)
+
+def wrap(text, font, maxw, draw):
+    """貪欲に詰め、はみ出したら直近の改行候補まで戻す。"""
+    toks, lines, cur, last_ok = tokens(text), [], [], -1
+    for t in toks:
+        if t == "/":  # 手動改行
+            lines.append(cur); cur, last_ok = [], -1; continue
+        trial = "".join(cur) + t
+        if cur and draw.textlength(trial, font=font) > maxw and t not in NO_HEAD:
+            if 0 <= last_ok < len(cur) - 1:
+                lines.append(cur[: last_ok + 1]); cur = cur[last_ok + 1 :]
+            else:
+                lines.append(cur); cur = []
+            last_ok = -1
+            # 戻した分の改行候補を数え直す
+            for i, x in enumerate(cur):
+                if x[-1] in BREAK_AFTER or NUM.match(x):
+                    last_ok = i
+        cur.append(t)
+        if t[-1] in BREAK_AFTER or NUM.match(t):
+            last_ok = len(cur) - 1
+    if cur:
+        lines.append(cur)
+    return ["".join(l) for l in lines if l]
+
+def fit(text, draw, maxw, maxh):
+    for size in range(88, 51, -4):
+        f = ImageFont.truetype(FB, size)
+        lines = wrap(text, f, maxw, draw)
+        lh = int(size * 1.32)
+        if len(lines) <= (3 if size >= 72 else 4) and lh * len(lines) <= maxh:
+            # 行の長さをそろえる（最後の行だけ極端に短くならないように）
+            total = draw.textlength(text.replace("/", ""), font=f)
+            if "/" not in text and len(lines) > 1:
+                for w in range(int(total / len(lines)) + 10, maxw + 1, 12):
+                    alt = wrap(text, f, w, draw)
+                    if len(alt) == len(lines):
+                        lines = alt
+                        break
+            return f, lines, lh
+    f = ImageFont.truetype(FB, 52)
+    return f, wrap(text, f, maxw, draw)[:4], int(52 * 1.32)
+
+def draw_line(draw, x, y, line, font):
+    for t in tokens(line):
+        if NUM.match(t):  # 数字の中の「,」は詰める（等幅のままだと「3, 000」と離れて見える）
+            for ch in t:
+                draw.text((x, y), ch, font=font, fill=HL, anchor="ls")
+                x += draw.textlength(ch, font=font) * (0.45 if ch in ",，" else 1)
+        else:
+            draw.text((x, y), t, font=font, fill=WHITE, anchor="ls")
+            x += draw.textlength(t, font=font)
+
+def card(hook, chip, bg_path, out):
+    img = Image.new("RGB", (W, H), PAPER)
+    if os.path.exists(bg_path):
+        bg = Image.open(bg_path).convert("RGB")
+        scale = max(W / bg.width, H / bg.height)
+        bg = bg.resize((int(bg.width * scale + 0.5), int(bg.height * scale + 0.5)), Image.LANCZOS)
+        left = bg.width - W  # 絵の主役は右寄りなので右端に合わせる
+        top = (bg.height - H) // 2
+        img.paste(bg.crop((left, top, left + W, top + H)), (0, 0))
+    d = ImageDraw.Draw(img)
+    # 左の藍の面（右端を斜めに切る）
+    d.polygon([(0, 0), (760, 0), (690, H), (0, H)], fill=NAVY)
+    d.line([(760, 0), (690, H)], fill=PAPER, width=6)
+    # 分類のラベル
+    fc = ImageFont.truetype(FB, 28)
+    cw = d.textlength(chip, font=fc)
+    d.rounded_rectangle([60, 46, 60 + cw + 36, 46 + 50], radius=6, fill=PAPER)
+    d.text((60 + 18, 46 + 25), chip, font=fc, fill=NAVY, anchor="lm")
+    # 答え（大きく）
+    font, lines, lh = fit(hook, d, 590, 380)
+    block = lh * len(lines)
+    y0 = 128 + (380 - block) // 2 + int(font.size * 0.95)
+    for i, ln in enumerate(lines):
+        draw_line(d, 60, y0 + i * lh, ln, font)
+    # 下: サイト名と確認印
+    d.line([(60, 540), (640, 540)], fill=(120, 145, 180), width=2)
+    d.rectangle([60, 560, 104, 604], outline=WHITE, width=3)
+    d.text((82, 583), "ナビ", font=ImageFont.truetype(FB, 17), fill=WHITE, anchor="mm")
+    d.text((120, 583), "新潟 実家じまいナビ", font=ImageFont.truetype(FB, 30), fill=WHITE, anchor="lm")
+    fs = ImageFont.truetype(FB, 20)
+    sx, sy = 498, 562
+    d.rectangle([sx - 18, sy, sx + 160, sy + 42], fill=PAPER, outline=SEAL, width=3)
+    d.text((sx + 71, sy + 21), "公式情報で確認", font=fs, fill=SEAL, anchor="mm")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    img.save(out, "JPEG", quality=86, optimize=True, progressive=True)
+
+def main():
+    made = 0
+    gdir = os.path.join(ROOT, "content", "guides")
+    for f in sorted(os.listdir(gdir)):
+        if not f.endswith(".md"):
+            continue
+        fm = front_matter(os.path.join(gdir, f))
+        slug = fm.get("slug") or f[:-3]
+        hook = fm.get("ogText") or re.split(r"[｜|]", fm.get("title", slug))[0].strip()
+        cid, cname = cat_of(slug)
+        card(hook, cname, os.path.join(ROOT, "public", "assets", f"cat-{cid}.jpg"), os.path.join(ROOT, "public", "og", "guide", f"{slug}.jpg"))
+        made += 1
+    base = json.load(io.open(os.path.join(ROOT, "data", "municipalities_base.json"), encoding="utf-8"))
+    for c in base:
+        card(f"{c['city']}の/実家じまい", "粗大ごみ・解体補助金・空き家バンク", os.path.join(ROOT, "public", "assets", "photo-city.jpg"), os.path.join(ROOT, "public", "og", "city", f"{c['cityId']}.jpg"))
+        made += 1
+    print(made)
+
+if __name__ == "__main__":
+    if len(sys.argv) > 1:  # 試し: build_og_cards.py "文字" 出力パス
+        card(sys.argv[1], "試し", os.path.join(ROOT, "public", "assets", "cat-akiya.jpg"), sys.argv[2])
+    else:
+        main()

@@ -80,10 +80,16 @@
 | IndexNow の鍵 | `.indexnow-key` と `public/<鍵>.txt`。移管後に作り直してよい |
 | 問い合わせ用メールアドレス | サイト専用のアドレスを使う（個人アドレスにしない）。移管時は転送先を変更 |
 | フォームの送信先 | `site.json` の formEndpoint・formEntries（Google フォーム。設問を変えたら entry 番号を取り直す）、表示用は contactFormUrl |
-| 無料ガイドの申し込み・ステップメール | サイト専用の Google アカウントのスプレッドシート＋Apps Script（`site.json` の lead.endpoint）。移管時はスプレッドシートとスクリプトの所有者を移す |
+| 無料ガイドの申し込み・ステップメール | スプレッドシート＋Apps Script（`site.json` の lead.endpoint）。2026-10-12 時点は運営者の個人 Google アカウントに設置（分離ルールの例外）。移管時はスプレッドシートとスクリプトの所有者を移すか、承継先で作り直す（docs/LEAD_SETUP.md） |
 
 ## 予約公開（2026-10-12 追加）
 - 監査を通った記事は content/guides/ に置き、front matter に `publish: YYYY-MM-DD` を書く。その日まではサイトに出ない（一覧・サイトマップ・RSS・他記事からのリンクも出さない）。
 - 毎朝 7:05（日本時間）に GitHub Actions の定時ビルドが走り、その日が公開日の記事が出る。公開後に `scripts/indexnow_today.mjs` がその日の記事だけを IndexNow で通知する。
 - 公開日は1日1〜2本を目安に、間を空けずに並べる。関連記事の「次に読む」へのリンク（scripts/_add_backlinks.py）は先に足しておいてよい（公開日までは文字だけで表示される）。
 - 定時ビルドは GitHub の混雑で数十分遅れることがある。
+
+## SNS共有用のアイキャッチ（2026-10-12〜）
+- 記事と市町村ページには、ページごとのアイキャッチ（1200x630）が付く。`public/og/guide/<slug>.jpg`・`public/og/city/<cityId>.jpg`。無いページはサイト共通の `public/assets/og.png`。
+- **記事を足したとき・title を変えたときは、コミットの前に `PYTHONUTF8=1 python scripts/build_og_cards.py` を実行する**（CI には Python が無いので、画像は手元で作ってコミットする）。
+- 文字は title の「｜」より前。短くしたいときは front matter に `ogText: 長岡市の/粗大ごみは/1点200円から` のように書く（「/」で改行）。数字は黄色で強調される。
+- 背景は分類ごとの版画風イメージ（`public/assets/cat-*.jpg`）。分類の判定は build.mjs の GUIDE_CATS とスクリプトの CATS を同じにしておく。

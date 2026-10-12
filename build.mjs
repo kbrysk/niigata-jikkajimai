@@ -64,6 +64,8 @@ const GUIDE_CATS = [
   { id: "susume", name: "進め方と費用", lead: "何から始めるか、いくらかかるか、県外からの段取り、親との話し方。", test: () => true },
 ];
 const guideCat = (g) => GUIDE_CATS.find((c) => c.test(g.slug));
+// SNS共有用のアイキャッチ（1200x630）。scripts/build_og_cards.py が public/og/ に作る。無いページはサイト共通の og.png（2026-10-12）
+const ogFor = (kind, id) => (fs.existsSync(path.join(ROOT, `public/og/${kind}/${id}.jpg`)) ? `/og/${kind}/${id}.jpg` : "/assets/og.png");
 // 版画風イメージ（藍と生成りの2色）。ファイルがあるときだけ出す。キャプションは付けない（2026-10-05 大久保さん指示）
 const CAT_IMG_ALT = { susume: "秋の田のあぜ道に並ぶ並木", gomi: "片付けの途中の実家の座敷", gyosha: "農家の前に止まった小型トラック", akiya: "田んぼの中の古い農家と土蔵", yuki: "雪に覆われた田と農家" };
 const catImg = (id, cls = "") => fs.existsSync(path.join(ROOT, `public/assets/cat-${id}.jpg`)) ? `<figure class="photo cat ${cls}"><img src="${url(`/assets/cat-${id}.jpg`)}" alt="${esc(CAT_IMG_ALT[id] || "")}" loading="lazy" decoding="async"></figure>` : "";
@@ -151,7 +153,7 @@ const NAV = [
   { href: "/search/", t: "検索", short: "検索", ic: "search", on: /^\/search\// },
 ];
 const navOn = (n, p) => n.on.test(p || "");
-function layout({ title, description, pathname, body, breadcrumbs = [], jsonld = [], noindex = false, updated, stickyCta = true }) {
+function layout({ title, description, pathname, body, breadcrumbs = [], jsonld = [], noindex = false, updated, stickyCta = true, ogImage = "/assets/og.png" }) {
   // <title> は検索結果で切れないよう「｜」より前の主題だけを使う（H1 は本文側で全文を出す）
   const shortTitle = String(title).split(/[｜|]/)[0].trim();
   const fullTitle = pathname === "/" ? `${SITE.name}｜${SITE.tagline}` : `${shortTitle}｜${SITE.name}`;
@@ -173,7 +175,7 @@ ${noindex ? '<meta name="robots" content="noindex,nofollow">' : ""}
 <meta property="og:type" content="${pathname === "/" ? "website" : "article"}">
 <meta property="og:url" content="${abs(pathname)}">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="${abs("/assets/og.png")}">
+<meta property="og:image" content="${abs(ogImage)}">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="${url("/assets/favicon.svg")}" type="image/svg+xml">
@@ -433,7 +435,7 @@ ${(s.notes || "").toString().includes("要確認") ? `<p class="small">※ 一�
   const feeHint = (s.fee_examples || []).length ? `料金は${esc(((s.fee_examples || [])[0] || {}).fee || "").replace(/（.*$/, "")}から。` : "";
   const cityDescFull = `${c.city}の粗大ごみの出し方・料金・申込み・持ち込み先を公式サイトから整理。${feeHint}家電リサイクル、解体補助金、空き家バンクもまとめ、片付けを頼める地元の許可業者につなぎます。`;
   const cityDesc = cityDescFull.length > 120 ? cityDescFull.replace(feeHint, "") : cityDescFull;
-  write(`/city/${c.cityId}/`, layout({ title: sodaiGuide ? `${c.city}の実家じまいガイド｜粗大ごみ・解体補助金・空き家バンク` : `${c.city}の粗大ごみ 料金・申込み・持ち込み先`, description: cityDesc, pathname: `/city/${c.cityId}/`, body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }, { name: c.city, path: `/city/${c.cityId}/` }], jsonld: [faqLd], updated: s.checked_date || TODAY }));
+  write(`/city/${c.cityId}/`, layout({ ogImage: ogFor("city", c.cityId), title: sodaiGuide ? `${c.city}の実家じまいガイド｜粗大ごみ・解体補助金・空き家バンク` : `${c.city}の粗大ごみ 料金・申込み・持ち込み先`, description: cityDesc, pathname: `/city/${c.cityId}/`, body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }, { name: c.city, path: `/city/${c.cityId}/` }], jsonld: [faqLd], updated: s.checked_date || TODAY }));
 }
 
 function cityIndex() {
@@ -516,7 +518,7 @@ function withAffiliates(html, meta) {
 function guidePages() {
   for (const g of guides) {
     const m = g.meta;
-    const artLd = { "@context": "https://schema.org", "@type": "Article", headline: m.title, description: m.description, dateModified: m.updated || TODAY, author: { "@type": "Organization", name: SITE.operator }, publisher: { "@type": "Organization", name: SITE.name }, mainEntityOfPage: abs(`/guide/${g.slug}/`) };
+    const artLd = { "@context": "https://schema.org", "@type": "Article", headline: m.title, description: m.description, dateModified: m.updated || TODAY, author: { "@type": "Organization", name: SITE.operator }, publisher: { "@type": "Organization", name: SITE.name }, mainEntityOfPage: abs(`/guide/${g.slug}/`), image: abs(ogFor("guide", g.slug)) };
     const cityBox = `<section class="next-read"><h2>${icon("pin", "ic sm")}市町村ごとの粗大ごみの料金・申し込み・持ち込み先</h2><p class="small">実家のある市町村を選ぶと、粗大ごみの料金表、持ち込み施設、空き家の解体補助金を確認できます。</p><ul class="city-grid">${CORE.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a></li>`).join("")}</ul><p><a href="${url("/city/")}">30市町村すべてを見る →</a> ／ <a href="${url("/data/sodai-hikaku/")}">30市町村の手数料・持ち込み比較表 →</a></p></section>`;
     const roadmapData = g.slug === ROADMAP_SLUG ? readJSON(path.join(ROOT, "content/roadmap/roadmap.json"), null) : null;
     const aff = withAffiliates(g.html, m);
@@ -525,7 +527,7 @@ function guidePages() {
     const proseHtml = aff.html.replace(/<h2>([\s\S]*?)<\/h2>/g, (all, inner) => { heads.push(inner.replace(/<[^>]+>/g, "")); return `<h2 id="h${heads.length}">${inner}</h2>`; });
     const artToc = heads.length >= 3 ? `<nav class="art-toc" aria-label="この記事の目次"><p class="sec-nav-h">${icon("book", "ic sm")}この記事の目次</p><ol>${heads.map((t, i) => `<li><a href="#h${i + 1}"><span class="at-n">${i + 1}</span><span>${t}</span></a></li>`).join("")}</ol></nav>` : "";
     const body = roadmapData ? renderRoadmap(roadmapData, { esc, url, cities, icon, SIT_ICON, STAGE_ICON }) + cityBox : `<article class="guide"><header class="page-head">${seal(m.updated || TODAY, "更新")}<p class="eyebrow cat-eyebrow"><a href="${url("/guide/#" + guideCat(g).id)}">${icon(CAT_ICON[guideCat(g).id] || "doc", "ic sm")}${esc(guideCat(g).name)}</a></p><h1>${esc(m.title)}</h1><p class="lead">${esc(m.description || "")}</p><p class="small">更新日: ${esc(m.updated || TODAY)}${aff.used ? `／この記事には広告（PR）を含みます。<a href="${url("/ad-policy/")}">広告について</a>` : ""}</p></header>${catImg(guideCat(g).id, "lead")}${artToc}<div class="prose">${proseHtml}</div>${renderRelatedQa(qaForGuide(qaCats, g.slug), { esc, url, icon })}${cityBox}${ctaBox()}</article>`;
-    write(`/guide/${g.slug}/`, layout({ title: m.title, description: m.description || "", pathname: `/guide/${g.slug}/`, body, breadcrumbs: [{ name: "実家じまいの進め方", path: "/guide/" }, { name: m.title, path: `/guide/${g.slug}/` }], jsonld: [artLd, ...(() => { const f = roadmapData ? [...(roadmapData.stages || []).flatMap((st) => (st.questions || []).map((q) => ({ q: q.q, a: Array.isArray(q.a) ? q.a.join(" ") : q.a }))), ...(roadmapData.faq || [])] : extractGuideFaq(g.body); return f.length >= 2 ? [qaFaqLd(f)] : []; })()], updated: m.updated }));
+    write(`/guide/${g.slug}/`, layout({ title: m.title, description: m.description || "", pathname: `/guide/${g.slug}/`, ogImage: ogFor("guide", g.slug), body, breadcrumbs: [{ name: "実家じまいの進め方", path: "/guide/" }, { name: m.title, path: `/guide/${g.slug}/` }], jsonld: [artLd, ...(() => { const f = roadmapData ? [...(roadmapData.stages || []).flatMap((st) => (st.questions || []).map((q) => ({ q: q.q, a: Array.isArray(q.a) ? q.a.join(" ") : q.a }))), ...(roadmapData.faq || [])] : extractGuideFaq(g.body); return f.length >= 2 ? [qaFaqLd(f)] : []; })()], updated: m.updated }));
   }
   const catOrder = ["susume", "gomi", "gyosha", "akiya", "yuki"];
   const sections = catOrder.map((id) => GUIDE_CATS.find((c) => c.id === id)).map((cat) => {
