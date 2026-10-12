@@ -464,7 +464,7 @@ h1 .cnt{font-size:15px}
 .site-footer{background:var(--paper-2);border-top:2px solid var(--line-strong);color:var(--ink-2);font-size:14px;padding:36px 0 36px;margin-top:40px;line-height:1.8}
 .site-footer a{color:var(--ink)}
 .site-footer .cols{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:32px}
-.site-footer h2{font-size:14px;color:var(--ink);border:0;padding:0;margin:0 0 8px;font-weight:700}
+.site-footer h2,.site-footer .foot-h{font-size:14px;color:var(--ink);border:0;padding:0;margin:0 0 8px;font-weight:700}
 .site-footer ul{list-style:none;padding:0;margin:0}
 .site-footer li{margin:3px 0}
 .site-footer p{margin:6px 0}
@@ -726,3 +726,5 @@ h2 .h-ic+a{text-decoration:none;color:inherit}
 @media (max-width:1100px) and (min-width:641px){.hero-guide .g-mock{display:none}}
 @media (max-width:900px){.g-mock.lg{width:200px;margin:8px auto 18px}}
 @media (max-width:640px){.hero-guide{flex-direction:column;align-items:center}.hero-guide .g-mock{width:150px;margin:6px 30px 16px 0}.hg-t{width:100%}.gb-in .g-mock{width:160px;margin-left:10px}}
+/* 画面には出さず、読み上げ・機械には読ませる（表の caption など） */
+.vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}

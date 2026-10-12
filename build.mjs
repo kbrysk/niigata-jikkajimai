@@ -66,13 +66,39 @@ const GUIDE_CATS = [
 const guideCat = (g) => GUIDE_CATS.find((c) => c.test(g.slug));
 // SNS共有用のアイキャッチ（1200x630）。scripts/build_og_cards.py が public/og/ に作る。無いページはサイト共通の og.png（2026-10-12）
 const ogFor = (kind, id) => (fs.existsSync(path.join(ROOT, `public/og/${kind}/${id}.jpg`)) ? `/og/${kind}/${id}.jpg` : "/assets/og.png");
+// ---------- 生成AI・検索エンジンが読み取りやすい構造（2026-10-12 大久保さん依頼） ----------
+// 運営組織とサイトは @id で1つに束ね、各ページの JSON-LD からはその @id を参照する
+const ORG_ID = `${abs("/")}#organization`;
+const SITE_ID = `${abs("/")}#website`;
+const orgRef = { "@id": ORG_ID, "@type": "Organization", name: SITE.operator };
+const NIIGATA = { "@type": "AdministrativeArea", name: "新潟県", sameAs: "https://www.pref.niigata.lg.jp/" };
+// 本文の外部リンクのうち、公的機関など出典にあたるものを citation に入れる（広告・姉妹サイト・フォームは除く）
+const NOT_CITATION = /a8\.net|px\.a8|niigata-jikkajimai\.com|hakarau\.jp|fureaino-oka\.com|docs\.google\.com|forms\.gle|google\.com\/maps/;
+const citationsOf = (html) => [...new Set([...String(html).matchAll(/href="(https?:\/\/[^"#]+)/g)].map((m) => m[1]).filter((u) => !NOT_CITATION.test(u)))].slice(0, 40);
+// 表の意味を機械にも伝える: 直前の見出しを視覚的に隠した caption にし、見出しの行の th に scope="col" を付ける
+const tableA11y = (html) => {
+  let last = "";
+  return String(html).replace(/<h([23])[^>]*>([\s\S]*?)<\/h\1>|<table([^>]*)>(?!\s*<caption)(\s*<thead>[\s\S]*?<\/thead>)?/g, (all, lv, inner, attrs, thead) => {
+    if (lv) { last = inner.replace(/<[^>]+>/g, "").trim(); return all; }
+    const th = thead ? thead.replace(/<th(?![^>]*scope)/g, '<th scope="col"') : "";
+    return `<table${attrs || ""}>${last ? `<caption class="vh">${last}</caption>` : ""}${th}`;
+  });
+};
+// 運営組織（株式会社Kogera）とサイトを @id つきで定義する。各ページの JSON-LD はこの @id を参照する
+const ORG_LD = [{ "@context": "https://schema.org", "@type": "Organization", "@id": ORG_ID, name: SITE.operator, url: abs("/about/"),
+  logo: { "@type": "ImageObject", url: abs("/assets/logo.png"), width: 512, height: 512 },
+  ...(SITE.operatorAddress ? { address: { "@type": "PostalAddress", streetAddress: SITE.operatorAddress, addressCountry: "JP" } } : {}),
+  ...(PERSON.name ? { founder: { "@type": "Person", name: PERSON.name, jobTitle: "代表" } } : {}),
+  areaServed: NIIGATA, knowsAbout: ["実家じまい", "粗大ごみ", "遺品整理", "空き家", "空き家バンク", "解体補助金", "雪下ろし", "相続登記"] },
+{ "@context": "https://schema.org", "@type": "WebSite", "@id": SITE_ID, name: SITE.name, url: abs("/"), description: SITE.tagline, inLanguage: "ja", publisher: { "@id": ORG_ID },
+  potentialAction: { "@type": "SearchAction", target: { "@type": "EntryPoint", urlTemplate: `${abs("/search/")}?q={search_term_string}` }, "query-input": "required name=search_term_string" } }];
 // 版画風イメージ（藍と生成りの2色）。ファイルがあるときだけ出す。キャプションは付けない（2026-10-05 大久保さん指示）
 const CAT_IMG_ALT = { susume: "秋の田のあぜ道に並ぶ並木", gomi: "片付けの途中の実家の座敷", gyosha: "農家の前に止まった小型トラック", akiya: "田んぼの中の古い農家と土蔵", yuki: "雪に覆われた田と農家" };
 const catImg = (id, cls = "") => fs.existsSync(path.join(ROOT, `public/assets/cat-${id}.jpg`)) ? `<figure class="photo cat ${cls}"><img src="${url(`/assets/cat-${id}.jpg`)}" alt="${esc(CAT_IMG_ALT[id] || "")}" loading="lazy" decoding="async"></figure>` : "";
 const guideItem = (g, withDesc = true) => `<li><a href="${url(`/guide/${g.slug}/`)}"><strong>${esc(g.meta.title)}</strong>${withDesc ? `<span>${esc(g.meta.description || "")}</span>` : ""}</a></li>`;
 const latestCheck = () => cities.map((c) => c.sodai?.checked_date).filter(Boolean).sort().pop() || TODAY;
 // 確認印: 朱の角印。サイト全体の署名として、市町村・比較・ガイドの各ページの決まった位置に押す
-const seal = (date, label = "公式サイトで確認") => `<span class="seal" role="img" aria-label="${esc(label)} ${esc(date)}"><span class="seal-l">${esc(label)}</span><span class="seal-d">${esc(date)}</span></span>`;
+const seal = (date, label = "公式サイトで確認") => `<span class="seal" role="img" aria-label="${esc(label)} ${esc(date)}"><span class="seal-l">${esc(label)}</span><time class="seal-d" datetime="${esc(date)}">${esc(date)}</time></span>`;
 // 線のアイコンは icons.mjs（PDFと共用）。絵文字は使わない（_qa_site.py が絵文字を指摘する）。2026-10-12 大久保さん依頼で導入
 const CAT_ICON = { susume: "route", gomi: "trash", gyosha: "truck", akiya: "house", yuki: "snow" };
 // 状況（roadmap.json の situations）と段階（stages）のアイコン。トップと進め方ページで同じものを使う
@@ -216,16 +242,16 @@ ${LEAD.floatCta(pathname)}${LEAD.floatCta(pathname) ? LEAD.floatScript : ""}${bo
   <div class="wrap">
     <div class="cols">
       <div>
-        <h2>${esc(SITE.name)}</h2>
+        <p class="foot-h">${esc(SITE.name)}</p>
         ${personSmall()}
         <p class="foot-lead">長岡市在住の運営者が、新潟県30市町村の公式情報と地元の許可業者を確かめて載せる、実家じまいの案内サイトです。掲載情報は各市町村の公式サイトを出典とし、ページごとに確認日を記載しています。制度や料金は変わることがあるため、申し込み前に公式サイトでご確認ください。</p>
       </div>
       <div>
-        <h2>読む</h2>
+        <p class="foot-h">読む</p>
         <ul><li><a href="${url("/city/")}">市町村別ガイド（30市町村）</a></li><li><a href="${url("/data/sodai-hikaku/")}">30市町村 粗大ごみ手数料・持ち込み比較</a></li><li><a href="${url("/guide/")}">実家じまいの進め方と費用</a></li><li><a href="${url("/gyosha/")}">業者の料金と選び方</a></li><li><a href="${url("/mitsumori/")}">見積もり・相談</a></li>${LEAD.hasPdf ? `<li><a href="${url(LEAD_PATH)}">無料ガイド（PDF）</a></li>` : ""}</ul>
       </div>
       <div>
-        <h2>運営</h2>
+        <p class="foot-h">運営</p>
         <ul><li><a href="${url("/about/")}">運営者情報・編集方針</a></li><li><a href="${url("/keisai/")}">業者の方へ（掲載について）</a></li><li><a href="${url("/ad-policy/")}">広告について</a></li><li><a href="${url("/privacy/")}">プライバシーポリシー</a></li><li><a href="${url("/tokusho/")}">特定商取引法に基づく表記</a></li></ul>
         ${SISTERS.length ? `<h2 class="sister-h">姉妹サイト</h2><ul>${SISTERS.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x.name)}</a><span class="small">（${esc(x.note)}）</span></li>`).join("")}</ul>` : ""}
       </div>
@@ -435,7 +461,12 @@ ${(s.notes || "").toString().includes("要確認") ? `<p class="small">※ 一�
   const feeHint = (s.fee_examples || []).length ? `料金は${esc(((s.fee_examples || [])[0] || {}).fee || "").replace(/（.*$/, "")}から。` : "";
   const cityDescFull = `${c.city}の粗大ごみの出し方・料金・申込み・持ち込み先を公式サイトから整理。${feeHint}家電リサイクル、解体補助金、空き家バンクもまとめ、片付けを頼める地元の許可業者につなぎます。`;
   const cityDesc = cityDescFull.length > 120 ? cityDescFull.replace(feeHint, "") : cityDescFull;
-  write(`/city/${c.cityId}/`, layout({ ogImage: ogFor("city", c.cityId), title: sodaiGuide ? `${c.city}の実家じまいガイド｜粗大ごみ・解体補助金・空き家バンク` : `${c.city}の粗大ごみ 料金・申込み・持ち込み先`, description: cityDesc, pathname: `/city/${c.cityId}/`, body, breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }, { name: c.city, path: `/city/${c.cityId}/` }], jsonld: [faqLd], updated: s.checked_date || TODAY }));
+  write(`/city/${c.cityId}/`, layout({ ogImage: ogFor("city", c.cityId), title: sodaiGuide ? `${c.city}の実家じまいガイド｜粗大ごみ・解体補助金・空き家バンク` : `${c.city}の粗大ごみ 料金・申込み・持ち込み先`, description: cityDesc, pathname: `/city/${c.cityId}/`, body: tableA11y(body), breadcrumbs: [{ name: "市町村別ガイド", path: "/city/" }, { name: c.city, path: `/city/${c.cityId}/` }], jsonld: [faqLd, {
+    // 市町村ページが「どの自治体についての、いつ確かめた、どの公式ページにもとづく情報か」を機械に伝える
+    "@context": "https://schema.org", "@type": "WebPage", name: `${c.city}の実家じまいガイド`, description: cityDesc, url: abs(`/city/${c.cityId}/`), inLanguage: "ja",
+    dateModified: s.checked_date || TODAY, isPartOf: { "@id": SITE_ID }, publisher: orgRef, primaryImageOfPage: abs(ogFor("city", c.cityId)),
+    about: { "@type": "AdministrativeArea", name: c.city, containedInPlace: NIIGATA }, citation: citationsOf(body),
+  }], updated: s.checked_date || TODAY }));
 }
 
 function cityIndex() {
@@ -518,13 +549,19 @@ function withAffiliates(html, meta) {
 function guidePages() {
   for (const g of guides) {
     const m = g.meta;
-    const artLd = { "@context": "https://schema.org", "@type": "Article", headline: m.title, description: m.description, dateModified: m.updated || TODAY, author: { "@type": "Organization", name: SITE.operator }, publisher: { "@type": "Organization", name: SITE.name }, mainEntityOfPage: abs(`/guide/${g.slug}/`), image: abs(ogFor("guide", g.slug)) };
+    const artCities = [].concat(m.cities || []).map((id) => cityById[id]).filter(Boolean);
+    const artLd = { "@context": "https://schema.org", "@type": "Article", headline: m.title, description: m.description, inLanguage: "ja",
+      ...(m.publish ? { datePublished: m.publish } : {}), dateModified: m.updated || TODAY,
+      author: orgRef, publisher: orgRef, isPartOf: { "@id": SITE_ID }, mainEntityOfPage: abs(`/guide/${g.slug}/`), image: abs(ogFor("guide", g.slug)),
+      articleSection: guideCat(g).name, ...(Array.isArray(m.targetKeywords) ? { keywords: m.targetKeywords.join(", ") } : {}),
+      about: artCities.length ? artCities.map((c) => ({ "@type": "AdministrativeArea", name: c.city, containedInPlace: NIIGATA })) : NIIGATA,
+      isAccessibleForFree: true, citation: citationsOf(g.html) };
     const cityBox = `<section class="next-read"><h2>${icon("pin", "ic sm")}市町村ごとの粗大ごみの料金・申し込み・持ち込み先</h2><p class="small">実家のある市町村を選ぶと、粗大ごみの料金表、持ち込み施設、空き家の解体補助金を確認できます。</p><ul class="city-grid">${CORE.map((id) => cityById[id]).filter(Boolean).map((c) => `<li><a href="${url(`/city/${c.cityId}/`)}">${esc(c.city)}</a></li>`).join("")}</ul><p><a href="${url("/city/")}">30市町村すべてを見る →</a> ／ <a href="${url("/data/sodai-hikaku/")}">30市町村の手数料・持ち込み比較表 →</a></p></section>`;
     const roadmapData = g.slug === ROADMAP_SLUG ? readJSON(path.join(ROOT, "content/roadmap/roadmap.json"), null) : null;
     const aff = withAffiliates(g.html, m);
     // 記事の目次: 本文の h2 に番号の id を振り、3つ以上あれば記事の頭に出す
     const heads = [];
-    const proseHtml = aff.html.replace(/<h2>([\s\S]*?)<\/h2>/g, (all, inner) => { heads.push(inner.replace(/<[^>]+>/g, "")); return `<h2 id="h${heads.length}">${inner}</h2>`; });
+    const proseHtml = tableA11y(aff.html).replace(/<h2>([\s\S]*?)<\/h2>/g, (all, inner) => { heads.push(inner.replace(/<[^>]+>/g, "")); return `<h2 id="h${heads.length}">${inner}</h2>`; });
     const artToc = heads.length >= 3 ? `<nav class="art-toc" aria-label="この記事の目次"><p class="sec-nav-h">${icon("book", "ic sm")}この記事の目次</p><ol>${heads.map((t, i) => `<li><a href="#h${i + 1}"><span class="at-n">${i + 1}</span><span>${t}</span></a></li>`).join("")}</ol></nav>` : "";
     const body = roadmapData ? renderRoadmap(roadmapData, { esc, url, cities, icon, SIT_ICON, STAGE_ICON }) + cityBox : `<article class="guide"><header class="page-head">${seal(m.updated || TODAY, "更新")}<p class="eyebrow cat-eyebrow"><a href="${url("/guide/#" + guideCat(g).id)}">${icon(CAT_ICON[guideCat(g).id] || "doc", "ic sm")}${esc(guideCat(g).name)}</a></p><h1>${esc(m.title)}</h1><p class="lead">${esc(m.description || "")}</p><p class="small">更新日: ${esc(m.updated || TODAY)}${aff.used ? `／この記事には広告（PR）を含みます。<a href="${url("/ad-policy/")}">広告について</a>` : ""}</p></header>${catImg(guideCat(g).id, "lead")}${artToc}<div class="prose">${proseHtml}</div>${renderRelatedQa(qaForGuide(qaCats, g.slug), { esc, url, icon })}${cityBox}${ctaBox()}</article>`;
     write(`/guide/${g.slug}/`, layout({ title: m.title, description: m.description || "", pathname: `/guide/${g.slug}/`, ogImage: ogFor("guide", g.slug), body, breadcrumbs: [{ name: "実家じまいの進め方", path: "/guide/" }, { name: m.title, path: `/guide/${g.slug}/` }], jsonld: [artLd, ...(() => { const f = roadmapData ? [...(roadmapData.stages || []).flatMap((st) => (st.questions || []).map((q) => ({ q: q.q, a: Array.isArray(q.a) ? q.a.join(" ") : q.a }))), ...(roadmapData.faq || [])] : extractGuideFaq(g.body); return f.length >= 2 ? [qaFaqLd(f)] : []; })()], updated: m.updated }));
@@ -630,7 +667,7 @@ function staticPages() {
         : "";
     const pAff = withAffiliates(p.html, m);
     const body = `<article class="page"><header class="page-head"><h1>${esc(m.title)}</h1>${m.description ? `<p class="lead">${esc(m.description)}</p>` : ""}${pAff.used ? `<p class="small">このページには広告（PR）を含みます。<a href="${url("/ad-policy/")}">広告について</a></p>` : ""}</header>${p.slug === "mitsumori" ? catImg("gomi", "lead") : p.slug === "keisai" ? catImg("gyosha", "lead") : ""}${trust}${person}<div class="prose">${pAff.html}</div>${m.cta === "true" ? ctaBox() : ""}</article>`;
-    write(`/${p.slug}/`, layout({ title: m.title, description: m.description || m.title, pathname: `/${p.slug}/`, body, breadcrumbs: [{ name: m.title, path: `/${p.slug}/` }], noindex: m.noindex === "true", stickyCta: p.slug !== "mitsumori" && p.slug !== "keisai" }));
+    write(`/${p.slug}/`, layout({ title: m.title, description: m.description || m.title, pathname: `/${p.slug}/`, body: tableA11y(body), jsonld: p.slug === "about" ? [ORG_LD[0], { "@context": "https://schema.org", "@type": "AboutPage", url: abs("/about/"), inLanguage: "ja", isPartOf: { "@id": SITE_ID }, mainEntity: { "@id": ORG_ID } }] : [], breadcrumbs: [{ name: m.title, path: `/${p.slug}/` }], noindex: m.noindex === "true", stickyCta: p.slug !== "mitsumori" && p.slug !== "keisai" }));
   }
 }
 
@@ -753,8 +790,8 @@ ${faqSec}
 </div>
 ${guideBand("新潟の実家じまいを、ひとりで抱え込まないために", "band-end")}
 ${ctaBox()}`;
-  const orgLd = { "@context": "https://schema.org", "@type": "WebSite", name: SITE.name, url: abs("/"), description: SITE.tagline, publisher: { "@type": "Organization", name: SITE.operator } };
-  write("/", layout({ title: SITE.name, description: `新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、雪の支援を公式情報からまとめた実家じまいの案内。長岡から運営。まとめて頼むときは地元の許可業者へ。`, pathname: "/", body, jsonld: [orgLd] }));
+
+  write("/", layout({ title: SITE.name, description: `新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、雪の支援を公式情報からまとめた実家じまいの案内。長岡から運営。まとめて頼むときは地元の許可業者へ。`, pathname: "/", body, jsonld: ORG_LD }));
 }
 
 // ---------- 完全ガイド（無料PDF）の申し込みページと、ステップメールの本文 ----------
@@ -787,7 +824,9 @@ function extras() {
   const uniq = entries.filter(([u]) => (seen.has(u) ? false : (seen.add(u), true)));
   write("/sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${uniq.map(([u, d]) => `<url><loc>${abs(u)}</loc><lastmod>${d}</lastmod></url>`).join("\n")}\n</urlset>\n`);
   // /dl/（特典PDF）と /lead/（ステップメールの本文）は検索に出さない
-  write("/robots.txt", `User-agent: *\nAllow: /\nDisallow: ${url("/dl/")}\nDisallow: ${url("/lead/")}\nSitemap: ${abs("/sitemap.xml")}\n`);
+  // 生成AIの検索・回答用のクローラーも明示して許可する（同じグループに並べ、/dl/・/lead/ の除外は全員に効かせる）
+  const AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "Bingbot", "Googlebot"];
+  write("/robots.txt", `User-agent: *\n${AI_BOTS.map((b) => `User-agent: ${b}\n`).join("")}Allow: /\nDisallow: ${url("/dl/")}\nDisallow: ${url("/lead/")}\n\nSitemap: ${abs("/sitemap.xml")}\n`);
   // llms.txt: AI検索向けのサイト要約（ハカラウで引用数が伸びた型）
   const llms = [
     `# ${SITE.name}`,
@@ -810,11 +849,22 @@ function extras() {
     ...(fs.existsSync(path.join(ROOT, "content/pages/tools.md")) ? [`- [無料の様式（チェックリスト・見積もり比較シート・粗大ごみ早見表）](${abs("/tools/")})`] : []),
     ``,
     `## 相談`,
-    `- [見積もり相談（無料）](${abs("/mitsumori/")}): 新潟県内の許可業者に取り次ぐ。相談・訪問見積もりは無料。`,
+    `- [見積もり・相談の窓口](${abs("/mitsumori/")}): 見積もりサービス（広告）の案内と、運営者への無料相談（原則2営業日以内に返信）。`,
     `- [業者の掲載について](${abs("/keisai/")})`,
     `- [運営者情報](${abs("/about/")})`,
   ].join("\n");
-  write("/llms.txt", llms + "\n");
+  write("/llms.txt", llms + `\n\n## 全文の要約\n- [llms-full.txt](${abs("/llms-full.txt")}): 全記事の結論と、Q&Aの全問の答えを1つにまとめたテキスト\n`);
+  // llms-full.txt: 記事ごとの「結論」と、Q&A全問の答え・出典を1ファイルに。生成AIがページを開かずに要点と出典をつかめるようにする
+  const plain = (h) => String(h || "").replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/\s+/g, " ").trim();
+  const firstAnswer = (html) => plain((String(html).match(/<h2[^>]*>[\s\S]*?<\/h2>\s*<p>([\s\S]*?)<\/p>/) || [])[1]);
+  const full = [
+    `# ${SITE.name}（全文の要約）`, ``,
+    `> 新潟県の実家じまい（親の家の片付け・粗大ごみ・遺品整理・空き家の売却と解体・雪の管理）の案内。運営は${SITE.operator}。掲載情報は国・新潟県・市町村などの公式サイトを出典にし、確認日を付けている。制度や料金は変わるため、最新は各公式サイトで確認すること。`, ``,
+    `## 記事の結論（${guides.length}本）`, ``,
+    ...guides.flatMap((g) => [`### ${g.meta.title}`, `URL: ${abs(`/guide/${g.slug}/`)}`, `更新日: ${g.meta.updated || TODAY}`, `要約: ${g.meta.description || ""}`, ...(firstAnswer(g.html) ? [`結論: ${firstAnswer(g.html)}`] : []), ``]),
+    ...(qaCats.length ? [`## 疑問Q&A（${qaCats.reduce((n, c) => n + c.items.length, 0)}問）`, ``, ...qaCats.flatMap((c) => [`### ${c.title}`, `URL: ${abs(`/qa/${c.id}/`)}`, ``, ...c.items.flatMap((it) => [`Q. ${plain(it.q)}`, `A. ${plain(it.a)}`, ...((it.sources || []).length ? [`出典: ${(it.sources || []).map((x) => (typeof x === "string" ? x : x.url || "")).filter(Boolean).join(" ")}`] : []), ``])])] : []),
+  ].join("\n");
+  write("/llms-full.txt", full + "\n");
   write("/feed.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>${esc(SITE.name)}</title><link>${abs("/")}</link><description>${esc(SITE.tagline)}</description>${guides.map((g) => `<item><title>${esc(g.meta.title)}</title><link>${abs(`/guide/${g.slug}/`)}</link><description>${esc(g.meta.description || "")}</description></item>`).join("")}</channel></rss>\n`);
   write("/404.html", layout({ title: "ページが見つかりません", description: "ページが見つかりません", pathname: "/404.html", body: `<h1>ページが見つかりません</h1><p><a href="${url("/")}">トップページへ戻る</a></p><p><a href="${url("/search/")}">サイト内を検索する →</a></p>`, noindex: true }));
   // fs.cpSync は Windows + Node 24 でプロセスごと落ちる（exit 0xC0000409）ことがあるため手動コピーにする（2026-10-02）
