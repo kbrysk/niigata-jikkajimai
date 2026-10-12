@@ -59,20 +59,26 @@ const checkedAll = [RM.updated, prices.checked, ...sodaiChecked].filter(Boolean)
 const issued = checkedAll[checkedAll.length - 1];
 
 // ---------- 各章 ----------
-const cover = `<section class="cover">
-  <p class="c-site">${esc(SITE.name)}</p>
+// 表紙: 濃紺に金の二重罫、明朝の題字、主要な数字を金で。山の線画は新潟の山並みのイメージ（実在の景色の写しではない）
+const todoTotal = stages.reduce((n, st) => n + (st.todo || []).length, 0);
+const mountains = `<svg class="c-mt" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 92 L60 70 L110 84 L170 40 L215 66 L260 52 L320 20 L380 58 L430 46 L480 72 L540 50 L600 66" fill="none" stroke="rgba(201,169,106,.55)" stroke-width="1"/><path d="M155 49 L170 40 L184 50 M305 30 L320 20 L336 31" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="1"/></svg>`;
+const cover = `<section class="cover"><div class="c-frame">
+  <p class="c-brand">NIIGATA JIKKAJIMAI NAVI<span>${esc(SITE.name)}</span></p>
   <div class="c-mid">
-    <p class="c-eyebrow">${new Date(issued).getFullYear()}年版　無料ガイドブック</p>
-    <h1>新潟の実家じまい<br>完全ガイド</h1>
-    <p class="c-lead">親が元気なうちの準備から、亡くなったあとの手続き、片付け、空き家の行き先と冬の管理まで。期限・手順・費用と、新潟県内の窓口を1冊にまとめました。</p>
-    <ul class="c-flow">${stages.map((st, i) => `<li><span class="fl-ic">${icon(STAGE_ICON[i] || "doc")}</span><span>段階${esc(st.id)}</span><strong>${esc(st.title)}</strong></li>`).join("")}</ul>
+    <p class="c-ed">${new Date(issued).getFullYear()} EDITION　｜　無料ガイドブック</p>
+    <p class="c-pre">期限・手順・費用・新潟の窓口</p>
+    <h1>新潟の実家じまい<span>完全ガイド</span></h1>
+    <div class="c-rule"></div>
+    <p class="c-lead">親が元気なうちの準備から、亡くなったあとの手続き、片付け、空き家の行き先と冬の管理まで。新潟県内30市町村の公式情報をもとに、1冊にまとめました。</p>
+    <ul class="c-points"><li><b>${(RM.deadlines || []).length}</b><span>期限のある手続きの早見表</span></li><li><b>${todoTotal}</b><span>段階ごとのやること</span></li><li><b>30</b><span>市町村の粗大ごみ早見表</span></li></ul>
   </div>
-  <div class="c-foot"><p>発行 ${esc(SITE.operator)}（${esc(SITE.name)}）</p><p>掲載情報の確認日 ${esc(checkedAll[0])}〜${esc(issued)}。制度・料金は変わることがあります。手続きの前に、各機関の公式サイトでご確認ください。</p><p>${esc(ORIGIN)}/</p></div>
-</section>`;
+  ${mountains}
+  <div class="c-foot"><p>発行 ${esc(SITE.operator)}　／　${esc(ORIGIN)}/</p><p>掲載情報の確認日 ${esc(checkedAll[0])}〜${esc(issued)}。制度・料金は変わることがあります。手続きの前に、各機関の公式サイトでご確認ください。</p></div>
+</div></section>`;
 
 const toc = `<section class="toc-page"><h2 class="h">${icon("book")}このガイドの使い方と目次</h2>
 ${(RM.intro || []).filter((p) => !/ボタン|ブラウザ/.test(p)).map((p) => `<p>${inl(p)}</p>`).join("")}
-<p>全部を順に読む必要はありません。まず1章で、いまの状況に近いものを選び、そこに書かれた「最初にやること」から始めてください。期限のある手続きは3章の早見表で、新潟の市町村ごとのごみの出し方は10章で確かめられます。</p>
+<p>全部を順に読む必要はありません。まず1章で、いまの状況に近いものを選び、そこに書かれた「最初にやること」から始めてください。期限のある手続きは3章の早見表で、新潟の市町村ごとのごみの出し方は${stages.length + 7}章で確かめられます。</p>
 <ol class="toc">
 <li><span>1</span>いまの状況から始める</li><li><span>2</span>実家じまいの全体の流れ（5段階）</li><li><span>3</span>期限のある手続きの早見表</li><li><span>4</span>先に決める分かれ道</li>
 ${stages.map((st, i) => `<li><span>${i + 5}</span>段階${esc(st.id)}　${esc(st.title)}</li>`).join("")}
@@ -163,7 +169,7 @@ a{color:var(--navy);text-decoration:underline;text-decoration-color:rgba(31,63,1
 .mute{color:var(--mute)}.nw{white-space:nowrap}.n{text-align:right;white-space:nowrap}
 section{break-before:page}
 section.cover{break-before:auto}
-h2{font-size:17pt;line-height:1.4;margin:0 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}
+h2{font-family:"Noto Serif JP","Yu Mincho",serif;font-weight:700;font-size:17pt;line-height:1.4;margin:0 0 10px;padding-bottom:6px;border-bottom:1.5px solid var(--navy);color:#15304f}
 h2.h{display:flex;align-items:center;gap:10px}
 h2 .no{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;font-size:12pt;flex:none}
 h2 .ic{width:24px;height:24px}
@@ -173,18 +179,26 @@ p{margin:5px 0}
 .links{font-size:8.5pt;color:var(--mute)}
 .ic-badge{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:7px;background:var(--navy10);color:var(--navy);flex:none}.ic-badge .ic{width:20px;height:20px}
 /* 表紙 */
-.cover{height:297mm;padding:22mm 20mm 18mm;background:var(--navy);color:#fff;display:flex;flex-direction:column}
-.c-site{font-size:11pt;letter-spacing:.08em;margin:0;opacity:.85;border-bottom:1px solid rgba(255,255,255,.35);padding-bottom:8px}
-.c-mid{margin:auto 0}
-.c-eyebrow{font-size:11pt;opacity:.8;margin:0 0 8px}
-.cover h1{font-size:38pt;line-height:1.3;margin:0 0 16px;letter-spacing:.02em}
-.c-lead{font-size:12pt;line-height:1.9;max-width:150mm;opacity:.95}
-.c-flow{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
-.c-flow li{display:flex;flex-direction:column;align-items:center;text-align:center;font-size:8.5pt;opacity:.95}
-.c-flow .fl-ic{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;border:1.5px solid #fff;margin-bottom:6px}
-.c-flow .ic{color:#fff;width:22px;height:22px}
-.c-flow strong{font-size:10pt}
-.c-foot{font-size:8.5pt;opacity:.8;border-top:1px solid rgba(255,255,255,.35);padding-top:8px}.c-foot p{margin:2px 0}
+.cover{height:297mm;padding:11mm;background:radial-gradient(120% 75% at 85% 0%,#2a4d7a 0%,#15304f 50%,#0c1b30 100%);color:#fff}
+.c-frame{position:relative;height:100%;border:.8pt solid #c9a96a;padding:15mm 14mm 11mm;display:flex;flex-direction:column;overflow:hidden}
+.c-frame::before{content:"";position:absolute;inset:2.2mm;border:.4pt solid rgba(201,169,106,.45);pointer-events:none}
+.c-brand{position:relative;z-index:1;margin:0;font-family:"Noto Serif JP","Yu Mincho",serif;font-size:8.5pt;letter-spacing:.32em;color:#c9a96a}
+.c-brand span{display:block;font-family:"BIZ UDPGothic";letter-spacing:.12em;font-size:9pt;color:rgba(255,255,255,.75);margin-top:3px}
+.c-mid{position:relative;z-index:1;margin:auto 0 0;padding-top:30mm}
+.c-ed{margin:0 0 10px;font-family:"Noto Serif JP","Yu Mincho",serif;font-size:10pt;letter-spacing:.3em;color:#c9a96a}
+.c-pre{margin:0 0 6px;font-size:12pt;letter-spacing:.18em;color:rgba(255,255,255,.85)}
+.cover h1{margin:0;font-family:"Noto Serif JP","Yu Mincho",serif;font-weight:700;font-size:40pt;line-height:1.3;letter-spacing:.06em}
+.cover h1 span{display:block;font-size:52pt;letter-spacing:.12em;color:#e6cf9c}
+.c-rule{width:46mm;height:0;border-top:.8pt solid #c9a96a;margin:9mm 0 7mm;position:relative}
+.c-rule::after{content:"";position:absolute;left:48mm;top:-2.2pt;width:4pt;height:4pt;background:#c9a96a;transform:rotate(45deg)}
+.c-lead{font-size:11.5pt;line-height:2;max-width:140mm;color:rgba(255,255,255,.9);margin:0}
+.c-points{list-style:none;padding:0;margin:12mm 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:.5pt solid rgba(201,169,106,.5);border-bottom:.5pt solid rgba(201,169,106,.5)}
+.c-points li{padding:5mm 4mm 4mm;text-align:center}
+.c-points li+li{border-left:.5pt solid rgba(201,169,106,.5)}
+.c-points b{display:block;font-family:"Noto Serif JP","Yu Mincho",serif;font-size:30pt;line-height:1.1;color:#e6cf9c;font-weight:700}
+.c-points span{display:block;font-size:8.5pt;color:rgba(255,255,255,.8);margin-top:2mm;letter-spacing:.04em}
+.c-mt{position:absolute;left:0;right:0;bottom:22mm;width:100%;height:34mm}
+.c-foot{position:relative;z-index:1;margin-top:auto;padding-top:26mm;font-size:7.5pt;line-height:1.6;color:rgba(255,255,255,.6)}.c-foot p{margin:1px 0}
 /* 目次 */
 .toc{list-style:none;padding:0;margin:14px 0;columns:2;column-gap:18px}
 .toc li{display:flex;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line);break-inside:avoid;font-size:10.5pt}

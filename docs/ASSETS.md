@@ -8,6 +8,8 @@
 | public/assets/og.png | SNS共有時の画像 | サイト内で作成 | 自作 | d7a94e9 |
 | public/assets/favicon.svg | ブラウザのタブ | サイト内で作成 | 自作 | — |
 | public/tools/*.xlsx / *.html | 無料の様式 | サイト内で作成（scripts/ の生成スクリプト） | 自作 | — |
+| public/dl/niigata-jikkajimai-kanzen-guide.pdf | 無料ガイド（登録特典） | サイト内で作成（scripts/build_guide_pdf.mjs。表紙の山の線画も自作のSVG。書体は Windows 標準の BIZ UDPゴシック・Noto Serif JP を埋め込み） | 自作 | — |
+| public/assets/guide/cover.jpg / p-deadlines.jpg / p-checklist.jpg | 無料ガイドの見本（トップ・申し込みページ・追従CTA） | 上のPDFのページを画像にしたもの（scripts/_build_guide_images.py） | 自作 | — |
 
 ## ルール
 - 新しい画像を足すときは、この表に1行足す。出どころが分からない画像は使わない。

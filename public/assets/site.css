@@ -604,11 +604,6 @@ h2 .h-ic+a{text-decoration:none;color:inherit}
 .lead-hero .eyebrow{color:#f1c7bd;font-weight:700}
 .lead-hero h1{color:#fff;font-size:40px;line-height:1.3;margin:4px 0 12px}
 .lead-hero .lead{color:rgba(255,255,255,.92)}
-.lh-cover{margin-top:20px;width:min(100%,360px);padding:18px 20px;border:1px solid rgba(255,255,255,.35);border-radius:8px;background:rgba(255,255,255,.06)}
-.lc-site{font-size:12px;opacity:.8;margin:0 0 4px;letter-spacing:.06em}
-.lc-t{font-size:22px;font-weight:700;line-height:1.35;margin:0 0 12px}
-.lh-cover ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
-.lh-cover li{display:flex;align-items:center;gap:8px;font-size:13.5px}.lh-cover .ic{width:18px;height:18px;color:#fff}
 .guide-form,.guide-done{background:#fff;color:var(--ink);border-radius:10px;padding:20px 20px 16px;display:grid;gap:8px}
 .guide-form label,.guide-form legend{font-weight:700;font-size:14px}
 .guide-form .req{color:var(--seal);font-size:11.5px;margin-left:6px}
@@ -632,6 +627,102 @@ h2 .h-ic+a{text-decoration:none;color:inherit}
 .lead-inside .li-card{display:flex;gap:12px;align-items:flex-start;height:100%;padding:14px;border:1px solid var(--line);border-radius:8px;background:#fff}
 .lead-page h2 .ic{width:24px;height:24px;color:var(--navy);vertical-align:-4px;margin-right:6px}
 .lead-page .faq{max-width:var(--read)}
-@media (max-width:900px){.lead-hero .inner{grid-template-columns:1fr;gap:24px}.lead-hero h1{font-size:30px}.lh-cover{display:none}}
+@media (max-width:900px){.lead-hero .inner{grid-template-columns:1fr;gap:24px}.lead-hero h1{font-size:30px}}
 @media (max-width:420px){.lf-sits{grid-template-columns:1fr}}
 .guide-form[hidden],.guide-done[hidden]{display:none}
+
+/* ---------- 2026-10-12 トップを参考LPの流れで組み直す（定義→放置のリスク→無料ガイド→1年の段取り→理由→相談の流れ→質問） ---------- */
+/* 申し込み（無料ガイド）のボタンだけ暖色にして目立たせる。ほかは藍のまま */
+:root{--accent:#d0612a;--accent-2:#b4501f;--accent-10:#fbefe7;--warn:#b3412f;--warn-10:#f8ebe8}
+.btn.accent{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--accent);border-color:var(--accent);color:#fff;font-size:16px;padding:14px 24px;border-radius:6px;box-shadow:0 3px 0 var(--accent-2)}
+.btn.accent:hover{background:var(--accent-2);border-color:var(--accent-2)}
+.btn.accent .ic{color:#fff}
+.fc-btn{background:var(--accent)}.fc-main:hover .fc-btn{background:var(--accent-2)}
+.float-cta.is-min .fc-tab{background:var(--accent)}
+.fc-main{border-top-color:var(--accent)}
+.sticky-cta a[data-cta="sticky"]{background:var(--accent);border-color:var(--accent);color:#fff}.sticky-cta a[data-cta="sticky"] .ic{color:#fff}
+.gf-submit{background:var(--accent);border-color:var(--accent);box-shadow:0 3px 0 var(--accent-2)}.gf-submit:hover{background:var(--accent-2);border-color:var(--accent-2)}
+.sec-k{font-size:13px;font-weight:700;color:var(--navy);letter-spacing:.08em;margin:0 0 2px}
+.sec-k.warn{color:var(--warn)}
+.home-section .sec-k+h2{border-top:0;padding-top:0}
+.home-section:has(>.sec-k){border-top:2px solid var(--line-strong);padding-top:16px}
+/* ヒーロー右: 無料ガイドの案内 */
+.hero-guide{display:flex;gap:18px;align-items:flex-start;background:#fff;color:var(--ink);border-radius:12px;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.hero-guide a{color:#fff}
+.hg-t{min-width:0}
+.hg-k{display:inline-block;font-size:12px;font-weight:700;color:var(--accent);background:var(--accent-10);border-radius:3px;padding:1px 8px;margin:0 0 6px}
+.hg-h{font-size:19px;font-weight:700;line-height:1.4;margin:0 0 8px}
+.hg-list{list-style:none;padding:0;margin:0 0 14px;display:grid;gap:4px}
+.hg-list li{display:flex;gap:6px;align-items:flex-start;font-size:13.5px;line-height:1.55;color:var(--ink-2)}.hg-list .ic{color:var(--navy);margin-top:3px}
+.hero-guide .btn.accent{width:100%}
+/* 実家じまいとは */
+.what-is{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px;align-items:start}
+.what-is .wi-text p{font-size:16px}
+.wi-sits{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.wi-sits a{display:flex;gap:12px;align-items:center;padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);text-decoration:none}
+.wi-sits a:hover{border-color:var(--navy);background:var(--navy-10)}
+.wi-sits strong{display:block;font-size:15px;line-height:1.4}.wi-sits small{display:block;font-size:12.5px;color:var(--mute)}
+/* 放置のリスク */
+.risk-grid{list-style:none;padding:0;margin:14px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.risk-grid li{display:flex;flex-direction:column;padding:18px 16px 14px;border:1px solid var(--line);border-top:3px solid var(--warn);border-radius:8px;background:#fff}
+.ic-badge.warn{background:var(--warn-10);color:var(--warn)}
+.risk-grid h3{font-size:16px;line-height:1.45;margin:10px 0 6px}
+.risk-grid p{font-size:13.5px;line-height:1.75;color:var(--ink-2);margin:0 0 10px}
+.risk-grid a{margin-top:auto;display:inline-flex;align-items:center;gap:4px;font-size:13.5px;font-weight:700}
+/* 無料ガイドの帯 */
+.guide-band{max-width:none;margin-top:56px;padding:30px 0;background:var(--accent-10);box-shadow:0 0 0 100vmax var(--accent-10);clip-path:inset(0 -100vmax)}
+.gb-in{display:flex;gap:32px;align-items:center;max-width:var(--wide);margin:0 auto}
+.gb-k{display:inline-block;font-size:12.5px;font-weight:700;color:#fff;background:var(--accent);border-radius:3px;padding:1px 10px;margin:0 0 6px}
+.gb-t h2{border:0;padding:0;margin:0 0 8px;font-size:24px}
+.gb-t p{max-width:620px;color:var(--ink-2)}
+.gb-t .btn.accent{margin-top:8px}
+/* 1年のスケジュール */
+.sch-grid{list-style:none;padding:0;margin:14px 0 8px;display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.sch-grid li{position:relative;padding:12px 12px 14px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.sch-grid li.winter{background:var(--navy-10);border-color:#c9d3e3}
+.sch-grid li.key{border:2px solid var(--accent);background:var(--accent-10)}
+.sch-m{display:flex;align-items:center;gap:4px;font-weight:700;font-size:15px;color:var(--navy)}
+.sch-m .ic{color:var(--navy)}
+.sch-grid p{margin:4px 0 0;font-size:12.5px;line-height:1.6;color:var(--ink-2)}
+.sch-tag{position:absolute;top:-10px;right:8px;font-size:11px;font-weight:700;color:#fff;background:var(--accent);border-radius:3px;padding:1px 6px}
+/* 選ばれる理由 */
+.reason-grid{list-style:none;padding:0;margin:14px 0 10px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.reason-grid li{position:relative;padding:20px 18px 16px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.rs-n{position:absolute;top:14px;right:16px;font-size:30px;font-weight:700;color:var(--navy-10);line-height:1}
+.reason-grid h3{font-size:17px;margin:10px 0 6px}
+.reason-grid p{font-size:14px;line-height:1.75;color:var(--ink-2);margin:0}
+/* 相談の流れ */
+.cf-steps{list-style:none;padding:0;margin:14px 0 10px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;counter-reset:none}
+.cf-steps li{position:relative;padding:18px 14px 14px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.cf-steps li+li::before{content:"";position:absolute;left:-9px;top:50%;width:8px;height:8px;border-top:2px solid var(--line-strong);border-right:2px solid var(--line-strong);transform:translateY(-50%) rotate(45deg);opacity:.4}
+.cf-n{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--navy);color:#fff;font-size:12.5px;font-weight:700;margin-right:6px}
+.cf-steps .ic{width:22px;height:22px;color:var(--navy);vertical-align:-5px}
+.cf-steps strong{display:block;font-size:15.5px;margin:10px 0 4px}
+.cf-steps p{font-size:13.5px;line-height:1.7;color:var(--ink-2);margin:0}
+.cf-cta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
+/* よくある質問（トップ） */
+.home-faq{max-width:var(--read)}
+/* 手数料の抜粋（ヒーローから移動） */
+.fee-peek{margin-top:22px;max-width:var(--read)}
+.fee-peek .cap{font-size:13px;color:var(--mute);margin:0 0 4px;font-weight:700}
+@media (max-width:1000px){.what-is{grid-template-columns:1fr}.risk-grid{grid-template-columns:1fr 1fr}.sch-grid{grid-template-columns:repeat(4,1fr)}.cf-steps{grid-template-columns:1fr 1fr}.cf-steps li+li::before{content:none}.reason-grid{grid-template-columns:1fr}}
+@media (max-width:640px){.risk-grid{grid-template-columns:1fr}.sch-grid{grid-template-columns:1fr 1fr}.cf-steps{grid-template-columns:1fr}.gb-in{flex-direction:column;align-items:flex-start;gap:18px}.hero-guide{padding:16px}.btn.accent{width:100%}}
+/* 画面にガイドの案内（ヒーロー右・帯）が見えている間は、追従CTAを隠す */
+.float-cta{transition:opacity .2s,transform .2s}
+.float-cta.is-away{opacity:0;transform:translateY(12px);pointer-events:none}
+
+/* ---------- 2026-10-12 無料ガイドの見本: PDFの本物のページ（表紙＋中のページ2枚）を重ねて、手に取れる冊子として見せる ---------- */
+.g-mock{position:relative;flex:none;width:170px;aspect-ratio:900/1273;margin:4px 40px 14px 6px}
+.g-mock img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:2px 4px 4px 2px;background:#fff}
+.g-mock .gm-p2{transform:translate(34px,12px) rotate(8deg);box-shadow:0 8px 20px rgba(12,27,48,.18)}
+.g-mock .gm-p1{transform:translate(18px,5px) rotate(3.5deg);box-shadow:0 8px 20px rgba(12,27,48,.2)}
+.g-mock .gm-cv{box-shadow:0 18px 40px rgba(12,27,48,.38),0 3px 8px rgba(12,27,48,.25)}
+.g-mock::after{content:"";position:absolute;inset:0;border-radius:2px 4px 4px 2px;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.28) 0,rgba(0,0,0,0) 3.5%,rgba(255,255,255,.07) 5%,rgba(255,255,255,0) 9%),linear-gradient(118deg,rgba(255,255,255,.16) 0%,rgba(255,255,255,0) 38%)}
+.g-mock.lg{width:270px;margin:26px 56px 20px 4px}
+.hero-guide{align-items:center}
+.hero-guide .g-mock{width:150px;margin:4px 36px 12px 2px}
+.gb-in .g-mock{width:190px;transform:rotate(-2deg)}
+.fc-cover-img{flex:none;width:48px;height:auto;border-radius:2px;box-shadow:2px 4px 10px rgba(12,27,48,.3)}
+@media (max-width:1100px) and (min-width:641px){.hero-guide .g-mock{display:none}}
+@media (max-width:900px){.g-mock.lg{width:200px;margin:8px auto 18px}}
+@media (max-width:640px){.hero-guide{flex-direction:column;align-items:center}.hero-guide .g-mock{width:150px;margin:6px 30px 16px 0}.hg-t{width:100%}.gb-in .g-mock{width:160px;margin-left:10px}}

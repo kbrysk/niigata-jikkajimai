@@ -57,7 +57,10 @@ export function setupLead({ ROOT, SITE, esc, url, abs, cities, prices, roadmap }
   const mailOn = Boolean(L.endpoint) && approved;
 
   // ---------- 追従CTA ----------
-  const miniCover = `<span class="fc-cover" aria-hidden="true"><span></span><span></span><span></span></span>`;
+  // 見本の絵: PDFの本物のページ（scripts/_build_guide_images.py で作る）を重ねて見せる。画像が無ければ出さない
+  const img = (n) => fs.existsSync(path.join(ROOT, "public/assets/guide", n)) ? url(`/assets/guide/${n}`) : "";
+  const guideMock = (cls = "") => img("cover.jpg") ? `<div class="g-mock${cls ? " " + cls : ""}" aria-hidden="true">${img("p-checklist.jpg") ? `<img class="gm-p2" src="${img("p-checklist.jpg")}" alt="" loading="lazy" decoding="async" width="900" height="1273">` : ""}${img("p-deadlines.jpg") ? `<img class="gm-p1" src="${img("p-deadlines.jpg")}" alt="" loading="lazy" decoding="async" width="900" height="1273">` : ""}<img class="gm-cv" src="${img("cover.jpg")}" alt="" decoding="async" width="900" height="1273"></div>` : "";
+  const miniCover = img("cover.jpg") ? `<img class="fc-cover-img" src="${img("cover.jpg")}" alt="" aria-hidden="true" loading="lazy" decoding="async" width="900" height="1273">` : `<span class="fc-cover" aria-hidden="true"><span></span><span></span><span></span></span>`;
   const floatCta = (pathname) => (!hasPdf || [LEAD_PATH, "/mitsumori/", "/keisai/"].includes(pathname) ? "" : `<aside class="float-cta" aria-label="無料ガイドの案内" data-float-cta>
   <a class="fc-main" href="${url(LEAD_PATH)}" data-cta="float">${miniCover}<span class="fc-t"><small>無料PDF・${pages}ページ</small><strong>新潟の実家じまい 完全ガイド</strong><span class="fc-sub">期限の早見表・30市町村のごみ早見表つき</span><span class="fc-btn">無料で受け取る${icon("arrow", "ic sm")}</span></span></a>
   <button type="button" class="fc-min" aria-label="案内を小さくする" data-fc-min>×</button>
@@ -69,6 +72,7 @@ var m=Number(get(K)||0);if(m&&Date.now()-m<3*864e5)f.classList.add('is-min');
 if(get(R)){f.querySelectorAll('a').forEach(function(a){a.href=${JSON.stringify(url(LEAD_PDF))};a.target='_blank';});var b=f.querySelector('.fc-btn');if(b)b.firstChild.textContent='ガイドを開く';}
 f.querySelector('[data-fc-min]').addEventListener('click',function(){f.classList.add('is-min');set(K,String(Date.now()));});
 f.querySelector('.fc-tab').addEventListener('click',function(){set(K,'0');});
+var ws=document.querySelectorAll('.hero-guide,.guide-band');if(ws.length&&'IntersectionObserver' in window){var on=new Set();var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting)on.add(x.target);else on.delete(x.target);});f.classList.toggle('is-away',on.size>0);});ws.forEach(function(w){io.observe(w);});}
 f.addEventListener('click',function(e){var a=e.target.closest('a[data-cta]');if(a&&window.gtag)gtag('event','guide_cta_click',{position:a.getAttribute('data-cta'),page_path:location.pathname});});
 })();</script>`;
   const mobileBtn = hasPdf ? `<a class="btn ghost" href="${url(LEAD_PATH)}" data-cta="sticky">${icon("book", "ic sm")}無料ガイドPDF</a>` : "";
@@ -128,7 +132,7 @@ req.then(fin,fin);});})();</script>`;
     <p class="eyebrow">無料ガイドブック（PDF・${pages}ページ）</p>
     <h1>新潟の実家じまい<br>完全ガイド</h1>
     <p class="lead">親が元気なうちの準備から、亡くなったあとの手続き、片付け、空き家の行き先と冬の管理まで。期限・手順・費用と、新潟県内の窓口を1冊にまとめました。印刷して、家族の話し合いにも使えます。</p>
-    <div class="lh-cover" aria-hidden="true"><p class="lc-site">${esc(SITE.name)}</p><p class="lc-t">新潟の実家じまい<br>完全ガイド</p><ul>${stages.map((st, i) => `<li>${icon(STAGE_ICON[i] || "doc")}<span>${esc(st.title)}</span></li>`).join("")}</ul></div>
+    ${guideMock("lg")}
   </div>
   <div class="lh-form">${form}</div>
 </div></section>
@@ -142,5 +146,5 @@ req.then(fin,fin);});})();</script>`;
 </section>
 </article>`;
 
-  return { sequence, floatCta, floatScript, mobileBtn, landingBody, leadScript, pages, hasPdf };
+  return { sequence, floatCta, floatScript, mobileBtn, landingBody, leadScript, pages, hasPdf, guideMock };
 }

@@ -686,6 +686,32 @@ function home() {
   // 全体の流れ。段階名と期間は進め方ページと同じ roadmap.json から取る
   const rmStages = readJSON(path.join(ROOT, "content/roadmap/roadmap.json"), {}).stages || [];
   const flowSteps = rmStages.map((st, i) => `<li><a href="${RM}#stage-${esc(st.id)}"><span class="fl-ic">${icon(STAGE_ICON[i] || "doc")}</span><span class="fl-n">段階${esc(st.id)}</span><strong>${esc(st.title)}</strong>${st.period ? `<span class="fl-p">${esc(st.period)}</span>` : ""}</a></li>`).join("");
+  // ---- 参考LPの流れ（定義→放置のリスク→解決策→スケジュール→理由→流れ→質問→申し込み）を、情報サイト向けに置き換えた構成（2026-10-12 大久保さん依頼）
+  // 事実はすべて roadmap.json・記事・相談ページの記載から。実績・お客様の声は作らない
+  const RMD = readJSON(path.join(ROOT, "content/roadmap/roadmap.json"), {});
+  const guideBtn = (label = "無料でガイドを受け取る", cta = "home") => LEAD.hasPdf ? `<a class="btn accent" href="${url("/kanzen-guide/")}" data-cta="${cta}">${icon("book", "ic sm")}${esc(label)}</a>` : "";
+  const guideCover = LEAD.guideMock();
+  const guidePromo = LEAD.hasPdf ? `<aside class="hero-guide" aria-label="無料ガイド">${guideCover}<div class="hg-t"><p class="hg-k">無料PDF・${LEAD.pages}ページ</p><p class="hg-h">新潟の実家じまい 完全ガイド</p><ul class="hg-list"><li>${icon("calendar", "ic sm")}期限のある手続き${(RMD.deadlines || []).length}項目の早見表</li><li>${icon("check", "ic sm")}段階ごとのやることチェックリスト</li><li>${icon("trash", "ic sm")}30市町村の粗大ごみ早見表</li></ul>${guideBtn("無料でガイドを受け取る", "hero")}</div></aside>` : "";
+  const whatIs = `<section class="home-section what-is"><div class="wi-text"><p class="sec-k">はじめての方へ</p><h2>「実家じまい」とは</h2><p>${marked.parseInline(String((RMD.faq || [])[0]?.a || ""))}</p><p class="small">決めること・期限のある手続き・仕分け・片付け・家の行き先の${rmStages.length}段階で進みます。</p></div><ul class="wi-sits">${(RMD.situations || []).map((x) => `<li><a href="${RM}?sit=${esc(x.id)}"><span class="ic-badge">${icon(SIT_ICON[x.id] || "route")}</span><span><strong>${esc(x.label)}</strong><small>${esc(x.hint || "")}</small></span></a></li>`).join("")}</ul></section>`;
+  const risks = [
+    { ic: "yen", t: "土地の税金が上がることがある", d: "管理が不十分な空き家は、市の指導や勧告の対象になります。勧告を受けると、土地の固定資産税を軽くする住宅用地の特例（200平方メートル以下の部分は6分の1）が外れる場合があります。", href: url("/guide/akiya-koteishisanzei-6bai/"), l: "固定資産税が上がる条件" },
+    { ic: "doc", t: "相続登記の期限が過ぎる", d: "相続登記は、相続を知った日から3年以内の申請が義務です。正当な理由なく怠ると、10万円以下の過料の対象です。2024年4月より前の相続も、2027年3月31日までです。", href: url("/guide/souzoku-touki-niigata-houmukyoku/"), l: "相続登記の手続き" },
+    { ic: "snow", t: "落雪や倒壊の責任を問われる", d: "空き家の管理は所有者の責任です（新潟県の案内）。新潟市は、民法717条の損害賠償責任を案内しています。雪下ろしの助成は、住んでいる世帯が条件の市が多くあります。", href: url("/guide/yukioroshi-shien-niigata-30/"), l: "30市町村の雪下ろし支援" },
+    { ic: "calendar", t: "売るときの節税が使えなくなる", d: "相続した実家を売るときの3,000万円特別控除は、相続開始から3年後の年末まで（かつ令和9年12月31日までの譲渡）。過ぎると使えません。", href: url("/guide/akiya-baikyaku-zeikin-niigata/"), l: "実家を売るときの税金と特例" },
+  ];
+  const riskSec = `<section class="home-section risks"><p class="sec-k warn">放置すると</p><h2>実家をそのままにすると、どうなる？</h2><p class="sub">空き家のままにしておくと、選べたはずの方法が使えなくなることがあります。公式の情報から、4つを挙げます。</p><ul class="risk-grid">${risks.map((r) => `<li><span class="ic-badge warn">${icon(r.ic)}</span><h3>${esc(r.t)}</h3><p>${esc(r.d)}</p><a href="${r.href}">${esc(r.l)}${icon("arrow", "ic sm")}</a></li>`).join("")}</ul></section>`;
+  const guideBand = (h, cta) => LEAD.hasPdf ? `<section class="guide-band"><div class="gb-in">${guideCover}<div class="gb-t"><p class="gb-k">無料PDF・${LEAD.pages}ページ</p><h2>${h}</h2><p>期限のある手続きの早見表、段階ごとのやることチェックリスト、30市町村の粗大ごみ早見表を1冊に。印刷して、家族の話し合いにも使えます。</p>${guideBtn("無料でガイドを受け取る", cta)}<p class="small">メールアドレスだけで受け取れます。いつでも配信を停止できます。</p></div></div></section>` : "";
+  const WINTER = ["12月", "1月", "2月"];
+  const schedule = `<section class="home-section schedule"><p class="sec-k">1年の段取り</p><h2>新潟の実家じまい 1年のスケジュール</h2><p class="sub">新潟では、雪と、年度ごとの補助金の受付で、動く時期が決まります。月ごとにやると良いことです。</p><ol class="sch-grid">${(RMD.season || []).map((m) => `<li class="${WINTER.includes(m.when) ? "winter" : ""}${m.when === "11月" ? " key" : ""}"><span class="sch-m">${WINTER.includes(m.when) ? icon("snow", "ic sm") : ""}${esc(m.when)}</span><p>${esc(String(m.todo).split("。")[0].replace(/（当サイトの見解）/, ""))}。</p>${m.when === "11月" ? `<span class="sch-tag">ここが分かれ目</span>` : ""}</li>`).join("")}</ol><p class="small"><a href="${RM}#season">月ごとの詳しい説明と出典を見る →</a></p></section>`;
+  const reasons = [
+    { ic: "shield", t: "公式サイトだけが出典", d: "市町村の制度と料金は、各自治体の公式サイトを一つずつ読んで載せています。ページごとに確認日を記載しています。" },
+    { ic: "pin", t: "新潟県30市町村をすべて掲載", d: "粗大ごみの申し込み先と料金の仕組みを全市町村分。9市は料金表・持ち込み施設・解体補助金まで載せています。" },
+    { ic: "people", t: "業者は運営者が会って確かめる", d: "掲載する業者は、長岡に住む運営者が直接会い、許可の有無と見積もりの出し方を確かめた先だけです。" },
+  ];
+  const reasonSec = `<section class="home-section reasons"><p class="sec-k">このサイトについて</p><h2>新潟 実家じまいナビが選ばれる3つの理由</h2><ul class="reason-grid">${reasons.map((r, i) => `<li><span class="rs-n">${i + 1}</span><span class="ic-badge">${icon(r.ic)}</span><h3>${esc(r.t)}</h3><p>${esc(r.d)}</p></li>`).join("")}</ul><p class="small">体験談や口コミは作りません。掲載料・紹介料を受け取る先には「PR」と表示します。<a href="${url("/about/")}">運営者情報・編集方針 →</a></p></section>`;
+  const flowSec = `<section class="home-section consult"><p class="sec-k">相談の流れ</p><h2>自分たちで出しきれないときは、無料で相談できます</h2><ol class="cf-steps"><li><span class="cf-n">1</span>${icon("talk")}<strong>フォームから送る</strong><p>状況と市町村を書いて送ります（3分）。</p></li><li><span class="cf-n">2</span>${icon("calendar")}<strong>運営者が読んで返信</strong><p>運営者が内容を読み、原則2営業日以内にお返事します。</p></li><li><span class="cf-n">3</span>${icon("route")}<strong>進め方をご案内</strong><p>市町村の制度・公的な窓口・見積もりの取り方など、内容に合う進め方をご案内します。</p></li><li><span class="cf-n">4</span>${icon("shield")}<strong>業者の紹介は了承を得てから</strong><p>直接会って確かめた業者が決まった地域から。紹介の前に、ご本人の了承をいただきます。</p></li></ol><p class="cf-cta"><a class="btn" href="${url("/mitsumori/")}">無料で相談する</a><span class="small">相談しても、依頼の義務はありません。</span></p></section>`;
+  const FAQ_PICK = [1, 6, 7, 8, 9];
+  const faqSec = `<section class="home-section faq home-faq"><p class="sec-k">よくある質問</p><h2>実家じまいで、よくある質問</h2>${FAQ_PICK.map((i) => (RMD.faq || [])[i]).filter(Boolean).map((f) => `<details><summary>${esc(f.q)}</summary><p>${marked.parseInline(String(f.a))}</p></details>`).join("")}<p class="small"><a href="${url("/qa/")}">疑問Q&amp;Aをすべて見る →</a></p></section>`;
   const body = `
 ${photo}
 <section class="hero"><div class="inner">
@@ -701,26 +727,31 @@ ${photo}
     <p class="small">県外にお住まいで帰省の回数が限られる方は、<a href="${url("/guide/enpou-kara-jikkajimai/")}">帰省2回で終わらせる段取り</a>から。</p>
     <div class="person hero-person"><div><p class="say">長岡に住んでいます。市町村の制度は公式サイトを一つずつ読んで載せ、業者は直接会って確かめた先だけを紹介します。相談はまず私が目を通してから、地元の許可業者につなぎます。</p><p class="who"><strong>${esc(PERSON.name)}</strong>${esc(PERSON.role)} ／ <a href="${url("/about/")}">運営者情報</a></p></div></div>
   </div>
-  <aside class="hero-aside" aria-label="粗大ごみ手数料の抜粋">
-    <p class="cap">粗大ごみ手数料の幅（公式料金表の品目例から・1点あたり）</p>
-    <table><thead><tr><th>市</th><th class="n">手数料</th><th>申し込み</th><th class="n">確認日</th></tr></thead><tbody>${heroRows}</tbody></table>
-    <p class="more">— は品目別の料金表が無い市（重量制など）。<a href="${url("/data/sodai-hikaku/")}">30市町村の手数料・持ち込みルールを比べる →</a></p>
-  </aside>
+  ${guidePromo}
 </div></section>
 <p class="data-note"><span>${icon("pin")}<b>30</b>市町村の公式サイトを出典に掲載</span><span>${icon("calc")}県内<b>${(prices.companies || []).length}</b>社の公開料金を集計（1K <b>${yen(Math.min(...(prices.companies || []).map((x) => x.k1).filter(Boolean)))}</b>〜）</span><span>${icon("talk")}相談・訪問見積もりは<b>無料</b>。運営者が確認してから地元の許可業者へ</span></p>
+${whatIs}
+${riskSec}
+${guideBand("迷ったら、まずこの1冊から", "band-mid")}
 <section class="home-section quick-nav" aria-labelledby="qn-h"><h2 id="qn-h">知りたいことから探す</h2>${iconCards(mainNavItems())}</section>
-<section class="home-section start-here"><h2>いまの状況から、進め方を見る</h2><p class="sub">状況を選ぶと、その状況で最初にやること・期限のある手続き・新潟の窓口だけを順番に表示します。</p>
+<section class="home-section start-here" id="start"><h2>いまの状況から、進め方を見る</h2><p class="sub">状況を選ぶと、その状況で最初にやること・期限のある手続き・新潟の窓口だけを順番に表示します。</p>
 <p class="sh-step"><span class="sh-n">1</span>いまの状況を選ぶ</p>
 <ul class="start-sits">${sitCards}</ul>
 <p class="sh-step"><span class="sh-n">2</span>実家じまいの全体の流れ（${rmStages.length}段階）</p>
 <ol class="flow">${flowSteps}</ol>
 <p class="small sh-more"><a href="${RM}">状況を選ばずに全体の流れを見る →</a>　<a href="${url("/qa/")}">疑問Q&amp;Aから探す →</a></p></section>
-<section class="home-section dir"><h2>市町村から探す（新潟県30市町村）</h2><p class="sub">太字の9市は、品目別の料金表・持ち込み施設の受付時間・解体補助金まで掲載。ほかの市町村も申し込み先と料金の仕組みを載せています。</p><div class="dir-grid">${dirCols}</div><p class="small"><a href="${url("/city/")}">市町村別ガイドの一覧 →</a> ／ <a href="${url("/data/sodai-hikaku/")}">30市町村の粗大ごみ手数料・持ち込み比較 →</a></p></section>
+${schedule}
+${reasonSec}
+${flowSec}
+${faqSec}
+<section class="home-section dir"><h2>市町村から探す（新潟県30市町村）</h2><p class="sub">太字の9市は、品目別の料金表・持ち込み施設の受付時間・解体補助金まで掲載。ほかの市町村も申し込み先と料金の仕組みを載せています。</p><div class="dir-grid">${dirCols}</div>
+<div class="fee-peek"><p class="cap">粗大ごみ手数料の幅（9市・公式料金表の品目例から・1点あたり）</p><div class="table-wrap"><table><thead><tr><th>市</th><th class="n">手数料</th><th>申し込み</th><th class="n">確認日</th></tr></thead><tbody>${heroRows}</tbody></table></div><p class="small">— は品目別の料金表が無い市（重量制など）。</p></div>
+<p class="small"><a href="${url("/city/")}">市町村別ガイドの一覧 →</a> ／ <a href="${url("/data/sodai-hikaku/")}">30市町村の粗大ごみ手数料・持ち込み比較 →</a></p></section>
 <div class="two">
 <section class="home-section recent"><h2>確認の記録</h2><p class="sub">各市町村の公式サイトを見た日と、載せている内容。古いものから順に見直します。</p><div class="table-wrap"><table><thead><tr><th>市町村</th><th>粗大ごみ</th><th>持ち込み</th><th>解体補助金</th><th class="n">確認日</th></tr></thead><tbody>${recentRows}</tbody></table></div></section>
 <section class="home-section"><h2>実家じまいの進め方（新潟版）</h2><p class="sub">${guides.length}本のガイドを5つに分けています。</p><ul class="guide-cats">${guideCards}</ul><p class="small"><a href="${url("/guide/")}">ガイドの一覧（分類つき） →</a></p></section>
 </div>
-<section class="why"><div><h2>長岡に住む運営者が、公式情報と地元の業者を確かめて載せています</h2><p>運営は株式会社Kogera。運営者は長岡市に住んでいます。市町村の制度と料金は各自治体の公式サイトだけを出典にし、ページごとに確認日を記載します。業者は運営者が直接会い、一般廃棄物収集運搬の許可と見積もりの出し方を確かめたところだけを載せます。</p><p><a href="${url("/about/")}">運営者情報・編集方針 →</a></p></div><ul class="promise"><li>出典は公式サイト。電話での聞き取りはしない</li><li>業者は会って確かめた先だけ。掲載料・紹介料を受け取る先には「PR」を表示</li><li>体験談や口コミを作らない。分からないことは「要確認」と書く</li>${SISTERS.length ? `<li>${SISTERS.map((x) => `${esc(x.note)}は姉妹サイト<a href="${esc(x.url)}" rel="noopener">${esc(x.name)}</a>`).join("、")}</li>` : ""}</ul></section>
+${guideBand("新潟の実家じまいを、ひとりで抱え込まないために", "band-end")}
 ${ctaBox()}`;
   const orgLd = { "@context": "https://schema.org", "@type": "WebSite", name: SITE.name, url: abs("/"), description: SITE.tagline, publisher: { "@type": "Organization", name: SITE.operator } };
   write("/", layout({ title: SITE.name, description: `新潟県30市町村の粗大ごみの出し方・料金・持ち込み先、空き家の解体補助金、雪の支援を公式情報からまとめた実家じまいの案内。長岡から運営。まとめて頼むときは地元の許可業者へ。`, pathname: "/", body, jsonld: [orgLd] }));
