@@ -79,3 +79,9 @@
 | IndexNow の鍵 | `.indexnow-key` と `public/<鍵>.txt`。移管後に作り直してよい |
 | 問い合わせ用メールアドレス | サイト専用のアドレスを使う（個人アドレスにしない）。移管時は転送先を変更 |
 | フォームの送信先 | `site.json` の formEndpoint・formEntries（Google フォーム。設問を変えたら entry 番号を取り直す）、表示用は contactFormUrl |
+
+## 予約公開（2026-10-12 追加）
+- 監査を通った記事は content/guides/ に置き、front matter に `publish: YYYY-MM-DD` を書く。その日まではサイトに出ない（一覧・サイトマップ・RSS・他記事からのリンクも出さない）。
+- 毎朝 7:05（日本時間）に GitHub Actions の定時ビルドが走り、その日が公開日の記事が出る。公開後に `scripts/indexnow_today.mjs` がその日の記事だけを IndexNow で通知する。
+- 公開日は1日1〜2本を目安に、間を空けずに並べる。関連記事の「次に読む」へのリンク（scripts/_add_backlinks.py）は先に足しておいてよい（公開日までは文字だけで表示される）。
+- 定時ビルドは GitHub の混雑で数十分遅れることがある。
