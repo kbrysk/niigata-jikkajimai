@@ -321,6 +321,8 @@ JR越後線の「巻駅」から、車で10分です。北陸自動車道の「�
 
 ## 次に読む
 
+- [豊栄環境センター（北区）への持ち込み](../niigata-shi-toyosaka-kankyo-center-mochikomi/)
+- [鎧潟クリーンセンター（西蒲区・日曜祝日も可）への持ち込み](../niigata-shi-yoroigata-clean-center-mochikomi/)
 - [新田清掃センター（西区）への持ち込み](../niigata-shi-shinden-seisou-center-mochikomi/)
 - [亀田清掃センター（江南区）への持ち込み](../niigata-shi-kameda-seisou-center-mochikomi/)
 - [新津クリーンセンター（秋葉区）への持ち込み](../niigata-shi-niitsu-clean-center-mochikomi/)

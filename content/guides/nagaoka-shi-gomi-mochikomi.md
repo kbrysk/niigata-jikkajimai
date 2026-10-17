@@ -300,6 +300,8 @@ affiliate: katazuke
 
 ## 次に読む
 
+- [寿クリーンセンターの受付時間と持ち込み](../nagaoka-kotobuki-clean-center-mochikomi/)
+- [中之島信条クリーンセンターへの持ち込み](../nagaoka-nakanoshima-shinjo-clean-center-mochikomi/)
 - [長岡市の粗大ごみの出し方](../nagaoka-shi-sodaigomi/)
 - [長岡市のごみ分別で迷う品目50](../nagaoka-gomi-bunbetsu-mayou/)
 - [長岡市の一般廃棄物 許可業者一覧](../nagaoka-shi-kyoka-gyosha/)
