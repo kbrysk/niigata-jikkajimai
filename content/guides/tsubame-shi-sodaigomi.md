@@ -207,6 +207,8 @@ affiliate: katazuke
 
 ## 次に読む
 
+- [燕市の粗大ごみシールの買える場所](../tsubame-shi-sodaigomi-seal-hanbaiten/)
+- [燕・弥彦の環境センターへの持ち込み](../tsubame-yahiko-kankyo-center-mochikomi/)
 - [新潟で実家を片付ける費用の目安](../jikkajimai-hiyou-niigata/)
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
 - [燕市の市町村ページ](../../city/tsubame/)

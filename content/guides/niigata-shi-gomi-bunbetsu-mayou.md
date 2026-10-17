@@ -217,6 +217,7 @@ affiliate: katazuke
 
 ## 次に読む
 
+- [新潟市の特定5品目（電池・蛍光管・スプレー缶など）の出し方](../niigata-shi-tokutei-5-hinmoku/)
 - [新潟市の粗大ごみの出し方](../niigata-shi-sodaigomi/)
 - [新潟市の一般廃棄物収集運搬 許可業者一覧](../niigata-shi-kyoka-gyosha/)
 - [長岡市の粗大ごみの出し方](../nagaoka-shi-sodaigomi/)

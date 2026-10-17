@@ -235,6 +235,7 @@ affiliate: katazuke
 
 ## 次に読む
 
+- [見附市清掃センターへの持ち込み](../mitsuke-shi-seisou-center-mochikomi/)
 - [新潟で実家を片付ける費用の目安](../jikkajimai-hiyou-niigata/)
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
 - [見附市の市町村ページ](../../city/mitsuke/)

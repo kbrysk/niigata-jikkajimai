@@ -255,6 +255,7 @@ affiliate: katazuke
 
 ## 次に読む
 
+- [十日町市エコクリーンセンターへの持ち込み](../tokamachi-eco-clean-center-mochikomi/)
 - [新潟で実家を片付ける費用の目安](../jikkajimai-hiyou-niigata/)
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
 - [冬の実家じまいと雪おろし](../fuyu-no-jikkajimai-yukioroshi/)

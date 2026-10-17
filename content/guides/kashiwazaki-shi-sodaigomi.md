@@ -211,6 +211,8 @@ affiliate: katazuke
 
 ## 次に読む
 
+- [柏崎市の粗大ごみ処理券の買える場所と貼り方](../kashiwazaki-shi-sodaigomi-ken-hanbaiten/)
+- [クリーンセンターかしわざきへの持ち込み](../kashiwazaki-clean-center-mochikomi/)
 - [新潟で実家を片付ける費用の目安](../jikkajimai-hiyou-niigata/)
 - [自分で出す？業者に頼む？](../jibun-de-dasu-ka-gyousha-ka/)
 - [柏崎市の市町村ページ](../../city/kashiwazaki/)
