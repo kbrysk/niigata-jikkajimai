@@ -13,6 +13,7 @@ targetKeywords:
   - 新潟 粗大ごみ 実家
   - 遺品整理 新潟 進め方
 updated: 2026-10-09
+affiliate: [katazuke, kaitori]
 ---
 
 # 新潟の実家じまいの手順｜何から始める？7つの順番と期限の早見表
