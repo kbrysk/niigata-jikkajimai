@@ -321,6 +321,10 @@ JR越後線の「巻駅」から、車で10分です。北陸自動車道の「�
 
 ## 次に読む
 
+- [新田清掃センター（西区）への持ち込み](../niigata-shi-shinden-seisou-center-mochikomi/)
+- [亀田清掃センター（江南区）への持ち込み](../niigata-shi-kameda-seisou-center-mochikomi/)
+- [新津クリーンセンター（秋葉区）への持ち込み](../niigata-shi-niitsu-clean-center-mochikomi/)
+- [白根環境事業所（南区）への持ち込み](../niigata-shi-shirone-kankyo-jigyosho-mochikomi/)
 - [新潟市の粗大ごみの出し方｜料金一覧・申込・持ち込み先](../niigata-shi-sodaigomi/)
 - [新潟市のごみ分別で迷う品目50](../niigata-shi-gomi-bunbetsu-mayou/)
 - [新潟の家電4品目の処分方法](../kaden4hinmoku-niigata/)
